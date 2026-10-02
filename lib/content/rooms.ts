@@ -66,9 +66,9 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         img: IMG.coloni,
         gallery: [
           "/rooms/coloni-1.jpg",
-          "/rooms/coloni-2.jpg",
-          "/rooms/coloni-3.jpg",
           "/rooms/coloni-4.jpg",
+          "/rooms/coloni-3.jpg",
+          "/rooms/coloni-2.jpg",
         ],
       },
       {
@@ -172,9 +172,9 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         img: IMG.coloni,
         gallery: [
           "/rooms/coloni-1.jpg",
-          "/rooms/coloni-2.jpg",
-          "/rooms/coloni-3.jpg",
           "/rooms/coloni-4.jpg",
+          "/rooms/coloni-3.jpg",
+          "/rooms/coloni-2.jpg",
         ],
       },
       {
