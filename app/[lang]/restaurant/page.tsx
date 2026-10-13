@@ -4,11 +4,13 @@ import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { isLocale } from "@/lib/i18n"
 import { restaurant } from "@/lib/content/restaurant"
+import { farm } from "@/lib/content/farm"
 
 export default async function RestaurantPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
   if (!isLocale(lang)) notFound()
   const c = restaurant[lang]
+  const f = farm[lang]
 
   return (
     <>
@@ -86,6 +88,16 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
             ))}
           </div>
           <div className="image-block" style={{ backgroundImage: `url('${c.sourcingImg}')` }} />
+        </div>
+      </section>
+
+      <section className="booking-callout">
+        <div className="booking-callout-inner">
+          <h2>{f.calloutTitle}</h2>
+          <p>{f.calloutBody}</p>
+          <Link href={`/${lang}/shop`} className="btn-primary btn-primary--pill">
+            {f.calloutCta}
+          </Link>
         </div>
       </section>
 
