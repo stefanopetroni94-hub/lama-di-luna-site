@@ -1274,10 +1274,10 @@ section {
 }
 .press-eyebrow {
   font-family: var(--serif);
-  font-size: 11px;
-  letter-spacing: 0.34em;
+  font-size: 12px;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--ink);
 }
 .press-row {
   display: flex;
