@@ -4,11 +4,13 @@ import { useState } from "react"
 
 export function NewsletterForm({
   text,
+  namePlaceholder,
   placeholder,
   button,
   consent,
 }: {
   text: string
+  namePlaceholder: string
   placeholder: string
   button: string
   consent: string
@@ -17,23 +19,24 @@ export function NewsletterForm({
 
   return (
     <section className="newsletter">
-      <div className="newsletter-row">
-        <div className="newsletter-text">{text}</div>
-        <form
-          className="newsletter-form"
-          onSubmit={(e) => {
-            e.preventDefault()
-            setDone(true)
-          }}
-        >
+      <h2 className="newsletter-title">{text}</h2>
+      <form
+        className="newsletter-form"
+        onSubmit={(e) => {
+          e.preventDefault()
+          setDone(true)
+        }}
+      >
+        <div className="newsletter-fields">
+          <input type="text" placeholder={namePlaceholder} aria-label={namePlaceholder} />
           <input type="email" placeholder={placeholder} required aria-label={placeholder} />
-          <button type="submit">{done ? "✓" : button}</button>
-        </form>
-      </div>
-      <div className="newsletter-row" style={{ marginTop: "0.8rem" }}>
-        <div />
-        <div className="newsletter-checkbox">{`\u2610\u00a0\u00a0${consent}`}</div>
-      </div>
+        </div>
+        <label className="newsletter-checkbox">
+          <input type="checkbox" required />
+          <span>{consent}</span>
+        </label>
+        <button type="submit">{done ? "✓" : button}</button>
+      </form>
     </section>
   )
 }

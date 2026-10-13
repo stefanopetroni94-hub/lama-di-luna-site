@@ -130,6 +130,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
       <NewsletterForm
         text={c.newsletterText}
+        namePlaceholder={lang === "it" ? "Nome" : "Name"}
         placeholder={c.newsletterPlaceholder}
         button={c.newsletterButton}
         consent={c.newsletterConsent}
