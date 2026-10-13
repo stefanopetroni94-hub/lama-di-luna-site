@@ -313,7 +313,7 @@ section {
 .statement h1 {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(2.4rem, 6vw, 5.6rem);
+  font-size: clamp(1.92rem, 4.8vw, 4.48rem);
   line-height: 1.05;
   letter-spacing: -0.025em;
   text-transform: uppercase;
@@ -1764,7 +1764,7 @@ footer {
 .statement-grid h2 {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+  font-size: clamp(1.52rem, 2.8vw, 2.24rem);
   line-height: 1.15;
   letter-spacing: -0.02em;
   text-transform: uppercase;
