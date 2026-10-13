@@ -427,6 +427,9 @@ section {
 .hero--home ~ .quick-search.availability-placement--home {
   margin-bottom: 0;
 }
+.hero--home ~ section .text-image {
+  padding-top: 0;
+}
 .hero--home ~ .where {
   padding-bottom: 0;
 }
