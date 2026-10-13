@@ -39,9 +39,8 @@ export const farm: Record<Locale, FarmContent> = {
       eyebrow: "Coratina olives",
       title: "Planted year after year, for over 35 years",
       body: [
-        "When we arrived at Lama di Luna in 1991, the land was abandoned. Building this organic farm took over 35 years of planting, year after year: olive trees, almond trees, vineyards and oaks. Everything you see at Lama di Luna has been planted.",
-        "At the same time, we have preserved a part of the farm that borders the Alta Murgia National Park, to protect the biodiversity, the fauna and the animal species of the masseria. A sustainable farm in Puglia, where agriculture and nature live side by side.",
-        "Our main work is agriculture. We come from generations of farmers, and we care deeply about the land and the territory.",
+        "The Petroni family has been a family of farmers for several generations, olive growers and winegrowers. When we arrived at Lama di Luna in 1991, the land was barren and abandoned. Over more than 35 years we have planted, year after year, olive trees, almond trees, vines and oaks. Every plant at Lama di Luna was planted by us, to rebuild the territory and, at the same time, to create high-quality products, continuing the tradition of our family of farmers while preserving the local territory.",
+        "We have also preserved a part of the farm that borders the Alta Murgia National Park, to protect the biodiversity, the fauna and the animal species of the masseria. A sustainable organic farm in Puglia, where agriculture and nature live side by side.",
       ],
       img: IMG.olive,
     },
@@ -97,9 +96,8 @@ export const farm: Record<Locale, FarmContent> = {
       eyebrow: "Olive Coratina",
       title: "Piantata anno dopo anno, per oltre 35 anni",
       body: [
-        "Quando siamo arrivati a Lama di Luna nel 1991, la terra era abbandonata. Costruire questa azienda agricola biologica ha richiesto oltre 35 anni di lavoro, piantando anno dopo anno ulivi, mandorli, vigneti e querce. Tutto ciò che vedi a Lama di Luna è stato piantato.",
-        "Allo stesso tempo abbiamo preservato una parte dell'azienda agricola che costeggia il Parco Nazionale dell'Alta Murgia, per proteggere la biodiversità, la fauna e le specie animali della masseria. Un'azienda agricola sostenibile in Puglia, dove agricoltura e natura vivono fianco a fianco.",
-        "Il nostro lavoro principale è l'agricoltura. Veniamo da generazioni di agricoltori e teniamo molto alla terra e al territorio.",
+        "La famiglia Petroni è una famiglia di agricoltori da diverse generazioni, olivicoltori e viticoltori. Quando siamo arrivati a Lama di Luna nel 1991, la terra era brulla e abbandonata. In oltre 35 anni abbiamo piantato, anno dopo anno, ulivi, mandorli, viti e querce. Ogni pianta di Lama di Luna è stata piantata da noi, per ricostituire il territorio e, allo stesso tempo, creare prodotti di alta qualità, continuando la tradizione della nostra famiglia di agricoltori e preservando il territorio locale.",
+        "Abbiamo inoltre preservato una parte dell'azienda agricola che costeggia il Parco Nazionale dell'Alta Murgia, per proteggere la biodiversità, la fauna e le specie animali della masseria. Un'azienda agricola biologica e sostenibile in Puglia, dove agricoltura e natura vivono fianco a fianco.",
       ],
       img: IMG.olive,
     },
