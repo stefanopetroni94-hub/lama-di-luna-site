@@ -410,6 +410,9 @@ section {
 section:has(.rooms-cta) + section .curved-label {
   padding-top: 1rem;
 }
+section:has(+ section > .text-image) .curved-label {
+  padding: 1.5rem 0 1rem;
+}
 
 /* ---------------- ROOMS LISTING PAGE ---------------- */
 .rooms-page .filters {
