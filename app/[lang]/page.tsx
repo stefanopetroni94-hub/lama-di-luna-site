@@ -25,7 +25,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         <div className="hero-scroll">{t.scroll}</div>
       </section>
 
-      <section className="statement">
+      <section className="statement statement--home">
         <div className="container">
           <h1>{c.statementTitle}</h1>
           <div className="statement-body">

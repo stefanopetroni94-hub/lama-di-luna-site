@@ -329,6 +329,10 @@ section {
 .statement-body p {
   margin-bottom: 1.2rem;
 }
+.statement--home .container {
+  padding-left: clamp(1.5rem, 9vw, 11rem);
+  padding-right: clamp(1.5rem, 9vw, 11rem);
+}
 .statement-inner {
   max-width: 1300px;
   margin: 0 auto;
