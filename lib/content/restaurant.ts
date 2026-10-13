@@ -36,6 +36,9 @@ const IMG = {
     "https://res.cloudinary.com/amenitiz/image/upload/w_1400,q_auto:best,f_auto,c_fill/v1748888083/omou7cxhd8opgelkbeuz.jpg",
   photo2:
     "https://res.cloudinary.com/amenitiz/image/upload/w_1400,q_auto:best,f_auto,c_fill/v1679928582/brqp64y9q5oogzmppcja.jpg",
+  dinner: "/whatsapp/20261013_140321_1096551306575408.jpg",
+  bruschetta: "/whatsapp/20261013_140326_2044361516273753.jpg",
+  pasta: "/whatsapp/20261013_140331_3163154140549478.jpg",
 }
 
 export const restaurant: Record<Locale, RestaurantContent> = {
@@ -58,7 +61,7 @@ export const restaurant: Record<Locale, RestaurantContent> = {
       { label: "Diets", value: "Vegetarian & vegan on request" },
     ],
     mediaVideo: "/restaurant/food-making.mp4",
-    mediaPhotos: [IMG.photo1, IMG.photo2],
+    mediaPhotos: [IMG.dinner, IMG.bruschetta],
     curvedLabel: "At the Table",
     menuEyebrow: "A sample evening",
     menuTitle: "What the day gives",
@@ -85,7 +88,7 @@ export const restaurant: Record<Locale, RestaurantContent> = {
       "What we cannot grow, we source from neighbours we trust: ricotta from nearby farms, traditional sausage from a cooperative in Minervino, mozzarella and stracciatella, cheeses from a cheesemonger in Andria, olives from Andria, flour from a Murgian mill, honey from the hills. Nothing travels far to reach the table.",
       "We carefully select every product from local producers, following the seasons, because seasonality matters most in good food. We then bring it to the table following the traditions of Puglia.",
     ],
-    sourcingImg: IMG.hero,
+    sourcingImg: IMG.pasta,
     bookingEyebrow: "Reserve the table",
     bookingTitle: "Dine with us",
     bookingText:
@@ -111,7 +114,7 @@ export const restaurant: Record<Locale, RestaurantContent> = {
       { label: "Diete", value: "Vegetariana e vegana su richiesta" },
     ],
     mediaVideo: "/restaurant/food-making.mp4",
-    mediaPhotos: [IMG.photo1, IMG.photo2],
+    mediaPhotos: [IMG.dinner, IMG.bruschetta],
     curvedLabel: "A Tavola",
     menuEyebrow: "Una sera d'esempio",
     menuTitle: "Ciò che dà la giornata",
@@ -138,7 +141,7 @@ export const restaurant: Record<Locale, RestaurantContent> = {
       "Ciò che non coltiviamo lo prendiamo da vicini di cui ci fidiamo: ricotta da fattorie vicine, salsiccia tradizionale da una cooperativa di Minervino, mozzarella e stracciatella, formaggi da un caseificio di Andria, olive di Andria, farina da un mulino murgiano, miele dalle colline. Nulla viaggia a lungo per arrivare in tavola.",
       "Selezioniamo con cura ogni prodotto da produttori locali, seguendo la stagionalità, che per noi è fondamentale nel buon cibo. Lo portiamo poi in tavola seguendo le tradizioni pugliesi.",
     ],
-    sourcingImg: IMG.hero,
+    sourcingImg: IMG.pasta,
     bookingEyebrow: "Prenota la tavola",
     bookingTitle: "Cena con noi",
     bookingText:
