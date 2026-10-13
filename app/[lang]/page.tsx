@@ -104,18 +104,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
-      <section className="where">
-        <div className="where-text">
-          <div className="room-name" style={{ marginBottom: "1rem" }}>
-            {c.whereLabel}
-          </div>
-          {c.mapText.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
-          <Scopri href={`/${lang}/contact`}>{c.mapCta}</Scopri>
-        </div>
-      </section>
-
       <NewsletterForm
         namePlaceholder={lang === "it" ? "Nome" : "Name"}
         placeholder={c.newsletterPlaceholder}

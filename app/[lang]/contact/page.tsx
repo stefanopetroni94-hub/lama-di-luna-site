@@ -7,11 +7,13 @@ import { QuickSearch } from "@/components/quick-search"
 import { isLocale } from "@/lib/i18n"
 import { contact } from "@/lib/content/contact"
 import { book } from "@/lib/content/book"
+import { home } from "@/lib/content/home"
 
 export default async function ContactPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
   if (!isLocale(lang)) notFound()
   const c = contact[lang]
+  const h = home[lang]
 
   return (
     <>
@@ -98,6 +100,17 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
               successMessage: c.successMessage,
             }}
           />
+        </div>
+      </section>
+
+      <section className="where where--contact">
+        <div className="where-text">
+          <div className="room-name" style={{ marginBottom: "1rem" }}>
+            {h.whereLabel}
+          </div>
+          {h.mapText.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
         </div>
       </section>
 

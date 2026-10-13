@@ -1255,6 +1255,10 @@ section {
   line-height: 1.85;
   color: var(--ink);
 }
+.where.where--contact {
+  padding-top: 4rem;
+  padding-bottom: 0;
+}
 .where-text p {
   margin-bottom: 1rem;
   max-width: 1100px;
