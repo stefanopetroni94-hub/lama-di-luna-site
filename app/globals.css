@@ -3,13 +3,13 @@
 :root {
   --bg: #faf8f2;
   --bg-alt: #ece5d2;
-  --ink: #1e3a5f;
-  --ink-soft: rgba(30, 58, 95, 0.7);
-  --ink-faint: rgba(30, 58, 95, 0.35);
+  --ink: #5c1a2b;
+  --ink-soft: rgba(92, 26, 43, 0.7);
+  --ink-faint: rgba(92, 26, 43, 0.35);
   --olive: #6b7a4b;
   --olive-soft: rgba(107, 122, 75, 0.75);
   --sand: #d9c9a9;
-  --line: rgba(30, 58, 95, 0.18);
+  --line: rgba(92, 26, 43, 0.18);
   --white: #ffffff;
 
   --serif: var(--font-lora), "Lora", Georgia, serif;
@@ -1472,10 +1472,10 @@ footer {
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
-  box-shadow: 0 6px 18px rgba(30, 58, 95, 0.25);
+  box-shadow: 0 6px 18px rgba(92, 26, 43, 0.25);
 }
 .lang-pill:hover {
-  background: #142845;
+  background: #3f0f1c;
 }
 
 /* ---------------- PAGE HEADER (inner pages) ---------------- */
@@ -1650,7 +1650,7 @@ footer {
   color: var(--bg);
 }
 .btn-primary--ink:hover {
-  background: #142845;
+  background: #3f0f1c;
   color: var(--bg);
 }
 
@@ -2124,7 +2124,7 @@ footer {
   transition: background 0.2s;
 }
 .qs-submit:hover {
-  background: #142845;
+  background: #3f0f1c;
 }
 
 .perks {
@@ -2516,7 +2516,7 @@ footer {
   transition: background 0.2s;
 }
 .submit-btn:hover {
-  background: #142845;
+  background: #3f0f1c;
 }
 .submit-note {
   font-family: var(--serif);
