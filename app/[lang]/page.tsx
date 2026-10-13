@@ -70,6 +70,8 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         <HeroVideo videoId="qzT1XEFQ_FM" poster="/lamadiluna-courtyard-stars.jpg" label={c.videoLabel} />
       </section>
 
+      <PressStrip locale={lang} />
+
       <section>
         <CurvedLabel text={c.kitchenLabel} />
       </section>
@@ -134,7 +136,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         consent={c.newsletterConsent}
       />
 
-      <PressStrip locale={lang} />
 
       <SiteFooter locale={lang} />
     </>

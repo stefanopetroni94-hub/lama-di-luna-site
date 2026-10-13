@@ -435,10 +435,11 @@ section {
 }
 .hero--home ~ .newsletter {
   padding-top: 4rem;
-  padding-bottom: 0;
+  padding-bottom: 4rem;
 }
 .hero--home ~ .press {
   padding-top: 4rem !important;
+  padding-bottom: 0 !important;
 }
 .hero--home ~ .newsletter .newsletter-title {
   margin-bottom: 4rem;
