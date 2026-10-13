@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { CurvedLabel } from "@/components/curved-label"
 import { Scopri } from "@/components/scopri"
 import { HeroVideo } from "@/components/hero-video"
 import { PressStrip } from "@/components/press-strip"
@@ -42,10 +41,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       </div>
 
       <section>
-        <CurvedLabel text={c.roomsLabel} />
-      </section>
-
-      <section>
         <div className="rooms-grid">
           {c.rooms.map((room) => (
             <article className="room-card" key={room.name}>
@@ -63,23 +58,18 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       </section>
 
       <section>
-        <CurvedLabel text={c.landLabel} />
-      </section>
-
-      <section>
         <HeroVideo videoId="qzT1XEFQ_FM" poster="/lamadiluna-courtyard-stars.jpg" label={c.videoLabel} />
       </section>
 
       <PressStrip locale={lang} />
 
       <section>
-        <CurvedLabel text={c.kitchenLabel} />
-      </section>
-
-      <section>
         <div className="text-image reverse">
           <div className="image-block" style={{ backgroundImage: `url('${c.kitchenImg}')` }} />
           <div className="text-block">
+            <div className="script-eyebrow" style={{ marginBottom: "1rem" }}>
+              {c.kitchenLabel}
+            </div>
             {c.kitchenText.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
@@ -93,12 +83,11 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       </section>
 
       <section>
-        <CurvedLabel text={c.experiencesLabel} />
-      </section>
-
-      <section>
         <div className="text-image text-image--flush">
           <div className="text-block">
+            <div className="script-eyebrow" style={{ marginBottom: "1rem" }}>
+              {c.experiencesLabel}
+            </div>
             {c.experiencesText.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
@@ -115,12 +104,11 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
-      <section>
-        <CurvedLabel text={c.whereLabel} />
-      </section>
-
       <section className="where">
         <div className="where-text">
+          <div className="script-eyebrow" style={{ marginBottom: "1rem" }}>
+            {c.whereLabel}
+          </div>
           {c.mapText.map((p, i) => (
             <p key={i}>{p}</p>
           ))}

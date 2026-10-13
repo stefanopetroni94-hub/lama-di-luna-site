@@ -413,17 +413,21 @@ section {
   margin: 0 auto;
 }
 
-/* home: same gap above and below every section title */
+/* home: same 4rem gap between every section */
 .hero--home ~ section .curved-label {
   padding: 4rem 0;
 }
 .hero--home ~ .quick-search.availability-placement--home {
-  margin-bottom: 0;
+  margin-bottom: 4rem;
+}
+.hero--home ~ section .rooms-cta {
+  padding-bottom: 4rem;
 }
 .hero--home ~ section .text-image {
-  padding-top: 0;
+  padding-top: 4rem;
 }
 .hero--home ~ .where {
+  padding-top: 4rem;
   padding-bottom: 0;
 }
 .hero--home ~ .newsletter {
@@ -440,6 +444,18 @@ section {
 @media (max-width: 700px) {
   .hero--home ~ section .curved-label {
     padding: 2.5rem 0;
+  }
+  .hero--home ~ .quick-search.availability-placement--home {
+    margin-bottom: 2.5rem !important;
+  }
+  .hero--home ~ section .rooms-cta {
+    padding-bottom: 2.5rem;
+  }
+  .hero--home ~ section .text-image {
+    padding-top: 2.5rem;
+  }
+  .hero--home ~ .where {
+    padding-top: 2.5rem;
   }
   .hero--home ~ .newsletter {
     padding-top: 2.5rem;
