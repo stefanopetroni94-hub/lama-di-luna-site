@@ -285,21 +285,12 @@ section {
   transition: opacity 0.2s;
   padding-top: 2rem;
 }
-.scopri::after {
-  content: "";
-  display: inline-block;
-  width: 60px;
-  height: 1px;
-  background: var(--ink);
-  position: relative;
-}
 .scopri .diamond {
   display: inline-block;
   width: 6px;
   height: 6px;
   background: var(--ink);
   transform: rotate(45deg);
-  margin-left: -8px;
 }
 .scopri:hover {
   opacity: 0.6;
