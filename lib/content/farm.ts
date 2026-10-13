@@ -32,8 +32,7 @@ export const farm: Record<Locale, FarmContent> = {
     heroEyebrow: "The Farm",
     statementTitle: "A working organic farm in Puglia, 210 hectares in the Alta Murgia",
     statementBody: [
-      "Lama di Luna is first an organic farm and only then a place to stay: a historic masseria in Puglia, built around the 1830s and surrounded by 210 hectares (518 acres) of olive groves, almond groves, vineyards and cherry orchards in the Alta Murgia. Every hectare is organically cultivated and certified by AIAB-ICEA, Italy's organic-agriculture body, since 1995.",
-      "Nothing here is decorative. The extra virgin olive oil on your bread, the almonds at breakfast, the wine at dinner and the soap in your room are all made from what grows outside the window. It is farm to table in the truest sense: ingredients grown, harvested and cooked on the same estate.",
+      "Lama di Luna is first a farm and only then a place to stay. Around the masseria, built around the 1830s, lie 210 hectares (518 acres) of olive groves, almond groves, vineyards and cherry orchards — all organically cultivated and certified by AIAB-ICEA, Italy's organic-agriculture body, since 1995. Nothing here is decorative. The oil on your bread, the almonds at breakfast, the wine at dinner and the soap in your room are all made from what grows outside the window.",
     ],
     oliveLabel: "The Farm",
     olive: {
@@ -90,8 +89,7 @@ export const farm: Record<Locale, FarmContent> = {
     heroEyebrow: "La Fattoria",
     statementTitle: "Un'azienda agricola biologica in Puglia, 210 ettari nell'Alta Murgia",
     statementBody: [
-      "Lama di Luna è prima di tutto un'azienda agricola biologica, e solo poi un luogo dove soggiornare: una storica masseria in Puglia, costruita intorno al 1830 e circondata da 210 ettari di uliveti, mandorleti, vigneti e ciliegeti nell'Alta Murgia. Ogni ettaro è coltivato in biologico e certificato AIAB-ICEA, l'ente italiano dell'agricoltura biologica, dal 1995.",
-      "Qui nulla è decorativo. L'olio extravergine d'oliva sul pane, le mandorle a colazione, il vino a cena e il sapone nella tua camera sono tutti fatti con ciò che cresce fuori dalla finestra. È farm to table nel senso più vero: ingredienti coltivati, raccolti e cucinati nella stessa tenuta.",
+      "Lama di Luna è prima di tutto una fattoria, e solo poi un luogo dove soggiornare. Attorno alla masseria, costruita intorno al 1830, si estendono 210 ettari di uliveti, mandorleti, vigneti e ciliegeti — tutti coltivati in biologico e certificati AIAB-ICEA, l'ente italiano dell'agricoltura biologica, dal 1995. Qui nulla è decorativo. L'olio sul pane, le mandorle a colazione, il vino a cena e il sapone nella tua camera sono tutti fatti con ciò che cresce fuori dalla finestra.",
     ],
     oliveLabel: "La Fattoria",
     olive: {
