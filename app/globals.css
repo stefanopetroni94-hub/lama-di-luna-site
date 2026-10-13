@@ -2021,6 +2021,30 @@ footer {
 .story-chapter--text-left .text-block {
   margin-left: auto;
 }
+.story-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.story-split-img {
+  aspect-ratio: 4 / 3;
+  background-size: cover;
+  background-position: center;
+}
+.story-wide {
+  padding: 4rem 0;
+}
+.story-wide .statement-body {
+  margin-top: 0;
+  max-width: none;
+}
+@media (max-width: 700px) {
+  .story-split-img {
+    aspect-ratio: 4 / 5;
+  }
+  .story-wide {
+    padding: 2.5rem 0;
+  }
+}
 @media (max-width: 700px) {
   .statement.statement--story {
     padding-bottom: 2.5rem;
