@@ -361,6 +361,10 @@ section {
   font-weight: 500;
 }
 
+.hero--home ~ section .curved-label-text {
+  letter-spacing: 6px;
+}
+
 /* ---------------- 3-UP ROOMS ---------------- */
 .rooms-grid {
   display: grid;
