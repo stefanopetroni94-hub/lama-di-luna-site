@@ -41,7 +41,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
           </div>
           <div
             className="image-block"
-            style={{ backgroundImage: `url('${c.olive.img}')` }}
+            style={{ backgroundImage: `url('${c.olive.img}')`, backgroundPosition: "30% center" }}
           />
         </div>
       </section>
@@ -64,13 +64,6 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
             ))}
           </div>
         </div>
-      </section>
-
-      <section>
-        <div
-          className="full-photo"
-          style={{ backgroundImage: `url('${c.fullPhoto}')`, backgroundPosition: "center 75%" }}
-        />
       </section>
 
       <section className="booking-callout">
