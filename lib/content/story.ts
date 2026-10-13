@@ -32,8 +32,9 @@ const IMG = {
   building:
     "https://res.cloudinary.com/amenitiz/image/upload/w_1400,q_auto:best,f_auto,c_fill/v1679928582/brqp64y9q5oogzmppcja.jpg",
   land: "https://res.cloudinary.com/amenitiz/image/upload/w_1400,q_auto:best,f_auto,c_fill/v1748365479/bao85el3tzzrazwmnjtl.jpg",
-  grove: "/farm-olive-grove.png",
-  wild: "/whatsapp/20261013_154515_1100237206085509.jpg",
+  courtyard: "/whatsapp/20261013_162433_1766568141296624.jpg",
+  flock: "/whatsapp/20261013_162445_1814217646270240.jpg",
+  works: "/whatsapp/20261013_162422_4806362202929241.jpg",
   full: "https://res.cloudinary.com/amenitiz/image/upload/w_2400,q_auto:best,f_auto,c_fill/v1679928587/vt7xxd7g2xxn5sqk3mkt.jpg",
 }
 
@@ -65,7 +66,7 @@ export const story: Record<Locale, StoryContent> = {
           "The forty chimneys on the roofs give the measure of the community that gave life to the masseria. Before dawn the common areas were tidied, and everything had to be in place at sunrise, when the work in the fields began.",
           "The settlers, whose contract did not include a house, built their own shelter from the stones cleared from the fields: the casedd, the trulli of Andria, where they stayed with their donkey, useful in the fields and also for keeping the casedd warm.",
         ],
-        img: IMG.land,
+        img: IMG.courtyard,
       },
       {
         eyebrow: "1800s to 1950s",
@@ -74,7 +75,7 @@ export const story: Record<Locale, StoryContent> = {
           "At the end of the 19th century a serious wine crisis forced the Baron to sell the masseria, with around 190 hectares, to Mr De Bartolo. When phylloxera spread through the vineyards, he converted the fields to almond and olive groves, which they remained until the 1950s.",
           "After the war, Dr Palasciano took over the masseria and rented it to the shepherds of Coratini and their flocks. It was the beginning of a long decline, both inside the walls and in the fields.",
         ],
-        img: IMG.grove,
+        img: IMG.flock,
       },
       {
         eyebrow: "1991",
@@ -83,7 +84,7 @@ export const story: Record<Locale, StoryContent> = {
           "In 1991, in love with the place and the landscape of this beautiful farmhouse, we bought the masseria. Freed from flocks and shepherds, we began a long restoration, within the walls and in the fields. Ten thousand olive trees, ten thousand vines, two thousand almond trees, one thousand cherry trees, an artesian well 535 metres deep and plantings of cereals and vegetables marked the agricultural rebirth, in the utmost respect for nature. We left the other hundred hectares to the natural landscape, for the sheep to graze.",
           "A karst cave and dozens of partly restored casedd stand in a Murgia now free of cultivation but rich in wild plants: wild orchids, fennel, ferula, thyme. They accompany our guests on unforgettable walks. With a new stable and new farm buildings we freed the masseria and in 2000 began a restoration that ended in 2003, so that guests from all over the world could live again the atmosphere and the magic of the past.",
         ],
-        img: IMG.wild,
+        img: IMG.works,
       },
     ],
     pietroLabel: "Pietro Petroni",
@@ -163,7 +164,7 @@ export const story: Record<Locale, StoryContent> = {
           "I quaranta camini sui tetti ci danno la misura della comunità che ha dato vita alla masseria. Prima dell'alba si riordinavano gli spazi comuni, e tutto doveva essere a posto al sorgere del sole, quando iniziava il lavoro nei campi.",
           "I coloni, il cui contratto non prevedeva una casa, si costruivano da soli un riparo con le pietre tolte dai campi: le casedd, i trulli di Andria, dove stavano con il loro asino, utile nei campi e anche per tenere calde le casedd.",
         ],
-        img: IMG.land,
+        img: IMG.courtyard,
       },
       {
         eyebrow: "Dall'Ottocento agli anni Cinquanta",
@@ -172,7 +173,7 @@ export const story: Record<Locale, StoryContent> = {
           "Alla fine dell'Ottocento una grave crisi del vino costrinse il Barone a vendere la masseria, con circa 190 ettari, al signor De Bartolo. Con la diffusione della fillossera nei vigneti, egli riconvertì i campi in mandorleti e uliveti, che rimasero tali fino agli anni Cinquanta.",
           "Dopo la guerra la masseria passò al dottor Palasciano, che l'affittò ai pastori di Coratini e ai loro greggi. Fu l'inizio di un lungo declino, sia dentro le mura sia nei campi.",
         ],
-        img: IMG.grove,
+        img: IMG.flock,
       },
       {
         eyebrow: "1991",
@@ -181,7 +182,7 @@ export const story: Record<Locale, StoryContent> = {
           "Nel 1991, innamorati del luogo e del paesaggio di questa bellissima masseria, l'abbiamo acquistata. Liberata da greggi e pastori, abbiamo avviato un lungo restauro, dentro le mura e nei campi. Diecimila ulivi, diecimila viti, duemila mandorli, mille ciliegi, un pozzo artesiano profondo 535 metri e coltivazioni di cereali e ortaggi hanno segnato la rinascita agricola, nel massimo rispetto della natura. Gli altri cento ettari li abbiamo lasciati al paesaggio naturale, per far pascolare le pecore.",
           "Una grotta carsica e decine di casedd in parte restaurate sorgono in una Murgia ormai libera dalle coltivazioni ma ricca di essenze selvatiche: orchidee selvatiche, finocchio, ferule, timo. Accompagnano i nostri ospiti in passeggiate indimenticabili. Con una nuova stalla e nuovi magazzini agricoli abbiamo liberato la masseria e nel 2000 abbiamo iniziato un restauro terminato nel 2003, per offrire agli ospiti di tutto il mondo la possibilità di rivivere l'atmosfera e la magia del passato.",
         ],
-        img: IMG.wild,
+        img: IMG.works,
       },
     ],
     pietroLabel: "Pietro Petroni",
