@@ -32,16 +32,16 @@ export const farm: Record<Locale, FarmContent> = {
     heroEyebrow: "The Farm",
     statementTitle: "A working organic estate of 210 hectares, farmed the same way for thirty years",
     statementBody: [
-      "Lama di Luna is first a farm and only then a place to stay. Around the 1830 masseria lie 210 hectares (518 acres) of olive groves, almond groves, vineyards and cherry orchards — all organically cultivated and certified by AIAB-ICEA, Italy's organic-agriculture body, since 1995.",
+      "Lama di Luna is first a farm and only then a place to stay. Around the masseria, built around the 1830s, lie 210 hectares (518 acres) of olive groves, almond groves, vineyards and cherry orchards — all organically cultivated and certified by AIAB-ICEA, Italy's organic-agriculture body, since 1995.",
       "Nothing here is decorative. The oil on your bread, the almonds at breakfast, the wine at dinner and the soap in your room are all made from what grows outside the window.",
     ],
-    oliveLabel: "The Groves",
+    oliveLabel: "The Farm",
     olive: {
       eyebrow: "Coratina olives",
-      title: "Oil pressed cold, once a year",
+      title: "Built over 35 years, planted year after year",
       body: [
-        "The estate's ancient Coratina olive trees are harvested by hand each autumn and cold-pressed within hours, in November, to protect the polyphenols that give the oil its green, peppery bite. It is a single-estate extra virgin — pressed, bottled and never blended.",
-        "The almond harvest follows at the end of August; the vineyards are worked by hand and the wine is still made on these grounds. Everything moves with the season, not against it.",
+        "When we arrived at Lama di Luna in 1991, everything was abandoned. Building this farm took us over 35 years, planting year after year olive trees, almonds, vineyards and oaks: everything you see at Lama di Luna has been planted.",
+        "At the same time, we have preserved a part of the farm that borders the Alta Murgia National Park, to protect the biodiversity, the fauna and the animal species of the masseria.",
       ],
       img: IMG.olive,
     },
@@ -90,16 +90,16 @@ export const farm: Record<Locale, FarmContent> = {
     heroEyebrow: "La Fattoria",
     statementTitle: "Una tenuta biologica di 210 ettari, coltivata allo stesso modo da trent'anni",
     statementBody: [
-      "Lama di Luna è prima di tutto una fattoria, e solo poi un luogo dove soggiornare. Attorno alla masseria del 1830 si estendono 210 ettari di uliveti, mandorleti, vigneti e ciliegeti — tutti coltivati in biologico e certificati AIAB-ICEA, l'ente italiano dell'agricoltura biologica, dal 1995.",
+      "Lama di Luna è prima di tutto una fattoria, e solo poi un luogo dove soggiornare. Attorno alla masseria, costruita intorno al 1830, si estendono 210 ettari di uliveti, mandorleti, vigneti e ciliegeti — tutti coltivati in biologico e certificati AIAB-ICEA, l'ente italiano dell'agricoltura biologica, dal 1995.",
       "Qui nulla è decorativo. L'olio sul pane, le mandorle a colazione, il vino a cena e il sapone nella tua camera sono tutti fatti con ciò che cresce fuori dalla finestra.",
     ],
-    oliveLabel: "Gli Uliveti",
+    oliveLabel: "La Fattoria",
     olive: {
       eyebrow: "Olive Coratina",
-      title: "Olio spremuto a freddo, una volta l'anno",
+      title: "Costruita in oltre 35 anni, piantando anno dopo anno",
       body: [
-        "Gli antichi ulivi di Coratina della tenuta si raccolgono a mano ogni autunno e si spremono a freddo entro poche ore, a novembre, per proteggere i polifenoli che danno all'olio il suo gusto verde e piccante. È un extravergine di singola tenuta — spremuto, imbottigliato e mai miscelato.",
-        "La raccolta delle mandorle segue a fine agosto; i vigneti si lavorano a mano e il vino si fa ancora in questa terra. Tutto si muove con la stagione, non contro di essa.",
+        "Quando siamo arrivati a Lama di Luna nel 1991 era tutto abbandonato. Costruire questa azienda agricola ci ha richiesto oltre 35 anni, piantando anno dopo anno ulivi, mandorli, vigneti e querce: tutto ciò che vedi a Lama di Luna è stato piantato.",
+        "Allo stesso tempo abbiamo preservato una parte dell'azienda agricola che costeggia il Parco Nazionale dell'Alta Murgia, per proteggere la biodiversità, la fauna e le specie animali della masseria.",
       ],
       img: IMG.olive,
     },
