@@ -40,7 +40,7 @@ export const farm: Record<Locale, FarmContent> = {
       title: "Planted year after year, for over 35 years",
       body: [
         "The Petroni family has been a family of farmers for several generations, olive growers and winegrowers. When we arrived at Lama di Luna in 1991, the land was barren and abandoned. Over more than 35 years we have planted, year after year, olive trees, almond trees, vines and oaks. Every plant at Lama di Luna was planted by us, to rebuild the territory and, at the same time, to create high-quality products.",
-        "We have also preserved a part of the farm that borders the Alta Murgia National Park, to protect the biodiversity, the fauna and the animal species of the masseria. A sustainable organic farm in Puglia, where agriculture and nature live side by side.",
+        "We have also preserved a part of the farm that borders the Alta Murgia National Park, to protect all the biodiversity, the fauna and the animal species of our area. Our farm is a mix of organic cultivation and wild nature, which will always find a home at Lama di Luna and will always be welcome.",
       ],
       img: IMG.olive,
     },
@@ -97,7 +97,7 @@ export const farm: Record<Locale, FarmContent> = {
       title: "Piantata anno dopo anno, per oltre 35 anni",
       body: [
         "La famiglia Petroni è una famiglia di agricoltori da diverse generazioni, olivicoltori e viticoltori. Quando siamo arrivati a Lama di Luna nel 1991, la terra era brulla e abbandonata. In oltre 35 anni abbiamo piantato, anno dopo anno, ulivi, mandorli, viti e querce. Ogni pianta di Lama di Luna è stata piantata da noi, per ricostituire il territorio e, allo stesso tempo, creare prodotti di alta qualità.",
-        "Abbiamo inoltre preservato una parte dell'azienda agricola che costeggia il Parco Nazionale dell'Alta Murgia, per proteggere la biodiversità, la fauna e le specie animali della masseria. Un'azienda agricola biologica e sostenibile in Puglia, dove agricoltura e natura vivono fianco a fianco.",
+        "Abbiamo inoltre preservato una parte dell'azienda agricola che costeggia il Parco Nazionale dell'Alta Murgia, per proteggere tutta la biodiversità, la fauna e le specie animali della nostra zona. La nostra azienda agricola è un mix tra coltivazioni biologiche e natura selvaggia, che a Lama di Luna troverà sempre una casa e sarà sempre la benvenuta.",
       ],
       img: IMG.olive,
     },
