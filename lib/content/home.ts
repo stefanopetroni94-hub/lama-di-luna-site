@@ -89,7 +89,7 @@ export const home: Record<Locale, HomeContent> = {
     mapCta: "How to reach us",
     newsletterText: "Subscribe to our newsletter to stay close to the masseria.",
     newsletterPlaceholder: "Email address",
-    newsletterButton: "Subscribe",
+    newsletterButton: "Subscribe to our newsletter",
     newsletterConsent: "I accept the terms & conditions and the privacy policy",
   },
   it: {
@@ -143,7 +143,7 @@ export const home: Record<Locale, HomeContent> = {
     mapCta: "Come raggiungerci",
     newsletterText: "Iscriviti alla nostra newsletter per restare vicino alla masseria.",
     newsletterPlaceholder: "Indirizzo email",
-    newsletterButton: "Iscriviti",
+    newsletterButton: "Iscriviti alla newsletter",
     newsletterConsent: "Accetto i termini e le condizioni e la privacy policy",
   },
 }

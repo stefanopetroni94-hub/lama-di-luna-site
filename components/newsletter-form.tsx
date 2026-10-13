@@ -3,13 +3,11 @@
 import { useState } from "react"
 
 export function NewsletterForm({
-  text,
   namePlaceholder,
   placeholder,
   button,
   consent,
 }: {
-  text: string
   namePlaceholder: string
   placeholder: string
   button: string
@@ -19,7 +17,6 @@ export function NewsletterForm({
 
   return (
     <section className="newsletter">
-      <h2 className="newsletter-title">{text}</h2>
       <form
         className="newsletter-form"
         onSubmit={(e) => {

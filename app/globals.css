@@ -1420,7 +1420,8 @@ section.press:nth-of-type(14) > div.press-row > a.press-link.press-pair:nth-of-t
   text-transform: uppercase;
   color: var(--bg);
   cursor: pointer;
-  padding: 0.95rem 2.4rem;
+  padding: 1.1rem 2.8rem;
+  border-radius: 999px;
   transition: opacity 0.2s;
 }
 .newsletter-form button:hover {
