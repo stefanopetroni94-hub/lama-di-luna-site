@@ -28,14 +28,6 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
               <p key={i}>{p}</p>
             ))}
           </div>
-          <div className="facts facts--row">
-            {c.facts.map((f) => (
-              <div key={f.label}>
-                <div className="fact-label">{f.label}</div>
-                <div className="fact-value">{f.value}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
