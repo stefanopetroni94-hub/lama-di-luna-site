@@ -1769,7 +1769,18 @@ footer {
 }
 .statement-grid--stacked {
   grid-template-columns: 1fr;
-  gap: 2.5rem;
+  gap: 4rem;
+}
+.statement.statement--flush {
+  padding: 0;
+}
+.statement--flush + .restaurant-media {
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+.photo-split + section .text-image {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .statement-grid--stacked .statement-body {
   max-width: none;

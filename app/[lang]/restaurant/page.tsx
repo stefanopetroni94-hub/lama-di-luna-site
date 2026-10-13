@@ -21,7 +21,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         <p>{c.statementTitle}</p>
       </section>
 
-      <section className="statement">
+      <section className="statement statement--flush">
         <div className="statement-grid statement-grid--stacked">
           <div className="statement-body">
             {c.statementBody.map((p, i) => (
