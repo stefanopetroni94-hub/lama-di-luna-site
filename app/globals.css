@@ -1991,15 +1991,15 @@ footer {
 }
 
 .booking-callout.booking-callout--plain {
-  background: var(--ink);
-  color: var(--bg);
-  padding: 5rem 2.5rem;
+  background: transparent;
+  color: var(--ink);
+  padding: 0 2.5rem 5rem;
 }
 .booking-callout--plain::before {
   display: none;
 }
 .booking-callout--plain .qs-card {
-  background: #3f0f1c;
+  background: var(--ink);
   border-color: rgba(250, 248, 242, 0.25);
 }
 .booking-callout--plain .qs-field {
