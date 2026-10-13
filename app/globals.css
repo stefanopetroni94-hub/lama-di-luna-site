@@ -93,8 +93,8 @@ a {
 .brand-mark {
   display: block;
   margin: 0 auto;
-  width: 117px;
-  height: 110px;
+  width: 176px;
+  height: 165px;
   background-color: currentColor;
   -webkit-mask: url("/logo-lama-di-luna.svg") center / contain no-repeat;
   mask: url("/logo-lama-di-luna.svg") center / contain no-repeat;
@@ -2964,8 +2964,8 @@ footer {
     height: 74px;
   }
 .brand-mark {
-  width: 96px;
-  height: 90px;
+  width: 144px;
+  height: 135px;
   }
   .statement {
     padding: 9vh 0 9vh;
