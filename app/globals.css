@@ -1781,6 +1781,10 @@ footer {
   margin-top: 4rem;
   margin-bottom: 0;
 }
+.text-image--flush .text-block,
+.photo-split + section .text-image .text-block {
+  margin-left: auto;
+}
 .photo-split + section .text-image {
   padding-top: 0;
   padding-bottom: 4rem;
