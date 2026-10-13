@@ -322,6 +322,7 @@ section {
 .statement-body {
   max-width: 1300px;
   margin-top: 3rem;
+  font-family: "Times New Roman", Times, serif;
   font-size: 17px;
   line-height: 1.95;
   color: var(--ink);
