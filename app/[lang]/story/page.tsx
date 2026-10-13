@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { CurvedLabel } from "@/components/curved-label"
 import Link from "next/link"
 import { chrome, isLocale } from "@/lib/i18n"
-import { story, YOUTUBE_ID } from "@/lib/content/story"
+import { story } from "@/lib/content/story"
 
 export default async function StoryPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -71,14 +71,15 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
 
       <section className="founder">
         <div className="founder-grid">
-          <div className="founder-video">
-            <iframe
-              src={`https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_ID}&controls=0&modestbranding=1&rel=0&showinfo=0&playsinline=1&disablekb=1&iv_load_policy=3&start=20`}
-              title="Pietro Petroni — Lama di Luna"
-              allow="autoplay; encrypted-media"
-            />
-            <div className="placeholder-note">{c.pietroNote}</div>
-          </div>
+          <div
+            className="founder-video"
+            role="img"
+            aria-label="Pietro Petroni — Lama di Luna"
+            style={{
+              backgroundImage: "url('/whatsapp/20261013_162342_4238858946413403.jpg')",
+              backgroundPosition: "center 30%",
+            }}
+          />
           <div className="founder-text">
             <div className="script-eyebrow">{c.pietroEyebrow}</div>
             <h2>{c.pietroTitle}</h2>
