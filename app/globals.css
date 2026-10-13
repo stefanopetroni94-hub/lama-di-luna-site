@@ -1990,6 +1990,17 @@ footer {
   margin-bottom: 2.5rem;
 }
 
+/* farm: same rhythm as the restaurant page */
+.farm-section .text-image {
+  padding-top: 0;
+  padding-bottom: 4rem;
+}
+.farm-section--first .text-image {
+  padding-bottom: 0;
+}
+.farm-section--first .text-block {
+  margin-left: auto;
+}
 .book-stay {
   text-align: center;
   padding: 4rem 2.5rem;

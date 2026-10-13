@@ -32,7 +32,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
-      <section>
+      <section className="farm-section farm-section--first">
         <CurvedLabel text={c.oliveLabel} />
         <div className="text-image">
           <div className="text-block">
@@ -46,7 +46,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
-      <section>
+      <section className="farm-section">
         <CurvedLabel text={c.organicLabel} />
         <div className="text-image reverse">
           <div className="image-block" style={{ backgroundImage: `url('${c.organic.img}')` }} />
