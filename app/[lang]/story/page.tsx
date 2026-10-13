@@ -32,32 +32,36 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
         </div>
       </section>
 
-      <section>
-        <CurvedLabel text={c.buildingLabel} />
-        <div className="text-image">
+      {c.chapters.map((ch, n) => {
+        const image = <div className="image-block" style={{ backgroundImage: `url('${ch.img}')` }} />
+        const text = (
           <div className="text-block">
-            <div className="script-eyebrow">{c.building.eyebrow}</div>
-            <h2>{c.building.title}</h2>
-            {c.building.body.map((p, i) => (
+            <div className="script-eyebrow">{ch.eyebrow}</div>
+            <h2>{ch.title}</h2>
+            {ch.body.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
           </div>
-          <div className="image-block" style={{ backgroundImage: `url('${c.building.img}')` }} />
-        </div>
-      </section>
-
-      <section>
-        <div className="text-image">
-          <div className="image-block" style={{ backgroundImage: `url('${c.land.img}')` }} />
-          <div className="text-block">
-            <div className="script-eyebrow">{c.land.eyebrow}</div>
-            <h2>{c.land.title}</h2>
-            {c.land.body.map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
-          </div>
-        </div>
-      </section>
+        )
+        return (
+          <section key={ch.title}>
+            {n === 0 && <CurvedLabel text={c.buildingLabel} />}
+            <div className="text-image">
+              {n % 2 === 0 ? (
+                <>
+                  {text}
+                  {image}
+                </>
+              ) : (
+                <>
+                  {image}
+                  {text}
+                </>
+              )}
+            </div>
+          </section>
+        )
+      })}
 
       <section>
         <CurvedLabel text={c.pietroLabel} />
