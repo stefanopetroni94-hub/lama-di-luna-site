@@ -1,11 +1,9 @@
+import Link from "next/link"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { CurvedLabel } from "@/components/curved-label"
 import { isLocale } from "@/lib/i18n"
 import { restaurant } from "@/lib/content/restaurant"
-import { QuickSearch } from "@/components/quick-search"
-import { book } from "@/lib/content/book"
 
 export default async function RestaurantPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -66,8 +64,10 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         </div>
       </section>
 
-      <section>
-        <CurvedLabel text={c.curvedLabel} />
+      <section className="book-stay">
+        <Link href={`/${lang}/book`} className="book-stay-btn">
+          {c.bookingEyebrow}
+        </Link>
       </section>
 
       <section className="photo-split">
@@ -86,12 +86,6 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
             ))}
           </div>
           <div className="image-block" style={{ backgroundImage: `url('${c.sourcingImg}')` }} />
-        </div>
-      </section>
-
-      <section className="booking-callout booking-callout--plain">
-        <div className="quick-search" style={{ marginBottom: 0 }}>
-          <QuickSearch labels={book[lang]} />
         </div>
       </section>
 
