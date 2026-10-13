@@ -21,7 +21,7 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
         <div className="hero-scroll">{t.scroll}</div>
       </section>
 
-      <section className="statement">
+      <section className="statement statement--story">
         <div className="statement-inner">
           <h1>{c.statementTitle}</h1>
           <div className="statement-body">
@@ -44,8 +44,10 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
           </div>
         )
         return (
-          <section key={ch.title}>
-            {n === 0 && <CurvedLabel text={c.buildingLabel} />}
+          <section
+            key={ch.title}
+            className={`story-chapter${n === c.chapters.length - 1 ? " story-chapter--last" : ""}`}
+          >
             <div className="text-image">
               {n % 2 === 0 ? (
                 <>

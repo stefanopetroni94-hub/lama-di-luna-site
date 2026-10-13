@@ -1998,6 +1998,29 @@ footer {
   margin-bottom: 2.5rem;
 }
 
+/* story: same 4rem rhythm as the home page */
+.statement.statement--story {
+  padding-bottom: 4rem;
+}
+.story-chapter .text-image {
+  padding-top: 0;
+  padding-bottom: 4rem;
+}
+.story-chapter--last .text-image {
+  padding-bottom: 0;
+}
+@media (max-width: 700px) {
+  .statement.statement--story {
+    padding-bottom: 2.5rem;
+  }
+  .story-chapter .text-image {
+    padding-bottom: 2.5rem;
+  }
+  .story-chapter--last .text-image {
+    padding-bottom: 0;
+  }
+}
+
 /* farm: same rhythm as the restaurant page */
 .farm-section .text-image {
   padding-top: 0;
