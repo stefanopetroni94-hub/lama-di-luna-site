@@ -13,19 +13,11 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
 
   return (
     <>
-      <SiteNav locale={lang} variant="overlay" />
+      <SiteNav locale={lang} variant="solid" />
 
-      <section className="exp-hero">
-        <div className="exp-counter">{c.counter}</div>
-        <div className="exp-breadcrumb">
-          <Link href={`/${lang}`}>{c.breadcrumbRoot}</Link>
-          <span style={{ opacity: 0.55 }}>/</span>
-          <span>{c.breadcrumbCurrent}</span>
-        </div>
-        <div className="exp-hero-title">
-          <div className="exp-hero-eyebrow">{c.heroEyebrow}</div>
-          <h1>{c.title}</h1>
-        </div>
+      <section className="page-header">
+        <div className="eyebrow">{c.heroEyebrow}</div>
+        <h1>{c.title}</h1>
       </section>
 
       <section className="statement">
