@@ -2006,6 +2006,9 @@ footer {
   padding-top: 0;
   padding-bottom: 4rem;
 }
+.story-chapter--text-left .text-block {
+  margin-left: auto;
+}
 @media (max-width: 700px) {
   .statement.statement--story {
     padding-bottom: 2.5rem;

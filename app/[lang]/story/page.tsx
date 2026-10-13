@@ -45,7 +45,7 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
         return (
           <section
             key={ch.title}
-            className={`story-chapter${n === c.chapters.length - 1 ? " story-chapter--last" : ""}`}
+            className={`story-chapter${n % 2 === 0 ? " story-chapter--text-left" : ""}`}
           >
             <div className="text-image">
               {n % 2 === 0 ? (
