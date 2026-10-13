@@ -66,25 +66,11 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
-      <section className="details">
-        <div className="details-header">
-          <div className="script-eyebrow">{c.principlesEyebrow}</div>
-          <h2>{c.principlesTitle}</h2>
-        </div>
-        <div className="details-grid">
-          {c.principles.map((d) => (
-            <div className="detail-item" key={d.title}>
-              <div className="detail-body">
-                <h3>{d.title}</h3>
-                <p>{d.body}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section>
-        <div className="full-photo" style={{ backgroundImage: `url('${c.fullPhoto}')` }} />
+        <div
+          className="full-photo"
+          style={{ backgroundImage: `url('${c.fullPhoto}')`, backgroundPosition: "center 75%" }}
+        />
       </section>
 
       <section className="booking-callout">
