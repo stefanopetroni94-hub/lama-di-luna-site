@@ -22,15 +22,13 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
       </section>
 
       <section className="statement">
-        <div className="statement-grid">
-          <div>
-            <div className="statement-body" style={{ marginTop: 0 }}>
-              {c.statementBody.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
+        <div className="statement-grid statement-grid--stacked">
+          <div className="statement-body">
+            {c.statementBody.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
           </div>
-          <div className="facts">
+          <div className="facts facts--row">
             {c.facts.map((f) => (
               <div key={f.label}>
                 <div className="fact-label">{f.label}</div>

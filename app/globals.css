@@ -1715,6 +1715,22 @@ footer {
   border-bottom: 1px solid var(--line);
   background: var(--bg-alt);
 }
+.statement-grid--stacked {
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+.statement-grid--stacked .statement-body {
+  max-width: none;
+  margin-top: 0;
+}
+.facts--row {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 900px) {
+  .facts--row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .fact-label {
   font-family: var(--serif);
   font-size: 10.5px;
