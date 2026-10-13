@@ -200,9 +200,9 @@ a {
 }
 .hero--farm {
   min-height: 640px;
-  background-image: url("/whatsapp/20261013_154528_1242395578095023.jpg");
+  background-image: url("/whatsapp/20261013_155343_1810295796774381.jpg");
   background-size: cover;
-  background-position: center 75%;
+  background-position: center 8%;
 }
 .hero--farm::after {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.32) 100%);
