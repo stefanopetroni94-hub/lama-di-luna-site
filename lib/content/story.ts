@@ -89,7 +89,8 @@ export const story: Record<Locale, StoryContent> = {
         eyebrow: "2003",
         title: "Restored with respect",
         body: [
-          "The restoration ended in 2003, and every choice was made with respect for the building. The walls are coloured with the same red and yellow earth of the surrounding fields, mixed by hand and brushed onto plaster, never painted. Every bed faces north, and corners are softened and rounded, because in nature everything is round and part of the whole. The forty chimneys and the scattered trulli still tell the story of the generations who worked here. The masseria lives on its own energy, with 48 solar panels for hot water and heating and 400 photovoltaic panels for electricity. Bath products are olive oil soaps pressed on the estate, linens are raw cotton and basins are terracotta fired locally: the materials of the building are also the materials of the stay.",
+          "The restoration ended in 2003, and every choice was made with respect for the building. The walls are coloured with the same red and yellow earth of the surrounding fields, mixed by hand and brushed onto plaster, never painted. Every bed faces north, and corners are softened and rounded, because in nature everything is round and part of the whole. The forty chimneys and the scattered trulli still tell the story of the generations who worked here.",
+          "The masseria lives on its own energy, with 48 solar panels for hot water and heating and 400 photovoltaic panels for electricity. Bath products are olive oil soaps pressed on the estate, linens are raw cotton and basins are terracotta fired locally: the materials of the building are also the materials of the stay.",
         ],
         img: IMG.land,
       },
@@ -194,7 +195,8 @@ export const story: Record<Locale, StoryContent> = {
         eyebrow: "2003",
         title: "Restaurata con rispetto",
         body: [
-          "Il restauro è terminato nel 2003, e ogni scelta è stata fatta nel rispetto dell'edificio. Le pareti sono colorate con la stessa terra rossa e gialla dei campi circostanti, mescolata a mano e stesa sull'intonaco, mai dipinta. Ogni letto è rivolto a nord, e gli angoli sono smussati e arrotondati, perché in natura tutto è rotondo e parte del tutto. I quaranta camini e i trulli sparsi raccontano ancora la storia delle generazioni che hanno lavorato qui. La masseria vive della propria energia, con 48 pannelli solari per acqua calda e riscaldamento e 400 pannelli fotovoltaici per l'elettricità. I prodotti da bagno sono saponi all'olio d'oliva pressati in tenuta, le lenzuola sono di cotone grezzo e i lavabi di terracotta cotta localmente: i materiali dell'edificio sono anche i materiali del soggiorno.",
+          "Il restauro è terminato nel 2003, e ogni scelta è stata fatta nel rispetto dell'edificio. Le pareti sono colorate con la stessa terra rossa e gialla dei campi circostanti, mescolata a mano e stesa sull'intonaco, mai dipinta. Ogni letto è rivolto a nord, e gli angoli sono smussati e arrotondati, perché in natura tutto è rotondo e parte del tutto. I quaranta camini e i trulli sparsi raccontano ancora la storia delle generazioni che hanno lavorato qui.",
+          "La masseria vive della propria energia, con 48 pannelli solari per acqua calda e riscaldamento e 400 pannelli fotovoltaici per l'elettricità. I prodotti da bagno sono saponi all'olio d'oliva pressati in tenuta, le lenzuola sono di cotone grezzo e i lavabi di terracotta cotta localmente: i materiali dell'edificio sono anche i materiali del soggiorno.",
         ],
         img: IMG.land,
       },
