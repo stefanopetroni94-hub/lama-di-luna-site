@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { CurvedLabel } from "@/components/curved-label"
 import Link from "next/link"
 import { chrome, isLocale } from "@/lib/i18n"
 import { story } from "@/lib/content/story"
@@ -64,10 +63,6 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
           </section>
         )
       })}
-
-      <section>
-        <CurvedLabel text={c.pietroLabel} />
-      </section>
 
       <section className="founder">
         <div className="founder-grid">

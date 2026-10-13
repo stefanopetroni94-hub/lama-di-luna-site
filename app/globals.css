@@ -2006,18 +2006,12 @@ footer {
   padding-top: 0;
   padding-bottom: 4rem;
 }
-.story-chapter--last .text-image {
-  padding-bottom: 0;
-}
 @media (max-width: 700px) {
   .statement.statement--story {
     padding-bottom: 2.5rem;
   }
   .story-chapter .text-image {
     padding-bottom: 2.5rem;
-  }
-  .story-chapter--last .text-image {
-    padding-bottom: 0;
   }
 }
 
