@@ -68,7 +68,6 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
 
       <section className="booking-callout">
         <div className="booking-callout-inner">
-          <div className="eyebrow">{c.calloutEyebrow}</div>
           <h2>{c.calloutTitle}</h2>
           <p>{c.calloutBody}</p>
           <Link href={`/${lang}/shop`} className="btn-primary btn-primary--pill">
