@@ -1779,7 +1779,7 @@ footer {
   margin-bottom: 0;
 }
 .photo-split + section .text-image {
-  padding-top: 4rem;
+  padding-top: 0;
   padding-bottom: 4rem;
 }
 .statement-grid--stacked .statement-body {
