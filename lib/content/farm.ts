@@ -22,7 +22,7 @@ export type FarmContent = {
 }
 
 const IMG = {
-  olive: "/whatsapp/20261013_154528_1242395578095023.jpg",
+  olive: "/farm-olive-grove.png",
   organic: "/whatsapp/20261013_154515_1100237206085509.jpg",
   full: "/pool-sunset.jpg",
 }
