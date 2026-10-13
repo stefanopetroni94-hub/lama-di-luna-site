@@ -857,16 +857,6 @@ section {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .restaurant-media-video {
-    visibility: hidden;
-  }
-  .restaurant-media-video-wrap {
-    background-position: center;
-    background-size: cover;
-  }
-}
-
 /* ---------------- RESTAURANT MENU COURSES ---------------- */
 .menu-course-section {
   max-width: 900px;
