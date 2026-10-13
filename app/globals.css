@@ -1653,6 +1653,12 @@ footer {
   background: var(--bg);
   transform: translateY(-1px);
 }
+.btn-primary.btn-primary--pill {
+  display: inline-block;
+  padding: 1.1rem 2.8rem;
+  border-radius: 999px;
+  font-weight: 400;
+}
 .btn-primary--ink {
   background: var(--ink);
   color: var(--bg);
