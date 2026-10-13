@@ -31,20 +31,20 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
-      <section className="farm-section farm-section--first">
-        <div className="text-image">
-          <div className="text-block">
-            <div className="room-name" style={{ marginBottom: "1rem" }}>
-              {c.oliveLabel}
-            </div>
+      <section className="farm-intro-section">
+        <div
+          className="full-photo"
+          style={{ backgroundImage: `url('${c.olive.img}')`, backgroundPosition: "30% 75%" }}
+        />
+        <div className="statement-inner farm-intro">
+          <div className="room-name" style={{ marginBottom: "1rem" }}>
+            {c.oliveLabel}
+          </div>
+          <div className="statement-body">
             {c.olive.body.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
           </div>
-          <div
-            className="image-block"
-            style={{ backgroundImage: `url('${c.olive.img}')`, backgroundPosition: "30% center" }}
-          />
         </div>
       </section>
 

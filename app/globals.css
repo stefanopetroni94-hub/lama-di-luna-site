@@ -2030,6 +2030,20 @@ footer {
   }
 }
 
+/* farm: full-width photo, then the family story across the whole page */
+.farm-intro {
+  padding-top: 4rem;
+}
+.farm-intro .statement-body {
+  margin-top: 0;
+  max-width: none;
+}
+@media (max-width: 700px) {
+  .farm-intro {
+    padding-top: 2.5rem;
+  }
+}
+
 /* farm: same rhythm as the restaurant page */
 .farm-section .text-image {
   padding-top: 0;
