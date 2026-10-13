@@ -16,7 +16,6 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
 
       <div className="shop-page">
         <section className="page-header">
-          <div className="eyebrow">{c.eyebrow}</div>
           <h1>{c.title}</h1>
           <p>{c.intro}</p>
         </section>

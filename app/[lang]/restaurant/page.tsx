@@ -17,7 +17,6 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
       <SiteNav locale={lang} variant="solid" />
 
       <section className="page-header">
-        <div className="eyebrow">{c.heroEyebrow}</div>
         <h1>{c.title}</h1>
         <p>{c.statementTitle}</p>
       </section>

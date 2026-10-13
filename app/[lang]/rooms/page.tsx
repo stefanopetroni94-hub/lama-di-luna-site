@@ -35,7 +35,6 @@ export default async function RoomsPage({ params }: { params: Promise<{ lang: st
 
       <div className="rooms-page">
         <section className="page-header">
-          <div className="eyebrow">{c.eyebrow}</div>
           <h1>{c.title}</h1>
           <p>{c.intro}</p>
         </section>

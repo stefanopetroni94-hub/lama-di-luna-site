@@ -17,7 +17,6 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
       <SiteNav locale={lang} variant="solid" />
 
       <section className="page-header">
-        <div className="eyebrow">{c.eyebrow}</div>
         <h1>{c.title}</h1>
         <p>{c.intro}</p>
       </section>
