@@ -50,7 +50,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
             {lang === "it" ? "Prenota il tuo soggiorno" : "Book your stay"}
           </Link>
         </div>
-        <div className="text-image reverse">
+        <div className="text-image">
           <div className="image-block" style={{ backgroundImage: `url('${c.organic.img}')` }} />
           <div className="text-block">
             <div className="script-eyebrow">{c.organicLabel}</div>
