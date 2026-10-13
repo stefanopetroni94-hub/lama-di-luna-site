@@ -349,7 +349,12 @@ section {
 .curved-label {
   position: relative;
   text-align: center;
-  padding: 3rem 0 3rem;
+  padding: 4rem 0;
+}
+@media (max-width: 700px) {
+  .curved-label {
+    padding: 2.5rem 0;
+  }
 }
 .curved-label-text {
   display: inline-block;
