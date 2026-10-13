@@ -80,7 +80,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
       <section>
         <div className="text-image">
           <div className="text-block">
-            <div className="script-eyebrow" style={{ marginBottom: "1rem" }}>
+            <div className="room-name" style={{ marginBottom: "1rem" }}>
               {c.sourcingEyebrow}
             </div>
             {c.sourcingBody.map((p, i) => (

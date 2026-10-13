@@ -35,7 +35,9 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
         const image = <div className="image-block" style={{ backgroundImage: `url('${ch.img}')` }} />
         const text = (
           <div className="text-block">
-            <div className="script-eyebrow">{ch.eyebrow}</div>
+            <div className="room-name" style={{ marginBottom: "1rem" }}>
+              {ch.eyebrow}
+            </div>
             <h2>{ch.title}</h2>
             {ch.body.map((p, i) => (
               <p key={i}>{p}</p>

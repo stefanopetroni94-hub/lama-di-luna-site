@@ -34,7 +34,9 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
       <section className="farm-section farm-section--first">
         <div className="text-image">
           <div className="text-block">
-            <div className="script-eyebrow">{c.oliveLabel}</div>
+            <div className="room-name" style={{ marginBottom: "1rem" }}>
+              {c.oliveLabel}
+            </div>
             {c.olive.body.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
@@ -58,7 +60,9 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
             style={{ backgroundImage: `url('${c.organic.img}')`, backgroundPosition: "65% center" }}
           />
           <div className="text-block">
-            <div className="script-eyebrow">{c.organicLabel}</div>
+            <div className="room-name" style={{ marginBottom: "1rem" }}>
+              {c.organicLabel}
+            </div>
             {c.organic.body.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
