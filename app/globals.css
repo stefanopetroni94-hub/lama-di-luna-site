@@ -340,9 +340,9 @@ section {
   padding-right: clamp(1.5rem, 9vw, 11rem);
 }
 .statement-inner {
-  max-width: 1300px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 0 2.5rem;
+  padding: 0 clamp(1.5rem, 9vw, 11rem);
 }
 
 /* ---------------- SECTION LABEL ---------------- */
@@ -1700,7 +1700,7 @@ footer {
   align-items: start;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 2.5rem;
+  padding: 0 clamp(1.5rem, 9vw, 11rem);
 }
 .statement-grid h2 {
   font-family: var(--serif);
