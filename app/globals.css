@@ -329,6 +329,12 @@ section {
 .statement-body p {
   margin-bottom: 1.2rem;
 }
+.statement--home {
+  padding-bottom: 11vh;
+}
+.statement--home .statement-body p:last-child {
+  margin-bottom: 0.3rem;
+}
 .statement--home .container {
   padding-left: clamp(1.5rem, 9vw, 11rem);
   padding-right: clamp(1.5rem, 9vw, 11rem);
