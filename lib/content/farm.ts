@@ -33,7 +33,6 @@ export const farm: Record<Locale, FarmContent> = {
     statementTitle: "A working organic farm in Puglia, 210 hectares in the Alta Murgia",
     statementBody: [
       "Lama di Luna is first a farm and only then a place to stay. Around the masseria, built around the 1830s, lie 210 hectares (518 acres) of olive groves, almond groves, vineyards and cherry orchards — all organically cultivated and certified by AIAB-ICEA, Italy's organic-agriculture body, since 1995. Nothing here is decorative. The oil on your bread, the almonds at breakfast, the wine at dinner and the soap in your room are all made from what grows outside the window.",
-      "Our extra virgin olive oil is single-estate and cold pressed within hours of the harvest, never blended with oil from elsewhere. The whole estate runs on its own energy, from the sun, and a part of the land is left wild along the Alta Murgia National Park, so that agriculture and nature live side by side.",
     ],
     oliveLabel: "The Farm",
     olive: {
@@ -42,6 +41,7 @@ export const farm: Record<Locale, FarmContent> = {
       body: [
         "When we arrived at Lama di Luna in 1991, the land was abandoned. Building this organic farm took over 35 years of planting, year after year: olive trees, almond trees, vineyards and oaks. Everything you see at Lama di Luna has been planted.",
         "At the same time, we have preserved a part of the farm that borders the Alta Murgia National Park, to protect the biodiversity, the fauna and the animal species of the masseria. A sustainable farm in Puglia, where agriculture and nature live side by side.",
+        "Our main work is agriculture. We come from generations of farmers, and we care deeply about the land and the territory.",
       ],
       img: IMG.olive,
     },
@@ -91,7 +91,6 @@ export const farm: Record<Locale, FarmContent> = {
     statementTitle: "Un'azienda agricola biologica in Puglia, 210 ettari nell'Alta Murgia",
     statementBody: [
       "Lama di Luna è prima di tutto una fattoria, e solo poi un luogo dove soggiornare. Attorno alla masseria, costruita intorno al 1830, si estendono 210 ettari di uliveti, mandorleti, vigneti e ciliegeti — tutti coltivati in biologico e certificati AIAB-ICEA, l'ente italiano dell'agricoltura biologica, dal 1995. Qui nulla è decorativo. L'olio sul pane, le mandorle a colazione, il vino a cena e il sapone nella tua camera sono tutti fatti con ciò che cresce fuori dalla finestra.",
-      "Il nostro olio extravergine d'oliva è di singola tenuta e spremuto a freddo entro poche ore dalla raccolta, mai miscelato con olio di altrove. L'intera tenuta vive della propria energia, quella del sole, e una parte della terra è lasciata selvaggia lungo il Parco Nazionale dell'Alta Murgia, perché agricoltura e natura vivano fianco a fianco.",
     ],
     oliveLabel: "La Fattoria",
     olive: {
@@ -100,6 +99,7 @@ export const farm: Record<Locale, FarmContent> = {
       body: [
         "Quando siamo arrivati a Lama di Luna nel 1991, la terra era abbandonata. Costruire questa azienda agricola biologica ha richiesto oltre 35 anni di lavoro, piantando anno dopo anno ulivi, mandorli, vigneti e querce. Tutto ciò che vedi a Lama di Luna è stato piantato.",
         "Allo stesso tempo abbiamo preservato una parte dell'azienda agricola che costeggia il Parco Nazionale dell'Alta Murgia, per proteggere la biodiversità, la fauna e le specie animali della masseria. Un'azienda agricola sostenibile in Puglia, dove agricoltura e natura vivono fianco a fianco.",
+        "Il nostro lavoro principale è l'agricoltura. Veniamo da generazioni di agricoltori e teniamo molto alla terra e al territorio.",
       ],
       img: IMG.olive,
     },
