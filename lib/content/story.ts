@@ -45,8 +45,7 @@ export const story: Record<Locale, StoryContent> = {
     heroEyebrow: "The Story",
     statementTitle: "An 18th-century masseria at the centre of 210 hectares of organic estate",
     statementBody: [
-      "Lama di Luna sits in the heart of the Alta Murgia National Park, in Contrada Lama di Luna near Andria. Its name means Valley of the Moon — lama for valley, luna for moon and fertility. The masseria grew over two centuries, from the late 1700s to the late 1800s, and was restored between 2000 and 2003 with mortar, lime, and the same red earth that gave the surrounding fields their colour.",
-      "What the masseria looks like today is not a reconstruction. It is what was already here, kept honest.",
+      "Lama di Luna sits in the heart of the Alta Murgia National Park. Its name means Valley of the Moon — lama for valley, luna for moon and fertility. The masseria grew over two centuries, from the late 1700s to the late 1800s, and was restored between 2000 and 2003 with mortar, lime, and the same red earth that gave the surrounding fields their colour. What the masseria looks like today is not a reconstruction. It is what was already here, kept honest.",
     ],
     buildingLabel: "The Masseria",
     chapters: [
@@ -143,8 +142,7 @@ export const story: Record<Locale, StoryContent> = {
     heroEyebrow: "La Storia",
     statementTitle: "Una masseria del XVIII secolo al centro di 210 ettari di tenuta biologica",
     statementBody: [
-      "Lama di Luna sorge nel cuore del Parco Nazionale dell'Alta Murgia, in Contrada Lama di Luna vicino Andria. Il suo nome significa Valle della Luna — lama per valle, luna per luna e fertilità. La masseria è cresciuta nell'arco di due secoli, dalla fine del Settecento alla fine dell'Ottocento, ed è stata restaurata tra il 2000 e il 2003 con calce, malta e la stessa terra rossa che ha dato il colore ai campi circostanti.",
-      "Quello che la masseria è oggi non è una ricostruzione. È quello che c'era, mantenuto con onestà.",
+      "Lama di Luna sorge nel cuore del Parco Nazionale dell'Alta Murgia. Il suo nome significa Valle della Luna — lama per valle, luna per luna e fertilità. La masseria è cresciuta nell'arco di due secoli, dalla fine del Settecento alla fine dell'Ottocento, ed è stata restaurata tra il 2000 e il 2003 con calce, malta e la stessa terra rossa che ha dato il colore ai campi circostanti. Quello che la masseria è oggi non è una ricostruzione. È quello che c'era, mantenuto con onestà.",
     ],
     buildingLabel: "La Masseria",
     chapters: [
