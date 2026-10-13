@@ -196,7 +196,8 @@ a {
 }
 .hero--story {
   min-height: 640px;
-  background-image: url("https://res.cloudinary.com/amenitiz/image/upload/w_2400,q_auto:best,f_auto,c_fill/v1679928579/czk5bwys9xduwfefummm.jpg");
+  background-image: url("/whatsapp/20261013_162221_1408961704548991.jpg");
+  background-position: center 60%;
 }
 .hero--farm {
   min-height: 640px;
