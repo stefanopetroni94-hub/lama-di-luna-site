@@ -102,7 +102,7 @@ export const story: Record<Locale, StoryContent> = {
       "Lama di Luna is my home, where I live with Agata and my sons Agostino and Stefano. We work and conserve the estate's lands so that along with us, all manner of wildlife can share the magic of our national park, the Murgia. Hospitality is given to all who wish to pass by, and enjoy a stay at our beautiful masseria.",
     pietroSignature: "Pietro Petroni",
     pietroBody:
-      "Pietro lives at the masseria year-round with his wife Agata and their two sons. He oversees the olive harvest, the wine, the kestrels and the little owls nesting in the chimneys. Most mornings he can be found walking the groves before breakfast.",
+      "Pietro lives at the masseria year-round with his wife Agata and his two sons. He oversees the olive harvest, the wine, the kestrels and the little owls nesting in the chimneys. Most mornings he can be found walking the groves before breakfast.",
     pietroNote: "Placeholder · replace with Pietro & owl frame",
     filmLabel: "The Film",
     filmCta: "Watch with sound",
