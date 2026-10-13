@@ -90,10 +90,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
       </section>
 
       <section className="booking-callout booking-callout--plain">
-        <div className="booking-callout-inner">
-          <div className="eyebrow">{c.bookingEyebrow}</div>
-        </div>
-        <div className="quick-search" style={{ marginBottom: 0, marginTop: "2rem" }}>
+        <div className="quick-search" style={{ marginBottom: 0 }}>
           <QuickSearch labels={book[lang]} />
         </div>
       </section>

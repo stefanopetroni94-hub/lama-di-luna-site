@@ -1991,20 +1991,36 @@ footer {
 }
 
 .booking-callout.booking-callout--plain {
-  background: transparent;
-  color: var(--ink);
-  padding: 0 2.5rem 5rem;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 5rem 2.5rem;
 }
 .booking-callout--plain::before {
   display: none;
 }
-.booking-callout--plain .eyebrow {
-  font-size: 24px;
-  color: var(--ink);
-  margin-bottom: 0;
+.booking-callout--plain .qs-card {
+  background: #3f0f1c;
+  border-color: rgba(250, 248, 242, 0.25);
 }
-.booking-callout--plain .booking-callout-inner {
-  max-width: none;
+.booking-callout--plain .qs-field {
+  border-right-color: rgba(250, 248, 242, 0.25);
+}
+.booking-callout--plain .qs-field label {
+  color: rgba(250, 248, 242, 0.7);
+}
+.booking-callout--plain .qs-field .val {
+  color: var(--bg);
+  color-scheme: dark;
+}
+.booking-callout--plain .qs-field .placeholder {
+  color: rgba(250, 248, 242, 0.55);
+}
+.booking-callout--plain .qs-submit {
+  background: var(--bg);
+  color: var(--ink);
+}
+.booking-callout--plain .qs-submit:hover {
+  background: var(--sand);
 }
 
 /* other experiences */
