@@ -1,10 +1,11 @@
-import Link from "next/link"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { CurvedLabel } from "@/components/curved-label"
 import { isLocale } from "@/lib/i18n"
 import { restaurant } from "@/lib/content/restaurant"
+import { QuickSearch } from "@/components/quick-search"
+import { book } from "@/lib/content/book"
 
 export default async function RestaurantPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -91,11 +92,9 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
       <section className="booking-callout">
         <div className="booking-callout-inner">
           <div className="eyebrow">{c.bookingEyebrow}</div>
-          <h2>{c.bookingTitle}</h2>
-          <p>{c.bookingText}</p>
-          <Link href={`/${lang}/contact`} className="btn-primary">
-            {c.bookingCta}
-          </Link>
+        </div>
+        <div className="quick-search" style={{ marginBottom: 0, marginTop: "2rem" }}>
+          <QuickSearch labels={book[lang]} />
         </div>
       </section>
 

@@ -87,7 +87,7 @@ export const restaurant: Record<Locale, RestaurantContent> = {
       "We carefully select every product from local producers, following the seasons, because seasonality matters most in good food. We then bring it to the table following the traditions of Puglia, in the spirit of authentic Italian cooking.",
     ],
     sourcingImg: IMG.pasta,
-    bookingEyebrow: "Reserve the table",
+    bookingEyebrow: "Book your stay",
     bookingTitle: "Dine with us",
     bookingText:
       "Dinner is prepared to order and seating is limited, so we ask guests to reserve by the afternoon. Tell us the evening and any dietary needs and we will set a place for you.",
@@ -138,7 +138,7 @@ export const restaurant: Record<Locale, RestaurantContent> = {
       "Selezioniamo con cura ogni prodotto da produttori locali, seguendo la stagionalità, che per noi è fondamentale nel buon cibo. Lo portiamo poi in tavola seguendo le tradizioni pugliesi, nello spirito della vera cucina italiana.",
     ],
     sourcingImg: IMG.pasta,
-    bookingEyebrow: "Prenota la tavola",
+    bookingEyebrow: "Prenota il tuo soggiorno",
     bookingTitle: "Cena con noi",
     bookingText:
       "La cena si prepara su ordinazione e i posti sono limitati, perciò chiediamo di prenotare entro il pomeriggio. Indicaci la sera e ogni esigenza alimentare e apparecchieremo per te.",
