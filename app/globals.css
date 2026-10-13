@@ -419,11 +419,15 @@ section {
 .hero--home ~ .quick-search.availability-placement--home {
   margin-bottom: 0;
 }
-.hero--home ~ .press {
-  padding-bottom: 0 !important;
+.hero--home ~ .where {
+  padding-bottom: 0;
 }
 .hero--home ~ .newsletter {
   padding-top: 4rem;
+  padding-bottom: 0;
+}
+.hero--home ~ .press {
+  padding-top: 4rem !important;
 }
 .hero--home ~ .newsletter .newsletter-title {
   margin-bottom: 4rem;
@@ -434,6 +438,9 @@ section {
   }
   .hero--home ~ .newsletter {
     padding-top: 2.5rem;
+  }
+  .hero--home ~ .press {
+    padding-top: 2.5rem !important;
   }
   .hero--home ~ .newsletter .newsletter-title {
     margin-bottom: 2.5rem;

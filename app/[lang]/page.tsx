@@ -126,8 +126,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
-      <PressStrip locale={lang} />
-
       <NewsletterForm
         text={c.newsletterText}
         namePlaceholder={lang === "it" ? "Nome" : "Name"}
@@ -135,6 +133,8 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         button={c.newsletterButton}
         consent={c.newsletterConsent}
       />
+
+      <PressStrip locale={lang} />
 
       <SiteFooter locale={lang} />
     </>
