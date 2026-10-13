@@ -407,15 +407,37 @@ section {
 }
 .rooms-cta {
   text-align: left;
-  padding: 1.2rem 2.5rem 0.5rem;
+  padding: 1.2rem 2.5rem 0;
   max-width: 1500px;
   margin: 0 auto;
 }
-section:has(.rooms-cta) + section .curved-label {
-  padding-top: 1rem;
+
+/* home: same gap above and below every section title */
+.hero--home ~ section .curved-label {
+  padding: 4rem 0;
 }
-section:has(+ section > .text-image) .curved-label {
-  padding: 1.5rem 0 1rem;
+.hero--home ~ .quick-search.availability-placement--home {
+  margin-bottom: 0;
+}
+.hero--home ~ .press {
+  padding-bottom: 0 !important;
+}
+.hero--home ~ .newsletter {
+  padding-top: 4rem;
+}
+.hero--home ~ .newsletter .newsletter-title {
+  margin-bottom: 4rem;
+}
+@media (max-width: 700px) {
+  .hero--home ~ section .curved-label {
+    padding: 2.5rem 0;
+  }
+  .hero--home ~ .newsletter {
+    padding-top: 2.5rem;
+  }
+  .hero--home ~ .newsletter .newsletter-title {
+    margin-bottom: 2.5rem;
+  }
 }
 
 /* ---------------- ROOMS LISTING PAGE ---------------- */
