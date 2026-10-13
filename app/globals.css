@@ -1786,8 +1786,12 @@ footer {
   padding-bottom: 4rem;
 }
 .statement-grid--stacked .statement-body {
-  max-width: none;
-  margin-top: 0;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+}
+.statement-grid--stacked .statement-body p {
+  margin-bottom: 0;
 }
 .facts--row {
   grid-template-columns: repeat(4, 1fr);
