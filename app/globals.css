@@ -1990,6 +1990,23 @@ footer {
   margin-bottom: 2.5rem;
 }
 
+.booking-callout.booking-callout--plain {
+  background: transparent;
+  color: var(--ink);
+  padding: 0 2.5rem 5rem;
+}
+.booking-callout--plain::before {
+  display: none;
+}
+.booking-callout--plain .eyebrow {
+  font-size: 24px;
+  color: var(--ink);
+  margin-bottom: 0;
+}
+.booking-callout--plain .booking-callout-inner {
+  max-width: none;
+}
+
 /* other experiences */
 .other-exp {
   padding: 6rem 0;

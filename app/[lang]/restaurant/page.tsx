@@ -89,7 +89,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         </div>
       </section>
 
-      <section className="booking-callout">
+      <section className="booking-callout booking-callout--plain">
         <div className="booking-callout-inner">
           <div className="eyebrow">{c.bookingEyebrow}</div>
         </div>
