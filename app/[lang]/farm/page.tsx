@@ -43,6 +43,24 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
+      <section className="story-split farm-split">
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Olive versate durante la raccolta" : "Olives poured during the harvest"}
+          style={{ backgroundImage: "url('/whatsapp/20261013_182457_1659058318905589.jpg')" }}
+        />
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Un raccoglitore guarda gli ulivi" : "A harvester looking up at the olive trees"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261013_182516_28960209283602816.jpg')",
+            backgroundPosition: "65% 35%",
+          }}
+        />
+      </section>
+
       <section className="farm-section">
         <div className="book-stay">
           <Link href={`/${lang}/book`} className="book-stay-btn">

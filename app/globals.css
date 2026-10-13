@@ -2030,6 +2030,9 @@ footer {
   background-size: cover;
   background-position: center;
 }
+.farm-split {
+  margin-top: 4rem;
+}
 .story-wide {
   padding: 4rem 0;
 }
@@ -2043,6 +2046,9 @@ footer {
   }
   .story-wide {
     padding: 2.5rem 0;
+  }
+  .farm-split {
+    margin-top: 2.5rem;
   }
 }
 @media (max-width: 700px) {
