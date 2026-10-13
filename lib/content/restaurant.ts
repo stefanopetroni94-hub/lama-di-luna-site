@@ -52,7 +52,7 @@ export const restaurant: Record<Locale, RestaurantContent> = {
     ],
     facts: [
       { label: "Breakfast", value: "8:30 – 10:00" },
-      { label: "Dinner", value: "By arrangement, from 20:00" },
+      { label: "Lunch & Dinner", value: "By arrangement, from 13:00 and 20:00" },
       { label: "Seating", value: "By booking, on request, for guests staying at Lama di Luna" },
       { label: "Diets", value: "Vegetarian & vegan on request" },
     ],
@@ -103,7 +103,7 @@ export const restaurant: Record<Locale, RestaurantContent> = {
     ],
     facts: [
       { label: "Colazione", value: "8:30 – 10:00" },
-      { label: "Cena", value: "Su prenotazione, dalle 20:00" },
+      { label: "Pranzo e cena", value: "Su prenotazione, dalle 13:00 e dalle 20:00" },
       { label: "Posti", value: "Su prenotazione e su richiesta, per gli ospiti che soggiornano a Lama di Luna" },
       { label: "Diete", value: "Vegetariana e vegana su richiesta" },
     ],
