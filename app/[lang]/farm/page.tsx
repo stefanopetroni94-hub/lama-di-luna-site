@@ -2,7 +2,6 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { CurvedLabel } from "@/components/curved-label"
 import { chrome, isLocale } from "@/lib/i18n"
 import { farm } from "@/lib/content/farm"
 
@@ -33,10 +32,9 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
       </section>
 
       <section className="farm-section farm-section--first">
-        <CurvedLabel text={c.oliveLabel} />
         <div className="text-image">
           <div className="text-block">
-            <div className="script-eyebrow">{c.olive.eyebrow}</div>
+            <div className="script-eyebrow">{c.oliveLabel}</div>
             <h2>{c.olive.title}</h2>
             {c.olive.body.map((p, i) => (
               <p key={i}>{p}</p>
@@ -47,11 +45,15 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
       </section>
 
       <section className="farm-section">
-        <CurvedLabel text={c.organicLabel} />
+        <div className="book-stay">
+          <Link href={`/${lang}/book`} className="book-stay-btn">
+            {lang === "it" ? "Prenota il tuo soggiorno" : "Book your stay"}
+          </Link>
+        </div>
         <div className="text-image reverse">
           <div className="image-block" style={{ backgroundImage: `url('${c.organic.img}')` }} />
           <div className="text-block">
-            <div className="script-eyebrow">{c.organic.eyebrow}</div>
+            <div className="script-eyebrow">{c.organicLabel}</div>
             <h2>{c.organic.title}</h2>
             {c.organic.body.map((p, i) => (
               <p key={i}>{p}</p>
