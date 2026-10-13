@@ -90,23 +90,6 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
         </div>
       </section>
 
-      <section className="details">
-        <div className="details-header">
-          <div className="script-eyebrow">{c.restorationEyebrow}</div>
-          <h2>{c.restorationTitle}</h2>
-        </div>
-        <div className="details-grid">
-          {c.details.map((d) => (
-            <div className="detail-item" key={d.title}>
-              <div className="detail-body">
-                <h3>{d.title}</h3>
-                <p>{d.body}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section>
         <div className="full-photo" style={{ backgroundImage: `url('${c.fullPhoto}')` }} />
       </section>
