@@ -67,7 +67,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         <div className="text-image reverse">
           <div className="image-block" style={{ backgroundImage: `url('${c.kitchenImg}')` }} />
           <div className="text-block">
-            <div className="script-eyebrow" style={{ marginBottom: "1rem" }}>
+            <div className="room-name" style={{ marginBottom: "1rem" }}>
               {c.kitchenLabel}
             </div>
             {c.kitchenText.map((p, i) => (
@@ -85,7 +85,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       <section>
         <div className="text-image text-image--flush">
           <div className="text-block">
-            <div className="script-eyebrow" style={{ marginBottom: "1rem" }}>
+            <div className="room-name" style={{ marginBottom: "1rem" }}>
               {c.experiencesLabel}
             </div>
             {c.experiencesText.map((p, i) => (
@@ -106,7 +106,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
       <section className="where">
         <div className="where-text">
-          <div className="script-eyebrow" style={{ marginBottom: "1rem" }}>
+          <div className="room-name" style={{ marginBottom: "1rem" }}>
             {c.whereLabel}
           </div>
           {c.mapText.map((p, i) => (
