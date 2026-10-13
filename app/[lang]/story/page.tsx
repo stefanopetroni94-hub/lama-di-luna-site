@@ -85,10 +85,6 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
         </div>
       </section>
 
-      <section>
-        <div className="full-photo" style={{ backgroundImage: `url('${c.fullPhoto}')` }} />
-      </section>
-
       <section className="booking-callout">
         <div className="booking-callout-inner">
           <div className="eyebrow">{c.calloutEyebrow}</div>
