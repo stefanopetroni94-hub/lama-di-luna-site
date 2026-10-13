@@ -83,8 +83,7 @@ export const restaurant: Record<Locale, RestaurantContent> = {
     sourcingTitle: "Grown, pressed and cooked within the same walls",
     sourcingBody: [
       "At Lama di Luna, a historic masseria in Puglia set among the olive groves of the Alta Murgia, our extra virgin olive oil is cold pressed from our organic groves. The almonds are harvested in late summer, and the grapes of the wine we serve at Lama di Luna are still grown and made on these grounds. We plant and tend a large vegetable garden of tomatoes, courgettes, aubergines, chillies, basil and all the Mediterranean herbs, which we pick through the summer to prepare the dishes of our kitchen.",
-      "What we cannot grow, we source from small producers of the area we trust, with seasonal, zero kilometre ingredients: ricotta from nearby farms, traditional sausage from a cooperative in Minervino, mozzarella and stracciatella, cheeses from a cheesemonger in Andria, olives from Andria, flour from a Murgian mill, honey from the hills and the wines of Puglia. Nothing travels far to reach the table.",
-      "We carefully select every product from local producers, following the seasons, because seasonality matters most in good food. We then bring it to the table following the traditions of Puglia, in the spirit of authentic Italian cooking.",
+      "What we cannot grow, we source seasonally from small producers of the area we trust, with seasonal, zero kilometre ingredients: ricotta from nearby farms, traditional sausage from a cooperative in Minervino, mozzarella and stracciatella, cheeses from a cheesemonger in Andria, and flour from a Murgian mill. Nothing travels far to reach the table.",
     ],
     sourcingImg: IMG.pasta,
     bookingEyebrow: "Book your stay",
@@ -134,8 +133,7 @@ export const restaurant: Record<Locale, RestaurantContent> = {
     sourcingTitle: "Coltivato, spremuto e cucinato tra le stesse mura",
     sourcingBody: [
       "A Lama di Luna, storica masseria in Puglia immersa negli uliveti dell'Alta Murgia, il nostro olio extravergine di oliva è spremuto a freddo dai nostri uliveti biologici. Le mandorle si raccolgono a fine estate, e l'uva del vino che serviamo a Lama di Luna è ancora coltivata e trasformata su queste terre. Piantiamo e curiamo un grande orto di pomodori, zucchine, melanzane, peperoncini, basilico e tutte le erbe mediterranee, che raccogliamo durante l'estate per preparare le pietanze della nostra cucina.",
-      "Ciò che non coltiviamo lo prendiamo da piccoli produttori della zona di cui ci fidiamo, con ingredienti di stagione a chilometro zero: ricotta da fattorie vicine, salsiccia tradizionale da una cooperativa di Minervino, mozzarella e stracciatella, formaggi da un caseificio di Andria, olive di Andria, farina da un mulino murgiano, miele dalle colline e vini di Puglia. Nulla viaggia a lungo per arrivare in tavola.",
-      "Selezioniamo con cura ogni prodotto da produttori locali, seguendo la stagionalità, che per noi è fondamentale nel buon cibo. Lo portiamo poi in tavola seguendo le tradizioni pugliesi, nello spirito della vera cucina italiana.",
+      "Ciò che non coltiviamo lo prendiamo, secondo stagione, da piccoli produttori della zona di cui ci fidiamo, con ingredienti di stagione a chilometro zero: ricotta da fattorie vicine, salsiccia tradizionale da una cooperativa di Minervino, mozzarella e stracciatella, formaggi da un caseificio di Andria e farina da un mulino murgiano. Nulla viaggia a lungo per arrivare in tavola.",
     ],
     sourcingImg: IMG.pasta,
     bookingEyebrow: "Prenota il tuo soggiorno",
