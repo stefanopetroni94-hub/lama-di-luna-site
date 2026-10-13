@@ -99,7 +99,7 @@ export const story: Record<Locale, StoryContent> = {
     ],
     pietroLabel: "Pietro Petroni",
     pietroEyebrow: "The custodian",
-    pietroTitle: "The hands that keep this place",
+    pietroTitle: "The custodian",
     pietroQuote:
       "Lama di Luna is my home, where I live with Agata and my sons Agostino and Stefano. We work and conserve the estate's lands so that along with us, all manner of wildlife can share the magic of our national park, the Murgia. Hospitality is given to all who wish to pass by, and enjoy a stay at our beautiful masseria.",
     pietroSignature: "Pietro Petroni",
@@ -205,7 +205,7 @@ export const story: Record<Locale, StoryContent> = {
     ],
     pietroLabel: "Pietro Petroni",
     pietroEyebrow: "Il custode",
-    pietroTitle: "Le mani che custodiscono questo luogo",
+    pietroTitle: "Il custode",
     pietroQuote:
       "Lama di Luna è la mia casa, dove vivo con Agata e i miei figli Agostino e Stefano. Lavoriamo e conserviamo le terre della tenuta affinché, insieme a noi, ogni forma di fauna selvatica possa condividere la magia del nostro parco nazionale, la Murgia. L'ospitalità è offerta a chiunque desideri passare di qui e godere di un soggiorno nella nostra bellissima masseria.",
     pietroSignature: "Pietro Petroni",

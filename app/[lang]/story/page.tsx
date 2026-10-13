@@ -76,7 +76,6 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
             }}
           />
           <div className="founder-text">
-            <div className="script-eyebrow">{c.pietroEyebrow}</div>
             <h2>{c.pietroTitle}</h2>
             <p className="quote">{c.pietroQuote}</p>
             <p className="signature">{c.pietroSignature}</p>
