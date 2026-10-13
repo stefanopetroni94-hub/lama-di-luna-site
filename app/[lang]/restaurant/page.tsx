@@ -24,7 +24,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
       <section className="statement">
         <div className="statement-grid">
           <div>
-            <div className="statement-body">
+            <div className="statement-body" style={{ marginTop: 0 }}>
               {c.statementBody.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
