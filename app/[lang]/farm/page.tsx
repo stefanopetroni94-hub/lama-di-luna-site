@@ -37,13 +37,8 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
           style={{ backgroundImage: `url('${c.olive.img}')`, backgroundPosition: "30% 75%" }}
         />
         <div className="statement-inner farm-intro">
-          <div className="room-name" style={{ marginBottom: "1rem" }}>
-            {c.oliveLabel}
-          </div>
           <div className="statement-body">
-            {c.olive.body.map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
+            <p>{c.olive.body.join(" ")}</p>
           </div>
         </div>
       </section>
