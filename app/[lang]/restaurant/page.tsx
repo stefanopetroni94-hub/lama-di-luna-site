@@ -18,12 +18,12 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
       <section className="page-header">
         <div className="eyebrow">{c.heroEyebrow}</div>
         <h1>{c.title}</h1>
+        <p>{c.statementTitle}</p>
       </section>
 
       <section className="statement">
         <div className="statement-grid">
           <div>
-            <h2>{c.statementTitle}</h2>
             <div className="statement-body">
               {c.statementBody.map((p, i) => (
                 <p key={i}>{p}</p>
