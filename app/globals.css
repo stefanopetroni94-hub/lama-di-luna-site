@@ -852,7 +852,13 @@ section {
 }
 .room-detail--hero .room-detail-header {
   max-width: 1500px;
-  padding: 4rem clamp(1.5rem, 9vw, 11rem);
+  padding: 3rem clamp(1.5rem, 9vw, 11rem) 4rem;
+}
+.room-detail--hero .room-back {
+  margin-bottom: 1.4rem;
+}
+.room-detail--hero .room-detail-header h1 {
+  margin-bottom: 1.6rem;
 }
 .room-detail--hero .room-detail-copy p {
   font-family: "Times New Roman", Times, serif;

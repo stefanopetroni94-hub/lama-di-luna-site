@@ -42,7 +42,6 @@ export default async function RoomDetailPage({
           <Link href={`/${lang}/rooms`} className="room-back">
             {c.backToRooms}
           </Link>
-          <div className="room-detail-eyebrow">{room.tagline}</div>
           <h1>{room.name}</h1>
 
           <div className="room-detail-body">
