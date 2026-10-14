@@ -1963,51 +1963,49 @@ footer {
 }
 
 /* booking callout */
+/* slim closing band: page background, thin line on top, short text, rounded button */
 .booking-callout {
-  background: var(--ink);
-  color: var(--bg);
-  padding: 7rem 2.5rem;
+  background: transparent;
+  color: var(--ink);
+  padding: 3.5rem 2.5rem;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  border-top: 1px solid var(--line);
 }
 .booking-callout::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("https://res.cloudinary.com/amenitiz/image/upload/w_2400,q_auto:good,f_auto,c_fill/v1748365479/bao85el3tzzrazwmnjtl.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.15;
-  z-index: 0;
+  display: none;
 }
 .booking-callout-inner {
-  position: relative;
-  z-index: 1;
-  max-width: 700px;
+  max-width: 640px;
   margin: 0 auto;
 }
 .booking-callout .eyebrow {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 17px;
-  color: var(--sand);
-  margin-bottom: 0.6rem;
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin-bottom: 0.4rem;
 }
 .booking-callout h2 {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(2rem, 4.2vw, 3.2rem);
-  line-height: 1.05;
-  letter-spacing: -0.025em;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  line-height: 1.2;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 1.4rem;
-  color: var(--bg);
+  margin-bottom: 0.8rem;
+  color: var(--ink);
 }
 .booking-callout p {
-  font-size: 16px;
-  color: rgba(246, 241, 230, 0.85);
-  margin-bottom: 2.5rem;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin-bottom: 1.6rem;
+}
+.booking-callout .btn-primary {
+  display: inline-block;
+  padding: 1.1rem 2.8rem;
+  border-radius: 999px;
+  font-weight: 400;
 }
 
 /* story: same 4rem rhythm as the home page */
@@ -3165,7 +3163,7 @@ footer {
     padding: 0 1.3rem;
   }
   .booking-callout {
-    padding: 5rem 1.3rem;
+    padding: 2.5rem 1.3rem;
   }
   .other-exp-grid {
     grid-template-columns: 1fr;
