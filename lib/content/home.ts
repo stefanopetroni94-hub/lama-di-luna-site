@@ -50,7 +50,7 @@ export const home: Record<Locale, HomeContent> = {
     rooms: [
       {
         name: "Coloni",
-        desc: "Once a settler's dwelling, the Coloni room opens onto the inner courtyard. Fireplace, brass bed from the 1800s, terracotta basin, raw cotton sheets.",
+        desc: "Once a settler's dwelling, the Coloni room opens onto the inner courtyard. Fireplace, pine and olive wood beds, terracotta basin, raw cotton sheets.",
         img: IMG.coloni,
       },
       {
@@ -103,7 +103,7 @@ export const home: Record<Locale, HomeContent> = {
     rooms: [
       {
         name: "Coloni",
-        desc: "Un tempo dimora di coloni, la camera Coloni si apre sul cortile interno. Camino, letto in ottone dell'Ottocento, lavabo in terracotta, lenzuola di cotone grezzo.",
+        desc: "Un tempo dimora di coloni, la camera Coloni si apre sul cortile interno. Camino, letti in pino e legno d'ulivo, lavabo in terracotta, lenzuola di cotone grezzo.",
         img: IMG.coloni,
       },
       {
