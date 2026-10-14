@@ -2044,6 +2044,13 @@ footer {
 .farm-split {
   margin-top: 4rem;
 }
+.farm-seasons {
+  padding-top: 4rem;
+}
+.farm-seasons .statement-body {
+  margin-top: 0;
+  max-width: none;
+}
 .farm-split .story-split-img {
   aspect-ratio: 1 / 1;
 }
@@ -2071,6 +2078,9 @@ footer {
   }
   .farm-split {
     margin-top: 2.5rem;
+  }
+  .farm-seasons {
+    padding-top: 2.5rem;
   }
 }
 @media (max-width: 700px) {

@@ -15,6 +15,7 @@ export type FarmContent = {
   principlesTitle: string
   principles: Detail[]
   fullPhoto: string
+  seasons: string
   calloutEyebrow: string
   calloutTitle: string
   calloutBody: string
@@ -79,6 +80,8 @@ export const farm: Record<Locale, FarmContent> = {
       },
     ],
     fullPhoto: IMG.full,
+    seasons:
+      "During your stay at Lama di Luna you can live the farming life and, at the right times of the year, follow the work in the fields and taste some of the fruits. In May the mulberries around the masseria, in June the cherries, in July the tomato harvest to make the sauce for our cooks, in August and September the grape and almond harvest, and in October the long-awaited olive harvest.",
     calloutEyebrow: "From the estate",
     calloutTitle: "Taste the farm before you leave",
     calloutBody:
@@ -136,6 +139,8 @@ export const farm: Record<Locale, FarmContent> = {
       },
     ],
     fullPhoto: IMG.full,
+    seasons:
+      "Durante il soggiorno a Lama di Luna è possibile vivere la vita agricola e, nei periodi giusti, seguire i lavori in campagna e gustare il sapore di qualche frutto. A maggio i gelsi attorno alla masseria, a giugno le ciliegie, a luglio la raccolta dei pomodori per fare la salsa per le nostre cuoche, ad agosto e settembre la raccolta dell'uva e delle mandorle, e a ottobre la tanto attesa raccolta delle olive.",
     calloutEyebrow: "Dalla tenuta",
     calloutTitle: "Assapora la fattoria prima di partire",
     calloutBody:

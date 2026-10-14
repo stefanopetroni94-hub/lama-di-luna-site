@@ -64,6 +64,14 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         />
       </section>
 
+      <section className="farm-seasons">
+        <div className="statement-inner">
+          <div className="statement-body">
+            <p>{c.seasons}</p>
+          </div>
+        </div>
+      </section>
+
       <section className="farm-section">
         <div className="book-stay">
           <Link href={`/${lang}/book`} className="book-stay-btn">
