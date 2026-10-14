@@ -2041,6 +2041,16 @@ footer {
   color: var(--ink-soft);
   margin-bottom: 1.6rem;
 }
+.booking-callout.booking-callout--story {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+.booking-callout--story h2 {
+  margin-bottom: 0.6rem;
+}
+.booking-callout--story p {
+  margin-bottom: 1.3rem;
+}
 .booking-callout .btn-primary {
   display: inline-block;
   padding: 1.1rem 2.8rem;

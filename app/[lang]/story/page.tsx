@@ -122,9 +122,8 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
         </div>
       </section>
 
-      <section className="booking-callout">
+      <section className="booking-callout booking-callout--story">
         <div className="booking-callout-inner">
-          <div className="eyebrow">{c.calloutEyebrow}</div>
           <h2>{c.calloutTitle}</h2>
           <p>{c.calloutBody}</p>
           <Link href={`/${lang}/book`} className="btn-primary btn-primary--pill">
