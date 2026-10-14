@@ -85,7 +85,7 @@ export const farm: Record<Locale, FarmContent> = {
     calloutEyebrow: "From the estate",
     calloutTitle: "Taste the farm before you leave",
     calloutBody:
-      "Extra virgin olive oil, almonds and wine from the estate are served at the table and available to take home. Join the olive harvest in autumn, or walk the groves any morning of your stay.",
+      "Extra virgin olive oil, almonds and wine from the estate are served at the table and available to take home.",
     calloutCta: "Browse the shop",
   },
   it: {
@@ -144,7 +144,7 @@ export const farm: Record<Locale, FarmContent> = {
     calloutEyebrow: "Dalla tenuta",
     calloutTitle: "Assapora la fattoria prima di partire",
     calloutBody:
-      "Olio extravergine d'oliva, mandorle e vino della tenuta sono serviti a tavola e disponibili da portare a casa. Unisciti alla raccolta delle olive in autunno, o cammina tra gli uliveti ogni mattina del tuo soggiorno.",
+      "Olio extravergine d'oliva, mandorle e vino della tenuta sono serviti a tavola e disponibili da portare a casa.",
     calloutCta: "Scopri lo shop",
   },
 }
