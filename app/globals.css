@@ -2076,6 +2076,21 @@ footer {
 .farm-organic .text-block {
   margin-left: auto;
 }
+.restaurant-split {
+  margin-top: 4rem;
+}
+.story-split-img--rotated {
+  position: relative;
+  overflow: hidden;
+}
+.story-split-rotate {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: 50% center;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+}
 .farm-seasons,
 .restaurant-extra {
   padding-top: 4rem;
@@ -2119,7 +2134,8 @@ footer {
   .story-wide {
     padding: 2.5rem 0;
   }
-  .farm-split {
+  .farm-split,
+  .restaurant-split {
     margin-top: 2.5rem;
   }
   .farm-seasons,
