@@ -2076,8 +2076,16 @@ footer {
 .farm-organic .text-block {
   margin-left: auto;
 }
-.farm-seasons {
+.farm-seasons,
+.restaurant-extra {
   padding-top: 4rem;
+}
+.restaurant-extra .statement-body {
+  margin-top: 0;
+  max-width: none;
+}
+.restaurant-extra .statement-body p {
+  margin-bottom: 0;
 }
 .farm-seasons .statement-body {
   margin-top: 0;
@@ -2114,7 +2122,8 @@ footer {
   .farm-split {
     margin-top: 2.5rem;
   }
-  .farm-seasons {
+  .farm-seasons,
+  .restaurant-extra {
     padding-top: 2.5rem;
   }
 }

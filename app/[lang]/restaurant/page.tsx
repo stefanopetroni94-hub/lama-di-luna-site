@@ -65,6 +65,14 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         </div>
       </section>
 
+      <section className="restaurant-extra">
+        <div className="statement-inner">
+          <div className="statement-body">
+            <p>{c.veranda}</p>
+          </div>
+        </div>
+      </section>
+
       <section className="book-stay">
         <Link href={`/${lang}/book`} className="book-stay-btn">
           {c.bookingEyebrow}
