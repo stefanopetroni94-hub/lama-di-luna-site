@@ -117,7 +117,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
       },
       {
         slug: "masseria",
-        name: "Masseria",
+        name: "Family Suite Masseria",
         tagline: "The largest of the suites",
         meta: "A sitting room, open fireplace, two bedrooms, a private courtyard nook. Sleeps 4–5.",
         price: "€380",
@@ -225,7 +225,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
       },
       {
         slug: "masseria",
-        name: "Masseria",
+        name: "Family Suite Masseria",
         tagline: "La più grande delle suite",
         meta: "Un salotto, camino aperto, due camere, un angolo privato sulla corte. Per 4–5.",
         price: "€380",
