@@ -220,6 +220,8 @@ a {
 .hero--farm::before,
 .exp-hero::before,
 .room-img,
+.room-hero,
+.room-rows-img,
 .room-gallery-tile,
 .shop-card-img,
 .exp-card-img,
@@ -829,6 +831,74 @@ section {
 }
 .room-book-btn:hover {
   background: var(--olive);
+}
+
+/* Room page: big hero, description + details, then photos 2 + 1 + 2 */
+.room-hero {
+  height: 80vh;
+  min-height: 460px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.room-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 30%);
+}
+.room-detail.room-detail--hero {
+  padding-top: 0;
+}
+.room-detail--hero .room-detail-header {
+  max-width: 1500px;
+  padding: 4rem clamp(1.5rem, 9vw, 11rem);
+}
+.room-detail--hero .room-detail-copy p {
+  font-family: "Times New Roman", Times, serif;
+}
+.room-detail--hero .room-detail-aside {
+  border-top: none;
+  padding-top: 0.4rem;
+}
+.room-detail--hero .room-detail-facts li {
+  border-bottom: none;
+  padding: 0.3rem 0 0.3rem 1.5rem;
+  position: relative;
+}
+.room-detail--hero .room-detail-facts li::before {
+  content: "\00bb";
+  position: absolute;
+  left: 0;
+  color: var(--ink);
+}
+.room-detail--hero .room-detail-price {
+  margin-top: 1.6rem;
+}
+.room-rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.room-rows-img {
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+}
+.room-rows-img--wide {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
+@media (max-width: 700px) {
+  .room-hero {
+    height: 65vh;
+    min-height: 380px;
+  }
+  .room-detail--hero .room-detail-header {
+    padding: 2.5rem 1.3rem;
+  }
+  .room-rows {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Mosaic "puzzle" gallery */

@@ -16,11 +16,28 @@ export default async function RoomDetailPage({
   const room = c.list.find((r) => r.slug === slug)
   if (!room) notFound()
 
+  // First photo is the big hero, the next five go below as 2 + 1 + 2.
+  const [hero, ...rest] = room.gallery
+  const rows: string[][] = []
+  let taken = 0
+  for (const size of [2, 1, 2]) {
+    const row = rest.slice(taken, taken + size)
+    if (row.length) rows.push(row)
+    taken += size
+  }
+
   return (
     <>
-      <SiteNav locale={lang} variant="solid" />
+      <SiteNav locale={lang} variant="overlay" />
 
-      <article className="room-detail">
+      <section
+        className="room-hero"
+        role="img"
+        aria-label={room.name}
+        style={{ backgroundImage: `url('${hero ?? room.img}')` }}
+      />
+
+      <article className="room-detail room-detail--hero">
         <header className="room-detail-header">
           <Link href={`/${lang}/rooms`} className="room-back">
             {c.backToRooms}
@@ -35,12 +52,6 @@ export default async function RoomDetailPage({
               ))}
             </div>
             <aside className="room-detail-aside">
-              <div className="room-detail-price">
-                <small>{c.from}</small>
-                <span>
-                  {room.price} {c.perNight}
-                </span>
-              </div>
               <div className="room-detail-facts">
                 <h2>{c.detailsLabel}</h2>
                 <ul>
@@ -49,6 +60,12 @@ export default async function RoomDetailPage({
                   ))}
                 </ul>
               </div>
+              <div className="room-detail-price">
+                <small>{c.from}</small>
+                <span>
+                  {room.price} {c.perNight}
+                </span>
+              </div>
               <Link href={`/${lang}/book`} className="room-book-btn">
                 {c.bookThisRoom}
               </Link>
@@ -56,16 +73,18 @@ export default async function RoomDetailPage({
           </div>
         </header>
 
-        <section className="room-gallery" aria-label={`${room.name} gallery`}>
-          {room.gallery.map((src, i) => (
-            <div
-              key={i}
-              className="room-gallery-tile"
-              style={{ backgroundImage: `url('${src}')` }}
-              role="img"
-              aria-label={`${room.name} — photo ${i + 1}`}
-            />
-          ))}
+        <section className="room-rows" aria-label={`${room.name} gallery`}>
+          {rows.flatMap((row, r) =>
+            row.map((src, i) => (
+              <div
+                key={`${r}-${i}`}
+                className={`room-rows-img${row.length === 1 ? " room-rows-img--wide" : ""}`}
+                style={{ backgroundImage: `url('${src}')` }}
+                role="img"
+                aria-label={`${room.name}, photo ${r * 2 + i + 2}`}
+              />
+            ))
+          )}
         </section>
       </article>
 
