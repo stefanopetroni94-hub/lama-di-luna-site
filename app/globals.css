@@ -854,7 +854,13 @@ section {
 }
 .room-detail--hero .room-detail-header {
   max-width: 1500px;
-  padding: 3rem clamp(1.5rem, 9vw, 11rem) 4rem;
+  padding: 3rem clamp(1.5rem, 9vw, 11rem) 3rem;
+}
+.room-detail--hero .room-detail-copy p {
+  margin-bottom: 0;
+}
+.room-detail--hero .room-detail-facts ul {
+  margin-bottom: 0;
 }
 .room-detail--hero .room-back {
   margin-bottom: 1.4rem;
@@ -905,6 +911,9 @@ section {
   }
   .room-detail--hero .room-detail-header {
     padding: 2.5rem 1.3rem;
+  }
+  .room-detail--hero .quick-search.room-quick-search {
+    margin-top: 2.5rem;
   }
   .room-rows {
     grid-template-columns: 1fr;

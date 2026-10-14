@@ -48,9 +48,7 @@ export default async function RoomDetailPage({
 
           <div className="room-detail-body">
             <div className="room-detail-copy">
-              {room.description.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
+              <p>{room.description.join(" ")}</p>
             </div>
             <aside className="room-detail-aside">
               <div className="room-detail-facts">

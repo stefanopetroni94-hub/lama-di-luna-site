@@ -55,14 +55,14 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         slug: "coloni",
         name: "Coloni",
         tagline: "A settler's chamber",
-        meta: "Open fireplace, 1800s brass bed, a courtyard view. Sleeps 2.",
+        meta: "Open fireplace, pine and olive wood beds, a courtyard view. Sleeps 2.",
         price: "€220",
         sleeps: "Sleeps 2",
         description: [
           "The Coloni room was once home to the families who worked the land. Its thick stone walls keep it cool through the Puglian summer, and an open fireplace warms it when the tramontana blows down off the Murgia.",
-          "A brass bed from the 1800s, raw cotton sheets, and a single window opening onto the inner courtyard. Simple, quiet, and full of the masseria's long memory.",
+          "Pine and olive wood beds, raw cotton sheets, and a single window opening onto the inner courtyard. Simple, quiet, and full of the masseria's long memory.",
         ],
-        details: ["Sleeps 2", "Open fireplace", "1800s brass bed", "Courtyard view", "Solar power"],
+        details: ["Sleeps 2", "Open fireplace", "Pine and olive wood beds", "Courtyard view"],
         img: IMG.coloni,
         gallery: [
           "/rooms/coloni-1.jpg",
@@ -84,7 +84,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Named for the Alta Murgia — the wild upland whose silence belongs to it. North-facing windows keep the light soft and even through the day, falling across whitewashed stone and a vaulted ceiling.",
           "An olive-wood bed, a terracotta basin, and natural linen throughout. A room made for slow mornings and long, unhurried rest.",
         ],
-        details: ["Sleeps 2", "Vaulted ceiling", "Olive-wood bed", "North light", "Solar power"],
+        details: ["Sleeps 2", "Vaulted ceiling", "Olive-wood bed", "North light"],
         img: IMG.murgia,
         gallery: [
           "/rooms/murgia-1.jpg",
@@ -163,14 +163,14 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         slug: "coloni",
         name: "Coloni",
         tagline: "Una camera dei coloni",
-        meta: "Camino aperto, letto in ottone dell'Ottocento, vista sulla corte. Per 2.",
+        meta: "Camino aperto, letti in pino e legno d'ulivo, vista sulla corte. Per 2.",
         price: "€220",
         sleeps: "Per 2",
         description: [
           "La camera Coloni era un tempo la dimora delle famiglie che lavoravano la terra. I suoi spessi muri in pietra la mantengono fresca durante l'estate pugliese, e un camino aperto la riscalda quando la tramontana scende dalla Murgia.",
-          "Un letto in ottone dell'Ottocento, lenzuola di cotone grezzo e un'unica finestra affacciata sulla corte interna. Semplice, silenziosa e piena della lunga memoria della masseria.",
+          "Letti in pino e legno d'ulivo, lenzuola di cotone grezzo e un'unica finestra affacciata sulla corte interna. Semplice, silenziosa e piena della lunga memoria della masseria.",
         ],
-        details: ["Per 2", "Camino aperto", "Letto in ottone dell'Ottocento", "Vista sulla corte", "Energia solare"],
+        details: ["Per 2", "Camino aperto", "Letti in pino e legno d'ulivo", "Vista sulla corte"],
         img: IMG.coloni,
         gallery: [
           "/rooms/coloni-1.jpg",
@@ -192,7 +192,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Chiamata come l'Alta Murgia — l'altopiano selvaggio il cui silenzio le appartiene. Le finestre a nord mantengono la luce morbida e uniforme durante il giorno, posandosi sulla pietra imbiancata e su una volta a botte.",
           "Un letto in legno d'ulivo, un catino in terracotta e lino naturale ovunque. Una camera fatta per mattine lente e riposo lungo e senza fretta.",
         ],
-        details: ["Per 2", "Volta a botte", "Letto in ulivo", "Luce da nord", "Energia solare"],
+        details: ["Per 2", "Volta a botte", "Letto in ulivo", "Luce da nord"],
         img: IMG.murgia,
         gallery: [
           "/rooms/murgia-1.jpg",
