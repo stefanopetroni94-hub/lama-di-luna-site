@@ -2026,7 +2026,7 @@ footer {
   grid-template-columns: 1fr 1fr;
 }
 .story-split-img {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   background-size: cover;
   background-position: center;
 }
@@ -2060,8 +2060,11 @@ footer {
   max-width: none;
 }
 @media (max-width: 700px) {
+  .story-split {
+    grid-template-columns: 1fr;
+  }
   .story-split-img {
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 1 / 1;
   }
   .story-wide {
     padding: 2.5rem 0;
