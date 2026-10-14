@@ -75,15 +75,6 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
 
       <section className="story-split restaurant-split">
         <div
-          className="story-split-img"
-          role="img"
-          aria-label={lang === "it" ? "Aperitivo al tramonto sulla veranda" : "Sunset aperitivo on the veranda"}
-          style={{
-            backgroundImage: "url('/whatsapp/20261014_043519_1700647744957278.jpg')",
-            backgroundPosition: "center 55%",
-          }}
-        />
-        <div
           className="story-split-img story-split-img--rotated"
           role="img"
           aria-label={lang === "it" ? "Focaccia e spritz sul tavolo di pietra" : "Focaccia and spritz on the stone table"}
@@ -93,6 +84,15 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
             style={{ backgroundImage: "url('/whatsapp/20261014_043528_2301455727286373.jpg')" }}
           />
         </div>
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Aperitivo al tramonto sulla veranda" : "Sunset aperitivo on the veranda"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261014_043519_1700647744957278.jpg')",
+            backgroundPosition: "center 55%",
+          }}
+        />
       </section>
 
       <section className="book-stay">
