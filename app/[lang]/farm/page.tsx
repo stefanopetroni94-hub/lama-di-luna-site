@@ -47,19 +47,19 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Olive raccolte sulle reti" : "Olives gathered on the nets"}
+          aria-label={lang === "it" ? "Un raccoglitore guarda gli ulivi" : "A harvester looking up at the olive trees"}
           style={{
-            backgroundImage: "url('/whatsapp/20261013_182639_39141126622198536.jpg')",
-            backgroundPosition: "center 75%",
+            backgroundImage: "url('/whatsapp/20261013_182516_28960209283602816.jpg')",
+            backgroundPosition: "65% 35%",
           }}
         />
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Un raccoglitore guarda gli ulivi" : "A harvester looking up at the olive trees"}
+          aria-label={lang === "it" ? "Olive raccolte sulle reti" : "Olives gathered on the nets"}
           style={{
-            backgroundImage: "url('/whatsapp/20261013_182516_28960209283602816.jpg')",
-            backgroundPosition: "65% 35%",
+            backgroundImage: "url('/whatsapp/20261013_182639_39141126622198536.jpg')",
+            backgroundPosition: "center 50%",
           }}
         />
       </section>
