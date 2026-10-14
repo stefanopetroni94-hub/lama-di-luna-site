@@ -2030,6 +2030,17 @@ footer {
   background-size: cover;
   background-position: center;
 }
+/* farm photo: man pulling the nets sits closer to the left edge */
+.full-photo.farm-photo {
+  background-size: 120% auto;
+  background-position: 98% 40%;
+}
+@media (max-width: 700px) {
+  .full-photo.farm-photo {
+    background-size: cover;
+    background-position: 45% 40%;
+  }
+}
 .farm-split {
   margin-top: 4rem;
 }

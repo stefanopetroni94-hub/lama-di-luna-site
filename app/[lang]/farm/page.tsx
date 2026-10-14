@@ -33,8 +33,8 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
 
       <section className="farm-intro-section">
         <div
-          className="full-photo"
-          style={{ backgroundImage: `url('${c.olive.img}')`, backgroundPosition: "30% 40%" }}
+          className="full-photo farm-photo"
+          style={{ backgroundImage: `url('${c.olive.img}')` }}
         />
         <div className="statement-inner farm-intro">
           <div className="statement-body">
