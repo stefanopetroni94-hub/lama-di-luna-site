@@ -2164,6 +2164,12 @@ footer {
 }
 
 /* farm: full-width photo, then the family story across the whole page */
+.statement.statement--farm {
+  padding-bottom: 4rem;
+}
+.statement--farm .statement-body p:last-child {
+  margin-bottom: 0;
+}
 .statement-inner.farm-intro {
   padding-top: 4rem;
 }
@@ -2175,6 +2181,9 @@ footer {
   margin-bottom: 0;
 }
 @media (max-width: 700px) {
+  .statement.statement--farm {
+    padding-bottom: 3.5rem;
+  }
   .statement-inner.farm-intro {
     padding-top: 3.5rem;
   }

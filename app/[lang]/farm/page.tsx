@@ -20,7 +20,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         <div className="hero-scroll">{t.scroll}</div>
       </section>
 
-      <section className="statement">
+      <section className="statement statement--farm">
         <div className="statement-inner">
           <h1>{c.statementTitle}</h1>
           <div className="statement-body">
