@@ -188,16 +188,21 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
-.hero--home {
-  background-image: url("/hero-masseria-centered.jpg");
-  background-size: cover !important;
-  background-position: center 58%;
-  background-repeat: no-repeat;
+/* hero photos live on a layer of their own so the vintage filter does not touch the text */
+.hero--home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/hero-masseria-centered.jpg") center 58% / cover no-repeat;
 }
 .hero--story {
   min-height: 640px;
-  background-image: url("/whatsapp/20261013_162221_1408961704548991.jpg");
-  background-position: center 60%;
+}
+.hero--story::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/whatsapp/20261013_162221_1408961704548991.jpg") center 60% / cover no-repeat;
 }
 .hero--farm {
   min-height: 640px;
@@ -209,11 +214,23 @@ a {
   inset: 0;
   background: url("/whatsapp/20261013_160234_1420116389557636.jpg") center 65% / cover no-repeat;
 }
-/* vintage magazine look, deeper blacks (test on the Farm page) */
+/* vintage magazine look, deeper blacks, on every photo of the site */
+.hero--home::before,
+.hero--story::before,
 .hero--farm::before,
-.full-photo.farm-photo,
-.farm-split .story-split-img,
-.farm-organic .image-block {
+.exp-hero::before,
+.room-img,
+.room-gallery-tile,
+.shop-card-img,
+.exp-card-img,
+.other-card-img,
+.image-block,
+.full-photo,
+.story-split-img,
+.photo-split-img,
+.restaurant-media-image,
+.restaurant-media-video-wrap,
+.founder-video {
   filter: sepia(0.28) contrast(1.18) saturate(0.82) brightness(0.96);
 }
 .hero--farm::after {
@@ -1697,9 +1714,12 @@ footer {
   height: 95vh;
   min-height: 600px;
   position: relative;
-  background-image: url("https://res.cloudinary.com/amenitiz/image/upload/w_2400,q_auto:best,f_auto,c_fill/v1748888083/omou7cxhd8opgelkbeuz.jpg");
-  background-size: cover;
-  background-position: center;
+}
+.exp-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://res.cloudinary.com/amenitiz/image/upload/w_2400,q_auto:best,f_auto,c_fill/v1748888083/omou7cxhd8opgelkbeuz.jpg") center / cover no-repeat;
 }
 .exp-hero::after {
   content: "";
