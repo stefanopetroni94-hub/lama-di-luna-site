@@ -62,7 +62,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "The Coloni room was once home to the families who worked the land. Its thick stone walls keep it cool through the Puglian summer, and an open fireplace warms it when the tramontana blows down off the Murgia.",
           "Pine and olive wood beds, raw cotton sheets, and a single window opening onto the inner courtyard. Simple, quiet, and full of the masseria's long memory.",
         ],
-        details: ["Sleeps 2", "Open fireplace", "Pine and olive wood beds", "Courtyard view"],
+        details: ["Sleeps 2", "Open fireplace", "Imperial bed, 2 x 2 meters", "Shower, AC, TV, minibar, wifi"],
         img: IMG.coloni,
         gallery: [
           "/rooms/coloni-1.jpg",
@@ -170,7 +170,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "La camera Coloni era un tempo la dimora delle famiglie che lavoravano la terra. I suoi spessi muri in pietra la mantengono fresca durante l'estate pugliese, e un camino aperto la riscalda quando la tramontana scende dalla Murgia.",
           "Letti in pino e legno d'ulivo, lenzuola di cotone grezzo e un'unica finestra affacciata sulla corte interna. Semplice, silenziosa e piena della lunga memoria della masseria.",
         ],
-        details: ["Per 2", "Camino aperto", "Letti in pino e legno d'ulivo", "Vista sulla corte"],
+        details: ["Per 2", "Camino aperto", "Letto imperiale, 2 x 2 metri", "Doccia, aria condizionata, TV, minibar, wifi"],
         img: IMG.coloni,
         gallery: [
           "/rooms/coloni-1.jpg",
