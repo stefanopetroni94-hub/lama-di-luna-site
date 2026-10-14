@@ -880,8 +880,10 @@ section {
   left: 0;
   color: var(--ink);
 }
-.room-detail--hero .room-detail-price {
-  margin-top: 1.6rem;
+.room-detail--hero .quick-search.room-quick-search {
+  max-width: none;
+  margin: 3rem 0 0;
+  padding: 0;
 }
 .room-rows {
   display: grid;

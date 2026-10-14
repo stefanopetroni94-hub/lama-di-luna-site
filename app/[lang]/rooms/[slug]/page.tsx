@@ -2,7 +2,9 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
+import { QuickSearch } from "@/components/quick-search"
 import { rooms } from "@/lib/content/rooms"
+import { book } from "@/lib/content/book"
 import { isLocale } from "@/lib/i18n"
 
 export default async function RoomDetailPage({
@@ -59,16 +61,11 @@ export default async function RoomDetailPage({
                   ))}
                 </ul>
               </div>
-              <div className="room-detail-price">
-                <small>{c.from}</small>
-                <span>
-                  {room.price} {c.perNight}
-                </span>
-              </div>
-              <Link href={`/${lang}/book`} className="room-book-btn">
-                {c.bookThisRoom}
-              </Link>
             </aside>
+          </div>
+
+          <div className="quick-search room-quick-search">
+            <QuickSearch labels={book[lang]} />
           </div>
         </header>
 
