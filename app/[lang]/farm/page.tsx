@@ -73,11 +73,6 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
       </section>
 
       <section className="farm-section">
-        <div className="book-stay">
-          <Link href={`/${lang}/book`} className="book-stay-btn">
-            {lang === "it" ? "Prenota il tuo soggiorno" : "Book your stay"}
-          </Link>
-        </div>
         <div className="text-image farm-organic">
           <div className="text-block">
             <div className="room-name" style={{ marginBottom: "1rem" }}>

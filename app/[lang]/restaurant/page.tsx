@@ -95,12 +95,6 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         />
       </section>
 
-      <section className="book-stay">
-        <Link href={`/${lang}/book`} className="book-stay-btn">
-          {c.bookingEyebrow}
-        </Link>
-      </section>
-
       <section className="photo-split">
         <div className="photo-split-img" style={{ backgroundImage: `url('${c.photos[0]}')` }} />
         <div className="photo-split-img" style={{ backgroundImage: `url('${c.photos[1]}')` }} />
