@@ -2044,6 +2044,9 @@ footer {
 .farm-split {
   margin-top: 4rem;
 }
+.farm-organic .text-block {
+  margin-left: auto;
+}
 .farm-seasons {
   padding-top: 4rem;
 }

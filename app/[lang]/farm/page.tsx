@@ -78,11 +78,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
             {lang === "it" ? "Prenota il tuo soggiorno" : "Book your stay"}
           </Link>
         </div>
-        <div className="text-image">
-          <div
-            className="image-block"
-            style={{ backgroundImage: `url('${c.organic.img}')`, backgroundPosition: "65% center" }}
-          />
+        <div className="text-image farm-organic">
           <div className="text-block">
             <div className="room-name" style={{ marginBottom: "1rem" }}>
               {c.organicLabel}
@@ -91,6 +87,10 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
               <p key={i}>{p}</p>
             ))}
           </div>
+          <div
+            className="image-block"
+            style={{ backgroundImage: `url('${c.organic.img}')`, backgroundPosition: "65% center" }}
+          />
         </div>
       </section>
 
