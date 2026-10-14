@@ -2054,6 +2054,9 @@ footer {
   margin-top: 0;
   max-width: none;
 }
+.farm-seasons .statement-body p {
+  margin-bottom: 0;
+}
 .farm-split .story-split-img {
   aspect-ratio: 1 / 1;
 }
