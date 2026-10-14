@@ -2164,7 +2164,7 @@ footer {
 }
 
 /* farm: full-width photo, then the family story across the whole page */
-.farm-intro {
+.statement-inner.farm-intro {
   padding-top: 4rem;
 }
 .farm-intro .statement-body {
@@ -2175,7 +2175,7 @@ footer {
   margin-bottom: 0;
 }
 @media (max-width: 700px) {
-  .farm-intro {
+  .statement-inner.farm-intro {
     padding-top: 3.5rem;
   }
 }
