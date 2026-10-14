@@ -65,10 +65,12 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         details: ["Sleeps 2", "Open fireplace", "1800s brass bed", "Courtyard view", "Solar power"],
         img: IMG.coloni,
         gallery: [
+          "/whatsapp/20261014_100717_4604238573181114.jpg",
           "/rooms/coloni-1.jpg",
           "/rooms/coloni-4.jpg",
           "/rooms/coloni-3.jpg",
-          "/rooms/coloni-2.jpg",
+          "/whatsapp/20261014_100749_29205599719064903.jpg",
+          "/whatsapp/20261013_164120_2402422946959771.jpg",
         ],
       },
       {
@@ -171,10 +173,12 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         details: ["Per 2", "Camino aperto", "Letto in ottone dell'Ottocento", "Vista sulla corte", "Energia solare"],
         img: IMG.coloni,
         gallery: [
+          "/whatsapp/20261014_100717_4604238573181114.jpg",
           "/rooms/coloni-1.jpg",
           "/rooms/coloni-4.jpg",
           "/rooms/coloni-3.jpg",
-          "/rooms/coloni-2.jpg",
+          "/whatsapp/20261014_100749_29205599719064903.jpg",
+          "/whatsapp/20261013_164120_2402422946959771.jpg",
         ],
       },
       {
