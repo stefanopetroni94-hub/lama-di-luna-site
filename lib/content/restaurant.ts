@@ -63,7 +63,7 @@ export const restaurant: Record<Locale, RestaurantContent> = {
     mediaPhotos: [IMG.dinner, IMG.bruschetta],
     curvedLabel: "At the Table",
     veranda:
-      "The Veranda is a special place to enjoy the sunsets and then to dine all together at eight o'clock. Sometimes, during the summer, we make pizza together on the veranda, in the wood-fired oven.",
+      "The Veranda is a special place to enjoy the sunsets and then to dine all together at eight o'clock. Sometimes, during the summer, we make pizza together on the veranda, in the wood-fired oven, as a community, as the inhabitants of Lama di Luna did for centuries.",
     menuEyebrow: "A sample evening",
     menuTitle: "What the day gives",
     menuNote: "The menu changes daily. This is one evening's table — yours will follow the season.",
@@ -115,7 +115,7 @@ export const restaurant: Record<Locale, RestaurantContent> = {
     mediaPhotos: [IMG.dinner, IMG.bruschetta],
     curvedLabel: "A Tavola",
     veranda:
-      "La Veranda è un posto speciale per godersi i tramonti e poi cenare tutti insieme alle 20. A volte, durante l'estate, sulla veranda si fa la pizza insieme, con il forno a legna.",
+      "La Veranda è un posto speciale per godersi i tramonti e poi cenare tutti insieme alle 20. A volte, durante l'estate, sulla veranda si fa la pizza insieme, con il forno a legna, come una comunità, come hanno fatto per secoli gli abitanti di Lama di Luna.",
     menuEyebrow: "Una sera d'esempio",
     menuTitle: "Ciò che dà la giornata",
     menuNote: "Il menù cambia ogni giorno. Questa è la tavola di una sera — la vostra seguirà la stagione.",
