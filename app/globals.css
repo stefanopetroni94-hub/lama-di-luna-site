@@ -2143,7 +2143,9 @@ footer {
   .story-wide {
     padding: 2.5rem 0;
   }
-  .farm-split,
+  .farm-split {
+    margin-top: 3.5rem;
+  }
   .restaurant-split {
     margin-top: 2.5rem;
   }
@@ -2169,9 +2171,12 @@ footer {
   margin-top: 0;
   max-width: none;
 }
+.farm-intro .statement-body p {
+  margin-bottom: 0;
+}
 @media (max-width: 700px) {
   .farm-intro {
-    padding-top: 2.5rem;
+    padding-top: 3.5rem;
   }
 }
 
