@@ -52,7 +52,6 @@ export default async function RoomDetailPage({
             </div>
             <aside className="room-detail-aside">
               <div className="room-detail-facts">
-                <h2>{c.detailsLabel}</h2>
                 <ul>
                   {room.details.map((d) => (
                     <li key={d}>{d}</li>

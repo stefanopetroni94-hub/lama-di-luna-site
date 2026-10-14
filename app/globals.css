@@ -856,8 +856,29 @@ section {
   max-width: 1500px;
   padding: 3rem clamp(1.5rem, 9vw, 11rem) 3rem;
 }
+.room-detail--hero .room-detail-body {
+  grid-template-columns: 1fr 15rem;
+  gap: 3rem;
+}
 .room-detail--hero .room-detail-copy p {
   margin-bottom: 0;
+  max-width: none;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.room-detail--hero .room-detail-aside {
+  justify-self: end;
+  width: 15rem;
+}
+@media (max-width: 900px) {
+  .room-detail--hero .room-detail-body {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .room-detail--hero .room-detail-aside {
+    justify-self: start;
+    width: auto;
+  }
 }
 .room-detail--hero .room-detail-facts ul {
   margin-bottom: 0;
