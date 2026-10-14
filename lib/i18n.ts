@@ -12,21 +12,21 @@ export type MenuItem = { label: string; slug: string | null }
 
 export const menu: Record<Locale, MenuItem[]> = {
   en: [
-    { label: "Stay", slug: "rooms" },
-    { label: "Taste", slug: "restaurant" },
-    { label: "Explore", slug: "experiences" },
+    { label: "Rooms", slug: "rooms" },
+    { label: "Kitchen", slug: "restaurant" },
     { label: "Farm", slug: "farm" },
     { label: "Story", slug: "story" },
+    { label: "Experiences", slug: "experiences" },
     { label: "Whole Masseria", slug: "exclusive" },
     { label: "Shop", slug: "shop" },
     { label: "Contact", slug: "contact" },
   ],
   it: [
-    { label: "Soggiorna", slug: "rooms" },
-    { label: "Gusta", slug: "restaurant" },
-    { label: "Esplora", slug: "experiences" },
+    { label: "Camere", slug: "rooms" },
+    { label: "Cucina", slug: "restaurant" },
     { label: "Fattoria", slug: "farm" },
     { label: "Storia", slug: "story" },
+    { label: "Esperienze", slug: "experiences" },
     { label: "Masseria Intera", slug: "exclusive" },
     { label: "Shop", slug: "shop" },
     { label: "Contatti", slug: "contact" },
