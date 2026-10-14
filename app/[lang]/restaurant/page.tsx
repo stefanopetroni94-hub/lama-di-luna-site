@@ -114,6 +114,18 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         </div>
       </section>
 
+      <section>
+        <div
+          className="full-photo"
+          role="img"
+          aria-label={lang === "it" ? "Ospiti che brindano sulla veranda al tramonto" : "Guests toasting on the veranda at sunset"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261014_050216_3074277952905624.jpg')",
+            backgroundPosition: "40% 55%",
+          }}
+        />
+      </section>
+
       <section className="booking-callout">
         <div className="booking-callout-inner">
           <h2>{f.calloutTitle}</h2>
