@@ -406,6 +406,8 @@ section {
   margin: 0 auto;
 }
 .room-card {
+  display: block;
+  color: inherit;
   cursor: pointer;
 }
 .room-img {

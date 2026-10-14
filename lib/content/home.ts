@@ -1,6 +1,6 @@
 import type { Locale } from "@/lib/i18n"
 
-type Room = { name: string; desc: string; img: string }
+type Room = { slug: string; name: string; desc: string; img: string }
 
 export type HomeContent = {
   statementTitle: string
@@ -49,16 +49,19 @@ export const home: Record<Locale, HomeContent> = {
     roomsLabel: "Stay at our home",
     rooms: [
       {
+        slug: "coloni",
         name: "Coloni",
         desc: "Once a settler's dwelling, the Coloni room opens onto the inner courtyard. Fireplace, pine and olive wood beds, terracotta basin, raw cotton sheets.",
         img: IMG.coloni,
       },
       {
+        slug: "murgia",
         name: "Murgia",
         desc: "Named for the wild uplands beyond the walls, the Murgia room looks out over the olive groves and open countryside. Whitewashed stone, a vaulted ceiling, brass bed from the 1800s and natural linen — quiet and full of light.",
         img: IMG.murgia,
       },
       {
+        slug: "suite-deluxe-masseria",
         name: "Suite Deluxe",
         desc: "A king bed, private sauna and a panoramic terrace over the olive groves — for those who arrive intending to forget the world for a while.",
         img: IMG.deluxe,
@@ -102,16 +105,19 @@ export const home: Record<Locale, HomeContent> = {
     roomsLabel: "Le Camere",
     rooms: [
       {
+        slug: "coloni",
         name: "Coloni",
         desc: "Un tempo dimora di coloni, la camera Coloni si apre sul cortile interno. Camino, letti in pino e legno d'ulivo, lavabo in terracotta, lenzuola di cotone grezzo.",
         img: IMG.coloni,
       },
       {
+        slug: "murgia",
         name: "Murgia",
         desc: "Dedicata agli altopiani selvaggi oltre le mura, la camera Murgia si affaccia sugli uliveti e sulla campagna aperta. Pietra imbiancata a calce, volta a botte, letto in ottone dell'Ottocento e lino naturale — silenziosa e piena di luce.",
         img: IMG.murgia,
       },
       {
+        slug: "suite-deluxe-masseria",
         name: "Suite Deluxe",
         desc: "Un letto king, sauna privata e una terrazza panoramica sugli uliveti — per chi arriva con l'intenzione di dimenticare il mondo per un po'.",
         img: IMG.deluxe,

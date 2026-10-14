@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
@@ -43,13 +44,13 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       <section>
         <div className="rooms-grid">
           {c.rooms.map((room) => (
-            <article className="room-card" key={room.name}>
+            <Link href={`/${lang}/rooms/${room.slug}`} className="room-card" key={room.name}>
               <div className="room-img-wrap">
                 <div className="room-img" style={{ backgroundImage: `url('${room.img}')` }} />
               </div>
               <div className="room-name">{room.name}</div>
               <p className="room-desc">{room.desc}</p>
-            </article>
+            </Link>
           ))}
         </div>
         <div className="rooms-cta">
