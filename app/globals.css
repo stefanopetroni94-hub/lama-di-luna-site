@@ -2033,6 +2033,14 @@ footer {
 .farm-split {
   margin-top: 4rem;
 }
+.farm-split .story-split-img {
+  aspect-ratio: 1 / 1;
+}
+@media (max-width: 700px) {
+  .farm-split {
+    grid-template-columns: 1fr;
+  }
+}
 .story-wide {
   padding: 4rem 0;
 }
