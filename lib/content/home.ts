@@ -55,7 +55,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         name: "Murgia",
-        desc: "Named for the wild uplands beyond the walls, the Murgia room looks out over the olive groves and open countryside. Whitewashed stone, a vaulted ceiling, wrought-iron bed and natural linen — quiet and full of light.",
+        desc: "Named for the wild uplands beyond the walls, the Murgia room looks out over the olive groves and open countryside. Whitewashed stone, a vaulted ceiling, brass bed from the 1800s and natural linen — quiet and full of light.",
         img: IMG.murgia,
       },
       {
@@ -108,7 +108,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         name: "Murgia",
-        desc: "Dedicata agli altopiani selvaggi oltre le mura, la camera Murgia si affaccia sugli uliveti e sulla campagna aperta. Pietra imbiancata a calce, volta a botte, letto in ferro battuto e lino naturale — silenziosa e piena di luce.",
+        desc: "Dedicata agli altopiani selvaggi oltre le mura, la camera Murgia si affaccia sugli uliveti e sulla campagna aperta. Pietra imbiancata a calce, volta a botte, letto in ottone dell'Ottocento e lino naturale — silenziosa e piena di luce.",
         img: IMG.murgia,
       },
       {
