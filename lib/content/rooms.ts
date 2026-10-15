@@ -103,7 +103,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         price: "€310",
         sleeps: "Sleeps 4",
         description: [
-          "Two connecting rooms with a shared bathroom, opening onto the garden. Solid pine beds, space to spread out, and a doorway straight into the olive grove for the children to roam.",
+          "Two large connecting rooms with a shared bathroom, a walk-in shower and a jacuzzi bathtub. Solid pine beds, space to spread out, and a doorway straight into the courtyard for the children to roam.",
           "A suite built for longer stays — the kind of place a family arrives, settles in, and forgets the calendar.",
         ],
         details: ["Sleeps 4", "Two connecting rooms", "Garden access", "Solid pine beds", "Shared bathroom"],
@@ -212,7 +212,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         price: "€310",
         sleeps: "Per 4",
         description: [
-          "Due camere comunicanti con bagno condiviso, affacciate sul giardino. Letti in pino massello, spazio per allargarsi e una porta che dà direttamente sull'uliveto perché i bambini possano correre.",
+          "Due ampie camere comunicanti con bagno condiviso, doccia walk-in e vasca idromassaggio jacuzzi. Letti in pino massello, spazio per allargarsi e una porta che dà direttamente sul cortile perché i bambini possano correre.",
           "Una suite pensata per soggiorni lunghi — il luogo in cui una famiglia arriva, si sistema e dimentica il calendario.",
         ],
         details: ["Per 4", "Due camere comunicanti", "Accesso al giardino", "Letti in pino massello", "Bagno condiviso"],
