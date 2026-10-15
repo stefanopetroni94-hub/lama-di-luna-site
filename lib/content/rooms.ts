@@ -85,7 +85,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "A brass bed from the 1800s, a terracotta basin, and natural linen throughout. A room made for slow mornings and long, unhurried rest.",
         ],
         details: ["Sleeps 2", "Vaulted ceiling", "Brass bed from the 1800s", "Bathtub, AC, TV, minibar, wifi"],
-        img: "/rooms/murgia-5.jpg",
+        img: IMG.masseria,
         gallery: [
           "/rooms/murgia-1.jpg",
           "/rooms/murgia-2.jpg",
@@ -195,7 +195,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Un letto in ottone dell'Ottocento, un catino in terracotta e lino naturale ovunque. Una camera fatta per mattine lente e riposo lungo e senza fretta.",
         ],
         details: ["Per 2", "Volta a botte", "Letto in ottone dell'Ottocento", "Vasca da bagno, aria condizionata, TV, minibar, wifi"],
-        img: "/rooms/murgia-5.jpg",
+        img: IMG.masseria,
         gallery: [
           "/rooms/murgia-1.jpg",
           "/rooms/murgia-2.jpg",
