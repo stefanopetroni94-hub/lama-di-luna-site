@@ -2246,12 +2246,9 @@ footer {
 .restaurant-split.restaurant-split--end {
   margin-top: 0;
 }
-/* home: two photos under "Experience our territory", a bit less saturated */
+/* home: two photos under "Experience our territory", standard site filter */
 .home-split {
   margin-top: 4rem;
-}
-.home-split .story-split-img {
-  filter: sepia(0.28) contrast(1.18) saturate(0.6) brightness(0.96);
 }
 .restaurant-toast {
   margin-top: 4rem;
