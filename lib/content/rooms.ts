@@ -90,8 +90,8 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "/rooms/murgia-1.jpg",
           "/rooms/murgia-2.jpg",
           "/rooms/murgia-3.jpg",
-          "/rooms/murgia-4.jpg",
           "/rooms/murgia-5.jpg",
+          "/rooms/murgia-4.jpg",
         ],
       },
       {
@@ -198,8 +198,8 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "/rooms/murgia-1.jpg",
           "/rooms/murgia-2.jpg",
           "/rooms/murgia-3.jpg",
-          "/rooms/murgia-4.jpg",
           "/rooms/murgia-5.jpg",
+          "/rooms/murgia-4.jpg",
         ],
       },
       {
