@@ -99,7 +99,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         slug: "family-suite",
         name: "Family Suite",
         tagline: "Room for the whole family",
-        meta: "Two connecting rooms, garden access, solid pine beds. Sleeps 4.",
+        meta: "Two connecting rooms, courtyard access, solid pine beds. Sleeps 4.",
         price: "€310",
         sleeps: "Sleeps 4",
         description: [
@@ -216,7 +216,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         slug: "family-suite",
         name: "Family Suite",
         tagline: "Spazio per tutta la famiglia",
-        meta: "Due camere comunicanti, accesso al giardino, letti in pino massello. Per 4.",
+        meta: "Due camere comunicanti, accesso alla corte, letti in pino massello. Per 4.",
         price: "€310",
         sleeps: "Per 4",
         description: [
