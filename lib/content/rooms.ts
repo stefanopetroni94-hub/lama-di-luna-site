@@ -135,8 +135,8 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "/whatsapp/20261015_121817_1460565662633558.jpg",
           "/rooms/family-suite-5.jpg",
           "/whatsapp/20261015_121845_2224441671749453.jpg",
-          "/whatsapp/20261015_121826_2544669482707356.jpg",
           "/whatsapp/20261015_121950_1101245532801910.jpg",
+          "/whatsapp/20261015_121826_2544669482707356.jpg",
         ],
       },
       {
@@ -252,8 +252,8 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "/whatsapp/20261015_121817_1460565662633558.jpg",
           "/rooms/family-suite-5.jpg",
           "/whatsapp/20261015_121845_2224441671749453.jpg",
-          "/whatsapp/20261015_121826_2544669482707356.jpg",
           "/whatsapp/20261015_121950_1101245532801910.jpg",
+          "/whatsapp/20261015_121826_2544669482707356.jpg",
         ],
       },
       {
