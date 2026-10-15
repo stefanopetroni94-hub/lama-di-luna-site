@@ -125,7 +125,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         price: "€380",
         sleeps: "Sleeps 4",
         description: [
-          "Large rooms, set into the oldest part of the masseria, ideal for a group or a family. Two separate bedrooms with a shared bathroom and a jacuzzi bathtub. A private sauna to enjoy spring colder days.",
+          "Large rooms set into the oldest part of the masseria, ideal for a group or a family. Two separate bedrooms with a shared bathroom and a jacuzzi bathtub. A private sauna to enjoy spring colder days.",
           "Stone underfoot and overhead, pine and olive wood within, and the whole estate a step beyond the door.",
         ],
         details: ["Sleeps 4, 50 m²", "Open fireplace", "Two bedrooms", "Private sauna"],
@@ -242,7 +242,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         price: "€380",
         sleeps: "Per 4",
         description: [
-          "Ampie camere, ricavate nella parte più antica della masseria, ideali per un gruppo o una famiglia. Due camere da letto separate con bagno condiviso e vasca idromassaggio jacuzzi. Una sauna privata per godersi le giornate più fredde di primavera.",
+          "Ampie camere ricavate nella parte più antica della masseria, ideali per un gruppo o una famiglia. Due camere da letto separate con bagno condiviso e vasca idromassaggio jacuzzi. Una sauna privata per godersi le giornate più fredde di primavera.",
           "Pietra sotto i piedi e sopra la testa, pino e legno d'ulivo all'interno, e l'intera tenuta a un passo dalla porta.",
         ],
         details: ["Per 4, 50 m²", "Camino aperto", "Due camere da letto", "Sauna privata"],
