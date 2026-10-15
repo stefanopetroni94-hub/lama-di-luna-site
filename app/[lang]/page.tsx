@@ -107,14 +107,18 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
       <section className="story-split home-split">
         <div
-          className="story-split-img"
+          className="story-split-img story-split-img--tilt"
           role="img"
-          aria-label={lang === "it" ? "Il salotto con il camino acceso" : "The sitting room with the fire lit"}
-          style={{
-            backgroundImage: "url('/whatsapp/20261015_132050_2612175075870328.jpg')",
-            backgroundPosition: "50% 40%",
-          }}
-        />
+          aria-label={lang === "it" ? "Il grande salotto con il camino acceso" : "The large sitting room with the fire lit"}
+        >
+          <div
+            className="story-split-tilt"
+            style={{
+              backgroundImage: "url('/whatsapp/20261015_132439_1101982209358279.jpg')",
+              backgroundPosition: "50% 45%",
+            }}
+          />
+        </div>
         <div
           className="story-split-img"
           role="img"

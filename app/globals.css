@@ -2260,6 +2260,18 @@ footer {
   position: relative;
   overflow: hidden;
 }
+.story-split-img--tilt {
+  position: relative;
+  overflow: hidden;
+}
+/* small rotation to straighten a photo; scaled up so no corners show */
+.story-split-tilt {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(-1.5deg) scale(1.1);
+}
 .story-split-rotate {
   position: absolute;
   inset: 0;
