@@ -148,7 +148,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         sleeps: "Sleeps 3",
         description: [
           "An imperial bed beneath a vaulted stone ceiling, a private sauna carved into the masseria stone, and a panoramic terrace looking out over the olive groves to the horizon.",
-          "The most private and the most complete of the suites — made for the guests who mean to stay a while.",
+          "The largest, the most private and the most complete of the suites — made for the guests who mean to stay a while.",
         ],
         details: ["Sleeps 3, 60 m²", "Imperial bed, 2 x 2 meters", "Vaulted ceiling", "Private mini pool and cave with sauna", "Panoramic terrace"],
         img: IMG.entrance,
@@ -272,7 +272,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         sleeps: "Per 3",
         description: [
           "Un letto imperiale sotto una volta in pietra, una sauna privata scavata nella pietra della masseria e una terrazza panoramica affacciata sugli uliveti fino all'orizzonte.",
-          "La più privata e la più completa delle suite — pensata per gli ospiti che hanno intenzione di fermarsi a lungo.",
+          "La più grande, la più privata e la più completa delle suite — pensata per gli ospiti che hanno intenzione di fermarsi a lungo.",
         ],
         details: ["Per 3, 60 m²", "Letto imperiale, 2 x 2 metri", "Volta in pietra", "Mini piscina privata e grotta con sauna", "Terrazza panoramica"],
         img: IMG.entrance,
