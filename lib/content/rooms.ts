@@ -81,7 +81,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         price: "€240",
         sleeps: "Sleeps 2",
         description: [
-          "Named for the Alta Murgia — the wild uplands whose silence belongs to it. East-facing windows keep the light soft and even through the day, falling across whitewashed stone and a vaulted ceiling.",
+          "Named for the Alta Murgia National Park — the wild uplands whose silence belongs to it. East-facing windows keep the light soft and even through the day, falling across whitewashed stone and a vaulted ceiling.",
           "A brass bed from the 1800s, a terracotta basin, and natural linen throughout. A room made for slow mornings and long, unhurried rest.",
         ],
         details: ["Sleeps 2", "Vaulted ceiling", "Brass bed from the 1800s", "East light"],
@@ -189,7 +189,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         price: "€240",
         sleeps: "Per 2",
         description: [
-          "Chiamata come l'Alta Murgia — gli altopiani selvaggi il cui silenzio le appartiene. Le finestre a est mantengono la luce morbida e uniforme durante il giorno, posandosi sulla pietra imbiancata e su una volta a botte.",
+          "Chiamata come il Parco Nazionale dell'Alta Murgia — gli altopiani selvaggi il cui silenzio le appartiene. Le finestre a est mantengono la luce morbida e uniforme durante il giorno, posandosi sulla pietra imbiancata e su una volta a botte.",
           "Un letto in ottone dell'Ottocento, un catino in terracotta e lino naturale ovunque. Una camera fatta per mattine lente e riposo lungo e senza fretta.",
         ],
         details: ["Per 2", "Volta a botte", "Letto in ottone dell'Ottocento", "Luce da est"],
