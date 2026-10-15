@@ -62,7 +62,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "The Coloni room was once home to the families who worked the land. Its thick stone walls keep it cool through the Puglian summer, and an open fireplace warms it when the tramontana blows down off the Murgia.",
           "Pine and olive wood beds, raw cotton sheets, and a single window opening onto the inner courtyard. Simple, quiet, and full of the masseria's long memory.",
         ],
-        details: ["Sleeps 2, 25 square meters", "Open fireplace", "Imperial bed, 2 x 2 meters", "Shower, AC, TV, minibar, wifi"],
+        details: ["Sleeps 2, 25 m²", "Open fireplace", "Imperial bed, 2 x 2 meters", "Shower, AC, TV, minibar, wifi"],
         img: IMG.coloni,
         gallery: [
           "/rooms/coloni-1.jpg",
@@ -84,7 +84,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Named for the Alta Murgia National Park — the wild uplands whose silence belongs to it. East-facing windows keep the light soft and even through the day, falling across whitewashed stone and a vaulted ceiling.",
           "A brass bed from the 1800s, a terracotta basin, and natural linen throughout. A room made for slow mornings and long, unhurried rest.",
         ],
-        details: ["Sleeps 2", "Vaulted ceiling", "Brass bed from the 1800s", "Bathtub, AC, TV, minibar, wifi"],
+        details: ["Sleeps 2, 35 m²", "Vaulted ceiling", "Brass bed from the 1800s", "Bathtub, AC, TV, minibar, wifi"],
         img: IMG.masseria,
         gallery: [
           "/rooms/murgia-1.jpg",
@@ -106,7 +106,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Two large connecting rooms with a shared bathroom, a walk-in shower and a jacuzzi bathtub. Solid pine beds, space to spread out, and a doorway straight into the courtyard for the children to roam.",
           "A suite built for longer stays — the kind of place a family arrives, settles in, and forgets the calendar.",
         ],
-        details: ["Sleeps 4", "Two connecting rooms", "Solid pine beds, 2 x 2 meters", "Jacuzzi bathtub, AC, TV, minibar, wifi"],
+        details: ["Sleeps 4, 54 m²", "Two connecting rooms", "Solid pine beds, 2 x 2 meters", "Jacuzzi bathtub, AC, TV, minibar, wifi"],
         img: "/rooms/family-suite-4.jpg",
         gallery: [
           "/rooms/family-suite-4.jpg",
@@ -128,7 +128,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "The grandest of the rooms, set into the oldest part of the masseria. A sitting room with an open fireplace, two bedrooms, and a private nook off the inner courtyard.",
           "Stone underfoot and overhead, brass and pine within, and the whole estate a step beyond the door.",
         ],
-        details: ["Sleeps 4–5", "Sitting room", "Open fireplace", "Two bedrooms", "Private courtyard nook"],
+        details: ["Sleeps 4–5, 50 m²", "Sitting room", "Open fireplace", "Two bedrooms", "Private courtyard nook"],
         img: "/whatsapp/20261015_121836_1104061892546583.jpg",
         gallery: [
           "/whatsapp/20261015_121836_1104061892546583.jpg",
@@ -150,7 +150,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "A king bed beneath a vaulted stone ceiling, a private sauna carved into the masseria stone, and a panoramic terrace looking out over the olive groves to the horizon.",
           "The most private and the most complete of the suites — made for the guests who mean to stay a while.",
         ],
-        details: ["Sleeps 2", "King bed", "Vaulted ceiling", "Private sauna", "Panoramic terrace"],
+        details: ["Sleeps 2, 60 m²", "King bed", "Vaulted ceiling", "Private sauna", "Panoramic terrace"],
         img: IMG.murgia,
         gallery: [IMG.suiteDeluxe, IMG.entrance, IMG.pool, IMG.estate],
       },
@@ -179,7 +179,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "La camera Coloni era un tempo la dimora delle famiglie che lavoravano la terra. I suoi spessi muri in pietra la mantengono fresca durante l'estate pugliese, e un camino aperto la riscalda quando la tramontana scende dalla Murgia.",
           "Letti in pino e legno d'ulivo, lenzuola di cotone grezzo e un'unica finestra affacciata sulla corte interna. Semplice, silenziosa e piena della lunga memoria della masseria.",
         ],
-        details: ["Per 2, 25 metri quadrati", "Camino aperto", "Letto imperiale, 2 x 2 metri", "Doccia, aria condizionata, TV, minibar, wifi"],
+        details: ["Per 2, 25 m²", "Camino aperto", "Letto imperiale, 2 x 2 metri", "Doccia, aria condizionata, TV, minibar, wifi"],
         img: IMG.coloni,
         gallery: [
           "/rooms/coloni-1.jpg",
@@ -201,7 +201,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Chiamata come il Parco Nazionale dell'Alta Murgia — gli altopiani selvaggi il cui silenzio le appartiene. Le finestre a est mantengono la luce morbida e uniforme durante il giorno, posandosi sulla pietra imbiancata e su una volta a botte.",
           "Un letto in ottone dell'Ottocento, un catino in terracotta e lino naturale ovunque. Una camera fatta per mattine lente e riposo lungo e senza fretta.",
         ],
-        details: ["Per 2", "Volta a botte", "Letto in ottone dell'Ottocento", "Vasca da bagno, aria condizionata, TV, minibar, wifi"],
+        details: ["Per 2, 35 m²", "Volta a botte", "Letto in ottone dell'Ottocento", "Vasca da bagno, aria condizionata, TV, minibar, wifi"],
         img: IMG.masseria,
         gallery: [
           "/rooms/murgia-1.jpg",
@@ -223,7 +223,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Due ampie camere comunicanti con bagno condiviso, doccia walk-in e vasca idromassaggio jacuzzi. Letti in pino massello, spazio per allargarsi e una porta che dà direttamente sul cortile perché i bambini possano correre.",
           "Una suite pensata per soggiorni lunghi — il luogo in cui una famiglia arriva, si sistema e dimentica il calendario.",
         ],
-        details: ["Per 4", "Due camere comunicanti", "Letti in pino massello, 2 x 2 metri", "Vasca jacuzzi, aria condizionata, TV, minibar, wifi"],
+        details: ["Per 4, 54 m²", "Due camere comunicanti", "Letti in pino massello, 2 x 2 metri", "Vasca jacuzzi, aria condizionata, TV, minibar, wifi"],
         img: "/rooms/family-suite-4.jpg",
         gallery: [
           "/rooms/family-suite-4.jpg",
@@ -245,7 +245,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "La più maestosa delle camere, ricavata nella parte più antica della masseria. Un salotto con camino aperto, due camere da letto e un angolo privato sulla corte interna.",
           "Pietra sotto i piedi e sopra la testa, ottone e pino all'interno, e l'intera tenuta a un passo dalla porta.",
         ],
-        details: ["Per 4–5", "Salotto", "Camino aperto", "Due camere", "Angolo privato sulla corte"],
+        details: ["Per 4–5, 50 m²", "Salotto", "Camino aperto", "Due camere", "Angolo privato sulla corte"],
         img: "/whatsapp/20261015_121836_1104061892546583.jpg",
         gallery: [
           "/whatsapp/20261015_121836_1104061892546583.jpg",
@@ -267,7 +267,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Un letto king sotto una volta in pietra, una sauna privata scavata nella pietra della masseria e una terrazza panoramica affacciata sugli uliveti fino all'orizzonte.",
           "La più privata e la più completa delle suite — pensata per gli ospiti che hanno intenzione di fermarsi a lungo.",
         ],
-        details: ["Per 2", "Letto king", "Volta in pietra", "Sauna privata", "Terrazza panoramica"],
+        details: ["Per 2, 60 m²", "Letto king", "Volta in pietra", "Sauna privata", "Terrazza panoramica"],
         img: IMG.murgia,
         gallery: [IMG.suiteDeluxe, IMG.entrance, IMG.pool, IMG.estate],
       },
