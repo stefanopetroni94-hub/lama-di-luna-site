@@ -143,7 +143,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         slug: "suite-deluxe-masseria",
         name: "Suite Deluxe Masseria",
         tagline: "The signature suite",
-        meta: "King bed, vaulted ceiling, private sauna, panoramic terrace. Sleeps 3.",
+        meta: "King bed, vaulted ceiling, private cave with a sauna, a mini pool and a panoramic terrace. Sleeps 3.",
         price: "€420",
         sleeps: "Sleeps 3",
         description: [
@@ -260,7 +260,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         slug: "suite-deluxe-masseria",
         name: "Suite Deluxe Masseria",
         tagline: "La suite d'autore",
-        meta: "Letto king, volta in pietra, sauna privata, terrazza panoramica. Per 3.",
+        meta: "Letto king, volta in pietra, grotta privata con sauna, una mini piscina e una terrazza panoramica. Per 3.",
         price: "€420",
         sleeps: "Per 3",
         description: [
