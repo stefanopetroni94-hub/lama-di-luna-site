@@ -111,8 +111,9 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         gallery: [
           "/rooms/family-suite-4.jpg",
           "/rooms/family-suite-2.jpg",
-          "/rooms/family-suite-3.jpg",
           "/rooms/family-suite-1.jpg",
+          "/rooms/family-suite-3.jpg",
+          "/whatsapp/20261015_121055_1809734943403823.jpg",
           "/rooms/family-suite-5.jpg",
         ],
       },
@@ -220,8 +221,9 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         gallery: [
           "/rooms/family-suite-4.jpg",
           "/rooms/family-suite-2.jpg",
-          "/rooms/family-suite-3.jpg",
           "/rooms/family-suite-1.jpg",
+          "/rooms/family-suite-3.jpg",
+          "/whatsapp/20261015_121055_1809734943403823.jpg",
           "/rooms/family-suite-5.jpg",
         ],
       },
