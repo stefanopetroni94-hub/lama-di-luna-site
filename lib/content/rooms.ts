@@ -106,7 +106,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Two large connecting rooms with a shared bathroom, a walk-in shower and a jacuzzi bathtub. Solid pine beds, space to spread out, and a doorway straight into the courtyard for the children to roam.",
           "A suite built for longer stays — the kind of place a family arrives, settles in, and forgets the calendar.",
         ],
-        details: ["Sleeps 4", "Two connecting rooms", "Garden access", "Solid pine beds", "Jacuzzi bathtub, AC, TV, minibar, wifi"],
+        details: ["Sleeps 4", "Two connecting rooms", "Solid pine beds, 2 x 2 meters", "Jacuzzi bathtub, AC, TV, minibar, wifi"],
         img: IMG.familySuite,
         gallery: [
           "/rooms/family-suite-1.jpg",
@@ -215,7 +215,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Due ampie camere comunicanti con bagno condiviso, doccia walk-in e vasca idromassaggio jacuzzi. Letti in pino massello, spazio per allargarsi e una porta che dà direttamente sul cortile perché i bambini possano correre.",
           "Una suite pensata per soggiorni lunghi — il luogo in cui una famiglia arriva, si sistema e dimentica il calendario.",
         ],
-        details: ["Per 4", "Due camere comunicanti", "Accesso al giardino", "Letti in pino massello", "Vasca jacuzzi, aria condizionata, TV, minibar, wifi"],
+        details: ["Per 4", "Due camere comunicanti", "Letti in pino massello, 2 x 2 metri", "Vasca jacuzzi, aria condizionata, TV, minibar, wifi"],
         img: IMG.familySuite,
         gallery: [
           "/rooms/family-suite-1.jpg",
