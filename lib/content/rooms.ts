@@ -125,8 +125,8 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         price: "€380",
         sleeps: "Sleeps 4–5",
         description: [
-          "The grandest of the rooms, set into the oldest part of the masseria. A sitting room with an open fireplace, two bedrooms, and a private nook off the inner courtyard.",
-          "Stone underfoot and overhead, brass and pine within, and the whole estate a step beyond the door.",
+          "Large rooms, set into the oldest part of the masseria, ideal for a group or a family. Two separate bedrooms with a shared bathroom and a jacuzzi bathtub. A private sauna to enjoy spring colder days.",
+          "Stone underfoot and overhead, pine and olive wood within, and the whole estate a step beyond the door.",
         ],
         details: ["Sleeps 4–5, 50 m²", "Sitting room", "Open fireplace", "Two bedrooms", "Private courtyard nook"],
         img: "/whatsapp/20261015_121836_1104061892546583.jpg",
@@ -242,8 +242,8 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         price: "€380",
         sleeps: "Per 4–5",
         description: [
-          "La più maestosa delle camere, ricavata nella parte più antica della masseria. Un salotto con camino aperto, due camere da letto e un angolo privato sulla corte interna.",
-          "Pietra sotto i piedi e sopra la testa, ottone e pino all'interno, e l'intera tenuta a un passo dalla porta.",
+          "Ampie camere, ricavate nella parte più antica della masseria, ideali per un gruppo o una famiglia. Due camere da letto separate con bagno condiviso e vasca idromassaggio jacuzzi. Una sauna privata per godersi le giornate più fredde di primavera.",
+          "Pietra sotto i piedi e sopra la testa, pino e legno d'ulivo all'interno, e l'intera tenuta a un passo dalla porta.",
         ],
         details: ["Per 4–5, 50 m²", "Salotto", "Camino aperto", "Due camere", "Angolo privato sulla corte"],
         img: "/whatsapp/20261015_121836_1104061892546583.jpg",
