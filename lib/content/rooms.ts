@@ -136,6 +136,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "/rooms/family-suite-5.jpg",
           "/whatsapp/20261015_121845_2224441671749453.jpg",
           "/whatsapp/20261015_121826_2544669482707356.jpg",
+          "/whatsapp/20261015_121950_1101245532801910.jpg",
         ],
       },
       {
@@ -252,6 +253,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "/rooms/family-suite-5.jpg",
           "/whatsapp/20261015_121845_2224441671749453.jpg",
           "/whatsapp/20261015_121826_2544669482707356.jpg",
+          "/whatsapp/20261015_121950_1101245532801910.jpg",
         ],
       },
       {
