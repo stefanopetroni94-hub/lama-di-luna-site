@@ -1173,8 +1173,8 @@ section {
 /* ---------------- SHOP ---------------- */
 .shop-page .shop-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem 2.2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem 2rem;
   max-width: 1500px;
   margin: 0 auto 5rem;
   padding: 0 2.5rem;
@@ -1192,13 +1192,13 @@ section {
 }
 .shop-card-name {
   font-family: var(--serif);
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--ink);
   margin-bottom: 0.3rem;
 }
 .shop-card-meta {
-  font-size: 13px;
+  font-size: 12.5px;
   line-height: 1.6;
   color: var(--ink-soft);
   font-style: italic;
