@@ -1455,7 +1455,7 @@ section {
 }
 /* each half keeps the exact proportions of the line in the logo (75 x 11) */
 .wave-line {
-  flex: 0 1 96px;
+  flex: 0 1 72px;
   min-width: 0;
   aspect-ratio: 75 / 11;
   height: auto;
