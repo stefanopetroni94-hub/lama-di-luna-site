@@ -2,6 +2,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
+import { WaveLine } from "@/components/wave-line"
 import { experiences, type ExpCard } from "@/lib/content/experiences"
 import { isLocale, type Locale } from "@/lib/i18n"
 
@@ -33,14 +34,22 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ la
         <p>{c.intro}</p>
       </section>
 
-      <div className="section-label">{c.onEstateLabel}</div>
+      <div className="section-label">
+        <WaveLine side="left" />
+        <span>{c.onEstateLabel}</span>
+        <WaveLine side="right" />
+      </div>
       <section className="grid-4">
         {c.onEstate.map((card) => (
           <Card key={card.name} card={card} lang={lang} />
         ))}
       </section>
 
-      <div className="section-label">{c.inRegionLabel}</div>
+      <div className="section-label">
+        <WaveLine side="left" />
+        <span>{c.inRegionLabel}</span>
+        <WaveLine side="right" />
+      </div>
       <section className="grid-4">
         {c.inRegion.map((card) => (
           <Card key={card.name} card={card} lang={lang} />
