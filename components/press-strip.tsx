@@ -1,4 +1,5 @@
 import { chrome, type Locale } from "@/lib/i18n"
+import { WaveLine } from "@/components/wave-line"
 
 /** Recolours a mono SVG logo to the page ink tone via CSS mask. */
 function MaskLogo({ src, label, width }: { src: string; label: string; width: number }) {
@@ -22,7 +23,11 @@ export function PressStrip({ locale }: { locale: Locale }) {
 
   return (
     <section className="press" aria-label={eyebrow}>
-      <span className="press-eyebrow">{eyebrow}</span>
+      <div className="press-title">
+        <WaveLine side="left" />
+        <span className="press-eyebrow">{eyebrow}</span>
+        <WaveLine side="right" />
+      </div>
       <div className="press-row">
         {/* National Geographic — iconic framed wordmark */}
         <a

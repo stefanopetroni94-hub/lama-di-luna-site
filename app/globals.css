@@ -1445,6 +1445,19 @@ section {
   align-items: center;
   gap: 2rem;
 }
+.press-title {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  width: 100%;
+  max-width: 820px;
+}
+.wave-line {
+  flex: 1;
+  min-width: 0;
+  height: 14px;
+  color: var(--ink);
+}
 .press-eyebrow {
   font-family: var(--serif);
   font-size: 12px;
