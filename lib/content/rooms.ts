@@ -56,7 +56,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         name: "Coloni",
         tagline: "A settler's chamber",
         meta: "Open fireplace, pine and olive wood beds, a courtyard view. Sleeps 2.",
-        price: "€220",
+        price: "€240",
         sleeps: "Sleeps 2",
         description: [
           "The Coloni room was once home to the families who worked the land. Its thick stone walls keep it cool through the Puglian summer, and an open fireplace warms it when the tramontana blows down off the Murgia.",
@@ -78,7 +78,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         name: "Murgia",
         tagline: "Named for the national park",
         meta: "Brass bed, terracotta basin, east light. Sleeps 2.",
-        price: "€240",
+        price: "€270",
         sleeps: "Sleeps 2",
         description: [
           "Named for the Alta Murgia National Park — the wild uplands whose silence belongs to it. East-facing windows keep the light soft and even through the day, falling across whitewashed stone and a vaulted ceiling.",
@@ -100,7 +100,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         name: "Family Suite",
         tagline: "Room for the whole family",
         meta: "Two connecting rooms, courtyard access, solid pine beds. Sleeps 4.",
-        price: "€310",
+        price: "€350",
         sleeps: "Sleeps 4",
         description: [
           "Two large connecting rooms with a shared bathroom, a walk-in shower and a jacuzzi bathtub. Solid pine beds, space to spread out, and a doorway straight into the courtyard for the children to roam.",
@@ -122,7 +122,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         name: "Family Suite Masseria",
         tagline: "The largest of the suites",
         meta: "Open fireplace, two bedrooms, a private sauna. Sleeps 4.",
-        price: "€380",
+        price: "€390",
         sleeps: "Sleeps 4",
         description: [
           "Large rooms set into the oldest part of the masseria, ideal for a group or a family. Two separate bedrooms with a shared bathroom and a jacuzzi bathtub. A private sauna to enjoy spring colder days.",
@@ -144,7 +144,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         name: "Suite Deluxe Masseria",
         tagline: "The signature suite",
         meta: "Imperial bed, vaulted ceiling, private cave with a sauna, a mini pool and a panoramic terrace. Sleeps 3.",
-        price: "€420",
+        price: "€410",
         sleeps: "Sleeps 3",
         description: [
           "An imperial bed beneath a vaulted stone ceiling, a private sauna carved into the masseria stone, and a panoramic terrace looking out over the olive groves to the horizon.",
@@ -180,7 +180,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         name: "Coloni",
         tagline: "Una camera dei coloni",
         meta: "Camino aperto, letti in pino e legno d'ulivo, vista sulla corte. Per 2.",
-        price: "€220",
+        price: "€240",
         sleeps: "Per 2",
         description: [
           "La camera Coloni era un tempo la dimora delle famiglie che lavoravano la terra. I suoi spessi muri in pietra la mantengono fresca durante l'estate pugliese, e un camino aperto la riscalda quando la tramontana scende dalla Murgia.",
@@ -202,7 +202,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         name: "Murgia",
         tagline: "Come il parco nazionale",
         meta: "Letto in ottone, catino in terracotta, luce da est. Per 2.",
-        price: "€240",
+        price: "€270",
         sleeps: "Per 2",
         description: [
           "Chiamata come il Parco Nazionale dell'Alta Murgia — gli altopiani selvaggi il cui silenzio le appartiene. Le finestre a est mantengono la luce morbida e uniforme durante il giorno, posandosi sulla pietra imbiancata e su una volta a botte.",
@@ -224,7 +224,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         name: "Family Suite",
         tagline: "Spazio per tutta la famiglia",
         meta: "Due camere comunicanti, accesso alla corte, letti in pino massello. Per 4.",
-        price: "€310",
+        price: "€350",
         sleeps: "Per 4",
         description: [
           "Due ampie camere comunicanti con bagno condiviso, doccia walk-in e vasca idromassaggio jacuzzi. Letti in pino massello, spazio per allargarsi e una porta che dà direttamente sul cortile perché i bambini possano correre.",
@@ -246,7 +246,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         name: "Family Suite Masseria",
         tagline: "La più grande delle suite",
         meta: "Camino aperto, due camere da letto, una sauna privata. Per 4.",
-        price: "€380",
+        price: "€390",
         sleeps: "Per 4",
         description: [
           "Ampie camere ricavate nella parte più antica della masseria, ideali per un gruppo o una famiglia. Due camere da letto separate con bagno condiviso e vasca idromassaggio jacuzzi. Una sauna privata per godersi le giornate più fredde di primavera.",
@@ -268,7 +268,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         name: "Suite Deluxe Masseria",
         tagline: "La suite d'autore",
         meta: "Letto imperiale, volta in pietra, grotta privata con sauna, una mini piscina e una terrazza panoramica. Per 3.",
-        price: "€420",
+        price: "€410",
         sleeps: "Per 3",
         description: [
           "Un letto imperiale sotto una volta in pietra, una sauna privata scavata nella pietra della masseria e una terrazza panoramica affacciata sugli uliveti fino all'orizzonte.",
