@@ -129,8 +129,14 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Stone underfoot and overhead, brass and pine within, and the whole estate a step beyond the door.",
         ],
         details: ["Sleeps 4–5", "Sitting room", "Open fireplace", "Two bedrooms", "Private courtyard nook"],
-        img: IMG.masseria,
-        gallery: [IMG.masseria, IMG.entrance, IMG.estate, IMG.pool],
+        img: "/whatsapp/20261015_121836_1104061892546583.jpg",
+        gallery: [
+          "/whatsapp/20261015_121836_1104061892546583.jpg",
+          "/whatsapp/20261015_121817_1460565662633558.jpg",
+          "/rooms/family-suite-5.jpg",
+          "/whatsapp/20261015_121845_2224441671749453.jpg",
+          "/whatsapp/20261015_121826_2544669482707356.jpg",
+        ],
       },
       {
         slug: "suite-deluxe-masseria",
@@ -239,8 +245,14 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Pietra sotto i piedi e sopra la testa, ottone e pino all'interno, e l'intera tenuta a un passo dalla porta.",
         ],
         details: ["Per 4–5", "Salotto", "Camino aperto", "Due camere", "Angolo privato sulla corte"],
-        img: IMG.masseria,
-        gallery: [IMG.masseria, IMG.entrance, IMG.estate, IMG.pool],
+        img: "/whatsapp/20261015_121836_1104061892546583.jpg",
+        gallery: [
+          "/whatsapp/20261015_121836_1104061892546583.jpg",
+          "/whatsapp/20261015_121817_1460565662633558.jpg",
+          "/rooms/family-suite-5.jpg",
+          "/whatsapp/20261015_121845_2224441671749453.jpg",
+          "/whatsapp/20261015_121826_2544669482707356.jpg",
+        ],
       },
       {
         slug: "suite-deluxe-masseria",
