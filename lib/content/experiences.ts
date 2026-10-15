@@ -4,6 +4,7 @@ export type ExpCard = {
   num: string
   name: string
   meta: string
+  pos?: string
 }
 
 export type ExperiencesContent = {
@@ -51,10 +52,10 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
       { slug: "#", img: IMG.dawn, num: "04 · Half-day, on request", name: "Bicycle Ride", meta: "A ride through the olive groves and the quiet country roads around the masseria." },
     ],
     inRegion: [
-      { slug: "#", img: IMG.castel, num: "05 · 15 min drive", name: "Castel del Monte", meta: "Frederick II's octagonal 13th-century castle, a UNESCO site on the next hill over. Self-drive or arranged transfer." },
+      { slug: "#", img: "/whatsapp/20261015_141233_1132577716005342.jpg", num: "05 · 15 min drive", name: "Castel del Monte", meta: "Frederick II's octagonal 13th-century castle, a UNESCO site on the next hill over. Self-drive or arranged transfer." },
       { slug: "#", img: IMG.alberobello, num: "06 · 1h 10 min drive", name: "Alberobello & the Trulli", meta: "The conical-roofed trulli of the Valle d'Itria — the UNESCO town and the smaller hamlets few visitors find." },
       { slug: "#", img: IMG.polignano, num: "07 · 1 h drive", name: "Polignano a Mare", meta: "Cliffs over the Adriatic, the cave bar, the long lunch overlooking the sea. The most cinematic beach town in Puglia." },
-      { slug: "#", img: IMG.matera, num: "08 · 1h 20 min drive", name: "Matera", meta: "The cave city, the sassi, the rock churches. Where Stanley Tucci filmed; where Mel Gibson filmed; where you'll never forget you were." },
+      { slug: "#", img: "/whatsapp/20261015_141242_1113590001072954.jpg", pos: "62% center", num: "08 · 1h 20 min drive", name: "Matera", meta: "The cave city, the sassi, the rock churches. Where Stanley Tucci filmed; where Mel Gibson filmed; where you'll never forget you were." },
     ],
   },
   it: {
@@ -76,10 +77,10 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
       { slug: "#", img: IMG.dawn, num: "04 · Mezza giornata, su richiesta", name: "Giro in Bicicletta", meta: "Un giro in bicicletta tra gli uliveti e le tranquille strade di campagna intorno alla masseria." },
     ],
     inRegion: [
-      { slug: "#", img: IMG.castel, num: "05 · 15 min di macchina", name: "Castel del Monte", meta: "Il castello ottagonale di Federico II del XIII secolo, sito UNESCO sulla collina accanto. In auto propria o con transfer." },
+      { slug: "#", img: "/whatsapp/20261015_141233_1132577716005342.jpg", num: "05 · 15 min di macchina", name: "Castel del Monte", meta: "Il castello ottagonale di Federico II del XIII secolo, sito UNESCO sulla collina accanto. In auto propria o con transfer." },
       { slug: "#", img: IMG.alberobello, num: "06 · 1h 10 min di macchina", name: "Alberobello e i Trulli", meta: "I trulli dal tetto conico della Valle d'Itria — la città UNESCO e i borghi più piccoli che pochi visitatori trovano." },
       { slug: "#", img: IMG.polignano, num: "07 · 1 h di macchina", name: "Polignano a Mare", meta: "Scogliere sull'Adriatico, il bar nella grotta, il lungo pranzo affacciato sul mare. Il borgo di mare più cinematografico di Puglia." },
-      { slug: "#", img: IMG.matera, num: "08 · 1h 20 min di macchina", name: "Matera", meta: "La città di pietra, i sassi, le chiese rupestri. Dove ha girato Stanley Tucci; dove ha girato Mel Gibson; dove non dimenticherai mai di essere stato." },
+      { slug: "#", img: "/whatsapp/20261015_141242_1113590001072954.jpg", pos: "62% center", num: "08 · 1h 20 min di macchina", name: "Matera", meta: "La città di pietra, i sassi, le chiese rupestri. Dove ha girato Stanley Tucci; dove ha girato Mel Gibson; dove non dimenticherai mai di essere stato." },
     ],
   },
 }

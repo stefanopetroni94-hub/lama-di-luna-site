@@ -13,7 +13,10 @@ function Card({ card, lang }: { card: ExpCard; lang: Locale }) {
   return (
     <Link href={href} className="exp-card">
       <div className="exp-card-img-wrap">
-        <div className="exp-card-img" style={{ backgroundImage: `url('${card.img}')` }} />
+        <div
+          className="exp-card-img"
+          style={{ backgroundImage: `url('${card.img}')`, backgroundPosition: card.pos ?? "center" }}
+        />
       </div>
       <div className="exp-card-name">{card.name}</div>
       <div className="exp-card-meta">{card.meta}</div>
