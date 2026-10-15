@@ -742,6 +742,22 @@ section {
   }
 }
 
+/* experiences: booking box under the intro, 3rem above */
+.page-header.page-header--booking {
+  padding-bottom: 0;
+}
+.quick-search.experiences-quick-search {
+  max-width: 1500px;
+  margin: 3rem auto 0;
+  padding: 0 2.5rem;
+}
+@media (max-width: 700px) {
+  .quick-search.experiences-quick-search {
+    margin: 2.5rem auto 0;
+    padding: 0 1.3rem;
+  }
+}
+
 /* rooms listing: three cards on top, the last two centred underneath */
 @media (min-width: 701px) {
   .rooms-page .rooms-grid {

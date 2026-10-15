@@ -3,6 +3,8 @@ import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { WaveLine } from "@/components/wave-line"
+import { QuickSearch } from "@/components/quick-search"
+import { book } from "@/lib/content/book"
 import { experiences, type ExpCard } from "@/lib/content/experiences"
 import { isLocale, type Locale } from "@/lib/i18n"
 
@@ -29,10 +31,14 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ la
     <>
       <SiteNav locale={lang} variant="solid" />
 
-      <section className="page-header">
+      <section className="page-header page-header--booking">
         <h1>{c.title}</h1>
         <p>{c.intro}</p>
       </section>
+
+      <div className="quick-search experiences-quick-search">
+        <QuickSearch labels={book[lang]} />
+      </div>
 
       <div className="section-label">
         <WaveLine side="left" />
