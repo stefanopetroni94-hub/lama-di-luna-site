@@ -742,6 +742,22 @@ section {
   }
 }
 
+/* rooms listing: three cards on top, the last two centred underneath */
+@media (min-width: 701px) {
+  .rooms-page .rooms-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .rooms-page .rooms-grid > .room-card {
+    grid-column: span 2;
+  }
+  .rooms-page .rooms-grid > .room-card:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+  .rooms-page .rooms-grid > .room-card:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+}
+
 /* ---------------- ROOM DETAIL PAGE ---------------- */
 /* Listing uses the shared .rooms-grid defined above (3-UP ROOMS). */
 .rooms-page .rooms-grid {
