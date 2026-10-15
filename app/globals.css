@@ -1703,6 +1703,29 @@ footer {
 .lang-pill:hover {
   background: #3f0f1c;
 }
+.wa-button {
+  position: fixed;
+  right: 1.4rem;
+  bottom: 1.4rem;
+  z-index: 50;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  box-shadow: 0 6px 18px rgba(92, 26, 43, 0.25);
+}
+.wa-button:hover {
+  background: #3f0f1c;
+}
+.wa-button svg {
+  width: 24px;
+  height: 24px;
+}
 
 /* ---------------- PAGE HEADER (inner pages) ---------------- */
 .page-header {
