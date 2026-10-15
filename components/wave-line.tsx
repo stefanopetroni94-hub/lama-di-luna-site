@@ -12,7 +12,7 @@ export function WaveLine({ side }: { side: "left" | "right" }) {
     <svg
       className="wave-line"
       viewBox={viewBox}
-      preserveAspectRatio="none"
+      preserveAspectRatio="xMidYMid meet"
       aria-hidden="true"
       focusable="false"
     >

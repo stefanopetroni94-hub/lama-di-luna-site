@@ -1448,14 +1448,17 @@ section {
 .press-title {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.6rem;
   width: 100%;
-  max-width: 820px;
+  max-width: 100%;
 }
+/* each half keeps the exact proportions of the line in the logo (75 x 11), doubled in size */
 .wave-line {
-  flex: 1;
+  flex: 0 1 191px;
   min-width: 0;
-  height: 14px;
+  aspect-ratio: 75 / 11;
+  height: auto;
   color: var(--ink);
 }
 .press-eyebrow {
