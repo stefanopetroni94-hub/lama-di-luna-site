@@ -105,6 +105,27 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
+      <section className="story-split home-split">
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Il salotto con il camino acceso" : "The sitting room with the fire lit"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261015_132050_2612175075870328.jpg')",
+            backgroundPosition: "50% 40%",
+          }}
+        />
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "La masseria al tramonto con la luna" : "The masseria at sunset with the moon"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261015_132204_1719802839858995.jpg')",
+            backgroundPosition: "center 35%",
+          }}
+        />
+      </section>
+
       <NewsletterForm
         namePlaceholder={lang === "it" ? "Nome" : "Name"}
         placeholder={c.newsletterPlaceholder}
