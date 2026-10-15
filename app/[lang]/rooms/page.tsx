@@ -2,7 +2,9 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
+import { QuickSearch } from "@/components/quick-search"
 import { rooms, type Room } from "@/lib/content/rooms"
+import { book } from "@/lib/content/book"
 import { isLocale, type Locale } from "@/lib/i18n"
 
 function RoomCard({ room, c, lang }: { room: Room; c: (typeof rooms)["en"]; lang: Locale }) {
@@ -38,6 +40,10 @@ export default async function RoomsPage({ params }: { params: Promise<{ lang: st
           <h1>{c.title}</h1>
           <p>{c.intro}</p>
         </section>
+
+        <div className="quick-search rooms-quick-search">
+          <QuickSearch labels={book[lang]} />
+        </div>
 
         <section className="rooms-grid">
           {c.list.map((room) => (
