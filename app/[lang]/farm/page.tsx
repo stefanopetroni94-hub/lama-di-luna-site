@@ -84,9 +84,30 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
           </div>
           <div
             className="image-block"
-            style={{ backgroundImage: `url('${c.organic.img}')`, backgroundPosition: "65% center" }}
+            style={{ backgroundImage: `url('${c.organic.img}')`, backgroundPosition: "center" }}
           />
         </div>
+      </section>
+
+      <section className="story-split farm-split-end">
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Grappoli d'uva durante la vendemmia" : "Grapes during the harvest"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261015_133041_2040482263307048.jpg')",
+            backgroundPosition: "center 60%",
+          }}
+        />
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Chiocciole su un ramo d'ulivo" : "Snails on an olive branch"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261013_154515_1100237206085509.jpg')",
+            backgroundPosition: "65% center",
+          }}
+        />
       </section>
 
       <section className="booking-callout">

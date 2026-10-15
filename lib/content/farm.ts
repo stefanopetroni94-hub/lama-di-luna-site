@@ -24,7 +24,7 @@ export type FarmContent = {
 
 const IMG = {
   olive: "/whatsapp/20261013_182249_950122334388222.jpg",
-  organic: "/whatsapp/20261013_154515_1100237206085509.jpg",
+  organic: "/whatsapp/20261015_133134_1474005057912536.jpg",
   full: "/whatsapp/20261013_154528_1242395578095023.jpg",
 }
 
