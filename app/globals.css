@@ -2243,6 +2243,12 @@ footer {
 .restaurant-split {
   margin-top: 4rem;
 }
+.restaurant-split.restaurant-split--end {
+  margin-top: 0;
+}
+.restaurant-toast {
+  margin-top: 4rem;
+}
 .story-split-img--rotated {
   position: relative;
   overflow: hidden;
@@ -2301,8 +2307,12 @@ footer {
   .farm-split {
     margin-top: 3.5rem;
   }
-  .restaurant-split {
+  .restaurant-split,
+  .restaurant-toast {
     margin-top: 2.5rem;
+  }
+  .restaurant-split.restaurant-split--end {
+    margin-top: 0;
   }
   .farm-seasons,
   .restaurant-extra {

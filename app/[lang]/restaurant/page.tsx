@@ -73,24 +73,14 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         </div>
       </section>
 
-      <section className="story-split restaurant-split">
+      <section className="restaurant-toast">
         <div
-          className="story-split-img story-split-img--rotated"
+          className="full-photo"
           role="img"
-          aria-label={lang === "it" ? "Focaccia e spritz sul tavolo di pietra" : "Focaccia and spritz on the stone table"}
-        >
-          <div
-            className="story-split-rotate"
-            style={{ backgroundImage: "url('/whatsapp/20261014_043528_2301455727286373.jpg')" }}
-          />
-        </div>
-        <div
-          className="story-split-img"
-          role="img"
-          aria-label={lang === "it" ? "Aperitivo al tramonto sulla veranda" : "Sunset aperitivo on the veranda"}
+          aria-label={lang === "it" ? "Ospiti che brindano sulla veranda al tramonto" : "Guests toasting on the veranda at sunset"}
           style={{
-            backgroundImage: "url('/whatsapp/20261014_043519_1700647744957278.jpg')",
-            backgroundPosition: "center 55%",
+            backgroundImage: "url('/whatsapp/20261014_050216_3074277952905624.jpg')",
+            backgroundPosition: "40% 55%",
           }}
         />
       </section>
@@ -114,14 +104,24 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         </div>
       </section>
 
-      <section>
+      <section className="story-split restaurant-split restaurant-split--end">
         <div
-          className="full-photo"
+          className="story-split-img story-split-img--rotated"
           role="img"
-          aria-label={lang === "it" ? "Ospiti che brindano sulla veranda al tramonto" : "Guests toasting on the veranda at sunset"}
+          aria-label={lang === "it" ? "Focaccia e spritz sul tavolo di pietra" : "Focaccia and spritz on the stone table"}
+        >
+          <div
+            className="story-split-rotate"
+            style={{ backgroundImage: "url('/whatsapp/20261014_043528_2301455727286373.jpg')" }}
+          />
+        </div>
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Aperitivo al tramonto sulla veranda" : "Sunset aperitivo on the veranda"}
           style={{
-            backgroundImage: "url('/whatsapp/20261014_050216_3074277952905624.jpg')",
-            backgroundPosition: "40% 55%",
+            backgroundImage: "url('/whatsapp/20261014_043519_1700647744957278.jpg')",
+            backgroundPosition: "center 55%",
           }}
         />
       </section>
