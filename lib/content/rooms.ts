@@ -106,7 +106,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Two large connecting rooms with a shared bathroom, a walk-in shower and a jacuzzi bathtub. Solid pine beds, space to spread out, and a doorway straight into the courtyard for the children to roam.",
           "A suite built for longer stays — the kind of place a family arrives, settles in, and forgets the calendar.",
         ],
-        details: ["Sleeps 4, 54 m²", "Two connecting rooms", "Solid pine beds, 2 x 2 meters", "Jacuzzi bathtub, AC, TV, minibar, wifi"],
+        details: ["Sleeps 4, 54 m²", "Two connecting rooms", "Imperial beds, 2 x 2 meters", "Jacuzzi bathtub, AC, TV, minibar, wifi"],
         img: "/rooms/family-suite-4.jpg",
         gallery: [
           "/rooms/family-suite-4.jpg",
@@ -128,7 +128,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Large rooms set into the oldest part of the masseria, ideal for a group or a family. Two separate bedrooms with a shared bathroom and a jacuzzi bathtub. A private sauna to enjoy spring colder days.",
           "Stone underfoot and overhead, pine and olive wood within, and the whole estate a step beyond the door.",
         ],
-        details: ["Sleeps 4, 50 m²", "Open fireplace", "Two bedrooms", "Private sauna"],
+        details: ["Sleeps 4, 50 m²", "Open fireplace", "Two bedrooms", "Imperial beds, 2 x 2 meters", "Private sauna"],
         img: "/whatsapp/20261015_121950_1101245532801910.jpg",
         gallery: [
           "/whatsapp/20261015_121836_1104061892546583.jpg",
@@ -143,14 +143,14 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         slug: "suite-deluxe-masseria",
         name: "Suite Deluxe Masseria",
         tagline: "The signature suite",
-        meta: "King bed, vaulted ceiling, private cave with a sauna, a mini pool and a panoramic terrace. Sleeps 3.",
+        meta: "Imperial bed, vaulted ceiling, private cave with a sauna, a mini pool and a panoramic terrace. Sleeps 3.",
         price: "€420",
         sleeps: "Sleeps 3",
         description: [
-          "A king bed beneath a vaulted stone ceiling, a private sauna carved into the masseria stone, and a panoramic terrace looking out over the olive groves to the horizon.",
+          "An imperial bed beneath a vaulted stone ceiling, a private sauna carved into the masseria stone, and a panoramic terrace looking out over the olive groves to the horizon.",
           "The most private and the most complete of the suites — made for the guests who mean to stay a while.",
         ],
-        details: ["Sleeps 3, 60 m²", "King bed", "Vaulted ceiling", "Private mini pool and cave with sauna", "Panoramic terrace"],
+        details: ["Sleeps 3, 60 m²", "Imperial bed, 2 x 2 meters", "Vaulted ceiling", "Private mini pool and cave with sauna", "Panoramic terrace"],
         img: IMG.entrance,
         gallery: [
           "/whatsapp/20261015_124756_1833059958451387.jpg",
@@ -230,7 +230,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Due ampie camere comunicanti con bagno condiviso, doccia walk-in e vasca idromassaggio jacuzzi. Letti in pino massello, spazio per allargarsi e una porta che dà direttamente sul cortile perché i bambini possano correre.",
           "Una suite pensata per soggiorni lunghi — il luogo in cui una famiglia arriva, si sistema e dimentica il calendario.",
         ],
-        details: ["Per 4, 54 m²", "Due camere comunicanti", "Letti in pino massello, 2 x 2 metri", "Vasca jacuzzi, aria condizionata, TV, minibar, wifi"],
+        details: ["Per 4, 54 m²", "Due camere comunicanti", "Letti imperiali, 2 x 2 metri", "Vasca jacuzzi, aria condizionata, TV, minibar, wifi"],
         img: "/rooms/family-suite-4.jpg",
         gallery: [
           "/rooms/family-suite-4.jpg",
@@ -252,7 +252,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "Ampie camere ricavate nella parte più antica della masseria, ideali per un gruppo o una famiglia. Due camere da letto separate con bagno condiviso e vasca idromassaggio jacuzzi. Una sauna privata per godersi le giornate più fredde di primavera.",
           "Pietra sotto i piedi e sopra la testa, pino e legno d'ulivo all'interno, e l'intera tenuta a un passo dalla porta.",
         ],
-        details: ["Per 4, 50 m²", "Camino aperto", "Due camere da letto", "Sauna privata"],
+        details: ["Per 4, 50 m²", "Camino aperto", "Due camere da letto", "Letti imperiali, 2 x 2 metri", "Sauna privata"],
         img: "/whatsapp/20261015_121950_1101245532801910.jpg",
         gallery: [
           "/whatsapp/20261015_121836_1104061892546583.jpg",
@@ -267,14 +267,14 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         slug: "suite-deluxe-masseria",
         name: "Suite Deluxe Masseria",
         tagline: "La suite d'autore",
-        meta: "Letto king, volta in pietra, grotta privata con sauna, una mini piscina e una terrazza panoramica. Per 3.",
+        meta: "Letto imperiale, volta in pietra, grotta privata con sauna, una mini piscina e una terrazza panoramica. Per 3.",
         price: "€420",
         sleeps: "Per 3",
         description: [
-          "Un letto king sotto una volta in pietra, una sauna privata scavata nella pietra della masseria e una terrazza panoramica affacciata sugli uliveti fino all'orizzonte.",
+          "Un letto imperiale sotto una volta in pietra, una sauna privata scavata nella pietra della masseria e una terrazza panoramica affacciata sugli uliveti fino all'orizzonte.",
           "La più privata e la più completa delle suite — pensata per gli ospiti che hanno intenzione di fermarsi a lungo.",
         ],
-        details: ["Per 3, 60 m²", "Letto king", "Volta in pietra", "Mini piscina privata e grotta con sauna", "Terrazza panoramica"],
+        details: ["Per 3, 60 m²", "Letto imperiale, 2 x 2 metri", "Volta in pietra", "Mini piscina privata e grotta con sauna", "Terrazza panoramica"],
         img: IMG.entrance,
         gallery: [
           "/whatsapp/20261015_124756_1833059958451387.jpg",

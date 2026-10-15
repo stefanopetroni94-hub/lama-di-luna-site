@@ -63,7 +63,7 @@ export const home: Record<Locale, HomeContent> = {
       {
         slug: "suite-deluxe-masseria",
         name: "Suite Deluxe",
-        desc: "A king bed, private sauna and a panoramic terrace over the olive groves — for those who arrive intending to forget the world for a while.",
+        desc: "An imperial bed, private sauna and a panoramic terrace over the olive groves — for those who arrive intending to forget the world for a while.",
         img: IMG.deluxe,
       },
     ],
@@ -119,7 +119,7 @@ export const home: Record<Locale, HomeContent> = {
       {
         slug: "suite-deluxe-masseria",
         name: "Suite Deluxe",
-        desc: "Un letto king, sauna privata e una terrazza panoramica sugli uliveti — per chi arriva con l'intenzione di dimenticare il mondo per un po'.",
+        desc: "Un letto imperiale, sauna privata e una terrazza panoramica sugli uliveti — per chi arriva con l'intenzione di dimenticare il mondo per un po'.",
         img: IMG.deluxe,
       },
     ],
