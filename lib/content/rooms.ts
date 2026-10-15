@@ -43,7 +43,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
     eyebrow: "Eleven rooms, restored",
     title: "Our Rooms",
     intro:
-      "Our guest rooms were once settlers' dwellings — spacious and bright, all with fireplaces, opening onto the inner courtyard. Beds in solid pine, olive wood or 1800s brass. Raw cotton sheets. Olive-oil soaps. Power from the sun.",
+      "Our guest rooms were once settlers' dwellings — spacious and bright, all with fireplaces, opening onto the inner courtyard. Beds in solid pine, olive wood or 1800s brass. Raw cotton sheets. Soaps made with extra virgin olive oil, aloe and the wild herbs of Puglia. Power from the sun.",
     from: "From",
     perNight: "/ night",
     viewRoom: "View room →",
@@ -167,7 +167,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
     eyebrow: "Undici camere, restaurate",
     title: "Le Camere",
     intro:
-      "Le nostre camere erano un tempo dimore dei coloni — spaziose e luminose, tutte con camino, affacciate sulla corte interna. Letti in pino massello, legno d'ulivo o ottone dell'Ottocento. Lenzuola di cotone grezzo. Saponi all'olio d'oliva. Energia dal sole.",
+      "Le nostre camere erano un tempo dimore dei coloni — spaziose e luminose, tutte con camino, affacciate sulla corte interna. Letti in pino massello, legno d'ulivo o ottone dell'Ottocento. Lenzuola di cotone grezzo. Saponi all'olio extravergine d'oliva, aloe ed erbe selvatiche di Puglia. Energia dal sole.",
     from: "Da",
     perNight: "/ notte",
     viewRoom: "Vedi camera →",
