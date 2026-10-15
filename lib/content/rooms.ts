@@ -151,7 +151,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "The largest, the most private and the most complete of the suites — made for the guests who mean to stay a while.",
         ],
         details: ["Sleeps 3, 60 m²", "Imperial bed, 2 x 2 meters", "Vaulted ceiling", "Private mini pool and cave with sauna", "Panoramic terrace"],
-        img: IMG.entrance,
+        img: "/whatsapp/20261015_134309_1070942639101720.jpg",
         gallery: [
           "/whatsapp/20261015_124756_1833059958451387.jpg",
           "/whatsapp/20261015_124840_1800251821284958.jpg",
@@ -275,7 +275,7 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
           "La più grande, la più privata e la più completa delle suite — pensata per gli ospiti che hanno intenzione di fermarsi a lungo.",
         ],
         details: ["Per 3, 60 m²", "Letto imperiale, 2 x 2 metri", "Volta in pietra", "Mini piscina privata e grotta con sauna", "Terrazza panoramica"],
-        img: IMG.entrance,
+        img: "/whatsapp/20261015_134309_1070942639101720.jpg",
         gallery: [
           "/whatsapp/20261015_124756_1833059958451387.jpg",
           "/whatsapp/20261015_124840_1800251821284958.jpg",
