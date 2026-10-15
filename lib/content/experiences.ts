@@ -36,7 +36,7 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
     eyebrow: "Eight ways to spend a day",
     title: "Experiences",
     intro:
-      "Four at the masseria, four within an hour's drive. Olive harvest, a cooking class, the wine, the dawn walk — and the trulli, the cliffs, the cave city, the castle on the hill.",
+      "Four at the masseria, four within an hour's drive. The olive tour, a cooking class, relaxing massages, a bicycle ride — and the trulli, the cliffs, the cave city, the castle on the hill.",
     onEstateLabel: "On the Estate",
     inRegionLabel: "In the Region",
     arrangeEyebrow: "Tell us what you'd love",
@@ -45,10 +45,10 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
       "All experiences are arranged on request. Many are weather- or season-dependent; some need a few days' notice. Drop us a note with your dates and what you're drawn to.",
     arrangeCta: "Get in touch",
     onEstate: [
-      { slug: "olive-harvest", img: IMG.olive, num: "01 · October–November", name: "The Olive Harvest", meta: "Walk the groves at dawn, watch the cold press, taste the first oil of the year on warm bread." },
-      { slug: "#", img: IMG.cooking, num: "02 · Half-day, on request", name: "Orecchiette & Focaccia", meta: "A cooking class with our resident cook — orecchiette pasta and Pugliese focaccia, made by hand at the masseria kitchen." },
-      { slug: "#", img: IMG.wine, num: "03 · Two hours, by arrangement", name: "Wine of the Murgia", meta: "A tasting of the estate's own wine alongside the great wines of Puglia — Primitivo, Negroamaro, Nero di Troia." },
-      { slug: "#", img: IMG.dawn, num: "04 · 90 min, at sunrise", name: "Dawn Walk in the Groves", meta: "A guided walk through the olive rows at first light, with the kestrels and the small owls of the Murgia. Coffee on return." },
+      { slug: "olive-harvest", img: IMG.olive, num: "01 · October–November", name: "The Olive Tour", meta: "Walk the groves at dawn, watch the cold press, taste the first oil of the year on warm bread." },
+      { slug: "#", img: IMG.cooking, num: "02 · Half-day, on request", name: "Cooking Class", meta: "A cooking class with our resident cook — orecchiette pasta and Pugliese focaccia, made by hand at the masseria kitchen." },
+      { slug: "#", img: IMG.wine, num: "03 · By arrangement", name: "Relaxing Massages", meta: "Massages by appointment, in the quiet of the masseria." },
+      { slug: "#", img: IMG.dawn, num: "04 · Half-day, on request", name: "Bicycle Ride", meta: "A ride through the olive groves and the quiet country roads around the masseria." },
     ],
     inRegion: [
       { slug: "#", img: IMG.castel, num: "05 · 15 min drive", name: "Castel del Monte", meta: "Frederick II's octagonal 13th-century castle, a UNESCO site on the next hill over. Self-drive or arranged transfer." },
@@ -61,7 +61,7 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
     eyebrow: "Otto modi di passare una giornata",
     title: "Esperienze",
     intro:
-      "Quattro in masseria, quattro a meno di un'ora di macchina. La raccolta delle olive, un corso di cucina, il vino, la passeggiata all'alba — e i trulli, le scogliere, la città di pietra, il castello sulla collina.",
+      "Quattro in masseria, quattro a meno di un'ora di macchina. Il tour degli ulivi, un corso di cucina, massaggi rilassanti, un giro in bicicletta — e i trulli, le scogliere, la città di pietra, il castello sulla collina.",
     onEstateLabel: "In Masseria",
     inRegionLabel: "Nella Regione",
     arrangeEyebrow: "Dicci cosa ti piacerebbe",
@@ -70,10 +70,10 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
       "Tutte le esperienze si organizzano su richiesta. Molte dipendono dal tempo o dalla stagione; alcune richiedono qualche giorno di preavviso. Scrivici con le tue date e ciò che ti attrae.",
     arrangeCta: "Contattaci",
     onEstate: [
-      { slug: "olive-harvest", img: IMG.olive, num: "01 · Ottobre–Novembre", name: "La Raccolta delle Olive", meta: "Cammina tra gli ulivi all'alba, osserva la spremitura a freddo, assaggia il primo olio dell'anno sul pane caldo." },
-      { slug: "#", img: IMG.cooking, num: "02 · Mezza giornata, su richiesta", name: "Orecchiette e Focaccia", meta: "Un corso di cucina con la nostra cuoca — orecchiette e focaccia pugliese, fatte a mano nella cucina della masseria." },
-      { slug: "#", img: IMG.wine, num: "03 · Due ore, su prenotazione", name: "Il Vino della Murgia", meta: "Una degustazione del vino della masseria insieme ai grandi vini di Puglia — Primitivo, Negroamaro, Nero di Troia." },
-      { slug: "#", img: IMG.dawn, num: "04 · 90 min, all'alba", name: "Passeggiata all'Alba tra gli Ulivi", meta: "Una passeggiata guidata tra i filari d'ulivo alle prime luci, con i gheppi e le civette della Murgia. Caffè al ritorno." },
+      { slug: "olive-harvest", img: IMG.olive, num: "01 · Ottobre–Novembre", name: "Il Tour degli Ulivi", meta: "Cammina tra gli ulivi all'alba, osserva la spremitura a freddo, assaggia il primo olio dell'anno sul pane caldo." },
+      { slug: "#", img: IMG.cooking, num: "02 · Mezza giornata, su richiesta", name: "Corso di Cucina", meta: "Un corso di cucina con la nostra cuoca — orecchiette e focaccia pugliese, fatte a mano nella cucina della masseria." },
+      { slug: "#", img: IMG.wine, num: "03 · Su prenotazione", name: "Massaggi Rilassanti", meta: "Massaggi su appuntamento, nella quiete della masseria." },
+      { slug: "#", img: IMG.dawn, num: "04 · Mezza giornata, su richiesta", name: "Giro in Bicicletta", meta: "Un giro in bicicletta tra gli uliveti e le tranquille strade di campagna intorno alla masseria." },
     ],
     inRegion: [
       { slug: "#", img: IMG.castel, num: "05 · 15 min di macchina", name: "Castel del Monte", meta: "Il castello ottagonale di Federico II del XIII secolo, sito UNESCO sulla collina accanto. In auto propria o con transfer." },
