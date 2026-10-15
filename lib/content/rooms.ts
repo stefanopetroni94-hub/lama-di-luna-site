@@ -121,14 +121,14 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         slug: "masseria",
         name: "Family Suite Masseria",
         tagline: "The largest of the suites",
-        meta: "Open fireplace, two bedrooms, a private area. Sleeps 4.",
+        meta: "Open fireplace, two bedrooms, a private sauna. Sleeps 4.",
         price: "€380",
         sleeps: "Sleeps 4",
         description: [
           "Large rooms, set into the oldest part of the masseria, ideal for a group or a family. Two separate bedrooms with a shared bathroom and a jacuzzi bathtub. A private sauna to enjoy spring colder days.",
           "Stone underfoot and overhead, pine and olive wood within, and the whole estate a step beyond the door.",
         ],
-        details: ["Sleeps 4, 50 m²", "Open fireplace", "Two bedrooms", "Private area"],
+        details: ["Sleeps 4, 50 m²", "Open fireplace", "Two bedrooms", "Private sauna"],
         img: "/whatsapp/20261015_121950_1101245532801910.jpg",
         gallery: [
           "/whatsapp/20261015_121836_1104061892546583.jpg",
@@ -238,14 +238,14 @@ export const rooms: Record<"en" | "it", RoomsContent> = {
         slug: "masseria",
         name: "Family Suite Masseria",
         tagline: "La più grande delle suite",
-        meta: "Camino aperto, due camere da letto, una zona privata. Per 4.",
+        meta: "Camino aperto, due camere da letto, una sauna privata. Per 4.",
         price: "€380",
         sleeps: "Per 4",
         description: [
           "Ampie camere, ricavate nella parte più antica della masseria, ideali per un gruppo o una famiglia. Due camere da letto separate con bagno condiviso e vasca idromassaggio jacuzzi. Una sauna privata per godersi le giornate più fredde di primavera.",
           "Pietra sotto i piedi e sopra la testa, pino e legno d'ulivo all'interno, e l'intera tenuta a un passo dalla porta.",
         ],
-        details: ["Per 4, 50 m²", "Camino aperto", "Due camere da letto", "Zona privata"],
+        details: ["Per 4, 50 m²", "Camino aperto", "Due camere da letto", "Sauna privata"],
         img: "/whatsapp/20261015_121950_1101245532801910.jpg",
         gallery: [
           "/whatsapp/20261015_121836_1104061892546583.jpg",
