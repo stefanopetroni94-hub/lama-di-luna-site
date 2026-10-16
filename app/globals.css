@@ -2068,6 +2068,9 @@ footer {
 .statement-grid--stacked .statement-body p {
   margin-bottom: 0.3rem;
 }
+.statement-grid--stacked .statement-body p + p {
+  margin-top: 1.2rem;
+}
 .facts--row {
   grid-template-columns: repeat(4, 1fr);
 }
