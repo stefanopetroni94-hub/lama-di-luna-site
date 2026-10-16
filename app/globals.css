@@ -2953,8 +2953,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  border-top: 1px solid var(--line);
-  padding-top: 2rem;
 }
 .section-label.find-label {
   padding: 3rem 2.5rem 2rem;
