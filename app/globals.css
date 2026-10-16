@@ -1913,8 +1913,13 @@ footer {
   inset: 0;
   background: url("https://res.cloudinary.com/amenitiz/image/upload/w_2400,q_auto:best,f_auto,c_fill/v1748888083/omou7cxhd8opgelkbeuz.jpg") center / cover no-repeat;
 }
+.exp-hero--exclusive {
+  overflow: hidden;
+}
+/* small anticlockwise turn to level the roofline, scaled up so no corner shows */
 .exp-hero--exclusive::before {
   background: url("/whatsapp/20261016_161421_1628140715574615.jpg") center 55% / cover no-repeat;
+  transform: rotate(-1deg) scale(1.08);
 }
 .exp-hero::after {
   content: "";
