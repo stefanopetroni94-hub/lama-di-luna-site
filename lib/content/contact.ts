@@ -69,7 +69,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
     distances: [
       { place: "Bari Airport (BRI)", distance: "55 min" },
       { place: "Brindisi Airport (BDS)", distance: "2 h 10 min" },
-      { place: "Andria train station", distance: "15 min" },
+      { place: "Andria train station", distance: "25 min" },
       { place: "Trani & the Adriatic coast", distance: "30 min" },
       { place: "Castel del Monte", distance: "15 min" },
       { place: "Alberobello (trulli)", distance: "1 h 10 min" },
@@ -112,7 +112,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
     distances: [
       { place: "Aeroporto di Bari (BRI)", distance: "55 min" },
       { place: "Aeroporto di Brindisi (BDS)", distance: "2 h 10 min" },
-      { place: "Stazione di Andria", distance: "15 min" },
+      { place: "Stazione di Andria", distance: "25 min" },
       { place: "Trani e la costa adriatica", distance: "30 min" },
       { place: "Castel del Monte", distance: "15 min" },
       { place: "Alberobello (trulli)", distance: "1 h 10 min" },
