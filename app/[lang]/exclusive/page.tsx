@@ -195,7 +195,7 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
           role="img"
           aria-label={lang === "it" ? "Il pizzaiolo lancia l'impasto davanti al forno a legna" : "The pizza maker tossing dough in front of the wood-fired oven"}
           style={{
-            backgroundImage: "url('/whatsapp/20261016_172729_1805563020681449.jpg')",
+            backgroundImage: "url('/whatsapp/20261016_175033_1666387138399659.jpg')",
             backgroundPosition: "center 40%",
           }}
         />
