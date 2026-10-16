@@ -63,24 +63,15 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <div
           className="full-photo"
           role="img"
-          aria-label={lang === "it" ? "Il viale per la cerimonia accanto alla masseria" : "The ceremony aisle beside the masseria"}
+          aria-label={lang === "it" ? "Gli ospiti all'aperitivo sul prato sotto gli alberi" : "Guests at the aperitivo on the lawn under the trees"}
           style={{
-            backgroundImage: "url('/whatsapp/20261016_165134_1827109174977754.jpg')",
-            backgroundPosition: "center 70%",
+            backgroundImage: "url('/whatsapp/20261016_165613_932387559726351.jpg')",
+            backgroundPosition: "center 25%",
           }}
         />
       </section>
 
       <section className="story-split">
-        <div
-          className="story-split-img"
-          role="img"
-          aria-label={lang === "it" ? "Gli sposi con la torta nella sala con la volta" : "The couple with the cake in the vaulted hall"}
-          style={{
-            backgroundImage: "url('/whatsapp/20261016_165312_1605521024705475.jpg')",
-            backgroundPosition: "center 40%",
-          }}
-        />
         <div
           className="story-split-img"
           role="img"
@@ -90,16 +81,13 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
             backgroundPosition: "center 60%",
           }}
         />
-      </section>
-
-      <section className="story-split">
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Gli ospiti all'aperitivo sul prato sotto gli alberi" : "Guests at the aperitivo on the lawn under the trees"}
+          aria-label={lang === "it" ? "Il viale per la cerimonia accanto alla masseria" : "The ceremony aisle beside the masseria"}
           style={{
-            backgroundImage: "url('/whatsapp/20261016_165613_932387559726351.jpg')",
-            backgroundPosition: "35% center",
+            backgroundImage: "url('/whatsapp/20261016_165134_1827109174977754.jpg')",
+            backgroundPosition: "50% center",
           }}
         />
       </section>
