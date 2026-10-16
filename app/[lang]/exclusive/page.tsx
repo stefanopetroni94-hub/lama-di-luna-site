@@ -15,7 +15,7 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
     <>
       <SiteNav locale={lang} variant="overlay" />
 
-      <section className="exp-hero">
+      <section className="exp-hero exp-hero--exclusive">
         <div className="exp-counter">{c.counter}</div>
         <div className="exp-breadcrumb">
           <Link href={`/${lang}`}>{c.breadcrumbRoot}</Link>
