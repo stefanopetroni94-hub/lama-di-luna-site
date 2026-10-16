@@ -15,6 +15,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
   const c = contact[lang]
   const h = home[lang]
   const f = chrome[lang].footer
+  const b = book[lang]
 
   return (
     <>
@@ -118,6 +119,23 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <div className="section-label find-label">
+        <WaveLine side="left" />
+        <span>{b.faqTitle}</span>
+        <WaveLine side="right" />
+      </div>
+
+      <section className="faq faq--contact">
+        <div className="faq-inner">
+          {b.faqs.map((faq) => (
+            <details className="faq-item" key={faq.q}>
+              <summary>{faq.q}</summary>
+              <div className="body">{faq.a}</div>
+            </details>
+          ))}
         </div>
       </section>
 
