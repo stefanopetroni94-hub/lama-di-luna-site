@@ -181,10 +181,10 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "La veranda al tramonto vista dal prato" : "The veranda at sunset seen from the lawn"}
+          aria-label={lang === "it" ? "Il setter rosso davanti alla casa di pietra" : "The red setter in front of the stone house"}
           style={{
-            backgroundImage: "url('/whatsapp/20261016_172647_1435652958610194.jpg')",
-            backgroundPosition: "center 55%",
+            backgroundImage: "url('/whatsapp/20261016_173131_1811619126525486.jpg')",
+            backgroundPosition: "45% center",
           }}
         />
       </section>
