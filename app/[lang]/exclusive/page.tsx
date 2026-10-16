@@ -26,7 +26,6 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
             <h2>{c.statementTitle}</h2>
             <div className="statement-body">
               <p>{c.statementBody.join(" ")}</p>
-              <p>{c.stay}</p>
             </div>
           </div>
         </div>
