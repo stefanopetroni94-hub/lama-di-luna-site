@@ -29,8 +29,23 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
       </div>
 
       <section className="contact-section">
-        <div className="contact-grid">
-          <div className="direct">
+        <div className="contact-grid contact-grid--stacked">
+          <ContactForm
+            labels={{
+              formEyebrow: c.formEyebrow,
+              formTitle: c.formTitle,
+              nameLabel: c.nameLabel,
+              emailFieldLabel: c.emailFieldLabel,
+              phoneFieldLabel: c.phoneFieldLabel,
+              datesLabel: c.datesLabel,
+              messageLabel: c.messageLabel,
+              sendLabel: c.sendLabel,
+              sendNote: c.sendNote,
+              successMessage: c.successMessage,
+            }}
+          />
+
+          <div className="direct direct--row">
             <div className="block">
               <div className="label">{c.phoneLabel}</div>
               <div className="value">
@@ -84,32 +99,6 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
               </div>
             </div>
           </div>
-
-          <ContactForm
-            labels={{
-              formEyebrow: c.formEyebrow,
-              formTitle: c.formTitle,
-              nameLabel: c.nameLabel,
-              emailFieldLabel: c.emailFieldLabel,
-              phoneFieldLabel: c.phoneFieldLabel,
-              datesLabel: c.datesLabel,
-              messageLabel: c.messageLabel,
-              sendLabel: c.sendLabel,
-              sendNote: c.sendNote,
-              successMessage: c.successMessage,
-            }}
-          />
-        </div>
-      </section>
-
-      <section className="where where--contact">
-        <div className="where-text">
-          <div className="room-name" style={{ marginBottom: "1rem" }}>
-            {h.whereLabel}
-          </div>
-          {h.mapText.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
         </div>
       </section>
 
@@ -120,7 +109,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
       <section className="find-us-intro">
         <div className="script-eyebrow">{c.mapEyebrow}</div>
         <p>
-          {c.mapTitle}. {c.mapBody}
+          {h.mapText.join(" ")} {c.mapBody}
         </p>
       </section>
 
