@@ -2,7 +2,6 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { CurvedLabel } from "@/components/curved-label"
 import { isLocale } from "@/lib/i18n"
 import { exclusive } from "@/lib/content/exclusive"
 import { WaveLine } from "@/components/wave-line"
@@ -223,44 +222,7 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         />
       </section>
 
-      <section>
-        <CurvedLabel text={c.curvedLabel} />
-      </section>
-
-      <section className="menu-course-header" style={{ paddingTop: "1rem" }}>
-        <div className="script-eyebrow">{c.perksEyebrow}</div>
-        <h2>{c.perksTitle}</h2>
-      </section>
-
-      <section className="exclusive-perks">
-        {c.perks.map((perk) => (
-          <div className="exclusive-perk" key={perk.title}>
-            <h3>{perk.title}</h3>
-            <p>{perk.body}</p>
-          </div>
-        ))}
-      </section>
-
-      <section className="photo-split">
-        <div className="photo-split-img" style={{ backgroundImage: `url('${c.photos[0]}')` }} />
-        <div className="photo-split-img" style={{ backgroundImage: `url('${c.photos[1]}')` }} />
-      </section>
-
-      <section>
-        <div className="text-image reverse">
-          <div className="image-block" style={{ backgroundImage: `url('${c.fullImg}')` }} />
-          <div className="text-block">
-            <div className="script-eyebrow" style={{ marginBottom: "1rem" }}>
-              {c.occasionsEyebrow}
-            </div>
-            {c.occasionsBody.map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="booking-callout">
+      <section className="booking-callout exclusive-callout">
         <div className="booking-callout-inner">
           <div className="eyebrow">{c.bookingEyebrow}</div>
           <h2>{c.bookingTitle}</h2>
