@@ -27,7 +27,7 @@ export const menu: Record<Locale, MenuItem[]> = {
     { label: "Fattoria", slug: "farm" },
     { label: "Storia", slug: "story" },
     { label: "Esperienze", slug: "experiences" },
-    { label: "Masseria Intera", slug: "exclusive" },
+    { label: "Masseria in Esclusiva", slug: "exclusive" },
     { label: "Shop", slug: "shop" },
     { label: "Contatti", slug: "contact" },
   ],
