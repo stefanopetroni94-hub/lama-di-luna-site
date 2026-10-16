@@ -129,7 +129,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
       <section>
         <iframe
           className="gmap"
-          src="https://www.google.com/maps?q=Lama+di+Luna,+Andria,+Italy&output=embed"
+          src="https://www.google.com/maps?q=Lama+di+Luna,+Andria,+Italy&z=8&output=embed"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           title="Lama di Luna on Google Maps"
