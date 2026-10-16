@@ -52,7 +52,7 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
       { slug: "#", img: IMG.dawn, num: "04 · Half-day, on request", name: "Bicycle Ride", meta: "A ride through the olive groves and the quiet country roads around the masseria." },
       { slug: "#", img: IMG.wine, num: "05 · By arrangement", name: "Cinema Room", meta: "An evening in the masseria's cinema room, by arrangement." },
       { slug: "#", img: IMG.olive, num: "06 · By arrangement", name: "Yoga Practices", meta: "Yoga practices at the masseria, by arrangement." },
-      { slug: "#", img: IMG.dawn, num: "07 · On request", name: "Walk on the Estate", meta: "A walk through the olive groves, the vineyards and the wild Murgia around the masseria." },
+      { slug: "#", img: "/pool-sunset.jpg", num: "07 · In season", name: "The Infinity Pool", meta: "Time by the masseria's infinity pool, looking out over the olive groves." },
     ],
     inRegion: [
       { slug: "#", img: "/whatsapp/20261015_141233_1132577716005342.jpg", num: "08 · 15 min drive", name: "Castel del Monte", meta: "Frederick II's octagonal 13th-century castle, a UNESCO site on the next hill over. Self-drive or arranged transfer." },
@@ -80,7 +80,7 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
       { slug: "#", img: IMG.dawn, num: "04 · Mezza giornata, su richiesta", name: "Giro in Bicicletta", meta: "Un giro in bicicletta tra gli uliveti e le tranquille strade di campagna intorno alla masseria." },
       { slug: "#", img: IMG.wine, num: "05 · Su prenotazione", name: "Sala Cinema", meta: "Una serata nella sala cinema della masseria, su prenotazione." },
       { slug: "#", img: IMG.olive, num: "06 · Su prenotazione", name: "Pratiche di Yoga", meta: "Pratiche di yoga in masseria, su prenotazione." },
-      { slug: "#", img: IMG.dawn, num: "07 · Su richiesta", name: "Passeggiata nella Tenuta", meta: "Una passeggiata tra gli uliveti, i vigneti e la Murgia selvaggia intorno alla masseria." },
+      { slug: "#", img: "/pool-sunset.jpg", num: "07 · In stagione", name: "La Piscina a Sfioro", meta: "Un po' di tempo a bordo della piscina a sfioro della masseria, con lo sguardo sugli uliveti." },
     ],
     inRegion: [
       { slug: "#", img: "/whatsapp/20261015_141233_1132577716005342.jpg", num: "08 · 15 min di macchina", name: "Castel del Monte", meta: "Il castello ottagonale di Federico II del XIII secolo, sito UNESCO sulla collina accanto. In auto propria o con transfer." },
