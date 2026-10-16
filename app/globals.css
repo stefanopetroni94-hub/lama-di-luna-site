@@ -768,6 +768,15 @@ section {
 .exclusive-split {
   margin-top: 4rem;
 }
+/* same look as the room names (Coloni, Murgia...) */
+.section-label.exclusive-label {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  color: var(--ink);
+}
 .exclusive-label + .exclusive-split,
 .exclusive-text + .exclusive-split {
   margin-top: 0;

@@ -4,7 +4,6 @@ import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { isLocale } from "@/lib/i18n"
 import { exclusive } from "@/lib/content/exclusive"
-import { WaveLine } from "@/components/wave-line"
 
 export default async function ExclusivePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -38,9 +37,7 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
       </div>
 
       <div className="section-label exclusive-label">
-        <WaveLine side="left" />
         <span>{lang === "it" ? "Matrimoni" : "Weddings"}</span>
-        <WaveLine side="right" />
       </div>
 
       <section className="exclusive-text">
@@ -106,9 +103,7 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
       </section>
 
       <div className="section-label exclusive-label">
-        <WaveLine side="left" />
         <span>{lang === "it" ? "Ritiri" : "Retreats"}</span>
-        <WaveLine side="right" />
       </div>
 
       <section className="exclusive-text">
@@ -178,9 +173,7 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
       </section>
 
       <div className="section-label exclusive-label">
-        <WaveLine side="left" />
         <span>{lang === "it" ? "Riunioni di famiglia" : "Family Gatherings"}</span>
-        <WaveLine side="right" />
       </div>
 
       <section className="exclusive-text">
