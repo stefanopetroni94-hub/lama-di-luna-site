@@ -105,6 +105,60 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <WaveLine side="right" />
       </div>
 
+      <section className="story-split">
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Una lezione di yoga in coppia nella sala di pietra" : "A partner yoga class in the stone hall"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_170231_948891278295936.jpg')",
+            backgroundPosition: "center 45%",
+          }}
+        />
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Meditazione nella sala con le travi di legno" : "Meditation in the hall with the wooden beams"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_170242_1843766056978956.jpg')",
+            backgroundPosition: "center 60%",
+          }}
+        />
+      </section>
+
+      <section>
+        <div
+          className="full-photo"
+          role="img"
+          aria-label={lang === "it" ? "Due persone in posizione dell'albero al tramonto" : "Two people in tree pose at sunset"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_170402_1043492342046071.jpg')",
+            backgroundPosition: "center 45%",
+          }}
+        />
+      </section>
+
+      <section className="story-split">
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Preghiera yoga nella sala con la volta di terracotta" : "Yoga prayer pose in the terracotta vaulted hall"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_170301_1640209704278679.jpg')",
+            backgroundPosition: "center 55%",
+          }}
+        />
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Meditazione in cerchio sul prato" : "Meditation circle on the lawn"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_170251_1143278934896797.jpg')",
+            backgroundPosition: "40% center",
+          }}
+        />
+      </section>
+
       <section>
         <CurvedLabel text={c.curvedLabel} />
       </section>
