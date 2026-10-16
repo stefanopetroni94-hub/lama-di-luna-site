@@ -2925,15 +2925,24 @@ footer {
   margin: 0 auto;
   padding: 0 2.5rem;
 }
+/* same width as the check-in / check-out box above, so everything lines up */
 .contact-grid.contact-grid--stacked {
   grid-template-columns: 1fr;
-  gap: 4rem;
-  max-width: 1500px;
+  gap: 3rem;
+  max-width: 1100px;
+}
+.contact-section:has(.contact-grid--stacked) {
+  padding-bottom: 0;
 }
 .direct.direct--row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  border-top: 1px solid var(--line);
+  padding-top: 2rem;
+}
+.section-label.find-label {
+  padding: 3rem 2.5rem 2rem;
 }
 .direct--row .block,
 .direct--row .block:first-child,

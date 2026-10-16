@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { CurvedLabel } from "@/components/curved-label"
+import { WaveLine } from "@/components/wave-line"
 import { ContactForm } from "@/components/contact-form"
 import { QuickSearch } from "@/components/quick-search"
 import { isLocale } from "@/lib/i18n"
@@ -102,9 +102,11 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
         </div>
       </section>
 
-      <section>
-        <CurvedLabel text={c.findLabel} />
-      </section>
+      <div className="section-label find-label">
+        <WaveLine side="left" />
+        <span>{c.findLabel}</span>
+        <WaveLine side="right" />
+      </div>
 
       <section className="find-us-intro">
         <div className="script-eyebrow">{c.mapEyebrow}</div>
