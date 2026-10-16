@@ -2965,6 +2965,12 @@ footer {
   padding: 0;
   border-bottom: none;
 }
+.contact-social {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: var(--ink);
+}
 .direct.direct--row .small {
   display: none;
 }
