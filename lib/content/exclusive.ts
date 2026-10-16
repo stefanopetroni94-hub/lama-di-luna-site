@@ -12,6 +12,9 @@ export type ExclusiveContent = {
   statementTitle: string
   statementBody: string[]
   stay: string
+  weddingsText: string
+  retreatsText: string
+  gatheringsText: string
   facts: Fact[]
   curvedLabel: string
   perksEyebrow: string
@@ -48,6 +51,12 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
       "For weddings, family gatherings, retreats or simply the desire to disappear together, Lama di Luna can be reserved in its entirety. The eleven rooms, which sleep up to 27 people, the courtyard, the pool, the library, the cinema room and the refectory become yours alone. There are no other guests, no fixed schedule, no interruptions. With our chefs and our staff at your disposal, from the concierge to the reception, organising your time in Puglia becomes effortless. To reserve the whole masseria we ask for a minimum stay of three nights.",
     ],
     stay: "",
+    weddingsText:
+      "The masseria can host weddings of up to 150 guests. There are several areas to choose from: dinners in the courtyard and, indoors, beautiful historic rooms from the 1800s where you can celebrate sheltered from the weather.",
+    retreatsText:
+      "Yoga retreats, wellness retreats, personal growth retreats: we welcome every kind of retreat that looks for a place of peace and harmony, set in an organic farm run with care by a family. The food comes from our area, follows the seasons and is prepared with love.",
+    gatheringsText:
+      "The rooms that open onto the inner courtyard are a perfect place for friends or families to come together and spend time in peace and happiness, among the sunsets and the olive trees of Puglia. With a private kitchen and a dedicated staff, every stay becomes a magical experience.",
     facts: [
       { label: "Sleeps", value: "Up to 22 guests" },
       { label: "Rooms", value: "11 restored rooms" },
@@ -108,6 +117,12 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
       "Per matrimoni, riunioni di famiglia, ritiri o semplicemente il desiderio di sparire insieme, Lama di Luna può essere riservata per intero. Le undici camere, che accolgono fino a 27 persone, il cortile, la piscina, la biblioteca, la sala cinema e il refettorio diventano solo tuoi. Nessun altro ospite, nessun orario fisso, nessuna interruzione. Con i nostri cuochi e il nostro staff a tua disposizione, dal concierge alla reception, organizzare il tuo tempo in Puglia diventa semplice. Per prendere l'intera masseria chiediamo un soggiorno minimo di tre notti.",
     ],
     stay: "",
+    weddingsText:
+      "La masseria può ospitare matrimoni fino a 150 persone. Ci sono diverse aree tra cui scegliere: cene nella corte e, al chiuso, bellissimi spazi storici dell'Ottocento dove festeggiare al riparo dal maltempo.",
+    retreatsText:
+      "Ritiri di yoga, di benessere, di crescita personale: accogliamo ogni tipo di ritiro che cerchi un luogo di pace e armonia, immerso in un'azienda biologica curata con attenzione da una famiglia. Il cibo viene dalla nostra zona, segue le stagioni ed è preparato con amore.",
+    gatheringsText:
+      "Le camere che si affacciano sulla corte interna sono un luogo perfetto per riunirsi tra amici o tra famiglie e passare del tempo in tranquillità e felicità, tra i tramonti e gli ulivi pugliesi. Con una cucina privata e uno staff dedicato, ogni soggiorno diventa un'esperienza magica.",
     facts: [
       { label: "Posti", value: "Fino a 22 ospiti" },
       { label: "Camere", value: "11 camere restaurate" },

@@ -43,6 +43,14 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <WaveLine side="right" />
       </div>
 
+      <section className="exclusive-text">
+        <div className="statement-inner">
+          <div className="statement-body">
+            <p>{c.weddingsText}</p>
+          </div>
+        </div>
+      </section>
+
       <section className="story-split exclusive-split">
         <div
           className="story-split-img"
@@ -102,6 +110,14 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <span>{lang === "it" ? "Ritiri" : "Retreats"}</span>
         <WaveLine side="right" />
       </div>
+
+      <section className="exclusive-text">
+        <div className="statement-inner">
+          <div className="statement-body">
+            <p>{c.retreatsText}</p>
+          </div>
+        </div>
+      </section>
 
       <section className="story-split">
         <div
@@ -166,6 +182,14 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <span>{lang === "it" ? "Riunioni di famiglia" : "Family Gatherings"}</span>
         <WaveLine side="right" />
       </div>
+
+      <section className="exclusive-text">
+        <div className="statement-inner">
+          <div className="statement-body">
+            <p>{c.gatheringsText}</p>
+          </div>
+        </div>
+      </section>
 
       <section className="story-split exclusive-split">
         <div

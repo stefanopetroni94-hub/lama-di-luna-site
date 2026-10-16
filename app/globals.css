@@ -768,8 +768,24 @@ section {
 .exclusive-split {
   margin-top: 4rem;
 }
-.exclusive-label + .exclusive-split {
+.exclusive-label + .exclusive-split,
+.exclusive-text + .exclusive-split {
   margin-top: 0;
+}
+.exclusive-text {
+  padding-bottom: 4rem;
+}
+.exclusive-text .statement-body {
+  margin-top: 0;
+  max-width: none;
+}
+.exclusive-text .statement-body p {
+  margin-bottom: 0;
+}
+@media (max-width: 700px) {
+  .exclusive-text {
+    padding-bottom: 2.5rem;
+  }
 }
 @media (max-width: 700px) {
   .exclusive-split {
