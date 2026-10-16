@@ -5,6 +5,8 @@ import { SiteFooter } from "@/components/site-footer"
 import { CurvedLabel } from "@/components/curved-label"
 import { isLocale } from "@/lib/i18n"
 import { exclusive } from "@/lib/content/exclusive"
+import { QuickSearch } from "@/components/quick-search"
+import { book } from "@/lib/content/book"
 
 export default async function ExclusivePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -43,6 +45,10 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
           </div>
         </div>
       </section>
+
+      <div className="quick-search exclusive-quick-search">
+        <QuickSearch labels={book[lang]} />
+      </div>
 
       <section>
         <CurvedLabel text={c.curvedLabel} />

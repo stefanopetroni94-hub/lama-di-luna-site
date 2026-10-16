@@ -42,7 +42,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     breadcrumbCurrent: "Masseria in exclusive",
     heroEyebrow: "The masseria, entirely yours",
     title: "Masseria in Exclusive",
-    statementTitle: "Take the whole masseria for your home. Every room, every space, every quiet hour.",
+    statementTitle: "Take the whole masseria for yourself. Every room, every space, every quiet hour.",
     statementBody: [
       "For weddings, family gatherings, retreats or simply the desire to disappear together, Lama di Luna can be reserved in its entirety. The eleven rooms, the courtyards, the pool, the refectory and 210 hectares of organic land become yours alone.",
       "There are no other guests, no fixed schedule, no interruptions. Only your people, the light over the olive groves, and a house that has welcomed travellers for nearly two centuries.",
@@ -102,7 +102,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     breadcrumbCurrent: "Masseria in esclusiva",
     heroEyebrow: "La masseria, tutta per te",
     title: "Masseria in Esclusiva",
-    statementTitle: "Prendi l'intera masseria come tua casa. Ogni camera, ogni spazio, ogni ora di quiete.",
+    statementTitle: "Prendi l'intera masseria per te. Ogni camera, ogni spazio, ogni ora di quiete.",
     statementBody: [
       "Per matrimoni, riunioni di famiglia, ritiri o semplicemente il desiderio di sparire insieme, Lama di Luna può essere riservata per intero. Le undici camere, i cortili, la piscina, il refettorio e 210 ettari di terra biologica diventano solo tuoi.",
       "Nessun altro ospite, nessun orario fisso, nessuna interruzione. Solo le tue persone, la luce sugli uliveti e una casa che accoglie viaggiatori da quasi due secoli.",

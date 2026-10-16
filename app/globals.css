@@ -742,6 +742,13 @@ section {
   }
 }
 
+/* whole masseria: booking box under the description, same side margins as the text */
+.quick-search.exclusive-quick-search {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 9vw, 11rem);
+}
+
 /* experiences: booking box under the intro, 3rem above */
 .page-header.page-header--booking {
   padding-bottom: 0;
