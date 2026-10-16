@@ -49,7 +49,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
     emailSmall: "For longer enquiries, group stays, press requests",
     addressLabel: "Address",
     addressValue: "Lama di Luna S.N.C.\nC.da Lama di Luna\n76123 Andria (BT), Italia",
-    addressSmall: "In the Alta Murgia National Park · 15 min from Castel del Monte",
+    addressSmall: "In the Alta Murgia National Park · 20 min from Castel del Monte",
     socialLabel: "Social",
     formEyebrow: "Write to us",
     formTitle: "Tell us about your stay",
@@ -63,7 +63,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
     successMessage: "Thanks — we'll reply within a few hours.",
     findLabel: "Find Us",
     mapEyebrow: "In the Alta Murgia",
-    mapTitle: "An hour from Bari, 50 minutes from Castel del Monte",
+    mapTitle: "An hour from Bari, 20 minutes from Castel del Monte",
     mapBody:
       "A rented car is the easiest way to reach us. We can also arrange a private transfer from any airport or station — write to us in advance.",
     distances: [
@@ -71,7 +71,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
       { place: "Brindisi Airport (BDS)", distance: "2 h 10 min" },
       { place: "Andria train station", distance: "25 min" },
       { place: "Trani & the Adriatic coast", distance: "30 min" },
-      { place: "Castel del Monte", distance: "15 min" },
+      { place: "Castel del Monte", distance: "20 min" },
       { place: "Alberobello (trulli)", distance: "1 h 10 min" },
       { place: "Polignano a Mare", distance: "1 h" },
       { place: "Matera", distance: "1 h 20 min" },
@@ -92,7 +92,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
     emailSmall: "Per richieste più lunghe, soggiorni di gruppo, richieste stampa",
     addressLabel: "Indirizzo",
     addressValue: "Lama di Luna S.N.C.\nC.da Lama di Luna\n76123 Andria (BT), Italia",
-    addressSmall: "Nel Parco Nazionale dell'Alta Murgia · 15 min da Castel del Monte",
+    addressSmall: "Nel Parco Nazionale dell'Alta Murgia · 20 min da Castel del Monte",
     socialLabel: "Social",
     formEyebrow: "Scrivici",
     formTitle: "Raccontaci del tuo soggiorno",
@@ -106,7 +106,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
     successMessage: "Grazie — risponderemo entro poche ore.",
     findLabel: "Dove Siamo",
     mapEyebrow: "Nell'Alta Murgia",
-    mapTitle: "Un'ora da Bari, 50 minuti da Castel del Monte",
+    mapTitle: "Un'ora da Bari, 20 minuti da Castel del Monte",
     mapBody:
       "Un'auto a noleggio è il modo più facile per raggiungerci. Possiamo anche organizzare un transfer privato da qualsiasi aeroporto o stazione — scrivici in anticipo.",
     distances: [
@@ -114,7 +114,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
       { place: "Aeroporto di Brindisi (BDS)", distance: "2 h 10 min" },
       { place: "Stazione di Andria", distance: "25 min" },
       { place: "Trani e la costa adriatica", distance: "30 min" },
-      { place: "Castel del Monte", distance: "15 min" },
+      { place: "Castel del Monte", distance: "20 min" },
       { place: "Alberobello (trulli)", distance: "1 h 10 min" },
       { place: "Polignano a Mare", distance: "1 h" },
       { place: "Matera", distance: "1 h 20 min" },
