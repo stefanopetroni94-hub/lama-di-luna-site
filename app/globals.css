@@ -3231,7 +3231,13 @@ footer {
 .find-us-intro .script-eyebrow {
   margin-bottom: 0.75rem;
 }
+/* same side margins and typeface as the home page description */
+.find-us-intro.find-us-intro {
+  padding-left: clamp(1.5rem, 9vw, 11rem);
+  padding-right: clamp(1.5rem, 9vw, 11rem);
+}
 .find-us-intro p {
+  font-family: "Times New Roman", Times, serif;
   width: 100%;
   font-size: 17px !important;
   line-height: 1.95 !important;
