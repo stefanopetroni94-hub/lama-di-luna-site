@@ -42,19 +42,19 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "La lunga tavolata nel cortile della masseria" : "The long table in the masseria courtyard"}
+          aria-label={lang === "it" ? "Gli sposi che corrono sul prato" : "The couple running across the lawn"}
           style={{
-            backgroundImage: "url('/whatsapp/20261016_165022_1438073468460314.jpg')",
-            backgroundPosition: "20% center",
+            backgroundImage: "url('/whatsapp/20261016_164959_2516452998782121.jpg')",
+            backgroundPosition: "center 75%",
           }}
         />
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Gli sposi che corrono sul prato" : "The couple running across the lawn"}
+          aria-label={lang === "it" ? "Il viale per la cerimonia accanto alla masseria" : "The ceremony aisle beside the masseria"}
           style={{
-            backgroundImage: "url('/whatsapp/20261016_164959_2516452998782121.jpg')",
-            backgroundPosition: "center 75%",
+            backgroundImage: "url('/whatsapp/20261016_165134_1827109174977754.jpg')",
+            backgroundPosition: "50% center",
           }}
         />
       </section>
@@ -84,10 +84,10 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Il viale per la cerimonia accanto alla masseria" : "The ceremony aisle beside the masseria"}
+          aria-label={lang === "it" ? "La lunga tavolata nel cortile della masseria" : "The long table in the masseria courtyard"}
           style={{
-            backgroundImage: "url('/whatsapp/20261016_165134_1827109174977754.jpg')",
-            backgroundPosition: "50% center",
+            backgroundImage: "url('/whatsapp/20261016_165022_1438073468460314.jpg')",
+            backgroundPosition: "20% center",
           }}
         />
       </section>
