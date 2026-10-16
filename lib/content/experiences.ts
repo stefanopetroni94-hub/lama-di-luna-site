@@ -34,10 +34,10 @@ const IMG = {
 
 export const experiences: Record<"en" | "it", ExperiencesContent> = {
   en: {
-    eyebrow: "Eight ways to spend a day",
+    eyebrow: "Ways to spend a day",
     title: "Experiences",
     intro:
-      "Four at the masseria, four within an hour's drive. The olive tour, a cooking class, relaxing massages, a bicycle ride — and the trulli, the cliffs, the cave city, the castle on the hill.",
+      "At the masseria and within an hour's drive. The olive tour, a cooking class, yoga, a bicycle ride — and the trulli, the cliffs, the cave city, the castle on the hill.",
     onEstateLabel: "On the Estate",
     inRegionLabel: "In the Region",
     arrangeEyebrow: "Tell us what you'd love",
@@ -50,19 +50,22 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
       { slug: "#", img: IMG.cooking, num: "02 · Half-day, on request", name: "Cooking Class", meta: "A cooking class with our resident cook — orecchiette pasta and Pugliese focaccia, made by hand at the masseria kitchen." },
       { slug: "#", img: IMG.wine, num: "03 · By arrangement", name: "Relaxing Massages", meta: "Massages by appointment, in the quiet of the masseria." },
       { slug: "#", img: IMG.dawn, num: "04 · Half-day, on request", name: "Bicycle Ride", meta: "A ride through the olive groves and the quiet country roads around the masseria." },
+      { slug: "#", img: IMG.wine, num: "05 · By arrangement", name: "Cinema Room", meta: "An evening in the masseria's cinema room, by arrangement." },
+      { slug: "#", img: IMG.olive, num: "06 · By arrangement", name: "Yoga Practices", meta: "Yoga practices at the masseria, by arrangement." },
+      { slug: "#", img: IMG.dawn, num: "07 · On request", name: "Walk on the Estate", meta: "A walk through the olive groves, the vineyards and the wild Murgia around the masseria." },
     ],
     inRegion: [
-      { slug: "#", img: "/whatsapp/20261015_141233_1132577716005342.jpg", num: "05 · 15 min drive", name: "Castel del Monte", meta: "Frederick II's octagonal 13th-century castle, a UNESCO site on the next hill over. Self-drive or arranged transfer." },
-      { slug: "#", img: "/whatsapp/20261015_141335_1635279478124485.jpg", pos: "55% center", num: "06 · 1h 10 min drive", name: "Alberobello & the Trulli", meta: "The conical-roofed trulli of the Valle d'Itria — the UNESCO town and the smaller hamlets few visitors find." },
-      { slug: "#", img: IMG.polignano, num: "07 · 1 h drive", name: "Polignano a Mare", meta: "Cliffs over the Adriatic, the cave bar, the long lunch overlooking the sea. The most cinematic beach town in Puglia." },
-      { slug: "#", img: "/whatsapp/20261015_141242_1113590001072954.jpg", pos: "62% center", num: "08 · 1h 20 min drive", name: "Matera", meta: "The cave city, the sassi, the rock churches. Where Stanley Tucci filmed; where Mel Gibson filmed; where you'll never forget you were." },
+      { slug: "#", img: "/whatsapp/20261015_141233_1132577716005342.jpg", num: "08 · 15 min drive", name: "Castel del Monte", meta: "Frederick II's octagonal 13th-century castle, a UNESCO site on the next hill over. Self-drive or arranged transfer." },
+      { slug: "#", img: "/whatsapp/20261015_141335_1635279478124485.jpg", pos: "55% center", num: "09 · 1h 10 min drive", name: "Alberobello & the Trulli", meta: "The conical-roofed trulli of the Valle d'Itria — the UNESCO town and the smaller hamlets few visitors find." },
+      { slug: "#", img: IMG.polignano, num: "10 · 1 h drive", name: "Polignano a Mare", meta: "Cliffs over the Adriatic, the cave bar, the long lunch overlooking the sea. The most cinematic beach town in Puglia." },
+      { slug: "#", img: "/whatsapp/20261015_141242_1113590001072954.jpg", pos: "62% center", num: "11 · 1h 20 min drive", name: "Matera", meta: "The cave city, the sassi, the rock churches. Where Stanley Tucci filmed; where Mel Gibson filmed; where you'll never forget you were." },
     ],
   },
   it: {
-    eyebrow: "Otto modi di passare una giornata",
+    eyebrow: "Modi di passare una giornata",
     title: "Esperienze",
     intro:
-      "Quattro in masseria, quattro a meno di un'ora di macchina. Il tour degli ulivi, un corso di cucina, massaggi rilassanti, un giro in bicicletta — e i trulli, le scogliere, la città di pietra, il castello sulla collina.",
+      "In masseria e a meno di un'ora di macchina. Il tour degli ulivi, un corso di cucina, lo yoga, un giro in bicicletta — e i trulli, le scogliere, la città di pietra, il castello sulla collina.",
     onEstateLabel: "In Masseria",
     inRegionLabel: "Nella Regione",
     arrangeEyebrow: "Dicci cosa ti piacerebbe",
@@ -75,12 +78,15 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
       { slug: "#", img: IMG.cooking, num: "02 · Mezza giornata, su richiesta", name: "Corso di Cucina", meta: "Un corso di cucina con la nostra cuoca — orecchiette e focaccia pugliese, fatte a mano nella cucina della masseria." },
       { slug: "#", img: IMG.wine, num: "03 · Su prenotazione", name: "Massaggi Rilassanti", meta: "Massaggi su appuntamento, nella quiete della masseria." },
       { slug: "#", img: IMG.dawn, num: "04 · Mezza giornata, su richiesta", name: "Giro in Bicicletta", meta: "Un giro in bicicletta tra gli uliveti e le tranquille strade di campagna intorno alla masseria." },
+      { slug: "#", img: IMG.wine, num: "05 · Su prenotazione", name: "Sala Cinema", meta: "Una serata nella sala cinema della masseria, su prenotazione." },
+      { slug: "#", img: IMG.olive, num: "06 · Su prenotazione", name: "Pratiche di Yoga", meta: "Pratiche di yoga in masseria, su prenotazione." },
+      { slug: "#", img: IMG.dawn, num: "07 · Su richiesta", name: "Passeggiata nella Tenuta", meta: "Una passeggiata tra gli uliveti, i vigneti e la Murgia selvaggia intorno alla masseria." },
     ],
     inRegion: [
-      { slug: "#", img: "/whatsapp/20261015_141233_1132577716005342.jpg", num: "05 · 15 min di macchina", name: "Castel del Monte", meta: "Il castello ottagonale di Federico II del XIII secolo, sito UNESCO sulla collina accanto. In auto propria o con transfer." },
-      { slug: "#", img: "/whatsapp/20261015_141335_1635279478124485.jpg", pos: "55% center", num: "06 · 1h 10 min di macchina", name: "Alberobello e i Trulli", meta: "I trulli dal tetto conico della Valle d'Itria — la città UNESCO e i borghi più piccoli che pochi visitatori trovano." },
-      { slug: "#", img: IMG.polignano, num: "07 · 1 h di macchina", name: "Polignano a Mare", meta: "Scogliere sull'Adriatico, il bar nella grotta, il lungo pranzo affacciato sul mare. Il borgo di mare più cinematografico di Puglia." },
-      { slug: "#", img: "/whatsapp/20261015_141242_1113590001072954.jpg", pos: "62% center", num: "08 · 1h 20 min di macchina", name: "Matera", meta: "La città di pietra, i sassi, le chiese rupestri. Dove ha girato Stanley Tucci; dove ha girato Mel Gibson; dove non dimenticherai mai di essere stato." },
+      { slug: "#", img: "/whatsapp/20261015_141233_1132577716005342.jpg", num: "08 · 15 min di macchina", name: "Castel del Monte", meta: "Il castello ottagonale di Federico II del XIII secolo, sito UNESCO sulla collina accanto. In auto propria o con transfer." },
+      { slug: "#", img: "/whatsapp/20261015_141335_1635279478124485.jpg", pos: "55% center", num: "09 · 1h 10 min di macchina", name: "Alberobello e i Trulli", meta: "I trulli dal tetto conico della Valle d'Itria — la città UNESCO e i borghi più piccoli che pochi visitatori trovano." },
+      { slug: "#", img: IMG.polignano, num: "10 · 1 h di macchina", name: "Polignano a Mare", meta: "Scogliere sull'Adriatico, il bar nella grotta, il lungo pranzo affacciato sul mare. Il borgo di mare più cinematografico di Puglia." },
+      { slug: "#", img: "/whatsapp/20261015_141242_1113590001072954.jpg", pos: "62% center", num: "11 · 1h 20 min di macchina", name: "Matera", meta: "La città di pietra, i sassi, le chiese rupestri. Dove ha girato Stanley Tucci; dove ha girato Mel Gibson; dove non dimenticherai mai di essere stato." },
     ],
   },
 }
