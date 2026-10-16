@@ -38,6 +38,27 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <QuickSearch labels={book[lang]} />
       </div>
 
+      <section className="story-split exclusive-split">
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "La lunga tavolata nel cortile della masseria" : "The long table in the masseria courtyard"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_165022_1438073468460314.jpg')",
+            backgroundPosition: "20% center",
+          }}
+        />
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Gli sposi che corrono sul prato" : "The couple running across the lawn"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_164959_2516452998782121.jpg')",
+            backgroundPosition: "center 75%",
+          }}
+        />
+      </section>
+
       <section>
         <CurvedLabel text={c.curvedLabel} />
       </section>

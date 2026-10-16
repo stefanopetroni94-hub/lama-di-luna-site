@@ -749,6 +749,15 @@ section {
   padding: 0 clamp(1.5rem, 9vw, 11rem);
 }
 
+.exclusive-split {
+  margin-top: 4rem;
+}
+@media (max-width: 700px) {
+  .exclusive-split {
+    margin-top: 2.5rem;
+  }
+}
+
 /* experiences: booking box under the intro, 3rem above */
 .page-header.page-header--booking {
   padding-bottom: 0;
