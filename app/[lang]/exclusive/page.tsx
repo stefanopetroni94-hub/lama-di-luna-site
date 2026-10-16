@@ -22,23 +22,18 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
           <span style={{ opacity: 0.55 }}>/</span>
           <span>{c.breadcrumbCurrent}</span>
         </div>
-        <div className="exp-hero-title">
-          <div className="exp-hero-eyebrow">{c.heroEyebrow}</div>
-          <h1>{c.title}</h1>
-        </div>
+        <h1 className="sr-only">{c.title}</h1>
       </section>
 
       <section className="statement">
-        <div className="statement-grid">
+        <div className="statement-grid statement-grid--stacked">
           <div>
             <h2>{c.statementTitle}</h2>
             <div className="statement-body">
-              {c.statementBody.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
+              <p>{c.statementBody.join(" ")}</p>
             </div>
           </div>
-          <div className="facts">
+          <div className="facts facts--row">
             {c.facts.map((f) => (
               <div key={f.label}>
                 <div className="fact-label">{f.label}</div>
