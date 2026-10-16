@@ -148,7 +148,7 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
             className="story-split-tilt"
             style={{
               backgroundImage: "url('/whatsapp/20261016_170301_1640209704278679.jpg')",
-              backgroundPosition: "center 8%",
+              backgroundPosition: "center 32%",
             }}
           />
         </div>
