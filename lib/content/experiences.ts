@@ -37,7 +37,7 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
     eyebrow: "Ways to spend a day",
     title: "Experiences",
     intro:
-      "At the masseria and within an hour's drive. The olive tour, a cooking class, yoga, a bicycle ride — and the trulli, the cliffs, the cave city, the castle on the hill.",
+      "The olive tour, a cooking class, relaxing massages, a bicycle ride — and the trulli, the cliffs, the cave city, the castle on the hill.",
     onEstateLabel: "On the Estate",
     inRegionLabel: "In the Region",
     arrangeEyebrow: "Tell us what you'd love",
@@ -66,7 +66,7 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
     eyebrow: "Modi di passare una giornata",
     title: "Esperienze",
     intro:
-      "In masseria e a meno di un'ora di macchina. Il tour degli ulivi, un corso di cucina, lo yoga, un giro in bicicletta — e i trulli, le scogliere, la città di pietra, il castello sulla collina.",
+      "Il tour degli ulivi, un corso di cucina, massaggi rilassanti, un giro in bicicletta — e i trulli, le scogliere, la città di pietra, il castello sulla collina.",
     onEstateLabel: "In Masseria",
     inRegionLabel: "Nella Regione",
     arrangeEyebrow: "Dicci cosa ti piacerebbe",
