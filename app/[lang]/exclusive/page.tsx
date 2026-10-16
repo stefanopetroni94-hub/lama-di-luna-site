@@ -163,6 +163,69 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         />
       </section>
 
+      <div className="section-label exclusive-label">
+        <WaveLine side="left" />
+        <span>{lang === "it" ? "Riunioni di famiglia" : "Family Gatherings"}</span>
+        <WaveLine side="right" />
+      </div>
+
+      <section className="story-split exclusive-split">
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Due donne bevono spritz e rosato al tramonto" : "Two women drinking spritz and rosé at sunset"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_172602_1427118046225898.jpg')",
+            backgroundPosition: "45% center",
+          }}
+        />
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "La veranda al tramonto vista dal prato" : "The veranda at sunset seen from the lawn"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_172647_1435652958610194.jpg')",
+            backgroundPosition: "center 55%",
+          }}
+        />
+      </section>
+
+      <section>
+        <div
+          className="full-photo"
+          role="img"
+          aria-label={lang === "it" ? "Il pizzaiolo lancia l'impasto davanti al forno a legna" : "The pizza maker tossing dough in front of the wood-fired oven"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_172729_1805563020681449.jpg')",
+            backgroundPosition: "center 40%",
+          }}
+        />
+      </section>
+
+      <section>
+        <div
+          className="full-photo"
+          role="img"
+          aria-label={lang === "it" ? "Due bambini accarezzano un cavallo al tramonto" : "Two children stroking a horse at sunset"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_172701_1655107209547771.jpg')",
+            backgroundPosition: "center 45%",
+          }}
+        />
+      </section>
+
+      <section>
+        <div
+          className="full-photo"
+          role="img"
+          aria-label={lang === "it" ? "Gli ospiti seduti sul prato" : "Guests sitting on the lawn"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_172717_1032419336533992.jpg')",
+            backgroundPosition: "center 60%",
+          }}
+        />
+      </section>
+
       <section>
         <CurvedLabel text={c.curvedLabel} />
       </section>
