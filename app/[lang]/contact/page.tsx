@@ -51,7 +51,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
               <div className="value">
                 <a href="tel:+390883569505">{c.phoneValue}</a>
               </div>
-              <div className="small">{c.phoneSmall}</div>
+              <div className="small phone-small">{c.phoneSmall}</div>
               <div className="channels">
                 <a href="tel:+390883569505" className="channel">
                   <svg viewBox="0 0 24 24" fill="none">

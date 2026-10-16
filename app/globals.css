@@ -2944,11 +2944,17 @@ footer {
 .section-label.find-label {
   padding: 3rem 2.5rem 2rem;
 }
-.direct--row .block,
-.direct--row .block:first-child,
-.direct--row .block:last-child {
+.direct.direct--row .block,
+.direct.direct--row .block:first-child,
+.direct.direct--row .block:last-child {
   padding: 0;
   border-bottom: none;
+}
+.direct.direct--row .small {
+  display: none;
+}
+.direct.direct--row .phone-small {
+  display: block;
 }
 @media (max-width: 900px) {
   .direct.direct--row {
