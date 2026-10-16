@@ -92,9 +92,7 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
           </div>
           <h2>{lang === "it" ? "Una comunità al lavoro, poi il declino" : "A community at work, then decline"}</h2>
           <div className="statement-body">
-            {[...community.body, ...decline.body].map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
+            <p>{[...community.body, ...decline.body].join(" ")}</p>
           </div>
         </div>
       </section>
