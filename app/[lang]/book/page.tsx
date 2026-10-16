@@ -66,6 +66,21 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
+      <section className="faq">
+        <div className="faq-inner">
+          <div className="faq-header">
+            <div className="script-eyebrow">{c.faqEyebrow}</div>
+            <h2>{c.faqTitle}</h2>
+          </div>
+          {c.faqs.map((faq) => (
+            <details className="faq-item" key={faq.q}>
+              <summary>{faq.q}</summary>
+              <div className="body">{faq.a}</div>
+            </details>
+          ))}
+        </div>
+      </section>
+
       <section className="trust">
         <div className="trust-grid">
           {c.trust.map((t) => (
