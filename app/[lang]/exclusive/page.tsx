@@ -118,10 +118,10 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Meditazione nella sala con le travi di legno" : "Meditation in the hall with the wooden beams"}
+          aria-label={lang === "it" ? "Insalata di cavolo rosso con zucchine grigliate" : "Red cabbage salad with grilled courgettes"}
           style={{
-            backgroundImage: "url('/whatsapp/20261016_170242_1843766056978956.jpg')",
-            backgroundPosition: "center 60%",
+            backgroundImage: "url('/whatsapp/20261016_171639_1125112026602459.jpg')",
+            backgroundPosition: "center 55%",
           }}
         />
       </section>
