@@ -71,6 +71,27 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         />
       </section>
 
+      <section className="story-split">
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Gli sposi con la torta nella sala con la volta" : "The couple with the cake in the vaulted hall"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_165312_1605521024705475.jpg')",
+            backgroundPosition: "center 40%",
+          }}
+        />
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "La sposa accanto al cancello di ferro" : "The bride beside the wrought iron gate"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_165422_1913563452860011.jpg')",
+            backgroundPosition: "center 60%",
+          }}
+        />
+      </section>
+
       <section>
         <CurvedLabel text={c.curvedLabel} />
       </section>
