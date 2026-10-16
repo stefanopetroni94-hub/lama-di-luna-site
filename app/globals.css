@@ -1033,7 +1033,7 @@ section {
   inset: 0;
   background-size: cover;
   background-position: center 60%;
-  transform: rotate(-1.2deg) scale(1.08);
+  transform: rotate(2deg) scale(1.1);
 }
 .room-rows-img--wide {
   grid-column: 1 / -1;
