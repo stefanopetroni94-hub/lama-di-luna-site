@@ -68,15 +68,21 @@ export default async function RoomDetailPage({
 
         <section className="room-rows" aria-label={`${room.name} gallery`}>
           {rows.flatMap((row, r) =>
-            row.map((src, i) => (
-              <div
-                key={`${r}-${i}`}
-                className={`room-rows-img${row.length === 1 ? " room-rows-img--wide" : ""}`}
-                style={{ backgroundImage: `url('${src}')` }}
-                role="img"
-                aria-label={`${room.name}, photo ${r * 2 + i + 2}`}
-              />
-            ))
+            row.map((src, i) => {
+              const tilted = src.includes("124829_2560467817806327")
+              const cls = `room-rows-img${row.length === 1 ? " room-rows-img--wide" : ""}${tilted ? " room-rows-img--tilt" : ""}`
+              return (
+                <div
+                  key={`${r}-${i}`}
+                  className={cls}
+                  style={tilted ? undefined : { backgroundImage: `url('${src}')` }}
+                  role="img"
+                  aria-label={`${room.name}, photo ${r * 2 + i + 2}`}
+                >
+                  {tilted && <div className="room-rows-tilt" style={{ backgroundImage: `url('${src}')` }} />}
+                </div>
+              )
+            })
           )}
         </section>
       </article>

@@ -1023,6 +1023,18 @@ section {
   background-size: cover;
   background-position: center;
 }
+.room-rows-img--tilt {
+  position: relative;
+  overflow: hidden;
+}
+/* small turn to level the photo, scaled up so no corner shows */
+.room-rows-tilt {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 60%;
+  transform: rotate(-1.2deg) scale(1.08);
+}
 .room-rows-img--wide {
   grid-column: 1 / -1;
   aspect-ratio: 16 / 9;
