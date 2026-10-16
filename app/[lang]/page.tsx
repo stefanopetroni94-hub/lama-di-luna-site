@@ -54,7 +54,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           ))}
         </div>
         <div className="rooms-cta">
-          <Scopri href={`/${lang}/book`}>{c.roomsCta}</Scopri>
+          <Scopri href={`/${lang}/rooms`}>{c.roomsCta}</Scopri>
         </div>
       </section>
 
