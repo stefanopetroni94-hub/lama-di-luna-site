@@ -6,6 +6,7 @@ import { CurvedLabel } from "@/components/curved-label"
 import { isLocale } from "@/lib/i18n"
 import { exclusive } from "@/lib/content/exclusive"
 import { QuickSearch } from "@/components/quick-search"
+import { WaveLine } from "@/components/wave-line"
 import { book } from "@/lib/content/book"
 
 export default async function ExclusivePage({ params }: { params: Promise<{ lang: string }> }) {
@@ -36,6 +37,12 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
 
       <div className="quick-search exclusive-quick-search">
         <QuickSearch labels={book[lang]} />
+      </div>
+
+      <div className="section-label exclusive-label">
+        <WaveLine side="left" />
+        <span>{lang === "it" ? "Matrimoni" : "Weddings"}</span>
+        <WaveLine side="right" />
       </div>
 
       <section className="story-split exclusive-split">
@@ -91,6 +98,12 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
           }}
         />
       </section>
+
+      <div className="section-label exclusive-label">
+        <WaveLine side="left" />
+        <span>{lang === "it" ? "Ritiri" : "Retreats"}</span>
+        <WaveLine side="right" />
+      </div>
 
       <section>
         <CurvedLabel text={c.curvedLabel} />
