@@ -60,6 +60,18 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
       </section>
 
       <section>
+        <div
+          className="full-photo"
+          role="img"
+          aria-label={lang === "it" ? "Il viale per la cerimonia accanto alla masseria" : "The ceremony aisle beside the masseria"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_165134_1827109174977754.jpg')",
+            backgroundPosition: "center 70%",
+          }}
+        />
+      </section>
+
+      <section>
         <CurvedLabel text={c.curvedLabel} />
       </section>
 
