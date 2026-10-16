@@ -2366,6 +2366,10 @@ footer {
 .restaurant-split.restaurant-split--end {
   margin-top: 0;
 }
+/* focaccia photo: lighter than the site filter so the bread does not look burnt */
+.restaurant-split--end .story-split-img.story-split-img--rotated {
+  filter: sepia(0.15) contrast(1.02) saturate(0.88) brightness(1.28);
+}
 /* home: two photos under "Experience our territory", standard site filter */
 .home-split {
   margin-top: 4rem;
