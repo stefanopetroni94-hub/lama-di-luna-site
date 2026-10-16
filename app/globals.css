@@ -1951,10 +1951,9 @@ footer {
 .exp-hero--exclusive {
   overflow: hidden;
 }
-/* small anticlockwise turn to level the roofline, scaled up so no corner shows */
+/* this photo is already level, so no rotation is needed */
 .exp-hero--exclusive::before {
-  background: url("/whatsapp/20261016_161421_1628140715574615.jpg") center 55% / cover no-repeat;
-  transform: rotate(-1deg) scale(1.08);
+  background: url("/whatsapp/20261016_183752_1693704425661443.jpg") center 55% / cover no-repeat;
 }
 .exp-hero::after {
   content: "";
