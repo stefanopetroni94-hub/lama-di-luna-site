@@ -202,14 +202,23 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         />
       </section>
 
-      <section>
+      <section className="story-split">
         <div
-          className="full-photo"
+          className="story-split-img"
           role="img"
           aria-label={lang === "it" ? "Due bambini accarezzano un cavallo al tramonto" : "Two children stroking a horse at sunset"}
           style={{
             backgroundImage: "url('/whatsapp/20261016_172701_1655107209547771.jpg')",
-            backgroundPosition: "center 45%",
+            backgroundPosition: "55% center",
+          }}
+        />
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Il setter rosso davanti alla casa di pietra" : "The red setter in front of the stone house"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_173131_1811619126525486.jpg')",
+            backgroundPosition: "45% center",
           }}
         />
       </section>
