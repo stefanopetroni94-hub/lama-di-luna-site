@@ -19,11 +19,6 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
 
       <section className="exp-hero exp-hero--exclusive">
         <div className="exp-counter">{c.counter}</div>
-        <div className="exp-breadcrumb">
-          <Link href={`/${lang}`}>{c.breadcrumbRoot}</Link>
-          <span style={{ opacity: 0.55 }}>/</span>
-          <span>{c.breadcrumbCurrent}</span>
-        </div>
         <h1 className="sr-only">{c.title}</h1>
       </section>
 
