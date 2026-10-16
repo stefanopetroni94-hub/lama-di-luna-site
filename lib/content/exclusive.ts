@@ -104,7 +104,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     bookingTitle: "Reserve the whole masseria",
     bookingText:
       "Tell us your dates, the size of your party and the kind of gathering you have in mind. We will prepare a tailored proposal for the estate in exclusive use.",
-    bookingCta: "Request a proposal",
+    bookingCta: "Make an inquiry",
   },
   it: {
     counter: "Intera tenuta",
@@ -170,6 +170,6 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     bookingTitle: "Riserva l'intera masseria",
     bookingText:
       "Indicaci le date, il numero di ospiti e il tipo di incontro che hai in mente. Prepareremo una proposta su misura per la tenuta in uso esclusivo.",
-    bookingCta: "Richiedi una proposta",
+    bookingCta: "Fai una richiesta",
   },
 }
