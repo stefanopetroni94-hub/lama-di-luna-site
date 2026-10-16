@@ -30,14 +30,6 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
               <p>{c.statementBody.join(" ")}</p>
             </div>
           </div>
-          <div className="facts facts--row">
-            {c.facts.map((f) => (
-              <div key={f.label}>
-                <div className="fact-label">{f.label}</div>
-                <div className="fact-value">{f.value}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
