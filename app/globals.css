@@ -762,7 +762,8 @@ section {
   }
 }
 .booking-callout.exclusive-callout {
-  margin-top: 4rem;
+  margin-top: 0;
+  border-top: none;
 }
 .exclusive-split {
   margin-top: 4rem;

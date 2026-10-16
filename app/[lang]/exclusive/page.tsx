@@ -224,7 +224,6 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
 
       <section className="booking-callout exclusive-callout">
         <div className="booking-callout-inner">
-          <div className="eyebrow">{c.bookingEyebrow}</div>
           <h2>{c.bookingTitle}</h2>
           <p>{c.bookingText}</p>
           <Link href={`/${lang}/contact`} className="btn-primary">
