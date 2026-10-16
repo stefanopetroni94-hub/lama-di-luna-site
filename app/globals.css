@@ -749,6 +749,9 @@ section {
   padding: 0 clamp(1.5rem, 9vw, 11rem);
 }
 
+.book-stay.exclusive-request {
+  padding: 4rem 2.5rem 0;
+}
 .exclusive-split {
   margin-top: 4rem;
 }

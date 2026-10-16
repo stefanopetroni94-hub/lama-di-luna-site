@@ -5,9 +5,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { CurvedLabel } from "@/components/curved-label"
 import { isLocale } from "@/lib/i18n"
 import { exclusive } from "@/lib/content/exclusive"
-import { QuickSearch } from "@/components/quick-search"
 import { WaveLine } from "@/components/wave-line"
-import { book } from "@/lib/content/book"
 
 export default async function ExclusivePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -35,8 +33,10 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         </div>
       </section>
 
-      <div className="quick-search exclusive-quick-search">
-        <QuickSearch labels={book[lang]} />
+      <div className="book-stay exclusive-request">
+        <Link href={`/${lang}/contact`} className="book-stay-btn">
+          {c.bookingCta}
+        </Link>
       </div>
 
       <div className="section-label exclusive-label">
