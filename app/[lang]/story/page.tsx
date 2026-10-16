@@ -110,9 +110,8 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
             aria-label="Pietro Petroni — Lama di Luna"
             style={{
               backgroundImage: "url('/whatsapp/20261016_173833_1310619667811770.jpg')",
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              aspectRatio: "1078 / 1459",
+              backgroundPosition: "100% 70%",
+              backgroundSize: "118% auto",
             }}
           />
           <div className="founder-text">
