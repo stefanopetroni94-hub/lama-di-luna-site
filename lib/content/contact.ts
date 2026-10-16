@@ -68,7 +68,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
       "A rented car is the easiest way to reach us. We can also arrange a private transfer from any airport or station — write to us in advance.",
     distances: [
       { place: "Bari Airport (BRI)", distance: "55 min" },
-      { place: "Brindisi Airport (BDS)", distance: "1 h 25 min" },
+      { place: "Brindisi Airport (BDS)", distance: "2 h 10 min" },
       { place: "Andria train station", distance: "15 min" },
       { place: "Trani & the Adriatic coast", distance: "30 min" },
       { place: "Castel del Monte", distance: "15 min" },
@@ -111,7 +111,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
       "Un'auto a noleggio è il modo più facile per raggiungerci. Possiamo anche organizzare un transfer privato da qualsiasi aeroporto o stazione — scrivici in anticipo.",
     distances: [
       { place: "Aeroporto di Bari (BRI)", distance: "55 min" },
-      { place: "Aeroporto di Brindisi (BDS)", distance: "1 h 25 min" },
+      { place: "Aeroporto di Brindisi (BDS)", distance: "2 h 10 min" },
       { place: "Stazione di Andria", distance: "15 min" },
       { place: "Trani e la costa adriatica", distance: "30 min" },
       { place: "Castel del Monte", distance: "15 min" },
