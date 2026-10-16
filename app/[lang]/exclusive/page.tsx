@@ -92,6 +92,18 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         />
       </section>
 
+      <section className="story-split">
+        <div
+          className="story-split-img"
+          role="img"
+          aria-label={lang === "it" ? "Gli ospiti all'aperitivo sul prato sotto gli alberi" : "Guests at the aperitivo on the lawn under the trees"}
+          style={{
+            backgroundImage: "url('/whatsapp/20261016_165613_932387559726351.jpg')",
+            backgroundPosition: "35% center",
+          }}
+        />
+      </section>
+
       <section>
         <CurvedLabel text={c.curvedLabel} />
       </section>
