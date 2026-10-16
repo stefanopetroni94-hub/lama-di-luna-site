@@ -140,14 +140,18 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
 
       <section className="story-split">
         <div
-          className="story-split-img"
+          className="story-split-img story-split-img--tilt"
           role="img"
           aria-label={lang === "it" ? "Preghiera yoga nella sala con la volta di terracotta" : "Yoga prayer pose in the terracotta vaulted hall"}
-          style={{
-            backgroundImage: "url('/whatsapp/20261016_170301_1640209704278679.jpg')",
-            backgroundPosition: "center 55%",
-          }}
-        />
+        >
+          <div
+            className="story-split-tilt"
+            style={{
+              backgroundImage: "url('/whatsapp/20261016_170301_1640209704278679.jpg')",
+              backgroundPosition: "center 8%",
+            }}
+          />
+        </div>
         <div
           className="story-split-img"
           role="img"
