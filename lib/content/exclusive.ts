@@ -49,7 +49,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
       "There are no other guests, no fixed schedule, no interruptions. Only your people, the light over the olive groves, and a house that has welcomed travellers for nearly two centuries.",
     ],
     stay:
-      "Lama di Luna sleeps up to 27 guests in the masseria's eleven rooms. The pool and all the spaces, the library and the cinema room are entirely yours, with our cooks and our staff at your disposal: a concierge and a receptionist to help you organise just about everything. To take the whole masseria we ask for a minimum stay of three nights.",
+      "Lama di Luna sleeps up to 27 people. The pool and all the spaces, the library and the cinema room are entirely yours, with our cooks and our staff at your disposal: a concierge and a receptionist to help you organise just about everything. To take the whole masseria we ask for a minimum stay of three nights.",
     facts: [
       { label: "Sleeps", value: "Up to 22 guests" },
       { label: "Rooms", value: "11 restored rooms" },
@@ -111,7 +111,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
       "Nessun altro ospite, nessun orario fisso, nessuna interruzione. Solo le tue persone, la luce sugli uliveti e una casa che accoglie viaggiatori da quasi due secoli.",
     ],
     stay:
-      "Lama di Luna accoglie fino a 27 persone nelle undici camere della masseria. La piscina e tutti gli spazi, la biblioteca e il cinema sono interamente vostri, con i nostri cuochi e il nostro staff a vostra disposizione: concierge e receptionist vi aiutano a organizzare praticamente tutto. Per prendere la masseria nella sua totalità chiediamo un soggiorno minimo di tre notti.",
+      "Lama di Luna accoglie fino a 27 persone. La piscina e tutti gli spazi, la biblioteca e il cinema sono interamente vostri, con i nostri cuochi e il nostro staff a vostra disposizione: concierge e receptionist vi aiutano a organizzare praticamente tutto. Per prendere la masseria nella sua totalità chiediamo un soggiorno minimo di tre notti.",
     facts: [
       { label: "Posti", value: "Fino a 22 ospiti" },
       { label: "Camere", value: "11 camere restaurate" },
