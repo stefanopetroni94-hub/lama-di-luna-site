@@ -9,6 +9,7 @@ export type Product = {
   imgs?: string[]
   contain?: boolean
   landscape?: boolean
+  zoom?: { size: string; pos: string }
 }
 
 export type ShopContent = {
@@ -55,8 +56,8 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "fiano", name: "Fiano", meta: "White wine.", price: PRICE_EN, img: PH.fiano, contain: true },
       { id: "carolea-500", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. 500 ml.", price: "€23", img: PH.carolea500, contain: true },
       { id: "coratina-500", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. 500 ml.", price: "€23", img: PH.coratina500, contain: true },
-      { id: "carolea-3l", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. Bag-in-box, 3 litres.", price: "€66", img: PH.carolea3l, contain: true, landscape: true },
-      { id: "coratina-3l", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. Bag-in-box, 3 litres.", price: "€66", img: PH.coratina3l, contain: true, landscape: true },
+      { id: "carolea-3l", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. Bag-in-box, 3 litres.", price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "168% auto", pos: "50% 92%" } },
+      { id: "coratina-3l", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. Bag-in-box, 3 litres.", price: "€66", img: PH.coratina3l, contain: true, landscape: true, zoom: { size: "185% auto", pos: "50% 100%" } },
       { id: "shampoo", name: "Shampoo", meta: "From the masseria's bath line.", price: "€15", img: PH.shampoo, contain: true },
       { id: "conditioner", name: "Conditioner", meta: "From the masseria's bath line.", price: "€16", img: PH.conditioner, contain: true },
       { id: "hand-body-soap", name: "Hand & Body Wash", meta: "From the masseria's bath line.", price: "€15", img: PH.wash, contain: true },
@@ -79,8 +80,8 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "fiano", name: "Fiano", meta: "Vino bianco.", price: PRICE_IT, img: PH.fiano, contain: true },
       { id: "carolea-500", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. 500 ml.", price: "€23", img: PH.carolea500, contain: true },
       { id: "coratina-500", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. 500 ml.", price: "€23", img: PH.coratina500, contain: true },
-      { id: "carolea-3l", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. Bag-in-box, 3 litri.", price: "€66", img: PH.carolea3l, contain: true, landscape: true },
-      { id: "coratina-3l", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. Bag-in-box, 3 litri.", price: "€66", img: PH.coratina3l, contain: true, landscape: true },
+      { id: "carolea-3l", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. Bag-in-box, 3 litri.", price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "168% auto", pos: "50% 92%" } },
+      { id: "coratina-3l", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. Bag-in-box, 3 litri.", price: "€66", img: PH.coratina3l, contain: true, landscape: true, zoom: { size: "185% auto", pos: "50% 100%" } },
       { id: "shampoo", name: "Shampoo", meta: "Dalla linea bagno della masseria.", price: "€15", img: PH.shampoo, contain: true },
       { id: "conditioner", name: "Balsamo", meta: "Dalla linea bagno della masseria.", price: "€16", img: PH.conditioner, contain: true },
       { id: "hand-body-soap", name: "Detergente Mani e Corpo", meta: "Dalla linea bagno della masseria.", price: "€15", img: PH.wash, contain: true },
