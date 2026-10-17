@@ -7,6 +7,7 @@ export type Product = {
   price: string
   img: string
   contain?: boolean
+  landscape?: boolean
 }
 
 export type ShopContent = {
@@ -44,7 +45,7 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "fiano", name: "Fiano", meta: "White wine.", price: PRICE_EN, img: IMG.wine },
       { id: "carolea-500", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. 500 ml.", price: PRICE_EN, img: IMG.oil },
       { id: "coratina-500", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. 500 ml.", price: PRICE_EN, img: "/whatsapp/20261017_091902_1136236775644116.jpg", contain: true },
-      { id: "carolea-3l", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. 3 litres.", price: PRICE_EN, img: IMG.oil },
+      { id: "carolea-3l", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. 3 litres.", price: PRICE_EN, img: "/whatsapp/20261017_092134_1976526712917485.jpg", contain: true, landscape: true },
       { id: "shampoo", name: "Shampoo", meta: "From the masseria's bath line.", price: PRICE_EN, img: "/whatsapp/20261017_091816_1467314875313085.jpg", contain: true },
       { id: "conditioner", name: "Conditioner", meta: "From the masseria's bath line.", price: PRICE_EN, img: "/whatsapp/20261017_091736_1116476974179442.jpg", contain: true },
       { id: "hand-body-soap", name: "Hand & Body Wash", meta: "From the masseria's bath line.", price: PRICE_EN, img: "/whatsapp/20261017_092042_1420806822855435.jpg", contain: true },
@@ -66,7 +67,7 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "fiano", name: "Fiano", meta: "Vino bianco.", price: PRICE_IT, img: IMG.wine },
       { id: "carolea-500", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. 500 ml.", price: PRICE_IT, img: IMG.oil },
       { id: "coratina-500", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. 500 ml.", price: PRICE_IT, img: "/whatsapp/20261017_091902_1136236775644116.jpg", contain: true },
-      { id: "carolea-3l", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. 3 litri.", price: PRICE_IT, img: IMG.oil },
+      { id: "carolea-3l", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. 3 litri.", price: PRICE_IT, img: "/whatsapp/20261017_092134_1976526712917485.jpg", contain: true, landscape: true },
       { id: "shampoo", name: "Shampoo", meta: "Dalla linea bagno della masseria.", price: PRICE_IT, img: "/whatsapp/20261017_091816_1467314875313085.jpg", contain: true },
       { id: "conditioner", name: "Balsamo", meta: "Dalla linea bagno della masseria.", price: PRICE_IT, img: "/whatsapp/20261017_091736_1116476974179442.jpg", contain: true },
       { id: "hand-body-soap", name: "Detergente Mani e Corpo", meta: "Dalla linea bagno della masseria.", price: PRICE_IT, img: "/whatsapp/20261017_092042_1420806822855435.jpg", contain: true },
