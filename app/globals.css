@@ -1253,6 +1253,11 @@ section {
   margin-bottom: 1.3rem;
   background-color: var(--bg-alt);
 }
+/* product photos on white: shown exactly as sent, no site filter */
+.shop-card-img.shop-card-img--raw {
+  filter: none;
+  background-color: #ffffff;
+}
 .shop-card-name {
   font-family: var(--serif);
   font-size: 17px;
