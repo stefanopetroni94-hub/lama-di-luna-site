@@ -1335,19 +1335,24 @@ a.shop-card-name:hover {
 }
 /* bath set: the three bottles side by side in one picture, centred in the card */
 .shop-card-img--combo {
-  display: flex;
-  align-items: center;
+  position: relative;
   background-image: none !important;
 }
+/* same bottle size as the single bath products (59% of the box), bottles close together,
+   the outer two may be slightly cut by their tile */
 .combo-tiles {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 59%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  aspect-ratio: 2 / 1;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
 }
 .combo-tile {
-  background-size: cover;
-  background-position: center;
+  background-size: auto 100%;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
 .shop-card-img-wrap .shop-card-img {
