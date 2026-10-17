@@ -1278,8 +1278,8 @@ a.shop-card-name:hover {
   padding: 8rem 2.5rem 6rem;
 }
 .shop-detail-img {
-  aspect-ratio: 2 / 3;
-  width: min(100%, calc(80vh * 2 / 3));
+  aspect-ratio: 1 / 1.62;
+  width: min(100%, calc(80vh / 1.62));
   justify-self: center;
   background-size: cover;
   background-position: center;
@@ -1327,11 +1327,15 @@ a.shop-card-name:hover {
     padding: 6.5rem 1.3rem 4rem;
   }
   .shop-detail-img {
-    width: min(100%, calc(70vh * 2 / 3));
+    width: min(100%, calc(70vh / 1.62));
   }
 }
 .shop-detail-img--raw {
   background-color: #ffffff;
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
 }
 /* small soft shadow under the base of each product */
 .product-shadow {
@@ -1364,7 +1368,7 @@ a.shop-card-name:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 79%;
+  height: 73.2%;
   overflow: hidden;
 }
 .combo-tile {
@@ -1395,12 +1399,16 @@ a.shop-card-name:hover {
 }
 /* product photos on white: shown exactly as sent, no site filter */
 /* the box has the exact proportions of the photo (2:3), so there are no side bands */
+/* The photos are taller-than-needed boxes (1 : 1.62) so a bottle that grows on hover is not cut at the top.
+   "multiply" turns the white of the photo into the page colour, so there is no visible box. */
 .shop-card-img.shop-card-img--raw {
   filter: none;
   background-color: #ffffff;
-  aspect-ratio: 2 / 3;
-  background-size: cover;
-  background-position: center;
+  aspect-ratio: 1 / 1.62;
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
 }
 .shop-card-name {
   font-family: var(--serif);

@@ -54,7 +54,7 @@ export default async function ProductPage({
                     backgroundRepeat: "no-repeat",
                   }
                 : {}),
-              ...(small ? { backgroundSize: "auto 79%", backgroundPosition: "center bottom", backgroundRepeat: "no-repeat" } : {}),
+              ...(small ? { backgroundSize: "auto 73.2%", backgroundPosition: "center bottom", backgroundRepeat: "no-repeat" } : {}),
             }}
           />
         )}

@@ -51,7 +51,7 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
                       : {}),
                     // oil and bath bottles are shorter than the wine bottles: scale them down, standing on the same baseline
                     ...(product.contain && !product.landscape && !WINE_IDS.includes(product.id)
-                      ? { backgroundSize: "auto 79%", backgroundPosition: "center bottom", backgroundRepeat: "no-repeat" }
+                      ? { backgroundSize: "auto 73.2%", backgroundPosition: "center bottom", backgroundRepeat: "no-repeat" }
                       : {}),
                   }}
                 />
