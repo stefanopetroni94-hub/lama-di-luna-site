@@ -42,7 +42,7 @@ export default async function ProductPage({
             style={{
               backgroundImage: `url('${product.img}')`,
               ...(product.landscape ? { backgroundSize: "contain", backgroundRepeat: "no-repeat" } : {}),
-              ...(small ? { backgroundSize: "auto 59%", backgroundPosition: "center bottom", backgroundRepeat: "no-repeat" } : {}),
+              ...(small ? { backgroundSize: "auto 79%", backgroundPosition: "center bottom", backgroundRepeat: "no-repeat" } : {}),
             }}
           />
         )}
