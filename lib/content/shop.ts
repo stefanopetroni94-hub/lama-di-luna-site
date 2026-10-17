@@ -40,7 +40,7 @@ export const shop: Record<Locale, ShopContent> = {
     products: [
       { id: "primitivo", name: "Primitivo", meta: "Red wine of Puglia.", price: PRICE_EN, img: "/whatsapp/20261017_091513_2448595339307246.jpg", contain: true },
       { id: "nero-di-troia", name: "Nero di Troia", meta: "Red wine of Puglia.", price: PRICE_EN, img: "/whatsapp/20261017_091320_1584036386359420.jpg", contain: true },
-      { id: "nero-di-troia-rose", name: "Nero di Troia Rosé", meta: "Rosé wine of Puglia.", price: PRICE_EN, img: IMG.wine },
+      { id: "nero-di-troia-rose", name: "Nero di Troia Rosé", meta: "Rosé wine of Puglia.", price: PRICE_EN, img: "/whatsapp/20261017_091553_1555549189949038.jpg", contain: true },
       { id: "fiano", name: "Fiano", meta: "White wine.", price: PRICE_EN, img: IMG.wine },
       { id: "carolea-500", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. 500 ml.", price: PRICE_EN, img: IMG.oil },
       { id: "coratina-500", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. 500 ml.", price: PRICE_EN, img: IMG.oil },
@@ -62,7 +62,7 @@ export const shop: Record<Locale, ShopContent> = {
     products: [
       { id: "primitivo", name: "Primitivo", meta: "Vino rosso di Puglia.", price: PRICE_IT, img: "/whatsapp/20261017_091513_2448595339307246.jpg", contain: true },
       { id: "nero-di-troia", name: "Nero di Troia", meta: "Vino rosso di Puglia.", price: PRICE_IT, img: "/whatsapp/20261017_091320_1584036386359420.jpg", contain: true },
-      { id: "nero-di-troia-rose", name: "Nero di Troia Rosato", meta: "Vino rosato di Puglia.", price: PRICE_IT, img: IMG.wine },
+      { id: "nero-di-troia-rose", name: "Nero di Troia Rosato", meta: "Vino rosato di Puglia.", price: PRICE_IT, img: "/whatsapp/20261017_091553_1555549189949038.jpg", contain: true },
       { id: "fiano", name: "Fiano", meta: "Vino bianco.", price: PRICE_IT, img: IMG.wine },
       { id: "carolea-500", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. 500 ml.", price: PRICE_IT, img: IMG.oil },
       { id: "coratina-500", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. 500 ml.", price: PRICE_IT, img: IMG.oil },
