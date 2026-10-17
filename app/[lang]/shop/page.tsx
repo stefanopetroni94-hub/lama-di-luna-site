@@ -42,7 +42,9 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
                   }`}
                   style={{
                     backgroundImage: `url('${product.img}')`,
-                    ...(product.landscape ? { backgroundSize: "contain", backgroundRepeat: "no-repeat" } : {}),
+                    ...(product.landscape
+                      ? { backgroundSize: "96% auto", backgroundPosition: "center 94%", backgroundRepeat: "no-repeat" }
+                      : {}),
                     // oil and bath bottles are shorter than the wine bottles: scale them down, standing on the same baseline
                     ...(product.contain && !product.landscape && !WINE_IDS.includes(product.id)
                       ? { backgroundSize: "auto 79%", backgroundPosition: "center bottom", backgroundRepeat: "no-repeat" }

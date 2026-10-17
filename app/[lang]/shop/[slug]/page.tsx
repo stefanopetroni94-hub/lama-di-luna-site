@@ -47,7 +47,9 @@ export default async function ProductPage({
             aria-label={product.name}
             style={{
               backgroundImage: `url('${product.img}')`,
-              ...(product.landscape ? { backgroundSize: "contain", backgroundRepeat: "no-repeat" } : {}),
+              ...(product.landscape
+                ? { backgroundSize: "96% auto", backgroundPosition: "center 94%", backgroundRepeat: "no-repeat" }
+                : {}),
               ...(small ? { backgroundSize: "auto 79%", backgroundPosition: "center bottom", backgroundRepeat: "no-repeat" } : {}),
             }}
           />
