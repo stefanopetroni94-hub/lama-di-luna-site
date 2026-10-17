@@ -23,13 +23,15 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
         <section className="shop-grid">
           {c.products.map((product) => (
             <article className="shop-card" key={product.id}>
-              <div
-                className={`shop-card-img${product.contain ? " shop-card-img--raw" : ""}`}
-                style={{
-                  backgroundImage: `url('${product.img}')`,
-                  ...(product.landscape ? { backgroundSize: "contain", backgroundRepeat: "no-repeat" } : {}),
-                }}
-              />
+              <div className="shop-card-img-wrap">
+                <div
+                  className={`shop-card-img${product.contain ? " shop-card-img--raw" : ""}`}
+                  style={{
+                    backgroundImage: `url('${product.img}')`,
+                    ...(product.landscape ? { backgroundSize: "contain", backgroundRepeat: "no-repeat" } : {}),
+                  }}
+                />
+              </div>
               <div className="shop-card-name">{product.name}</div>
               <div className="shop-card-meta">{product.meta}</div>
               <div className="shop-card-footer">

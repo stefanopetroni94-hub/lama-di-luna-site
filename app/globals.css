@@ -1253,6 +1253,18 @@ section {
   margin-bottom: 1.3rem;
   background-color: var(--bg-alt);
 }
+/* photo grows a little on hover, like the room and experience cards */
+.shop-card-img-wrap {
+  overflow: hidden;
+  margin-bottom: 1.3rem;
+}
+.shop-card-img-wrap .shop-card-img {
+  margin-bottom: 0;
+  transition: transform 0.7s ease;
+}
+.shop-card:hover .shop-card-img {
+  transform: scale(1.05);
+}
 /* product photos on white: shown exactly as sent, no site filter */
 /* the box has the exact proportions of the photo (2:3), so there are no side bands */
 .shop-card-img.shop-card-img--raw {
