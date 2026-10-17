@@ -1258,6 +1258,7 @@ section {
   display: block;
   overflow: hidden;
   margin-bottom: 1.3rem;
+  border: 1px solid var(--ink);
 }
 a.shop-card-name {
   display: block;
@@ -1331,6 +1332,7 @@ a.shop-card-name:hover {
   }
 }
 .shop-detail-img--raw {
+  border: 1px solid var(--ink);
   background-color: #ffffff;
   background-size: 100% auto;
   background-position: center bottom;
