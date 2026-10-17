@@ -3,6 +3,7 @@ import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { ContactForm } from "@/components/contact-form"
 import { QuickSearch } from "@/components/quick-search"
+import { WaveLine } from "@/components/wave-line"
 import { isLocale } from "@/lib/i18n"
 import { contact } from "@/lib/content/contact"
 import { book } from "@/lib/content/book"
@@ -73,8 +74,14 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
         </div>
       </section>
 
-      <section className="find-us-intro find-us-intro--first">
-        <div className="find-title">{c.findLabel}</div>
+      <div className="section-label find-label">
+        <WaveLine side="left" />
+        <span>{c.findLabel}</span>
+        <WaveLine side="right" />
+      </div>
+
+      <section className="find-us-intro">
+        <div className="script-eyebrow">{c.mapEyebrow}</div>
         <p>
           {h.mapText.join(" ")} {c.mapBody}
         </p>
