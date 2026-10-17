@@ -1,10 +1,9 @@
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { WaveLine } from "@/components/wave-line"
 import { ContactForm } from "@/components/contact-form"
 import { QuickSearch } from "@/components/quick-search"
-import { chrome, isLocale } from "@/lib/i18n"
+import { isLocale } from "@/lib/i18n"
 import { contact } from "@/lib/content/contact"
 import { book } from "@/lib/content/book"
 import { home } from "@/lib/content/home"
@@ -14,7 +13,6 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
   if (!isLocale(lang)) notFound()
   const c = contact[lang]
   const h = home[lang]
-  const f = chrome[lang].footer
 
   return (
     <>
@@ -71,42 +69,12 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
               <div className="small">{c.addressSmall}</div>
             </div>
 
-            <div className="block">
-              <div className="label">{c.socialLabel}</div>
-              <div className="contact-social">
-                {[
-                  { name: f.instagram, url: f.instagramUrl, icon: "instagram" },
-                  { name: f.facebook, url: f.facebookUrl, icon: "facebook" },
-                  { name: f.tripadvisor, url: f.tripadvisorUrl, icon: "tripadvisor" },
-                ].map((s) => (
-                  <a key={s.icon} href={s.url} target="_blank" rel="noopener noreferrer" aria-label={s.name} className="footer-social">
-                    <span
-                      className="press-mark"
-                      role="img"
-                      aria-hidden="true"
-                      style={{
-                        width: 24,
-                        height: 24,
-                        WebkitMaskImage: `url(/logos/${s.icon}.svg)`,
-                        maskImage: `url(/logos/${s.icon}.svg)`,
-                      }}
-                    />
-                  </a>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      <div className="section-label find-label">
-        <WaveLine side="left" />
-        <span>{c.findLabel}</span>
-        <WaveLine side="right" />
-      </div>
-
-      <section className="find-us-intro">
-        <div className="script-eyebrow">{c.mapEyebrow}</div>
+      <section className="find-us-intro find-us-intro--first">
+        <div className="find-title">{c.findLabel}</div>
         <p>
           {h.mapText.join(" ")} {c.mapBody}
         </p>

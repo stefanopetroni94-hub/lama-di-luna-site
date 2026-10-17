@@ -3122,11 +3122,19 @@ footer {
 }
 .direct.direct--row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-.section-label.find-label {
-  padding: 3rem 2.5rem 2rem;
+.find-us-intro--first {
+  padding-top: 3rem;
+}
+.find-us-intro .find-title {
+  font-family: var(--serif);
+  font-size: 11px;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--olive);
+  margin-bottom: 1.2rem;
 }
 .direct.direct--row .block,
 .direct.direct--row .block:first-child,
