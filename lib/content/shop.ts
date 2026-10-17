@@ -6,6 +6,7 @@ export type Product = {
   meta: string
   price: string
   img: string
+  desc?: string
   imgs?: string[]
   contain?: boolean
   landscape?: boolean
@@ -20,6 +21,38 @@ export type ShopContent = {
   addedLabel: string
   products: Product[]
   note: string
+}
+
+// One paragraph per variety, shown on the product page.
+const D = {
+  en: {
+    primitivo:
+      "Primitivo is one of the great red grapes of Puglia, grown above all in the warm, sunny south of the region, around Manduria and Gioia del Colle. It ripens early and gives deep, generous wines, with notes of ripe black cherry, plum and spice, a soft, full body and a long, warm finish.",
+    troia:
+      "Nero di Troia, also called Uva di Troia, is a native Pugliese grape, rooted in the north of the region, in the Foggia area, the Tavoliere and the hills of Castel del Monte, close to the Alta Murgia. It makes structured, elegant reds with firm tannins, notes of black cherry, violet and pepper, and a great capacity to age.",
+    rose:
+      "The same Nero di Troia grape, picked early and vinified like a white, gives a fresh, lively rosé, coral in colour, with scents of wild strawberry, pomegranate and flowers. It comes from the same northern lands of Puglia as the red and is made to be drunk young and chilled.",
+    fiano:
+      "Fiano is an ancient white grape of southern Italy, born in Campania and now also grown in Puglia, where the warm days and cool nights keep it fresh. It gives a fragrant, mineral white, with notes of white flowers, citrus, pear and a hint of toasted hazelnut.",
+    carolea:
+      "Carolea is an olive variety widespread in southern Italy, also found in Puglia. It gives a balanced, harmonious extra virgin olive oil, fruity and gentle, with a sweet start, notes of almond and artichoke and only a light, pleasant bitterness and pungency.",
+    coratina:
+      "Coratina is the signature olive of Puglia, born around Corato, between Bari and the Alta Murgia, and widely grown in the area of Andria. It gives an intense, green extra virgin olive oil, rich in polyphenols, with notes of fresh grass, tomato leaf and almond, and a pronounced bitterness and pungency.",
+  },
+  it: {
+    primitivo:
+      "Il Primitivo è una delle grandi uve rosse della Puglia, coltivata soprattutto nel sud caldo e soleggiato della regione, intorno a Manduria e Gioia del Colle. Matura presto e dà vini profondi e generosi, con note di ciliegia nera matura, prugna e spezie, corpo morbido e pieno e un finale lungo e caldo.",
+    troia:
+      "Il Nero di Troia, detto anche Uva di Troia, è un'uva autoctona pugliese, radicata nel nord della regione, nella zona di Foggia, nel Tavoliere e sulle colline di Castel del Monte, vicino all'Alta Murgia. Dà rossi strutturati ed eleganti, con tannini decisi, note di ciliegia nera, viola e pepe, e una grande capacità di invecchiamento.",
+    rose:
+      "La stessa uva Nero di Troia, raccolta presto e vinificata come un bianco, dà un rosato fresco e vivace, color corallo, con profumi di fragolina di bosco, melograno e fiori. Viene dalle stesse terre del nord della Puglia del rosso ed è fatto per essere bevuto giovane e fresco.",
+    fiano:
+      "Il Fiano è un'antica uva bianca del sud Italia, nata in Campania e oggi coltivata anche in Puglia, dove le giornate calde e le notti fresche la mantengono fresca. Dà un bianco profumato e minerale, con note di fiori bianchi, agrumi, pera e un accenno di nocciola tostata.",
+    carolea:
+      "La Carolea è una varietà di oliva diffusa nel sud Italia, presente anche in Puglia. Dà un olio extravergine equilibrato e armonioso, fruttato e gentile, con un inizio dolce, note di mandorla e carciofo e solo un leggero e piacevole amaro e piccante.",
+    coratina:
+      "La Coratina è l'oliva simbolo della Puglia, nata intorno a Corato, tra Bari e l'Alta Murgia, e molto coltivata nella zona di Andria. Dà un olio extravergine intenso e verde, ricco di polifenoli, con note di erba fresca, foglia di pomodoro e mandorla, e un amaro e un piccante spiccati.",
+  },
 }
 
 const PH = {
@@ -46,14 +79,14 @@ export const shop: Record<Locale, ShopContent> = {
     addLabel: "Add",
     addedLabel: "Added",
     products: [
-      { id: "primitivo", name: "Primitivo", meta: "Red wine of Puglia.", price: "€29", img: PH.primitivo, contain: true },
-      { id: "nero-di-troia", name: "Nero di Troia", meta: "Red wine of Puglia.", price: "€37", img: PH.troia, contain: true },
-      { id: "nero-di-troia-rose", name: "Nero di Troia Rosé", meta: "Rosé wine of Puglia.", price: "€25", img: PH.rose, contain: true },
-      { id: "fiano", name: "Fiano", meta: "White wine.", price: "€25", img: PH.fiano, contain: true },
-      { id: "carolea-500", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. 500 ml.", price: "€23", img: PH.carolea500, contain: true },
-      { id: "coratina-500", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. 500 ml.", price: "€23", img: PH.coratina500, contain: true },
-      { id: "carolea-3l", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. Bag-in-box, 3 litres.", price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "168% auto", pos: "50% 94%" } },
-      { id: "coratina-3l", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. Bag-in-box, 3 litres.", price: "€66", img: PH.coratina3l, contain: true, landscape: true, zoom: { size: "176% auto", pos: "50% 100%" } },
+      { id: "primitivo", name: "Primitivo", meta: "Red wine of Puglia.", desc: D.en.primitivo, price: "€29", img: PH.primitivo, contain: true },
+      { id: "nero-di-troia", name: "Nero di Troia", meta: "Red wine of Puglia.", desc: D.en.troia, price: "€37", img: PH.troia, contain: true },
+      { id: "nero-di-troia-rose", name: "Nero di Troia Rosé", meta: "Rosé wine of Puglia.", desc: D.en.rose, price: "€25", img: PH.rose, contain: true },
+      { id: "fiano", name: "Fiano", meta: "White wine.", desc: D.en.fiano, price: "€25", img: PH.fiano, contain: true },
+      { id: "carolea-500", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. 500 ml.", desc: D.en.carolea, price: "€23", img: PH.carolea500, contain: true },
+      { id: "coratina-500", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. 500 ml.", desc: D.en.coratina, price: "€23", img: PH.coratina500, contain: true },
+      { id: "carolea-3l", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. Bag-in-box, 3 litres.", desc: D.en.carolea, price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "168% auto", pos: "50% 94%" } },
+      { id: "coratina-3l", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. Bag-in-box, 3 litres.", desc: D.en.coratina, price: "€66", img: PH.coratina3l, contain: true, landscape: true, zoom: { size: "176% auto", pos: "50% 100%" } },
       { id: "shampoo", name: "Shampoo", meta: "From the masseria's bath line.", price: "€15", img: PH.shampoo, contain: true },
       { id: "conditioner", name: "Conditioner", meta: "From the masseria's bath line.", price: "€16", img: PH.conditioner, contain: true },
       { id: "hand-body-soap", name: "Hand & Body Wash", meta: "From the masseria's bath line.", price: "€15", img: PH.wash, contain: true },
@@ -70,14 +103,14 @@ export const shop: Record<Locale, ShopContent> = {
     addLabel: "Aggiungi",
     addedLabel: "Aggiunto",
     products: [
-      { id: "primitivo", name: "Primitivo", meta: "Vino rosso di Puglia.", price: "€29", img: PH.primitivo, contain: true },
-      { id: "nero-di-troia", name: "Nero di Troia", meta: "Vino rosso di Puglia.", price: "€37", img: PH.troia, contain: true },
-      { id: "nero-di-troia-rose", name: "Nero di Troia Rosato", meta: "Vino rosato di Puglia.", price: "€25", img: PH.rose, contain: true },
-      { id: "fiano", name: "Fiano", meta: "Vino bianco.", price: "€25", img: PH.fiano, contain: true },
-      { id: "carolea-500", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. 500 ml.", price: "€23", img: PH.carolea500, contain: true },
-      { id: "coratina-500", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. 500 ml.", price: "€23", img: PH.coratina500, contain: true },
-      { id: "carolea-3l", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. Bag-in-box, 3 litri.", price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "168% auto", pos: "50% 94%" } },
-      { id: "coratina-3l", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. Bag-in-box, 3 litri.", price: "€66", img: PH.coratina3l, contain: true, landscape: true, zoom: { size: "176% auto", pos: "50% 100%" } },
+      { id: "primitivo", name: "Primitivo", meta: "Vino rosso di Puglia.", desc: D.it.primitivo, price: "€29", img: PH.primitivo, contain: true },
+      { id: "nero-di-troia", name: "Nero di Troia", meta: "Vino rosso di Puglia.", desc: D.it.troia, price: "€37", img: PH.troia, contain: true },
+      { id: "nero-di-troia-rose", name: "Nero di Troia Rosato", meta: "Vino rosato di Puglia.", desc: D.it.rose, price: "€25", img: PH.rose, contain: true },
+      { id: "fiano", name: "Fiano", meta: "Vino bianco.", desc: D.it.fiano, price: "€25", img: PH.fiano, contain: true },
+      { id: "carolea-500", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. 500 ml.", desc: D.it.carolea, price: "€23", img: PH.carolea500, contain: true },
+      { id: "coratina-500", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. 500 ml.", desc: D.it.coratina, price: "€23", img: PH.coratina500, contain: true },
+      { id: "carolea-3l", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. Bag-in-box, 3 litri.", desc: D.it.carolea, price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "168% auto", pos: "50% 94%" } },
+      { id: "coratina-3l", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. Bag-in-box, 3 litri.", desc: D.it.coratina, price: "€66", img: PH.coratina3l, contain: true, landscape: true, zoom: { size: "176% auto", pos: "50% 100%" } },
       { id: "shampoo", name: "Shampoo", meta: "Dalla linea bagno della masseria.", price: "€15", img: PH.shampoo, contain: true },
       { id: "conditioner", name: "Balsamo", meta: "Dalla linea bagno della masseria.", price: "€16", img: PH.conditioner, contain: true },
       { id: "hand-body-soap", name: "Detergente Mani e Corpo", meta: "Dalla linea bagno della masseria.", price: "€15", img: PH.wash, contain: true },

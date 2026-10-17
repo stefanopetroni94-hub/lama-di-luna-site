@@ -66,6 +66,7 @@ export default async function ProductPage({
           <h1>{product.name}</h1>
           <div className="shop-detail-price">{product.price}</div>
           {product.meta ? <p className="shop-detail-text">{product.meta}</p> : null}
+          {product.desc ? <p className="shop-detail-text">{product.desc}</p> : null}
 
           <div className="shop-detail-actions">
             <AddToCart label={c.addLabel} addedLabel={c.addedLabel} />
