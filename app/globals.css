@@ -1335,7 +1335,6 @@ a.shop-card-name:hover {
   background-size: 100% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
-  mix-blend-mode: multiply;
 }
 /* small soft shadow under the base of each product */
 .product-shadow {
@@ -1400,7 +1399,7 @@ a.shop-card-name:hover {
 /* product photos on white: shown exactly as sent, no site filter */
 /* the box has the exact proportions of the photo (2:3), so there are no side bands */
 /* The photo boxes are taller than the photos (1 : 1.62) so a bottle that grows on hover is not cut at the top.
-   "multiply" turns the white of the photo into the page colour, so no box is visible. */
+   White inside the box, no line around it. */
 .shop-card-img.shop-card-img--raw {
   filter: none;
   background-color: #ffffff;
@@ -1408,7 +1407,6 @@ a.shop-card-name:hover {
   background-size: 100% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
-  mix-blend-mode: multiply;
 }
 .shop-card-name {
   font-family: var(--serif);
