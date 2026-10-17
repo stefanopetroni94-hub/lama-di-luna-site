@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
@@ -25,7 +26,7 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
         <section className="shop-grid">
           {c.products.map((product) => (
             <article className="shop-card" key={product.id}>
-              <div className="shop-card-img-wrap">
+              <Link href={`/${lang}/shop/${product.id}`} className="shop-card-img-wrap" aria-label={product.name}>
                 <div
                   className={`shop-card-img${product.contain ? " shop-card-img--raw" : ""}`}
                   style={{
@@ -37,8 +38,10 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
                       : {}),
                   }}
                 />
-              </div>
-              <div className="shop-card-name">{product.name}</div>
+              </Link>
+              <Link href={`/${lang}/shop/${product.id}`} className="shop-card-name">
+                {product.name}
+              </Link>
               <div className="shop-card-meta">{product.meta}</div>
               <div className="shop-card-footer">
                 <div className="shop-card-price">{product.price}</div>

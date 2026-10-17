@@ -1255,8 +1255,83 @@ section {
 }
 /* photo grows a little on hover, like the room and experience cards */
 .shop-card-img-wrap {
+  display: block;
   overflow: hidden;
   margin-bottom: 1.3rem;
+}
+a.shop-card-name {
+  display: block;
+  color: var(--ink);
+}
+a.shop-card-name:hover {
+  opacity: 0.7;
+}
+
+/* product page */
+.shop-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 8rem 2.5rem 6rem;
+}
+.shop-detail-img {
+  aspect-ratio: 2 / 3;
+  width: min(100%, calc(80vh * 2 / 3));
+  justify-self: center;
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+}
+.shop-detail-info h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+.shop-detail-price {
+  font-family: var(--serif);
+  font-size: 22px;
+  color: var(--ink);
+  margin-bottom: 1.6rem;
+}
+.shop-detail-text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--ink);
+  margin-bottom: 2.2rem;
+  max-width: 48ch;
+}
+.shop-detail-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.shop-detail-actions .shop-card-add {
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  padding: 1.05rem 2.4rem;
+  color: var(--ink);
+  font-size: 12px;
+}
+@media (max-width: 800px) {
+  .shop-detail {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 6.5rem 1.3rem 4rem;
+  }
+  .shop-detail-img {
+    width: min(100%, calc(70vh * 2 / 3));
+  }
+}
+.shop-detail-img--raw {
+  background-color: #ffffff;
 }
 .shop-card-img-wrap .shop-card-img {
   margin-bottom: 0;
