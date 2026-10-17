@@ -55,10 +55,10 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Gli sposi che corrono sul prato" : "The couple running across the lawn"}
+          aria-label={lang === "it" ? "Gli sposi davanti alla luminaria pugliese al tramonto" : "The couple in front of the Pugliese festival lights at sunset"}
           style={{
-            backgroundImage: "url('/whatsapp/20261016_164959_2516452998782121.jpg')",
-            backgroundPosition: "center 75%",
+            backgroundImage: "url('/whatsapp/20261017_095410_1916693209311624.jpg')",
+            backgroundPosition: "50% center",
           }}
         />
         <div
