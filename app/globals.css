@@ -1333,6 +1333,23 @@ a.shop-card-name:hover {
 .shop-detail-img--raw {
   background-color: #ffffff;
 }
+/* bath set: the three bottles side by side in one picture, centred in the card */
+.shop-card-img--combo {
+  display: flex;
+  align-items: center;
+  background-image: none !important;
+}
+.combo-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  aspect-ratio: 2 / 1;
+}
+.combo-tile {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .shop-card-img-wrap .shop-card-img {
   margin-bottom: 0;
   transition: transform 0.7s ease;

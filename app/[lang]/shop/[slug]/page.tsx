@@ -26,16 +26,26 @@ export default async function ProductPage({
       <SiteNav locale={lang} variant="solid" />
 
       <article className="shop-detail">
-        <div
-          className={`shop-detail-img${product.contain ? " shop-detail-img--raw" : ""}`}
-          role="img"
-          aria-label={product.name}
-          style={{
-            backgroundImage: `url('${product.img}')`,
-            ...(product.landscape ? { backgroundSize: "contain", backgroundRepeat: "no-repeat" } : {}),
-            ...(small ? { backgroundSize: "auto 79%", backgroundPosition: "center bottom", backgroundRepeat: "no-repeat" } : {}),
-          }}
-        />
+        {product.imgs ? (
+          <div className="shop-detail-img shop-detail-img--raw shop-card-img--combo" role="img" aria-label={product.name}>
+            <div className="combo-tiles">
+              {product.imgs.map((src) => (
+                <div key={src} className="combo-tile" style={{ backgroundImage: `url('${src}')` }} />
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div
+            className={`shop-detail-img${product.contain ? " shop-detail-img--raw" : ""}`}
+            role="img"
+            aria-label={product.name}
+            style={{
+              backgroundImage: `url('${product.img}')`,
+              ...(product.landscape ? { backgroundSize: "contain", backgroundRepeat: "no-repeat" } : {}),
+              ...(small ? { backgroundSize: "auto 79%", backgroundPosition: "center bottom", backgroundRepeat: "no-repeat" } : {}),
+            }}
+          />
+        )}
 
         <div className="shop-detail-info">
           <Link href={`/${lang}/shop`} className="room-back">

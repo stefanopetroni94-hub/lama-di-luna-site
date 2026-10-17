@@ -27,6 +27,15 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
           {c.products.map((product) => (
             <article className="shop-card" key={product.id}>
               <Link href={`/${lang}/shop/${product.id}`} className="shop-card-img-wrap" aria-label={product.name}>
+                {product.imgs ? (
+                  <div className="shop-card-img shop-card-img--raw shop-card-img--combo">
+                    <div className="combo-tiles">
+                      {product.imgs.map((src) => (
+                        <div key={src} className="combo-tile" style={{ backgroundImage: `url('${src}')` }} />
+                      ))}
+                    </div>
+                  </div>
+                ) : (
                 <div
                   className={`shop-card-img${product.contain ? " shop-card-img--raw" : ""}`}
                   style={{
@@ -38,6 +47,7 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
                       : {}),
                   }}
                 />
+                )}
               </Link>
               <Link href={`/${lang}/shop/${product.id}`} className="shop-card-name">
                 {product.name}
