@@ -28,7 +28,7 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
             <article className="shop-card" key={product.id}>
               <Link href={`/${lang}/shop/${product.id}`} className="shop-card-img-wrap" aria-label={product.name}>
                 {product.imgs ? (
-                  <div className="shop-card-img shop-card-img--raw shop-card-img--combo">
+                  <div className="shop-card-img shop-card-img--raw shop-card-img--combo product-shadow product-shadow--wide">
                     <div className="combo-tiles">
                       {product.imgs.map((src) => (
                         <div key={src} className="combo-tile" style={{ backgroundImage: `url('${src}')` }} />
@@ -37,7 +37,9 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
                   </div>
                 ) : (
                 <div
-                  className={`shop-card-img${product.contain ? " shop-card-img--raw" : ""}`}
+                  className={`shop-card-img${product.contain ? " shop-card-img--raw" : ""}${
+                    product.contain && !product.landscape ? " product-shadow" : ""
+                  }`}
                   style={{
                     backgroundImage: `url('${product.img}')`,
                     ...(product.landscape ? { backgroundSize: "contain", backgroundRepeat: "no-repeat" } : {}),

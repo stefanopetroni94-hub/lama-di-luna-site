@@ -1333,6 +1333,24 @@ a.shop-card-name:hover {
 .shop-detail-img--raw {
   background-color: #ffffff;
 }
+/* small soft shadow under the base of each product */
+.product-shadow {
+  position: relative;
+}
+.product-shadow::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 1.5%;
+  width: 46%;
+  height: 3.5%;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse at center, rgba(40, 20, 20, 0.28) 0%, rgba(40, 20, 20, 0) 70%);
+  pointer-events: none;
+}
+.product-shadow--wide::after {
+  width: 78%;
+}
 /* bath set: the three bottles side by side in one picture, centred in the card */
 .shop-card-img--combo {
   position: relative;

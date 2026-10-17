@@ -27,7 +27,11 @@ export default async function ProductPage({
 
       <article className="shop-detail">
         {product.imgs ? (
-          <div className="shop-detail-img shop-detail-img--raw shop-card-img--combo" role="img" aria-label={product.name}>
+          <div
+            className="shop-detail-img shop-detail-img--raw shop-card-img--combo product-shadow product-shadow--wide"
+            role="img"
+            aria-label={product.name}
+          >
             <div className="combo-tiles">
               {product.imgs.map((src) => (
                 <div key={src} className="combo-tile" style={{ backgroundImage: `url('${src}')` }} />
@@ -36,7 +40,9 @@ export default async function ProductPage({
           </div>
         ) : (
           <div
-            className={`shop-detail-img${product.contain ? " shop-detail-img--raw" : ""}`}
+            className={`shop-detail-img${product.contain ? " shop-detail-img--raw" : ""}${
+              product.contain && !product.landscape ? " product-shadow" : ""
+            }`}
             role="img"
             aria-label={product.name}
             style={{
