@@ -45,7 +45,7 @@ export const shop: Record<Locale, ShopContent> = {
     eyebrow: "The Shop",
     title: "A little of the estate, sent to your table",
     intro:
-      "Everything here is grown, pressed or made on the estate, or by neighbours we have known for years. Order a taste of Lama di Luna to keep the valley close, wherever you are.",
+      "Order a taste of Lama di Luna to keep the valley close, wherever you are.",
     addLabel: "Add",
     addedLabel: "Added",
     products: [
@@ -69,7 +69,7 @@ export const shop: Record<Locale, ShopContent> = {
     eyebrow: "Lo Shop",
     title: "Un po' della tenuta, portato alla tua tavola",
     intro:
-      "Tutto qui è coltivato, spremuto o prodotto in tenuta, o da vicini che conosciamo da anni. Ordina un assaggio di Lama di Luna per tenere vicina la valle, ovunque tu sia.",
+      "Ordina un assaggio di Lama di Luna per tenere vicina la valle, ovunque tu sia.",
     addLabel: "Aggiungi",
     addedLabel: "Aggiunto",
     products: [
