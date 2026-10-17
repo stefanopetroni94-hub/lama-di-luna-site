@@ -5,6 +5,8 @@ import { AddToCart } from "@/components/add-to-cart"
 import { isLocale } from "@/lib/i18n"
 import { shop } from "@/lib/content/shop"
 
+const WINE_IDS = ["primitivo", "nero-di-troia", "nero-di-troia-rose", "fiano"]
+
 export default async function ShopPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
   if (!isLocale(lang)) notFound()
@@ -29,6 +31,10 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
                   style={{
                     backgroundImage: `url('${product.img}')`,
                     ...(product.landscape ? { backgroundSize: "contain", backgroundRepeat: "no-repeat" } : {}),
+                    // oil and bath bottles are shorter than the wine bottles: scale them down, standing on the same baseline
+                    ...(product.contain && !product.landscape && !WINE_IDS.includes(product.id)
+                      ? { backgroundSize: "auto 79%", backgroundPosition: "center bottom", backgroundRepeat: "no-repeat" }
+                      : {}),
                   }}
                 />
               </div>
