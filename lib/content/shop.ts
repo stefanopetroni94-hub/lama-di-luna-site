@@ -20,12 +20,13 @@ export type ShopContent = {
 
 const IMG = {
   oil: "/shop/olive-oil.png",
-  almonds: "/shop/almonds.png",
   wine: "/shop/wine.png",
   soap: "/shop/soap.png",
-  honey: "/shop/honey.png",
-  taralli: "/shop/taralli.png",
 }
+
+// Prices and photos are placeholders until the real ones are sent.
+const PRICE_EN = "Price on request"
+const PRICE_IT = "Prezzo su richiesta"
 
 export const shop: Record<Locale, ShopContent> = {
   en: {
@@ -36,48 +37,17 @@ export const shop: Record<Locale, ShopContent> = {
     addLabel: "Add",
     addedLabel: "Added",
     products: [
-      {
-        id: "oil",
-        name: "Extra Virgin Olive Oil",
-        meta: "Cold-pressed from our organic groves. 500ml tin.",
-        price: "€18",
-        img: IMG.oil,
-      },
-      {
-        id: "almonds",
-        name: "Raw Murgia Almonds",
-        meta: "Harvested in late summer, sun-dried. 400g.",
-        price: "€12",
-        img: IMG.almonds,
-      },
-      {
-        id: "wine",
-        name: "Estate Red Wine",
-        meta: "Still made on these grounds, unfiltered. 750ml.",
-        price: "€22",
-        img: IMG.wine,
-      },
-      {
-        id: "soap",
-        name: "Olive-Oil Soap",
-        meta: "Made with the first pressing and Murgian herbs.",
-        price: "€9",
-        img: IMG.soap,
-      },
-      {
-        id: "honey",
-        name: "Wildflower Honey",
-        meta: "From hives in the hills above the masseria. 250g.",
-        price: "€11",
-        img: IMG.honey,
-      },
-      {
-        id: "taralli",
-        name: "Pugliese Taralli",
-        meta: "Baked with our olive oil and a little white wine. 300g.",
-        price: "€7",
-        img: IMG.taralli,
-      },
+      { id: "primitivo", name: "Primitivo", meta: "Red wine of Puglia.", price: PRICE_EN, img: IMG.wine },
+      { id: "nero-di-troia", name: "Nero di Troia", meta: "Red wine of Puglia.", price: PRICE_EN, img: IMG.wine },
+      { id: "nero-di-troia-rose", name: "Nero di Troia Rosé", meta: "Rosé wine of Puglia.", price: PRICE_EN, img: IMG.wine },
+      { id: "fiano", name: "Fiano", meta: "White wine.", price: PRICE_EN, img: IMG.wine },
+      { id: "carolea-500", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. 500 ml.", price: PRICE_EN, img: IMG.oil },
+      { id: "coratina-500", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. 500 ml.", price: PRICE_EN, img: IMG.oil },
+      { id: "carolea-3l", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. 3 litres.", price: PRICE_EN, img: IMG.oil },
+      { id: "shampoo", name: "Shampoo", meta: "From the masseria's bath line.", price: PRICE_EN, img: IMG.soap },
+      { id: "conditioner", name: "Conditioner", meta: "From the masseria's bath line.", price: PRICE_EN, img: IMG.soap },
+      { id: "hand-body-soap", name: "Hand & Body Soap", meta: "From the masseria's bath line.", price: PRICE_EN, img: IMG.soap },
+      { id: "orcio", name: "Ceramic Orcio with Extra Virgin Olive Oil", meta: "A ceramic orcio filled with our extra virgin olive oil.", price: PRICE_EN, img: IMG.oil },
     ],
     note: "This is a preview shop. Orders and secure checkout can be connected to Stripe whenever you are ready to sell online.",
   },
@@ -89,48 +59,17 @@ export const shop: Record<Locale, ShopContent> = {
     addLabel: "Aggiungi",
     addedLabel: "Aggiunto",
     products: [
-      {
-        id: "oil",
-        name: "Olio Extravergine d'Oliva",
-        meta: "Spremuto a freddo dai nostri uliveti biologici. Latta da 500ml.",
-        price: "€18",
-        img: IMG.oil,
-      },
-      {
-        id: "almonds",
-        name: "Mandorle della Murgia",
-        meta: "Raccolte a fine estate, essiccate al sole. 400g.",
-        price: "€12",
-        img: IMG.almonds,
-      },
-      {
-        id: "wine",
-        name: "Vino Rosso della Tenuta",
-        meta: "Ancora prodotto su queste terre, non filtrato. 750ml.",
-        price: "€22",
-        img: IMG.wine,
-      },
-      {
-        id: "soap",
-        name: "Sapone all'Olio d'Oliva",
-        meta: "Fatto con la prima spremitura ed erbe murgiane.",
-        price: "€9",
-        img: IMG.soap,
-      },
-      {
-        id: "honey",
-        name: "Miele Millefiori",
-        meta: "Dagli alveari sulle colline sopra la masseria. 250g.",
-        price: "€11",
-        img: IMG.honey,
-      },
-      {
-        id: "taralli",
-        name: "Taralli Pugliesi",
-        meta: "Sfornati con il nostro olio e un po' di vino bianco. 300g.",
-        price: "€7",
-        img: IMG.taralli,
-      },
+      { id: "primitivo", name: "Primitivo", meta: "Vino rosso di Puglia.", price: PRICE_IT, img: IMG.wine },
+      { id: "nero-di-troia", name: "Nero di Troia", meta: "Vino rosso di Puglia.", price: PRICE_IT, img: IMG.wine },
+      { id: "nero-di-troia-rose", name: "Nero di Troia Rosato", meta: "Vino rosato di Puglia.", price: PRICE_IT, img: IMG.wine },
+      { id: "fiano", name: "Fiano", meta: "Vino bianco.", price: PRICE_IT, img: IMG.wine },
+      { id: "carolea-500", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. 500 ml.", price: PRICE_IT, img: IMG.oil },
+      { id: "coratina-500", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. 500 ml.", price: PRICE_IT, img: IMG.oil },
+      { id: "carolea-3l", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. 3 litri.", price: PRICE_IT, img: IMG.oil },
+      { id: "shampoo", name: "Shampoo", meta: "Dalla linea bagno della masseria.", price: PRICE_IT, img: IMG.soap },
+      { id: "conditioner", name: "Balsamo", meta: "Dalla linea bagno della masseria.", price: PRICE_IT, img: IMG.soap },
+      { id: "hand-body-soap", name: "Sapone Mani e Corpo", meta: "Dalla linea bagno della masseria.", price: PRICE_IT, img: IMG.soap },
+      { id: "orcio", name: "Orcio di Ceramica con Olio Extravergine d'Oliva", meta: "Un orcio di ceramica pieno del nostro olio extravergine d'oliva.", price: PRICE_IT, img: IMG.oil },
     ],
     note: "Questo è uno shop di anteprima. Ordini e pagamento sicuro possono essere collegati a Stripe quando sarai pronto a vendere online.",
   },
