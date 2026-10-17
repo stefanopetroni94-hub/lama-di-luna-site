@@ -22,10 +22,6 @@ export type ShopContent = {
   note: string
 }
 
-// Prices still missing are shown as "on request".
-const PRICE_EN = "Price on request"
-const PRICE_IT = "Prezzo su richiesta"
-
 const PH = {
   primitivo: "/whatsapp/20261017_091513_2448595339307246.jpg",
   troia: "/whatsapp/20261017_091320_1584036386359420.jpg",
@@ -51,9 +47,9 @@ export const shop: Record<Locale, ShopContent> = {
     addedLabel: "Added",
     products: [
       { id: "primitivo", name: "Primitivo", meta: "Red wine of Puglia.", price: "€29", img: PH.primitivo, contain: true },
-      { id: "nero-di-troia", name: "Nero di Troia", meta: "Red wine of Puglia.", price: PRICE_EN, img: PH.troia, contain: true },
-      { id: "nero-di-troia-rose", name: "Nero di Troia Rosé", meta: "Rosé wine of Puglia.", price: PRICE_EN, img: PH.rose, contain: true },
-      { id: "fiano", name: "Fiano", meta: "White wine.", price: PRICE_EN, img: PH.fiano, contain: true },
+      { id: "nero-di-troia", name: "Nero di Troia", meta: "Red wine of Puglia.", price: "€37", img: PH.troia, contain: true },
+      { id: "nero-di-troia-rose", name: "Nero di Troia Rosé", meta: "Rosé wine of Puglia.", price: "€25", img: PH.rose, contain: true },
+      { id: "fiano", name: "Fiano", meta: "White wine.", price: "€25", img: PH.fiano, contain: true },
       { id: "carolea-500", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. 500 ml.", price: "€23", img: PH.carolea500, contain: true },
       { id: "coratina-500", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. 500 ml.", price: "€23", img: PH.coratina500, contain: true },
       { id: "carolea-3l", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. Bag-in-box, 3 litres.", price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "168% auto", pos: "50% 94%" } },
@@ -75,9 +71,9 @@ export const shop: Record<Locale, ShopContent> = {
     addedLabel: "Aggiunto",
     products: [
       { id: "primitivo", name: "Primitivo", meta: "Vino rosso di Puglia.", price: "€29", img: PH.primitivo, contain: true },
-      { id: "nero-di-troia", name: "Nero di Troia", meta: "Vino rosso di Puglia.", price: PRICE_IT, img: PH.troia, contain: true },
-      { id: "nero-di-troia-rose", name: "Nero di Troia Rosato", meta: "Vino rosato di Puglia.", price: PRICE_IT, img: PH.rose, contain: true },
-      { id: "fiano", name: "Fiano", meta: "Vino bianco.", price: PRICE_IT, img: PH.fiano, contain: true },
+      { id: "nero-di-troia", name: "Nero di Troia", meta: "Vino rosso di Puglia.", price: "€37", img: PH.troia, contain: true },
+      { id: "nero-di-troia-rose", name: "Nero di Troia Rosato", meta: "Vino rosato di Puglia.", price: "€25", img: PH.rose, contain: true },
+      { id: "fiano", name: "Fiano", meta: "Vino bianco.", price: "€25", img: PH.fiano, contain: true },
       { id: "carolea-500", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. 500 ml.", price: "€23", img: PH.carolea500, contain: true },
       { id: "coratina-500", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. 500 ml.", price: "€23", img: PH.coratina500, contain: true },
       { id: "carolea-3l", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. Bag-in-box, 3 litri.", price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "168% auto", pos: "50% 94%" } },
