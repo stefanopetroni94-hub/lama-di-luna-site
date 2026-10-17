@@ -1254,9 +1254,13 @@ section {
   background-color: var(--bg-alt);
 }
 /* product photos on white: shown exactly as sent, no site filter */
+/* the box has the exact proportions of the photo (2:3), so there are no side bands */
 .shop-card-img.shop-card-img--raw {
   filter: none;
   background-color: #ffffff;
+  aspect-ratio: 2 / 3;
+  background-size: cover;
+  background-position: center;
 }
 .shop-card-name {
   font-family: var(--serif);

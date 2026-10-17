@@ -25,10 +25,7 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
             <article className="shop-card" key={product.id}>
               <div
                 className={`shop-card-img${product.contain ? " shop-card-img--raw" : ""}`}
-                style={{
-                  backgroundImage: `url('${product.img}')`,
-                  ...(product.contain ? { backgroundSize: "contain", backgroundRepeat: "no-repeat" } : {}),
-                }}
+                style={{ backgroundImage: `url('${product.img}')` }}
               />
               <div className="shop-card-name">{product.name}</div>
               <div className="shop-card-meta">{product.meta}</div>
