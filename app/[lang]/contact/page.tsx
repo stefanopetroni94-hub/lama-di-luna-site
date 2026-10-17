@@ -53,28 +53,6 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
                 <a href="tel:+390883569505">{c.phoneValue}</a>
               </div>
               <div className="small phone-small">{c.phoneSmall}</div>
-              <div className="channels">
-                <a href="tel:+390883569505" className="channel">
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M5 4l2.5-.5L9 7l-2 1c.5 2 2 3.5 4 4l1-2 3.5 1.5L15 14a8 8 0 01-10-10z"
-                      stroke="currentColor"
-                      strokeWidth="1.4"
-                    />
-                  </svg>
-                  {c.callLabel}
-                </a>
-                <a href="https://wa.me/390883569505" className="channel">
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M3 12a9 9 0 109-9 9 9 0 00-9 9 9 9 0 001.5 4.9L3 21l4.2-1.4A9 9 0 003 12z"
-                      stroke="currentColor"
-                      strokeWidth="1.4"
-                    />
-                  </svg>
-                  {c.whatsappLabel}
-                </a>
-              </div>
             </div>
 
             <div className="block">
