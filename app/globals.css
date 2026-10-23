@@ -2663,6 +2663,10 @@ footer {
 .farm-section--first .text-block {
   margin-left: auto;
 }
+.book-direct {
+  text-align: center;
+  padding: 2rem 0;
+}
 .book-stay {
   text-align: center;
   padding: 4rem 2.5rem;

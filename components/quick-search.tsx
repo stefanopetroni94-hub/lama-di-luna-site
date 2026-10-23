@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { BOOKING_URL } from "@/lib/booking"
 
 type Labels = {
   checkIn: string
@@ -16,7 +17,13 @@ export function QuickSearch({ labels }: { labels: Labels }) {
   const [checkOut, setCheckOut] = useState("")
 
   return (
-    <form className="qs-card" onSubmit={(e) => e.preventDefault()}>
+    <form
+      className="qs-card"
+      onSubmit={(e) => {
+        e.preventDefault()
+        window.open(BOOKING_URL, "_blank", "noopener,noreferrer")
+      }}
+    >
       <div className="qs-field">
         <label htmlFor="qs-checkin">{labels.checkIn}</label>
         <input
