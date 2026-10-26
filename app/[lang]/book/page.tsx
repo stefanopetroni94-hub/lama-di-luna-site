@@ -6,7 +6,7 @@ import { QuickSearch } from "@/components/quick-search"
 import { PerkIcon } from "@/components/perk-icon"
 import { isLocale } from "@/lib/i18n"
 import { book } from "@/lib/content/book"
-import { BOOKING_URL } from "@/lib/booking"
+import { bookingUrl } from "@/lib/booking"
 
 export default async function BookPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -60,7 +60,7 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
 
       <section className="lh-widget-wrap">
         <div className="book-direct">
-          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="book-stay-btn">
+          <a href={bookingUrl(lang)} className="book-stay-btn">
             {lang === "it" ? "Prenota ora" : "Book now"}
           </a>
         </div>

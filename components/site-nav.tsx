@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { chrome, menu, type Locale } from "@/lib/i18n"
-import { BOOKING_URL } from "@/lib/booking"
+import { bookingUrl } from "@/lib/booking"
 
 /**
  * Site navigation.
@@ -103,7 +103,7 @@ export function SiteNav({
         <span className="brand-mark" aria-hidden="true" />
       </Link>
 
-      <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="nav-side">
+      <a href={bookingUrl(locale)} className="nav-side">
         {t.book}
       </a>
     </nav>
