@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { CookieLink } from "@/components/cookie-link"
-import { FooterLanguage } from "@/components/footer-language"
 import { chrome, type Locale } from "@/lib/i18n"
 
 export function SiteFooter({ locale }: { locale: Locale }) {
@@ -34,7 +33,6 @@ export function SiteFooter({ locale }: { locale: Locale }) {
         </a>
         <Link href={`/${locale}/privacy`}>{f.privacy}</Link>
         <CookieLink label={f.cookies} />
-        <FooterLanguage locale={locale} />
       </div>
       <div className="footer-right">
         <span>{f.cin}</span>

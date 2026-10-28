@@ -2,7 +2,8 @@
 
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
-import { chrome, menu, type Locale } from "@/lib/i18n"
+import { usePathname } from "next/navigation"
+import { chrome, isLocale, menu, type Locale } from "@/lib/i18n"
 import { bookingUrl } from "@/lib/booking"
 
 /**
@@ -67,6 +68,14 @@ export function SiteNav({
 
   const solid = variant === "solid" || scrolled
 
+  // same page, other language
+  const pathname = usePathname() || `/${locale}`
+  const hrefFor = (to: Locale) => {
+    const segments = pathname.split("/")
+    if (segments[1] && isLocale(segments[1])) segments[1] = to
+    return segments.join("/") || `/${to}`
+  }
+
   return (
     <nav className={`nav${solid ? " nav--solid" : ""}${open ? " nav--open" : ""}`}>
       <div className={`nav-curtain${open ? " is-open" : ""}`} aria-hidden="true" />
@@ -96,6 +105,21 @@ export function SiteNav({
               </li>
             )
           })}
+          <li className="nav-lang">
+            {(["en", "it"] as const).map((l, i) => (
+              <span key={l}>
+                {i > 0 ? " " : ""}
+                <Link
+                  href={hrefFor(l)}
+                  onClick={() => setOpen(false)}
+                  className={l === locale ? "is-current" : ""}
+                  aria-current={l === locale ? "true" : undefined}
+                >
+                  {l.toUpperCase()}
+                </Link>
+              </span>
+            ))}
+          </li>
         </ul>
       </div>
 

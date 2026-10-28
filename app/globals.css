@@ -172,6 +172,16 @@ a {
 .nav-dropdown a:hover {
   opacity: 0.6;
 }
+/* EN IT under the last menu item, a thin line under the current language */
+.nav-dropdown .nav-lang {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.6rem;
+}
+.nav-dropdown .nav-lang a.is-current {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
 .nav-dropdown .is-soon {
   opacity: 0.4;
   cursor: default;
