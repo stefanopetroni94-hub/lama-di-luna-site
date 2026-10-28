@@ -1923,7 +1923,7 @@ footer {
 .ck-bar,
 .ck-status,
 .ck-modal {
-  background: #ffffff;
+  background: var(--bg);
   color: var(--ink);
   font-family: var(--serif);
   box-shadow: 0 10px 40px rgba(92, 26, 43, 0.18);
@@ -1986,7 +1986,7 @@ footer {
 }
 .ck-btn--solid {
   background: var(--ink);
-  color: #ffffff;
+  color: var(--bg);
 }
 .ck-btn--solid:hover {
   background: #3f0f1c;
@@ -2037,7 +2037,7 @@ footer {
   width: 44px;
   height: 24px;
   border-radius: 999px;
-  background: #cbbfc2;
+  background: var(--line);
   transition: background 0.2s;
   flex: none;
 }
@@ -2049,7 +2049,7 @@ footer {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--bg);
   transition: transform 0.2s;
 }
 .ck-toggle input:checked + i {
