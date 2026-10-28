@@ -3560,8 +3560,15 @@ footer {
 .form-stack {
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 0.6rem;
   max-width: 900px;
+}
+/* Message sits as far under Email as Surname and Email sit under the line above them */
+.contact-form .field {
+  padding-top: 1rem;
+}
+.contact-form .privacy-check {
+  margin-top: 1rem;
 }
 /* name, surname, email: the label sits on a thin line, like the example form */
 .contact-form .line-input {
