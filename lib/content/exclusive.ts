@@ -46,7 +46,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     breadcrumbCurrent: "Masseria in exclusive",
     heroEyebrow: "The masseria, entirely yours",
     title: "Masseria in Exclusive",
-    statementTitle: "Take the whole masseria for yourself.",
+    statementTitle: "Take the whole masseria for yourself",
     statementBody: [
       "For weddings, family gatherings, retreats or simply the desire to disappear together, Lama di Luna can be reserved in its entirety. The eleven rooms, which sleep up to 27 people, the courtyard, the pool, the library, the cinema room and the refectory become yours alone. There are no other guests, no fixed schedule, no interruptions. With our chefs and our staff at your disposal, from the concierge to the reception, organising your time in Puglia becomes effortless. To reserve the whole masseria we ask for a minimum stay of three nights.",
     ],
@@ -112,7 +112,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     breadcrumbCurrent: "Masseria in esclusiva",
     heroEyebrow: "La masseria, tutta per te",
     title: "Masseria in Esclusiva",
-    statementTitle: "Prendi l'intera masseria per te.",
+    statementTitle: "Prendi l'intera masseria per te",
     statementBody: [
       "Per matrimoni, riunioni di famiglia, ritiri o semplicemente il desiderio di sparire insieme, Lama di Luna può essere riservata per intero. Le undici camere, che accolgono fino a 27 persone, il cortile, la piscina, la biblioteca, la sala cinema e il refettorio diventano solo tuoi. Nessun altro ospite, nessun orario fisso, nessuna interruzione. Con i nostri cuochi e il nostro staff a tua disposizione, dal concierge alla reception, organizzare il tuo tempo in Puglia diventa semplice. Per prendere l'intera masseria chiediamo un soggiorno minimo di tre notti.",
     ],

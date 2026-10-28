@@ -781,8 +781,17 @@ section {
   padding-left: clamp(1.5rem, 9vw, 11rem);
   padding-right: clamp(1.5rem, 9vw, 11rem);
 }
-.section-label.exclusive-label > :first-child:not(span) {
+.section-label.exclusive-label > svg {
   display: none;
+}
+/* same type as "Taste our food" on the home page */
+.section-label.exclusive-label span {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  color: var(--ink);
 }
 .exclusive-text {
   padding-bottom: 4rem;
