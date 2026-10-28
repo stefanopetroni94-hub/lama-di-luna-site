@@ -2618,13 +2618,18 @@ footer {
   letter-spacing: 0.36em;
   text-transform: uppercase;
 }
-.back-link::before {
-  content: "";
+/* a dash with an arrowhead pointing left */
+.back-link::before,
+.exp-counter::before {
+  content: "\2190";
   display: inline-block;
-  width: 28px;
-  height: 1px;
-  background: currentColor;
-  opacity: 0.8;
+  width: auto;
+  height: auto;
+  background: none;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0;
+  opacity: 1;
 }
 .back-link--light {
   color: var(--bg);
