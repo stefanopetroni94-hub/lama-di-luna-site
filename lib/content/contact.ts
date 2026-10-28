@@ -65,7 +65,7 @@ export const contact: Record<"en" | "it" | "fr", ContactContent> = {
     sendLabel: "Send message",
     sendNote: "We typically reply within a few hours",
     successMessage: "Thanks — we'll reply within a few hours.",
-    findLabel: "Find Us",
+    findLabel: "Where to find us",
     mapEyebrow: "In the Alta Murgia",
     mapTitle: "An hour from Bari, 20 minutes from Castel del Monte",
     mapBody:
@@ -110,7 +110,7 @@ export const contact: Record<"en" | "it" | "fr", ContactContent> = {
     sendLabel: "Invia messaggio",
     sendNote: "Di solito rispondiamo entro poche ore",
     successMessage: "Grazie — risponderemo entro poche ore.",
-    findLabel: "Dove Siamo",
+    findLabel: "Dove trovarci",
     mapEyebrow: "Nell'Alta Murgia",
     mapTitle: "Un'ora da Bari, 20 minuti da Castel del Monte",
     mapBody:
@@ -155,7 +155,7 @@ export const contact: Record<"en" | "it" | "fr", ContactContent> = {
     sendLabel: "Envoyer le message",
     sendNote: "Nous répondons généralement en quelques heures",
     successMessage: "Merci, nous vous répondrons dans quelques heures.",
-    findLabel: "Nous trouver",
+    findLabel: "Où nous trouver",
     mapEyebrow: "Dans l'Alta Murgia",
     mapTitle: "À une heure de Bari, à 20 minutes de Castel del Monte",
     mapBody:
