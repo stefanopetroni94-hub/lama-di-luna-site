@@ -30,29 +30,43 @@ export function ContactForm({ labels }: { labels: Labels }) {
       <div className="form-eyebrow">{labels.formEyebrow}</div>
       <div className="form-title">{labels.formTitle}</div>
       <div className="form-stack">
-        <div className="field">
-          <label htmlFor="name">{labels.nameLabel}</label>
-          <input id="name" type="text" required />
-        </div>
-        <div className="field">
-          <label htmlFor="surname">{labels.surnameLabel}</label>
-          <input id="surname" type="text" required />
-        </div>
-        <div className="field">
-          <label htmlFor="email">{labels.emailFieldLabel}</label>
-          <input id="email" type="email" required />
-        </div>
+        <input
+          className="line-input"
+          id="name"
+          type="text"
+          placeholder={labels.nameLabel}
+          aria-label={labels.nameLabel}
+          required
+        />
+        <input
+          className="line-input"
+          id="surname"
+          type="text"
+          placeholder={labels.surnameLabel}
+          aria-label={labels.surnameLabel}
+          required
+        />
+        <input
+          className="line-input"
+          id="email"
+          type="email"
+          placeholder={labels.emailFieldLabel}
+          aria-label={labels.emailFieldLabel}
+          required
+        />
         <div className="field">
           <label htmlFor="message">{labels.messageLabel}</label>
-          <textarea id="message" rows={5} required />
+          <textarea className="box-input" id="message" rows={6} required />
         </div>
         <div className="submit">
           <button type="submit" className="submit-btn">
             {labels.sendLabel}
           </button>
-          <div className="submit-note" role="status" aria-live="polite">
-            {sent ? labels.successMessage : labels.sendNote}
-          </div>
+          {sent ? (
+            <div className="submit-note" role="status" aria-live="polite">
+              {labels.successMessage}
+            </div>
+          ) : null}
         </div>
       </div>
     </form>

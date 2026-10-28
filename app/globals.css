@@ -3231,6 +3231,40 @@ footer {
   gap: 1.8rem;
   max-width: 900px;
 }
+/* name, surname, email: the label sits on a thin line, like the example form */
+.contact-form .line-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--ink-soft);
+  border-radius: 0;
+  padding: 1rem 0 0.6rem;
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.contact-form .line-input::placeholder {
+  color: var(--ink);
+  opacity: 1;
+}
+.contact-form .line-input:focus {
+  border-bottom-color: var(--ink);
+}
+/* message: a full box */
+.contact-form .field textarea.box-input {
+  border: 1px solid var(--ink-soft);
+  padding: 0.9rem 1rem;
+  min-height: 170px;
+  background: transparent;
+}
+.contact-form .field label {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
 .form-eyebrow {
   font-family: var(--serif);
   font-style: italic;
@@ -3433,11 +3467,14 @@ footer {
 /* "Location & contact" card over the top left of the map, appearing as you scroll */
 .map-wrap {
   position: relative;
+  margin-bottom: 11rem;
 }
+/* half of the card is over the map, half below it, on the right */
 .map-card {
   position: absolute;
-  top: 2.5rem;
-  left: clamp(1.5rem, 9vw, 11rem);
+  bottom: 0;
+  transform: translateY(50%);
+  right: clamp(1.5rem, 9vw, 11rem);
   width: min(360px, calc(100% - 3rem));
   background: rgba(253, 252, 249, 0.94);
   padding: 1.8rem 2rem;
@@ -3478,11 +3515,11 @@ footer {
 @keyframes map-card-in {
   from {
     opacity: 0;
-    transform: translateY(2rem);
+    transform: translateY(calc(50% + 2rem));
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(50%);
   }
 }
 @supports (animation-timeline: view()) {
@@ -3493,8 +3530,13 @@ footer {
   }
 }
 @media (max-width: 700px) {
+  .map-wrap {
+    margin-bottom: 0;
+  }
   .map-card {
     position: static;
+    transform: none;
+    animation: none;
     width: auto;
     margin: 0;
     box-shadow: none;
