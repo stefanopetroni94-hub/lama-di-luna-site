@@ -17,8 +17,9 @@ type Labels = {
   successMessage: string
 }
 
-export function ContactForm({ labels }: { labels: Labels }) {
+export function ContactForm({ labels, privacyHref }: { labels: Labels; privacyHref: string }) {
   const [sent, setSent] = useState(false)
+  const [before, after] = labels.privacyLabel.split("Privacy Policy")
 
   return (
     <form
@@ -60,7 +61,13 @@ export function ContactForm({ labels }: { labels: Labels }) {
         </div>
         <label className="privacy-check">
           <input type="checkbox" name="privacy" value="accepted" required />
-          <span>{labels.privacyLabel}</span>
+          <span>
+            {before}
+            <a href={privacyHref} target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>
+            {after}
+          </span>
         </label>
         <div className="submit">
           <button type="submit" className="submit-btn">

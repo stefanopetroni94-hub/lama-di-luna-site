@@ -31,6 +31,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
       <section className="contact-section">
         <div className="contact-grid contact-grid--stacked">
           <ContactForm
+            privacyHref={`/${lang}/privacy`}
             labels={{
               formEyebrow: c.formEyebrow,
               formTitle: c.formTitle,
