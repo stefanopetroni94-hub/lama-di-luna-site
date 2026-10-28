@@ -14,7 +14,11 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
   const decline = c.chapters[2]
 
   const chapter = (ch: (typeof c.chapters)[number], n: number) => {
-    const image = <div className="image-block" style={{ backgroundImage: `url('${ch.img}')` }} />
+    const image = (
+      <div className="image-block image-block--zoom">
+        <div style={{ backgroundImage: `url('${ch.img}')` }} />
+      </div>
+    )
     const text = (
       <div className="text-block">
         <div className="room-name" style={{ marginBottom: "1rem" }}>
