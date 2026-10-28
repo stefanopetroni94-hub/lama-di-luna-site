@@ -2364,7 +2364,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 0 2.5rem;
-  height: 92px;
+  height: 150px;
   border-bottom: 1px solid var(--line);
   font-family: var(--serif);
   font-size: 12px;
@@ -2402,6 +2402,10 @@ footer {
 @media (max-width: 700px) {
   .booking-sheet-body {
     --crop: 100px;
+  }
+  .booking-sheet-bar {
+    height: 130px;
+    padding: 0 1.3rem;
   }
 }
 
