@@ -45,7 +45,7 @@ export const YOUTUBE_ID = "qzT1XEFQ_FM"
 export const story: Record<Locale, StoryContent> = {
   en: {
     heroEyebrow: "The Story",
-    statementTitle: "An 18th-century masseria at the centre of 210 hectares of organic estate",
+    statementTitle: "An 18th-century masseria, restored with bioarchitecture while preserving the history of the estate",
     statementBody: [
       "Lama di Luna sits in the heart of the Alta Murgia National Park. Its name means Valley of the Moon — lama for valley, luna for moon and fertility. The masseria grew over two centuries, from the late 1700s to the late 1800s, and was restored between 2000 and 2003 with mortar, lime, and the same red earth that gave the surrounding fields their colour. What the masseria looks like today is not a reconstruction. It is what was already here, kept honest.",
     ],
@@ -151,7 +151,7 @@ export const story: Record<Locale, StoryContent> = {
   },
   it: {
     heroEyebrow: "La Storia",
-    statementTitle: "Una masseria del XVIII secolo al centro di 210 ettari di tenuta biologica",
+    statementTitle: "Una masseria del XVIII secolo, restaurata con la bioarchitettura nel rispetto della storia della tenuta",
     statementBody: [
       "Lama di Luna sorge nel cuore del Parco Nazionale dell'Alta Murgia. Il suo nome significa Valle della Luna — lama per valle, luna per luna e fertilità. La masseria è cresciuta nell'arco di due secoli, dalla fine del Settecento alla fine dell'Ottocento, ed è stata restaurata tra il 2000 e il 2003 con calce, malta e la stessa terra rossa che ha dato il colore ai campi circostanti. Quello che la masseria è oggi non è una ricostruzione. È quello che c'era, mantenuto con onestà.",
     ],
@@ -257,7 +257,7 @@ export const story: Record<Locale, StoryContent> = {
   },
   fr: {
     heroEyebrow: "L'Histoire",
-    statementTitle: "Une masseria du XVIIIe siècle au centre d'un domaine biologique de 210 hectares",
+    statementTitle: "Une masseria du XVIIIe siècle, restaurée avec la bioarchitecture dans le respect de l'histoire du domaine",
     statementBody: [
       "Lama di Luna se trouve au cœur du Parc national de l'Alta Murgia. Son nom signifie Vallée de la Lune : lama pour vallée, luna pour la lune et la fertilité. La masseria s'est agrandie pendant deux siècles, de la fin des années 1700 à la fin des années 1800, et a été restaurée entre 2000 et 2003 avec du mortier, de la chaux et la même terre rouge qui donne leur couleur aux champs alentour. Ce qu'est la masseria aujourd'hui n'est pas une reconstruction. C'est ce qui était déjà là, préservé avec honnêteté.",
     ],
