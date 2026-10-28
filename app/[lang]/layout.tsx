@@ -1,6 +1,6 @@
 import type React from "react"
 import { notFound } from "next/navigation"
-import { LanguagePill } from "@/components/language-pill"
+import { CookieConsent } from "@/components/cookie-consent"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { isLocale, locales } from "@/lib/i18n"
 
@@ -21,7 +21,7 @@ export default async function LangLayout({
   return (
     <>
       {children}
-      <LanguagePill locale={lang} />
+      <CookieConsent locale={lang} />
       <WhatsAppButton locale={lang} />
     </>
   )
