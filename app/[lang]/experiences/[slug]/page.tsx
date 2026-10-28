@@ -3,6 +3,7 @@ import type { CSSProperties } from "react"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
+import { Scopri } from "@/components/scopri"
 import { experiences } from "@/lib/content/experiences"
 import { experienceDetails } from "@/lib/content/experience-details"
 import { oliveHarvest } from "@/lib/content/olive-harvest"
@@ -33,15 +34,6 @@ export default async function ExperienceDetailPage({
     "--exp-hero-pos": isOlive ? "center 55%" : card.pos ?? "center",
   } as CSSProperties
 
-  const booking = isOlive
-    ? { eyebrow: o.bookingEyebrow, title: o.bookingTitle, text: o.bookingText, cta: o.bookingCta }
-    : {
-        eyebrow: card.num.replace(/^\d+\s*·\s*/, ""),
-        title: e.arrangeTitle,
-        text: e.arrangeText,
-        cta: e.arrangeCta,
-      }
-
   // the next three experiences in the list
   const others = [1, 2, 3].map((n) => all[(index + n) % all.length])
 
@@ -66,18 +58,8 @@ export default async function ExperienceDetailPage({
                 <p key={i}>{p}</p>
               ))}
             </div>
+            <Scopri href={`/${lang}/contact`}>{o.bookingCta}</Scopri>
           </div>
-        </div>
-      </section>
-
-      <section className="booking-callout booking-callout--olive">
-        <div className="booking-callout-inner">
-          <div className="eyebrow">{booking.eyebrow}</div>
-          <h2>{booking.title}</h2>
-          <p>{booking.text}</p>
-          <Link href={`/${lang}/contact`} className="btn-primary">
-            {booking.cta}
-          </Link>
         </div>
       </section>
 

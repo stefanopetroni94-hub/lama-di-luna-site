@@ -3247,11 +3247,9 @@ footer {
   color: var(--ink);
   margin-bottom: 1rem;
 }
-.booking-callout.booking-callout--olive {
-  border-bottom: 1px solid var(--line);
-}
 .other-exp.other-exp--olive {
   padding-top: 3.5rem;
+  border-top: 1px solid var(--line);
 }
 .other-exp-header {
   text-align: center;
