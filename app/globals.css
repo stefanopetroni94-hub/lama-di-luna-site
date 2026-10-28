@@ -834,6 +834,10 @@ section {
 .page-header--booking + .grid-4 {
   margin-top: 4rem;
 }
+/* the closing block sits under the cards with the same gap as "Reserve the whole masseria" under its photos */
+.grid-4:has(+ .experiences-callout) {
+  margin-bottom: 0;
+}
 .quick-search.experiences-quick-search {
   max-width: 1500px;
   margin: 3rem auto 0;

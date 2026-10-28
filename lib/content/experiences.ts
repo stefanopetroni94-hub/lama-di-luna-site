@@ -57,7 +57,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
       "The olive tour, a cooking class, relaxing massages, a bicycle ride — and the trulli, the cliffs, the cave city, the castle on the hill.",
     onEstateLabel: "On the Estate",
     arrangeEyebrow: "Tell us what you'd love",
-    arrangeTitle: "We'll arrange the day",
+    arrangeTitle: "We will help you arrange the day",
     arrangeText:
       "All experiences are arranged on request. Many are weather- or season-dependent; some need a few days' notice. Drop us a note with your dates and what you're drawn to.",
     arrangeCta: "Get in touch",
@@ -83,7 +83,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
       "Il tour degli ulivi, un corso di cucina, massaggi rilassanti, un giro in bicicletta — e i trulli, le scogliere, la città di pietra, il castello sulla collina.",
     onEstateLabel: "In Masseria",
     arrangeEyebrow: "Dicci cosa ti piacerebbe",
-    arrangeTitle: "Organizziamo noi la giornata",
+    arrangeTitle: "Ti aiutiamo a organizzare la giornata",
     arrangeText:
       "Tutte le esperienze si organizzano su richiesta. Molte dipendono dal tempo o dalla stagione; alcune richiedono qualche giorno di preavviso. Scrivici con le tue date e ciò che ti attrae.",
     arrangeCta: "Contattaci",
@@ -109,7 +109,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
       "La visite des oliviers, un cours de cuisine, des massages relaxants, une balade à vélo, et puis les trulli, les falaises, la ville troglodyte, le château sur la colline.",
     onEstateLabel: "Au domaine",
     arrangeEyebrow: "Dites-nous ce qui vous ferait plaisir",
-    arrangeTitle: "Nous organisons la journée",
+    arrangeTitle: "Nous vous aidons à organiser la journée",
     arrangeText:
       "Toutes les expériences sont organisées sur demande. Beaucoup dépendent de la météo ou de la saison, certaines demandent quelques jours de préavis. Écrivez-nous avec vos dates et ce qui vous attire.",
     arrangeCta: "Contactez-nous",

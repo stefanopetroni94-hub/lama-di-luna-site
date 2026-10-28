@@ -44,9 +44,8 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ la
         ))}
       </section>
 
-      <section className="arrange">
-        <div className="arrange-inner">
-          <div className="eyebrow">{c.arrangeEyebrow}</div>
+      <section className="booking-callout exclusive-callout experiences-callout">
+        <div className="booking-callout-inner">
           <h2>{c.arrangeTitle}</h2>
           <p>{c.arrangeText}</p>
           <Link href={`/${lang}/contact`} className="btn-primary">
