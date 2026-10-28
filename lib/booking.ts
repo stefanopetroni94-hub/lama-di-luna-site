@@ -35,7 +35,7 @@ export function engineUrl(stay?: { start_date?: string; end_date?: string; adult
 // Where the Book button and Check availability go: our own booking page, with the engine inside.
 // The chosen dates travel in the address and are passed on to the engine.
 export function bookingUrl(locale: Locale, stay?: Stay) {
-  const base = `/${locale}/booking-preview`
+  const base = `/${locale}/booking`
   if (!validStay(stay)) return base
   const q = new URLSearchParams({
     start_date: stay.checkIn,
