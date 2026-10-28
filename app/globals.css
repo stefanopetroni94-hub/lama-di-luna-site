@@ -2644,9 +2644,15 @@ footer {
 .back-link a:hover {
   opacity: 0.6;
 }
+/* phone: "Home" sits higher, and the page titles start lower, so they never overlap */
 @media (max-width: 700px) {
-  .back-link {
+  .back-link,
+  .exp-hero .exp-counter {
+    top: 84px;
     left: 1.3rem;
+  }
+  section.page-header {
+    padding-top: 8.5rem;
   }
 }
 .exp-counter {
