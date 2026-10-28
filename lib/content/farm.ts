@@ -31,7 +31,7 @@ const IMG = {
 export const farm: Record<Locale, FarmContent> = {
   en: {
     heroEyebrow: "The Farm",
-    statementTitle: "A working organic farm of 210 hectares in the Alta Murgia National Park",
+    statementTitle: "A working organic farm of 210 hectares, bordering the Alta Murgia National Park",
     statementBody: [
       "Lama di Luna is first a farm and only then a place to stay. Around the masseria, built around the 1830s, lie 210 hectares (518 acres) of olive groves, almond groves, vineyards and cherry orchards — all organically cultivated and certified by AIAB-ICEA, Italy's organic-agriculture body, since 1995. The oil on your bread, the almonds at breakfast, the wine at dinner and the soap in your room are all made from what grows outside the window.",
     ],
@@ -90,7 +90,7 @@ export const farm: Record<Locale, FarmContent> = {
   },
   it: {
     heroEyebrow: "La Fattoria",
-    statementTitle: "Un'azienda agricola biologica in attività di 210 ettari nel Parco Nazionale dell'Alta Murgia",
+    statementTitle: "Un'azienda agricola biologica in attività di 210 ettari, al confine con il Parco Nazionale dell'Alta Murgia",
     statementBody: [
       "Lama di Luna è prima di tutto una fattoria, e solo poi un luogo dove soggiornare. Attorno alla masseria, costruita intorno al 1830, si estendono 210 ettari di uliveti, mandorleti, vigneti e ciliegeti — tutti coltivati in biologico e certificati AIAB-ICEA, l'ente italiano dell'agricoltura biologica, dal 1995. L'olio sul pane, le mandorle a colazione, il vino a cena e il sapone nella tua camera sono tutti fatti con ciò che cresce fuori dalla finestra.",
     ],
@@ -149,7 +149,7 @@ export const farm: Record<Locale, FarmContent> = {
   },
   fr: {
     heroEyebrow: "La Ferme",
-    statementTitle: "Une ferme biologique en activité de 210 hectares dans le Parc national de l'Alta Murgia",
+    statementTitle: "Une ferme biologique en activité de 210 hectares, aux portes du Parc national de l'Alta Murgia",
     statementBody: [
       "Lama di Luna est d'abord une ferme, et seulement ensuite un lieu de séjour. Autour de la masseria, bâtie vers 1830, s'étendent 210 hectares d'oliveraies, d'amanderaies, de vignes et de cerisaies, tous cultivés en bio et certifiés depuis 1995 par AIAB-ICEA, l'organisme italien de l'agriculture biologique. L'huile sur votre pain, les amandes au petit déjeuner, le vin au dîner et le savon dans votre chambre sont faits avec ce qui pousse sous vos fenêtres.",
     ],
