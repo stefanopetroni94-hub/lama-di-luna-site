@@ -25,7 +25,6 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
         <div className="room-name" style={{ marginBottom: "1rem" }}>
           {ch.eyebrow}
         </div>
-        <h2>{ch.title}</h2>
         {ch.body.map((p, i) => (
           <p key={i}>{p}</p>
         ))}
