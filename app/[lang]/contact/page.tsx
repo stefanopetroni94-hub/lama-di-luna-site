@@ -7,13 +7,11 @@ import { WaveLine } from "@/components/wave-line"
 import { isLocale } from "@/lib/i18n"
 import { contact } from "@/lib/content/contact"
 import { book } from "@/lib/content/book"
-import { home } from "@/lib/content/home"
 
 export default async function ContactPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
   if (!isLocale(lang)) notFound()
   const c = contact[lang]
-  const h = home[lang]
 
   return (
     <>
@@ -45,61 +43,14 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
               successMessage: c.successMessage,
             }}
           />
-
-          <div className="direct direct--row">
-            <div className="block">
-              <div className="label">{c.phoneLabel}</div>
-              <div className="value">
-                <a href="tel:+390883569505">{c.phoneValue}</a>
-              </div>
-              <div className="small phone-small">{c.phoneSmall}</div>
-            </div>
-
-            <div className="block">
-              <div className="label">{c.emailLabel}</div>
-              <div className="value">
-                <a href={`mailto:${c.emailValue}`}>{c.emailValue}</a>
-              </div>
-              <div className="small">{c.emailSmall}</div>
-            </div>
-
-            <div className="block">
-              <div className="label">{c.addressLabel}</div>
-              <div className="value" style={{ whiteSpace: "pre-line" }}>
-                {c.addressValue}
-              </div>
-              <div className="small">{c.addressSmall}</div>
-            </div>
-
-          </div>
         </div>
       </section>
 
       <div className="section-label find-label">
         <WaveLine side="left" />
-        <span>{c.findLabel}</span>
+        <span>{lang === "it" ? "Posizione" : "Location"}</span>
         <WaveLine side="right" />
       </div>
-
-      <section className="find-us-intro">
-        <div className="script-eyebrow">{c.mapEyebrow}</div>
-        <p>
-          {h.mapText.join(" ")} {c.mapBody}
-        </p>
-      </section>
-
-      <section className="map-section">
-        <div className="map-section-inner map-section-inner--destinations">
-          <ul className="distance-list distance-list--columns">
-            {c.distances.map((d) => (
-              <li key={d.place}>
-                <span className="place">{d.place}</span>
-                <span className="distance">{d.distance}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
 
       <section className="map-wrap">
         <iframe

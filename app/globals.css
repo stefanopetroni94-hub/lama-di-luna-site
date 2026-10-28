@@ -3467,13 +3467,13 @@ footer {
 /* "Location & contact" card over the top left of the map, appearing as you scroll */
 .map-wrap {
   position: relative;
-  margin-bottom: 11rem;
+  margin-top: 9rem;
 }
-/* half of the card is over the map, half below it, on the right */
+/* half of the card is over the map, half above it, at the top right */
 .map-card {
   position: absolute;
-  bottom: 0;
-  transform: translateY(50%);
+  top: 0;
+  transform: translateY(-50%);
   right: clamp(1.5rem, 9vw, 11rem);
   width: min(360px, calc(100% - 3rem));
   background: rgba(253, 252, 249, 0.94);
@@ -3515,11 +3515,11 @@ footer {
 @keyframes map-card-in {
   from {
     opacity: 0;
-    transform: translateY(calc(50% + 2rem));
+    transform: translateY(calc(-50% + 2rem));
   }
   to {
     opacity: 1;
-    transform: translateY(50%);
+    transform: translateY(-50%);
   }
 }
 @supports (animation-timeline: view()) {
@@ -3531,7 +3531,7 @@ footer {
 }
 @media (max-width: 700px) {
   .map-wrap {
-    margin-bottom: 0;
+    margin-top: 0;
   }
   .map-card {
     position: static;
