@@ -3,7 +3,7 @@ import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { oliveHarvest } from "@/lib/content/olive-harvest"
-import { isLocale } from "@/lib/i18n"
+import { chrome, isLocale } from "@/lib/i18n"
 
 export default async function ExperienceDetailPage({
   params,
@@ -27,6 +27,7 @@ export default async function ExperienceDetailPage({
           <span>{c.breadcrumbCurrent}</span>
         </div>
         <h1 className="sr-only">{c.title}</h1>
+        <div className="hero-scroll">{chrome[lang].scroll}</div>
       </section>
 
       <section className="statement">
