@@ -33,7 +33,7 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
     return (
       <section
         key={ch.title}
-        className={`story-chapter${n % 2 === 0 ? " story-chapter--text-left" : ""}`}
+        className={`story-chapter${n % 2 === 0 ? " story-chapter--text-left" : ""}${n === 4 ? " story-chapter--overlap" : ""}`}
       >
         <div className="text-image">
           {n % 2 === 0 ? (

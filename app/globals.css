@@ -3008,6 +3008,12 @@ footer {
 .story-chapter--text-left .text-block {
   margin-left: auto;
 }
+/* 2003: the photo on the right climbs up a little, next to the bottom of the 1991 photo, so the two photos carry on from each other */
+@media (min-width: 701px) {
+  .story-chapter.story-chapter--overlap {
+    margin-top: -9rem;
+  }
+}
 .story-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
