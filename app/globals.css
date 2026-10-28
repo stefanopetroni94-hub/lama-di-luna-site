@@ -1030,8 +1030,14 @@ section {
 .room-detail--hero .room-back {
   margin-bottom: 1.4rem;
 }
+/* room name: same type as "Taste our food" on the home page */
 .room-detail--hero .room-detail-header h1 {
-  margin-bottom: 1.6rem;
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
 }
 .room-detail--hero .room-detail-copy p {
   font-family: "Times New Roman", Times, serif;
