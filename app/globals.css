@@ -3228,6 +3228,17 @@ footer {
 .statement.statement--olive {
   padding-bottom: 3.5rem;
 }
+/* experience title: same type as "Taste our food" on the home page */
+.statement--olive .statement-grid h2 {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
 .booking-callout.booking-callout--olive {
   border-bottom: 1px solid var(--line);
 }
