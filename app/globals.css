@@ -2543,9 +2543,14 @@ footer {
   overflow: hidden;
 }
 /* Olive Tour: the guide talking to guests on the lawn, same vintage filter as the other photos */
-.exp-hero.exp-hero--olive {
+.exp-hero.exp-hero--olive,
+.exp-hero.exp-hero--detail {
   height: 100vh;
   min-height: 640px;
+}
+/* every experience page: its own photo, full screen, same vintage filter */
+.exp-hero--detail::before {
+  background: var(--exp-hero-img) var(--exp-hero-pos, center) / cover no-repeat;
 }
 .exp-hero--olive::before {
   background: url("/whatsapp/20261028_065214_1516459033640755.jpg") center 55% / cover no-repeat;

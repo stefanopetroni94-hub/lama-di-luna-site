@@ -32,7 +32,23 @@ const IMG = {
   matera: "https://res.cloudinary.com/amenitiz/image/upload/w_1200,q_auto:best,f_auto,c_fill/v1679928110/vw8ib8dqkcchw9nqco39.jpg",
 }
 
-export const experiences: Record<"en" | "it" | "fr", ExperiencesContent> = {
+// Page slug of each experience, in the same order as the cards below (the first one has its own page text).
+export const experienceSlugs = {
+  onEstate: [
+    "olive-harvest",
+    "cooking-class",
+    "massages",
+    "bicycle-ride",
+    "cinema-room",
+    "yoga",
+    "infinity-pool",
+    "estate-walk",
+    "golf",
+  ],
+  inRegion: ["castel-del-monte", "alberobello", "polignano", "matera"],
+}
+
+const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
   en: {
     eyebrow: "Ways to spend a day",
     title: "Experiences",
@@ -124,3 +140,14 @@ export const experiences: Record<"en" | "it" | "fr", ExperiencesContent> = {
     ],
   },
 }
+
+export const experiences = Object.fromEntries(
+  Object.entries(base).map(([lang, c]) => [
+    lang,
+    {
+      ...c,
+      onEstate: c.onEstate.map((card, i) => ({ ...card, slug: experienceSlugs.onEstate[i] })),
+      inRegion: c.inRegion.map((card, i) => ({ ...card, slug: experienceSlugs.inRegion[i] })),
+    },
+  ])
+) as Record<"en" | "it" | "fr", ExperiencesContent>
