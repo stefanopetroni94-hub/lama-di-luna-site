@@ -14,7 +14,9 @@ export type Stay = {
 // (start_date, end_date, adults, children: the params its own engine reads).
 // Without one, it opens on its date picker.
 export function bookingUrl(locale: Locale, stay?: Stay) {
-  const base = `${BOOKING_HOST}/${locale}/booking/room`
+  void locale // the engine picks its own language
+  // the engine's own address, without a language in the path
+  const base = `${BOOKING_HOST}/booking/room`
   if (!stay || !stay.checkIn || !stay.checkOut || stay.checkOut <= stay.checkIn) {
     return `${base}#DatesGuests-BE`
   }
