@@ -3430,6 +3430,78 @@ footer {
   display: block;
 }
 
+/* "Location & contact" card over the top left of the map, appearing as you scroll */
+.map-wrap {
+  position: relative;
+}
+.map-card {
+  position: absolute;
+  top: 2.5rem;
+  left: clamp(1.5rem, 9vw, 11rem);
+  width: min(360px, calc(100% - 3rem));
+  background: rgba(253, 252, 249, 0.94);
+  padding: 1.8rem 2rem;
+  box-shadow: 0 10px 30px rgba(92, 26, 43, 0.12);
+}
+.map-card h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+.map-card p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+.map-card a:not(.map-card-btn) {
+  color: var(--ink);
+}
+.map-card-btn {
+  display: inline-block;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.7rem 1.6rem;
+  font-family: var(--serif);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--ink);
+  transition: background 0.2s, color 0.2s;
+}
+.map-card-btn:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+@keyframes map-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@supports (animation-timeline: view()) {
+  .map-card {
+    animation: map-card-in linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 35%;
+  }
+}
+@media (max-width: 700px) {
+  .map-card {
+    position: static;
+    width: auto;
+    margin: 0;
+    box-shadow: none;
+    padding: 1.6rem 1.3rem;
+  }
+}
+
 /* ---------------- STORY: FOUNDER / FILM / DETAILS ---------------- */
 .founder {
   background: var(--bg-alt);
