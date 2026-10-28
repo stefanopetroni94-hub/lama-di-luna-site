@@ -1944,9 +1944,18 @@ footer {
   right: 0;
   bottom: 0;
   z-index: 90;
-  padding: 1.6rem clamp(1.2rem, 6vw, 6rem) 1.2rem;
+  padding: 1.6rem 0 1.2rem;
   max-height: 90vh;
   overflow-y: auto;
+}
+/* same left edge and column as "Taste our food" on the home page */
+.ck-bar-main,
+.ck-bar-foot {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .ck-bar-main {
   display: flex;
@@ -1954,25 +1963,30 @@ footer {
   align-items: flex-start;
   justify-content: space-between;
 }
+/* same type as "Taste our food" */
 .ck-bar-text strong,
 .ck-modal-body > strong {
   display: block;
-  font-size: 15px;
+  font-family: var(--serif);
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 0.6rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
 }
+/* same type as the text under "Taste our food" */
 .ck-bar-text p,
 .ck-modal-body > p,
 .ck-detail p,
 .ck-info p,
 .ck-status-body p {
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--serif);
   font-size: 15px;
-  line-height: 1.6;
-  margin: 0 0 0.8rem;
+  line-height: 1.85;
+  color: var(--ink);
+  margin: 0 0 1rem;
 }
 .ck-bar-text {
-  max-width: 760px;
+  max-width: 480px;
 }
 .ck-buttons {
   display: flex;
@@ -2007,9 +2021,7 @@ footer {
   justify-content: space-between;
   gap: 1.5rem;
   flex-wrap: wrap;
-  border-top: 1px solid var(--line);
-  margin-top: 1rem;
-  padding-top: 1rem;
+  margin-top: 0.5rem;
 }
 .ck-toggles {
   display: flex;
@@ -2029,8 +2041,10 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 0.7rem;
-  font-size: 13px;
-  font-weight: 600;
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.85;
+  font-weight: 400;
   cursor: pointer;
 }
 .ck-toggles--grid .ck-toggle {
@@ -2202,9 +2216,17 @@ footer {
   flex: 1;
 }
 @media (max-width: 700px) {
+  .ck-bar-main,
+  .ck-bar-foot {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
   .ck-bar-main {
     flex-direction: column;
     gap: 1rem;
+  }
+  .ck-bar-text {
+    max-width: none;
   }
   .ck-buttons {
     width: 100%;
