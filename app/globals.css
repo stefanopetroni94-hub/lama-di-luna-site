@@ -3172,6 +3172,13 @@ footer {
 .restaurant-split {
   margin-top: 4rem;
 }
+/* The Veranda: the pairs of photos are two squares side by side, the single toast photo is wide */
+.restaurant-split .story-split-img {
+  aspect-ratio: 1 / 1;
+}
+.restaurant-toast .full-photo {
+  aspect-ratio: 21 / 9;
+}
 .restaurant-split.restaurant-split--end {
   margin-top: 0;
 }
