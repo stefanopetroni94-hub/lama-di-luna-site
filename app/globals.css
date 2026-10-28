@@ -3791,6 +3791,14 @@ footer {
   font-size: 15px;
   font-weight: 500;
 }
+/* message box: the border gets darker when you click in it, like the line under Email */
+.contact-form .field textarea.box-input {
+  outline: none;
+  transition: border-color 0.2s;
+}
+.contact-form .field textarea.box-input:focus {
+  border-color: var(--ink-soft);
+}
 /* privacy policy page */
 .privacy-page {
   max-width: 820px;
