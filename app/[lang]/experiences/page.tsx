@@ -20,7 +20,7 @@ function Card({ card, lang }: { card: ExpCard; lang: Locale }) {
       </div>
       <div className="exp-card-name">{card.name}</div>
       <div className="exp-card-meta">{card.meta}</div>
-      <span className="exp-card-link">{lang === "it" ? "Scopri →" : "Discover →"}</span>
+      <span className="exp-card-link">{{ en: "Discover →", it: "Scopri →", fr: "Découvrir →" }[lang]}</span>
     </Link>
   )
 }

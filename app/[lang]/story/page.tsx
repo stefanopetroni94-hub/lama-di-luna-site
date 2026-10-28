@@ -90,7 +90,7 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
           <div className="room-name" style={{ marginBottom: "1rem" }}>
             {community.eyebrow}, {decline.eyebrow}
           </div>
-          <h2>{lang === "it" ? "Una comunità al lavoro, poi il declino" : "A community at work, then decline"}</h2>
+          <h2>{{ en: "A community at work, then decline", it: "Una comunità al lavoro, poi il declino", fr: "Une communauté au travail, puis le déclin" }[lang]}</h2>
           <div className="statement-body">
             <p>{[...community.body, ...decline.body].join(" ")}</p>
           </div>

@@ -172,4 +172,70 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
       "Indicaci le date, il numero di ospiti e il tipo di incontro che hai in mente. Prepareremo una proposta su misura per la tenuta in uso esclusivo.",
     bookingCta: "Fai una richiesta",
   },
+  fr: {
+    counter: "Domaine entier",
+    breadcrumbRoot: "Accueil",
+    breadcrumbCurrent: "Masseria en exclusivité",
+    heroEyebrow: "La masseria, rien que pour vous",
+    title: "Masseria en exclusivité",
+    statementTitle: "Toute la masseria rien que pour vous",
+    statementBody: [
+      "Pour un mariage, une réunion de famille, une retraite ou simplement l'envie de disparaître ensemble, Lama di Luna peut être réservée dans son intégralité. Les onze chambres, qui accueillent jusqu'à 27 personnes, la cour, la piscine, la bibliothèque, la salle de cinéma et le réfectoire sont à vous seuls. Pas d'autres hôtes, pas d'horaires fixes, aucune interruption. Avec nos cuisiniers et notre équipe à votre disposition, de la conciergerie à la réception, organiser votre séjour dans les Pouilles devient un jeu d'enfant. Pour réserver toute la masseria, nous demandons un séjour minimum de trois nuits.",
+    ],
+    stay: "",
+    weddingsText:
+      "La masseria peut accueillir des mariages jusqu'à 150 invités. Plusieurs espaces sont à votre choix : des dîners dans la cour et, à l'intérieur, de magnifiques salles historiques du XIXe siècle pour célébrer à l'abri des intempéries.",
+    retreatsText:
+      "Retraites de yoga, de bien-être, de développement personnel : nous accueillons toute retraite à la recherche d'un lieu de paix et d'harmonie, au cœur d'une ferme biologique tenue avec soin par une famille. La cuisine vient de notre terroir, suit les saisons et est préparée avec amour.",
+    gatheringsText:
+      "Les chambres qui donnent sur la cour intérieure sont un lieu parfait pour se retrouver entre amis ou en famille et passer du temps dans la sérénité et la joie, entre les couchers de soleil et les oliviers des Pouilles. Avec une cuisine privée et une équipe dédiée, chaque séjour devient une expérience magique.",
+    facts: [
+      { label: "Capacité", value: "Jusqu'à 22 personnes" },
+      { label: "Chambres", value: "11 chambres restaurées" },
+      { label: "Terres", value: "210 hectares, en bio" },
+      { label: "Minimum", value: "2 nuits, domaine entier" },
+    ],
+    curvedLabel: "Rien que pour vous",
+    perksEyebrow: "Ce que signifie l'exclusivité",
+    perksTitle: "Le domaine, sans personne d'autre",
+    perks: [
+      {
+        title: "Toutes les chambres",
+        body: "Les onze chambres de la masseria, des logis des colons à la suite deluxe, réservées à votre seul groupe.",
+      },
+      {
+        title: "Cuisine privée",
+        body: "The Veranda cuisine pour vous seuls : menus sur mesure avec les légumes du potager, longues tablées sous les voûtes ou sous les étoiles.",
+      },
+      {
+        title: "Les espaces extérieurs",
+        body: "Les cours, la piscine panoramique, la chapelle et les oliveraies : toute la vallée ouverte pour flâner, se retrouver et faire la fête.",
+      },
+      {
+        title: "Un hôte dédié",
+        body: "Une seule personne pour tout organiser : transferts, dégustations, musique, fleurs et les petits détails qui font de la rencontre la vôtre.",
+      },
+      {
+        title: "Expériences sur demande",
+        body: "Dégustations d'huile d'olive, récoltes, cours de cuisine et excursions guidées dans l'Alta Murgia, organisés autour de vos journées.",
+      },
+      {
+        title: "Autonome, en tout confort",
+        body: "Alimentée par le soleil et chauffée à l'eau solaire : un luxe discret et durable, sans le moindre compromis sur le confort.",
+      },
+    ],
+    photos: [IMG.photo1, IMG.photo2],
+    occasionsEyebrow: "Pour les occasions qui comptent",
+    occasionsTitle: "Un lieu fait pour se retrouver",
+    occasionsBody: [
+      "Des couples se marient dans la cour quand la lumière devient dorée. Des familles prennent toute la maison pour un été, les enfants courant entre les oliviers. Des entreprises y amènent leurs équipes pour ralentir et réfléchir sereinement quelques jours.",
+      "Quelle que soit l'occasion, la masseria l'accueille avec douceur : assez d'espace pour chacun, assez de calme pour les moments qui comptent.",
+    ],
+    fullImg: IMG.full,
+    bookingEyebrow: "Demandez l'usage exclusif",
+    bookingTitle: "Réservez toute la masseria",
+    bookingText:
+      "Indiquez-nous vos dates, le nombre de personnes et le type de rencontre que vous imaginez. Nous préparerons une proposition sur mesure pour le domaine en exclusivité.",
+    bookingCta: "Faire une demande",
+  },
 }

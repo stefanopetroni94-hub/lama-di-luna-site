@@ -53,6 +53,20 @@ const D = {
     coratina:
       "La Coratina è l'oliva simbolo della Puglia, nata intorno a Corato, tra Bari e l'Alta Murgia, e molto coltivata nella zona di Andria. Dà un olio extravergine intenso e verde, ricco di polifenoli, con note di erba fresca, foglia di pomodoro e mandorla, e un amaro e un piccante spiccati.",
   },
+  fr: {
+    primitivo:
+      "Le Primitivo est l'un des grands cépages rouges des Pouilles, cultivé surtout dans le sud chaud et ensoleillé de la région, autour de Manduria et de Gioia del Colle. Il mûrit tôt et donne des vins profonds et généreux, aux notes de cerise noire bien mûre, de prune et d'épices, avec un corps souple et plein et une finale longue et chaleureuse.",
+    troia:
+      "Le Nero di Troia, aussi appelé Uva di Troia, est un cépage autochtone des Pouilles, enraciné dans le nord de la région, autour de Foggia, dans le Tavoliere et sur les collines de Castel del Monte, près de l'Alta Murgia. Il donne des rouges structurés et élégants, aux tanins fermes, aux notes de cerise noire, de violette et de poivre, avec un beau potentiel de garde.",
+    rose:
+      "Le même cépage Nero di Troia, vendangé tôt et vinifié comme un blanc, donne un rosé frais et vif, couleur corail, aux arômes de fraise des bois, de grenade et de fleurs. Il vient des mêmes terres du nord des Pouilles que le rouge et se boit jeune et bien frais.",
+    fiano:
+      "Le Fiano est un ancien cépage blanc du sud de l'Italie, né en Campanie et aujourd'hui cultivé aussi dans les Pouilles, où les journées chaudes et les nuits fraîches lui gardent sa fraîcheur. Il donne un blanc parfumé et minéral, aux notes de fleurs blanches, d'agrumes, de poire et une touche de noisette grillée.",
+    carolea:
+      "La Carolea est une variété d'olive répandue dans le sud de l'Italie, présente aussi dans les Pouilles. Elle donne une huile d'olive extra vierge équilibrée et harmonieuse, fruitée et douce, avec une attaque suave, des notes d'amande et d'artichaut, et seulement une légère amertume et un piquant agréable.",
+    coratina:
+      "La Coratina est l'olive emblématique des Pouilles, née autour de Corato, entre Bari et l'Alta Murgia, et très cultivée dans la région d'Andria. Elle donne une huile d'olive extra vierge intense et verte, riche en polyphénols, aux notes d'herbe fraîche, de feuille de tomate et d'amande, avec une amertume et un piquant marqués.",
+  },
 }
 
 const PH = {
@@ -118,5 +132,29 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "orcio", name: "Orcio di Ceramica con Olio Extravergine d'Oliva", meta: "Un orcio di ceramica pieno del nostro olio extravergine d'oliva. 350 g.", price: "€32", img: PH.orcio, contain: true },
     ],
     note: "Questo è uno shop di anteprima. Ordini e pagamento sicuro possono essere collegati a Stripe quando sarai pronto a vendere online.",
+  },
+  fr: {
+    eyebrow: "La Boutique",
+    title: "Un peu du domaine, livré à votre table",
+    intro:
+      "Commandez un peu de Lama di Luna pour garder les Pouilles et l'Alta Murgia près de vous, où que vous soyez.",
+    addLabel: "Ajouter",
+    addedLabel: "Ajouté",
+    products: [
+      { id: "primitivo", name: "Primitivo", meta: "Vin rouge des Pouilles.", desc: D.fr.primitivo, price: "€29", img: PH.primitivo, contain: true },
+      { id: "nero-di-troia", name: "Nero di Troia", meta: "Vin rouge des Pouilles.", desc: D.fr.troia, price: "€37", img: PH.troia, contain: true },
+      { id: "nero-di-troia-rose", name: "Nero di Troia Rosé", meta: "Vin rosé des Pouilles.", desc: D.fr.rose, price: "€25", img: PH.rose, contain: true },
+      { id: "fiano", name: "Fiano", meta: "Vin blanc.", desc: D.fr.fiano, price: "€25", img: PH.fiano, contain: true },
+      { id: "carolea-500", name: "Huile d'Olive Extra Vierge, Carolea", meta: "Variété Carolea. 500 ml.", desc: D.fr.carolea, price: "€23", img: PH.carolea500, contain: true },
+      { id: "coratina-500", name: "Huile d'Olive Extra Vierge, Coratina", meta: "Variété Coratina. 500 ml.", desc: D.fr.coratina, price: "€23", img: PH.coratina500, contain: true },
+      { id: "carolea-3l", name: "Huile d'Olive Extra Vierge, Carolea", meta: "Variété Carolea. Bag-in-box, 3 litres.", desc: D.fr.carolea, price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "151% auto", pos: "50% 95%" } },
+      { id: "coratina-3l", name: "Huile d'Olive Extra Vierge, Coratina", meta: "Variété Coratina. Bag-in-box, 3 litres.", desc: D.fr.coratina, price: "€66", img: PH.coratina3l, contain: true, landscape: true, zoom: { size: "158% auto", pos: "50% 100%" } },
+      { id: "shampoo", name: "Shampooing", meta: "De la ligne de bain de la masseria.", price: "€15", img: PH.shampoo, contain: true },
+      { id: "conditioner", name: "Après-shampooing", meta: "De la ligne de bain de la masseria.", price: "€16", img: PH.conditioner, contain: true },
+      { id: "hand-body-soap", name: "Gel Lavant Mains et Corps", meta: "De la ligne de bain de la masseria.", price: "€15", img: PH.wash, contain: true },
+      { id: "bath-set", name: "Coffret Bain : Gel Lavant, Shampooing et Après-shampooing", meta: "", price: "€40", img: PH.wash, imgs: [PH.wash, PH.shampoo, PH.conditioner], contain: true },
+      { id: "orcio", name: "Orcio en Céramique avec Huile d'Olive Extra Vierge", meta: "Un orcio en céramique rempli de notre huile d'olive extra vierge. 350 g.", price: "€32", img: PH.orcio, contain: true },
+    ],
+    note: "Ceci est une boutique de démonstration. Les commandes et le paiement sécurisé pourront être reliés à Stripe quand vous serez prêt à vendre en ligne.",
   },
 }

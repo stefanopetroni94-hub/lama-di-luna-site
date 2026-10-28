@@ -35,7 +35,7 @@ export type ContactContent = {
   distances: Distance[]
 }
 
-export const contact: Record<"en" | "it", ContactContent> = {
+export const contact: Record<"en" | "it" | "fr", ContactContent> = {
   en: {
     eyebrow: "Get in touch",
     title: "Contact us",
@@ -120,6 +120,51 @@ export const contact: Record<"en" | "it", ContactContent> = {
       { place: "Aeroporto di Brindisi (BDS)", distance: "2 h 10 min" },
       { place: "Stazione di Andria", distance: "25 min" },
       { place: "Trani e la costa adriatica", distance: "35 min" },
+      { place: "Castel del Monte", distance: "20 min" },
+      { place: "Alberobello (trulli)", distance: "1 h 30 min" },
+      { place: "Polignano a Mare", distance: "1 h 20 min" },
+      { place: "Matera", distance: "1 h 20 min" },
+    ],
+  },
+  fr: {
+    eyebrow: "Contactez-nous",
+    title: "Contactez-nous",
+    intro:
+      "Nous répondons à la plupart des messages en quelques heures, en français, italien, anglais et allemand. WhatsApp est le moyen le plus rapide. Appels bienvenus entre 8 h et 21 h, heure d'Europe centrale.",
+    phoneLabel: "Téléphone",
+    phoneValue: "+39 0883 569 505",
+    phoneSmall: "Réception, 8:00–21:00 CET",
+    callLabel: "Appeler",
+    whatsappLabel: "WhatsApp",
+    emailLabel: "E-mail",
+    emailValue: "info@lamadiluna.com",
+    emailSmall: "Pour les demandes plus longues, les séjours de groupe, la presse",
+    addressLabel: "Adresse",
+    addressValue: "Lama di Luna S.N.C.\nC.da Lama di Luna\n76123 Andria (BT), Italia",
+    addressSmall: "Dans le Parc national de l'Alta Murgia · à 20 min de Castel del Monte",
+    socialLabel: "Réseaux sociaux",
+    formEyebrow: "Écrivez-nous",
+    formTitle: "Parlez-nous de votre séjour",
+    nameLabel: "Prénom",
+    surnameLabel: "Nom",
+    privacyLabel: "J'ai lu et j'accepte la Privacy Policy",
+    emailFieldLabel: "E-mail",
+    phoneFieldLabel: "Téléphone (facultatif)",
+    datesLabel: "Dates (facultatif)",
+    messageLabel: "Message",
+    sendLabel: "Envoyer le message",
+    sendNote: "Nous répondons généralement en quelques heures",
+    successMessage: "Merci, nous vous répondrons dans quelques heures.",
+    findLabel: "Nous trouver",
+    mapEyebrow: "Dans l'Alta Murgia",
+    mapTitle: "À une heure de Bari, à 20 minutes de Castel del Monte",
+    mapBody:
+      "Une voiture de location est le moyen le plus simple de nous rejoindre. Nous pouvons aussi organiser un transfert privé depuis n'importe quel aéroport ou gare, écrivez-nous à l'avance.",
+    distances: [
+      { place: "Aéroport de Bari (BRI)", distance: "55 min" },
+      { place: "Aéroport de Brindisi (BDS)", distance: "2 h 10 min" },
+      { place: "Gare d'Andria", distance: "25 min" },
+      { place: "Trani et la côte adriatique", distance: "35 min" },
       { place: "Castel del Monte", distance: "20 min" },
       { place: "Alberobello (trulli)", distance: "1 h 30 min" },
       { place: "Polignano a Mare", distance: "1 h 20 min" },

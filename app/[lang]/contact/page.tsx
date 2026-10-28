@@ -68,7 +68,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
           />
         </div>
         <MapCard
-          title={lang === "it" ? "Posizione e contatti" : "Location & contact"}
+          title={{ en: "Location & contact", it: "Posizione e contatti", fr: "Adresse et contact" }[lang]}
           address={c.addressValue}
           phone={c.phoneValue}
           email={c.emailValue}

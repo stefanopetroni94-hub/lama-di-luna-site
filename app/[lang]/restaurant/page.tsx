@@ -31,7 +31,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         </div>
       </section>
 
-      <section className="restaurant-media" aria-label={lang === "it" ? "Sapori di Lama di Luna" : "Flavours of Lama di Luna"}>
+      <section className="restaurant-media" aria-label={{ en: "Flavours of Lama di Luna", it: "Sapori di Lama di Luna", fr: "Saveurs de Lama di Luna" }[lang]}>
         <div
           className="restaurant-media-video-wrap"
           style={{ backgroundImage: `url('${c.mediaPhotos[0]}')` }}
@@ -45,7 +45,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
             loop
             playsInline
             preload="metadata"
-            aria-label={lang === "it" ? "Preparazione in cucina a Lama di Luna" : "Food preparation at Lama di Luna"}
+            aria-label={{ en: "Food preparation at Lama di Luna", it: "Preparazione in cucina a Lama di Luna", fr: "Préparation en cuisine à Lama di Luna" }[lang]}
           />
         </div>
         <div className="restaurant-media-images">
@@ -55,9 +55,11 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
               style={{ backgroundImage: `url('${photo}')` }}
               role="img"
               aria-label={
-                lang === "it"
-                  ? `Cucina di Lama di Luna, immagine ${index + 1}`
-                  : `Lama di Luna food, image ${index + 1}`
+                {
+                  en: `Lama di Luna food, image ${index + 1}`,
+                  it: `Cucina di Lama di Luna, immagine ${index + 1}`,
+                  fr: `Cuisine de Lama di Luna, image ${index + 1}`,
+                }[lang]
               }
               key={photo}
             />
@@ -77,7 +79,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         <div
           className="full-photo"
           role="img"
-          aria-label={lang === "it" ? "Ospiti che brindano sulla veranda al tramonto" : "Guests toasting on the veranda at sunset"}
+          aria-label={{ en: "Guests toasting on the veranda at sunset", it: "Ospiti che brindano sulla veranda al tramonto", fr: "Des hôtes trinquent sur la véranda au coucher du soleil" }[lang]}
           style={{
             backgroundImage: "url('/whatsapp/20261014_050216_3074277952905624.jpg')",
             backgroundPosition: "40% 55%",
@@ -108,7 +110,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         <div
           className="story-split-img story-split-img--rotated"
           role="img"
-          aria-label={lang === "it" ? "Focaccia e spritz sul tavolo di pietra" : "Focaccia and spritz on the stone table"}
+          aria-label={{ en: "Focaccia and spritz on the stone table", it: "Focaccia e spritz sul tavolo di pietra", fr: "Focaccia et spritz sur la table en pierre" }[lang]}
         >
           <div
             className="story-split-rotate"
@@ -118,7 +120,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Aperitivo al tramonto sulla veranda" : "Sunset aperitivo on the veranda"}
+          aria-label={{ en: "Sunset aperitivo on the veranda", it: "Aperitivo al tramonto sulla veranda", fr: "Apéritif au coucher du soleil sur la véranda" }[lang]}
           style={{
             backgroundImage: "url('/whatsapp/20261014_043519_1700647744957278.jpg')",
             backgroundPosition: "center 55%",

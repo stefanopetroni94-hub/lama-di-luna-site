@@ -47,7 +47,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Un raccoglitore al lavoro tra gli ulivi" : "A harvester at work among the olive trees"}
+          aria-label={{ en: "A harvester at work among the olive trees", it: "Un raccoglitore al lavoro tra gli ulivi", fr: "Un cueilleur au travail parmi les oliviers" }[lang]}
           style={{
             backgroundImage: "url('/whatsapp/20261014_035803_4381306318848943.jpg')",
             backgroundPosition: "45% center",
@@ -56,7 +56,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Olive raccolte sulle reti" : "Olives gathered on the nets"}
+          aria-label={{ en: "Olives gathered on the nets", it: "Olive raccolte sulle reti", fr: "Olives récoltées sur les filets" }[lang]}
           style={{
             backgroundImage: "url('/whatsapp/20261013_182639_39141126622198536.jpg')",
             backgroundPosition: "center 50%",
@@ -93,7 +93,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Grappoli d'uva durante la vendemmia" : "Grapes during the harvest"}
+          aria-label={{ en: "Grapes during the harvest", it: "Grappoli d'uva durante la vendemmia", fr: "Grappes de raisin pendant les vendanges" }[lang]}
           style={{
             backgroundImage: "url('/whatsapp/20261015_133041_2040482263307048.jpg')",
             backgroundPosition: "center 60%",
@@ -102,7 +102,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Chiocciole su un ramo d'ulivo" : "Snails on an olive branch"}
+          aria-label={{ en: "Snails on an olive branch", it: "Chiocciole su un ramo d'ulivo", fr: "Escargots sur une branche d'olivier" }[lang]}
           style={{
             backgroundImage: "url('/whatsapp/20261013_154515_1100237206085509.jpg')",
             backgroundPosition: "65% center",

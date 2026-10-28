@@ -39,7 +39,7 @@ const P = {
   alberobello: "https://res.cloudinary.com/amenitiz/image/upload/w_1000,q_auto:best,f_auto,c_fill/v1747243212/wj7lc1n5p7gpmqnwredd.jpg",
 }
 
-export const oliveHarvest: Record<"en" | "it", OliveHarvestContent> = {
+export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
   en: {
     counter: "Experience 01 / 08",
     breadcrumbRoot: "Experiences",
@@ -150,6 +150,62 @@ export const oliveHarvest: Record<"en" | "it", OliveHarvestContent> = {
       { img: P.cooking, name: "Orecchiette e Focaccia", meta: "Corso di cucina · mezza giornata, su richiesta" },
       { img: P.dawn, name: "Passeggiata all'Alba tra gli Ulivi", meta: "Alba · 90 minuti" },
       { img: P.alberobello, name: "Alberobello e i Trulli", meta: "Gita · 1h 10 min di macchina" },
+    ],
+  },
+  fr: {
+    counter: "Expérience 01 / 08",
+    breadcrumbRoot: "Expériences",
+    breadcrumbCurrent: "Récolte des olives",
+    heroEyebrow: "Octobre à novembre · expérience au domaine",
+    title: "La Récolte des Olives",
+    statementTitle: "Marchez dans les oliveraies, assistez à la pression à froid, goûtez la première huile de l'année",
+    statementBody: [
+      "De fin octobre à mi-novembre, les 210 hectares d'oliveraies du domaine entrent en récolte. Les cueilleurs avancent le long des rangs dès le lever du soleil, les filets sont étendus sous les arbres, les cagettes se remplissent et partent au moulin à froid avant que la chaleur du jour n'atteigne les fruits. La première huile pressée chaque jour est non filtrée, d'un vert vif, légèrement amère : le goût le plus sincère de la cuisine des Pouilles.",
+      "Rejoignez la récolte le temps d'une matinée. Vous marchez dans les oliveraies avec Pietro ou l'un des hommes du domaine. Vous apprenez pourquoi on cueille à la main sur ces arbres, pourquoi la pression à froid compte, pourquoi la première huile est versée trouble. Puis le petit déjeuner : pain chaud, huile tout juste pressée, sel, un verre de vin.",
+    ],
+    facts: [
+      { label: "Saison", value: "Fin oct. à mi-nov." },
+      { label: "Durée", value: "4 heures" },
+      { label: "Groupe", value: "2 à 8 personnes" },
+      { label: "Langue", value: "EN · IT · DE" },
+      { label: "Difficulté", value: "Marche facile" },
+      { label: "À partir de", value: "€85 / personne" },
+    ],
+    curvedLabel: "La Matinée",
+    timeline: [
+      { time: "07:30", title: "Café dans la cour", body: "Espresso, pâtisseries aux amandes du village et une courte présentation de l'oliveraie du jour. Nous vous donnons un panier et des chaussures de marche si vous n'en avez pas." },
+      { time: "08:00", title: "Dans les oliveraies", body: "Une marche de 15 minutes parmi des oliviers de 500 ans jusqu'à la parcelle récoltée ce jour-là. La cueillette à la main commence. Vous verrez les râteaux traditionnels des Pouilles qui font tomber doucement les olives mûres sur les filets, jamais gaulées, jamais secouées à la machine." },
+      { time: "09:30", title: "La pression à froid", body: "Les premières cagettes du matin partent au moulin du domaine. Vous verrez les olives entrer, la pâte sortir, la centrifugeuse séparer l'huile de l'eau. Quarante-cinq minutes de l'oliveraie à l'huile." },
+      { time: "10:30", title: "La première dégustation", body: "Un petit déjeuner sous la loggia : focaccia chaude, sel, l'huile tout juste pressée versée dessus, un verre de Negroamaro. Nous parlons de ce que vous avez goûté, poivré, herbacé, amandé, et de ce qui montre qu'elle a été pressée il y a moins d'une heure." },
+      { time: "11:30", title: "Vous repartez avec une bouteille", body: "Chaque hôte repart avec une bouteille de 500 ml de l'huile du matin, étiquetée à la date du jour. L'huile d'olive extra vierge la plus fraîche que vous rapporterez jamais chez vous." },
+    ],
+    photos: [P.olive, P.wine],
+    includedEyebrow: "Inclus",
+    includedTitle: "Ce qui est compris",
+    included: [
+      { text: "Matinée guidée d'une demi-journée, de l'aube à la fin de matinée" },
+      { text: "Promenade dans les oliveraies historiques avec Pietro ou le responsable du domaine" },
+      { text: "Visite du moulin à froid du domaine, en saison" },
+      { text: "Petit déjeuner dégustation : focaccia, huile, vin, pâtisseries aux amandes" },
+      { text: "Une bouteille de 500 ml de l'huile pressée le matin, à emporter" },
+      { text: "Photos autorisées partout" },
+      { text: "Transport aller et retour à la masseria (nous conseillons de séjourner chez nous)", not: true },
+      { text: "Déjeuner (nous pouvons l'organiser à part)", not: true },
+    ],
+    priceLabel: "Prix",
+    priceAmount: "€85",
+    priceUnit: "par personne",
+    priceNote: "Gratuit pour les enfants de moins de 12 ans accompagnés d'un adulte. Minimum 2 personnes. Maximum 8 par séance pour une expérience intime.",
+    bookingEyebrow: "D'octobre à novembre uniquement",
+    bookingTitle: "Organisez votre matinée de récolte",
+    bookingText: "Idéal avec un séjour de 2 ou 3 nuits pendant la saison de la récolte. Indiquez-nous vos dates et nous vous confirmerons la disponibilité et le jour de cueillette le plus probable.",
+    bookingCta: "Contactez-nous",
+    otherEyebrow: "Continuer",
+    otherTitle: "Autres Expériences",
+    other: [
+      { img: P.cooking, name: "Orecchiette et Focaccia", meta: "Cours de cuisine · demi-journée, sur demande" },
+      { img: P.dawn, name: "Promenade à l'aube dans les oliveraies", meta: "Lever du soleil · 90 minutes" },
+      { img: P.alberobello, name: "Alberobello et les Trulli", meta: "Excursion · 1h 10 min en voiture" },
     ],
   },
 }

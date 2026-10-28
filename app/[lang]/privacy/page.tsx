@@ -6,7 +6,7 @@ import { contact } from "@/lib/content/contact"
 
 type Section = { title: string; body: string[] }
 
-const TEXT: Record<"en" | "it", { title: string; updated: string; sections: Section[] }> = {
+const TEXT: Record<"en" | "it" | "fr", { title: string; updated: string; sections: Section[] }> = {
   en: {
     title: "Privacy Policy",
     updated: "Information on the processing of personal data, pursuant to Articles 13 and 14 of EU Regulation 2016/679 (GDPR).",
@@ -91,6 +91,48 @@ const TEXT: Record<"en" | "it", { title: string; updated: string; sections: Sect
       },
     ],
   },
+  fr: {
+    title: "Privacy Policy",
+    updated: "Information sur le traitement des données personnelles, conformément aux articles 13 et 14 du Règlement UE 2016/679 (RGPD).",
+    sections: [
+      {
+        title: "Responsable du traitement",
+        body: [
+          "Le responsable du traitement est Lama di Luna S.N.C., C.da Lama di Luna, 76123 Andria (BT), Italie. Vous pouvez nous écrire à l'adresse e-mail indiquée sur la page Contact.",
+        ],
+      },
+      {
+        title: "Les données que nous collectons",
+        body: [
+          "Lorsque vous nous écrivez avec le formulaire de contact, nous collectons les données que vous saisissez : prénom, nom, adresse e-mail et contenu du message. Nous ne demandons rien de plus que ce qui nous sert pour vous répondre.",
+        ],
+      },
+      {
+        title: "Pourquoi nous utilisons vos données et sur quelle base",
+        body: [
+          "Nous utilisons vos données uniquement pour lire votre demande, y répondre et lui donner suite, par exemple en vous envoyant des informations sur un séjour. La base juridique est votre consentement, donné en cochant la case avant l'envoi du formulaire, et la nécessité de répondre à votre demande avant une éventuelle réservation (article 6, paragraphe 1, points a et b du RGPD).",
+        ],
+      },
+      {
+        title: "Durée de conservation",
+        body: [
+          "Nous conservons vos données le temps nécessaire pour répondre à votre demande et gérer les échanges qui en découlent. Si une réservation suit, nous conservons les données exigées par la loi à des fins comptables et fiscales.",
+        ],
+      },
+      {
+        title: "Qui reçoit vos données",
+        body: [
+          "Vos données sont traitées par notre équipe et, si nécessaire, par des prestataires techniques qui nous aident à gérer le site et la messagerie, et qui agissent selon nos instructions. Nous ne vendons pas vos données et ne les utilisons pas pour de la publicité. Si un prestataire est établi hors de l'Union européenne, nous nous appuyons sur les garanties prévues par le RGPD.",
+        ],
+      },
+      {
+        title: "Vos droits",
+        body: [
+          "Vous pouvez nous demander à tout moment l'accès à vos données, leur rectification, leur effacement, la limitation du traitement, une copie de vos données dans un format portable, ou vous opposer au traitement. Vous pouvez retirer votre consentement à tout moment, sans effet sur le traitement déjà effectué. Vous avez aussi le droit d'introduire une réclamation auprès de l'autorité italienne de protection des données (Garante per la protezione dei dati personali, www.garanteprivacy.it).",
+        ],
+      },
+    ],
+  },
 }
 
 export default async function PrivacyPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -118,7 +160,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ lang: 
           </section>
         ))}
         <section>
-          <h2>{lang === "it" ? "Contatti" : "Contact"}</h2>
+          <h2>{{ en: "Contact", it: "Contatti", fr: "Contact" }[lang]}</h2>
           <p>
             {c.addressValue.replace(/\n/g, ", ")} — <a href={`mailto:${c.emailValue}`}>{c.emailValue}</a>
           </p>

@@ -32,7 +32,7 @@ const IMG = {
   matera: "https://res.cloudinary.com/amenitiz/image/upload/w_1200,q_auto:best,f_auto,c_fill/v1679928110/vw8ib8dqkcchw9nqco39.jpg",
 }
 
-export const experiences: Record<"en" | "it", ExperiencesContent> = {
+export const experiences: Record<"en" | "it" | "fr", ExperiencesContent> = {
   en: {
     eyebrow: "Ways to spend a day",
     title: "Experiences",
@@ -91,6 +91,36 @@ export const experiences: Record<"en" | "it", ExperiencesContent> = {
       { slug: "#", img: "/whatsapp/20261015_141335_1635279478124485.jpg", pos: "55% center", num: "11 ·1h 30 min di macchina", name: "Alberobello e i Trulli", meta: "I trulli dal tetto conico della Valle d'Itria — la città UNESCO e i borghi più piccoli che pochi visitatori trovano." },
       { slug: "#", img: IMG.polignano, num: "12 ·1 h 20 min di macchina", name: "Polignano a Mare", meta: "Scogliere sull'Adriatico, il bar nella grotta, il lungo pranzo affacciato sul mare. Il borgo di mare più cinematografico di Puglia." },
       { slug: "#", img: "/whatsapp/20261015_141242_1113590001072954.jpg", pos: "62% center", num: "13 ·1h 20 min di macchina", name: "Matera", meta: "La città di pietra, i sassi, le chiese rupestri. Dove ha girato Stanley Tucci; dove ha girato Mel Gibson; dove non dimenticherai mai di essere stato." },
+    ],
+  },
+  fr: {
+    eyebrow: "Des façons de passer une journée",
+    title: "Expériences",
+    intro:
+      "La visite des oliviers, un cours de cuisine, des massages relaxants, une balade à vélo, et puis les trulli, les falaises, la ville troglodyte, le château sur la colline.",
+    onEstateLabel: "Au domaine",
+    inRegionLabel: "Dans la région",
+    arrangeEyebrow: "Dites-nous ce qui vous ferait plaisir",
+    arrangeTitle: "Nous organisons la journée",
+    arrangeText:
+      "Toutes les expériences sont organisées sur demande. Beaucoup dépendent de la météo ou de la saison, certaines demandent quelques jours de préavis. Écrivez-nous avec vos dates et ce qui vous attire.",
+    arrangeCta: "Contactez-nous",
+    onEstate: [
+      { slug: "olive-harvest", img: IMG.olive, num: "01 · Octobre à novembre", name: "La Visite des Oliviers", meta: "Marchez dans les oliveraies à l'aube, assistez à la pression à froid, goûtez la première huile de l'année sur du pain chaud." },
+      { slug: "#", img: IMG.cooking, num: "02 · Demi-journée, sur demande", name: "Cours de Cuisine", meta: "Un cours de cuisine avec notre cuisinière : orecchiette et focaccia des Pouilles, faites à la main dans la cuisine de la masseria." },
+      { slug: "#", img: IMG.wine, num: "03 · Sur réservation", name: "Massages Relaxants", meta: "Massages sur rendez-vous, dans le calme de la masseria." },
+      { slug: "#", img: IMG.dawn, num: "04 · Demi-journée, sur demande", name: "Balade à Vélo", meta: "Une balade à travers les oliveraies et les petites routes de campagne autour de la masseria." },
+      { slug: "#", img: IMG.wine, num: "05 · Sur réservation", name: "Salle de Cinéma", meta: "Une soirée dans la salle de cinéma de la masseria, sur réservation." },
+      { slug: "#", img: IMG.olive, num: "06 · Sur réservation", name: "Séances de Yoga", meta: "Séances de yoga à la masseria, sur réservation." },
+      { slug: "#", img: "/pool-sunset.jpg", num: "07 · En saison", name: "La Piscine à Débordement", meta: "Un moment au bord de la piscine à débordement de la masseria, face aux oliveraies." },
+      { slug: "#", img: IMG.dawn, num: "08 · Sur demande", name: "Promenade sur le Domaine", meta: "Une promenade à travers les oliveraies, les vignes et la Murgia sauvage autour de la masseria." },
+      { slug: "#", img: IMG.olive, num: "09 · Sur réservation", name: "Practice de Golf", meta: "Practice de golf à la masseria, sur réservation." },
+    ],
+    inRegion: [
+      { slug: "#", img: "/whatsapp/20261015_141233_1132577716005342.jpg", num: "10 ·20 min en voiture", name: "Castel del Monte", meta: "Le château octogonal de Frédéric II, du XIIIe siècle, site UNESCO sur la colline voisine. En voiture ou avec un transfert organisé." },
+      { slug: "#", img: "/whatsapp/20261015_141335_1635279478124485.jpg", pos: "55% center", num: "11 ·1h 30 min en voiture", name: "Alberobello et les Trulli", meta: "Les trulli au toit conique de la Valle d'Itria : la ville classée UNESCO et les petits hameaux que peu de visiteurs découvrent." },
+      { slug: "#", img: IMG.polignano, num: "12 ·1 h 20 min en voiture", name: "Polignano a Mare", meta: "Des falaises sur l'Adriatique, le bar dans la grotte, le long déjeuner face à la mer. Le village de bord de mer le plus cinématographique des Pouilles." },
+      { slug: "#", img: "/whatsapp/20261015_141242_1113590001072954.jpg", pos: "62% center", num: "13 ·1h 20 min en voiture", name: "Matera", meta: "La ville troglodyte, les sassi, les églises rupestres. Là où Stanley Tucci a tourné, là où Mel Gibson a tourné, là où vous n'oublierez jamais être passé." },
     ],
   },
 }

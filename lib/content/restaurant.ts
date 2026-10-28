@@ -147,4 +147,56 @@ export const restaurant: Record<Locale, RestaurantContent> = {
       "La cena si prepara su ordinazione e i posti sono limitati, perciò chiediamo di prenotare entro il pomeriggio. Indicaci la sera e ogni esigenza alimentare e apparecchieremo per te.",
     bookingCta: "Prenota una tavola",
   },
+  fr: {
+    counter: "The Veranda",
+    breadcrumbRoot: "Accueil",
+    breadcrumbCurrent: "Restaurant",
+    heroEyebrow: "À table à la masseria",
+    title: "The Veranda",
+    statementTitle: "Nous servons ce que le domaine et la région ont donné ce jour-là",
+    statementBody: [
+      "The Veranda est le restaurant de la ferme à la table de Lama di Luna. Le dîner est servi sous la voûte de l'ancien réfectoire, ou dehors sur la véranda les soirs d'été, face aux oliveraies quand la lumière baisse. Pas de longue carte : le menu est unique et change chaque jour, composé avec ce que nous donne la campagne et avec les meilleurs domaines agricoles et producteurs locaux des Pouilles. Notre cuisine suit la tradition de la Murgia et des Pouilles, celle de la vraie cuisine italienne : peu d'ingrédients, traités avec respect. Le restaurant est exclusif et réservé aux hôtes qui séjournent à Lama di Luna, pour préserver le calme et le silence du lieu pour ceux qui choisissent d'y dormir.",
+    ],
+    facts: [
+      { label: "Petit déjeuner", value: "8:30 – 10:00" },
+      { label: "Déjeuner et dîner", value: "Sur demande, à partir de 13:00 et de 20:00" },
+      { label: "Places", value: "Sur réservation et sur demande, pour les hôtes qui séjournent à Lama di Luna" },
+      { label: "Régimes", value: "Végétarien et végan sur demande" },
+    ],
+    mediaVideo: "/restaurant/food-making.mp4",
+    mediaPhotos: [IMG.dinner, IMG.bruschetta],
+    curvedLabel: "À table",
+    veranda:
+      "La Véranda est un lieu privilégié pour admirer les couchers de soleil, puis dîner tous ensemble à vingt heures. Parfois, l'été, nous faisons la pizza ensemble sur la véranda, au feu de bois, comme une communauté, comme l'ont fait pendant des siècles les habitants de Lama di Luna.",
+    menuEyebrow: "Un soir pour exemple",
+    menuTitle: "Ce que donne la journée",
+    menuNote: "Le menu change chaque jour. Voici la table d'un soir, la vôtre suivra la saison.",
+    courses: [
+      {
+        name: "Pour commencer",
+        desc: "Focaccia chaude et taralli, notre huile d'olive extra vierge, ricotta fraîche, légumes du potager marinés.",
+      },
+      {
+        name: "Primo",
+        desc: "Orecchiette aux fanes de navet et chapelure grillée, ou purée de fèves à la chicorée sauvage.",
+      },
+      {
+        name: "Plat",
+        desc: "Agneau de la Murgia cuit lentement aux amandes et aux herbes, ou légumes de saison du potager rôtis au four.",
+      },
+    ],
+    photos: [IMG.photo1, IMG.photo2],
+    sourcingEyebrow: "Du domaine et de la région",
+    sourcingTitle: "Cultivé, pressé et cuisiné entre les mêmes murs",
+    sourcingBody: [
+      "À Lama di Luna, masseria historique des Pouilles nichée dans les oliveraies de l'Alta Murgia, notre huile d'olive extra vierge est pressée à froid à partir de nos oliveraies biologiques. Les amandes sont récoltées à la fin de l'été, et le raisin du vin que nous servons est toujours cultivé et vinifié sur ces terres. Nous plantons et entretenons un grand potager de tomates, courgettes, aubergines, piments, basilic et toutes les herbes méditerranéennes, que nous cueillons tout l'été pour préparer les plats de notre cuisine.",
+      "Ce que nous ne cultivons pas, nous le prenons selon la saison chez de petits producteurs de la région en qui nous avons confiance, avec des ingrédients de saison et de proximité : ricotta des fermes voisines, saucisse traditionnelle d'une coopérative de Minervino, mozzarella et stracciatella, fromages d'une fromagerie d'Andria et farine d'un moulin de la Murgia. Rien ne voyage loin pour arriver sur la table.",
+    ],
+    sourcingImg: IMG.pasta,
+    bookingEyebrow: "Réservez votre séjour",
+    bookingTitle: "Dînez avec nous",
+    bookingText:
+      "Le dîner est préparé à la demande et les places sont limitées, nous demandons donc de réserver avant l'après-midi. Indiquez-nous le soir choisi et vos éventuels besoins alimentaires, et nous dresserons votre couvert.",
+    bookingCta: "Réserver une table",
+  },
 }

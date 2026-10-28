@@ -61,7 +61,7 @@ export default async function ProductPage({
 
         <div className="shop-detail-info">
           <Link href={`/${lang}/shop`} className="room-back">
-            {lang === "it" ? "← Tutto lo shop" : "← All products"}
+            {{ en: "← All products", it: "← Tutto lo shop", fr: "← Tous les produits" }[lang]}
           </Link>
           <h1>{product.name}</h1>
           <div className="shop-detail-price">{product.price}</div>
@@ -71,7 +71,7 @@ export default async function ProductPage({
           <div className="shop-detail-actions">
             <AddToCart label={c.addLabel} addedLabel={c.addedLabel} />
             <Link href={`/${lang}/contact`} className="book-stay-btn">
-              {lang === "it" ? "Acquista ora" : "Buy now"}
+              {{ en: "Buy now", it: "Acquista ora", fr: "Acheter" }[lang]}
             </Link>
           </div>
         </div>

@@ -27,7 +27,7 @@ export type BookContent = {
   trust: Trust[]
 }
 
-export const book: Record<"en" | "it", BookContent> = {
+export const book: Record<"en" | "it" | "fr", BookContent> = {
   en: {
     eyebrow: "Best-rate direct booking",
     title: "Reserve your stay",
@@ -115,6 +115,51 @@ export const book: Record<"en" | "it", BookContent> = {
       { name: "Stanley Tucci", note: "Searching for Italy" },
       { name: "Lonely Planet" },
       { name: "AIAB · ICEA", note: "Certificato biologico" },
+      { name: "Tripadvisor", note: "Travellers' Choice" },
+    ],
+  },
+  fr: {
+    eyebrow: "Réservation directe au meilleur prix",
+    title: "Réservez votre séjour",
+    intro:
+      "Réservez directement chez nous : vous aurez toujours le meilleur tarif disponible, et les petites attentions que seule la masseria peut vous offrir à votre arrivée.",
+    checkIn: "Arrivée",
+    checkOut: "Départ",
+    guests: "Personnes",
+    guestsValue: "2 adultes",
+    addDate: "Ajouter une date",
+    searchCta: "Vérifier la disponibilité",
+    perksEyebrow: "Pourquoi réserver en direct",
+    perksTitle: "Quatre petites choses que vous n'aurez que chez nous",
+    perksIntro: "Aucune n'est disponible si vous réservez via Booking.com, Expedia ou toute autre OTA.",
+    perks: [
+      { icon: "star", title: "Meilleur tarif garanti", body: "Si vous trouvez un prix plus bas ailleurs dans les 24 heures suivant la réservation, nous l'alignons." },
+      { icon: "cup", title: "Apéritif de bienvenue", body: "Vin du domaine et petites assiettes dans la cour à votre arrivée." },
+      { icon: "clock", title: "Départ tardif", body: "Jusqu'à 13 h lorsque les réservations du lendemain le permettent, nous vous le confirmons au petit déjeuner." },
+      { icon: "olive", title: "Dégustation d'huile d'olive", body: "Une dégustation de 20 minutes des huiles extra vierges de l'année, le premier soir." },
+    ],
+    roomsLabel: "Chambres disponibles",
+    widgetPill: "Emplacement du moteur",
+    widgetTitle: "Le module de réservation Little Hotelier se charge ici",
+    widgetBody:
+      "Une fois le compte Little Hotelier activé, ce bloc est remplacé par le module intégré, ou toute la section redirige vers book.lamadiluna.com à l'envoi. Les deux parcours se terminent sur /booking/thank-you sur ce domaine afin de déclencher la conversion Google Ads + GA4.",
+    widgetNote: "Les notes pour les développeurs sont dans le commentaire HTML <head>.",
+    faqEyebrow: "Avant de réserver",
+    faqTitle: "Des réponses sincères",
+    faqs: [
+      { q: "Quelles sont vos conditions d'annulation ?", a: "Annulation gratuite jusqu'à 7 jours avant l'arrivée. Dans les 7 jours, la première nuit est facturée. En cas de non présentation, la totalité du séjour est facturée. Pour les semaines de haute saison (juin à septembre) et la période de Noël et du Nouvel An, nous demandons le paiement intégral 30 jours avant l'arrivée, non remboursable dans les 14 jours." },
+      { q: "Le petit déjeuner est-il inclus ?", a: "Oui : un petit déjeuner tranquille dans l'ancien réfectoire, avec des pâtisseries aux amandes du village, de la ricotta fraîche d'une ferme voisine, des confitures du domaine, les œufs des poules de la cour et notre huile d'olive sur du pain chaud. Servi de 8 h 30 à 10 h 30." },
+      { q: "Les enfants sont-ils les bienvenus ?", a: "Les enfants de plus de 12 ans sont les bienvenus dans toutes les chambres. La Family Suite et la Masseria Family Suite accueillent les plus petits. Des lits bébé peuvent être ajoutés sur demande. Nous n'avons pas de programme pour enfants, mais la cour, l'oliveraie et les animaux de la ferme s'en chargent très bien." },
+      { q: "Avez-vous une piscine ?", a: "Oui : une piscine extérieure, nichée dans l'oliveraie derrière la masseria. Ouverte de mi-mai à fin septembre. Transats, ombre, et la seule zone sans Wi-Fi du domaine." },
+      { q: "Peut-on dîner sur place ?", a: "Sur demande. La cuisine ouvre le soir lorsque nous sommes prévenus suffisamment à l'avance : recettes typiques de la Murgia et des Pouilles, préparées simplement avec ce que le domaine a donné ce jour-là. Dites-le-nous lors de la réservation et nous organisons tout." },
+      { q: "Comment rejoindre la masseria depuis l'aéroport de Bari ?", a: "Une voiture de location est la solution la plus simple (environ 55 minutes). Un transfert privé peut être organisé : écrivez-nous à l'avance avec votre numéro de vol et nous vous ferons un devis. Aucun transport public ne dessert la masseria." },
+      { q: "Avez-vous le Wi-Fi ?", a: "Oui, partout sauf à la piscine. La connexion est assez rapide pour les appels vidéo." },
+    ],
+    trust: [
+      { name: "National Geographic" },
+      { name: "Stanley Tucci", note: "Searching for Italy" },
+      { name: "Lonely Planet" },
+      { name: "AIAB · ICEA", note: "Certifié bio" },
       { name: "Tripadvisor", note: "Travellers' Choice" },
     ],
   },

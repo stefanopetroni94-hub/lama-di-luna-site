@@ -91,6 +91,44 @@ const T = {
     dateLabel: "Data",
     close: "Chiudi",
   },
+  fr: {
+    fab: "Paramètres des cookies",
+    barTitle: "Ce site utilise des cookies",
+    barText:
+      "Nous utilisons des cookies pour faire fonctionner le site, pour mémoriser vos préférences et, seulement si vous l'autorisez, pour comprendre comment le site est utilisé et vous montrer des contenus pertinents. Vous pouvez tout accepter, choisir ou refuser les cookies facultatifs. Vous pouvez changer d'avis à tout moment.",
+    necessary: "Nécessaires",
+    preferences: "Préférences",
+    statistics: "Statistiques",
+    marketing: "Marketing",
+    showDetails: "Afficher les détails",
+    reject: "Refuser",
+    acceptSel: "Accepter la sélection",
+    acceptAll: "Tout accepter",
+    tabs: { consent: "Consentement", details: "Détails", info: "À propos des cookies" },
+    statusTitle: "Paramètres des cookies",
+    statusNow: "Votre choix actuel",
+    revoke: "Retirer le consentement",
+    modify: "Modifier le consentement",
+    noChoice: "Aucun choix effectué pour l'instant",
+    descNecessary:
+      "Les cookies nécessaires rendent le site utilisable en activant des fonctions de base comme la navigation entre les pages. Le site ne peut pas fonctionner correctement sans eux.",
+    descPreferences:
+      "Les cookies de préférence permettent au site de mémoriser des informations qui modifient son comportement ou son apparence, comme votre langue préférée.",
+    descStatistics:
+      "Les cookies statistiques aident les propriétaires du site à comprendre comment les visiteurs l'utilisent, en collectant et en transmettant des informations de manière anonyme.",
+    descMarketing:
+      "Les cookies marketing servent à suivre les visiteurs d'un site à l'autre, afin d'afficher des publicités pertinentes pour vous.",
+    info: [
+      "Les cookies sont de petits fichiers texte que les sites web peuvent utiliser pour rendre l'expérience de l'utilisateur plus efficace.",
+      "La loi nous autorise à déposer des cookies sur votre appareil s'ils sont strictement nécessaires au fonctionnement du site. Pour tous les autres types de cookies, nous avons besoin de votre consentement.",
+      "Certains cookies peuvent être déposés par des services tiers présents sur nos pages, par exemple les cartes intégrées ou les outils de réservation.",
+      "Vous pouvez à tout moment modifier ou retirer votre consentement avec le petit bouton des cookies en bas à gauche de la page, ou avec le lien Cookies en bas de page.",
+    ],
+    infoPrivacy: "Découvrez comment nous traitons les données personnelles dans notre Privacy Policy.",
+    idLabel: "Identifiant du consentement",
+    dateLabel: "Date",
+    close: "Fermer",
+  },
 } as const
 
 function newId() {
@@ -336,7 +374,7 @@ export function CookieConsent({ locale }: { locale: Locale }) {
                     <p>
                       {t.idLabel}: {stored.id}
                       <br />
-                      {t.dateLabel}: {new Date(stored.date).toLocaleString(locale === "it" ? "it-IT" : "en-GB")}
+                      {t.dateLabel}: {new Date(stored.date).toLocaleString({ en: "en-GB", it: "it-IT", fr: "fr-FR" }[locale])}
                     </p>
                   ) : null}
                 </div>

@@ -255,4 +255,110 @@ export const story: Record<Locale, StoryContent> = {
       "Undici camere, una raccolta delle olive da ottobre, una cucina che si apre su prenotazione, e una masseria mantenuta onesta dal 1830.",
     calloutCta: "Scopri le camere",
   },
+  fr: {
+    heroEyebrow: "L'Histoire",
+    statementTitle: "Une masseria du XVIIIe siècle au centre d'un domaine biologique de 210 hectares",
+    statementBody: [
+      "Lama di Luna se trouve au cœur du Parc national de l'Alta Murgia. Son nom signifie Vallée de la Lune : lama pour vallée, luna pour la lune et la fertilité. La masseria s'est agrandie pendant deux siècles, de la fin des années 1700 à la fin des années 1800, et a été restaurée entre 2000 et 2003 avec du mortier, de la chaux et la même terre rouge qui donne leur couleur aux champs alentour. Ce qu'est la masseria aujourd'hui n'est pas une reconstruction. C'est ce qui était déjà là, préservé avec honnêteté.",
+    ],
+    buildingLabel: "La Masseria",
+    chapters: [
+      {
+        eyebrow: "Fin du XVIIIe siècle",
+        title: "Les pièces les plus anciennes",
+        body: [
+          "Vers la fin du XVIIIe siècle fut construite l'aile gauche de la masseria, avec des murs de plus d'un mètre d'épaisseur et des plafonds faits de cylindres de terre cuite au fond percé. Un plafond idéal : léger, plein d'air pour protéger de la chaleur de l'été, et capable de se remplir d'air chaud quand la cheminée est allumée, gardant la pièce tiède toute la nuit. Ce sont les chambres Murgia, les plus anciennes de Lama di Luna.",
+          "Vers la fin du XIXe siècle, le baron di Faivano compléta l'édifice en construisant l'aile droite, avec des murs de quatre-vingts centimètres et des plafonds de poutres et de voûtes en tuf calcaire. Il donna ainsi aux familles de métayers un lieu où vivre dans la masseria. Chaque pièce, d'environ vingt mètres carrés, était le foyer d'une famille, avec sa fenêtre et sa cheminée.",
+        ],
+        img: IMG.wing,
+      },
+      {
+        eyebrow: "Quarante cheminées",
+        title: "Une communauté au travail",
+        body: [
+          "Les quarante cheminées sur les toits donnent la mesure de la communauté qui a fait vivre la masseria. Avant l'aube, on rangeait les espaces communs, et tout devait être en place au lever du soleil, quand commençait le travail aux champs.",
+          "Les colons, dont le contrat ne prévoyait pas de logement, se construisaient eux-mêmes un abri avec les pierres retirées des champs : les casedd, les trulli d'Andria, où ils vivaient avec leur âne, utile aux champs et aussi pour garder les casedd au chaud.",
+        ],
+        img: IMG.courtyard,
+      },
+      {
+        eyebrow: "Du XIXe siècle aux années 1950",
+        title: "Crise et déclin",
+        body: [
+          "À la fin du XIXe siècle, une grave crise du vin obligea le baron à vendre la masseria, avec environ 190 hectares, à M. De Bartolo. Lorsque le phylloxéra se répandit dans les vignes, il convertit les champs en amanderaies et en oliveraies, qui le restèrent jusqu'aux années 1950.",
+          "Après la guerre, le docteur Palasciano reprit la masseria et la loua aux bergers de Coratini et à leurs troupeaux. Ce fut le début d'un long déclin, à l'intérieur des murs comme dans les champs.",
+        ],
+        img: IMG.flock,
+      },
+      {
+        eyebrow: "1991",
+        title: "La renaissance",
+        body: [
+          "En 1991, amoureux du lieu et du paysage de cette belle ferme, nous avons acheté la masseria. Libérée des troupeaux et des bergers, nous avons entrepris une longue restauration, dans les murs et dans les champs. Dix mille oliviers, dix mille vignes, deux mille amandiers, mille cerisiers, un puits artésien de 535 mètres de profondeur et des cultures de céréales et de légumes ont marqué la renaissance agricole, dans le plus grand respect de la nature. Nous avons laissé les cent autres hectares au paysage naturel, pour le pâturage des moutons.",
+          "Une grotte karstique et des dizaines de casedd en partie restaurées se dressent dans une Murgia désormais libre de cultures mais riche en plantes sauvages : orchidées sauvages, fenouil, férule, thym. Elles accompagnent nos hôtes lors de promenades inoubliables. Avec une nouvelle étable et de nouveaux bâtiments agricoles, nous avons libéré la masseria et commencé en 2000 une restauration achevée en 2003, pour que des hôtes du monde entier puissent revivre l'atmosphère et la magie d'autrefois.",
+        ],
+        img: IMG.works,
+      },
+      {
+        eyebrow: "2003",
+        title: "Restaurée avec respect",
+        body: [
+          "La restauration s'est achevée en 2003, et chaque choix a été fait dans le respect du bâtiment. Les murs sont colorés avec la même terre rouge et jaune que les champs alentour, mélangée à la main et appliquée sur l'enduit, jamais peinte. Chaque lit est orienté vers le nord, et les angles sont adoucis et arrondis, car dans la nature tout est rond et fait partie d'un tout. Les quarante cheminées et les trulli dispersés racontent encore l'histoire des générations qui ont travaillé ici.",
+          "La masseria vit de sa propre énergie, avec 48 panneaux solaires pour l'eau chaude et le chauffage et 400 panneaux photovoltaïques pour l'électricité. Les produits de bain sont des savons à l'huile d'olive pressée sur le domaine, le linge est en coton brut et les vasques en terre cuite du pays : les matériaux du bâtiment sont aussi ceux du séjour.",
+        ],
+        img: IMG.fireplace,
+      },
+    ],
+    pietroLabel: "Pietro Petroni",
+    pietroEyebrow: "Le gardien",
+    pietroTitle: "Le gardien",
+    pietroQuote:
+      "Lama di Luna est ma maison, où je vis avec Agata et mes fils Agostino et Stefano. Nous travaillons et préservons les terres du domaine pour qu'avec nous, toute la faune sauvage puisse partager la magie de notre parc national, la Murgia. L'hospitalité est offerte à tous ceux qui souhaitent passer par ici et profiter d'un séjour dans notre belle masseria.",
+    pietroSignature: "Pietro Petroni",
+    pietroBody:
+      "Pietro vit à la masseria toute l'année avec sa femme Agata et ses deux fils, Stefano et Agostino. Il veille sur la récolte des olives, le vin, les faucons crécerelles et les chouettes chevêches qui nichent dans les cheminées. Le matin, on le trouve presque toujours à marcher dans les oliveraies avant le petit déjeuner.",
+    pietroNote: "Emplacement · remplacer par une image de Pietro et de la chouette",
+    filmLabel: "Le Film",
+    filmCta: "Regarder avec le son",
+    restorationEyebrow: "La restauration",
+    restorationTitle: "Six choix qui ont façonné la masseria",
+    details: [
+      {
+        num: "01",
+        title: "De la terre rouge sur les murs",
+        body: "La même terre rouge et jaune des champs alentour, utilisée pour bâtir les murs d'origine, est aujourd'hui celle qui les colore. Mélangée à la main, appliquée sur l'enduit, jamais peinte.",
+      },
+      {
+        num: "02",
+        title: "Des lits orientés vers le nord",
+        body: "Chaque lit de la masseria est orienté vers le nord, selon le principe du feng shui que la restauration a respecté, et en écho à l'instinct agronomique des métayers qui nous ont précédés.",
+      },
+      {
+        num: "03",
+        title: "Des angles arrondis",
+        body: "Les angles vifs sont adoucis partout, car dans la nature tout est rond, tout est en harmonie, tout fait partie d'un tout. Un choix de sensation, pas de finition.",
+      },
+      {
+        num: "04",
+        title: "Quarante cheminées, des trulli dispersés",
+        body: "La masseria compte quarante cheminées, plusieurs trulli dispersés et une structure complexe que les formes simples des pièces ne laissent pas deviner. L'architecture raconte l'histoire des générations qui ont travaillé ici.",
+      },
+      {
+        num: "05",
+        title: "48 panneaux solaires + 400 photovoltaïques",
+        body: "L'eau chaude et le chauffage viennent de 48 panneaux solaires. L'électricité de 400 panneaux photovoltaïques. La masseria vit hors réseau depuis près de vingt ans, discrètement, avec gratitude, grâce à l'énergie du même soleil qui mûrit les olives.",
+      },
+      {
+        num: "06",
+        title: "Huile d'olive, coton brut, terre cuite",
+        body: "Les produits de bain sont des savons à l'huile d'olive pressée sur le domaine. Le linge est en coton brut, tout simple. Les vasques sont en terre cuite du pays. Les matériaux du bâtiment sont aussi ceux du séjour.",
+      },
+    ],
+    fullPhoto: IMG.full,
+    calloutEyebrow: "Venez voir",
+    calloutTitle: "Séjournez là où l'histoire continue",
+    calloutBody:
+      "Onze chambres, une récolte des olives dès octobre, une cuisine qui ouvre sur demande, et une masseria préservée avec honnêteté depuis 1830.",
+    calloutCta: "Découvrez les chambres",
+  },
 }

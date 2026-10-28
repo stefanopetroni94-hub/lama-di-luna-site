@@ -147,4 +147,63 @@ export const farm: Record<Locale, FarmContent> = {
       "Olio extravergine d'oliva, mandorle e vino della tenuta sono serviti a tavola e disponibili da portare a casa.",
     calloutCta: "Scopri lo shop",
   },
+  fr: {
+    heroEyebrow: "La Ferme",
+    statementTitle: "Une ferme biologique en activité dans les Pouilles, 210 hectares dans l'Alta Murgia",
+    statementBody: [
+      "Lama di Luna est d'abord une ferme, et seulement ensuite un lieu de séjour. Autour de la masseria, bâtie vers 1830, s'étendent 210 hectares d'oliveraies, d'amanderaies, de vignes et de cerisaies, tous cultivés en bio et certifiés depuis 1995 par AIAB-ICEA, l'organisme italien de l'agriculture biologique. L'huile sur votre pain, les amandes au petit déjeuner, le vin au dîner et le savon dans votre chambre sont faits avec ce qui pousse sous vos fenêtres.",
+    ],
+    oliveLabel: "La Ferme",
+    olive: {
+      eyebrow: "Olives Coratina",
+      title: "Plantée année après année, depuis plus de 35 ans",
+      body: [
+        "La famille Petroni est une famille d'agriculteurs depuis plusieurs générations, oléiculteurs et viticulteurs. Quand nous sommes arrivés à Lama di Luna en 1991, la terre était aride et abandonnée. En plus de 35 ans, nous avons planté, année après année, des oliviers, des amandiers, des vignes et des chênes. Chaque plante de Lama di Luna a été plantée par nous, pour reconstituer le territoire et, en même temps, créer des produits de grande qualité.",
+        "Nous avons aussi préservé une partie de la ferme qui longe le Parc national de l'Alta Murgia, pour protéger toute la biodiversité, la faune et les espèces animales de notre région. Notre ferme mêle cultures biologiques et nature sauvage, qui trouvera toujours sa place à Lama di Luna et y sera toujours la bienvenue.",
+      ],
+      img: IMG.olive,
+    },
+    organicLabel: "Pourquoi le bio",
+    organic: {
+      eyebrow: "Certifiée depuis 1995",
+      title: "Une agriculture qui laisse la terre sauvage",
+      body: [
+        "Ici, le bio n'est pas une étiquette adoptée sur le tard : c'est la manière dont le domaine a toujours été conduit. Aucun engrais de synthèse, aucun herbicide ni pesticide chimique : le sol est nourri par la terre elle-même, par les cultures de couverture et le bois de taille rendu à la terre, et les mauvaises herbes sont broutées plutôt que traitées.",
+        "Comme les champs ne sont jamais empoisonnés, la faune du Parc national de l'Alta Murgia reste : faucons crécerelles et chouettes chevêches nichent dans les quarante cheminées de la masseria, les renards traversent les rangs d'oliviers au crépuscule, les orchidées sauvages reviennent chaque printemps. Ici, une ferme saine et un parc vivant ne font qu'un.",
+      ],
+      img: IMG.organic,
+    },
+    principlesEyebrow: "Notre façon de cultiver",
+    principlesTitle: "Quatre principes au cœur du domaine",
+    principles: [
+      {
+        num: "01",
+        title: "Bio certifié AIAB-ICEA",
+        body: "Chaque hectare, olives, amandes, vignes et cerisiers, est certifié bio par AIAB-ICEA depuis 1995. Aucun produit chimique de synthèse ne touche la terre, et la certification est renouvelée et contrôlée chaque année.",
+      },
+      {
+        num: "02",
+        title: "Hors réseau, grâce au soleil",
+        body: "Tout le domaine vit de sa propre énergie : 48 panneaux solaires pour l'eau chaude et le chauffage, 400 panneaux photovoltaïques pour l'électricité. Le même soleil qui mûrit les olives alimente la masseria, depuis près de vingt ans sans réseau.",
+      },
+      {
+        num: "03",
+        title: "Un seul domaine, pressée à froid",
+        body: "Les olives sont cueillies et pressées à froid dans les heures qui suivent la récolte, jamais mélangées avec une huile d'ailleurs. Ce que vous goûtez, c'est un domaine, un automne, une colline de la Murgia.",
+      },
+      {
+        num: "04",
+        title: "Cultiver pour la faune",
+        body: "Nous laissons les champs sans poison et les vieux arbres debout pour que les oiseaux, les renards et les orchidées du parc national puissent partager la terre. La ferme vit dans le parc, pas contre lui.",
+      },
+    ],
+    fullPhoto: IMG.full,
+    seasons:
+      "Pendant votre séjour à Lama di Luna, vous pouvez vivre la vie de la ferme et, aux bons moments de l'année, suivre les travaux des champs et goûter quelques fruits. En mai les mûres autour de la masseria, en juin les cerises, en juillet la récolte des tomates pour la sauce de nos cuisinières, en août et septembre les vendanges et la récolte des amandes, et en octobre la récolte des olives tant attendue.",
+    calloutEyebrow: "Du domaine",
+    calloutTitle: "Goûtez la ferme avant de partir",
+    calloutBody:
+      "L'huile d'olive extra vierge, les amandes et le vin du domaine sont servis à table et disponibles à emporter.",
+    calloutCta: "Découvrez la boutique",
+  },
 }

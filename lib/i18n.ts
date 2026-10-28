@@ -1,4 +1,4 @@
-export const locales = ["en", "it"] as const
+export const locales = ["en", "it", "fr"] as const
 export type Locale = (typeof locales)[number]
 export const defaultLocale: Locale = "en"
 
@@ -30,6 +30,16 @@ export const menu: Record<Locale, MenuItem[]> = {
     { label: "Eventi", slug: "exclusive" },
     { label: "Shop", slug: "shop" },
     { label: "Contatti", slug: "contact" },
+  ],
+  fr: [
+    { label: "Chambres", slug: "rooms" },
+    { label: "Cuisine", slug: "restaurant" },
+    { label: "Ferme", slug: "farm" },
+    { label: "Histoire", slug: "story" },
+    { label: "Expériences", slug: "experiences" },
+    { label: "Événements", slug: "exclusive" },
+    { label: "Boutique", slug: "shop" },
+    { label: "Contact", slug: "contact" },
   ],
 }
 
@@ -70,6 +80,26 @@ export const chrome = {
       facebookUrl: "https://www.facebook.com/masserialamadiluna",
       tripadvisorUrl: "https://www.tripadvisor.com/",
       privacy: "Privacy",
+      cookies: "Cookies",
+      cin: "CIN: IT110001B500020950",
+      copyright: "© 2026 Lama di Luna · Andria, BT",
+    },
+  },
+  fr: {
+    menu: "Menu",
+    book: "Réserver",
+    scroll: "Défiler",
+    close: "Fermer",
+    menuTitle: "Explorer",
+    press: "On parle de nous",
+    footer: {
+      instagram: "Instagram",
+      facebook: "Facebook",
+      tripadvisor: "Tripadvisor",
+      instagramUrl: "https://www.instagram.com/masserialamadiluna/",
+      facebookUrl: "https://www.facebook.com/masserialamadiluna",
+      tripadvisorUrl: "https://www.tripadvisor.com/",
+      privacy: "Confidentialité",
       cookies: "Cookies",
       cin: "CIN: IT110001B500020950",
       copyright: "© 2026 Lama di Luna · Andria, BT",

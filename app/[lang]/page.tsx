@@ -109,7 +109,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         <div
           className="story-split-img"
           role="img"
-          aria-label={lang === "it" ? "Fichi d'India con i frutti maturi" : "Prickly pears with ripe fruit"}
+          aria-label={{ en: "Prickly pears with ripe fruit", it: "Fichi d'India con i frutti maturi", fr: "Figuiers de Barbarie aux fruits mûrs" }[lang]}
           style={{
             backgroundImage: "url('/whatsapp/20261015_140200_2206459426566152.jpg')",
             backgroundPosition: "center 60%",
@@ -118,7 +118,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         <div
           className="story-split-img story-split-img--tilt"
           role="img"
-          aria-label={lang === "it" ? "Il grande salotto con il camino acceso" : "The large sitting room with the fire lit"}
+          aria-label={{ en: "The large sitting room with the fire lit", it: "Il grande salotto con il camino acceso", fr: "Le grand salon avec la cheminée allumée" }[lang]}
         >
           <div
             className="story-split-tilt"
@@ -131,7 +131,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       </section>
 
       <NewsletterForm
-        namePlaceholder={lang === "it" ? "Nome" : "Name"}
+        namePlaceholder={{ en: "Name", it: "Nome", fr: "Prénom" }[lang]}
         placeholder={c.newsletterPlaceholder}
         button={c.newsletterButton}
         consent={c.newsletterConsent}
