@@ -1,9 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { useParams } from "next/navigation"
-import { bookingUrl } from "@/lib/booking"
-import { isLocale } from "@/lib/i18n"
+import { OPEN_BOOKING_EVENT } from "@/components/booking-sheet"
 
 type Labels = {
   checkIn: string
@@ -27,8 +25,6 @@ function nextDay(iso: string) {
 }
 
 export function QuickSearch({ labels }: { labels: Labels }) {
-  const params = useParams<{ lang: string }>()
-  const locale = isLocale(params.lang) ? params.lang : "en"
   const [checkIn, setCheckIn] = useState("")
   const [checkOut, setCheckOut] = useState("")
   const [adults, setAdults] = useState("2")
@@ -39,7 +35,12 @@ export function QuickSearch({ labels }: { labels: Labels }) {
       className="qs-card"
       onSubmit={(e) => {
         e.preventDefault()
-        window.location.assign(bookingUrl(locale, { checkIn, checkOut, adults: Number(adults) }))
+        const valid = !!checkIn && !!checkOut && checkOut > checkIn
+        window.dispatchEvent(
+          new CustomEvent(OPEN_BOOKING_EVENT, {
+            detail: valid ? { start_date: checkIn, end_date: checkOut, adults } : undefined,
+          })
+        )
       }}
     >
       <div className="qs-field">

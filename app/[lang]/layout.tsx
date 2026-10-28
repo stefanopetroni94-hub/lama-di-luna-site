@@ -1,6 +1,7 @@
 import type React from "react"
 import { notFound } from "next/navigation"
 import { CookieConsent } from "@/components/cookie-consent"
+import { BookingSheet } from "@/components/booking-sheet"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { isLocale, locales } from "@/lib/i18n"
 
@@ -22,6 +23,7 @@ export default async function LangLayout({
     <>
       {children}
       <CookieConsent locale={lang} />
+      <BookingSheet locale={lang} />
       <WhatsAppButton locale={lang} />
     </>
   )

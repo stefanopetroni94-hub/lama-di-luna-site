@@ -2329,6 +2329,70 @@ footer {
   color: inherit;
 }
 
+/* booking sheet: slides up from the bottom and covers the whole page, with the Amenitiz engine inside */
+.booking-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  transform: translateY(100%);
+  visibility: hidden;
+  transition: transform 0.7s cubic-bezier(0.22, 0.8, 0.25, 1), visibility 0s linear 0.7s;
+}
+.booking-sheet.is-open {
+  transform: translateY(0);
+  visibility: visible;
+  transition: transform 0.7s cubic-bezier(0.22, 0.8, 0.25, 1), visibility 0s;
+}
+.booking-sheet-bar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(1.3rem, 4vw, 2.5rem);
+  height: 64px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--serif);
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.booking-sheet-close {
+  background: none;
+  border: none;
+  font-family: var(--serif);
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink);
+  cursor: pointer;
+}
+.booking-sheet-close:hover {
+  opacity: 0.6;
+}
+/* the top of the Amenitiz page (their logo and menu) is cut off */
+.booking-sheet-body {
+  --crop: 130px;
+  flex: 1;
+  overflow: hidden;
+  background: #ffffff;
+}
+.booking-sheet-frame {
+  display: block;
+  width: 100%;
+  height: calc(100% + var(--crop));
+  margin-top: calc(var(--crop) * -1);
+  border: 0;
+}
+@media (max-width: 700px) {
+  .booking-sheet-body {
+    --crop: 100px;
+  }
+}
+
 /* booking engine test page: the Amenitiz engine inside a frame, between the usual side margins */
 .booking-frame-wrap {
   max-width: 1500px;

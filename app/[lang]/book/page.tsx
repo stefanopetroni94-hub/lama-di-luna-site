@@ -8,6 +8,7 @@ import { BackLink } from "@/components/back-link"
 import { HOME, isLocale } from "@/lib/i18n"
 import { book } from "@/lib/content/book"
 import { bookingUrl } from "@/lib/booking"
+import { BookLink } from "@/components/book-link"
 
 export default async function BookPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -62,9 +63,9 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
 
       <section className="lh-widget-wrap">
         <div className="book-direct">
-          <a href={bookingUrl(lang)} className="book-stay-btn">
+          <BookLink href={bookingUrl(lang)} className="book-stay-btn">
             {{ en: "Book now", it: "Prenota ora", fr: "Réserver" }[lang]}
-          </a>
+          </BookLink>
         </div>
       </section>
 

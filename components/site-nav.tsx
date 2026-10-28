@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react"
 import { usePathname } from "next/navigation"
 import { chrome, isLocale, menu, type Locale } from "@/lib/i18n"
 import { bookingUrl } from "@/lib/booking"
+import { BookLink } from "@/components/book-link"
 
 /**
  * Site navigation.
@@ -127,9 +128,9 @@ export function SiteNav({
         <span className="brand-mark" aria-hidden="true" />
       </Link>
 
-      <a href={bookingUrl(locale)} className="nav-side">
+      <BookLink href={bookingUrl(locale)} className="nav-side">
         {t.book}
-      </a>
+      </BookLink>
     </nav>
   )
 }
