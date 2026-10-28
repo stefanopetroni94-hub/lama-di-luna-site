@@ -42,8 +42,11 @@ export function BookingSheet({ locale }: { locale: Locale }) {
     <div className={`booking-sheet${open ? " is-open" : ""}`} aria-hidden={!open} role="dialog" aria-label={t.book}>
       <div className="booking-sheet-bar">
         <span>{t.book}</span>
+        <span className="booking-sheet-logo" role="img" aria-label="Lama di Luna">
+          <span className="brand-mark" />
+        </span>
         <button type="button" className="booking-sheet-close" onClick={() => setOpen(false)}>
-          {t.close} &times;
+          {t.close}
         </button>
       </div>
       <div className="booking-sheet-body">

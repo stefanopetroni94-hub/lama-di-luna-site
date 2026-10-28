@@ -2346,7 +2346,21 @@ footer {
   visibility: visible;
   transition: transform 0.7s cubic-bezier(0.22, 0.8, 0.25, 1), visibility 0s;
 }
+/* the Lama di Luna logo, bordeaux, in the middle of the bar */
+.booking-sheet-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--ink);
+  line-height: 0;
+}
+.booking-sheet-logo .brand-mark {
+  width: 51px;
+  height: 48px;
+}
 .booking-sheet-bar {
+  position: relative;
   flex: none;
   display: flex;
   align-items: center;
