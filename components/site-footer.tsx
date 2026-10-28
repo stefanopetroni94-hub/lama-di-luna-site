@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { chrome, type Locale } from "@/lib/i18n"
 
 export function SiteFooter({ locale }: { locale: Locale }) {
@@ -29,7 +30,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
             style={{ width: 20, height: 20, WebkitMaskImage: "url(/logos/tripadvisor.svg)", maskImage: "url(/logos/tripadvisor.svg)" }}
           />
         </a>
-        <a href="#">{f.privacy}</a>
+        <Link href={`/${locale}/privacy`}>{f.privacy}</Link>
         <a href="#">{f.cookies}</a>
       </div>
       <div className="footer-right">
