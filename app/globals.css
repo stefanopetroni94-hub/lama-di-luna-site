@@ -2607,7 +2607,7 @@ footer {
 /* "back" link top left of every inner page */
 .back-link {
   position: absolute;
-  top: 90px;
+  top: 115px;
   left: 2.5rem;
   z-index: 6;
   display: flex;
@@ -2648,6 +2648,9 @@ footer {
   .back-link {
     left: 1.3rem;
   }
+}
+.exp-counter {
+  top: 115px;
 }
 .exp-counter a {
   color: inherit;
