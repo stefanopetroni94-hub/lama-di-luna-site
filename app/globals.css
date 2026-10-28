@@ -2783,6 +2783,14 @@ footer {
 .farm-section .text-image.farm-organic {
   padding-top: 4rem;
 }
+/* "Why organic": narrower photo, same side margins as the other farm text, text and photo closer */
+@media (min-width: 701px) {
+  .farm-section .text-image.farm-organic {
+    padding-left: clamp(1.5rem, 9vw, 11rem);
+    padding-right: clamp(1.5rem, 9vw, 11rem);
+    gap: 2.5rem;
+  }
+}
 @media (max-width: 700px) {
   .photo-split + section .text-image,
   .farm-section .text-image.farm-organic {
