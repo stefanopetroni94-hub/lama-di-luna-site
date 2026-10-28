@@ -3478,14 +3478,22 @@ footer {
 .section-label.find-label {
   padding: 5rem 2.5rem 2rem;
 }
-.find-us-intro.find-us-intro--centered {
+.find-us-intro.find-us-intro--left {
   max-width: 1100px;
-  padding: 0 2.5rem;
-  text-align: center;
+  padding: 5rem 2.5rem 0;
+  text-align: left;
 }
-.find-us-intro--centered p {
+.find-us-intro--left p {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
+}
+/* same type and colour as "Write to us" */
+.find-us-title {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--olive);
+  margin-bottom: 0.5rem;
 }
 .map-wrap {
   position: relative;
@@ -3534,24 +3542,22 @@ footer {
   background: var(--ink);
   color: var(--bg);
 }
-@keyframes map-card-in {
-  from {
-    opacity: 0;
-    transform: translateY(calc(-50% + 2rem));
-  }
-  to {
-    opacity: 1;
-    transform: translateY(-50%);
-  }
+/* hidden until the map scrolls into view, then it slides up and fades in (works in every browser) */
+.map-card {
+  opacity: 0;
+  transform: translateY(calc(-50% + 2.5rem));
+  transition: opacity 0.9s ease, transform 0.9s ease;
 }
-@supports (animation-timeline: view()) {
-  .map-card {
-    animation: map-card-in linear both;
-    animation-timeline: view();
-    animation-range: entry 10% cover 35%;
-  }
+.map-card.is-visible {
+  opacity: 1;
+  transform: translateY(-50%);
 }
 @media (max-width: 700px) {
+  .map-card,
+  .map-card.is-visible {
+    opacity: 1;
+    transform: none;
+  }
   .map-wrap {
     margin-top: 0;
   }
