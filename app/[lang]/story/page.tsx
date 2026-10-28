@@ -59,7 +59,6 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
       <BackLink href={`/${lang}`} label={HOME[lang]} tone="light" />
 
       <section className="hero hero--story">
-        <div className="hero-eyebrow">{c.heroEyebrow}</div>
         <div className="hero-scroll">{t.scroll}</div>
       </section>
 

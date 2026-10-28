@@ -18,7 +18,6 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
       <BackLink href={`/${lang}`} label={HOME[lang]} tone="light" />
 
       <section className="hero hero--farm">
-        <div className="hero-eyebrow">{c.heroEyebrow}</div>
         <div className="hero-scroll">{t.scroll}</div>
       </section>
 
