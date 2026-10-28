@@ -82,10 +82,9 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
               <p key={i}>{p}</p>
             ))}
           </div>
-          <div
-            className="image-block"
-            style={{ backgroundImage: `url('${c.organic.img}')`, backgroundPosition: "center" }}
-          />
+          <div className="image-block image-block--zoom">
+            <div style={{ backgroundImage: `url('${c.organic.img}')`, backgroundPosition: "center" }} />
+          </div>
         </div>
       </section>
 
