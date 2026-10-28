@@ -42,7 +42,7 @@ export const home: Record<Locale, HomeContent> = {
   en: {
     statementTitle: "Experience Puglia's nature, agriculture and history at its most authentic",
     statementBody: [
-      "Our 18th century farmhouse or masseria, restored to its original glory, is nestled in a 518-acre estate of all organic olive groves, almond groves, vineyards and wildlands. Stay in our rustic rooms, formerly inhabited by settlers and Mezzadri farmers. Immerse yourself in the tranquility and natural beauty of the sprawling Murgia national park. Languish in our panoramic pool overlooking vast olive fields. Taste our high quality extra virgin olive oil, almonds and local produce at The Veranda restaurant.",
+      "Our 18th century farmhouse or masseria, restored to its original glory, is nestled in a 518-acre estate of all organic olive groves, almond groves, vineyards and wildlands. Stay in our rustic rooms, formerly inhabited by settler Mezzadri farmers, and refurbished using bioarchitecture and artisanal furniture. Immerse yourself in the tranquility and natural beauty of the sprawling Murgia national park. Languish in our panoramic pool overlooking vast olive fields. Taste our high quality extra virgin olive oil, almonds and local produce at The Veranda restaurant.",
       "Let time stand still at Lama di Luna, our Valley of the Moon.",
     ],
     discover: "Read our story",
@@ -98,7 +98,7 @@ export const home: Record<Locale, HomeContent> = {
   it: {
     statementTitle: "Vivi la natura, l'agricoltura e la storia della Puglia nella loro forma più autentica",
     statementBody: [
-      "La nostra masseria del XVIII secolo, riportata al suo antico splendore, è immersa in una tenuta di 210 ettari di uliveti, mandorleti, vigneti e terre selvagge, tutti biologici. Soggiorna nelle nostre camere rustiche, un tempo abitate da coloni e mezzadri. Immergiti nella tranquillità e nella bellezza naturale dell'immenso Parco Nazionale dell'Alta Murgia. Rilassati nella nostra piscina panoramica affacciata su vasti campi di ulivi. Assapora il nostro olio extravergine d'oliva di alta qualità, le mandorle e i prodotti locali al ristorante The Veranda.",
+      "La nostra masseria del XVIII secolo, riportata al suo antico splendore, è immersa in una tenuta di 210 ettari di uliveti, mandorleti, vigneti e terre selvagge, tutti biologici. Soggiorna nelle nostre camere rustiche, un tempo abitate da coloni e mezzadri, e ristrutturate con bioarchitettura e arredi artigianali. Immergiti nella tranquillità e nella bellezza naturale dell'immenso Parco Nazionale dell'Alta Murgia. Rilassati nella nostra piscina panoramica affacciata su vasti campi di ulivi. Assapora il nostro olio extravergine d'oliva di alta qualità, le mandorle e i prodotti locali al ristorante The Veranda.",
       "Lascia che il tempo si fermi a Lama di Luna, la nostra Valle della Luna.",
     ],
     discover: "Leggi la nostra storia",
