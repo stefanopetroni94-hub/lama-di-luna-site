@@ -4020,12 +4020,12 @@ footer {
     aspect-ratio: 1 / 1;
   }
   .map-card {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     position: static;
     transform: none;
     animation: none;
     width: auto;
-    margin: 2rem 0 0;
+    margin: 3.5rem 0 0;
     box-shadow: none;
     padding: 1.6rem 1.3rem;
   }
