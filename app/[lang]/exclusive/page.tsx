@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { BackLink } from "@/components/back-link"
+import { Scopri } from "@/components/scopri"
 import { HOME, isLocale } from "@/lib/i18n"
 import { exclusive } from "@/lib/content/exclusive"
 import { WaveLine } from "@/components/wave-line"
@@ -21,7 +22,7 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <h1 className="sr-only">{c.title}</h1>
       </section>
 
-      <section className="statement">
+      <section className="statement statement--exclusive">
         <div className="statement-grid statement-grid--stacked">
           <div>
             <h2>{c.statementTitle}</h2>
@@ -31,12 +32,6 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
           </div>
         </div>
       </section>
-
-      <div className="book-stay exclusive-request">
-        <Link href={`/${lang}/contact`} className="book-stay-btn">
-          {c.bookingCta}
-        </Link>
-      </div>
 
       <div className="section-label exclusive-label">
         <WaveLine side="left" />
@@ -48,6 +43,7 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <div className="statement-inner">
           <div className="statement-body">
             <p>{c.weddingsText}</p>
+            <Scopri href={`/${lang}/contact`}>{c.bookingCta}</Scopri>
           </div>
         </div>
       </section>
