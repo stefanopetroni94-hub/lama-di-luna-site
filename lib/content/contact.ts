@@ -69,7 +69,7 @@ export const contact: Record<"en" | "it" | "fr", ContactContent> = {
     mapEyebrow: "In the Alta Murgia",
     mapTitle: "An hour from Bari, 20 minutes from Castel del Monte",
     mapBody:
-      "A rented car is the easiest way to reach us. We can also arrange a private transfer from any airport or station — write to us in advance.",
+      "A rented car is the easiest way to reach us. We can also arrange a private transfer from any airport or station — write to us in advance. We also have charging points for electric vehicles.",
     distances: [
       { place: "Bari Airport (BRI)", distance: "55 min" },
       { place: "Brindisi Airport (BDS)", distance: "2 h 10 min" },
@@ -114,7 +114,7 @@ export const contact: Record<"en" | "it" | "fr", ContactContent> = {
     mapEyebrow: "Nell'Alta Murgia",
     mapTitle: "Un'ora da Bari, 20 minuti da Castel del Monte",
     mapBody:
-      "Un'auto a noleggio è il modo più facile per raggiungerci. Possiamo anche organizzare un transfer privato da qualsiasi aeroporto o stazione — scrivici in anticipo.",
+      "Un'auto a noleggio è il modo più facile per raggiungerci. Possiamo anche organizzare un transfer privato da qualsiasi aeroporto o stazione — scrivici in anticipo. Disponiamo anche di punti di ricarica per veicoli elettrici.",
     distances: [
       { place: "Aeroporto di Bari (BRI)", distance: "55 min" },
       { place: "Aeroporto di Brindisi (BDS)", distance: "2 h 10 min" },
@@ -159,7 +159,7 @@ export const contact: Record<"en" | "it" | "fr", ContactContent> = {
     mapEyebrow: "Dans l'Alta Murgia",
     mapTitle: "À une heure de Bari, à 20 minutes de Castel del Monte",
     mapBody:
-      "Une voiture de location est le moyen le plus simple de nous rejoindre. Nous pouvons aussi organiser un transfert privé depuis n'importe quel aéroport ou gare, écrivez-nous à l'avance.",
+      "Une voiture de location est le moyen le plus simple de nous rejoindre. Nous pouvons aussi organiser un transfert privé depuis n'importe quel aéroport ou gare, écrivez-nous à l'avance. Nous disposons aussi de bornes de recharge pour véhicules électriques.",
     distances: [
       { place: "Aéroport de Bari (BRI)", distance: "55 min" },
       { place: "Aéroport de Brindisi (BDS)", distance: "2 h 10 min" },
