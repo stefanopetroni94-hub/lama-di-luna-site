@@ -1948,14 +1948,14 @@ footer {
   max-height: 90vh;
   overflow-y: auto;
 }
-/* same left edge and column as "Taste our food" on the home page */
+/* same side margins as "Our 18th century farmhouse or masseria" on the home page */
 .ck-bar-main,
 .ck-bar-foot {
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: clamp(1.5rem, 9vw, 11rem);
+  padding-right: clamp(1.5rem, 9vw, 11rem);
 }
 .ck-bar-main {
   display: flex;
@@ -1985,8 +1985,10 @@ footer {
   color: var(--ink);
   margin: 0 0 1rem;
 }
+/* the text runs on until just before the buttons */
 .ck-bar-text {
-  max-width: 480px;
+  flex: 1;
+  max-width: none;
 }
 .ck-buttons {
   display: flex;
@@ -2224,6 +2226,9 @@ footer {
   .ck-bar-main {
     flex-direction: column;
     gap: 1rem;
+  }
+  .ck-bar-text {
+    flex: none;
   }
   .ck-bar-text {
     max-width: none;
