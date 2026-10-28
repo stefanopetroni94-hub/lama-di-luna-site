@@ -36,14 +36,11 @@ export function MapCard({ title, address, phone, email }: Props) {
         <br />
         E-mail: <a href={`mailto:${email}`}>{email}</a>
       </p>
-      <a
-        className="map-card-btn"
-        href="https://www.google.com/maps/search/?api=1&query=Lama+di+Luna,+Andria,+Italy"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Google Maps
-      </a>
+      <p>
+        Latitude: 41.1462550
+        <br />
+        Longitude: 16.1537627
+      </p>
     </div>
   )
 }
