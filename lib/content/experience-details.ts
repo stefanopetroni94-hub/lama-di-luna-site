@@ -114,6 +114,20 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
       "Dites-nous quand vous souhaitez jouer et nous nous en occupons.",
     ],
   },
+  library: {
+    en: [
+      "The masseria's library, a quiet room to read and slow down, away from the courtyard and the groves.",
+      "Take a book, find a corner and let the afternoon pass. Tell us if you would like to spend some time there and we will arrange it for you.",
+    ],
+    it: [
+      "La biblioteca della masseria, una sala silenziosa dove leggere e rallentare, lontano dal cortile e dagli uliveti.",
+      "Prendi un libro, trova un angolo e lascia passare il pomeriggio. Dicci se vorresti trascorrerci un po' di tempo e lo organizzeremo per te.",
+    ],
+    fr: [
+      "La bibliothèque de la masseria, une salle calme pour lire et ralentir, loin de la cour et des oliveraies.",
+      "Prenez un livre, trouvez un coin et laissez passer l'après-midi. Dites-nous si vous souhaitez y passer un moment et nous nous en occuperons.",
+    ],
+  },
   "castel-del-monte": {
     en: [
       "Frederick II's octagonal castle, built in the 13th century, a UNESCO site on the next hill over, 20 minutes' drive from the masseria.",
