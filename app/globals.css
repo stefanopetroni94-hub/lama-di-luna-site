@@ -3847,7 +3847,7 @@ footer {
   width: 100%;
   aspect-ratio: 21/8;
   border: 0;
-  filter: saturate(0.85) contrast(1.05);
+  filter: grayscale(1) contrast(1.05);
   display: block;
 }
 
