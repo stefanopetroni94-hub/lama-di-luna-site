@@ -790,6 +790,8 @@ section {
   text-align: left;
   padding-left: clamp(1.5rem, 9vw, 11rem);
   padding-right: clamp(1.5rem, 9vw, 11rem);
+  /* same gap under the title as "Taste our food" has above its text on the home page */
+  padding-bottom: 1rem;
 }
 .section-label.exclusive-label > svg {
   display: none;
