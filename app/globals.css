@@ -4299,7 +4299,6 @@ footer {
   padding: 1.8rem 2rem;
   box-shadow: 0 10px 30px rgba(92, 26, 43, 0.12);
 }
-/* title like "Where to find us", text like the paragraph under it */
 .map-card h2 {
   font-family: var(--serif);
   font-weight: 500;
@@ -4309,8 +4308,8 @@ footer {
 }
 .map-card p {
   font-family: "Times New Roman", Times, serif;
-  font-size: 17px;
-  line-height: 1.95;
+  font-size: 15px;
+  line-height: 1.6;
   color: var(--ink);
   margin-bottom: 1rem;
 }
