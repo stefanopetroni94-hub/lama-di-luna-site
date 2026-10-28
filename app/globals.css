@@ -2124,6 +2124,27 @@ footer {
   color: var(--ink);
   cursor: pointer;
 }
+/* titles like "Coloni / Murgia / Suite Deluxe", text like the room descriptions on the home page */
+.ck-status-head strong,
+.ck-status-body > strong {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--ink);
+}
+.ck-status-body > strong {
+  display: block;
+}
+.ck-status-body li,
+.ck-status-body p,
+.ck-status-body .ck-link {
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.65;
+  font-weight: 400;
+  color: var(--ink);
+}
 .ck-status-body {
   padding: 1.2rem 1.3rem;
 }
@@ -2136,7 +2157,7 @@ footer {
   display: flex;
   gap: 0.8rem;
   padding: 0.25rem 0;
-  font-size: 15px;
+  font-size: 14px;
 }
 .ck-status-body li span {
   width: 1.2rem;
