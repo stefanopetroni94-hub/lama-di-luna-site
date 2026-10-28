@@ -66,7 +66,9 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
       <section>
         <div className="text-image reverse">
-          <div className="image-block" style={{ backgroundImage: `url('${c.kitchenImg}')` }} />
+          <div className="image-block image-block--zoom">
+            <div style={{ backgroundImage: `url('${c.kitchenImg}')` }} />
+          </div>
           <div className="text-block">
             <div className="room-name" style={{ marginBottom: "1rem" }}>
               {c.kitchenLabel}
@@ -94,14 +96,15 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             ))}
             <Scopri href={`/${lang}/experiences`}>{c.experiencesCta}</Scopri>
           </div>
-          <div
-            className="image-block"
-            style={{
-              backgroundImage: `url('${c.experiencesImg}')`,
-              backgroundSize: "294%",
-              backgroundPosition: "13% 64%",
-            }}
-          />
+          <div className="image-block image-block--zoom">
+            <div
+              style={{
+                backgroundImage: `url('${c.experiencesImg}')`,
+                backgroundSize: "294%",
+                backgroundPosition: "13% 64%",
+              }}
+            />
+          </div>
         </div>
       </section>
 

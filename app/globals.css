@@ -1640,6 +1640,22 @@ a.shop-card-name:hover {
   background-size: cover;
   background-position: center;
 }
+/* home photos that grow slightly on hover, like the room photos */
+.text-image .image-block.image-block--zoom {
+  position: relative;
+  overflow: hidden;
+}
+.image-block--zoom > div {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.7s ease;
+}
+.image-block--zoom:hover > div {
+  transform: scale(1.02);
+}
 .text-image.text-image--flush {
   padding-bottom: 0 !important;
 }
