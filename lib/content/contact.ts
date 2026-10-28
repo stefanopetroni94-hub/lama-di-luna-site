@@ -38,7 +38,7 @@ export type ContactContent = {
 export const contact: Record<"en" | "it", ContactContent> = {
   en: {
     eyebrow: "Get in touch",
-    title: "Contact",
+    title: "Contact us",
     intro:
       "We answer most messages within a few hours, in English, Italian, German and French. WhatsApp is fastest. Calls welcome between 8am and 9pm Central European Time.",
     phoneLabel: "Phone",
@@ -83,7 +83,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
   },
   it: {
     eyebrow: "Contattaci",
-    title: "Contatti",
+    title: "Contattaci",
     intro:
       "Rispondiamo alla maggior parte dei messaggi entro poche ore, in italiano, inglese, tedesco e francese. WhatsApp è il modo più rapido. Chiamate benvenute tra le 8 e le 21, ora dell'Europa centrale.",
     phoneLabel: "Telefono",
