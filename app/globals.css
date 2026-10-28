@@ -2619,8 +2619,18 @@ footer {
   text-transform: uppercase;
 }
 /* a thin line with an arrowhead pointing left, centred on the height of the text */
-.back-link::before,
-.exp-counter::before {
+/* the arrow lives inside the link, so it is clickable and reacts to the cursor like the word */
+.exp-hero .exp-counter::before {
+  content: none;
+}
+.back-link a,
+.exp-counter a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.back-link a::before,
+.exp-counter a::before {
   content: "";
   display: inline-block;
   flex: none;
