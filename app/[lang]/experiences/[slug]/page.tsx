@@ -55,6 +55,22 @@ export default async function ExperienceDetailPage({
         </div>
       </section>
 
+      <section className="other-exp">
+        <div className="other-exp-header">
+          <div className="eyebrow">{c.otherEyebrow}</div>
+          <h2>{c.otherTitle}</h2>
+        </div>
+        <div className="other-exp-grid">
+          {c.other.map((o) => (
+            <Link href={`/${lang}/experiences`} className="other-card" key={o.name}>
+              <div className="other-card-img" style={{ backgroundImage: `url('${o.img}')` }} />
+              <div className="other-card-name">{o.name}</div>
+              <div className="other-card-meta">{o.meta}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <SiteFooter locale={lang} />
     </>
   )
