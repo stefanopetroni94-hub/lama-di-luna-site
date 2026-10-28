@@ -3001,9 +3001,13 @@ footer {
 .statement.statement--story {
   padding-bottom: 4rem;
 }
+/* story: photos and text sit between the same side margins as the "1800s, 1950s" text, and the two columns are closer */
 .story-chapter .text-image {
   padding-top: 0;
   padding-bottom: 4rem;
+  padding-left: clamp(1.5rem, 9vw, 11rem);
+  padding-right: clamp(1.5rem, 9vw, 11rem);
+  gap: 2.5rem;
 }
 .story-chapter--text-left .text-block {
   margin-left: auto;
@@ -3148,6 +3152,8 @@ footer {
   }
   .story-chapter .text-image {
     padding-bottom: 2.5rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
   }
 }
 
