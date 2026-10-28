@@ -19,9 +19,8 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
     <>
       <SiteNav locale={lang} variant="solid" />
 
-      <section className="page-header">
+      <section className="page-header page-header--booking">
         <h1>{c.title}</h1>
-        <p>{c.intro}</p>
       </section>
 
       <div className="quick-search availability-placement availability-placement--contact">
