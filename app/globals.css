@@ -4011,6 +4011,11 @@ footer {
   .map-wrap {
     margin-top: 2rem;
   }
+  /* "Find us" text and the "Location & contact" text start on the same left edge as the form */
+  .find-us-intro.find-us-intro--left {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
   .gmap-frame {
     aspect-ratio: 1 / 1;
   }
