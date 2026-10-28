@@ -3114,6 +3114,30 @@ footer {
 .farm-split .story-split-img {
   aspect-ratio: 1 / 1;
 }
+/* The Veranda: video, photos and the pasta photo sit between the same side margins as the text above, with the text and photo closer */
+@media (min-width: 701px) {
+  .restaurant-media {
+    padding-left: clamp(1.5rem, 9vw, 11rem);
+    padding-right: clamp(1.5rem, 9vw, 11rem);
+  }
+  .restaurant-toast {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 clamp(1.5rem, 9vw, 11rem);
+  }
+  .photo-split + section .text-image {
+    padding-left: clamp(1.5rem, 9vw, 11rem);
+    padding-right: clamp(1.5rem, 9vw, 11rem);
+    gap: 2.5rem;
+  }
+  .restaurant-split {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 clamp(1.5rem, 9vw, 11rem);
+  }
+}
 @media (max-width: 700px) {
   .farm-split {
     grid-template-columns: 1fr;
