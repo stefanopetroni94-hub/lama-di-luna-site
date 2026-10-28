@@ -162,7 +162,6 @@ export function CookieConsent({ locale }: { locale: Locale }) {
     const s = read()
     setStored(s)
     if (s) setDraft({ preferences: s.preferences, statistics: s.statistics, marketing: s.marketing })
-    else setView("bar")
     setReady(true)
   }, [])
 
