@@ -3267,6 +3267,21 @@ footer {
   font-size: 15px;
   font-weight: 500;
 }
+.contact-form .privacy-check {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--ink);
+  cursor: pointer;
+}
+.contact-form .privacy-check input {
+  accent-color: var(--ink);
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
 .contact-form .field label {
   font-size: 10px;
   letter-spacing: 0.28em;

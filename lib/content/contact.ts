@@ -20,6 +20,7 @@ export type ContactContent = {
   formTitle: string
   nameLabel: string
   surnameLabel: string
+  privacyLabel: string
   emailFieldLabel: string
   phoneFieldLabel: string
   datesLabel: string
@@ -56,6 +57,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
     formTitle: "Tell us about your stay",
     nameLabel: "Name",
     surnameLabel: "Surname",
+    privacyLabel: "I have read and accept the Privacy Policy",
     emailFieldLabel: "Email",
     phoneFieldLabel: "Phone (optional)",
     datesLabel: "Dates (optional)",
@@ -100,6 +102,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
     formTitle: "Raccontaci del tuo soggiorno",
     nameLabel: "Nome",
     surnameLabel: "Cognome",
+    privacyLabel: "Ho letto e accetto la Privacy Policy",
     emailFieldLabel: "Email",
     phoneFieldLabel: "Telefono (opzionale)",
     datesLabel: "Date (opzionale)",

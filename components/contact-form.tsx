@@ -7,6 +7,7 @@ type Labels = {
   formTitle: string
   nameLabel: string
   surnameLabel: string
+  privacyLabel: string
   emailFieldLabel: string
   phoneFieldLabel: string
   datesLabel: string
@@ -58,6 +59,10 @@ export function ContactForm({ labels }: { labels: Labels }) {
           <label htmlFor="message">{labels.messageLabel}</label>
           <textarea className="box-input" id="message" rows={6} required />
         </div>
+        <label className="privacy-check">
+          <input type="checkbox" name="privacy" value="accepted" required />
+          <span>{labels.privacyLabel}</span>
+        </label>
         <div className="submit">
           <button type="submit" className="submit-btn">
             {labels.sendLabel}

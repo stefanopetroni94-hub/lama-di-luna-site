@@ -36,6 +36,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
               formTitle: c.formTitle,
               nameLabel: c.nameLabel,
               surnameLabel: c.surnameLabel,
+              privacyLabel: c.privacyLabel,
               emailFieldLabel: c.emailFieldLabel,
               phoneFieldLabel: c.phoneFieldLabel,
               datesLabel: c.datesLabel,
