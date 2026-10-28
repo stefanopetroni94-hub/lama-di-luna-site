@@ -128,6 +128,20 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
       "Prenez un livre, trouvez un coin et laissez passer l'après-midi. Dites-nous si vous souhaitez y passer un moment et nous nous en occuperons.",
     ],
   },
+  "horse-riding": {
+    en: [
+      "Ride out on horseback into the Alta Murgia National Park, beyond the olive groves, through the wild uplands that border the estate.",
+      "The ride is arranged on request. Tell us your dates and how much riding experience you have, and we will organise it for you.",
+    ],
+    it: [
+      "A cavallo nel Parco Nazionale dell'Alta Murgia, oltre gli uliveti, tra gli altopiani selvaggi che confinano con la tenuta.",
+      "La passeggiata si organizza su richiesta. Dicci le tue date e quanta esperienza hai a cavallo, e la organizzeremo per te.",
+    ],
+    fr: [
+      "À cheval dans le Parc national de l'Alta Murgia, au delà des oliveraies, à travers les hauts plateaux sauvages qui bordent le domaine.",
+      "La balade est organisée sur demande. Indiquez-nous vos dates et votre expérience de l'équitation, et nous nous en occuperons.",
+    ],
+  },
   "castel-del-monte": {
     en: [
       "Frederick II's octagonal castle, built in the 13th century, a UNESCO site on the next hill over, 20 minutes' drive from the masseria.",
