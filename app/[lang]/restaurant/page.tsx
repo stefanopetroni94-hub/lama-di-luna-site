@@ -102,7 +102,9 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
               <p key={i}>{p}</p>
             ))}
           </div>
-          <div className="image-block" style={{ backgroundImage: `url('${c.sourcingImg}')` }} />
+          <div className="image-block image-block--zoom">
+            <div style={{ backgroundImage: `url('${c.sourcingImg}')` }} />
+          </div>
         </div>
       </section>
 
