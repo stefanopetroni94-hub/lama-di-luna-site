@@ -46,7 +46,9 @@ export default async function BookingPreviewPage({
       </section>
 
       <section className="booking-frame-wrap">
-        <iframe className="booking-frame" src={engineUrl(stay)} title={t.frame} loading="eager" />
+        <div className="booking-frame-crop">
+          <iframe className="booking-frame" src={engineUrl(stay)} title={t.frame} loading="eager" />
+        </div>
       </section>
 
       <SiteFooter locale={lang} />
