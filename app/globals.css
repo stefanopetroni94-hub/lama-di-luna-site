@@ -2364,11 +2364,13 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 0 2.5rem;
-  height: 150px;
+  height: 92px;
   border-bottom: 1px solid var(--line);
+  /* same type as the "Menu" and "Book" words in the site's top bar */
   font-family: var(--serif);
   font-size: 12px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.15em;
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--ink);
 }
@@ -2377,7 +2379,8 @@ footer {
   border: none;
   font-family: var(--serif);
   font-size: 12px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.15em;
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--ink);
   cursor: pointer;
@@ -2404,8 +2407,8 @@ footer {
     --crop: 100px;
   }
   .booking-sheet-bar {
-    height: 130px;
-    padding: 0 1.3rem;
+    height: 74px;
+    padding: 0 1rem;
   }
 }
 
