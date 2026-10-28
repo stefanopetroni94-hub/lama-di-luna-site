@@ -2,7 +2,6 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { WaveLine } from "@/components/wave-line"
 import { QuickSearch } from "@/components/quick-search"
 import { book } from "@/lib/content/book"
 import { experiences, type ExpCard } from "@/lib/content/experiences"
@@ -45,11 +44,6 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ la
         <QuickSearch labels={book[lang]} />
       </div>
 
-      <div className="section-label">
-        <WaveLine side="left" />
-        <span>{c.onEstateLabel}</span>
-        <WaveLine side="right" />
-      </div>
       <section className="grid-4">
         {c.onEstate.map((card) => (
           <Card key={card.name} card={card} lang={lang} />
