@@ -65,7 +65,6 @@ export default async function ExperienceDetailPage({
 
       <section className="other-exp other-exp--olive">
         <div className="other-exp-header">
-          <div className="eyebrow">{o.otherEyebrow}</div>
           <h2>{o.otherTitle}</h2>
         </div>
         <div className="other-exp-grid">
