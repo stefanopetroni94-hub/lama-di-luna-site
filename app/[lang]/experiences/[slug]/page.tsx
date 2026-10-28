@@ -30,7 +30,7 @@ export default async function ExperienceDetailPage({
         <div className="hero-scroll">{chrome[lang].scroll}</div>
       </section>
 
-      <section className="statement">
+      <section className="statement statement--olive">
         <div className="statement-grid statement-grid--stacked">
           <div>
             <h2>{c.title}</h2>
@@ -43,7 +43,7 @@ export default async function ExperienceDetailPage({
         </div>
       </section>
 
-      <section className="booking-callout">
+      <section className="booking-callout booking-callout--olive">
         <div className="booking-callout-inner">
           <div className="eyebrow">{c.bookingEyebrow}</div>
           <h2>{c.bookingTitle}</h2>
@@ -54,7 +54,7 @@ export default async function ExperienceDetailPage({
         </div>
       </section>
 
-      <section className="other-exp">
+      <section className="other-exp other-exp--olive">
         <div className="other-exp-header">
           <div className="eyebrow">{c.otherEyebrow}</div>
           <h2>{c.otherTitle}</h2>

@@ -3144,6 +3144,16 @@ footer {
 .other-exp {
   padding: 6rem 0;
 }
+/* Olive Tour: text, line, booking block, line, other experiences, all with the same 3.5rem on both sides of each line */
+.statement.statement--olive {
+  padding-bottom: 3.5rem;
+}
+.booking-callout.booking-callout--olive {
+  border-bottom: 1px solid var(--line);
+}
+.other-exp.other-exp--olive {
+  padding-top: 3.5rem;
+}
 .other-exp-header {
   text-align: center;
   margin-bottom: 3rem;
