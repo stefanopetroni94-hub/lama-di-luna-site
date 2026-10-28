@@ -26,15 +26,13 @@ export default async function ExperienceDetailPage({
           <span style={{ opacity: 0.55 }}>/</span>
           <span>{c.breadcrumbCurrent}</span>
         </div>
-        <div className="exp-hero-title">
-          <h1>{c.title}</h1>
-        </div>
+        <h1 className="sr-only">{c.title}</h1>
       </section>
 
       <section className="statement">
         <div className="statement-grid statement-grid--stacked">
           <div>
-            <h2>{c.statementTitle}</h2>
+            <h2>{c.title}</h2>
             <div className="statement-body">
               {c.statementBody.map((p, i) => (
                 <p key={i}>{p}</p>
