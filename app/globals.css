@@ -2355,18 +2355,16 @@ footer {
   color: var(--ink);
   line-height: 0;
 }
-.booking-sheet-logo .brand-mark {
-  width: 51px;
-  height: 48px;
-}
+/* the logo keeps the exact size it has in the menu bar of the site (.brand-mark), so the bar is as tall as that one */
 .booking-sheet-bar {
   position: relative;
+  z-index: 2;
   flex: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 clamp(1.3rem, 4vw, 2.5rem);
-  height: 64px;
+  padding: 0 2.5rem;
+  height: 92px;
   border-bottom: 1px solid var(--line);
   font-family: var(--serif);
   font-size: 12px;
