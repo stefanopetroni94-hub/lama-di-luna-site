@@ -43,9 +43,9 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
   en: {
     counter: "Experience 01 / 08",
     breadcrumbRoot: "Experiences",
-    breadcrumbCurrent: "Olive Tour",
+    breadcrumbCurrent: "Olive Oil Tasting and Tour",
     heroEyebrow: "October – November · estate experience",
-    title: "The Olive Tour",
+    title: "Olive Oil Tasting and Tour",
     statementTitle: "Walk the groves, watch the cold press, taste the first oil of the year",
     statementBody: [
       "Late October to mid-November, the estate's 210 hectares of olive groves come into harvest. Pickers move along the rows from sunrise; nets are spread beneath the trees; crates are filled and driven to the cold-press mill before the day's heat reaches the fruit. The first oil pressed from each day's olives is unfiltered, bright green, faintly bitter — the most honest taste in Pugliese cooking.",
@@ -85,7 +85,7 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
     priceUnit: "per guest",
     priceNote: "Children under 12 free when accompanied by an adult. Minimum 2 guests. Maximum 8 per session for an intimate experience.",
     bookingEyebrow: "October to November only",
-    bookingTitle: "Arrange your olive tour morning",
+    bookingTitle: "Arrange your olive oil tasting and tour",
     bookingText: "Best paired with a 2- or 3-night stay during the harvest season. Tell us your dates and we'll confirm availability and the most likely picking day.",
     bookingCta: "Get in touch",
     otherEyebrow: "Continue",
@@ -99,9 +99,9 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
   it: {
     counter: "Esperienza 01 / 08",
     breadcrumbRoot: "Esperienze",
-    breadcrumbCurrent: "Tour degli Ulivi",
+    breadcrumbCurrent: "Degustazione e Tour dell'Olio d'Oliva",
     heroEyebrow: "Ottobre – Novembre · esperienza in masseria",
-    title: "Il Tour degli Ulivi",
+    title: "Degustazione e Tour dell'Olio d'Oliva",
     statementTitle: "Cammina tra gli ulivi, osserva la spremitura a freddo, assaggia il primo olio dell'anno",
     statementBody: [
       "Da fine ottobre a metà novembre, i 210 ettari di uliveti della masseria entrano nel periodo della raccolta. I raccoglitori si muovono lungo i filari dall'alba; le reti si stendono sotto gli alberi; le cassette si riempiono e vengono portate al frantoio a freddo prima che il calore del giorno raggiunga i frutti. Il primo olio spremuto dalle olive di ogni giornata è non filtrato, verde brillante, leggermente amaro — il sapore più sincero della cucina pugliese.",
@@ -141,7 +141,7 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
     priceUnit: "a ospite",
     priceNote: "Bambini sotto i 12 anni gratis se accompagnati da un adulto. Minimo 2 ospiti. Massimo 8 per sessione per un'esperienza intima.",
     bookingEyebrow: "Solo da ottobre a novembre",
-    bookingTitle: "Organizza la tua mattinata del tour degli ulivi",
+    bookingTitle: "Organizza la tua degustazione e il tour dell'olio",
     bookingText: "Ideale in abbinamento a un soggiorno di 2 o 3 notti durante la stagione della raccolta. Dicci le tue date e confermeremo la disponibilità e il giorno di raccolta più probabile.",
     bookingCta: "Contattaci",
     otherEyebrow: "Continua",
@@ -155,9 +155,9 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
   fr: {
     counter: "Expérience 01 / 08",
     breadcrumbRoot: "Expériences",
-    breadcrumbCurrent: "Visite des Oliviers",
+    breadcrumbCurrent: "Dégustation d'Huile d'Olive et Visite",
     heroEyebrow: "Octobre à novembre · expérience au domaine",
-    title: "La Visite des Oliviers",
+    title: "Dégustation d'Huile d'Olive et Visite",
     statementTitle: "Marchez dans les oliveraies, assistez à la pression à froid, goûtez la première huile de l'année",
     statementBody: [
       "De fin octobre à mi-novembre, les 210 hectares d'oliveraies du domaine entrent en récolte. Les cueilleurs avancent le long des rangs dès le lever du soleil, les filets sont étendus sous les arbres, les cagettes se remplissent et partent au moulin à froid avant que la chaleur du jour n'atteigne les fruits. La première huile pressée chaque jour est non filtrée, d'un vert vif, légèrement amère : le goût le plus sincère de la cuisine des Pouilles.",
@@ -197,7 +197,7 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
     priceUnit: "par personne",
     priceNote: "Gratuit pour les enfants de moins de 12 ans accompagnés d'un adulte. Minimum 2 personnes. Maximum 8 par séance pour une expérience intime.",
     bookingEyebrow: "D'octobre à novembre uniquement",
-    bookingTitle: "Organisez votre matinée de visite des oliviers",
+    bookingTitle: "Organisez votre dégustation d'huile d'olive et votre visite",
     bookingText: "Idéal avec un séjour de 2 ou 3 nuits pendant la saison de la récolte. Indiquez-nous vos dates et nous vous confirmerons la disponibilité et le jour de cueillette le plus probable.",
     bookingCta: "Contactez-nous",
     otherEyebrow: "Continuer",
