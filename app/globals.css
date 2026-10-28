@@ -3236,34 +3236,42 @@ footer {
   width: 100%;
   background: transparent;
   border: none;
-  border-bottom: 1px solid var(--ink-soft);
+  border-bottom: 1px solid var(--line);
   border-radius: 0;
   padding: 1rem 0 0.6rem;
   font-family: var(--serif);
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--ink);
   outline: none;
   transition: border-color 0.2s;
 }
+/* labels: same type as "Check in / Check out / Guests" */
 .contact-form .line-input::placeholder {
-  color: var(--ink);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
   opacity: 1;
 }
 .contact-form .line-input:focus {
-  border-bottom-color: var(--ink);
+  border-bottom-color: var(--ink-soft);
 }
-/* message: a full box */
+/* message: a full box, same line as the check-in box */
 .contact-form .field textarea.box-input {
-  border: 1px solid var(--ink-soft);
+  border: 1px solid var(--line);
   padding: 0.9rem 1rem;
   min-height: 170px;
   background: transparent;
+  font-size: 15px;
+  font-weight: 500;
 }
 .contact-form .field label {
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  text-transform: none;
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
 }
 .form-eyebrow {
   font-family: var(--serif);
