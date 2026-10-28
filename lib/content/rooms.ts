@@ -43,7 +43,7 @@ export const rooms: Record<"en" | "it" | "fr", RoomsContent> = {
     eyebrow: "Eleven rooms, restored",
     title: "Our Rooms",
     intro:
-      "Our guest rooms were once settlers' dwellings — spacious and bright, all with fireplaces, opening onto the inner courtyard. Beds in solid pine, olive wood or 1800s brass. Raw cotton sheets. Soaps made with extra virgin olive oil, aloe and the wild herbs of Puglia. Power from the sun.",
+      "Our guest rooms were once settlers' dwellings — spacious and bright, all with fireplaces, opening onto the inner courtyard. Beds in solid pine, olive wood or 1800s brass; raw cotton sheets; soaps made with extra virgin olive oil, aloe and the wild herbs of Puglia; and powered by the sun.",
     from: "From",
     perNight: "/ night",
     viewRoom: "View room →",
@@ -167,7 +167,7 @@ export const rooms: Record<"en" | "it" | "fr", RoomsContent> = {
     eyebrow: "Undici camere, restaurate",
     title: "Le Camere",
     intro:
-      "Le nostre camere erano un tempo dimore dei coloni — spaziose e luminose, tutte con camino, affacciate sulla corte interna. Letti in pino massello, legno d'ulivo o ottone dell'Ottocento. Lenzuola di cotone grezzo. Saponi all'olio extravergine d'oliva, aloe ed erbe selvatiche di Puglia. Energia dal sole.",
+      "Le nostre camere erano un tempo dimore dei coloni — spaziose e luminose, tutte con camino, affacciate sulla corte interna. Letti in pino massello, legno d'ulivo o ottone dell'Ottocento; lenzuola di cotone grezzo; saponi all'olio extravergine d'oliva, aloe ed erbe selvatiche di Puglia; e alimentate dal sole.",
     from: "Da",
     perNight: "/ notte",
     viewRoom: "Vedi camera →",
@@ -291,7 +291,7 @@ export const rooms: Record<"en" | "it" | "fr", RoomsContent> = {
     eyebrow: "Onze chambres restaurées",
     title: "Nos Chambres",
     intro:
-      "Nos chambres étaient autrefois les logis des colons : spacieuses et lumineuses, toutes avec cheminée, elles donnent sur la cour intérieure. Lits en pin massif, en bois d'olivier ou en laiton du XIXe siècle. Draps en coton brut. Savons à l'huile d'olive extra vierge, à l'aloe et aux herbes sauvages des Pouilles. L'énergie vient du soleil.",
+      "Nos chambres étaient autrefois les logis des colons : spacieuses et lumineuses, toutes avec cheminée, elles donnent sur la cour intérieure. Lits en pin massif, en bois d'olivier ou en laiton du XIXe siècle ; draps en coton brut ; savons à l'huile d'olive extra vierge, à l'aloe et aux herbes sauvages des Pouilles ; et alimentées par le soleil.",
     from: "À partir de",
     perNight: "/ nuit",
     viewRoom: "Voir la chambre →",
