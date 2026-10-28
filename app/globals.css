@@ -830,8 +830,8 @@ section {
 .page-header.page-header--booking {
   padding-bottom: 0;
 }
-/* the cards follow the booking box directly, now that the "On the Estate" title is gone */
-.experiences-quick-search + .grid-4 {
+/* the cards follow the page title directly, now that the booking box and the "On the Estate" title are gone */
+.page-header--booking + .grid-4 {
   margin-top: 4rem;
 }
 .quick-search.experiences-quick-search {

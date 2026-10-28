@@ -2,8 +2,6 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { QuickSearch } from "@/components/quick-search"
-import { book } from "@/lib/content/book"
 import { experiences, type ExpCard } from "@/lib/content/experiences"
 import { BackLink } from "@/components/back-link"
 import { HOME, isLocale, type Locale } from "@/lib/i18n"
@@ -39,10 +37,6 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ la
         <h1>{c.title}</h1>
         <p>{c.intro}</p>
       </section>
-
-      <div className="quick-search experiences-quick-search">
-        <QuickSearch labels={book[lang]} />
-      </div>
 
       <section className="grid-4">
         {c.onEstate.map((card) => (
