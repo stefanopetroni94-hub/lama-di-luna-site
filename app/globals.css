@@ -772,6 +772,18 @@ section {
 .exclusive-text + .exclusive-split {
   margin-top: 0;
 }
+/* Weddings / Retreats / Family Gatherings: title starts on the same left edge as the text below */
+.section-label.exclusive-label {
+  max-width: 1500px;
+  margin: 0 auto;
+  justify-content: flex-start;
+  text-align: left;
+  padding-left: clamp(1.5rem, 9vw, 11rem);
+  padding-right: clamp(1.5rem, 9vw, 11rem);
+}
+.section-label.exclusive-label > :first-child:not(span) {
+  display: none;
+}
 .exclusive-text {
   padding-bottom: 4rem;
 }
