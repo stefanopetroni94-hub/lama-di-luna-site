@@ -2604,6 +2604,46 @@ footer {
 .exp-breadcrumb a:hover {
   opacity: 0.7;
 }
+/* "back" link top left of every inner page */
+.back-link {
+  position: absolute;
+  top: 90px;
+  left: 2.5rem;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: var(--serif);
+  font-size: 11px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+}
+.back-link::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.8;
+}
+.back-link--light {
+  color: var(--bg);
+}
+.back-link--dark {
+  color: var(--ink);
+}
+.back-link a {
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+.back-link a:hover {
+  opacity: 0.6;
+}
+@media (max-width: 700px) {
+  .back-link {
+    left: 1.3rem;
+  }
+}
 .exp-counter a {
   color: inherit;
   transition: opacity 0.2s ease;

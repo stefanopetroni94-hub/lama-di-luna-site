@@ -2,7 +2,8 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { isLocale } from "@/lib/i18n"
+import { BackLink } from "@/components/back-link"
+import { HOME, isLocale } from "@/lib/i18n"
 import { exclusive } from "@/lib/content/exclusive"
 import { WaveLine } from "@/components/wave-line"
 
@@ -14,9 +15,9 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
   return (
     <>
       <SiteNav locale={lang} variant="overlay" />
+      <BackLink href={`/${lang}`} label={HOME[lang]} tone="light" />
 
       <section className="exp-hero exp-hero--exclusive">
-        <div className="exp-counter">{c.counter}</div>
         <h1 className="sr-only">{c.title}</h1>
       </section>
 

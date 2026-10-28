@@ -2,7 +2,8 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { isLocale } from "@/lib/i18n"
+import { BackLink } from "@/components/back-link"
+import { HOME, isLocale } from "@/lib/i18n"
 import { restaurant } from "@/lib/content/restaurant"
 import { farm } from "@/lib/content/farm"
 
@@ -15,6 +16,7 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
   return (
     <>
       <SiteNav locale={lang} variant="solid" />
+      <BackLink href={`/${lang}`} label={HOME[lang]} />
 
       <section className="page-header">
         <h1>{c.title}</h1>

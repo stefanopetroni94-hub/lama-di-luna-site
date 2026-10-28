@@ -4,7 +4,8 @@ import { SiteFooter } from "@/components/site-footer"
 import { CurvedLabel } from "@/components/curved-label"
 import { QuickSearch } from "@/components/quick-search"
 import { PerkIcon } from "@/components/perk-icon"
-import { isLocale } from "@/lib/i18n"
+import { BackLink } from "@/components/back-link"
+import { HOME, isLocale } from "@/lib/i18n"
 import { book } from "@/lib/content/book"
 import { bookingUrl } from "@/lib/booking"
 
@@ -16,6 +17,7 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
   return (
     <>
       <SiteNav locale={lang} variant="solid" />
+      <BackLink href={`/${lang}`} label={HOME[lang]} />
 
       <section className="page-header">
         <h1>{c.title}</h1>

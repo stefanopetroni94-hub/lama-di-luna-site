@@ -3,7 +3,8 @@ import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { AddToCart } from "@/components/add-to-cart"
-import { isLocale } from "@/lib/i18n"
+import { BackLink } from "@/components/back-link"
+import { HOME, isLocale } from "@/lib/i18n"
 import { shop } from "@/lib/content/shop"
 
 const WINE_IDS = ["primitivo", "nero-di-troia", "nero-di-troia-rose", "fiano"]
@@ -16,6 +17,7 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
   return (
     <>
       <SiteNav locale={lang} variant="solid" />
+      <BackLink href={`/${lang}`} label={HOME[lang]} />
 
       <div className="shop-page">
         <section className="page-header">

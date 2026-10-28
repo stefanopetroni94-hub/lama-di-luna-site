@@ -2,7 +2,8 @@ import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
-import { chrome, isLocale } from "@/lib/i18n"
+import { BackLink } from "@/components/back-link"
+import { HOME, chrome, isLocale } from "@/lib/i18n"
 import { story } from "@/lib/content/story"
 
 export default async function StoryPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -55,6 +56,7 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
   return (
     <>
       <SiteNav locale={lang} variant="overlay" />
+      <BackLink href={`/${lang}`} label={HOME[lang]} tone="light" />
 
       <section className="hero hero--story">
         <div className="hero-eyebrow">{c.heroEyebrow}</div>

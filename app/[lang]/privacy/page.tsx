@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { isLocale } from "@/lib/i18n"
+import { BackLink } from "@/components/back-link"
+import { HOME, isLocale } from "@/lib/i18n"
 import { contact } from "@/lib/content/contact"
 
 type Section = { title: string; body: string[] }
@@ -144,6 +145,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ lang: 
   return (
     <>
       <SiteNav locale={lang} variant="solid" />
+      <BackLink href={`/${lang}`} label={HOME[lang]} />
 
       <section className="page-header">
         <h1>{t.title}</h1>

@@ -5,7 +5,8 @@ import { SiteFooter } from "@/components/site-footer"
 import { QuickSearch } from "@/components/quick-search"
 import { rooms, type Room } from "@/lib/content/rooms"
 import { book } from "@/lib/content/book"
-import { isLocale, type Locale } from "@/lib/i18n"
+import { BackLink } from "@/components/back-link"
+import { HOME, isLocale, type Locale } from "@/lib/i18n"
 
 function RoomCard({ room, c, lang }: { room: Room; c: (typeof rooms)["en"]; lang: Locale }) {
   return (
@@ -34,6 +35,7 @@ export default async function RoomsPage({ params }: { params: Promise<{ lang: st
   return (
     <>
       <SiteNav locale={lang} variant="solid" />
+      <BackLink href={`/${lang}`} label={HOME[lang]} />
 
       <div className="rooms-page">
         <section className="page-header">

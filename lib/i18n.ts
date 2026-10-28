@@ -6,6 +6,9 @@ export function isLocale(value: string): value is Locale {
   return (locales as readonly string[]).includes(value)
 }
 
+// Label of the "back to home" link at the top left of every page.
+export const HOME: Record<Locale, string> = { en: "Home", it: "Home", fr: "Accueil" }
+
 // Main navigation menu (opens in the full-screen overlay).
 // `slug` is null for sections that don't have a page yet.
 export type MenuItem = { label: string; slug: string | null }

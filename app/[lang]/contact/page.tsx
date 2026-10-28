@@ -4,7 +4,8 @@ import { SiteFooter } from "@/components/site-footer"
 import { ContactForm } from "@/components/contact-form"
 import { QuickSearch } from "@/components/quick-search"
 import { MapCard } from "@/components/map-card"
-import { isLocale } from "@/lib/i18n"
+import { BackLink } from "@/components/back-link"
+import { HOME, isLocale } from "@/lib/i18n"
 import { contact } from "@/lib/content/contact"
 import { book } from "@/lib/content/book"
 import { home } from "@/lib/content/home"
@@ -18,6 +19,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
   return (
     <>
       <SiteNav locale={lang} variant="solid" />
+      <BackLink href={`/${lang}`} label={HOME[lang]} />
 
       <section className="page-header">
         <h1>{c.title}</h1>

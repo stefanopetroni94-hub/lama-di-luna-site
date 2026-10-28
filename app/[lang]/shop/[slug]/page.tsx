@@ -3,7 +3,8 @@ import Link from "next/link"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { AddToCart } from "@/components/add-to-cart"
-import { isLocale } from "@/lib/i18n"
+import { BackLink } from "@/components/back-link"
+import { isLocale, menu } from "@/lib/i18n"
 import { shop } from "@/lib/content/shop"
 
 const WINE_IDS = ["primitivo", "nero-di-troia", "nero-di-troia-rose", "fiano"]
@@ -24,6 +25,7 @@ export default async function ProductPage({
   return (
     <>
       <SiteNav locale={lang} variant="solid" />
+      <BackLink href={`/${lang}/shop`} label={menu[lang][6].label} />
 
       <article className="shop-detail">
         {product.imgs ? (
@@ -60,9 +62,6 @@ export default async function ProductPage({
         )}
 
         <div className="shop-detail-info">
-          <Link href={`/${lang}/shop`} className="room-back">
-            {{ en: "← All products", it: "← Tutto lo shop", fr: "← Tous les produits" }[lang]}
-          </Link>
           <h1>{product.name}</h1>
           <div className="shop-detail-price">{product.price}</div>
           {product.meta ? <p className="shop-detail-text">{product.meta}</p> : null}

@@ -1,11 +1,11 @@
 import { notFound } from "next/navigation"
-import Link from "next/link"
+import { BackLink } from "@/components/back-link"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { QuickSearch } from "@/components/quick-search"
 import { rooms } from "@/lib/content/rooms"
 import { book } from "@/lib/content/book"
-import { isLocale } from "@/lib/i18n"
+import { isLocale, menu } from "@/lib/i18n"
 
 export default async function RoomDetailPage({
   params,
@@ -31,6 +31,7 @@ export default async function RoomDetailPage({
   return (
     <>
       <SiteNav locale={lang} variant="overlay" />
+      <BackLink href={`/${lang}/rooms`} label={menu[lang][0].label} tone="light" />
 
       <section
         className="room-hero"
@@ -41,9 +42,6 @@ export default async function RoomDetailPage({
 
       <article className="room-detail room-detail--hero">
         <header className="room-detail-header">
-          <Link href={`/${lang}/rooms`} className="room-back">
-            {c.backToRooms}
-          </Link>
           <h1>{room.name}</h1>
 
           <div className="room-detail-body">

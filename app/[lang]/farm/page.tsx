@@ -2,7 +2,8 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { chrome, isLocale } from "@/lib/i18n"
+import { BackLink } from "@/components/back-link"
+import { HOME, chrome, isLocale } from "@/lib/i18n"
 import { farm } from "@/lib/content/farm"
 
 export default async function FarmPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -14,6 +15,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
   return (
     <>
       <SiteNav locale={lang} variant="overlay" />
+      <BackLink href={`/${lang}`} label={HOME[lang]} tone="light" />
 
       <section className="hero hero--farm">
         <div className="hero-eyebrow">{c.heroEyebrow}</div>

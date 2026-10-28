@@ -6,7 +6,8 @@ import { WaveLine } from "@/components/wave-line"
 import { QuickSearch } from "@/components/quick-search"
 import { book } from "@/lib/content/book"
 import { experiences, type ExpCard } from "@/lib/content/experiences"
-import { isLocale, type Locale } from "@/lib/i18n"
+import { BackLink } from "@/components/back-link"
+import { HOME, isLocale, type Locale } from "@/lib/i18n"
 
 function Card({ card, lang }: { card: ExpCard; lang: Locale }) {
   const href = card.slug === "#" ? "#" : `/${lang}/experiences/${card.slug}`
@@ -33,6 +34,7 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ la
   return (
     <>
       <SiteNav locale={lang} variant="solid" />
+      <BackLink href={`/${lang}`} label={HOME[lang]} />
 
       <section className="page-header page-header--booking">
         <h1>{c.title}</h1>
