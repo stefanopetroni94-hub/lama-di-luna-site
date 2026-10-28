@@ -44,6 +44,17 @@ export default async function ExperienceDetailPage({
         </div>
       </section>
 
+      <section className="booking-callout">
+        <div className="booking-callout-inner">
+          <div className="eyebrow">{c.bookingEyebrow}</div>
+          <h2>{c.bookingTitle}</h2>
+          <p>{c.bookingText}</p>
+          <Link href={`/${lang}/contact`} className="btn-primary">
+            {c.bookingCta}
+          </Link>
+        </div>
+      </section>
+
       <SiteFooter locale={lang} />
     </>
   )
