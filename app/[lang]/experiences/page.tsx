@@ -56,17 +56,6 @@ export default async function ExperiencesPage({ params }: { params: Promise<{ la
         ))}
       </section>
 
-      <div className="section-label">
-        <WaveLine side="left" />
-        <span>{c.inRegionLabel}</span>
-        <WaveLine side="right" />
-      </div>
-      <section className="grid-4">
-        {c.inRegion.map((card) => (
-          <Card key={card.name} card={card} lang={lang} />
-        ))}
-      </section>
-
       <section className="arrange">
         <div className="arrange-inner">
           <div className="eyebrow">{c.arrangeEyebrow}</div>
