@@ -279,7 +279,18 @@ export function CookieConsent({ locale }: { locale: Locale }) {
             <ul>
               {state.map(([label, on, locked]) => (
                 <li key={label}>
-                  <span aria-hidden="true">{locked ? "\u{1F512}︎" : on ? "✓" : "✕"}</span>
+                  <span aria-hidden="true">
+                    {locked ? (
+                      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="5" y="11" width="14" height="9" rx="1.5" />
+                        <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+                      </svg>
+                    ) : on ? (
+                      "✓"
+                    ) : (
+                      "✕"
+                    )}
+                  </span>
                   {label}
                 </li>
               ))}
