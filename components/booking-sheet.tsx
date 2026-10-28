@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useEffect, useState } from "react"
 import { engineUrl } from "@/lib/booking"
 import { chrome, type Locale } from "@/lib/i18n"
@@ -42,9 +43,9 @@ export function BookingSheet({ locale }: { locale: Locale }) {
     <div className={`booking-sheet${open ? " is-open" : ""}`} aria-hidden={!open} role="dialog" aria-label={t.book}>
       <div className="booking-sheet-bar">
         <span>{t.book}</span>
-        <span className="booking-sheet-logo" role="img" aria-label="Lama di Luna">
-          <span className="brand-mark" />
-        </span>
+        <Link href={`/${locale}`} className="booking-sheet-logo" aria-label="Lama di Luna" onClick={() => setOpen(false)}>
+          <span className="brand-mark" aria-hidden="true" />
+        </Link>
         <button type="button" className="booking-sheet-close" onClick={() => setOpen(false)}>
           {t.close}
         </button>
