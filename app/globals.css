@@ -3222,8 +3222,14 @@ footer {
   height: 16px;
 }
 .contact-form {
-  background: var(--bg-alt);
+  background: #ffffff;
   padding: 2.8rem 2.5rem;
+}
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  max-width: 900px;
 }
 .form-eyebrow {
   font-family: var(--serif);

@@ -6,6 +6,7 @@ type Labels = {
   formEyebrow: string
   formTitle: string
   nameLabel: string
+  surnameLabel: string
   emailFieldLabel: string
   phoneFieldLabel: string
   datesLabel: string
@@ -28,29 +29,22 @@ export function ContactForm({ labels }: { labels: Labels }) {
     >
       <div className="form-eyebrow">{labels.formEyebrow}</div>
       <div className="form-title">{labels.formTitle}</div>
-      <div className="form-grid">
+      <div className="form-stack">
         <div className="field">
           <label htmlFor="name">{labels.nameLabel}</label>
           <input id="name" type="text" required />
+        </div>
+        <div className="field">
+          <label htmlFor="surname">{labels.surnameLabel}</label>
+          <input id="surname" type="text" required />
         </div>
         <div className="field">
           <label htmlFor="email">{labels.emailFieldLabel}</label>
           <input id="email" type="email" required />
         </div>
         <div className="field">
-          <label htmlFor="phone">{labels.phoneFieldLabel}</label>
-          <input id="phone" type="tel" />
-        </div>
-        <div className="field">
-          <label>{labels.datesLabel}</label>
-          <div className="field-row">
-            <input type="date" aria-label={labels.datesLabel} />
-            <input type="date" aria-label={labels.datesLabel} />
-          </div>
-        </div>
-        <div className="field full">
           <label htmlFor="message">{labels.messageLabel}</label>
-          <textarea id="message" rows={4} required />
+          <textarea id="message" rows={5} required />
         </div>
         <div className="submit">
           <button type="submit" className="submit-btn">

@@ -19,6 +19,7 @@ export type ContactContent = {
   formEyebrow: string
   formTitle: string
   nameLabel: string
+  surnameLabel: string
   emailFieldLabel: string
   phoneFieldLabel: string
   datesLabel: string
@@ -54,6 +55,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
     formEyebrow: "Write to us",
     formTitle: "Tell us about your stay",
     nameLabel: "Name",
+    surnameLabel: "Surname",
     emailFieldLabel: "Email",
     phoneFieldLabel: "Phone (optional)",
     datesLabel: "Dates (optional)",
@@ -97,6 +99,7 @@ export const contact: Record<"en" | "it", ContactContent> = {
     formEyebrow: "Scrivici",
     formTitle: "Raccontaci del tuo soggiorno",
     nameLabel: "Nome",
+    surnameLabel: "Cognome",
     emailFieldLabel: "Email",
     phoneFieldLabel: "Telefono (opzionale)",
     datesLabel: "Date (opzionale)",
