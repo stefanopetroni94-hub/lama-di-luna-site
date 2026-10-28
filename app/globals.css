@@ -3553,9 +3553,9 @@ footer {
 /* same type and colour as "Write to us" */
 .find-us-title {
   font-family: var(--serif);
-  font-style: italic;
-  font-size: 16px;
-  color: var(--olive);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--ink);
   margin-bottom: 0.5rem;
 }
 .map-wrap {
