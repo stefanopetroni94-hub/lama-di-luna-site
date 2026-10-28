@@ -5,7 +5,7 @@ import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { Scopri } from "@/components/scopri"
 import { experiences } from "@/lib/content/experiences"
-import { experienceDetails } from "@/lib/content/experience-details"
+import { experienceDetails, experienceFacts } from "@/lib/content/experience-details"
 import { oliveHarvest } from "@/lib/content/olive-harvest"
 import { chrome, isLocale } from "@/lib/i18n"
 
@@ -28,6 +28,7 @@ export default async function ExperienceDetailPage({
   const card = all[index]
   const isOlive = slug === "olive-harvest"
   const body = isOlive ? o.statementBody : experienceDetails[slug]?.[lang] ?? []
+  const facts = experienceFacts[slug]?.[lang] ?? []
   const heroImg = isOlive ? OLIVE_PHOTO : card.img.replace("w_1200", "w_2400")
   const heroStyle = {
     "--exp-hero-img": `url("${heroImg}")`,
@@ -45,23 +46,29 @@ export default async function ExperienceDetailPage({
         <div className="exp-counter">
           <Link href={`/${lang}/experiences`}>{o.breadcrumbRoot}</Link>
         </div>
-        <h1 className="sr-only">{card.name}</h1>
         <div className="hero-scroll">{chrome[lang].scroll}</div>
       </section>
 
-      <section className="statement statement--olive">
-        <div className="statement-grid statement-grid--stacked">
-          <div>
-            <h2>{card.name}</h2>
-            <div className="statement-body">
-              {body.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
+      <article className="room-detail room-detail--hero experience-detail">
+        <header className="room-detail-header">
+          <h1>{card.name}</h1>
+          <div className="room-detail-body">
+            <div className="room-detail-copy">
+              <p>{body.join(" ")}</p>
+              <Scopri href={`/${lang}/contact`}>{o.bookingCta}</Scopri>
             </div>
-            <Scopri href={`/${lang}/contact`}>{o.bookingCta}</Scopri>
+            <aside className="room-detail-aside">
+              <div className="room-detail-facts">
+                <ul>
+                  {facts.map((f) => (
+                    <li key={f}>{f}</li>
+                  ))}
+                </ul>
+              </div>
+            </aside>
           </div>
-        </div>
-      </section>
+        </header>
+      </article>
 
       <section className="other-exp other-exp--olive">
         <div className="other-exp-header">

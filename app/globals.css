@@ -3253,6 +3253,10 @@ footer {
   color: var(--ink);
   margin-bottom: 1rem;
 }
+/* experience page: the room-page layout, text on the left, four points on the right, then a line */
+.experience-detail .room-detail-header {
+  padding-bottom: 3.5rem;
+}
 .other-exp.other-exp--olive {
   padding-top: 3.5rem;
   border-top: 1px solid var(--line);

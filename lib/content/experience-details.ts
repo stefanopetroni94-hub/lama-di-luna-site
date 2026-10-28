@@ -1,5 +1,64 @@
 import type { Locale } from "@/lib/i18n"
 
+// The four short points on the right of each experience page (like "Sleeps 2, Open fireplace..." in the rooms).
+export const experienceFacts: Record<string, Record<Locale, string[]>> = {
+  "olive-harvest": {
+    en: ["Late October to mid-November", "4 hours, a gentle walk", "2 to 8 guests", "From €85 per person"],
+    it: ["Da fine ottobre a metà novembre", "4 ore, una passeggiata leggera", "Da 2 a 8 ospiti", "Da €85 a persona"],
+    fr: ["De fin octobre à mi-novembre", "4 heures, une marche facile", "De 2 à 8 personnes", "À partir de €85 par personne"],
+  },
+  "cooking-class": {
+    en: ["Half-day, on request", "Orecchiette and Pugliese focaccia", "Made entirely by hand", "In the masseria kitchen"],
+    it: ["Mezza giornata, su richiesta", "Orecchiette e focaccia pugliese", "Fatte interamente a mano", "Nella cucina della masseria"],
+    fr: ["Demi-journée, sur demande", "Orecchiette et focaccia des Pouilles", "Faites entièrement à la main", "Dans la cuisine de la masseria"],
+  },
+  massages: {
+    en: ["By appointment", "In the quiet of the masseria", "Arranged on request", "A moment to slow down"],
+    it: ["Su appuntamento", "Nella quiete della masseria", "Si organizza su richiesta", "Un momento per rallentare"],
+    fr: ["Sur rendez-vous", "Dans le calme de la masseria", "Organisé sur demande", "Un moment pour ralentir"],
+  },
+  "bicycle-ride": {
+    en: ["Half-day, on request", "Olive groves and quiet country roads", "At your own pace", "Route suggested by us"],
+    it: ["Mezza giornata, su richiesta", "Uliveti e tranquille strade di campagna", "Con i tuoi tempi", "Percorso suggerito da noi"],
+    fr: ["Demi-journée, sur demande", "Oliveraies et petites routes de campagne", "À votre rythme", "Itinéraire proposé par nous"],
+  },
+  "cinema-room": {
+    en: ["By arrangement", "In the masseria's cinema room", "An evening at the masseria", "Prepared for you on request"],
+    it: ["Su prenotazione", "Nella sala cinema della masseria", "Una serata in masseria", "Preparata per te su richiesta"],
+    fr: ["Sur réservation", "Dans la salle de cinéma de la masseria", "Une soirée à la masseria", "Préparée pour vous sur demande"],
+  },
+  yoga: {
+    en: ["By arrangement", "Courtyard, stone halls and groves", "For beginners and regular practitioners", "Arranged around your stay"],
+    it: ["Su prenotazione", "Cortile, sale di pietra e uliveti", "Per principianti e praticanti abituali", "Organizzato attorno al tuo soggiorno"],
+    fr: ["Sur réservation", "Cour, salles en pierre et oliveraies", "Pour débutants et pratiquants réguliers", "Organisé autour de votre séjour"],
+  },
+  "infinity-pool": {
+    en: ["In season, mid-May to late September", "Infinity pool in the olive grove", "Sun loungers and shade", "The one Wi-Fi-free zone"],
+    it: ["In stagione, da metà maggio a fine settembre", "Piscina a sfioro nell'uliveto", "Lettini e ombra", "L'unica zona senza Wi-Fi"],
+    fr: ["En saison, de mi-mai à fin septembre", "Piscine à débordement dans l'oliveraie", "Transats et ombre", "La seule zone sans Wi-Fi"],
+  },
+  "estate-walk": {
+    en: ["On request", "Olive groves, vineyards and the wild Murgia", "On the old paths of the estate", "Next to the Alta Murgia National Park"],
+    it: ["Su richiesta", "Uliveti, vigneti e Murgia selvaggia", "Sugli antichi sentieri della tenuta", "Accanto al Parco Nazionale dell'Alta Murgia"],
+    fr: ["Sur demande", "Oliveraies, vignes et Murgia sauvage", "Sur les anciens sentiers du domaine", "À côté du Parc national de l'Alta Murgia"],
+  },
+  golf: {
+    en: ["By arrangement", "At the masseria", "Golf practice", "Organised for you on request"],
+    it: ["Su prenotazione", "In masseria", "Practice golf", "Organizzato per te su richiesta"],
+    fr: ["Sur réservation", "À la masseria", "Practice de golf", "Organisé pour vous sur demande"],
+  },
+  library: {
+    en: ["By arrangement", "In the masseria", "A quiet room to read", "Away from the courtyard and the groves"],
+    it: ["Su prenotazione", "In masseria", "Una sala silenziosa dove leggere", "Lontano dal cortile e dagli uliveti"],
+    fr: ["Sur réservation", "À la masseria", "Une salle calme pour lire", "Loin de la cour et des oliveraies"],
+  },
+  "horse-riding": {
+    en: ["By arrangement", "On horseback", "In the Alta Murgia National Park", "Beyond the olive groves"],
+    it: ["Su prenotazione", "A cavallo", "Nel Parco Nazionale dell'Alta Murgia", "Oltre gli uliveti"],
+    fr: ["Sur réservation", "À cheval", "Dans le Parc national de l'Alta Murgia", "Au delà des oliveraies"],
+  },
+}
+
 // Description of each experience page (the Olive Oil Tasting and Tour has its own text in olive-harvest.ts).
 export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   "cooking-class": {
