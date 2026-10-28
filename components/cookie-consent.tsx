@@ -155,7 +155,7 @@ export function CookieConsent({ locale }: { locale: Locale }) {
   const [view, setView] = useState<View>(null)
   const [tab, setTab] = useState<Tab>("consent")
   const [stored, setStored] = useState<Stored | null>(null)
-  const [draft, setDraft] = useState<Choice>(ALL)
+  const [draft, setDraft] = useState<Choice>(NONE)
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
@@ -232,9 +232,9 @@ export function CookieConsent({ locale }: { locale: Locale }) {
 
   const state: [string, boolean, boolean][] = [
     [t.necessary, true, true],
-    [t.preferences, stored ? stored.preferences : true, false],
-    [t.statistics, stored ? stored.statistics : true, false],
-    [t.marketing, stored ? stored.marketing : true, false],
+    [t.preferences, !!stored?.preferences, false],
+    [t.statistics, !!stored?.statistics, false],
+    [t.marketing, !!stored?.marketing, false],
   ]
 
   return (
