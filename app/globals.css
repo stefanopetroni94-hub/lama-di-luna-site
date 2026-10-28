@@ -2604,6 +2604,13 @@ footer {
 .exp-breadcrumb a:hover {
   opacity: 0.7;
 }
+.exp-counter a {
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+.exp-counter a:hover {
+  opacity: 0.7;
+}
 .exp-hero-title {
   position: absolute;
   left: 2.5rem;

@@ -8,7 +8,6 @@ import { experienceDetails } from "@/lib/content/experience-details"
 import { oliveHarvest } from "@/lib/content/olive-harvest"
 import { chrome, isLocale } from "@/lib/i18n"
 
-const WORD = { en: "Experience", it: "Esperienza", fr: "Expérience" }
 const OLIVE_PHOTO = "/whatsapp/20261028_065214_1516459033640755.jpg"
 
 export default async function ExperienceDetailPage({
@@ -52,12 +51,7 @@ export default async function ExperienceDetailPage({
 
       <section className="exp-hero exp-hero--detail" style={heroStyle}>
         <div className="exp-counter">
-          {WORD[lang]} {String(index + 1).padStart(2, "0")} / {String(all.length).padStart(2, "0")}
-        </div>
-        <div className="exp-breadcrumb">
           <Link href={`/${lang}/experiences`}>{o.breadcrumbRoot}</Link>
-          <span style={{ opacity: 0.55 }}>/</span>
-          <span>{card.name}</span>
         </div>
         <h1 className="sr-only">{card.name}</h1>
         <div className="hero-scroll">{chrome[lang].scroll}</div>
