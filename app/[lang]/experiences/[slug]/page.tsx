@@ -19,7 +19,7 @@ export default async function ExperienceDetailPage({
     <>
       <SiteNav locale={lang} variant="overlay" />
 
-      <section className="exp-hero">
+      <section className="exp-hero exp-hero--olive">
         <div className="exp-counter">{c.counter}</div>
         <div className="exp-breadcrumb">
           <Link href={`/${lang}/experiences`}>{c.breadcrumbRoot}</Link>

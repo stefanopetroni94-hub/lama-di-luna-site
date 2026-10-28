@@ -2542,6 +2542,10 @@ footer {
 .exp-hero--exclusive {
   overflow: hidden;
 }
+/* Olive Tour: the guide talking to guests on the lawn, same vintage filter as the other photos */
+.exp-hero--olive::before {
+  background: url("/whatsapp/20261028_065214_1516459033640755.jpg") center 55% / cover no-repeat;
+}
 /* this photo is already level, so no rotation is needed */
 .exp-hero--exclusive::before {
   background: url("/whatsapp/20261016_183752_1693704425661443.jpg") center 55% / cover no-repeat;
