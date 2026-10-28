@@ -442,6 +442,14 @@ section {
   color: var(--ink);
   margin-bottom: 0.6rem;
 }
+/* a title that is also a link: looks the same, fades slightly under the cursor */
+.title-link {
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+.title-link:hover {
+  opacity: 0.6;
+}
 .room-desc {
   font-size: 14px;
   line-height: 1.65;

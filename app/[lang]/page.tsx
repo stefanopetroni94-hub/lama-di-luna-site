@@ -71,7 +71,9 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           </div>
           <div className="text-block">
             <div className="room-name" style={{ marginBottom: "1rem" }}>
-              {c.kitchenLabel}
+              <Link href={`/${lang}/restaurant`} className="title-link">
+                {c.kitchenLabel}
+              </Link>
             </div>
             {c.kitchenText.map((p, i) => (
               <p key={i}>{p}</p>
@@ -89,7 +91,9 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         <div className="text-image text-image--flush">
           <div className="text-block">
             <div className="room-name" style={{ marginBottom: "1rem" }}>
-              {c.experiencesLabel}
+              <Link href={`/${lang}/experiences`} className="title-link">
+                {c.experiencesLabel}
+              </Link>
             </div>
             {c.experiencesText.map((p, i) => (
               <p key={i}>{p}</p>
