@@ -28,7 +28,6 @@ export function ContactForm({ labels }: { labels: Labels }) {
         setSent(true)
       }}
     >
-      <div className="form-eyebrow">{labels.formEyebrow}</div>
       <div className="form-title">{labels.formTitle}</div>
       <div className="form-stack">
         <input
