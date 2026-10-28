@@ -2,7 +2,7 @@ import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { BackLink } from "@/components/back-link"
-import { bookingUrl } from "@/lib/booking"
+import { engineUrl } from "@/lib/booking"
 import { HOME, isLocale } from "@/lib/i18n"
 
 const TEXT = {
@@ -23,9 +23,16 @@ const TEXT = {
   },
 }
 
-export default async function BookingPreviewPage({ params }: { params: Promise<{ lang: string }> }) {
+export default async function BookingPreviewPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ lang: string }>
+  searchParams: Promise<{ start_date?: string; end_date?: string; adults?: string }>
+}) {
   const { lang } = await params
   if (!isLocale(lang)) notFound()
+  const stay = await searchParams
   const t = TEXT[lang]
 
   return (
@@ -39,7 +46,7 @@ export default async function BookingPreviewPage({ params }: { params: Promise<{
       </section>
 
       <section className="booking-frame-wrap">
-        <iframe className="booking-frame" src={bookingUrl(lang)} title={t.frame} loading="eager" />
+        <iframe className="booking-frame" src={engineUrl(stay)} title={t.frame} loading="eager" />
       </section>
 
       <SiteFooter locale={lang} />
