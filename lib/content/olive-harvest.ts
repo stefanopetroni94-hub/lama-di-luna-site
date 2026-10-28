@@ -43,9 +43,9 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
   en: {
     counter: "Experience 01 / 08",
     breadcrumbRoot: "Experiences",
-    breadcrumbCurrent: "Olive Harvest",
+    breadcrumbCurrent: "Olive Tour",
     heroEyebrow: "October – November · estate experience",
-    title: "The Olive Harvest",
+    title: "The Olive Tour",
     statementTitle: "Walk the groves, watch the cold press, taste the first oil of the year",
     statementBody: [
       "Late October to mid-November, the estate's 210 hectares of olive groves come into harvest. Pickers move along the rows from sunrise; nets are spread beneath the trees; crates are filled and driven to the cold-press mill before the day's heat reaches the fruit. The first oil pressed from each day's olives is unfiltered, bright green, faintly bitter — the most honest taste in Pugliese cooking.",
@@ -99,9 +99,9 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
   it: {
     counter: "Esperienza 01 / 08",
     breadcrumbRoot: "Esperienze",
-    breadcrumbCurrent: "Raccolta delle Olive",
+    breadcrumbCurrent: "Tour degli Ulivi",
     heroEyebrow: "Ottobre – Novembre · esperienza in masseria",
-    title: "La Raccolta delle Olive",
+    title: "Il Tour degli Ulivi",
     statementTitle: "Cammina tra gli ulivi, osserva la spremitura a freddo, assaggia il primo olio dell'anno",
     statementBody: [
       "Da fine ottobre a metà novembre, i 210 ettari di uliveti della masseria entrano nel periodo della raccolta. I raccoglitori si muovono lungo i filari dall'alba; le reti si stendono sotto gli alberi; le cassette si riempiono e vengono portate al frantoio a freddo prima che il calore del giorno raggiunga i frutti. Il primo olio spremuto dalle olive di ogni giornata è non filtrato, verde brillante, leggermente amaro — il sapore più sincero della cucina pugliese.",
@@ -155,9 +155,9 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
   fr: {
     counter: "Expérience 01 / 08",
     breadcrumbRoot: "Expériences",
-    breadcrumbCurrent: "Récolte des olives",
+    breadcrumbCurrent: "Visite des Oliviers",
     heroEyebrow: "Octobre à novembre · expérience au domaine",
-    title: "La Récolte des Olives",
+    title: "La Visite des Oliviers",
     statementTitle: "Marchez dans les oliveraies, assistez à la pression à froid, goûtez la première huile de l'année",
     statementBody: [
       "De fin octobre à mi-novembre, les 210 hectares d'oliveraies du domaine entrent en récolte. Les cueilleurs avancent le long des rangs dès le lever du soleil, les filets sont étendus sous les arbres, les cagettes se remplissent et partent au moulin à froid avant que la chaleur du jour n'atteigne les fruits. La première huile pressée chaque jour est non filtrée, d'un vert vif, légèrement amère : le goût le plus sincère de la cuisine des Pouilles.",
