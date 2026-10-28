@@ -7,11 +7,13 @@ import { WaveLine } from "@/components/wave-line"
 import { isLocale } from "@/lib/i18n"
 import { contact } from "@/lib/content/contact"
 import { book } from "@/lib/content/book"
+import { home } from "@/lib/content/home"
 
 export default async function ContactPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
   if (!isLocale(lang)) notFound()
   const c = contact[lang]
+  const h = home[lang]
 
   return (
     <>
@@ -48,9 +50,15 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
 
       <div className="section-label find-label">
         <WaveLine side="left" />
-        <span>{lang === "it" ? "Posizione" : "Location"}</span>
+        <span>{c.findLabel}</span>
         <WaveLine side="right" />
       </div>
+
+      <section className="find-us-intro find-us-intro--centered">
+        <p>
+          {h.mapText.join(" ")} {c.mapBody}
+        </p>
+      </section>
 
       <section className="map-wrap">
         <iframe
