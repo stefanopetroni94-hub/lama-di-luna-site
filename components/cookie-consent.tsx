@@ -155,7 +155,7 @@ export function CookieConsent({ locale }: { locale: Locale }) {
   const [view, setView] = useState<View>(null)
   const [tab, setTab] = useState<Tab>("consent")
   const [stored, setStored] = useState<Stored | null>(null)
-  const [draft, setDraft] = useState<Choice>(NONE)
+  const [draft, setDraft] = useState<Choice>(ALL)
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
@@ -232,9 +232,9 @@ export function CookieConsent({ locale }: { locale: Locale }) {
 
   const state: [string, boolean, boolean][] = [
     [t.necessary, true, true],
-    [t.preferences, !!stored?.preferences, false],
-    [t.statistics, !!stored?.statistics, false],
-    [t.marketing, !!stored?.marketing, false],
+    [t.preferences, stored ? stored.preferences : true, false],
+    [t.statistics, stored ? stored.statistics : true, false],
+    [t.marketing, stored ? stored.marketing : true, false],
   ]
 
   return (
@@ -276,18 +276,14 @@ export function CookieConsent({ locale }: { locale: Locale }) {
           </div>
           <div className="ck-status-body">
             <strong>{t.statusNow}</strong>
-            {stored ? (
-              <ul>
-                {state.map(([label, on, locked]) => (
-                  <li key={label}>
-                    <span aria-hidden="true">{locked ? "\u{1F512}︎" : on ? "✓" : "✕"}</span>
-                    {label}
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p>{t.noChoice}</p>
-            )}
+            <ul>
+              {state.map(([label, on, locked]) => (
+                <li key={label}>
+                  <span aria-hidden="true">{locked ? "\u{1F512}︎" : on ? "✓" : "✕"}</span>
+                  {label}
+                </li>
+              ))}
+            </ul>
             <button type="button" className="ck-link" onClick={() => openModal("details")}>
               {t.showDetails} &rsaquo;
             </button>
