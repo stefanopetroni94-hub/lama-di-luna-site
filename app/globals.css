@@ -2420,13 +2420,14 @@ footer {
 }
 
 /* ---------------- EXPERIENCES GRID ---------------- */
+/* experiences: two big photos per row, with the same side margins as the home page text */
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
   max-width: 1500px;
   margin: 0 auto 4rem;
-  padding: 0 2.5rem;
+  padding: 0 clamp(1.5rem, 9vw, 11rem);
 }
 .exp-card {
   cursor: pointer;
