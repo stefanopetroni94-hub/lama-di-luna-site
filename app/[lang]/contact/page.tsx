@@ -56,13 +56,15 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
       </section>
 
       <section className="map-wrap">
-        <iframe
-          className="gmap"
-          src="https://www.google.com/maps?q=Lama+di+Luna,+Andria,+Italy&z=8&output=embed"
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Lama di Luna on Google Maps"
-        />
+        <div className="gmap-frame">
+          <iframe
+            className="gmap"
+            src="https://www.google.com/maps?q=Lama+di+Luna,+Andria,+Italy&z=8&output=embed"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Lama di Luna on Google Maps"
+          />
+        </div>
         <MapCard
           title={lang === "it" ? "Posizione e contatti" : "Location & contact"}
           address={c.addressValue}

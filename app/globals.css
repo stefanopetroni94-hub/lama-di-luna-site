@@ -3472,6 +3472,23 @@ footer {
   display: block;
 }
 
+/* Google puts its own name card and "Open in Maps" link at the top left of the embedded map.
+   The map is pushed up inside a clipped frame so that strip is cut off. */
+.gmap-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 21 / 8;
+  overflow: hidden;
+}
+.gmap-frame .gmap {
+  position: absolute;
+  top: -120px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 120px);
+  aspect-ratio: auto;
+}
+
 /* "Location & contact" card over the top left of the map, appearing as you scroll */
 /* "Find Us" text: same width as the white form box above, centred.
    Gap above the title and gap between the text and the card are both 5rem. */
