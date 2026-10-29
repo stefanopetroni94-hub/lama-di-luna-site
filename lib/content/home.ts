@@ -42,7 +42,7 @@ export const home: Record<Locale, HomeContent> = {
   en: {
     statementTitle: "Experience Puglia's nature, agriculture and history at its most authentic",
     statementBody: [
-      "Our 18th century farmhouse or masseria, restored to its original glory, is nestled in a 518-acre estate of all organic olive groves, almond groves, vineyards and wildlands. Stay in our rustic rooms, formerly inhabited by settler Mezzadri farmers, and refurbished using bioarchitecture and artisanal furniture. Immerse yourself in the tranquility and natural beauty of the sprawling Murgia national park. Languish in our panoramic pool overlooking vast olive fields. Taste our high quality extra virgin olive oil, almonds and local produce at The Veranda restaurant.",
+      "Our 18th century farmhouse or masseria, restored to its original glory, is nestled in a 518-acre estate of all organic olive groves, almond groves, vineyards and wildlands. Stay in our rustic rooms, formerly inhabited by settler Mezzadri farmers, and refurbished using bioarchitecture and artisanal furniture. Immerse yourself in the tranquility and natural beauty of the sprawling Alta Murgia National Park. Languish in our panoramic pool overlooking vast olive fields. Taste our high quality extra virgin olive oil, almonds and local produce at The Veranda restaurant.",
       "Let time stand still at Lama di Luna, our Valley of the Moon.",
     ],
     discover: "Read our story",
@@ -155,7 +155,7 @@ export const home: Record<Locale, HomeContent> = {
   fr: {
     statementTitle: "Vivez la nature, l'agriculture et l'histoire des Pouilles sous leur forme la plus authentique",
     statementBody: [
-      "Notre ferme du XVIIIe siècle, ou masseria, rendue à sa splendeur d'origine, est nichée dans un domaine de 210 hectares d'oliveraies, d'amanderaies, de vignes et de terres sauvages, entièrement biologiques. Séjournez dans nos chambres rustiques, autrefois habitées par les métayers, et rénovées selon les principes de la bioarchitecture avec du mobilier artisanal. Plongez dans la tranquillité et la beauté naturelle du vaste Parc national de la Murgia. Prélassez-vous dans notre piscine panoramique qui domine les champs d'oliviers. Goûtez notre huile d'olive extra vierge de grande qualité, nos amandes et les produits locaux au restaurant The Veranda.",
+      "Notre ferme du XVIIIe siècle, ou masseria, rendue à sa splendeur d'origine, est nichée dans un domaine de 210 hectares d'oliveraies, d'amanderaies, de vignes et de terres sauvages, entièrement biologiques. Séjournez dans nos chambres rustiques, autrefois habitées par les métayers, et rénovées selon les principes de la bioarchitecture avec du mobilier artisanal. Plongez dans la tranquillité et la beauté naturelle du vaste Parc national de l'Alta Murgia. Prélassez-vous dans notre piscine panoramique qui domine les champs d'oliviers. Goûtez notre huile d'olive extra vierge de grande qualité, nos amandes et les produits locaux au restaurant The Veranda.",
       "Laissez le temps s'arrêter à Lama di Luna, notre Vallée de la Lune.",
     ],
     discover: "Découvrez notre histoire",
