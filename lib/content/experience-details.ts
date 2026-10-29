@@ -85,13 +85,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   "bicycle-ride": {
     en: [
-      "At Lama di Luna we have bicycles that we rent to our guests. They are pedal bicycles: you can ride them along the small roads across the whole estate, or take the little-trafficked Murgia road that leads towards Castel del Monte, for long rides in the Alta Murgia National Park, in a steppe landscape that looks almost lunar. You can also ride down among the olive groves of the Andria plain and discover the countryside. In summer it is better to ride in the early morning or in the late afternoon, because of the heat.",
+      "At Lama di Luna we have pedal bicycles available for rent to our guests. You can ride them along the small roads across the whole estate, or take the little-trafficked Murgia road that leads towards Castel del Monte, for longer rides in the Alta Murgia National Park. You can also ride down among the olive rows of the Andria plain. In summer, it is better to ride in the early morning or late afternoon, to avoid the hottest hours of the day.",
     ],
     it: [
-      "A Lama di Luna abbiamo delle biciclette che affittiamo ai nostri ospiti. Sono biciclette a pedali: si può andare lungo le stradine di tutta la tenuta, oppure sulla strada poco trafficata della Murgia che porta verso Castel del Monte, per fare lunghe passeggiate nel Parco Nazionale dell'Alta Murgia, con un paesaggio steppico che sembra quasi lunare. Si può anche scendere in mezzo agli uliveti della piana di Andria e scoprire le campagne. D'estate è meglio andare la mattina presto o nel tardo pomeriggio, per il caldo.",
+      "A Lama di Luna abbiamo biciclette a pedali a disposizione degli ospiti per il noleggio. Si può andare lungo le stradine di tutta la tenuta, oppure sulla strada poco trafficata della Murgia che porta verso Castel del Monte, per fare giri più lunghi nel Parco Nazionale dell'Alta Murgia. Si può anche scendere tra i filari di ulivi della piana di Andria. D'estate è meglio andare la mattina presto o nel tardo pomeriggio, per evitare le ore più calde della giornata.",
     ],
     fr: [
-      "À Lama di Luna, nous avons des vélos que nous louons à nos hôtes. Ce sont des vélos à pédales : vous pouvez rouler sur les petits chemins de tout le domaine, ou prendre la route peu fréquentée de la Murgia qui mène vers Castel del Monte, pour de longues balades dans le Parc national de l'Alta Murgia, dans un paysage de steppe qui paraît presque lunaire. Vous pouvez aussi descendre parmi les oliveraies de la plaine d'Andria et découvrir la campagne. L'été, il vaut mieux partir tôt le matin ou en fin d'après-midi, à cause de la chaleur.",
+      "À Lama di Luna, nous avons des vélos à pédales à louer pour nos hôtes. Vous pouvez rouler sur les petits chemins de tout le domaine, ou prendre la route peu fréquentée de la Murgia qui mène vers Castel del Monte, pour des balades plus longues dans le Parc national de l'Alta Murgia. Vous pouvez aussi descendre parmi les rangs d'oliviers de la plaine d'Andria. L'été, il vaut mieux partir tôt le matin ou en fin d'après-midi, pour éviter les heures les plus chaudes de la journée.",
     ],
   },
   "cinema-room": {
