@@ -28,9 +28,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Réservée aux hôtes qui dorment à la masseria", "Plus de 900 DVD de l'histoire du cinéma", "Sur demande, avec l'aide de la réception", "L'après-midi ou après le dîner"],
   },
   yoga: {
-    en: ["Mats and equipment free of charge", "On your own, free of charge", "Lesson with teacher: 1h 30 min", "€60 per person (minimum two), €25 for each extra person"],
-    it: ["Tappetini e attrezzatura gratuiti", "Da soli, gratuito", "Lezione con maestro: 1h 30 min", "€60 a persona (minimo due), €25 per ogni persona in più"],
-    fr: ["Tapis et matériel gratuits", "En solo, gratuit", "Cours avec professeur : 1 h 30 min", "€60 par personne (minimum deux), €25 par personne supplémentaire"],
+    en: ["Mats and equipment free of charge", "On your own, free of charge", "Lesson with teacher: 1h 30 min", "€60 per couple, €25 for each extra person"],
+    it: ["Tappetini e attrezzatura gratuiti", "Da soli, gratuito", "Lezione con maestro: 1h 30 min", "€60 a coppia, €25 per ogni persona in più"],
+    fr: ["Tapis et matériel gratuits", "En solo, gratuit", "Cours avec professeur : 1 h 30 min", "€60 par couple, €25 par personne supplémentaire"],
   },
   "infinity-pool": {
     en: ["18 metres long", "Salt water, disinfected with salt", "Open from 9 am to 7 pm", "Free, for guests staying overnight at Lama di Luna"],
@@ -107,13 +107,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   yoga: {
     en: [
-      "Lama di Luna was built following Feng Shui and bioarchitecture, with spaces that have rounded corners and an excellent energy for yoga practice. You can practise in the indoor yoga room, from the 1700s, with a heated floor. We provide mats and all the equipment free of charge. You can practise on your own in the morning, or join Agata, or ask for yoga lessons. Practising on your own is free; a lesson with a teacher lasts an hour and a half, with a minimum of two people, at €60 per person, and €25 for each extra person. Yoga is lovely with a teacher and just as lovely on your own, so you can choose.",
+      "Lama di Luna was built following Feng Shui and bioarchitecture, with spaces that have rounded corners and an excellent energy for yoga practice. You can practise in the indoor yoga room, from the 1700s, with a heated floor. We provide mats and all the equipment free of charge. You can practise on your own in the morning, or join Agata, or ask for yoga lessons. Practising on your own is free; a lesson with a teacher lasts an hour and a half, costs €60 per couple, and €25 for each extra person. Yoga is lovely with a teacher and just as lovely on your own, so you can choose.",
     ],
     it: [
-      "Lama di Luna è stata costruita seguendo il Feng Shui e la bioarchitettura, con spazi dagli angoli arrotondati in cui circola un'ottima energia per fare yoga. Si può praticare nella sala yoga interna, del 1700, con il pavimento riscaldato. Mettiamo a disposizione gratuitamente tappetini e tutta l'attrezzatura. Si può praticare da soli la mattina, oppure unirsi ad Agata, oppure chiedere delle lezioni di yoga. Praticare da soli è gratuito; una lezione con un maestro dura un'ora e mezza, con un minimo di due persone, al costo di €60 a persona e €25 per ogni persona in più. Lo yoga è bello con un maestro e altrettanto bello da soli: si può scegliere.",
+      "Lama di Luna è stata costruita seguendo il Feng Shui e la bioarchitettura, con spazi dagli angoli arrotondati in cui circola un'ottima energia per fare yoga. Si può praticare nella sala yoga interna, del 1700, con il pavimento riscaldato. Mettiamo a disposizione gratuitamente tappetini e tutta l'attrezzatura. Si può praticare da soli la mattina, oppure unirsi ad Agata, oppure chiedere delle lezioni di yoga. Praticare da soli è gratuito; una lezione con un maestro dura un'ora e mezza, costa €60 a coppia e €25 per ogni persona in più. Lo yoga è bello con un maestro e altrettanto bello da soli: si può scegliere.",
     ],
     fr: [
-      "Lama di Luna a été construite selon le Feng Shui et la bioarchitecture, avec des espaces aux angles arrondis où circule une excellente énergie pour pratiquer le yoga. Vous pouvez pratiquer dans la salle de yoga intérieure, du XVIIIe siècle, au sol chauffant. Nous mettons gratuitement à votre disposition des tapis et tout le matériel. Vous pouvez pratiquer seul le matin, ou rejoindre Agata, ou demander des cours de yoga. Pratiquer seul est gratuit ; un cours avec un professeur dure une heure et demie, avec un minimum de deux personnes, au tarif de €60 par personne et €25 par personne supplémentaire. Le yoga est beau avec un professeur et tout aussi beau en solo : à vous de choisir.",
+      "Lama di Luna a été construite selon le Feng Shui et la bioarchitecture, avec des espaces aux angles arrondis où circule une excellente énergie pour pratiquer le yoga. Vous pouvez pratiquer dans la salle de yoga intérieure, du XVIIIe siècle, au sol chauffant. Nous mettons gratuitement à votre disposition des tapis et tout le matériel. Vous pouvez pratiquer seul le matin, ou rejoindre Agata, ou demander des cours de yoga. Pratiquer seul est gratuit ; un cours avec un professeur dure une heure et demie, coûte €60 par couple et €25 par personne supplémentaire. Le yoga est beau avec un professeur et tout aussi beau en solo : à vous de choisir.",
     ],
   },
   "infinity-pool": {
