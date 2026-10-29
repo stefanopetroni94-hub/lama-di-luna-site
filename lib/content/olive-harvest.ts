@@ -48,7 +48,7 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
     title: "Olive Oil Tasting and Tour",
     statementTitle: "Walk the groves, watch the cold press, taste the first oil of the year",
     statementBody: [
-      "A professional tour of the Lama di Luna farm, where you learn the basics of agronomy: from irrigation to the harvest, and the 11 different olive varieties grown at Lama di Luna, from centuries-old trees to very young trees. The tour ends on the veranda, where you taste the extra virgin olive oils of Lama di Luna and learn how to taste an oil, how to recognise its qualities, whether it is good or not, and how to choose one at the supermarket.",
+      "A professional tour of the Lama di Luna farm, where you learn the basics of agronomy: from irrigation to the harvest, and the 11 different olive varieties grown at Lama di Luna, from centuries-old trees to very young trees. The tour ends on the veranda, where you taste the extra virgin olive oils of Lama di Luna and learn how to taste an oil, how to recognise its qualities, whether it is good or not, and how to choose one at the supermarket. This tour was featured in the CNN documentary series Searching for Italy, with Stanley Tucci, who came to Lama di Luna and took the tour and the tasting: exactly the same tour our guests will take.",
     ],
     facts: [
       { label: "Season", value: "Late Oct – mid Nov" },
@@ -103,7 +103,7 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
     title: "Degustazione e Tour dell'Olio d'Oliva",
     statementTitle: "Cammina tra gli ulivi, osserva la spremitura a freddo, assaggia il primo olio dell'anno",
     statementBody: [
-      "Un tour professionale dell'azienda agricola Lama di Luna, in cui si apprendono nozioni agronomiche: dall'irrigazione alla raccolta, fino alle 11 diverse varietà di olive coltivate a Lama di Luna, da alberi centenari ad alberi giovanissimi. Il tour si conclude sulla veranda, dove si assaggiano gli oli extravergine di oliva di Lama di Luna e si impara come assaggiare un olio, come riconoscerne le proprietà, se è buono o meno e come sceglierlo al supermercato.",
+      "Un tour professionale dell'azienda agricola Lama di Luna, in cui si apprendono nozioni agronomiche: dall'irrigazione alla raccolta, fino alle 11 diverse varietà di olive coltivate a Lama di Luna, da alberi centenari ad alberi giovanissimi. Il tour si conclude sulla veranda, dove si assaggiano gli oli extravergine di oliva di Lama di Luna e si impara come assaggiare un olio, come riconoscerne le proprietà, se è buono o meno e come sceglierlo al supermercato. Questo tour è stato presentato nel documentario CNN Searching for Italy, con Stanley Tucci, che è venuto a Lama di Luna e ha fatto il tour e la degustazione: esattamente lo stesso tour che faranno i nostri ospiti.",
     ],
     facts: [
       { label: "Stagione", value: "Fine ott – metà nov" },
@@ -158,7 +158,7 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
     title: "Dégustation d'Huile d'Olive et Visite",
     statementTitle: "Marchez dans les oliveraies, assistez à la pression à froid, goûtez la première huile de l'année",
     statementBody: [
-      "Une visite professionnelle de la ferme Lama di Luna, où l'on apprend les bases de l'agronomie : de l'irrigation à la récolte, jusqu'aux 11 variétés d'olives différentes cultivées à Lama di Luna, des arbres centenaires aux très jeunes arbres. La visite se termine sur la véranda, où l'on déguste les huiles d'olive extra vierges de Lama di Luna et où l'on apprend à déguster une huile, à reconnaître ses qualités, à savoir si elle est bonne ou non et à la choisir au supermarché.",
+      "Une visite professionnelle de la ferme Lama di Luna, où l'on apprend les bases de l'agronomie : de l'irrigation à la récolte, jusqu'aux 11 variétés d'olives différentes cultivées à Lama di Luna, des arbres centenaires aux très jeunes arbres. La visite se termine sur la véranda, où l'on déguste les huiles d'olive extra vierges de Lama di Luna et où l'on apprend à déguster une huile, à reconnaître ses qualités, à savoir si elle est bonne ou non et à la choisir au supermarché. Cette visite a été présentée dans le documentaire de CNN Searching for Italy, avec Stanley Tucci, qui est venu à Lama di Luna et a suivi la visite et la dégustation : exactement la même visite que feront nos hôtes.",
     ],
     facts: [
       { label: "Saison", value: "Fin oct. à mi-nov." },
