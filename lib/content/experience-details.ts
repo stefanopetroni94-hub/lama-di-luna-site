@@ -3,19 +3,19 @@ import type { Locale } from "@/lib/i18n"
 // The four short points on the right of each experience page (like "Sleeps 2, Open fireplace..." in the rooms).
 export const experienceFacts: Record<string, Record<Locale, string[]>> = {
   "olive-harvest": {
-    en: ["Lasts one hour and a quarter", "Best in the morning", "Open to couples or groups", "€60 per couple, €30 for each additional person"],
-    it: ["Dura un'ora e un quarto", "Meglio la mattina", "Aperto a coppie o a gruppi", "€60 a coppia, €30 per ogni persona in più"],
-    fr: ["Dure une heure et quart", "De préférence le matin", "Ouvert aux couples ou aux groupes", "€60 par couple, €30 par personne supplémentaire"],
+    en: ["Lasts 1h 15 min", "Best in the morning", "Open to couples or groups", "€60 per couple, €30 for each additional person"],
+    it: ["Dura 1h 15 min", "Meglio la mattina", "Aperto a coppie o a gruppi", "€60 a coppia, €30 per ogni persona in più"],
+    fr: ["Dure 1 h 15 min", "De préférence le matin", "Ouvert aux couples ou aux groupes", "€60 par couple, €30 par personne supplémentaire"],
   },
   "cooking-class": {
-    en: ["Lasts one hour", "Morning or afternoon", "By reservation", "€60 for two people, €30 for each extra person"],
-    it: ["Dura un'ora", "Mattina o pomeriggio", "Su prenotazione", "€60 per due persone, €30 per ogni persona in più"],
-    fr: ["Dure une heure", "Le matin ou l'après-midi", "Sur réservation", "€60 pour deux personnes, €30 par personne supplémentaire"],
+    en: ["Lasts 1 hour", "Morning or afternoon", "By reservation", "€60 for two people, €30 for each extra person"],
+    it: ["Dura 1 ora", "Mattina o pomeriggio", "Su prenotazione", "€60 per due persone, €30 per ogni persona in più"],
+    fr: ["Dure 1 heure", "Le matin ou l'après-midi", "Sur réservation", "€60 pour deux personnes, €30 par personne supplémentaire"],
   },
   massages: {
-    en: ["Lasts one hour", "Relaxing or energising", "€70", "To be booked in advance"],
-    it: ["Dura un'ora", "Rilassante o energizzante", "€70", "Da prenotare con anticipo"],
-    fr: ["Dure une heure", "Relaxant ou énergisant", "€70", "À réserver à l'avance"],
+    en: ["Lasts 1 hour", "Relaxing or energising", "€70", "To be booked in advance"],
+    it: ["Dura 1 ora", "Rilassante o energizzante", "€70", "Da prenotare con anticipo"],
+    fr: ["Dure 1 heure", "Relaxant ou énergisant", "€70", "À réserver à l'avance"],
   },
   "bicycle-ride": {
     en: ["€15 for the whole day", "Pedal bicycles", "To be requested a few hours in advance", "In summer, best in the late afternoon"],
@@ -28,9 +28,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Réservée aux hôtes qui dorment à la masseria", "Plus de 900 DVD de l'histoire du cinéma", "Sur demande, avec l'aide de la réception", "L'après-midi ou après le dîner"],
   },
   yoga: {
-    en: ["Mats and equipment free of charge", "On your own, free of charge", "Lesson with Agata: an hour and a half", "€60 per person (minimum two), €25 for each extra person"],
-    it: ["Tappetini e attrezzatura gratuiti", "Da soli, gratuito", "Lezione con Agata: un'ora e mezza", "€60 a persona (minimo due), €25 per ogni persona in più"],
-    fr: ["Tapis et matériel gratuits", "En solo, gratuit", "Cours avec Agata : une heure et demie", "€60 par personne (minimum deux), €25 par personne supplémentaire"],
+    en: ["Mats and equipment free of charge", "On your own, free of charge", "Lesson with Agata: 1h 30 min", "€60 per person (minimum two), €25 for each extra person"],
+    it: ["Tappetini e attrezzatura gratuiti", "Da soli, gratuito", "Lezione con Agata: 1h 30 min", "€60 a persona (minimo due), €25 per ogni persona in più"],
+    fr: ["Tapis et matériel gratuits", "En solo, gratuit", "Cours avec Agata : 1 h 30 min", "€60 par personne (minimum deux), €25 par personne supplémentaire"],
   },
   "infinity-pool": {
     en: ["18 metres long", "Salt water, disinfected with salt", "Open from 9 am to 7 pm", "Free, for guests staying overnight at Lama di Luna"],
@@ -53,9 +53,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Gratuite", "Ouverte 24 heures sur 24", "Plus de 3 000 livres, certains très anciens", "En latin, allemand, français, anglais et italien"],
   },
   "horse-riding": {
-    en: ["Lasts two hours", "15 to 20 minutes' drive from Lama di Luna", "Always to be booked in advance", "Gentle horses, children welcome"],
-    it: ["Dura due ore", "A 15 o 20 minuti di macchina da Lama di Luna", "Da prenotare sempre in anticipo", "Cavalli mansueti, bambini benvenuti"],
-    fr: ["Dure deux heures", "À 15 ou 20 minutes en voiture de Lama di Luna", "À toujours réserver à l'avance", "Chevaux dociles, enfants bienvenus"],
+    en: ["Lasts 2 hours", "15 to 20 minutes' drive from Lama di Luna", "Always to be booked in advance", "Gentle horses, children welcome"],
+    it: ["Dura 2 ore", "A 15 o 20 minuti di macchina da Lama di Luna", "Da prenotare sempre in anticipo", "Cavalli mansueti, bambini benvenuti"],
+    fr: ["Dure 2 heures", "À 15 ou 20 minutes en voiture de Lama di Luna", "À toujours réserver à l'avance", "Chevaux dociles, enfants bienvenus"],
   },
 }
 
