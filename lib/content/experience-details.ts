@@ -38,9 +38,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["En saison, de mi-mai à fin septembre", "Piscine à débordement dans l'oliveraie", "Transats et ombre", "La seule zone sans Wi-Fi"],
   },
   "estate-walk": {
-    en: ["On request", "Olive groves, vineyards and the wild Murgia", "On the old paths of the estate", "Next to the Alta Murgia National Park"],
-    it: ["Su richiesta", "Uliveti, vigneti e Murgia selvaggia", "Sugli antichi sentieri della tenuta", "Accanto al Parco Nazionale dell'Alta Murgia"],
-    fr: ["Sur demande", "Oliveraies, vignes et Murgia sauvage", "Sur les anciens sentiers du domaine", "À côté du Parc national de l'Alta Murgia"],
+    en: ["Free of charge", "Comfortable or trekking shoes recommended", "In summer, best early in the morning or at sunset", "On the estate, in the National Park or on neighbouring roads"],
+    it: ["Gratuita", "Consigliate scarpe comode o da trekking", "D'estate meglio di prima mattina o al tramonto", "Nella tenuta, nel Parco Nazionale o sulle strade vicine"],
+    fr: ["Gratuite", "Chaussures confortables ou de randonnée conseillées", "L'été, de préférence tôt le matin ou au coucher du soleil", "Dans le domaine, dans le Parc national ou sur les routes voisines"],
   },
   golf: {
     en: ["By arrangement", "At the masseria", "Golf practice", "Organised for you on request"],
@@ -132,16 +132,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   "estate-walk": {
     en: [
-      "A walk through the olive groves, the vineyards and the wild Murgia around the masseria, on the old paths of the estate.",
-      "The estate borders the Alta Murgia National Park, and along the way you may meet wild orchids, fennel and thyme, and the birds that nest in the masseria's chimneys. Arranged on request.",
+      "Lama di Luna, with its 210 hectares, has small roads that run among olive groves, vineyards and almond groves, and also through the wild landscape of the Murgia. You can walk inside the farm, or go outside and walk in the National Park and on the roads of our neighbours. While walking you can see wild rabbits, foxes and, every now and then, a wild boar. At night and in winter you can sometimes hear wolves howling, although they are very shy. You can see hedgehogs and small, harmless grass snakes, and hawks and buzzards in the sky. And you can enjoy the wild almond trees, the wild olive trees and the flowers of the Murgia in spring. It is a land with a lot to offer in terms of fauna and flora, and walking is one of the most beautiful ways to see it.",
     ],
     it: [
-      "Una passeggiata tra gli uliveti, i vigneti e la Murgia selvaggia intorno alla masseria, sugli antichi sentieri della tenuta.",
-      "La tenuta confina con il Parco Nazionale dell'Alta Murgia, e lungo il cammino puoi incontrare orchidee selvatiche, finocchio e timo, e gli uccelli che nidificano nei camini della masseria. Si organizza su richiesta.",
+      "Lama di Luna, con i suoi 210 ettari, ha stradine che vanno tra uliveti, vigneti e mandorleti, ma anche attraverso il paesaggio selvaggio della Murgia. Si può decidere di camminare all'interno dell'azienda, ma anche di uscire e camminare nel Parco Nazionale e sulle strade dei nostri vicini. Camminando si possono vedere conigli selvatici, volpi e ogni tanto qualche cinghiale. Di notte e in inverno a volte si sente ululare qualche lupo, anche se sono molto schivi e timidi. Si possono vedere ricci e piccoli serpentelli, bisce innocue, e in cielo falchi e poiane. E si possono godere i mandorli selvatici, gli olivi selvatici e i fiori della Murgia in primavera. È una terra che ha tanto da offrire dal punto di vista della fauna e della flora, e camminare è uno dei modi più belli per vederla.",
     ],
     fr: [
-      "Une promenade à travers les oliveraies, les vignes et la Murgia sauvage autour de la masseria, sur les anciens sentiers du domaine.",
-      "Le domaine borde le Parc national de l'Alta Murgia et, en chemin, vous pouvez croiser des orchidées sauvages, du fenouil et du thym, ainsi que les oiseaux qui nichent dans les cheminées de la masseria. Organisée sur demande.",
+      "Lama di Luna, avec ses 210 hectares, offre des chemins qui passent entre oliveraies, vignes et amanderaies, mais aussi à travers le paysage sauvage de la Murgia. Vous pouvez marcher à l'intérieur de la ferme, ou sortir et marcher dans le Parc national et sur les routes de nos voisins. En marchant, on peut voir des lapins sauvages, des renards et, de temps en temps, un sanglier. La nuit et en hiver, on entend parfois hurler des loups, même s'ils sont très craintifs et discrets. On peut voir des hérissons et de petites couleuvres inoffensives, et dans le ciel des faucons et des buses. Et profiter des amandiers sauvages, des oliviers sauvages et des fleurs de la Murgia au printemps. C'est une terre qui a beaucoup à offrir du point de vue de la faune et de la flore, et marcher est l'une des plus belles façons de la découvrir.",
     ],
   },
   golf: {
