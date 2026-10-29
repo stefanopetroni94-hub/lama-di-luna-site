@@ -96,13 +96,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   "cinema-room": {
     en: [
-      "Our cinema room, also reserved for guests staying at the masseria. We have a collection of over 900 DVDs of famous films from the history of cinema, kept in an old bookcase. After choosing a film, you can watch it on request with the help of the reception, in very comfortable armchairs. There is a large selection of classic Italian films, auteur films, and international ones too. You can watch them in the afternoon, or after a romantic dinner on the veranda: just ask to see a film from another time in the cinema of Lama di Luna.",
+      "In our cinema room we have a collection of over 900 DVDs of famous films from the history of cinema, kept in an old bookcase. After choosing a film, you can watch it on request, with the help of the reception, in very comfortable armchairs. There is a large selection of classic Italian movies, and international ones too. You can watch them whenever you like, in the afternoon or after a romantic dinner on the veranda.",
     ],
     it: [
-      "La nostra sala cinema, anche questa riservata agli ospiti che dormono in masseria. Abbiamo una collezione di oltre 900 DVD di film famosi della storia del cinema, tenuti in una vecchia libreria. Dopo aver scelto il film, lo si può vedere su richiesta con l'aiuto della reception, su poltrone molto comode. C'è una grande selezione di film italiani d'epoca, d'autore, ma anche internazionali. Si possono guardare nel pomeriggio, oppure dopo una cena romantica sulla veranda: basta chiedere di vedere un film di altri tempi nel cinema di Lama di Luna.",
+      "Nella nostra sala cinema abbiamo una collezione di oltre 900 DVD di film famosi della storia del cinema, tenuti in una vecchia libreria. Dopo aver scelto il film, lo si può vedere su richiesta, con l'aiuto della reception, su poltrone molto comode. C'è una grande selezione di film italiani classici, e anche internazionali. Si possono guardare quando si vuole, nel pomeriggio o dopo una cena romantica sulla veranda.",
     ],
     fr: [
-      "Notre salle de cinéma, elle aussi réservée aux hôtes qui dorment à la masseria. Nous avons une collection de plus de 900 DVD de films célèbres de l'histoire du cinéma, rangés dans une vieille bibliothèque. Après avoir choisi un film, vous pouvez le regarder sur demande avec l'aide de la réception, dans des fauteuils très confortables. Il y a un grand choix de films italiens classiques, de films d'auteur, mais aussi internationaux. Vous pouvez les regarder l'après-midi, ou après un dîner romantique sur la véranda : il suffit de demander à voir un film d'un autre temps dans le cinéma de Lama di Luna.",
+      "Dans notre salle de cinéma, nous avons une collection de plus de 900 DVD de films célèbres de l'histoire du cinéma, rangés dans une vieille bibliothèque. Après avoir choisi un film, vous pouvez le regarder sur demande, avec l'aide de la réception, dans des fauteuils très confortables. Il y a un grand choix de films italiens classiques, et aussi internationaux. Vous pouvez les regarder quand vous le souhaitez, l'après-midi ou après un dîner romantique sur la véranda.",
     ],
   },
   yoga: {
