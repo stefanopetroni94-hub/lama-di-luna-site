@@ -48,9 +48,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Gratuit", "Clubs et balles à disposition", "Drive de 80 mètres entre les deux drapeaux", "Seul ou avec Pietro, au coucher du soleil"],
   },
   library: {
-    en: ["By arrangement", "In the masseria", "A quiet room to read", "Away from the courtyard and the groves"],
-    it: ["Su prenotazione", "In masseria", "Una sala silenziosa dove leggere", "Lontano dal cortile e dagli uliveti"],
-    fr: ["Sur réservation", "À la masseria", "Une salle calme pour lire", "Loin de la cour et des oliveraies"],
+    en: ["Free of charge", "Open 24 hours a day", "Over 3,000 books, some very old", "In Latin, German, French, English and Italian"],
+    it: ["Gratuita", "Aperta 24 ore su 24", "Oltre 3.000 libri, alcuni molto antichi", "In latino, tedesco, francese, inglese e italiano"],
+    fr: ["Gratuite", "Ouverte 24 heures sur 24", "Plus de 3 000 livres, certains très anciens", "En latin, allemand, français, anglais et italien"],
   },
   "horse-riding": {
     en: ["By arrangement", "On horseback", "In the Alta Murgia National Park", "Beyond the olive groves"],
@@ -154,16 +154,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   library: {
     en: [
-      "The masseria's library, a quiet room to read and slow down, away from the courtyard and the groves.",
-      "Take a book, find a corner and let the afternoon pass. Tell us if you would like to spend some time there and we will arrange it for you.",
+      "The Petroni family has always been a family of literary people: from Agostino Petroni, father of Pietro, who was a magistrate, to his uncle Pietro, who was a lawyer, and so on, so there are a great many books in our family. Today Agostino Petroni Junior, son of Pietro, is a journalist, and Pietro himself is an agronomist: it is a family that has always read a lot. In the rooms and in the family library you will find a collection of over 3,000 books, some very old, in Latin, German, French, English and Italian. If you are curious, the library is always open and free of charge, 24 hours a day. In the family library there are also special collections, such as old typewriters. It is a place that preserves the history of Puglia and the history of the family, and a very particular one, which the family has decided to open to all our guests, who are always asked to treat it with respect and to preserve it for those who will come after them.",
     ],
     it: [
-      "La biblioteca della masseria, una sala silenziosa dove leggere e rallentare, lontano dal cortile e dagli uliveti.",
-      "Prendi un libro, trova un angolo e lascia passare il pomeriggio. Dicci se vorresti trascorrerci un po' di tempo e lo organizzeremo per te.",
+      "La famiglia Petroni è sempre stata una famiglia di letterati: da Agostino Petroni, padre di Pietro, che era magistrato, a suo zio Pietro, che era avvocato, e così via, per cui nella nostra famiglia ci sono tantissimi libri. Oggi Agostino Petroni Junior, figlio di Pietro, è giornalista, e Pietro stesso è agronomo: è una famiglia che ha sempre letto molto. Nelle stanze e nella biblioteca di famiglia troverete una collezione di oltre 3.000 libri, alcuni molto antichi, in latino, tedesco, francese, inglese e italiano. Se siete curiosi, la biblioteca è sempre aperta e gratuita, 24 ore su 24. Nella biblioteca di famiglia ci sono anche collezioni particolari, come vecchie macchine da scrivere. È un luogo che conserva la storia della Puglia e la storia della famiglia, un luogo molto particolare che la famiglia ha deciso di rendere accessibile a tutti gli ospiti, ai quali chiede sempre di trattarlo con rispetto e di conservarlo per coloro che verranno dopo.",
     ],
     fr: [
-      "La bibliothèque de la masseria, une salle calme pour lire et ralentir, loin de la cour et des oliveraies.",
-      "Prenez un livre, trouvez un coin et laissez passer l'après-midi. Dites-nous si vous souhaitez y passer un moment et nous nous en occuperons.",
+      "La famille Petroni a toujours été une famille de lettrés : d'Agostino Petroni, père de Pietro, qui était magistrat, à son oncle Pietro, qui était avocat, et ainsi de suite, de sorte que notre famille compte énormément de livres. Aujourd'hui, Agostino Petroni Junior, fils de Pietro, est journaliste, et Pietro lui-même est agronome : c'est une famille qui a toujours beaucoup lu. Dans les chambres et dans la bibliothèque de famille, vous trouverez une collection de plus de 3 000 livres, certains très anciens, en latin, en allemand, en français, en anglais et en italien. Si vous êtes curieux, la bibliothèque est toujours ouverte et gratuite, 24 heures sur 24. Dans la bibliothèque de famille, il y a aussi des collections particulières, comme de vieilles machines à écrire. C'est un lieu qui conserve l'histoire des Pouilles et l'histoire de la famille, un lieu très particulier que la famille a décidé d'ouvrir à tous les hôtes, auxquels elle demande toujours de le traiter avec respect et de le conserver pour ceux qui viendront après eux.",
     ],
   },
   "horse-riding": {
