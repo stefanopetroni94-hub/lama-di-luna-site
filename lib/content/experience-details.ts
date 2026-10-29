@@ -28,9 +28,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Réservée aux hôtes qui dorment à la masseria", "Plus de 900 DVD de l'histoire du cinéma", "Sur demande, avec l'aide de la réception", "L'après-midi ou après le dîner"],
   },
   yoga: {
-    en: ["By arrangement", "Courtyard, stone halls and groves", "For beginners and regular practitioners", "Arranged around your stay"],
-    it: ["Su prenotazione", "Cortile, sale di pietra e uliveti", "Per principianti e praticanti abituali", "Organizzato attorno al tuo soggiorno"],
-    fr: ["Sur réservation", "Cour, salles en pierre et oliveraies", "Pour débutants et pratiquants réguliers", "Organisé autour de votre séjour"],
+    en: ["Mats and equipment free of charge", "On your own, free of charge", "Lesson with Agata: an hour and a half", "€60 per person (minimum two), €25 for each extra person"],
+    it: ["Tappetini e attrezzatura gratuiti", "Da soli, gratuito", "Lezione con Agata: un'ora e mezza", "€60 a persona (minimo due), €25 per ogni persona in più"],
+    fr: ["Tapis et matériel gratuits", "En solo, gratuit", "Cours avec Agata : une heure et demie", "€60 par personne (minimum deux), €25 par personne supplémentaire"],
   },
   "infinity-pool": {
     en: ["In season, mid-May to late September", "Infinity pool in the olive grove", "Sun loungers and shade", "The one Wi-Fi-free zone"],
@@ -107,16 +107,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   yoga: {
     en: [
-      "Yoga practices at the masseria, by arrangement, in the calm of the courtyard, the stone halls and the groves around.",
-      "Whether you are a beginner or you practise every day, tell us what you are looking for and we will arrange the session around your stay.",
+      "Lama di Luna was built following Feng Shui and bioarchitecture, with spaces that have rounded corners and an excellent energy for yoga practice. You can practise in the indoor yoga room, from the 1700s, with a heated floor. We provide mats and all the equipment free of charge, so you can practise on your own in the morning, ask for some help, or do yoga together with Agata in the morning, with real yoga lessons. Practising on your own is free; a lesson with Agata lasts an hour and a half, with a minimum of two people, at €60 per person, and €25 for each extra person. Yoga is lovely with a teacher and just as lovely on your own, so you can choose.",
     ],
     it: [
-      "Pratiche di yoga in masseria, su prenotazione, nella calma del cortile, delle sale di pietra e degli uliveti intorno.",
-      "Che tu sia alle prime armi o pratichi ogni giorno, dicci cosa cerchi e organizzeremo la sessione attorno al tuo soggiorno.",
+      "Lama di Luna è stata costruita seguendo il Feng Shui e la bioarchitettura, con spazi dagli angoli arrotondati in cui circola un'ottima energia per fare yoga. Si può praticare nella sala yoga interna, del 1700, con il pavimento riscaldato. Mettiamo a disposizione gratuitamente tappetini e tutta l'attrezzatura, per praticare da soli la mattina, chiedendo un aiuto, oppure facendo yoga insieme ad Agata la mattina, con vere lezioni di yoga. Praticare da soli è gratuito; una lezione con Agata dura un'ora e mezza, con un minimo di due persone, al costo di €60 a persona e €25 per ogni persona in più. Lo yoga è bello con un maestro e altrettanto bello da soli: si può scegliere.",
     ],
     fr: [
-      "Séances de yoga à la masseria, sur réservation, dans le calme de la cour, des salles en pierre et des oliveraies alentour.",
-      "Que vous soyez débutant ou que vous pratiquiez tous les jours, dites-nous ce que vous cherchez et nous organiserons la séance autour de votre séjour.",
+      "Lama di Luna a été construite selon le Feng Shui et la bioarchitecture, avec des espaces aux angles arrondis où circule une excellente énergie pour pratiquer le yoga. Vous pouvez pratiquer dans la salle de yoga intérieure, du XVIIIe siècle, au sol chauffant. Nous mettons gratuitement à votre disposition des tapis et tout le matériel, pour pratiquer seul le matin, en demandant un peu d'aide, ou faire du yoga avec Agata le matin, avec de vrais cours de yoga. Pratiquer seul est gratuit ; un cours avec Agata dure une heure et demie, avec un minimum de deux personnes, au tarif de €60 par personne et €25 par personne supplémentaire. Le yoga est beau avec un professeur et tout aussi beau en solo : à vous de choisir.",
     ],
   },
   "infinity-pool": {
