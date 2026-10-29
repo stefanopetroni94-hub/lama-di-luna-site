@@ -53,9 +53,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Gratuite", "Ouverte 24 heures sur 24", "Plus de 3 000 livres, certains très anciens", "En latin, allemand, français, anglais et italien"],
   },
   "horse-riding": {
-    en: ["By arrangement", "On horseback", "In the Alta Murgia National Park", "Beyond the olive groves"],
-    it: ["Su prenotazione", "A cavallo", "Nel Parco Nazionale dell'Alta Murgia", "Oltre gli uliveti"],
-    fr: ["Sur réservation", "À cheval", "Dans le Parc national de l'Alta Murgia", "Au delà des oliveraies"],
+    en: ["Lasts two hours", "15 to 20 minutes' drive from Lama di Luna", "Always to be booked in advance", "Gentle horses, children welcome"],
+    it: ["Dura due ore", "A 15 o 20 minuti di macchina da Lama di Luna", "Da prenotare sempre in anticipo", "Cavalli mansueti, bambini benvenuti"],
+    fr: ["Dure deux heures", "À 15 ou 20 minutes en voiture de Lama di Luna", "À toujours réserver à l'avance", "Chevaux dociles, enfants bienvenus"],
   },
 }
 
@@ -165,16 +165,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   "horse-riding": {
     en: [
-      "Ride out on horseback into the Alta Murgia National Park, beyond the olive groves, through the wild uplands that border the estate.",
-      "The ride is arranged on request. Tell us your dates and how much riding experience you have, and we will organise it for you.",
+      "Around Lama di Luna there are several riding stables, and you can book a ride with any of them in advance, for rides inside the Alta Murgia National Park on gentle horses. Children can come too. The rides go through woods of holm oaks and pine woods, where you can meet a great deal of the fauna and flora of the Murgia, from young wild boars to buzzards, and flowers of all kinds: wild orchids, asphodels, ferula, fennel and thyme.",
     ],
     it: [
-      "A cavallo nel Parco Nazionale dell'Alta Murgia, oltre gli uliveti, tra gli altopiani selvaggi che confinano con la tenuta.",
-      "La passeggiata si organizza su richiesta. Dicci le tue date e quanta esperienza hai a cavallo, e la organizzeremo per te.",
+      "Attorno a Lama di Luna ci sono diversi maneggi, presso tutti si può prenotare in anticipo per fare passeggiate all'interno del Parco Nazionale dell'Alta Murgia con cavalli mansueti. Possono venire anche i bambini. Le passeggiate attraversano boschi di lecci e pinete, dove si può incontrare moltissima fauna e flora della Murgia, dai cinghialotti alle poiane, e fiori di ogni tipo: orchidee selvatiche, asfodeli, ferule, finocchio e timo.",
     ],
     fr: [
-      "À cheval dans le Parc national de l'Alta Murgia, au delà des oliveraies, à travers les hauts plateaux sauvages qui bordent le domaine.",
-      "La balade est organisée sur demande. Indiquez-nous vos dates et votre expérience de l'équitation, et nous nous en occuperons.",
+      "Autour de Lama di Luna, il y a plusieurs centres équestres, et dans chacun on peut réserver à l'avance pour faire des balades dans le Parc national de l'Alta Murgia avec des chevaux dociles. Les enfants peuvent venir aussi. Les balades traversent des bois de chênes verts et des pinèdes, où l'on peut rencontrer beaucoup de la faune et de la flore de la Murgia, des marcassins aux buses, et des fleurs de toutes sortes : orchidées sauvages, asphodèles, férules, fenouil et thym.",
     ],
   },
 }
