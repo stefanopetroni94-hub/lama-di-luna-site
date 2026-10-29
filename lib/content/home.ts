@@ -73,7 +73,7 @@ export const home: Record<Locale, HomeContent> = {
     kitchenLabel: "Taste our food",
     kitchenImg: IMG.kitchen,
     kitchenText: [
-      "Breakfast arrives slowly, beneath the vaulted ceiling of the old refectory: almond pastries from the village, fresh ricotta from a neighbouring farm, jams pressed from the estate's own fruit, eggs from the courtyard hens, our own olive oil on warm bread.",
+      "Breakfast arrives slowly, beneath the vaulted ceiling of the old refectory: homemade almond pastries, fresh ricotta from a neighbouring farm, jams made from the estate's own fruit, eggs from the courtyard hens, our extra virgin olive oil on warm bread and tomatoes.",
       "By arrangement, the kitchen will open for lunch and in the evening — typical Murgian and Pugliese recipes, simply made with what the estate has given that day.",
     ],
     kitchenCta: "The Veranda restaurant",
@@ -129,7 +129,7 @@ export const home: Record<Locale, HomeContent> = {
     kitchenLabel: "La Cucina",
     kitchenImg: IMG.kitchen,
     kitchenText: [
-      "La colazione arriva lenta, sotto la volta dell'antico refettorio: dolci alle mandorle del paese, ricotta fresca di una fattoria vicina, marmellate della frutta della tenuta, uova delle galline del cortile, il nostro olio d'oliva sul pane caldo.",
+      "La colazione arriva lenta, sotto la volta dell'antico refettorio: dolci alle mandorle fatti in casa, ricotta fresca di una fattoria vicina, marmellate della frutta della tenuta, uova delle galline del cortile, il nostro olio extravergine d'oliva su pane caldo e pomodori.",
       "Su prenotazione, la cucina si apre la sera — ricette tipiche della Murgia e della Puglia, fatte semplicemente con ciò che la tenuta ha dato quel giorno.",
     ],
     kitchenCta: "Il ristorante The Veranda",
@@ -186,7 +186,7 @@ export const home: Record<Locale, HomeContent> = {
     kitchenLabel: "Goûtez notre cuisine",
     kitchenImg: IMG.kitchen,
     kitchenText: [
-      "Le petit déjeuner arrive lentement, sous la voûte de l'ancien réfectoire : pâtisseries aux amandes du village, ricotta fraîche d'une ferme voisine, confitures des fruits du domaine, œufs des poules de la cour, notre huile d'olive sur du pain chaud.",
+      "Le petit déjeuner arrive lentement, sous la voûte de l'ancien réfectoire : pâtisseries aux amandes maison, ricotta fraîche d'une ferme voisine, confitures des fruits du domaine, œufs des poules de la cour, notre huile d'olive extra vierge sur du pain chaud et des tomates.",
       "Sur demande, la cuisine ouvre pour le déjeuner et le soir : recettes typiques de la Murgia et des Pouilles, préparées simplement avec ce que le domaine a donné ce jour-là.",
     ],
     kitchenCta: "Le restaurant The Veranda",
