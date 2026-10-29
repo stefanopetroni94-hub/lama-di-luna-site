@@ -53,6 +53,21 @@ export const experienceSlugs = {
   inRegion: [] as string[],
 }
 
+// The order the experiences appear in on the page (change it here to move one).
+const displayOrder = [
+  "olive-harvest",
+  "infinity-pool",
+  "cooking-class",
+  "yoga",
+  "massages",
+  "cinema-room",
+  "bicycle-ride",
+  "golf",
+  "estate-walk",
+  "library",
+  "horse-riding",
+]
+
 const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
   en: {
     eyebrow: "Ways to spend a day",
@@ -139,7 +154,10 @@ export const experiences = Object.fromEntries(
     lang,
     {
       ...c,
-      onEstate: c.onEstate.map((card, i) => ({ ...card, slug: experienceSlugs.onEstate[i] })),
+      onEstate: c.onEstate
+        .map((card, i) => ({ ...card, slug: experienceSlugs.onEstate[i] }))
+        .sort((a, b) => displayOrder.indexOf(a.slug) - displayOrder.indexOf(b.slug))
+        .map((card, i) => ({ ...card, num: card.num.replace(/^\d+/, String(i + 1).padStart(2, "0")) })),
       inRegion: c.inRegion.map((card, i) => ({ ...card, slug: experienceSlugs.inRegion[i] })),
     },
   ])
