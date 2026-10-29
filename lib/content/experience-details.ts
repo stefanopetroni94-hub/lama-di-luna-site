@@ -8,9 +8,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Dure une heure et quart", "De préférence le matin", "Ouvert aux couples ou aux groupes", "€60 par couple, €30 par personne supplémentaire"],
   },
   "cooking-class": {
-    en: ["Half-day, on request", "Orecchiette and Pugliese focaccia", "Made entirely by hand", "In the masseria kitchen"],
-    it: ["Mezza giornata, su richiesta", "Orecchiette e focaccia pugliese", "Fatte interamente a mano", "Nella cucina della masseria"],
-    fr: ["Demi-journée, sur demande", "Orecchiette et focaccia des Pouilles", "Faites entièrement à la main", "Dans la cuisine de la masseria"],
+    en: ["Lasts one hour", "Morning or afternoon", "By reservation", "€60 for two people, €30 for each extra person"],
+    it: ["Dura un'ora", "Mattina o pomeriggio", "Su prenotazione", "€60 per due persone, €30 per ogni persona in più"],
+    fr: ["Dure une heure", "Le matin ou l'après-midi", "Sur réservation", "€60 pour deux personnes, €30 par personne supplémentaire"],
   },
   massages: {
     en: ["By appointment", "In the quiet of the masseria", "Arranged on request", "A moment to slow down"],
@@ -63,16 +63,13 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
 export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   "cooking-class": {
     en: [
-      "A cooking class with our resident cook, in the masseria kitchen. You learn to make orecchiette, the typical pasta of Puglia, and Pugliese focaccia, entirely by hand, the way it has always been done here.",
-      "Then you sit down together and eat what you have made. The class is arranged on request, over about half a day.",
+      "Spend an hour with the cooks of Lama di Luna, who teach how to make a traditional Pugliese pasta, especially orecchiette, strascinati and cavatelli: from kneading the dough, to preparing the mass, to cutting it and shaping the very particular forms of the orecchiette that have made this pasta famous all over the world.",
     ],
     it: [
-      "Un corso di cucina con la nostra cuoca, nella cucina della masseria. Impari a fare le orecchiette, la pasta tipica della Puglia, e la focaccia pugliese, interamente a mano, come si è sempre fatto qui.",
-      "Poi ci si siede insieme a tavola e si mangia ciò che si è preparato. Il corso si organizza su richiesta, in circa mezza giornata.",
+      "Un'ora con le cuoche di Lama di Luna, che insegnano come si fa una pasta tradizionale pugliese, in particolare orecchiette, strascinati e cavatelli: da come si impasta, a come si prepara la massa, a come si inizia a tagliarla e a dare le forme tanto particolari delle orecchiette, che hanno reso questa pasta rinomata in tutto il mondo.",
     ],
     fr: [
-      "Un cours de cuisine avec notre cuisinière, dans la cuisine de la masseria. Vous apprenez à faire les orecchiette, la pâte typique des Pouilles, et la focaccia des Pouilles, entièrement à la main, comme on l'a toujours fait ici.",
-      "Ensuite, on se met à table ensemble pour déguster ce que vous avez préparé. Le cours est organisé sur demande, sur environ une demi-journée.",
+      "Une heure avec les cuisinières de Lama di Luna, qui enseignent comment faire une pâte traditionnelle des Pouilles, en particulier les orecchiette, les strascinati et les cavatelli : de la façon de pétrir, à la préparation de la pâte, jusqu'à la découpe et aux formes si particulières des orecchiette, qui ont rendu cette pâte célèbre dans le monde entier.",
     ],
   },
   massages: {
