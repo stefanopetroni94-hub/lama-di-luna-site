@@ -73,7 +73,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
     eyebrow: "Ways to spend a day",
     title: "Experiences",
     intro:
-      "The olive tour, a cooking class, relaxing massages, a bicycle ride — and the trulli, the cliffs, the cave city, the castle on the hill.",
+      "The olive tour, a cooking class, relaxing massages, a bicycle ride, and a quiet moment to read in the library.",
     onEstateLabel: "On the Estate",
     arrangeEyebrow: "Tell us what you'd love",
     arrangeTitle: "We will help you arrange the day",
@@ -99,7 +99,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
     eyebrow: "Modi di passare una giornata",
     title: "Esperienze",
     intro:
-      "Il tour degli ulivi, un corso di cucina, massaggi rilassanti, un giro in bicicletta — e i trulli, le scogliere, la città di pietra, il castello sulla collina.",
+      "Il tour degli ulivi, un corso di cucina, massaggi rilassanti, un giro in bicicletta e un momento di quiete per leggere in biblioteca.",
     onEstateLabel: "In Masseria",
     arrangeEyebrow: "Dicci cosa ti piacerebbe",
     arrangeTitle: "Ti aiutiamo a organizzare la giornata",
@@ -125,7 +125,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
     eyebrow: "Des façons de passer une journée",
     title: "Expériences",
     intro:
-      "La visite des oliviers, un cours de cuisine, des massages relaxants, une balade à vélo, et puis les trulli, les falaises, la ville troglodyte, le château sur la colline.",
+      "La visite des oliviers, un cours de cuisine, des massages relaxants, une balade à vélo et un moment de calme pour lire à la bibliothèque.",
     onEstateLabel: "Au domaine",
     arrangeEyebrow: "Dites-nous ce qui vous ferait plaisir",
     arrangeTitle: "Nous vous aidons à organiser la journée",
