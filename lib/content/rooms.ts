@@ -147,7 +147,7 @@ export const rooms: Record<"en" | "it" | "fr", RoomsContent> = {
         price: "€410",
         sleeps: "Sleeps 3",
         description: [
-          "An imperial bed beneath a vaulted stone ceiling, a private sauna carved into the masseria stone, and a panoramic terrace looking out over the olive groves to the horizon.",
+          "An imperial bed beneath a vaulted stone ceiling, a private sauna carved into the masseria stone, a 2 by 2 metre mini pool, and a panoramic terrace looking out over the olive groves to the horizon.",
           "The largest, the most private and the most complete of the suites — made for the guests who mean to stay a while.",
         ],
         details: ["Sleeps 3, 60 m²", "Imperial bed, 2 x 2 meters", "Vaulted ceiling", "Private mini pool and cave with sauna", "Panoramic terrace"],
@@ -271,7 +271,7 @@ export const rooms: Record<"en" | "it" | "fr", RoomsContent> = {
         price: "€410",
         sleeps: "Per 3",
         description: [
-          "Un letto imperiale sotto una volta in pietra, una sauna privata scavata nella pietra della masseria e una terrazza panoramica affacciata sugli uliveti fino all'orizzonte.",
+          "Un letto imperiale sotto una volta in pietra, una sauna privata scavata nella pietra della masseria, una mini piscina di 2 metri per 2 e una terrazza panoramica affacciata sugli uliveti fino all'orizzonte.",
           "La più grande, la più privata e la più completa delle suite — pensata per gli ospiti che hanno intenzione di fermarsi a lungo.",
         ],
         details: ["Per 3, 60 m²", "Letto imperiale, 2 x 2 metri", "Volta in pietra", "Mini piscina privata e grotta con sauna", "Terrazza panoramica"],
@@ -395,7 +395,7 @@ export const rooms: Record<"en" | "it" | "fr", RoomsContent> = {
         price: "€410",
         sleeps: "Pour 3",
         description: [
-          "Un lit impérial sous une voûte de pierre, un sauna privé creusé dans la pierre de la masseria et une terrasse panoramique qui s'ouvre sur les oliveraies jusqu'à l'horizon.",
+          "Un lit impérial sous une voûte de pierre, un sauna privé creusé dans la pierre de la masseria, une mini piscine de 2 mètres sur 2 et une terrasse panoramique qui s'ouvre sur les oliveraies jusqu'à l'horizon.",
           "La plus grande, la plus intime et la plus complète des suites, pensée pour les hôtes qui comptent rester un moment.",
         ],
         details: ["Pour 3, 60 m²", "Lit impérial, 2 x 2 mètres", "Plafond voûté", "Mini piscine privée et grotte avec sauna", "Terrasse panoramique"],
