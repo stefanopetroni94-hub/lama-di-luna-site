@@ -93,9 +93,9 @@ const PH = {
 export const shop: Record<Locale, ShopContent> = {
   en: {
     eyebrow: "The Shop",
-    title: "A little of the estate, sent to your table",
+    title: "A little of the estate, sent to your home",
     intro:
-      "Order a taste of Lama di Luna to keep Puglia, and the Alta Murgia, close, wherever you are.",
+      "Order a taste or a scent of Lama di Luna to keep Puglia and the Alta Murgia close, wherever you are.",
     addLabel: "Add",
     addedLabel: "Added",
     products: [
@@ -117,9 +117,9 @@ export const shop: Record<Locale, ShopContent> = {
   },
   it: {
     eyebrow: "Lo Shop",
-    title: "Un po' della tenuta, portato alla tua tavola",
+    title: "Un po' della tenuta, portato a casa tua",
     intro:
-      "Ordina un assaggio di Lama di Luna per tenere vicine la Puglia e l'Alta Murgia, ovunque tu sia.",
+      "Ordina un assaggio o un profumo di Lama di Luna per tenere vicine la Puglia e l'Alta Murgia, ovunque tu sia.",
     addLabel: "Aggiungi",
     addedLabel: "Aggiunto",
     products: [
@@ -141,9 +141,9 @@ export const shop: Record<Locale, ShopContent> = {
   },
   fr: {
     eyebrow: "La Boutique",
-    title: "Un peu du domaine, livré à votre table",
+    title: "Un peu du domaine, livré chez vous",
     intro:
-      "Commandez un peu de Lama di Luna pour garder les Pouilles et l'Alta Murgia près de vous, où que vous soyez.",
+      "Commandez un goût ou un parfum de Lama di Luna pour garder les Pouilles et l'Alta Murgia près de vous, où que vous soyez.",
     addLabel: "Ajouter",
     addedLabel: "Ajouté",
     products: [
