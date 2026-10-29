@@ -16,9 +16,9 @@ function Card({ card, lang }: { card: ExpCard; lang: Locale }) {
           style={
             {
               backgroundImage: `url('${card.img}')`,
-              backgroundPosition: card.pos ?? "center",
+              backgroundPosition: card.cardPos ?? card.pos ?? "center",
               "--tilt": `${card.rotate ?? 0}deg`,
-              "--zoom": card.zoom ?? 1,
+              "--zoom": card.cardZoom ?? card.zoom ?? 1,
             } as React.CSSProperties
           }
         />
