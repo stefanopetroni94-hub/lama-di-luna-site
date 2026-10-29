@@ -43,9 +43,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Gratuite", "Chaussures confortables ou de randonnée conseillées", "L'été, de préférence tôt le matin ou au coucher du soleil", "Dans le domaine, dans le Parc national ou sur les routes voisines"],
   },
   golf: {
-    en: ["By arrangement", "At the masseria", "Golf practice", "Organised for you on request"],
-    it: ["Su prenotazione", "In masseria", "Practice golf", "Organizzato per te su richiesta"],
-    fr: ["Sur réservation", "À la masseria", "Practice de golf", "Organisé pour vous sur demande"],
+    en: ["Free of charge", "Clubs and balls provided", "Drive of 80 metres between the two flags", "On your own or with Pietro, at sunset"],
+    it: ["Gratuito", "Mazze e palline a disposizione", "Drive di 80 metri tra le due bandierine", "Da soli o con Pietro, al tramonto"],
+    fr: ["Gratuit", "Clubs et balles à disposition", "Drive de 80 mètres entre les deux drapeaux", "Seul ou avec Pietro, au coucher du soleil"],
   },
   library: {
     en: ["By arrangement", "In the masseria", "A quiet room to read", "Away from the courtyard and the groves"],
@@ -143,16 +143,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   golf: {
     en: [
-      "Practice golf at the masseria, by arrangement.",
-      "Tell us when you would like to play and we will organise it for you.",
+      "In the meadow next to the masseria, Pietro, a golf enthusiast, has put up two flags 80 metres apart, and there are both clubs and balls available for anyone who feels like hitting a few shots. You can play on your own, or together with Pietro, who will gladly join the golf practice at sunset. It is a lovely way to take a walk next to the masseria and look at the endless panorama of the Murgia and the olive groves below.",
     ],
     it: [
-      "Practice golf in masseria, su prenotazione.",
-      "Dicci quando vorresti giocare e lo organizzeremo per te.",
+      "Nel prato accanto alla masseria, Pietro, appassionato di golf, ha messo due bandierine a 80 metri di distanza l'una dall'altra, e ci sono a disposizione sia mazze sia palline per chi ha voglia di fare due tiri. Si può giocare in solitudine oppure insieme a Pietro, che si unirà molto volentieri al golf practice al tramonto. È un bel modo per passeggiare accanto alla masseria e guardare l'infinito panorama della Murgia e degli uliveti sottostanti.",
     ],
     fr: [
-      "Practice de golf à la masseria, sur réservation.",
-      "Dites-nous quand vous souhaitez jouer et nous nous en occupons.",
+      "Dans le pré à côté de la masseria, Pietro, passionné de golf, a installé deux petits drapeaux à 80 mètres l'un de l'autre, et des clubs et des balles sont à disposition de ceux qui ont envie de faire quelques coups. Vous pouvez jouer seul ou avec Pietro, qui se joindra très volontiers au practice au coucher du soleil. C'est une belle façon de se promener près de la masseria et de regarder le panorama infini de la Murgia et des oliveraies en contrebas.",
     ],
   },
   library: {
