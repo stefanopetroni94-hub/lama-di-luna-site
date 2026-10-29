@@ -33,9 +33,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Tapis et matériel gratuits", "En solo, gratuit", "Cours avec professeur : 1 h 30 min", "€60 par couple, €25 par personne supplémentaire"],
   },
   "infinity-pool": {
-    en: ["18 metres long", "Salt water, disinfected with salt", "Open from 9 am to 7 pm", "Free, for guests staying overnight at Lama di Luna"],
-    it: ["Lunga 18 metri", "Acqua salata, disinfettata con il sale", "Aperta dalle 9 alle 19", "Gratuita, per gli ospiti che pernottano a Lama di Luna"],
-    fr: ["18 mètres de long", "Eau salée, désinfectée au sel", "Ouverte de 9 h à 19 h", "Gratuite, pour les hôtes qui passent la nuit à Lama di Luna"],
+    en: ["18 metres long", "Salt water, disinfected with salt", "Open from 9 am to 7 pm", "Reserved for guests staying overnight at Lama di Luna"],
+    it: ["Lunga 18 metri", "Acqua salata, disinfettata con il sale", "Aperta dalle 9 alle 19", "Riservata agli ospiti che pernottano a Lama di Luna"],
+    fr: ["18 mètres de long", "Eau salée, désinfectée au sel", "Ouverte de 9 h à 19 h", "Réservée aux hôtes qui passent la nuit à Lama di Luna"],
   },
   "estate-walk": {
     en: ["Free of charge", "Comfortable or trekking shoes recommended", "In summer, best early in the morning or at sunset", "On the estate, in the National Park or on neighbouring roads"],
