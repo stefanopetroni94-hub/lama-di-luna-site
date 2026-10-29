@@ -38,6 +38,8 @@ const D = {
       "Carolea is an olive variety widespread in southern Italy, also found in Puglia. It gives a balanced, harmonious extra virgin olive oil, fruity and gentle, with a sweet start, notes of almond and artichoke and only a light, pleasant bitterness and pungency.",
     coratina:
       "Coratina is the signature olive of Puglia, born around Corato, between Bari and the Alta Murgia, and widely grown in the area of Andria. It gives an intense, green extra virgin olive oil, rich in polyphenols, with notes of fresh grass, tomato leaf and almond, and a pronounced bitterness and pungency.",
+    bath:
+      "An organic cosmetics line inspired by the richness of the Mediterranean scrub, made to bring the relaxing, regenerating experience of a real spa home. The formulas are based on pure Salento aloe vera gel, enriched with regenerating local ingredients such as olive oil, lavender, rosemary, sweet almond oil and pomegranate. 100% Made in Italy, with a controlled supply chain and cruelty-free formulas, free from aggressive chemical agents and risky synthetic surfactants. The delicate, evocative scents recall the authentic aromas of Puglia and the Mediterranean, helping you relax body and mind and ease everyday stress.",
   },
   it: {
     primitivo:
@@ -52,6 +54,8 @@ const D = {
       "La Carolea è una varietà di oliva diffusa nel sud Italia, presente anche in Puglia. Dà un olio extravergine equilibrato e armonioso, fruttato e gentile, con un inizio dolce, note di mandorla e carciofo e solo un leggero e piacevole amaro e piccante.",
     coratina:
       "La Coratina è l'oliva simbolo della Puglia, nata intorno a Corato, tra Bari e l'Alta Murgia, e molto coltivata nella zona di Andria. Dà un olio extravergine intenso e verde, ricco di polifenoli, con note di erba fresca, foglia di pomodoro e mandorla, e un amaro e un piccante spiccati.",
+    bath:
+      "Una linea di cosmetici biologici ispirata alla ricchezza della macchia mediterranea, pensata per portare a casa propria l'esperienza rilassante e rigenerante di una vera spa. Le formule si basano sul gel puro di Aloe Vera del Salento, arricchito con principi attivi rigeneranti a chilometro zero come olio d'oliva, lavanda, rosmarino, olio di mandorle dolci e melograno. Prodotti 100% Made in Italy, con filiera controllata e formulazioni cruelty-free, prive di agenti chimici aggressivi e di tensioattivi sintetici rischiosi. Le profumazioni delicate ed evocative richiamano i profumi autentici della Puglia e del Mediterraneo, per favorire il rilassamento psicofisico e combattere lo stress quotidiano.",
   },
   fr: {
     primitivo:
@@ -66,6 +70,8 @@ const D = {
       "La Carolea est une variété d'olive répandue dans le sud de l'Italie, présente aussi dans les Pouilles. Elle donne une huile d'olive extra vierge équilibrée et harmonieuse, fruitée et douce, avec une attaque suave, des notes d'amande et d'artichaut, et seulement une légère amertume et un piquant agréable.",
     coratina:
       "La Coratina est l'olive emblématique des Pouilles, née autour de Corato, entre Bari et l'Alta Murgia, et très cultivée dans la région d'Andria. Elle donne une huile d'olive extra vierge intense et verte, riche en polyphénols, aux notes d'herbe fraîche, de feuille de tomate et d'amande, avec une amertume et un piquant marqués.",
+    bath:
+      "Une ligne de cosmétiques biologiques inspirée par la richesse du maquis méditerranéen, conçue pour apporter chez soi l'expérience relaxante et régénérante d'un vrai spa. Les formules reposent sur du gel pur d'aloe vera du Salento, enrichi d'actifs régénérants locaux comme l'huile d'olive, la lavande, le romarin, l'huile d'amande douce et la grenade. Produits 100 % Made in Italy, avec une filière contrôlée et des formules cruelty-free, sans agents chimiques agressifs ni tensioactifs synthétiques à risque. Les parfums délicats et évocateurs rappellent les arômes authentiques des Pouilles et de la Méditerranée, pour favoriser la détente du corps et de l'esprit et combattre le stress du quotidien.",
   },
 }
 
@@ -101,9 +107,9 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "coratina-500", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. 500 ml.", desc: D.en.coratina, price: "€23", img: PH.coratina500, contain: true },
       { id: "carolea-3l", name: "Extra Virgin Olive Oil, Carolea", meta: "Carolea cultivar. Bag-in-box, 3 litres.", desc: D.en.carolea, price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "151% auto", pos: "50% 95%" } },
       { id: "coratina-3l", name: "Extra Virgin Olive Oil, Coratina", meta: "Coratina cultivar. Bag-in-box, 3 litres.", desc: D.en.coratina, price: "€66", img: PH.coratina3l, contain: true, landscape: true, zoom: { size: "158% auto", pos: "50% 100%" } },
-      { id: "shampoo", name: "Shampoo", meta: "From the masseria's bath line.", price: "€15", img: PH.shampoo, contain: true },
-      { id: "conditioner", name: "Conditioner", meta: "From the masseria's bath line.", price: "€16", img: PH.conditioner, contain: true },
-      { id: "hand-body-soap", name: "Hand & Body Wash", meta: "From the masseria's bath line.", price: "€15", img: PH.wash, contain: true },
+      { id: "shampoo", name: "Shampoo", meta: "From the masseria's bath line.", desc: D.en.bath, price: "€15", img: PH.shampoo, contain: true },
+      { id: "conditioner", name: "Conditioner", meta: "From the masseria's bath line.", desc: D.en.bath, price: "€16", img: PH.conditioner, contain: true },
+      { id: "hand-body-soap", name: "Hand & Body Wash", meta: "From the masseria's bath line.", desc: D.en.bath, price: "€15", img: PH.wash, contain: true },
       { id: "bath-set", name: "Bath Set: Body Wash, Shampoo & Conditioner", meta: "", price: "€40", img: PH.wash, imgs: [PH.wash, PH.shampoo, PH.conditioner], contain: true },
       { id: "orcio", name: "Ceramic Orcio with Extra Virgin Olive Oil", meta: "A ceramic orcio filled with our extra virgin olive oil. 350 g.", price: "€32", img: PH.orcio, contain: true },
     ],
@@ -125,9 +131,9 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "coratina-500", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. 500 ml.", desc: D.it.coratina, price: "€23", img: PH.coratina500, contain: true },
       { id: "carolea-3l", name: "Olio Extravergine d'Oliva, Carolea", meta: "Cultivar Carolea. Bag-in-box, 3 litri.", desc: D.it.carolea, price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "151% auto", pos: "50% 95%" } },
       { id: "coratina-3l", name: "Olio Extravergine d'Oliva, Coratina", meta: "Cultivar Coratina. Bag-in-box, 3 litri.", desc: D.it.coratina, price: "€66", img: PH.coratina3l, contain: true, landscape: true, zoom: { size: "158% auto", pos: "50% 100%" } },
-      { id: "shampoo", name: "Shampoo", meta: "Dalla linea bagno della masseria.", price: "€15", img: PH.shampoo, contain: true },
-      { id: "conditioner", name: "Balsamo", meta: "Dalla linea bagno della masseria.", price: "€16", img: PH.conditioner, contain: true },
-      { id: "hand-body-soap", name: "Detergente Mani e Corpo", meta: "Dalla linea bagno della masseria.", price: "€15", img: PH.wash, contain: true },
+      { id: "shampoo", name: "Shampoo", meta: "Dalla linea bagno della masseria.", desc: D.it.bath, price: "€15", img: PH.shampoo, contain: true },
+      { id: "conditioner", name: "Balsamo", meta: "Dalla linea bagno della masseria.", desc: D.it.bath, price: "€16", img: PH.conditioner, contain: true },
+      { id: "hand-body-soap", name: "Detergente Mani e Corpo", meta: "Dalla linea bagno della masseria.", desc: D.it.bath, price: "€15", img: PH.wash, contain: true },
       { id: "bath-set", name: "Set Bagno: Detergente Mani e Corpo, Shampoo e Balsamo", meta: "", price: "€40", img: PH.wash, imgs: [PH.wash, PH.shampoo, PH.conditioner], contain: true },
       { id: "orcio", name: "Orcio di Ceramica con Olio Extravergine d'Oliva", meta: "Un orcio di ceramica pieno del nostro olio extravergine d'oliva. 350 g.", price: "€32", img: PH.orcio, contain: true },
     ],
@@ -149,9 +155,9 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "coratina-500", name: "Huile d'Olive Extra Vierge, Coratina", meta: "Variété Coratina. 500 ml.", desc: D.fr.coratina, price: "€23", img: PH.coratina500, contain: true },
       { id: "carolea-3l", name: "Huile d'Olive Extra Vierge, Carolea", meta: "Variété Carolea. Bag-in-box, 3 litres.", desc: D.fr.carolea, price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "151% auto", pos: "50% 95%" } },
       { id: "coratina-3l", name: "Huile d'Olive Extra Vierge, Coratina", meta: "Variété Coratina. Bag-in-box, 3 litres.", desc: D.fr.coratina, price: "€66", img: PH.coratina3l, contain: true, landscape: true, zoom: { size: "158% auto", pos: "50% 100%" } },
-      { id: "shampoo", name: "Shampooing", meta: "De la ligne de bain de la masseria.", price: "€15", img: PH.shampoo, contain: true },
-      { id: "conditioner", name: "Après-shampooing", meta: "De la ligne de bain de la masseria.", price: "€16", img: PH.conditioner, contain: true },
-      { id: "hand-body-soap", name: "Gel Lavant Mains et Corps", meta: "De la ligne de bain de la masseria.", price: "€15", img: PH.wash, contain: true },
+      { id: "shampoo", name: "Shampooing", meta: "De la ligne de bain de la masseria.", desc: D.fr.bath, price: "€15", img: PH.shampoo, contain: true },
+      { id: "conditioner", name: "Après-shampooing", meta: "De la ligne de bain de la masseria.", desc: D.fr.bath, price: "€16", img: PH.conditioner, contain: true },
+      { id: "hand-body-soap", name: "Gel Lavant Mains et Corps", meta: "De la ligne de bain de la masseria.", desc: D.fr.bath, price: "€15", img: PH.wash, contain: true },
       { id: "bath-set", name: "Coffret Bain : Gel Lavant, Shampooing et Après-shampooing", meta: "", price: "€40", img: PH.wash, imgs: [PH.wash, PH.shampoo, PH.conditioner], contain: true },
       { id: "orcio", name: "Orcio en Céramique avec Huile d'Olive Extra Vierge", meta: "Un orcio en céramique rempli de notre huile d'olive extra vierge. 350 g.", price: "€32", img: PH.orcio, contain: true },
     ],
