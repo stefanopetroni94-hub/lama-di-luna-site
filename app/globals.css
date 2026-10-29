@@ -2570,8 +2570,12 @@ footer {
   transition: transform 0.7s ease;
   margin-bottom: 1.2rem;
 }
+/* --tilt straightens a photo, --zoom crops its edges a little (set per experience) */
+.exp-card-img {
+  transform: rotate(var(--tilt, 0deg)) scale(var(--zoom, 1));
+}
 .exp-card:hover .exp-card-img {
-  transform: scale(1.03);
+  transform: rotate(var(--tilt, 0deg)) scale(calc(var(--zoom, 1) * 1.03));
 }
 .exp-card-num {
   font-family: var(--serif);
@@ -2695,6 +2699,10 @@ footer {
 /* every experience page: its own photo, full screen, same vintage filter */
 .exp-hero--detail::before {
   background: var(--exp-hero-img) var(--exp-hero-pos, center) / cover no-repeat;
+  transform: rotate(var(--exp-hero-rotate, 0deg)) scale(var(--exp-hero-zoom, 1));
+}
+.exp-hero--detail {
+  overflow: hidden;
 }
 .exp-hero--olive::before {
   background: url("/whatsapp/20261028_065214_1516459033640755.jpg") center 55% / cover no-repeat;

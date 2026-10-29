@@ -13,7 +13,14 @@ function Card({ card, lang }: { card: ExpCard; lang: Locale }) {
       <div className="exp-card-img-wrap">
         <div
           className="exp-card-img"
-          style={{ backgroundImage: `url('${card.img}')`, backgroundPosition: card.pos ?? "center" }}
+          style={
+            {
+              backgroundImage: `url('${card.img}')`,
+              backgroundPosition: card.pos ?? "center",
+              "--tilt": `${card.rotate ?? 0}deg`,
+              "--zoom": card.zoom ?? 1,
+            } as React.CSSProperties
+          }
         />
       </div>
       <div className="exp-card-name">{card.name}</div>

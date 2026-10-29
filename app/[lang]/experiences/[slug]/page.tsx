@@ -33,6 +33,8 @@ export default async function ExperienceDetailPage({
   const heroStyle = {
     "--exp-hero-img": `url("${heroImg}")`,
     "--exp-hero-pos": isOlive ? "center 55%" : card.pos ?? "center",
+    "--exp-hero-rotate": `${card.rotate ?? 0}deg`,
+    "--exp-hero-zoom": card.zoom ?? 1,
   } as CSSProperties
 
   // the next three experiences in the list

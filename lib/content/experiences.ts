@@ -5,6 +5,8 @@ export type ExpCard = {
   name: string
   meta: string
   pos?: string
+  rotate?: number // degrees, to straighten a photo
+  zoom?: number // 1 = as is; more crops the edges (top and bottom included)
 }
 
 export type ExperiencesContent = {
@@ -66,7 +68,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
       { slug: "#", img: "/whatsapp/20261028_070629_1807431347066448.jpg", pos: "center 35%", num: "02 · Half-day, on request", name: "Fresh Pasta Cooking Class", meta: "A cooking class with our resident cook — orecchiette pasta and Pugliese focaccia, made by hand at the masseria kitchen." },
       { slug: "#", img: "/whatsapp/20261028_085225_1143956144719914.jpg", pos: "center 40%", num: "03 · By arrangement", name: "Relaxing Massages", meta: "Massages by appointment, in the quiet of the masseria." },
       { slug: "#", img: "/whatsapp/20261029_053110_2058236084866524.jpg", pos: "center 55%", num: "04 · Half-day, on request", name: "Bicycle Ride", meta: "A ride through the olive groves and the quiet country roads around the masseria." },
-      { slug: "#", img: "/whatsapp/20261029_053509_1420378746847456.jpg", pos: "center 45%", num: "05 · By arrangement", name: "Cinema Room", meta: "An evening in the masseria's cinema room, by arrangement." },
+      { slug: "#", img: "/whatsapp/20261029_053509_1420378746847456.jpg", pos: "center 48%", rotate: 1, zoom: 1.2, num: "05 · By arrangement", name: "Cinema Room", meta: "An evening in the masseria's cinema room, by arrangement." },
       { slug: "#", img: IMG.olive, num: "06 · By arrangement", name: "Yoga Practices", meta: "Yoga practices at the masseria, by arrangement." },
       { slug: "#", img: IMG.wine, num: "07 · In season", name: "The Infinity Pool", meta: "Time by the masseria's infinity pool, looking out over the olive groves." },
       { slug: "#", img: IMG.dawn, num: "08 · On request", name: "Walk on the Estate", meta: "A walk through the olive groves, the vineyards and the wild Murgia around the masseria." },
@@ -92,7 +94,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
       { slug: "#", img: "/whatsapp/20261028_070629_1807431347066448.jpg", pos: "center 35%", num: "02 · Mezza giornata, su richiesta", name: "Corso di Cucina della Pasta Fresca", meta: "Un corso di cucina con la nostra cuoca — orecchiette e focaccia pugliese, fatte a mano nella cucina della masseria." },
       { slug: "#", img: "/whatsapp/20261028_085225_1143956144719914.jpg", pos: "center 40%", num: "03 · Su prenotazione", name: "Massaggi Rilassanti", meta: "Massaggi su appuntamento, nella quiete della masseria." },
       { slug: "#", img: "/whatsapp/20261029_053110_2058236084866524.jpg", pos: "center 55%", num: "04 · Mezza giornata, su richiesta", name: "Giro in Bicicletta", meta: "Un giro in bicicletta tra gli uliveti e le tranquille strade di campagna intorno alla masseria." },
-      { slug: "#", img: "/whatsapp/20261029_053509_1420378746847456.jpg", pos: "center 45%", num: "05 · Su prenotazione", name: "Sala Cinema", meta: "Una serata nella sala cinema della masseria, su prenotazione." },
+      { slug: "#", img: "/whatsapp/20261029_053509_1420378746847456.jpg", pos: "center 48%", rotate: 1, zoom: 1.2, num: "05 · Su prenotazione", name: "Sala Cinema", meta: "Una serata nella sala cinema della masseria, su prenotazione." },
       { slug: "#", img: IMG.olive, num: "06 · Su prenotazione", name: "Pratiche di Yoga", meta: "Pratiche di yoga in masseria, su prenotazione." },
       { slug: "#", img: IMG.wine, num: "07 · In stagione", name: "La Piscina a Sfioro", meta: "Un po' di tempo a bordo della piscina a sfioro della masseria, con lo sguardo sugli uliveti." },
       { slug: "#", img: IMG.dawn, num: "08 · Su richiesta", name: "Passeggiata nella Tenuta", meta: "Una passeggiata tra gli uliveti, i vigneti e la Murgia selvaggia intorno alla masseria." },
@@ -118,7 +120,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
       { slug: "#", img: "/whatsapp/20261028_070629_1807431347066448.jpg", pos: "center 35%", num: "02 · Demi-journée, sur demande", name: "Cours de Cuisine des Pâtes Fraîches", meta: "Un cours de cuisine avec notre cuisinière : orecchiette et focaccia des Pouilles, faites à la main dans la cuisine de la masseria." },
       { slug: "#", img: "/whatsapp/20261028_085225_1143956144719914.jpg", pos: "center 40%", num: "03 · Sur réservation", name: "Massages Relaxants", meta: "Massages sur rendez-vous, dans le calme de la masseria." },
       { slug: "#", img: "/whatsapp/20261029_053110_2058236084866524.jpg", pos: "center 55%", num: "04 · Demi-journée, sur demande", name: "Balade à Vélo", meta: "Une balade à travers les oliveraies et les petites routes de campagne autour de la masseria." },
-      { slug: "#", img: "/whatsapp/20261029_053509_1420378746847456.jpg", pos: "center 45%", num: "05 · Sur réservation", name: "Salle de Cinéma", meta: "Une soirée dans la salle de cinéma de la masseria, sur réservation." },
+      { slug: "#", img: "/whatsapp/20261029_053509_1420378746847456.jpg", pos: "center 48%", rotate: 1, zoom: 1.2, num: "05 · Sur réservation", name: "Salle de Cinéma", meta: "Une soirée dans la salle de cinéma de la masseria, sur réservation." },
       { slug: "#", img: IMG.olive, num: "06 · Sur réservation", name: "Séances de Yoga", meta: "Séances de yoga à la masseria, sur réservation." },
       { slug: "#", img: IMG.wine, num: "07 · En saison", name: "La Piscine à Débordement", meta: "Un moment au bord de la piscine à débordement de la masseria, face aux oliveraies." },
       { slug: "#", img: IMG.dawn, num: "08 · Sur demande", name: "Promenade sur le Domaine", meta: "Une promenade à travers les oliveraies, les vignes et la Murgia sauvage autour de la masseria." },
