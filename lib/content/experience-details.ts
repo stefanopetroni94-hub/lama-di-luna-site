@@ -8,7 +8,7 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Dure 1 h 15 min", "De préférence le matin", "Ouvert aux couples ou aux groupes", "€60 par couple, €30 par personne supplémentaire"],
   },
   "cooking-class": {
-    en: ["Lasts 1 hour", "Morning or afternoon", "By reservation", "€60 for two people, €30 for each extra person"],
+    en: ["Lasts 1 hour", "Morning or afternoon", "Upon reservation", "€60 for two people, €30 for each extra person"],
     it: ["Dura 1 ora", "Mattina o pomeriggio", "Su prenotazione", "€60 per due persone, €30 per ogni persona in più"],
     fr: ["Dure 1 heure", "Le matin ou l'après-midi", "Sur réservation", "€60 pour deux personnes, €30 par personne supplémentaire"],
   },
