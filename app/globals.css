@@ -2565,8 +2565,10 @@ footer {
   transition: transform 0.3s ease;
   display: block;
 }
+/* the gap under the photo belongs to the frame, so a zoomed or straightened photo never spills into it */
 .exp-card-img-wrap {
   overflow: hidden;
+  margin-bottom: 1.2rem;
 }
 .exp-card-img {
   width: 100%;
@@ -2574,7 +2576,6 @@ footer {
   background-size: cover;
   background-position: center;
   transition: transform 0.7s ease;
-  margin-bottom: 1.2rem;
 }
 /* --tilt straightens a photo, --zoom crops its edges a little (set per experience) */
 .exp-card-img {
