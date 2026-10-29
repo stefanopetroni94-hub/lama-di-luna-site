@@ -2545,14 +2545,20 @@ footer {
 }
 
 /* ---------------- EXPERIENCES GRID ---------------- */
-/* experiences: two big photos per row, with the same side margins as the home page text */
+/* experiences: four per row on a big screen, with the same side margins as the home page text */
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 3rem 1.25rem;
   max-width: 1500px;
   margin: 0 auto 4rem;
   padding: 0 clamp(1.5rem, 9vw, 11rem);
+}
+/* a medium screen: two per row, so the cards do not get too small */
+@media (max-width: 1100px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .exp-card {
   cursor: pointer;
