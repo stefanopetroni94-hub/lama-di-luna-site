@@ -33,9 +33,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Tapis et matériel gratuits", "En solo, gratuit", "Cours avec Agata : une heure et demie", "€60 par personne (minimum deux), €25 par personne supplémentaire"],
   },
   "infinity-pool": {
-    en: ["In season, mid-May to late September", "Infinity pool in the olive grove", "Sun loungers and shade", "The one Wi-Fi-free zone"],
-    it: ["In stagione, da metà maggio a fine settembre", "Piscina a sfioro nell'uliveto", "Lettini e ombra", "L'unica zona senza Wi-Fi"],
-    fr: ["En saison, de mi-mai à fin septembre", "Piscine à débordement dans l'oliveraie", "Transats et ombre", "La seule zone sans Wi-Fi"],
+    en: ["18 metres long", "Salt water, disinfected with salt", "Open from 9 am to 7 pm", "Free, for guests staying overnight at Lama di Luna"],
+    it: ["Lunga 18 metri", "Acqua salata, disinfettata con il sale", "Aperta dalle 9 alle 19", "Gratuita, per gli ospiti che pernottano a Lama di Luna"],
+    fr: ["18 mètres de long", "Eau salée, désinfectée au sel", "Ouverte de 9 h à 19 h", "Gratuite, pour les hôtes qui passent la nuit à Lama di Luna"],
   },
   "estate-walk": {
     en: ["Free of charge", "Comfortable or trekking shoes recommended", "In summer, best early in the morning or at sunset", "On the estate, in the National Park or on neighbouring roads"],
@@ -118,16 +118,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   "infinity-pool": {
     en: [
-      "Time by the masseria's infinity pool, looking out over the olive groves. The pool is set in the olive grove behind the masseria and is open in season, from mid-May to late September.",
-      "Sun loungers and shade are there for you, and it is the one place on the property without Wi-Fi.",
+      "The infinity pool is shaped like a rounded lake and is 18 metres long, so it is also perfect for swimming laps. It is 1.40 metres deep at its deepest point. It is open from 9 in the morning to 7 in the evening, free of charge and reserved for guests staying overnight at Lama di Luna. There are sun loungers around the pool, which in summer can be moved into the shade of the olive trees, and a soft green lawn around it. The water is salt water, disinfected with salt, and the pool looks out over the plain of monumental olive trees of Andria. At sunset you can see the swallows that come to drink from the pool, and at night the bats of the Murgia, out hunting insects, which also come for a little freshness and some water.",
     ],
     it: [
-      "Un po' di tempo a bordo della piscina a sfioro della masseria, con lo sguardo sugli uliveti. La piscina è incastonata nell'uliveto dietro la masseria ed è aperta in stagione, da metà maggio a fine settembre.",
-      "Lettini e ombra sono a tua disposizione, ed è l'unico posto della proprietà senza Wi-Fi.",
+      "La piscina a sfioro ha una forma rotonda, come un lago, ed è lunga 18 metri, quindi perfetta anche per fare delle belle nuotate. Ha una profondità di un metro e quaranta nel punto più profondo. È aperta dalle 9 del mattino alle 7 di sera, è gratuita e riservata agli ospiti che pernottano a Lama di Luna. Attorno alla piscina ci sono dei lettini che durante l'estate si possono spostare all'ombra degli ulivi, e un prato verde morbido. L'acqua è salata, disinfettata con il sale, e la piscina si affaccia sulla pianura di olivi monumentali di Andria. Al tramonto si possono vedere le rondini che vengono a bere dalla piscina, e di notte i pipistrelli della Murgia, a caccia di insetti, che vengono anche loro a cercare un po' di refrigerio e un po' d'acqua.",
     ],
     fr: [
-      "Un moment au bord de la piscine à débordement de la masseria, face aux oliveraies. La piscine est nichée dans l'oliveraie derrière la masseria et ouverte en saison, de mi-mai à fin septembre.",
-      "Transats et ombre sont à votre disposition, et c'est le seul endroit du domaine sans Wi-Fi.",
+      "La piscine à débordement a une forme arrondie, comme un lac, et mesure 18 mètres de long : elle est donc aussi parfaite pour faire de belles nages. Elle a une profondeur d'un mètre quarante à l'endroit le plus profond. Elle est ouverte de 9 h du matin à 19 h, gratuite et réservée aux hôtes qui passent la nuit à Lama di Luna. Autour de la piscine, il y a des transats qui, en été, peuvent être déplacés à l'ombre des oliviers, et une pelouse verte et douce. L'eau est salée, désinfectée au sel, et la piscine donne sur la plaine d'oliviers monumentaux d'Andria. Au coucher du soleil, on voit les hirondelles venir boire dans la piscine, et la nuit les chauves-souris de la Murgia, à la chasse aux insectes, qui viennent elles aussi chercher un peu de fraîcheur et d'eau.",
     ],
   },
   "estate-walk": {
