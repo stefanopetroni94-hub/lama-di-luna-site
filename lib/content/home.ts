@@ -82,7 +82,7 @@ export const home: Record<Locale, HomeContent> = {
     experiencesImg: IMG.land,
     experiencesText: [
       "Beyond the table, the estate opens itself to those who wish to explore. Walk the old drovers' paths through the Alta Murgia, ride out among the olive trees, or join the harvest when the season turns.",
-      "Guided tastings of our oil and wine, cooking beside the cook in the old refectory, stargazing from the courtyard — each experience is arranged quietly, in its own time.",
+      "Guided tasting of our extra virgin olive oil, cooking beside the cook in the old refectory, stargazing from the courtyard. Each experience is arranged quietly, in its own time.",
     ],
     experiencesCta: "Discover experiences",
     whereLabel: "Where We Are",
@@ -138,7 +138,7 @@ export const home: Record<Locale, HomeContent> = {
     experiencesImg: IMG.land,
     experiencesText: [
       "Oltre la tavola, la tenuta si apre a chi desidera esplorare. Percorri gli antichi tratturi dell'Alta Murgia, cavalca tra gli ulivi o unisciti alla raccolta quando cambia la stagione.",
-      "Degustazioni guidate del nostro olio e del nostro vino, cucina accanto alla cuoca nell'antico refettorio, osservazione delle stelle dal cortile — ogni esperienza è organizzata con calma, nel suo tempo.",
+      "Degustazione guidata del nostro olio extravergine d'oliva, cucina accanto alla cuoca nell'antico refettorio, osservazione delle stelle dal cortile. Ogni esperienza è organizzata con calma, nel suo tempo.",
     ],
     experiencesCta: "Scopri le esperienze",
     whereLabel: "Dove Siamo",
@@ -195,7 +195,7 @@ export const home: Record<Locale, HomeContent> = {
     experiencesImg: IMG.land,
     experiencesText: [
       "Au delà de la table, le domaine s'ouvre à ceux qui souhaitent l'explorer. Parcourez les anciens chemins de transhumance de l'Alta Murgia, partez à cheval parmi les oliviers ou participez à la récolte quand la saison change.",
-      "Dégustations guidées de notre huile et de notre vin, cuisine aux côtés de la cuisinière dans l'ancien réfectoire, observation des étoiles depuis la cour : chaque expérience s'organise en douceur, à son rythme.",
+      "Dégustation guidée de notre huile d'olive extra vierge, cuisine aux côtés de la cuisinière dans l'ancien réfectoire, observation des étoiles depuis la cour. Chaque expérience s'organise en douceur, à son rythme.",
     ],
     experiencesCta: "Découvrez les expériences",
     whereLabel: "Où nous trouver",
