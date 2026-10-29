@@ -18,9 +18,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Dure une heure", "Relaxant ou énergisant", "€70", "À réserver à l'avance"],
   },
   "bicycle-ride": {
-    en: ["Half-day, on request", "Olive groves and quiet country roads", "At your own pace", "Route suggested by us"],
-    it: ["Mezza giornata, su richiesta", "Uliveti e tranquille strade di campagna", "Con i tuoi tempi", "Percorso suggerito da noi"],
-    fr: ["Demi-journée, sur demande", "Oliveraies et petites routes de campagne", "À votre rythme", "Itinéraire proposé par nous"],
+    en: ["€15 for the whole day", "Pedal bicycles", "To be requested a few hours in advance", "In summer, best in the late afternoon"],
+    it: ["€15 per tutto il giorno", "Biciclette a pedali", "Da richiedere qualche ora prima", "D'estate meglio nel tardo pomeriggio"],
+    fr: ["€15 pour toute la journée", "Vélos à pédales", "À demander quelques heures à l'avance", "L'été, de préférence en fin d'après-midi"],
   },
   "cinema-room": {
     en: ["By arrangement", "In the masseria's cinema room", "An evening at the masseria", "Prepared for you on request"],
@@ -85,16 +85,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   "bicycle-ride": {
     en: [
-      "A ride through the olive groves and the quiet country roads around the masseria, at your own pace.",
-      "The ride is arranged on request, over about half a day. Tell us how long you would like to be out and we will suggest a route.",
+      "At Lama di Luna we have bicycles that we rent to our guests. They are pedal bicycles: you can ride them along the small roads across the whole estate, or take the little-trafficked Murgia road that leads towards Castel del Monte, for long rides in the Alta Murgia National Park, in a steppe landscape that looks almost lunar. You can also ride down among the olive groves of the Andria plain and discover the countryside: you decide whether to go through the countryside of Andria or into the National Park. It is a lovely way to discover the roads, the Murgia, our whole area and the masseria. In summer it is better to ride in the late afternoon, because of the heat.",
     ],
     it: [
-      "Un giro in bicicletta tra gli uliveti e le tranquille strade di campagna intorno alla masseria, con i tuoi tempi.",
-      "Il giro si organizza su richiesta, in circa mezza giornata. Dicci quanto tempo vorresti stare fuori e ti suggeriremo un percorso.",
+      "A Lama di Luna abbiamo delle biciclette che affittiamo ai nostri ospiti. Sono biciclette a pedali: si può andare lungo le stradine di tutta la tenuta, oppure sulla strada poco trafficata della Murgia che porta verso Castel del Monte, per fare lunghe passeggiate nel Parco Nazionale dell'Alta Murgia, con un paesaggio steppico che sembra quasi lunare. Si può anche scendere in mezzo agli uliveti della piana di Andria e scoprire le campagne: si decide se andare tra le campagne di Andria o nel Parco Nazionale. È un bel modo per scoprire le strade, la Murgia, tutta la nostra zona e la masseria. D'estate è meglio andare nel tardo pomeriggio, per il caldo.",
     ],
     fr: [
-      "Une balade à vélo à travers les oliveraies et les petites routes de campagne autour de la masseria, à votre rythme.",
-      "La balade est organisée sur demande, sur environ une demi-journée. Dites-nous combien de temps vous souhaitez rester dehors et nous vous proposerons un itinéraire.",
+      "À Lama di Luna, nous avons des vélos que nous louons à nos hôtes. Ce sont des vélos à pédales : vous pouvez rouler sur les petits chemins de tout le domaine, ou prendre la route peu fréquentée de la Murgia qui mène vers Castel del Monte, pour de longues balades dans le Parc national de l'Alta Murgia, dans un paysage de steppe qui paraît presque lunaire. Vous pouvez aussi descendre parmi les oliveraies de la plaine d'Andria et découvrir la campagne : à vous de choisir entre la campagne d'Andria et le Parc national. C'est une belle façon de découvrir les routes, la Murgia, toute notre région et la masseria. L'été, il vaut mieux partir en fin d'après-midi, à cause de la chaleur.",
     ],
   },
   "cinema-room": {
