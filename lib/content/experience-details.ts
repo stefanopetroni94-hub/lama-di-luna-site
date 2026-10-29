@@ -23,9 +23,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["€15 pour toute la journée", "Vélos à pédales", "À demander quelques heures à l'avance", "L'été, de préférence en fin d'après-midi"],
   },
   "cinema-room": {
-    en: ["Reserved for guests staying at the masseria", "Over 900 DVDs from the history of cinema", "On request, with the help of the reception", "Afternoon or after dinner"],
-    it: ["Riservata agli ospiti che dormono in masseria", "Oltre 900 DVD della storia del cinema", "Su richiesta, con l'aiuto della reception", "Nel pomeriggio o dopo cena"],
-    fr: ["Réservée aux hôtes qui dorment à la masseria", "Plus de 900 DVD de l'histoire du cinéma", "Sur demande, avec l'aide de la réception", "L'après-midi ou après le dîner"],
+    en: ["Reserved for guests staying at the masseria", "Over 900 DVDs from the history of cinema", "On request, with the help of the reception", "8 am to 8 pm"],
+    it: ["Riservata agli ospiti che dormono in masseria", "Oltre 900 DVD della storia del cinema", "Su richiesta, con l'aiuto della reception", "Dalle 8 alle 20"],
+    fr: ["Réservée aux hôtes qui dorment à la masseria", "Plus de 900 DVD de l'histoire du cinéma", "Sur demande, avec l'aide de la réception", "De 8 h à 20 h"],
   },
   yoga: {
     en: ["Mats and equipment free of charge", "On your own, free of charge", "Lesson with teacher: 1h 30 min", "€60 per couple, €25 for each extra person"],
@@ -96,13 +96,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   "cinema-room": {
     en: [
-      "In our cinema room we have a collection of over 900 DVDs of famous films from the history of cinema, kept in an old bookcase. After choosing a film, you can watch it on request, with the help of the reception, in very comfortable armchairs. There is a large selection of classic Italian movies, and international ones too. You can watch them whenever you like, in the afternoon or after a romantic dinner on the veranda.",
+      "In our cinema room we have a collection of over 900 DVDs of famous films from the history of cinema, kept in an old bookcase. After choosing a film, you can watch it with the help of the reception, in very comfortable armchairs. There is a large selection of classic Italian movies, and international ones too. You can watch them whenever you like, in the afternoon or after a romantic dinner on the veranda.",
     ],
     it: [
-      "Nella nostra sala cinema abbiamo una collezione di oltre 900 DVD di film famosi della storia del cinema, tenuti in una vecchia libreria. Dopo aver scelto il film, lo si può vedere su richiesta, con l'aiuto della reception, su poltrone molto comode. C'è una grande selezione di film italiani classici, e anche internazionali. Si possono guardare quando si vuole, nel pomeriggio o dopo una cena romantica sulla veranda.",
+      "Nella nostra sala cinema abbiamo una collezione di oltre 900 DVD di film famosi della storia del cinema, tenuti in una vecchia libreria. Dopo aver scelto il film, lo si può vedere con l'aiuto della reception, su poltrone molto comode. C'è una grande selezione di film italiani classici, e anche internazionali. Si possono guardare quando si vuole, nel pomeriggio o dopo una cena romantica sulla veranda.",
     ],
     fr: [
-      "Dans notre salle de cinéma, nous avons une collection de plus de 900 DVD de films célèbres de l'histoire du cinéma, rangés dans une vieille bibliothèque. Après avoir choisi un film, vous pouvez le regarder sur demande, avec l'aide de la réception, dans des fauteuils très confortables. Il y a un grand choix de films italiens classiques, et aussi internationaux. Vous pouvez les regarder quand vous le souhaitez, l'après-midi ou après un dîner romantique sur la véranda.",
+      "Dans notre salle de cinéma, nous avons une collection de plus de 900 DVD de films célèbres de l'histoire du cinéma, rangés dans une vieille bibliothèque. Après avoir choisi un film, vous pouvez le regarder avec l'aide de la réception, dans des fauteuils très confortables. Il y a un grand choix de films italiens classiques, et aussi internationaux. Vous pouvez les regarder quand vous le souhaitez, l'après-midi ou après un dîner romantique sur la véranda.",
     ],
   },
   yoga: {
