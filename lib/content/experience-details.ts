@@ -23,9 +23,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["€15 pour toute la journée", "Vélos à pédales", "À demander quelques heures à l'avance", "L'été, de préférence en fin d'après-midi"],
   },
   "cinema-room": {
-    en: ["By arrangement", "In the masseria's cinema room", "An evening at the masseria", "Prepared for you on request"],
-    it: ["Su prenotazione", "Nella sala cinema della masseria", "Una serata in masseria", "Preparata per te su richiesta"],
-    fr: ["Sur réservation", "Dans la salle de cinéma de la masseria", "Une soirée à la masseria", "Préparée pour vous sur demande"],
+    en: ["Reserved for guests staying at the masseria", "Over 900 DVDs from the history of cinema", "On request, with the help of the reception", "Afternoon or after dinner"],
+    it: ["Riservata agli ospiti che dormono in masseria", "Oltre 900 DVD della storia del cinema", "Su richiesta, con l'aiuto della reception", "Nel pomeriggio o dopo cena"],
+    fr: ["Réservée aux hôtes qui dorment à la masseria", "Plus de 900 DVD de l'histoire du cinéma", "Sur demande, avec l'aide de la réception", "L'après-midi ou après le dîner"],
   },
   yoga: {
     en: ["By arrangement", "Courtyard, stone halls and groves", "For beginners and regular practitioners", "Arranged around your stay"],
@@ -96,16 +96,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   "cinema-room": {
     en: [
-      "An evening in the masseria's cinema room, by arrangement. A quiet way to end the day, away from the courtyard and the groves.",
-      "Tell us when you would like to use the room and we will prepare it for you.",
+      "Our cinema room, also reserved for guests staying at the masseria. We have a collection of over 900 DVDs of famous films from the history of cinema, kept in an old bookcase. After choosing a film, you can watch it on request with the help of the reception, in very comfortable armchairs. There is a large selection of classic Italian films, auteur films, and international ones too. You can watch them in the afternoon, or after a romantic dinner on the veranda: just ask to see a film from another time in the cinema of Lama di Luna.",
     ],
     it: [
-      "Una serata nella sala cinema della masseria, su prenotazione. Un modo tranquillo di chiudere la giornata, lontano dal cortile e dagli uliveti.",
-      "Dicci quando vorresti usare la sala e la prepareremo per te.",
+      "La nostra sala cinema, anche questa riservata agli ospiti che dormono in masseria. Abbiamo una collezione di oltre 900 DVD di film famosi della storia del cinema, tenuti in una vecchia libreria. Dopo aver scelto il film, lo si può vedere su richiesta con l'aiuto della reception, su poltrone molto comode. C'è una grande selezione di film italiani d'epoca, d'autore, ma anche internazionali. Si possono guardare nel pomeriggio, oppure dopo una cena romantica sulla veranda: basta chiedere di vedere un film di altri tempi nel cinema di Lama di Luna.",
     ],
     fr: [
-      "Une soirée dans la salle de cinéma de la masseria, sur réservation. Une façon tranquille de finir la journée, loin de la cour et des oliveraies.",
-      "Dites-nous quand vous souhaitez utiliser la salle et nous la préparerons pour vous.",
+      "Notre salle de cinéma, elle aussi réservée aux hôtes qui dorment à la masseria. Nous avons une collection de plus de 900 DVD de films célèbres de l'histoire du cinéma, rangés dans une vieille bibliothèque. Après avoir choisi un film, vous pouvez le regarder sur demande avec l'aide de la réception, dans des fauteuils très confortables. Il y a un grand choix de films italiens classiques, de films d'auteur, mais aussi internationaux. Vous pouvez les regarder l'après-midi, ou après un dîner romantique sur la véranda : il suffit de demander à voir un film d'un autre temps dans le cinéma de Lama di Luna.",
     ],
   },
   yoga: {
