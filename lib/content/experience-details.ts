@@ -74,13 +74,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   massages: {
     en: [
-      "We have a massage therapist who comes to Lama di Luna on request to give massages, which can be relaxing or energising, in a quiet and relaxing area of the masseria.",
+      "We have a massage therapist who comes to Lama di Luna on request to give massages, which can be relaxing or energising, in a quiet and relaxing area of the masseria. It is a calm and historic part of the masseria, where you can enjoy a moment for yourself, wind down and recover your energy during your stay at Lama di Luna.",
     ],
     it: [
-      "Abbiamo un massaggiatore che, su richiesta, viene a Lama di Luna per fare massaggi, che possono essere rilassanti o energizzanti, in una zona tranquilla e rilassante della masseria.",
+      "Abbiamo un massaggiatore che, su richiesta, viene a Lama di Luna per fare massaggi, che possono essere rilassanti o energizzanti, in una zona tranquilla e rilassante della masseria. È una parte calma e storica della masseria, dove godersi un momento per sé, rilassarsi e recuperare le energie durante il soggiorno a Lama di Luna.",
     ],
     fr: [
-      "Nous avons un masseur qui vient à Lama di Luna sur demande pour faire des massages, qui peuvent être relaxants ou énergisants, dans un endroit calme et reposant de la masseria.",
+      "Nous avons un masseur qui vient à Lama di Luna sur demande pour faire des massages, qui peuvent être relaxants ou énergisants, dans un endroit calme et reposant de la masseria. C'est un lieu paisible et historique de la masseria, où profiter d'un moment pour soi, se détendre et retrouver de l'énergie pendant votre séjour à Lama di Luna.",
     ],
   },
   "bicycle-ride": {
