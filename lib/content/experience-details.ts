@@ -13,9 +13,9 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     fr: ["Dure une heure", "Le matin ou l'après-midi", "Sur réservation", "€60 pour deux personnes, €30 par personne supplémentaire"],
   },
   massages: {
-    en: ["By appointment", "In the quiet of the masseria", "Arranged on request", "A moment to slow down"],
-    it: ["Su appuntamento", "Nella quiete della masseria", "Si organizza su richiesta", "Un momento per rallentare"],
-    fr: ["Sur rendez-vous", "Dans le calme de la masseria", "Organisé sur demande", "Un moment pour ralentir"],
+    en: ["Lasts one hour", "Relaxing or energising", "€70", "To be booked in advance"],
+    it: ["Dura un'ora", "Rilassante o energizzante", "€70", "Da prenotare con anticipo"],
+    fr: ["Dure une heure", "Relaxant ou énergisant", "€70", "À réserver à l'avance"],
   },
   "bicycle-ride": {
     en: ["Half-day, on request", "Olive groves and quiet country roads", "At your own pace", "Route suggested by us"],
@@ -74,16 +74,13 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
   },
   massages: {
     en: [
-      "Massages by appointment, in the quiet of the masseria. A moment to slow down after the walks, the sun and the long tables.",
-      "The massages are arranged on request: tell us when you would like one and we will organise it for you.",
+      "We have a massage therapist who comes to Lama di Luna on request to give massages, which can be relaxing or energising, in a quiet and relaxing area of the masseria.",
     ],
     it: [
-      "Massaggi su appuntamento, nella quiete della masseria. Un momento per rallentare dopo le passeggiate, il sole e le lunghe tavolate.",
-      "I massaggi si organizzano su richiesta: dicci quando ne vorresti uno e lo organizziamo per te.",
+      "Abbiamo un massaggiatore che, su richiesta, viene a Lama di Luna per fare massaggi, che possono essere rilassanti o energizzanti, in una zona tranquilla e rilassante della masseria.",
     ],
     fr: [
-      "Massages sur rendez-vous, dans le calme de la masseria. Un moment pour ralentir après les promenades, le soleil et les longues tablées.",
-      "Les massages sont organisés sur demande : dites-nous quand vous en souhaitez un et nous nous en occupons.",
+      "Nous avons un masseur qui vient à Lama di Luna sur demande pour faire des massages, qui peuvent être relaxants ou énergisants, dans un endroit calme et reposant de la masseria.",
     ],
   },
   "bicycle-ride": {
