@@ -49,6 +49,7 @@ export const experienceSlugs = {
     "golf",
     "library",
     "horse-riding",
+    "pets",
   ],
   inRegion: [] as string[],
 }
@@ -66,6 +67,7 @@ const displayOrder = [
   "estate-walk",
   "library",
   "horse-riding",
+  "pets",
 ]
 
 const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
@@ -92,6 +94,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
       { slug: "#", img: "/whatsapp/20261029_055055_2502652003555281.jpg", pos: "center 15%", zoom: 1.3, num: "09 · By arrangement", name: "Golf Practice", meta: "Two flags 80 metres apart in the meadow next to the masseria, with clubs and balls for a few shots, alone or with Pietro." },
       { slug: "#", img: "/whatsapp/20261029_060653_2451806448686458.jpg", pos: "center 50%", rotate: 0.7, zoom: 1.08, num: "10 · By arrangement", name: "The Petroni Family Library", meta: "A family library of over 3,000 books and old typewriters, open to guests day and night, free of charge." },
       { slug: "#", img: "/whatsapp/20261016_172701_1655107209547771.jpg", num: "11 · By arrangement", name: "Horse Riding in the National Park", meta: "Rides on gentle horses in the Alta Murgia National Park, with stables nearby; children welcome." },
+      { slug: "#", img: "/whatsapp/20261016_173131_1811619126525486.jpg", pos: "45% center", num: "12 · All year round", name: "Meet Lama di Luna's Pets", meta: "Meet Allen, Romeo, our 12 cats and the rest of the permanent residents of Lama di Luna." },
     ],
     inRegion: [],
   },
@@ -118,6 +121,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
       { slug: "#", img: "/whatsapp/20261029_055055_2502652003555281.jpg", pos: "center 15%", zoom: 1.3, num: "09 · Su prenotazione", name: "Golf Practice", meta: "Due bandierine a 80 metri nel prato accanto alla masseria, con mazze e palline per due tiri, da soli o con Pietro." },
       { slug: "#", img: "/whatsapp/20261029_060653_2451806448686458.jpg", pos: "center 50%", rotate: 0.7, zoom: 1.08, num: "10 · Su prenotazione", name: "La Biblioteca della Famiglia Petroni", meta: "Una biblioteca di famiglia con oltre 3.000 libri e vecchie macchine da scrivere, aperta agli ospiti giorno e notte, gratuita." },
       { slug: "#", img: "/whatsapp/20261016_172701_1655107209547771.jpg", num: "11 · Su prenotazione", name: "Passeggiate a Cavallo nel Parco Nazionale", meta: "Passeggiate su cavalli mansueti nel Parco Nazionale dell'Alta Murgia, con maneggi vicini; bambini benvenuti." },
+      { slug: "#", img: "/whatsapp/20261016_173131_1811619126525486.jpg", pos: "45% center", num: "12 · Tutto l'anno", name: "Incontra gli Animali di Lama di Luna", meta: "Incontra Allen, Romeo, i nostri 12 gatti e gli altri residenti permanenti di Lama di Luna." },
     ],
     inRegion: [],
   },
@@ -144,6 +148,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
       { slug: "#", img: "/whatsapp/20261029_055055_2502652003555281.jpg", pos: "center 15%", zoom: 1.3, num: "09 · Sur réservation", name: "Practice de Golf", meta: "Deux drapeaux à 80 mètres dans le pré à côté de la masseria, avec clubs et balles pour quelques coups, seul ou avec Pietro." },
       { slug: "#", img: "/whatsapp/20261029_060653_2451806448686458.jpg", pos: "center 50%", rotate: 0.7, zoom: 1.08, num: "10 · Sur réservation", name: "La Bibliothèque de la Famille Petroni", meta: "Une bibliothèque de famille de plus de 3 000 livres et de vieilles machines à écrire, ouverte aux hôtes jour et nuit, gratuite." },
       { slug: "#", img: "/whatsapp/20261016_172701_1655107209547771.jpg", num: "11 · Sur réservation", name: "Équitation dans le Parc National", meta: "Balades à cheval sur des chevaux dociles dans le Parc national de l'Alta Murgia, avec des centres équestres à proximité ; enfants bienvenus." },
+      { slug: "#", img: "/whatsapp/20261016_173131_1811619126525486.jpg", pos: "45% center", num: "12 · Toute l'année", name: "Rencontrez les Animaux de Lama di Luna", meta: "Rencontrez Allen, Romeo, nos 12 chats et les autres résidents permanents de Lama di Luna." },
     ],
     inRegion: [],
   },

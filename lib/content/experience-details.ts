@@ -52,6 +52,11 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     it: ["Gratuita", "Aperta 24 ore su 24", "Oltre 3.000 libri, alcuni molto antichi", "In latino, tedesco, francese, inglese e italiano"],
     fr: ["Gratuite", "Ouverte 24 heures sur 24", "Plus de 3 000 livres, certains très anciens", "En latin, allemand, français, anglais et italien"],
   },
+  pets: {
+    en: ["Allen, our gentle Irish setter", "Romeo, the Australian shepherd", "12 cats and our goose", "Please do not feed the animals"],
+    it: ["Allen, il nostro dolce setter irlandese", "Romeo, il pastore australiano", "12 gatti e la nostra oca", "Vi preghiamo di non dare da mangiare agli animali"],
+    fr: ["Allen, notre doux setter irlandais", "Romeo, le berger australien", "12 chats et notre oie", "Merci de ne pas nourrir les animaux"],
+  },
   "horse-riding": {
     en: ["Lasts 2 hours", "15 to 20 minutes' drive from Lama di Luna", "Always to be booked in advance", "Gentle horses, children welcome"],
     it: ["Dura 2 ore", "A 15 o 20 minuti di macchina da Lama di Luna", "Da prenotare sempre in anticipo", "Cavalli mansueti, bambini benvenuti"],
@@ -158,6 +163,17 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
     ],
     fr: [
       "La famille Petroni est une famille de lettrés. D'abord l'oncle Pietro, avocat ; puis Agostino Petroni, père de Pietro, magistrat ; puis Pietro, agronome ; et aujourd'hui Agostino Petroni, journaliste. De génération en génération, les livres ont rempli notre maison. Dans les chambres et dans la bibliothèque de famille, vous trouverez une collection de plus de 3 000 livres, certains très anciens, en latin, en allemand, en français, en anglais et en italien. Si vous êtes curieux, la bibliothèque est toujours ouverte et gratuite, 24 heures sur 24. Dans la bibliothèque de famille, il y a aussi des collections particulières, comme l'une faite de vieilles machines à écrire Olivetti et une autre de magazines National Geographic du XXe siècle. C'est un lieu qui conserve l'histoire des Pouilles, et la famille Petroni a décidé de l'ouvrir à tous ses hôtes, qui sont les bienvenus et à qui l'on demande de traiter la collection avec respect, pour la conserver pour ceux qui viendront après eux.",
+    ],
+  },
+  pets: {
+    en: [
+      "At Lama di Luna we have several animals that live here all year round. First of all there is Allen, our gentle Irish setter, always ready to welcome guests and to check that everything is fine around the masseria; sometimes you may hear a knock on your door, because he needs a few cuddles. Then there is the newcomer Romeo, an Australian shepherd who keeps company with our 12 cats, which now live permanently at Lama di Luna. Some of them wander around the orchard, while Nero always comes to check how lunch and dinner are going, looking for something to eat (please do not give him anything, otherwise he will never leave!). Then there are Grigio, Bianca, Nuvolo, Berta and Nina, and finally our goose, who chatters cheerfully in the morning. Around Lama di Luna you will meet the whole band of our permanent residents.",
+    ],
+    it: [
+      "A Lama di Luna abbiamo diversi animali che vivono qui tutto l'anno. Innanzitutto c'è Allen, il nostro dolce setter irlandese, sempre pronto a dare il benvenuto agli ospiti e a controllare che tutto vada bene in giro per la masseria; a volte potreste sentirlo bussare alla porta della vostra stanza, perché ha bisogno di un po' di coccole. Poi c'è il nuovo arrivato Romeo, un pastore australiano che fa compagnia ai nostri 12 gatti, che ormai vivono stabilmente a Lama di Luna. Alcuni si aggirano per il frutteto, mentre Nero viene sempre a controllare com'è la situazione a pranzo e a cena, in cerca di qualcosa da mangiare (mi raccomando, non dategli niente, altrimenti non se ne va più!). Poi ci sono Grigio, Bianca, Nuvolo, Berta e Nina, e infine la nostra oca, che chiacchiera allegramente la mattina. In giro per Lama di Luna incontrerete tutta la banda dei nostri residenti permanenti.",
+    ],
+    fr: [
+      "À Lama di Luna, nous avons plusieurs animaux qui vivent ici toute l'année. D'abord Allen, notre doux setter irlandais, toujours prêt à accueillir les hôtes et à vérifier que tout va bien autour de la masseria ; il se peut que vous l'entendiez frapper à la porte de votre chambre, parce qu'il a besoin de quelques câlins. Ensuite le nouveau venu Romeo, un berger australien qui tient compagnie à nos 12 chats, qui vivent désormais en permanence à Lama di Luna. Certains se promènent dans le verger, tandis que Nero vient toujours voir comment se passent le déjeuner et le dîner, à la recherche de quelque chose à manger (surtout, ne lui donnez rien, sinon il ne partira plus !). Il y a aussi Grigio, Bianca, Nuvolo, Berta et Nina, et enfin notre oie, qui bavarde joyeusement le matin. Autour de Lama di Luna, vous rencontrerez toute la bande de nos résidents permanents.",
     ],
   },
   "horse-riding": {
