@@ -3,9 +3,9 @@ import type { Locale } from "@/lib/i18n"
 // The four short points on the right of each experience page (like "Sleeps 2, Open fireplace..." in the rooms).
 export const experienceFacts: Record<string, Record<Locale, string[]>> = {
   "olive-harvest": {
-    en: ["Late October to mid-November", "4 hours, a gentle walk", "2 to 8 guests", "From €85 per person"],
-    it: ["Da fine ottobre a metà novembre", "4 ore, una passeggiata leggera", "Da 2 a 8 ospiti", "Da €85 a persona"],
-    fr: ["De fin octobre à mi-novembre", "4 heures, une marche facile", "De 2 à 8 personnes", "À partir de €85 par personne"],
+    en: ["Lasts one hour and a quarter", "Best in the morning", "Open to couples or groups", "€60 per couple, €30 for each additional person"],
+    it: ["Dura un'ora e un quarto", "Meglio la mattina", "Aperto a coppie o a gruppi", "€60 a coppia, €30 per ogni persona in più"],
+    fr: ["Dure une heure et quart", "De préférence le matin", "Ouvert aux couples ou aux groupes", "€60 par couple, €30 par personne supplémentaire"],
   },
   "cooking-class": {
     en: ["Half-day, on request", "Orecchiette and Pugliese focaccia", "Made entirely by hand", "In the masseria kitchen"],

@@ -48,8 +48,7 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
     title: "Olive Oil Tasting and Tour",
     statementTitle: "Walk the groves, watch the cold press, taste the first oil of the year",
     statementBody: [
-      "Late October to mid-November, the estate's 210 hectares of olive groves come into harvest. Pickers move along the rows from sunrise; nets are spread beneath the trees; crates are filled and driven to the cold-press mill before the day's heat reaches the fruit. The first oil pressed from each day's olives is unfiltered, bright green, faintly bitter — the most honest taste in Pugliese cooking.",
-      "Join the harvest for a morning. You walk the groves with Pietro or one of the estate hands. You learn why we pick by hand on these trees, why cold-press matters, why the first oil is poured cloudy. Then breakfast: warm bread, the just-pressed oil, salt, a glass of wine.",
+      "A professional tour of the Lama di Luna farm, where you learn the basics of agronomy: from irrigation to the harvest, and the 11 different olive varieties grown at Lama di Luna, from centuries-old trees to very young trees trained on trellises. The tour ends on the veranda, where you taste the extra virgin olive oils of Lama di Luna and learn how to taste an oil, how to recognise its qualities, whether it is good or not, and how to choose one at the supermarket.",
     ],
     facts: [
       { label: "Season", value: "Late Oct – mid Nov" },
@@ -104,8 +103,7 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
     title: "Degustazione e Tour dell'Olio d'Oliva",
     statementTitle: "Cammina tra gli ulivi, osserva la spremitura a freddo, assaggia il primo olio dell'anno",
     statementBody: [
-      "Da fine ottobre a metà novembre, i 210 ettari di uliveti della masseria entrano nel periodo della raccolta. I raccoglitori si muovono lungo i filari dall'alba; le reti si stendono sotto gli alberi; le cassette si riempiono e vengono portate al frantoio a freddo prima che il calore del giorno raggiunga i frutti. Il primo olio spremuto dalle olive di ogni giornata è non filtrato, verde brillante, leggermente amaro — il sapore più sincero della cucina pugliese.",
-      "Unisciti alla raccolta per una mattinata. Cammini tra gli ulivi con Pietro o con uno degli uomini della masseria. Impari perché su questi alberi si raccoglie a mano, perché la spremitura a freddo è importante, perché il primo olio si versa torbido. Poi la colazione: pane caldo, l'olio appena spremuto, sale, un bicchiere di vino.",
+      "Un tour professionale dell'azienda agricola Lama di Luna, in cui si apprendono nozioni agronomiche: dall'irrigazione alla raccolta, fino alle 11 diverse varietà di olive coltivate a Lama di Luna, da alberi centenari ad alberi giovanissimi coltivati a spalliera. Il tour si conclude sulla veranda, dove si assaggiano gli oli extravergine di oliva di Lama di Luna e si impara come assaggiare un olio, come riconoscerne le proprietà, se è buono o meno e come sceglierlo al supermercato.",
     ],
     facts: [
       { label: "Stagione", value: "Fine ott – metà nov" },
@@ -160,8 +158,7 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
     title: "Dégustation d'Huile d'Olive et Visite",
     statementTitle: "Marchez dans les oliveraies, assistez à la pression à froid, goûtez la première huile de l'année",
     statementBody: [
-      "De fin octobre à mi-novembre, les 210 hectares d'oliveraies du domaine entrent en récolte. Les cueilleurs avancent le long des rangs dès le lever du soleil, les filets sont étendus sous les arbres, les cagettes se remplissent et partent au moulin à froid avant que la chaleur du jour n'atteigne les fruits. La première huile pressée chaque jour est non filtrée, d'un vert vif, légèrement amère : le goût le plus sincère de la cuisine des Pouilles.",
-      "Rejoignez la récolte le temps d'une matinée. Vous marchez dans les oliveraies avec Pietro ou l'un des hommes du domaine. Vous apprenez pourquoi on cueille à la main sur ces arbres, pourquoi la pression à froid compte, pourquoi la première huile est versée trouble. Puis le petit déjeuner : pain chaud, huile tout juste pressée, sel, un verre de vin.",
+      "Une visite professionnelle de la ferme Lama di Luna, où l'on apprend les bases de l'agronomie : de l'irrigation à la récolte, jusqu'aux 11 variétés d'olives différentes cultivées à Lama di Luna, des arbres centenaires aux très jeunes arbres conduits en espalier. La visite se termine sur la véranda, où l'on déguste les huiles d'olive extra vierges de Lama di Luna et où l'on apprend à déguster une huile, à reconnaître ses qualités, à savoir si elle est bonne ou non et à la choisir au supermarché.",
     ],
     facts: [
       { label: "Saison", value: "Fin oct. à mi-nov." },

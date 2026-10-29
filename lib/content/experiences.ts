@@ -81,7 +81,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
       "All experiences are arranged on request. Many are weather- or season-dependent; some need a few days' notice. Drop us a note with your dates and what you're drawn to.",
     arrangeCta: "Get in touch",
     onEstate: [
-      { slug: "olive-harvest", img: "/whatsapp/20261028_065214_1516459033640755.jpg", num: "01 · October–November", name: "Olive Oil Tasting and Tour", meta: "Walk the groves at dawn, watch the cold press, taste the first oil of the year on warm bread." },
+      { slug: "olive-harvest", img: "/whatsapp/20261028_065214_1516459033640755.jpg", num: "01 · October–November", name: "Olive Oil Tasting and Tour", meta: "A professional tour of the farm, from irrigation to the harvest, ending with an extra virgin olive oil tasting on the veranda." },
       { slug: "#", img: "/whatsapp/20261028_070629_1807431347066448.jpg", pos: "center 35%", num: "02 · Half-day, on request", name: "Fresh Pasta Cooking Class", meta: "A cooking class with our resident cook — orecchiette pasta and Pugliese focaccia, made by hand at the masseria kitchen." },
       { slug: "#", img: "/whatsapp/20261028_085225_1143956144719914.jpg", pos: "center 40%", num: "03 · By arrangement", name: "Relaxing Massages", meta: "Massages by appointment, in the quiet of the masseria." },
       { slug: "#", img: "/whatsapp/20261029_053110_2058236084866524.jpg", pos: "center 55%", num: "04 · Half-day, on request", name: "Bicycle Ride", meta: "A ride through the olive groves and the quiet country roads around the masseria." },
@@ -107,7 +107,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
       "Tutte le esperienze si organizzano su richiesta. Molte dipendono dal tempo o dalla stagione; alcune richiedono qualche giorno di preavviso. Scrivici con le tue date e ciò che ti attrae.",
     arrangeCta: "Contattaci",
     onEstate: [
-      { slug: "olive-harvest", img: "/whatsapp/20261028_065214_1516459033640755.jpg", num: "01 · Ottobre–Novembre", name: "Degustazione e Tour dell'Olio d'Oliva", meta: "Cammina tra gli ulivi all'alba, osserva la spremitura a freddo, assaggia il primo olio dell'anno sul pane caldo." },
+      { slug: "olive-harvest", img: "/whatsapp/20261028_065214_1516459033640755.jpg", num: "01 · Ottobre–Novembre", name: "Degustazione e Tour dell'Olio d'Oliva", meta: "Un tour professionale dell'azienda, dall'irrigazione alla raccolta, che si conclude con la degustazione di olio extravergine sulla veranda." },
       { slug: "#", img: "/whatsapp/20261028_070629_1807431347066448.jpg", pos: "center 35%", num: "02 · Mezza giornata, su richiesta", name: "Corso di Cucina della Pasta Fresca", meta: "Un corso di cucina con la nostra cuoca — orecchiette e focaccia pugliese, fatte a mano nella cucina della masseria." },
       { slug: "#", img: "/whatsapp/20261028_085225_1143956144719914.jpg", pos: "center 40%", num: "03 · Su prenotazione", name: "Massaggi Rilassanti", meta: "Massaggi su appuntamento, nella quiete della masseria." },
       { slug: "#", img: "/whatsapp/20261029_053110_2058236084866524.jpg", pos: "center 55%", num: "04 · Mezza giornata, su richiesta", name: "Giro in Bicicletta", meta: "Un giro in bicicletta tra gli uliveti e le tranquille strade di campagna intorno alla masseria." },
@@ -133,7 +133,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
       "Toutes les expériences sont organisées sur demande. Beaucoup dépendent de la météo ou de la saison, certaines demandent quelques jours de préavis. Écrivez-nous avec vos dates et ce qui vous attire.",
     arrangeCta: "Contactez-nous",
     onEstate: [
-      { slug: "olive-harvest", img: "/whatsapp/20261028_065214_1516459033640755.jpg", num: "01 · Octobre à novembre", name: "Dégustation d'Huile d'Olive et Visite", meta: "Marchez dans les oliveraies à l'aube, assistez à la pression à froid, goûtez la première huile de l'année sur du pain chaud." },
+      { slug: "olive-harvest", img: "/whatsapp/20261028_065214_1516459033640755.jpg", num: "01 · Octobre à novembre", name: "Dégustation d'Huile d'Olive et Visite", meta: "Une visite professionnelle de la ferme, de l'irrigation à la récolte, qui se termine par une dégustation d'huile d'olive extra vierge sur la véranda." },
       { slug: "#", img: "/whatsapp/20261028_070629_1807431347066448.jpg", pos: "center 35%", num: "02 · Demi-journée, sur demande", name: "Cours de Cuisine des Pâtes Fraîches", meta: "Un cours de cuisine avec notre cuisinière : orecchiette et focaccia des Pouilles, faites à la main dans la cuisine de la masseria." },
       { slug: "#", img: "/whatsapp/20261028_085225_1143956144719914.jpg", pos: "center 40%", num: "03 · Sur réservation", name: "Massages Relaxants", meta: "Massages sur rendez-vous, dans le calme de la masseria." },
       { slug: "#", img: "/whatsapp/20261029_053110_2058236084866524.jpg", pos: "center 55%", num: "04 · Demi-journée, sur demande", name: "Balade à Vélo", meta: "Une balade à travers les oliveraies et les petites routes de campagne autour de la masseria." },
