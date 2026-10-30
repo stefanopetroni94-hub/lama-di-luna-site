@@ -32,15 +32,15 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
               src: "/whatsapp/20261030_075504_982971887620842.jpg",
               alt: pairText.man,
               caption: pairText.man,
-              size: "123% auto",
-              position: "49.5% 21%",
+              size: "118% auto",
+              position: "48.8% 50%",
             },
             {
               src: "/whatsapp/20261030_075517_1121991600569154.jpg",
               alt: pairText.woman,
               caption: pairText.woman,
-              size: "122% auto",
-              position: "50.3% 19.5%",
+              size: "118% auto",
+              position: "50.3% 50%",
             },
           ]}
         />
