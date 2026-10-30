@@ -3162,12 +3162,12 @@ footer {
 .photo-pair {
   position: relative;
   width: 100%;
-  aspect-ratio: 100 / 157;
+  aspect-ratio: 100 / 168;
 }
 .photo-pair-item {
   position: absolute;
   width: 58%;
-  aspect-ratio: 17 / 25;
+  aspect-ratio: 7 / 11;
   margin: 0;
 }
 .photo-pair-item--top {
