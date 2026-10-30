@@ -1,5 +1,5 @@
 // Old Amenitiz URLs (52 in its sitemap, read 2026-10-30) to their page on this site.
-// One permanent (308) hop each, no chains. German had no page here, so /de goes to English.
+// One permanent (308) hop each, no chains. German now has its own pages, so /de URLs go to /de.
 // Keep these at least a year after launch.
 const rooms = {
   masseria: ["room/masseria-family-suite", "fr/chambre/suite-familiale-masseria", "it/camera/family-suite-493aac2c-4fb5-415c-8bc5-cb476853b43d", "de/zimmer/masseria-familiensuite"],
@@ -10,40 +10,39 @@ const rooms = {
 }
 
 // Old path prefix to the language it now lives under.
-const langOf = (path) => (path.startsWith("fr/") ? "fr" : path.startsWith("it/") ? "it" : "en")
+const langOf = (path) => (path.startsWith("fr/") ? "fr" : path.startsWith("it/") ? "it" : path.startsWith("de/") ? "de" : "en")
 
 const pages = {
   // old path: new path
   "": "/en",
-  de: "/en",
   rooms: "/en/rooms",
   "it/camere": "/it/rooms",
   "fr/chambres": "/fr/rooms",
-  "de/zimmer": "/en/rooms",
+  "de/zimmer": "/de/rooms",
   "page/history": "/en/story",
   "it/pagina/la-storia": "/it/story",
   "fr/page/l-histoire": "/fr/story",
-  "de/seite/geschichte": "/en/story",
+  "de/seite/geschichte": "/de/story",
   contact: "/en/contact",
   "it/contatto": "/it/contact",
-  "de/kontakt": "/en/contact",
+  "de/kontakt": "/de/contact",
   "page/services": "/en/experiences",
   "it/pagina/servizi": "/it/experiences",
   "fr/page/services": "/fr/experiences",
-  "de/seite/dienstleistungen": "/en/experiences",
+  "de/seite/dienstleistungen": "/de/experiences",
   // The old gallery had no content, torretta and biomasseria were empty Italian stubs.
   "page/galleria": "/en",
   "it/pagina/galleria": "/it",
   "fr/page/galleria": "/fr",
-  "de/seite/galleria": "/en",
+  "de/seite/galleria": "/de",
   "room/biomasseria-lama-di-luna": "/en/exclusive",
   "it/camera/biomasseria-lama-di-luna": "/it/exclusive",
   "fr/chambre/biomasseria-lama-di-luna": "/fr/exclusive",
-  "de/zimmer/biomasseria-lama-di-luna": "/en/exclusive",
+  "de/zimmer/biomasseria-lama-di-luna": "/de/exclusive",
   "room/camera-torretta": "/en/rooms",
   "it/camera/camera-torretta": "/it/rooms",
   "fr/chambre/camera-torretta": "/fr/rooms",
-  "de/zimmer/camera-torretta": "/en/rooms",
+  "de/zimmer/camera-torretta": "/de/rooms",
   ...Object.fromEntries(
     Object.entries(rooms).flatMap(([slug, olds]) => olds.map((old) => [old, `/${langOf(old)}/rooms/${slug}`])),
   ),

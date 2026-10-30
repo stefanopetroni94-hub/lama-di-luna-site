@@ -15,7 +15,7 @@ import { pageMetadata } from "@/lib/seo"
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
   if (!isLocale(lang)) return {}
-  return pageMetadata(lang, "book", { en: "Book", it: "Prenota", fr: "Réserver" }[lang])
+  return pageMetadata(lang, "book", { en: "Book", it: "Prenota", fr: "Réserver", de: "Buchen" }[lang])
 }
 
 export default async function BookPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -72,7 +72,7 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
       <section className="lh-widget-wrap">
         <div className="book-direct">
           <BookLink href={bookingUrl(lang)} className="book-stay-btn">
-            {{ en: "Book now", it: "Prenota ora", fr: "Réserver" }[lang]}
+            {{ en: "Book now", it: "Prenota ora", fr: "Réserver", de: "Jetzt buchen" }[lang]}
           </BookLink>
         </div>
       </section>

@@ -10,12 +10,12 @@ import { pageMetadata } from "@/lib/seo"
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
   if (!isLocale(lang)) return {}
-  return pageMetadata(lang, "privacy", { en: "Privacy", it: "Privacy", fr: "Confidentialité" }[lang])
+  return pageMetadata(lang, "privacy", { en: "Privacy", it: "Privacy", fr: "Confidentialité", de: "Datenschutz" }[lang])
 }
 
 type Section = { title: string; body: string[] }
 
-const TEXT: Record<"en" | "it" | "fr", { title: string; updated: string; sections: Section[] }> = {
+const TEXT: Record<"en" | "it" | "fr" | "de", { title: string; updated: string; sections: Section[] }> = {
   en: {
     title: "Privacy Policy",
     updated: "Information on the processing of personal data, pursuant to Articles 13 and 14 of EU Regulation 2016/679 (GDPR).",
@@ -142,6 +142,48 @@ const TEXT: Record<"en" | "it" | "fr", { title: string; updated: string; section
       },
     ],
   },
+  de: {
+    title: "Datenschutzerklärung",
+    updated: "Informationen zur Verarbeitung personenbezogener Daten gemäß Artikel 13 und 14 der EU Verordnung 2016/679 (DSGVO).",
+    sections: [
+      {
+        title: "Verantwortlicher",
+        body: [
+          "Verantwortlich für die Datenverarbeitung ist Lama di Luna S.N.C., C.da Lama di Luna, 76123 Andria (BT), Italien. Sie erreichen uns unter der E-Mail-Adresse, die auf der Kontaktseite angegeben ist.",
+        ],
+      },
+      {
+        title: "Welche Daten wir erheben",
+        body: [
+          "Wenn Sie uns über das Kontaktformular schreiben, erheben wir die Daten, die Sie eingeben: Vorname, Nachname, E-Mail-Adresse und den Inhalt Ihrer Nachricht. Wir fragen nicht mehr ab, als wir für die Antwort brauchen.",
+        ],
+      },
+      {
+        title: "Wofür wir Ihre Daten verwenden und auf welcher Grundlage",
+        body: [
+          "Wir verwenden Ihre Daten nur, um Ihre Anfrage zu lesen, zu beantworten und weiter zu bearbeiten, zum Beispiel um Ihnen Informationen zu einem Aufenthalt zu senden. Rechtsgrundlage ist Ihre Einwilligung, die Sie durch das Ankreuzen des Kästchens vor dem Absenden des Formulars erteilen, sowie die Notwendigkeit, Ihre Anfrage vor einer möglichen Buchung zu beantworten (Art. 6 Abs. 1 lit. a und b DSGVO).",
+        ],
+      },
+      {
+        title: "Wie lange wir Ihre Daten speichern",
+        body: [
+          "Wir speichern Ihre Daten so lange, wie es nötig ist, um Ihre Anfrage zu beantworten und die damit verbundene Kommunikation abzuwickeln. Folgt eine Buchung, bewahren wir die gesetzlich vorgeschriebenen Daten für Buchhaltungs und Steuerzwecke auf.",
+        ],
+      },
+      {
+        title: "Wer Ihre Daten erhält",
+        body: [
+          "Ihre Daten werden von unseren Mitarbeitern verarbeitet und, falls nötig, von technischen Dienstleistern, die uns beim Betrieb der Website und der E-Mail helfen und nach unseren Anweisungen handeln. Wir verkaufen Ihre Daten nicht und nutzen sie nicht für Werbung. Hat ein Dienstleister seinen Sitz außerhalb der Europäischen Union, stützen wir uns auf die von der DSGVO vorgesehenen Garantien.",
+        ],
+      },
+      {
+        title: "Ihre Rechte",
+        body: [
+          "Sie können jederzeit Auskunft über Ihre Daten, deren Berichtigung, Löschung, die Einschränkung der Verarbeitung, eine Kopie Ihrer Daten in einem übertragbaren Format verlangen oder der Verarbeitung widersprechen. Sie können Ihre Einwilligung jederzeit widerrufen, ohne dass dies die bereits erfolgte Verarbeitung berührt. Außerdem haben Sie das Recht, Beschwerde bei der italienischen Datenschutzbehörde einzulegen (Garante per la protezione dei dati personali, www.garanteprivacy.it).",
+        ],
+      },
+    ],
+  },
 }
 
 export default async function PrivacyPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -170,7 +212,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ lang: 
           </section>
         ))}
         <section>
-          <h2>{{ en: "Contact", it: "Contatti", fr: "Contact" }[lang]}</h2>
+          <h2>{{ en: "Contact", it: "Contatti", fr: "Contact", de: "Kontakt" }[lang]}</h2>
           <p>
             {c.addressValue.replace(/\n/g, ", ")} — <a href={`mailto:${c.emailValue}`}>{c.emailValue}</a>
           </p>

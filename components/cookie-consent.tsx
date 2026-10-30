@@ -129,6 +129,44 @@ const T = {
     dateLabel: "Date",
     close: "Fermer",
   },
+  de: {
+    fab: "Cookie-Einstellungen",
+    barTitle: "Diese Website verwendet Cookies",
+    barText:
+      "Wir verwenden Cookies, damit die Website funktioniert, um Ihre Einstellungen zu speichern und, nur wenn Sie es erlauben, um zu verstehen, wie die Website genutzt wird, und Ihnen passende Inhalte zu zeigen. Sie können alle akzeptieren, auswählen oder die optionalen Cookies ablehnen. Sie können Ihre Entscheidung jederzeit ändern.",
+    necessary: "Notwendig",
+    preferences: "Präferenzen",
+    statistics: "Statistiken",
+    marketing: "Marketing",
+    showDetails: "Details anzeigen",
+    reject: "Ablehnen",
+    acceptSel: "Auswahl akzeptieren",
+    acceptAll: "Alle akzeptieren",
+    tabs: { consent: "Einwilligung", details: "Details", info: "Über Cookies" },
+    statusTitle: "Cookie-Einstellungen",
+    statusNow: "Ihr aktueller Status",
+    revoke: "Einwilligung widerrufen",
+    modify: "Einwilligung ändern",
+    noChoice: "Noch keine Auswahl getroffen",
+    descNecessary:
+      "Notwendige Cookies machen die Website nutzbar, indem sie Grundfunktionen wie die Navigation zwischen den Seiten ermöglichen. Ohne diese Cookies kann die Website nicht richtig funktionieren.",
+    descPreferences:
+      "Präferenz-Cookies ermöglichen es der Website, sich Informationen zu merken, die ihr Verhalten oder Aussehen beeinflussen, etwa Ihre bevorzugte Sprache.",
+    descStatistics:
+      "Statistik-Cookies helfen uns zu verstehen, wie Besucher die Website nutzen, indem sie Informationen anonym sammeln und auswerten.",
+    descMarketing:
+      "Marketing-Cookies werden verwendet, um Besucher über Websites hinweg zu verfolgen und Ihnen passende Werbung zu zeigen.",
+    info: [
+      "Cookies sind kleine Textdateien, mit denen Websites die Nutzung für Sie effizienter gestalten können.",
+      "Laut Gesetz dürfen wir Cookies auf Ihrem Gerät speichern, wenn sie für den Betrieb der Website unbedingt erforderlich sind. Für alle anderen Arten von Cookies brauchen wir Ihre Einwilligung.",
+      "Einige Cookies können von Drittanbietern gesetzt werden, deren Dienste auf unseren Seiten erscheinen, zum Beispiel eingebettete Karten oder Buchungswerkzeuge.",
+      "Sie können Ihre Einwilligung jederzeit ändern oder widerrufen, über den kleinen Cookie-Button unten links auf der Seite oder über den Link Cookies in der Fußzeile.",
+    ],
+    infoPrivacy: "Wie wir mit personenbezogenen Daten umgehen, lesen Sie in unserer Datenschutzerklärung.",
+    idLabel: "Einwilligungs-ID",
+    dateLabel: "Datum",
+    close: "Schließen",
+  },
 } as const
 
 function newId() {
@@ -380,7 +418,7 @@ export function CookieConsent({ locale }: { locale: Locale }) {
                     <p>
                       {t.idLabel}: {stored.id}
                       <br />
-                      {t.dateLabel}: {new Date(stored.date).toLocaleString({ en: "en-GB", it: "it-IT", fr: "fr-FR" }[locale])}
+                      {t.dateLabel}: {new Date(stored.date).toLocaleString({ en: "en-GB", it: "it-IT", fr: "fr-FR", de: "de-DE" }[locale])}
                     </p>
                   ) : null}
                 </div>

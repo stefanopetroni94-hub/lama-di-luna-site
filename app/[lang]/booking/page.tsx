@@ -10,13 +10,14 @@ import { pageMetadata } from "@/lib/seo"
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
   if (!isLocale(lang)) return {}
-  return pageMetadata(lang, "booking", { en: "Booking", it: "Prenotazione", fr: "Réservation" }[lang])
+  return pageMetadata(lang, "booking", { en: "Booking", it: "Prenotazione", fr: "Réservation", de: "Buchung" }[lang])
 }
 
 const TEXT = {
   en: { title: "Book your stay", frame: "Booking engine" },
   it: { title: "Prenota il tuo soggiorno", frame: "Motore di prenotazione" },
   fr: { title: "Réservez votre séjour", frame: "Moteur de réservation" },
+  de: { title: "Buchen Sie Ihren Aufenthalt", frame: "Buchungssystem" },
 }
 
 export default async function BookingPage({

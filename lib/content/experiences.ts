@@ -70,7 +70,7 @@ const displayOrder = [
   "pets",
 ]
 
-const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
+const base: Record<"en" | "it" | "fr" | "de", ExperiencesContent> = {
   en: {
     eyebrow: "Ways to spend a day",
     title: "Experiences",
@@ -152,6 +152,33 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
     ],
     inRegion: [],
   },
+  de: {
+    eyebrow: "Wie man einen Tag verbringen kann",
+    title: "Erlebnisse",
+    intro:
+      "Die Olivenführung, ein Kochkurs, entspannende Massagen, eine Radtour und ein ruhiger Moment zum Lesen in der Bibliothek.",
+    onEstateLabel: "Auf dem Gut",
+    arrangeEyebrow: "Sagen Sie uns, was Ihnen gefallen würde",
+    arrangeTitle: "Wir helfen Ihnen, den Tag zu planen",
+    arrangeText:
+      "Alle Erlebnisse werden auf Anfrage organisiert. Viele hängen vom Wetter oder der Jahreszeit ab, manche brauchen ein paar Tage Vorlauf. Schreiben Sie uns Ihre Reisedaten und was Sie interessiert. Lama di Luna ist auch ein Ort für Firmentreffen und Firmenretreats.",
+    arrangeCta: "Kontakt aufnehmen",
+    onEstate: [
+      { slug: "olive-harvest", img: "/whatsapp/20261028_065214_1516459033640755.jpg", num: "01 · Oktober bis November", name: "Olivenölverkostung und Führung", meta: "Eine fachkundige Führung über den Hof, von der Bewässerung bis zur Ernte, mit einer Verkostung von nativem Olivenöl extra auf der Veranda zum Abschluss." },
+      { slug: "#", img: "/whatsapp/20261028_070629_1807431347066448.jpg", pos: "center 35%", num: "02 · Halber Tag, auf Anfrage", name: "Kochkurs für frische Pasta", meta: "Eine Stunde mit den Köchinnen von Lama di Luna, um traditionelle apulische Pasta von Hand zu machen: Orecchiette, Strascinati und Cavatelli." },
+      { slug: "#", img: "/whatsapp/20261028_085225_1143956144719914.jpg", pos: "center 40%", num: "03 · Nach Vereinbarung", name: "Entspannende Massage", meta: "Auf Anfrage kommt ein Masseur in die Masseria: entspannende oder belebende Massagen in einer ruhigen Ecke des Gutes." },
+      { slug: "#", img: "/whatsapp/20261029_053110_2058236084866524.jpg", pos: "center 55%", num: "04 · Halber Tag, auf Anfrage", name: "Radtour", meta: "Fahrräder zum Ausleihen: für Touren über das Gut, durch die Olivenhaine von Andria oder in den Nationalpark Alta Murgia." },
+      { slug: "#", img: "/whatsapp/20261029_053509_1420378746847456.jpg", pos: "center 48%", rotate: -1.5, zoom: 1.2, cardPos: "74% 45%", cardZoom: 1.1, num: "05 · Nach Vereinbarung", name: "Kinoraum", meta: "Ein Kinoraum mit über 900 DVDs aus der Geschichte des Films, für Gäste, die in der Masseria übernachten." },
+      { slug: "#", img: "/whatsapp/20261016_170301_1640209704278679.jpg", pos: "center 32%", rotate: -1.5, zoom: 1.1, num: "06 · Nach Vereinbarung", name: "Yoga", meta: "Yoga im Innenraum aus dem 18. Jahrhundert mit Fußbodenheizung: allein und kostenlos oder mit einer Stunde bei Agata." },
+      { slug: "#", img: IMG.wine, num: "07 · In der Saison", name: "Der Infinity Pool", meta: "Ein Infinity Pool in Form eines Sees, 18 Meter lang, mit Salzwasser und Blick auf die monumentalen Olivenbäume von Andria." },
+      { slug: "#", img: "/whatsapp/20261029_055849_1760907208350015.jpg", pos: "center 80%", num: "08 · Auf Anfrage", name: "Spaziergang über das Gut", meta: "Wandern Sie über die 210 Hektar des Gutes oder hinaus in den Nationalpark: wilde Murgia, Falken, Füchse und Frühlingsblumen." },
+      { slug: "#", img: "/whatsapp/20261029_055055_2502652003555281.jpg", pos: "center 15%", zoom: 1.3, num: "09 · Nach Vereinbarung", name: "Golfübung", meta: "Zwei Fahnen im Abstand von 80 Metern auf der Wiese neben der Masseria, mit Schlägern und Bällen für ein paar Schläge, allein oder mit Pietro." },
+      { slug: "#", img: "/whatsapp/20261029_060653_2451806448686458.jpg", pos: "center 50%", rotate: 0.7, zoom: 1.08, num: "10 · Nach Vereinbarung", name: "Die Bibliothek der Familie Petroni", meta: "Eine Familienbibliothek mit über 3.000 Büchern und alten Schreibmaschinen, Tag und Nacht für Gäste geöffnet, kostenlos." },
+      { slug: "#", img: "/whatsapp/20261016_172701_1655107209547771.jpg", num: "11 · Nach Vereinbarung", name: "Reiten im Nationalpark", meta: "Ausritte auf sanften Pferden im Nationalpark Alta Murgia, mit Reitställen in der Nähe; Kinder willkommen." },
+      { slug: "#", img: "/whatsapp/20261029_075305_1107658378700819.jpg", pos: "55% center", num: "12 · Das ganze Jahr", name: "Die Tiere von Lama di Luna", meta: "Lernen Sie Allen, Romeo, unsere 12 Katzen und die anderen ständigen Bewohner von Lama di Luna kennen." },
+    ],
+    inRegion: [],
+  },
 }
 
 export const experiences = Object.fromEntries(
@@ -166,4 +193,4 @@ export const experiences = Object.fromEntries(
       inRegion: c.inRegion.map((card, i) => ({ ...card, slug: experienceSlugs.inRegion[i] })),
     },
   ])
-) as Record<"en" | "it" | "fr", ExperiencesContent>
+) as Record<"en" | "it" | "fr" | "de", ExperiencesContent>

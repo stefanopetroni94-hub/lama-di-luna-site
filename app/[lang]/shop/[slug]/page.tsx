@@ -79,7 +79,7 @@ export default async function ProductPage({
           <div className="shop-detail-actions">
             <AddToCart label={c.addLabel} addedLabel={c.addedLabel} />
             <Link href={`/${lang}/contact`} className="book-stay-btn">
-              {{ en: "Buy now", it: "Acquista ora", fr: "Acheter" }[lang]}
+              {{ en: "Buy now", it: "Acquista ora", fr: "Acheter", de: "Jetzt kaufen" }[lang]}
             </Link>
           </div>
         </div>

@@ -107,7 +107,7 @@ export function SiteNav({
             )
           })}
           <li className="nav-lang">
-            {(["en", "it", "fr"] as const).map((l, i) => (
+            {(["en", "it", "fr", "de"] as const).map((l, i) => (
               <span key={l}>
                 {i > 0 ? " " : ""}
                 <Link

@@ -27,11 +27,13 @@ const pages: Record<string, Record<Locale, Meta>> = {
       description:
         "Le Lama di Luna est une masseria datant des années 1800 située dans les Pouilles : un hôtel de charme, un relais et une ferme biologique avec restaurant et piscine, présenté dans National Geographic, dans le programme Searching for Italy de Stanley Tucci, et sur Lonely Planet, à proximité de Bari et de Castel del Monte.",
     },
+    de: { title: "Masseria Puglia: Hotel, Agrotourismus Lama di Luna", description: "Lama di Luna ist eine Masseria aus dem 19. Jahrhundert in Apulien: ein Boutique-Hotel, ein Relais und ein Bio-Bauernhof mit Restaurant und Swimmingpool, der im National Geographic, in Stanley Tuccis Sendung Searching for Italy und im Lonely Planet erwähnt wurde, in der Nähe von Bari und Castel del Monte." },
   },
   rooms: {
     en: { title: "Rooms | Lama di Luna Biomasseria", description: "Puglia farm house, vineyard, olive groves and hotel" },
     it: { title: "Camere | Lama di Luna - Biomasseria", description: "La Biomasseria Lama di Luna offre 5 camere e suite ad Andria, Puglia." },
     fr: { title: "Chambres | Lama di Luna - Biomasseria", description: "La Biomasseria Lama di Luna propose 5 chambres et suites à Andria, dans les Pouilles." },
+    de: { title: "Zimmer | Lama di Luna - Biomasseria", description: "Die Biomasseria Lama di Luna bietet 5 Zimmer und Suiten in Andria, Apulien." },
   },
   story: {
     en: {
@@ -49,6 +51,7 @@ const pages: Record<string, Record<Locale, Meta>> = {
       description:
         "Situé sur un domaine de 210 hectares avec des oliveraies et des vignobles, le Lama di Luna est une masseria du XVIIIe siècle, à 19 km de Castel del Monte, à la limite du parc national de l'Alta Murgia.",
     },
+    de: { title: "Die Geschichte | Lama di Luna Biomasseria", description: "Lama di Luna, eine Masseria aus dem 18. Jahrhundert, liegt auf einem 210 Hektar großen Anwesen mit Olivenhainen und Weinbergen, 19 km von Castel del Monte entfernt am Rande des Nationalparks Alta Murgia." },
   },
   experiences: {
     en: {
@@ -66,6 +69,7 @@ const pages: Record<string, Record<Locale, Meta>> = {
       description:
         "Découvrez les services proposés par le Lama di Luna : restaurant avec des ingrédients typiques du parc national des Pouilles, la Murgia, piscine, bibliothèque, cinéma, événements privés tels que mariages, dégustations de produits locaux tels que l'huile d'olive extra vierge et le vin, excursions guidées vers le château de Monte.",
     },
+    de: { title: "Dienstleistungen | Lama di Luna Biomasseria", description: "Entdecken Sie die Dienstleistungen von Lama di Luna: Restaurant mit typischen Zutaten aus dem apulischen Nationalpark Murgia, Schwimmbad, Bibliothek, Kino, private Veranstaltungen wie Hochzeiten, Verkostungen lokaler Produkte wie Olivenöl extra vergine und Wein, geführte Ausflüge zum Castel di Monte." },
   },
   contact: {
     en: {
@@ -83,31 +87,37 @@ const pages: Record<string, Record<Locale, Meta>> = {
       description:
         "Contact info@lamadiluna.com, Contrada Lama di Luna, SN, Frazione Montegrosso, Andria, 76123, Italie. Appelez-nous ou envoyez un message à +39 0883569505 / +39 3280117375.",
     },
+    de: { title: "Kontakt | Lama di Luna Biomasseria", description: "Kontakt info@lamadiluna.com -Contrada Lama di Luna, SN - Frazione Montegrosso, Andria, 76123, Italien. Rufen Sie uns an oder senden Sie eine Nachricht an +39 0883569505 / +39 3280117375." },
   },
   "rooms/masseria": {
     en: { title: "Family Suite Masseria | Lama di Luna Biomasseria", description: "Family suite, sleeps 5, 50 m2, 2 x double bed, TV, Wifi, Minibar, Air conditioning, Jacuzzi, Desk, Bathtub, Hairdryer, Shower, Flat screen TV." },
     it: { title: "Suite familiare masseria | Lama di Luna Biomasseria", description: "Suite Familiare, accoglie 5 persone, 50 m2, 2 x Letto doppio, TV, Wifi, Minibar, Appendiabiti, Aria condizionata, Jacuzzi, Scrivania, Vasca da bagno, Asciugacapelli, Doccia, TV schermo piatto." },
     fr: { title: "Suite familiale Masseria | Lama di Luna Biomasseria", description: "Suite familiale, pour 5 personnes, 50 m2, 2 x lit double, TV, Wifi, Minibar, Climatisation, Jacuzzi, Bureau, Baignoire, Sèche-cheveux, Douche, TV écran plat." },
+    de: { title: "Masseria Familiensuite | Lama di Luna Biomasseria", description: "Familiensuite, für 5 Personen, 50 m2, 2 x Doppelbett, TV, Wifi, Minibar, Klimaanlage, Jacuzzi, Schreibtisch, Badewanne, Haartrockner, Dusche, Flachbildschirm-TV." },
   },
   "rooms/suite-deluxe-masseria": {
     en: { title: "Suite Deluxe Masseria | Lama di Luna Biomasseria", description: "Deluxe suite, sleeps 4, 60 m2, 1 x sofa bed, 1 x double bed, TV, Wifi, Minibar, Clothes rack, Air conditioning." },
     it: { title: "Suite deluxe masseria | Lama di Luna Biomasseria", description: "Suite deluxe accoglie 4 persone, 60 m2, 1 x Divano letto, 1 x Letto matrimoniale, TV, Wifi, Minibar, Appendiabiti, Aria condizionata." },
     fr: { title: "Suite deluxe masseria | Lama di Luna Biomasseria", description: "Suite de luxe pour 4 personnes, 60 m2, 1 x canapé-lit, 1 x lit double, TV, Wifi, Minibar, penderie, climatisation." },
+    de: { title: "Suite deluxe masseria | Lama di Luna Biomasseria", description: "Deluxe Suite für 4 Personen, 60 m2, 1 x Schlafsofa, 1 x Doppelbett, TV, Wifi, Minibar, Kleiderstange, Klimaanlage." },
   },
   "rooms/family-suite": {
     en: { title: "Family Suite | Lama di Luna Biomasseria", description: "Family suite, sleeps 5, 54 m2, 2 x double bed, TV, Wifi, Minibar, Clothes rack, Air conditioning, Desk, Bathtub, Hairdryer, Shower, Flat screen TV." },
     it: { title: "Suite familiare | Lama di Luna Biomasseria", description: "Suite familiare accoglie 5 persone, 54 m2, 2 x Letto doppio, TV, Wifi, Minibar, Appendiabiti, Aria condizionata, Scrivania, Vasca da bagno, Asciugacapelli, Doccia, TV schermo piatto." },
     fr: { title: "Suite familiale | Lama di Luna Biomasseria", description: "Suite familiale pour 5 personnes, 54 m2, 2 x lit double, TV, Wifi, Minibar, Tringle à linge, Climatisation, Bureau, Baignoire, Sèche-cheveux, Douche, Télévision à écran plat." },
+    de: { title: "Familiensuite | Lama di Luna Biomasseria", description: "Familiensuite für 5 Personen, 54 m2, 2 x Doppelbett, TV, Wifi, Minibar, Kleiderstange, Klimaanlage, Schreibtisch, Badewanne, Haartrockner, Dusche, Flachbildfernseher." },
   },
   "rooms/murgia": {
     en: { title: "Double Room Murgia | Lama di Luna Biomasseria", description: "Double room, sleeps 3, 1 x double bed, TV, Wifi, Minibar, Clothes rack, Air conditioning, Desk, Bathtub, Hairdryer, Flat screen TV." },
     it: { title: "Camera doppia murgia | Lama di Luna Biomasseria", description: "Camera doppia, accoglie 3 persone, 1 x Letto matrimoniale, TV, Wifi, Minibar, Appendiabiti, Aria condizionata, Scrivania, Vasca da bagno, Asciugacapelli, TV schermo piatto." },
     fr: { title: "Chambre double murgia | Lama di Luna Biomasseria", description: "Chambre double, pour 3 personnes, 1 x lit double, TV, Wifi, Minibar, Climatisation, Bureau, Baignoire, Sèche-cheveux, TV écran plat." },
+    de: { title: "Doppelzimmer Murgia | Lama di Luna Biomasseria", description: "Doppelzimmer, für 3 Personen, 1 x Doppelbett, Fernseher, Wifi, Minibar, Klimaanlage, Schreibtisch, Badewanne, Haartrockner, Fernseher mit Flachbildschirm." },
   },
   "rooms/coloni": {
     en: { title: "Double Room Coloni | Lama di Luna Biomasseria", description: "Double room with a double bed, sleeps 3, with TV, Wifi, Minibar, Clothes rack, Air conditioning, Desk, Hairdryer, Shower, Flat screen TV." },
     it: { title: "Camera doppia coloni | Lama di Luna Biomasseria", description: "Camera doppia con letto doppio, accoglie 3 persone, offre TV, Wifi, Minibar, Appendiabiti, Aria condizionata, Scrivania, Asciugacapelli, Doccia, TV schermo piatto" },
     fr: { title: "Chambre double coloni | Lama di Luna Biomasseria", description: "Chambre double avec lit double, pour 3 personnes, offre TV, Wifi, Minibar, Tringle à linge, Climatisation, Bureau, Sèche-cheveux, Douche, Télévision à écran plat" },
+    de: { title: "Doppelzimmer coloni | Lama di Luna Biomasseria", description: "Doppelzimmer mit Doppelbett, Platz für 3 Personen, bietet TV, Wifi, Minibar, Kleiderstange, Klimaanlage, Schreibtisch, Haartrockner, Dusche, Flachbildschirm-TV" },
   },
 }
 

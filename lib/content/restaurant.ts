@@ -199,4 +199,56 @@ export const restaurant: Record<Locale, RestaurantContent> = {
       "Le dîner est préparé à la demande et les places sont limitées, nous demandons donc de réserver avant l'après-midi. Indiquez-nous le soir choisi et vos éventuels besoins alimentaires, et nous dresserons votre couvert.",
     bookingCta: "Réserver une table",
   },
+  de: {
+    counter: "The Veranda",
+    breadcrumbRoot: "Startseite",
+    breadcrumbCurrent: "Restaurant",
+    heroEyebrow: "Essen in der Masseria",
+    title: "The Veranda",
+    statementTitle: "Wir bringen auf den Tisch, was das Gut und die Region an diesem Tag geschenkt haben",
+    statementBody: [
+      "The Veranda ist das Farm to Table Restaurant von Lama di Luna. Das Abendessen wird unter dem Gewölbe des alten Refektoriums serviert oder an warmen Abenden draußen auf der Veranda, mit Blick auf die Olivenhaine, während das Licht schwindet. Es gibt keine lange Speisekarte: Das Menü ist fest und wechselt jeden Tag, zusammengestellt aus dem, was uns das Land gibt, und aus den besten landwirtschaftlichen Betrieben und Erzeugern Apuliens. Unsere Küche folgt der echten italienischen Küche: wesentliche Zutaten, mit Respekt behandelt. Das Restaurant ist exklusiv und den Gästen vorbehalten, die in Lama di Luna wohnen, um die Ruhe und Stille des Ortes für alle zu bewahren, die hier übernachten.",
+    ],
+    facts: [
+      { label: "Frühstück", value: "8:30 – 10:00" },
+      { label: "Mittag und Abendessen", value: "Auf Anfrage, ab 13:00 und ab 20:00 Uhr" },
+      { label: "Plätze", value: "Nach Reservierung und auf Anfrage, für Gäste, die in Lama di Luna wohnen" },
+      { label: "Ernährung", value: "Vegetarisch und vegan auf Anfrage" },
+    ],
+    mediaVideo: "/restaurant/food-making.mp4",
+    mediaPhotos: [IMG.dinner, IMG.bruschetta],
+    curvedLabel: "Bei Tisch",
+    veranda:
+      "Die Veranda ist ein besonderer Ort, um die Sonnenuntergänge zu genießen und dann um acht Uhr alle zusammen zu essen. Manchmal backen wir im Sommer gemeinsam Pizza im Holzofen auf der Veranda, als Gemeinschaft, so wie es die Bewohner von Lama di Luna seit Jahrhunderten getan haben.",
+    menuEyebrow: "Ein Abend als Beispiel",
+    menuTitle: "Was der Tag hergibt",
+    menuNote: "Das Menü wechselt täglich. Dies ist der Tisch eines Abends, Ihrer folgt der Jahreszeit.",
+    courses: [
+      {
+        name: "Zum Auftakt",
+        desc: "Warme Focaccia und Taralli, unser natives Olivenöl extra, frischer Ricotta, eingelegtes Gemüse aus dem Garten.",
+      },
+      {
+        name: "Erster Gang",
+        desc: "Orecchiette mit Stängelkohl und gerösteten Brotkrumen oder ein Püree aus Saubohnen mit wilder Zichorie.",
+      },
+      {
+        name: "Hauptgang",
+        desc: "Langsam gegartes Lamm aus der Murgia mit Mandeln und Kräutern oder im Ofen gebackenes Saisongemüse aus dem Garten des Gutes.",
+      },
+    ],
+    photos: [IMG.photo1, IMG.photo2],
+    sourcingEyebrow: "Vom Gut und aus der Region",
+    sourcingTitle: "Angebaut, gepresst und gekocht innerhalb derselben Mauern",
+    sourcingBody: [
+      "In Lama di Luna, einer historischen Masseria in Apulien inmitten der Olivenhaine der Alta Murgia, wird unser natives Olivenöl extra aus unseren biologischen Hainen kalt gepresst. Die Mandeln werden im Spätsommer geerntet, und die Trauben für den Wein, den wir in Lama di Luna servieren, wachsen und werden noch immer auf diesem Land verarbeitet. Wir pflanzen und pflegen einen großen Gemüsegarten mit Tomaten, Zucchini, Auberginen, Peperoncini, Basilikum und allen mediterranen Kräutern, die wir den ganzen Sommer über ernten, um die Gerichte unserer Küche zuzubereiten.",
+      "Was wir nicht selbst anbauen, beziehen wir je nach Saison von kleinen Erzeugern aus der Gegend, denen wir vertrauen, mit saisonalen Zutaten aus nächster Nähe: Ricotta von benachbarten Höfen, traditionelle Wurst von einer Genossenschaft in Minervino, Mozzarella und Stracciatella, Käse von einer Käserei in Andria und Mehl aus einer Mühle der Murgia. Nichts reist weit, um auf den Tisch zu kommen.",
+    ],
+    sourcingImg: IMG.pasta,
+    bookingEyebrow: "Buchen Sie Ihren Aufenthalt",
+    bookingTitle: "Essen Sie mit uns",
+    bookingText:
+      "Das Abendessen wird auf Bestellung zubereitet und die Plätze sind begrenzt, daher bitten wir unsere Gäste, bis zum Nachmittag zu reservieren. Nennen Sie uns den Abend und eventuelle Ernährungswünsche, und wir decken für Sie den Tisch.",
+    bookingCta: "Tisch reservieren",
+  },
 }
