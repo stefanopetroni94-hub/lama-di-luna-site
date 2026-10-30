@@ -16,9 +16,9 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
   const community = c.chapters[1]
   const decline = c.chapters[2]
   const pairText = {
-    en: { man: "Photo of Giuseppe Patroni Griffi, Baron of Caivano, owner of Lama di Luna", woman: "Portrait of a lady with a lace veil and flowers" },
-    it: { man: "Foto di Giuseppe Patroni Griffi, barone di Caivano, proprietario di Lama di Luna", woman: "Ritratto di una signora con velo di pizzo e fiori" },
-    fr: { man: "Photo de Giuseppe Patroni Griffi, baron de Caivano, propriétaire de Lama di Luna", woman: "Portrait d'une dame avec voile de dentelle et fleurs" },
+    en: { man: "Photo of Giuseppe Patroni Griffi, Baron of Faivano, owner of Lama di Luna", woman: "Portrait of a lady with a lace veil and flowers" },
+    it: { man: "Foto di Giuseppe Patroni Griffi, barone di Faivano, proprietario di Lama di Luna", woman: "Ritratto di una signora con velo di pizzo e fiori" },
+    fr: { man: "Photo de Giuseppe Patroni Griffi, baron de Faivano, propriétaire de Lama di Luna", woman: "Portrait d'une dame avec voile de dentelle et fleurs" },
   }[lang]
 
   const chapter = (ch: (typeof c.chapters)[number], n: number) => {
