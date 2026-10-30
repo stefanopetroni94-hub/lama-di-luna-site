@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 
-export function CrossfadeImage({ images, label, interval = 3000 }: { images: string[]; label: string; interval?: number }) {
+export function CrossfadeImage({ images, label, interval = 6000 }: { images: string[]; label: string; interval?: number }) {
   const [current, setCurrent] = useState(0)
 
   useEffect(() => {
