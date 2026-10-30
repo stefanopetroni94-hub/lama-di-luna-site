@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
 import { BackLink } from "@/components/back-link"
 import { PhotoPair } from "@/components/photo-pair"
+import { CrossfadeImage } from "@/components/crossfade-image"
 import { HOME, chrome, isLocale } from "@/lib/i18n"
 import { story } from "@/lib/content/story"
 
@@ -103,12 +104,7 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
       {chapter(c.chapters[0], 0)}
 
       <section className="story-split">
-        <div
-          className="story-split-img"
-          role="img"
-          aria-label={community.title}
-          style={{ backgroundImage: `url('${community.img}')` }}
-        />
+        <CrossfadeImage images={[community.img, c.chapters[0].img]} label={community.title} />
         <div
           className="story-split-img"
           role="img"
