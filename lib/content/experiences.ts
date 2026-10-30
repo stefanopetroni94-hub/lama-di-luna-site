@@ -80,7 +80,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
     arrangeEyebrow: "Tell us what you'd love",
     arrangeTitle: "We will help you arrange the day",
     arrangeText:
-      "All experiences are arranged on request. Many are weather- or season-dependent; some need a few days' notice. Drop us a note with your dates and what you're drawn to.",
+      "All experiences are arranged on request. Many are weather- or season-dependent; some need a few days' notice. Drop us a note with your dates and what you're drawn to. Lama di Luna is also a place for business meetings and corporate retreats.",
     arrangeCta: "Get in touch",
     onEstate: [
       { slug: "olive-harvest", img: "/whatsapp/20261028_065214_1516459033640755.jpg", num: "01 · October–November", name: "Olive Oil Tasting and Tour", meta: "A professional tour of the farm, from irrigation to the harvest, ending with an extra virgin olive oil tasting on the veranda." },
@@ -107,7 +107,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
     arrangeEyebrow: "Dicci cosa ti piacerebbe",
     arrangeTitle: "Ti aiutiamo a organizzare la giornata",
     arrangeText:
-      "Tutte le esperienze si organizzano su richiesta. Molte dipendono dal tempo o dalla stagione; alcune richiedono qualche giorno di preavviso. Scrivici con le tue date e ciò che ti attrae.",
+      "Tutte le esperienze si organizzano su richiesta. Molte dipendono dal tempo o dalla stagione; alcune richiedono qualche giorno di preavviso. Scrivici con le tue date e ciò che ti attrae. Lama di Luna è anche un luogo per meeting aziendali e ritiri aziendali.",
     arrangeCta: "Contattaci",
     onEstate: [
       { slug: "olive-harvest", img: "/whatsapp/20261028_065214_1516459033640755.jpg", num: "01 · Ottobre–Novembre", name: "Degustazione e Tour dell'Olio d'Oliva", meta: "Un tour professionale dell'azienda, dall'irrigazione alla raccolta, che si conclude con la degustazione di olio extravergine sulla veranda." },
@@ -134,7 +134,7 @@ const base: Record<"en" | "it" | "fr", ExperiencesContent> = {
     arrangeEyebrow: "Dites-nous ce qui vous ferait plaisir",
     arrangeTitle: "Nous vous aidons à organiser la journée",
     arrangeText:
-      "Toutes les expériences sont organisées sur demande. Beaucoup dépendent de la météo ou de la saison, certaines demandent quelques jours de préavis. Écrivez-nous avec vos dates et ce qui vous attire.",
+      "Toutes les expériences sont organisées sur demande. Beaucoup dépendent de la météo ou de la saison, certaines demandent quelques jours de préavis. Écrivez-nous avec vos dates et ce qui vous attire. Lama di Luna accueille aussi des réunions d'entreprise et des retraites professionnelles.",
     arrangeCta: "Contactez-nous",
     onEstate: [
       { slug: "olive-harvest", img: "/whatsapp/20261028_065214_1516459033640755.jpg", num: "01 · Octobre à novembre", name: "Dégustation d'Huile d'Olive et Visite", meta: "Une visite professionnelle de la ferme, de l'irrigation à la récolte, qui se termine par une dégustation d'huile d'olive extra vierge sur la véranda." },
