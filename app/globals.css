@@ -3178,31 +3178,18 @@ footer {
   bottom: 0;
   right: 0;
 }
-/* the scan background around each card melts into the page (multiply), so only the worn card edges stay visible.
-   The items have no z-index of their own, otherwise the blend would not reach the page. */
+/* the crop follows the edge of each card, with slightly rounded corners like the real cards, so no scan background shows */
 .photo-pair-img {
   position: absolute;
   inset: 0;
   background-repeat: no-repeat;
-  mix-blend-mode: multiply;
-  filter: brightness(1.08);
+  border-radius: 2% / 1.3%;
 }
 .photo-pair-item--top .photo-pair-img {
   z-index: 2;
 }
 .photo-pair-item--bottom .photo-pair-img {
   z-index: 1;
-  /* hide the corner of the lower card that sits under the upper one, so the two cards do not show through each other */
-  -webkit-mask-image: linear-gradient(#000, #000), linear-gradient(#000, #000);
-  -webkit-mask-size: 100% 100%, 26% 14.5%;
-  -webkit-mask-position: 0 0, 0 0;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-composite: xor;
-  mask-image: linear-gradient(#000, #000), linear-gradient(#000, #000);
-  mask-size: 100% 100%, 26% 14.5%;
-  mask-position: 0 0, 0 0;
-  mask-repeat: no-repeat;
-  mask-composite: exclude;
 }
 .photo-pair-item--top .photo-pair-toggle {
   z-index: 4;
