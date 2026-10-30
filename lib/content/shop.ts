@@ -112,7 +112,7 @@ export const shop: Record<Locale, ShopContent> = {
     title: "A little of the estate, sent to your home",
     intro:
       "Order a taste or a scent of Lama di Luna to keep Puglia and the Alta Murgia close, wherever you are.",
-    addLabel: "Add",
+    addLabel: "Contact us",
     addedLabel: "Added",
     products: [
       { id: "primitivo", name: "Primitivo", meta: "Red wine of Puglia.", desc: D.en.primitivo, price: "€29", img: PH.primitivo, contain: true },
@@ -136,7 +136,7 @@ export const shop: Record<Locale, ShopContent> = {
     title: "Un po' della tenuta, portato a casa tua",
     intro:
       "Ordina un assaggio o un profumo di Lama di Luna per tenere vicine la Puglia e l'Alta Murgia, ovunque tu sia.",
-    addLabel: "Aggiungi",
+    addLabel: "Contattaci",
     addedLabel: "Aggiunto",
     products: [
       { id: "primitivo", name: "Primitivo", meta: "Vino rosso di Puglia.", desc: D.it.primitivo, price: "€29", img: PH.primitivo, contain: true },
@@ -160,7 +160,7 @@ export const shop: Record<Locale, ShopContent> = {
     title: "Un peu du domaine, livré chez vous",
     intro:
       "Commandez un goût ou un parfum de Lama di Luna pour garder les Pouilles et l'Alta Murgia près de vous, où que vous soyez.",
-    addLabel: "Ajouter",
+    addLabel: "Nous contacter",
     addedLabel: "Ajouté",
     products: [
       { id: "primitivo", name: "Primitivo", meta: "Vin rouge des Pouilles.", desc: D.fr.primitivo, price: "€29", img: PH.primitivo, contain: true },
@@ -184,7 +184,7 @@ export const shop: Record<Locale, ShopContent> = {
     title: "Ein Stück vom Gut, zu Ihnen nach Hause geschickt",
     intro:
       "Bestellen Sie einen Geschmack oder einen Duft von Lama di Luna, um Apulien und die Alta Murgia nah bei sich zu haben, wo immer Sie sind.",
-    addLabel: "Hinzufügen",
+    addLabel: "Kontakt",
     addedLabel: "Hinzugefügt",
     products: [
       { id: "primitivo", name: "Primitivo", meta: "Rotwein aus Apulien.", desc: D.de.primitivo, price: "€29", img: PH.primitivo, contain: true },

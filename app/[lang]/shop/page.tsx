@@ -2,7 +2,6 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { AddToCart } from "@/components/add-to-cart"
 import { BackLink } from "@/components/back-link"
 import { HOME, isLocale } from "@/lib/i18n"
 import { shop } from "@/lib/content/shop"
@@ -73,7 +72,9 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
               <div className="shop-card-meta">{product.meta}</div>
               <div className="shop-card-footer">
                 <div className="shop-card-price">{product.price}</div>
-                <AddToCart label={c.addLabel} addedLabel={c.addedLabel} />
+                <Link href={`/${lang}/contact?product=${encodeURIComponent(product.name)}`} className="shop-card-add">
+                  {c.addLabel}
+                </Link>
               </div>
             </article>
           ))}

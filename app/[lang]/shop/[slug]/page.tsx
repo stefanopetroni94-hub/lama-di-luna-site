@@ -2,7 +2,6 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
-import { AddToCart } from "@/components/add-to-cart"
 import { BackLink } from "@/components/back-link"
 import { isLocale, menu } from "@/lib/i18n"
 import { shop } from "@/lib/content/shop"
@@ -77,9 +76,8 @@ export default async function ProductPage({
           {product.desc ? <p className="shop-detail-text">{product.desc}</p> : null}
 
           <div className="shop-detail-actions">
-            <AddToCart label={c.addLabel} addedLabel={c.addedLabel} />
-            <Link href={`/${lang}/contact`} className="book-stay-btn">
-              {{ en: "Buy now", it: "Acquista ora", fr: "Acheter", de: "Jetzt kaufen" }[lang]}
+            <Link href={`/${lang}/contact?product=${encodeURIComponent(product.name)}`} className="book-stay-btn">
+              {{ en: "Contact us to order", it: "Contattaci per ordinare", fr: "Contactez-nous pour commander", de: "Kontaktieren Sie uns zur Bestellung" }[lang]}
             </Link>
           </div>
         </div>
