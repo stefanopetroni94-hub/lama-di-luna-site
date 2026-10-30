@@ -54,7 +54,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     weddingsText:
       "The masseria can host weddings of up to 150 guests. There are several areas to choose from: dinners in the courtyard and, indoors, beautiful historic rooms from the 1800s where you can celebrate sheltered from the weather.",
     retreatsText:
-      "Yoga retreats, wellness retreats, personal growth retreats: we welcome every kind of retreat that looks for a place of peace and harmony, set in an organic farm run with care by a family. The food comes from our area, follows the seasons and is prepared with love.",
+      "Yoga retreats, wellness retreats, business retreats, and personal growth retreats: we welcome every kind of retreat that looks for a place of peace and harmony, set in an organic farm run with care by a family. The food comes from our area, follows the seasons and is prepared with love.",
     gatheringsText:
       "The rooms that open onto the inner courtyard are a perfect place for friends or families to come together and spend time in peace and happiness, among the sunsets and the olive trees of Puglia. With a private kitchen and a dedicated staff, every stay becomes a magical experience.",
     facts: [
@@ -120,7 +120,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     weddingsText:
       "La masseria può ospitare matrimoni fino a 150 persone. Ci sono diverse aree tra cui scegliere: cene nella corte e, al chiuso, bellissimi spazi storici dell'Ottocento dove festeggiare al riparo dal maltempo.",
     retreatsText:
-      "Ritiri di yoga, di benessere, di crescita personale: accogliamo ogni tipo di ritiro che cerchi un luogo di pace e armonia, immerso in un'azienda biologica curata con attenzione da una famiglia. Il cibo viene dalla nostra zona, segue le stagioni ed è preparato con amore.",
+      "Ritiri di yoga, di benessere, aziendali e di crescita personale: accogliamo ogni tipo di ritiro che cerchi un luogo di pace e armonia, immerso in un'azienda biologica curata con attenzione da una famiglia. Il cibo viene dalla nostra zona, segue le stagioni ed è preparato con amore.",
     gatheringsText:
       "Le camere che si affacciano sulla corte interna sono un luogo perfetto per riunirsi tra amici o tra famiglie e passare del tempo in tranquillità e felicità, tra i tramonti e gli ulivi pugliesi. Con una cucina privata e uno staff dedicato, ogni soggiorno diventa un'esperienza magica.",
     facts: [
@@ -186,7 +186,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     weddingsText:
       "La masseria peut accueillir des mariages jusqu'à 150 invités. Plusieurs espaces sont à votre choix : des dîners dans la cour et, à l'intérieur, de magnifiques salles historiques du XIXe siècle pour célébrer à l'abri des intempéries.",
     retreatsText:
-      "Retraites de yoga, de bien-être, de développement personnel : nous accueillons toute retraite à la recherche d'un lieu de paix et d'harmonie, au cœur d'une ferme biologique tenue avec soin par une famille. La cuisine vient de notre terroir, suit les saisons et est préparée avec amour.",
+      "Retraites de yoga, de bien-être, d'entreprise et de développement personnel : nous accueillons toute retraite à la recherche d'un lieu de paix et d'harmonie, au cœur d'une ferme biologique tenue avec soin par une famille. La cuisine vient de notre terroir, suit les saisons et est préparée avec amour.",
     gatheringsText:
       "Les chambres qui donnent sur la cour intérieure sont un lieu parfait pour se retrouver entre amis ou en famille et passer du temps dans la sérénité et la joie, entre les couchers de soleil et les oliviers des Pouilles. Avec une cuisine privée et une équipe dédiée, chaque séjour devient une expérience magique.",
     facts: [
