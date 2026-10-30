@@ -116,9 +116,12 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
       <section className="story-wide">
         <div className="statement-inner">
           <div className="room-name" style={{ marginBottom: "1rem" }}>
-            {community.eyebrow}, {decline.eyebrow}
+            {{
+              en: "1800s to 1950s: a community at work, then the decline",
+              it: "Dall'Ottocento agli anni Cinquanta: una comunità al lavoro, poi il declino",
+              fr: "Du XIXe siècle aux années 1950 : une communauté au travail, puis le déclin",
+            }[lang]}
           </div>
-          <h2>{{ en: "A community at work, then decline", it: "Una comunità al lavoro, poi il declino", fr: "Une communauté au travail, puis le déclin" }[lang]}</h2>
           <div className="statement-body">
             <p>{[...community.body, ...decline.body].join(" ")}</p>
           </div>

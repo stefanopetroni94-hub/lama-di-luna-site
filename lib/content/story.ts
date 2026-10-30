@@ -79,7 +79,7 @@ export const story: Record<Locale, StoryContent> = {
         img: IMG.flock,
       },
       {
-        eyebrow: "1991",
+        eyebrow: "1991: the beginning of a new chapter",
         title: "The rebirth",
         body: [
           "In 1991, in love with the place and the landscape of this beautiful farmhouse, we bought the masseria. Freed from flocks and shepherds, we began a long restoration, within the walls and in the fields. Ten thousand olive trees, ten thousand vines, two thousand almond trees, one thousand cherry trees, an artesian well 535 metres deep and plantings of cereals and vegetables marked the agricultural rebirth, in the utmost respect for nature. We left the other hundred hectares to the natural landscape, for the sheep to graze.",
@@ -185,7 +185,7 @@ export const story: Record<Locale, StoryContent> = {
         img: IMG.flock,
       },
       {
-        eyebrow: "1991",
+        eyebrow: "1991: l'inizio di un nuovo capitolo",
         title: "La rinascita",
         body: [
           "Nel 1991, innamorati del luogo e del paesaggio di questa bellissima masseria, l'abbiamo acquistata. Liberata da greggi e pastori, abbiamo avviato un lungo restauro, dentro le mura e nei campi. Diecimila ulivi, diecimila viti, duemila mandorli, mille ciliegi, un pozzo artesiano profondo 535 metri e coltivazioni di cereali e ortaggi hanno segnato la rinascita agricola, nel massimo rispetto della natura. Gli altri cento ettari li abbiamo lasciati al paesaggio naturale, per far pascolare le pecore.",
@@ -291,7 +291,7 @@ export const story: Record<Locale, StoryContent> = {
         img: IMG.flock,
       },
       {
-        eyebrow: "1991",
+        eyebrow: "1991 : le début d'un nouveau chapitre",
         title: "La renaissance",
         body: [
           "En 1991, amoureux du lieu et du paysage de cette belle ferme, nous avons acheté la masseria. Libérée des troupeaux et des bergers, nous avons entrepris une longue restauration, dans les murs et dans les champs. Dix mille oliviers, dix mille vignes, deux mille amandiers, mille cerisiers, un puits artésien de 535 mètres de profondeur et des cultures de céréales et de légumes ont marqué la renaissance agricole, dans le plus grand respect de la nature. Nous avons laissé les cent autres hectares au paysage naturel, pour le pâturage des moutons.",
