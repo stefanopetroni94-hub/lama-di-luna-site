@@ -6,61 +6,73 @@ export const experienceFacts: Record<string, Record<Locale, string[]>> = {
     en: ["Lasts 1h 15 min", "Best in the morning", "Open to couples or groups", "€60 per couple, €30 for each additional person"],
     it: ["Dura 1h 15 min", "Meglio la mattina", "Aperto a coppie o a gruppi", "€60 a coppia, €30 per ogni persona in più"],
     fr: ["Dure 1 h 15 min", "De préférence le matin", "Ouvert aux couples ou aux groupes", "€60 par couple, €30 par personne supplémentaire"],
+    de: ["Dauer 1 Std. 15 Min.", "Am besten am Vormittag", "Für Paare oder Gruppen", "€60 pro Paar, €30 für jede weitere Person"],
   },
   "cooking-class": {
     en: ["Lasts 1 hour", "Morning or afternoon", "Upon reservation", "€60 for two people, €30 for each extra person"],
     it: ["Dura 1 ora", "Mattina o pomeriggio", "Su prenotazione", "€60 per due persone, €30 per ogni persona in più"],
     fr: ["Dure 1 heure", "Le matin ou l'après-midi", "Sur réservation", "€60 pour deux personnes, €30 par personne supplémentaire"],
+    de: ["Dauer 1 Stunde", "Vormittags oder nachmittags", "Nach Reservierung", "€60 für zwei Personen, €30 für jede weitere Person"],
   },
   massages: {
     en: ["Lasts 1 hour", "Relaxing or energising", "€70", "To be booked in advance"],
     it: ["Dura 1 ora", "Rilassante o energizzante", "€70", "Da prenotare con anticipo"],
     fr: ["Dure 1 heure", "Relaxant ou énergisant", "€70", "À réserver à l'avance"],
+    de: ["Dauer 1 Stunde", "Entspannend oder belebend", "€70", "Bitte im Voraus buchen"],
   },
   "bicycle-ride": {
     en: ["€15 for the whole day", "Pedal bicycles", "To be requested a few hours in advance", "In summer, best in the late afternoon"],
     it: ["€15 per tutto il giorno", "Biciclette a pedali", "Da richiedere qualche ora prima", "D'estate meglio nel tardo pomeriggio"],
     fr: ["€15 pour toute la journée", "Vélos à pédales", "À demander quelques heures à l'avance", "L'été, de préférence en fin d'après-midi"],
+    de: ["€15 für den ganzen Tag", "Fahrräder ohne Motor", "Bitte einige Stunden vorher anfragen", "Im Sommer am besten am späten Nachmittag"],
   },
   "cinema-room": {
     en: ["Reserved for guests staying at the masseria", "Over 900 DVDs from the history of cinema", "On request, with the help of the reception"],
     it: ["Riservata agli ospiti che dormono in masseria", "Oltre 900 DVD della storia del cinema", "Su richiesta, con l'aiuto della reception"],
     fr: ["Réservée aux hôtes qui dorment à la masseria", "Plus de 900 DVD de l'histoire du cinéma", "Sur demande, avec l'aide de la réception"],
+    de: ["Nur für Gäste, die in der Masseria übernachten", "Über 900 DVDs aus der Geschichte des Films", "Auf Anfrage, mit Hilfe der Rezeption"],
   },
   yoga: {
     en: ["Mats and equipment free of charge", "On your own, free of charge", "Lesson with teacher: 1h 30 min", "€60 per couple, €25 for each extra person"],
     it: ["Tappetini e attrezzatura gratuiti", "Da soli, gratuito", "Lezione con maestro: 1h 30 min", "€60 a coppia, €25 per ogni persona in più"],
     fr: ["Tapis et matériel gratuits", "En solo, gratuit", "Cours avec professeur : 1 h 30 min", "€60 par couple, €25 par personne supplémentaire"],
+    de: ["Matten und Ausrüstung kostenlos", "Allein üben ist kostenlos", "Stunde mit Lehrerin: 1 Std. 30 Min.", "€60 pro Paar, €25 für jede weitere Person"],
   },
   "infinity-pool": {
     en: ["18 metres long", "Salt water, disinfected with salt", "Open from 9 am to 7 pm", "Reserved for guests staying overnight at Lama di Luna"],
     it: ["Lunga 18 metri", "Acqua salata, disinfettata con il sale", "Aperta dalle 9 alle 19", "Riservata agli ospiti che pernottano a Lama di Luna"],
     fr: ["18 mètres de long", "Eau salée, désinfectée au sel", "Ouverte de 9 h à 19 h", "Réservée aux hôtes qui passent la nuit à Lama di Luna"],
+    de: ["18 Meter lang", "Salzwasser, mit Salz desinfiziert", "Geöffnet von 9 bis 19 Uhr", "Nur für Gäste, die in Lama di Luna übernachten"],
   },
   "estate-walk": {
     en: ["Free of charge", "Comfortable or trekking shoes recommended", "In summer, best early in the morning or at sunset", "On the estate, in the National Park or on neighbouring roads"],
     it: ["Gratuita", "Consigliate scarpe comode o da trekking", "D'estate meglio di prima mattina o al tramonto", "Nella tenuta, nel Parco Nazionale o sulle strade vicine"],
     fr: ["Gratuite", "Chaussures confortables ou de randonnée conseillées", "L'été, de préférence tôt le matin ou au coucher du soleil", "Dans le domaine, dans le Parc national ou sur les routes voisines"],
+    de: ["Kostenlos", "Bequeme Schuhe oder Wanderschuhe empfohlen", "Im Sommer am besten früh morgens oder bei Sonnenuntergang", "Auf dem Gut, im Nationalpark oder auf den Wegen der Nachbarn"],
   },
   golf: {
     en: ["Free of charge", "Clubs and balls provided", "Drive of 80 metres between the two flags", "On your own or with Pietro, at sunset"],
     it: ["Gratuito", "Mazze e palline a disposizione", "Drive di 80 metri tra le due bandierine", "Da soli o con Pietro, al tramonto"],
     fr: ["Gratuit", "Clubs et balles à disposition", "Drive de 80 mètres entre les deux drapeaux", "Seul ou avec Pietro, au coucher du soleil"],
+    de: ["Kostenlos", "Schläger und Bälle vorhanden", "80 Meter Drive zwischen den beiden Fahnen", "Allein oder mit Pietro, bei Sonnenuntergang"],
   },
   library: {
     en: ["Free of charge", "Open 24 hours a day", "Over 3,000 books, some very old", "In Latin, German, French, English and Italian"],
     it: ["Gratuita", "Aperta 24 ore su 24", "Oltre 3.000 libri, alcuni molto antichi", "In latino, tedesco, francese, inglese e italiano"],
     fr: ["Gratuite", "Ouverte 24 heures sur 24", "Plus de 3 000 livres, certains très anciens", "En latin, allemand, français, anglais et italien"],
+    de: ["Kostenlos", "Rund um die Uhr geöffnet", "Über 3.000 Bücher, einige sehr alt", "Auf Latein, Deutsch, Französisch, Englisch und Italienisch"],
   },
   pets: {
     en: ["Allen, our gentle Irish setter", "Romeo, the Australian shepherd", "12 cats and our goose", "Please do not feed the animals"],
     it: ["Allen, il nostro dolce setter irlandese", "Romeo, il pastore australiano", "12 gatti e la nostra oca", "Vi preghiamo di non dare da mangiare agli animali"],
     fr: ["Allen, notre doux setter irlandais", "Romeo, le berger australien", "12 chats et notre oie", "Merci de ne pas nourrir les animaux"],
+    de: ["Allen, unser sanfter Irish Setter", "Romeo, der Australian Shepherd", "12 Katzen und unsere Gans", "Bitte füttern Sie die Tiere nicht"],
   },
   "horse-riding": {
     en: ["Lasts 2 hours", "15 to 20 minutes' drive from Lama di Luna", "Always to be booked in advance", "Gentle horses, children welcome"],
     it: ["Dura 2 ore", "A 15 o 20 minuti di macchina da Lama di Luna", "Da prenotare sempre in anticipo", "Cavalli mansueti, bambini benvenuti"],
     fr: ["Dure 2 heures", "À 15 ou 20 minutes en voiture de Lama di Luna", "À toujours réserver à l'avance", "Chevaux dociles, enfants bienvenus"],
+    de: ["Dauer 2 Stunden", "15 bis 20 Autominuten von Lama di Luna", "Immer im Voraus buchen", "Sanfte Pferde, Kinder willkommen"],
   },
 }
 
@@ -76,6 +88,9 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
     fr: [
       "Une heure avec les cuisinières de Lama di Luna, qui enseignent comment faire une pâte traditionnelle des Pouilles, en particulier les orecchiette, les strascinati et les cavatelli : de la façon de pétrir, à la préparation de la pâte, jusqu'à la découpe et aux formes si particulières des orecchiette, qui ont rendu cette pâte célèbre dans le monde entier. Les pâtes préparées ensemble sont ensuite cuites sur place avec une sauce tomate, faite avec des tomates biologiques du potager de Lama di Luna, pour une dégustation finale de votre création.",
     ],
+    de: [
+      "Verbringen Sie eine Stunde mit den Köchinnen von Lama di Luna, die zeigen, wie man traditionelle apulische Pasta macht, vor allem Orecchiette, Strascinati und Cavatelli: vom Kneten über die Zubereitung des Teigs bis zum Schneiden und Formen der ganz besonderen Orecchiette, die diese Pasta in der ganzen Welt berühmt gemacht haben. Die gemeinsam gemachte Pasta wird anschließend sofort mit Tomatensauce gekocht, zubereitet mit Biotomaten aus dem Gemüsegarten von Lama di Luna, damit Sie Ihre Kreation zum Schluss probieren können.",
+    ],
   },
   massages: {
     en: [
@@ -86,6 +101,9 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
     ],
     fr: [
       "Un masseur peut venir à Lama di Luna sur demande pour faire des massages, qui peuvent être aussi bien relaxants qu'énergisants. Vous pouvez profiter du massage dans une partie historique de la masseria, où vous pouvez prendre un moment pour vous, vous détendre et retrouver de l'énergie.",
+    ],
+    de: [
+      "Auf Anfrage kommt ein Masseur nach Lama di Luna, für entspannende oder belebende Massagen. Sie genießen die Massage in einem historischen Teil der Masseria, wo Sie sich einen Moment für sich nehmen, abschalten und neue Energie tanken können.",
     ],
   },
   "bicycle-ride": {
@@ -98,6 +116,9 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
     fr: [
       "À Lama di Luna, nous avons des vélos à pédales à louer pour nos hôtes. Vous pouvez rouler sur les petits chemins de tout le domaine, ou prendre la route peu fréquentée qui mène vers Castel del Monte, pour des balades plus longues dans le Parc national de l'Alta Murgia. Vous pouvez aussi descendre parmi les rangs d'oliviers de la plaine d'Andria. L'été, il vaut mieux partir tôt le matin ou en fin d'après-midi, pour éviter les heures les plus chaudes de la journée.",
     ],
+    de: [
+      "In Lama di Luna können unsere Gäste Fahrräder ausleihen. Sie können auf den kleinen Wegen über das ganze Gut fahren oder die wenig befahrene Straße in Richtung Castel del Monte nehmen, für längere Touren im Nationalpark Alta Murgia. Sie können auch hinunter zwischen die Olivenreihen der Ebene von Andria fahren. Im Sommer fährt man am besten früh morgens oder am späten Nachmittag, um die heißesten Stunden des Tages zu meiden.",
+    ],
   },
   "cinema-room": {
     en: [
@@ -108,6 +129,9 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
     ],
     fr: [
       "Dans notre salle de cinéma, nous avons une collection de plus de 900 DVD de films célèbres de l'histoire du cinéma, rangés dans une vieille bibliothèque. Après avoir choisi un film, vous pouvez le regarder avec l'aide de la réception, dans des fauteuils très confortables. Il y a un grand choix de films italiens classiques, et aussi internationaux. Vous pouvez les regarder quand vous le souhaitez, l'après-midi ou après un dîner romantique sur la véranda.",
+    ],
+    de: [
+      "In unserem Kinoraum haben wir eine Sammlung von über 900 DVDs berühmter Filme aus der Geschichte des Kinos, aufbewahrt in einem alten Bücherschrank. Nachdem Sie einen Film ausgewählt haben, können Sie ihn mit Hilfe der Rezeption in sehr bequemen Sesseln ansehen. Es gibt eine große Auswahl an italienischen Klassikern und auch an internationalen Filmen. Sie können sie ansehen, wann immer Sie möchten, am Nachmittag oder nach einem romantischen Abendessen auf der Veranda.",
     ],
   },
   yoga: {
@@ -120,6 +144,9 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
     fr: [
       "Lama di Luna a été construite selon le Feng Shui et la bioarchitecture, avec des espaces aux angles arrondis où circule une excellente énergie pour pratiquer le yoga. Vous pouvez pratiquer dans la salle de yoga intérieure du XVIIIe siècle, au sol chauffant, ou sur l'herbe autour de notre piscine à débordement. Nous mettons gratuitement à votre disposition des tapis et tout le matériel. Vous pouvez pratiquer seul le matin, ou rejoindre Agata, ou demander des cours de yoga. Pratiquer seul est gratuit ; un cours avec un professeur dure une heure et demie, coûte €60 par couple et €25 par personne supplémentaire.",
     ],
+    de: [
+      "Lama di Luna wurde nach den Prinzipien des Feng Shui und der Baubiologie gebaut, mit Räumen mit abgerundeten Ecken und einer hervorragenden Energie für Yoga. Sie können im Yogaraum aus dem 18. Jahrhundert mit Fußbodenheizung üben oder auf dem Rasen rund um unseren Infinity Pool. Matten und die gesamte Ausrüstung stellen wir kostenlos zur Verfügung. Sie können morgens allein üben, sich Agata anschließen oder Yogastunden anfragen. Allein zu üben ist kostenlos; eine Stunde mit Lehrerin dauert eineinhalb Stunden und kostet €60 pro Paar und €25 für jede weitere Person.",
+    ],
   },
   "infinity-pool": {
     en: [
@@ -130,6 +157,9 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
     ],
     fr: [
       "La piscine à débordement a une forme arrondie, comme un lac, et mesure 18 mètres de long : elle est donc aussi parfaite pour faire de belles nages. Elle a une profondeur d'un mètre trente à l'endroit le plus profond. Elle est ouverte de 9 h du matin à 19 h, gratuite et réservée aux hôtes qui passent la nuit à Lama di Luna. Autour de la piscine, il y a des transats qui, en été, peuvent être déplacés à l'ombre des oliviers, et une pelouse verte et douce. L'eau est salée, désinfectée au sel, et la piscine donne sur la plaine d'oliviers monumentaux d'Andria. Au coucher du soleil, on voit les hirondelles venir boire dans la piscine, et la nuit les chauves-souris de la Murgia, à la chasse aux insectes, qui viennent elles aussi chercher un peu de fraîcheur et d'eau.",
+    ],
+    de: [
+      "Der Infinity Pool hat die runde Form eines Sees und ist 18 Meter lang, also auch ideal zum Bahnenschwimmen. An der tiefsten Stelle ist er 1,30 Meter tief. Er ist von 9 Uhr morgens bis 19 Uhr abends geöffnet, kostenlos und den Gästen vorbehalten, die in Lama di Luna übernachten. Rund um den Pool stehen Sonnenliegen, die man im Sommer in den Schatten der Olivenbäume stellen kann, und ein weicher grüner Rasen umgibt ihn. Das Wasser ist Salzwasser, mit Salz desinfiziert, und der Pool blickt auf die Ebene der monumentalen Olivenbäume von Andria. Bei Sonnenuntergang sieht man die Schwalben, die aus dem Pool trinken, und nachts die Fledermäuse der Murgia auf Insektenjagd, die ebenfalls ein wenig Abkühlung und Wasser suchen.",
     ],
   },
   "estate-walk": {
@@ -142,6 +172,9 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
     fr: [
       "Lama di Luna, avec ses 210 hectares, offre des chemins qui passent entre oliveraies, vignes et amanderaies, mais aussi à travers le paysage sauvage de la Murgia. Vous pouvez marcher à l'intérieur de la ferme, ou sortir et marcher dans le Parc national et sur les routes de nos voisins. En marchant, on peut voir des lapins sauvages, des renards et, de temps en temps, un sanglier. La nuit et en hiver, on entend parfois hurler des loups, même s'ils sont très craintifs et discrets. On peut voir des hérissons et de petites couleuvres inoffensives, et dans le ciel des faucons et des buses. Et profiter des amandiers sauvages, des oliviers sauvages et des fleurs de la Murgia au printemps. C'est une terre qui a beaucoup à offrir du point de vue de la faune et de la flore, et marcher est l'une des plus belles façons de la découvrir.",
     ],
+    de: [
+      "Lama di Luna hat auf seinen 210 Hektar kleine Wege, die zwischen Olivenhainen, Weinbergen und Mandelhainen verlaufen, aber auch durch die wilde Landschaft der Murgia. Sie können auf dem Hof spazieren gehen oder hinaus in den Nationalpark und auf die Wege unserer Nachbarn. Unterwegs sieht man Wildkaninchen, Füchse und hin und wieder ein Wildschwein. Nachts und im Winter hört man manchmal Wölfe heulen, auch wenn sie sehr scheu sind. Man sieht Igel und kleine, harmlose Ringelnattern, und am Himmel Falken und Bussarde. Und im Frühling kann man die wilden Mandelbäume, die wilden Olivenbäume und die Blumen der Murgia genießen. Es ist ein Land, das an Tier und Pflanzenwelt viel zu bieten hat, und zu Fuß lässt es sich am schönsten entdecken.",
+    ],
   },
   golf: {
     en: [
@@ -152,6 +185,9 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
     ],
     fr: [
       "Dans le pré à côté de la masseria, Pietro, passionné de golf, a installé deux petits drapeaux à 80 mètres l'un de l'autre, et des clubs et des balles sont à disposition de ceux qui ont envie de faire quelques coups. Vous pouvez jouer seul ou avec Pietro, qui se joindra très volontiers au practice au coucher du soleil. C'est une belle façon de se promener près de la masseria et de regarder le panorama infini de la Murgia et des oliveraies en contrebas.",
+    ],
+    de: [
+      "Auf der Wiese neben der Masseria hat Pietro, ein begeisterter Golfer, zwei Fahnen im Abstand von 80 Metern aufgestellt, und für alle, die Lust auf ein paar Schläge haben, stehen Schläger und Bälle bereit. Sie können allein spielen oder zusammen mit Pietro, der sich bei Sonnenuntergang sehr gern dazugesellt. Es ist eine schöne Art, neben der Masseria spazieren zu gehen und auf das endlose Panorama der Murgia und der Olivenhaine darunter zu blicken.",
     ],
   },
   library: {
@@ -164,16 +200,22 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
     fr: [
       "La famille Petroni est une famille de lettrés. D'abord l'oncle Pietro, avocat ; puis Agostino Petroni, père de Pietro, magistrat ; puis Pietro, agronome ; et aujourd'hui Agostino Petroni, journaliste. De génération en génération, les livres ont rempli notre maison. Dans les chambres et dans la bibliothèque de famille, vous trouverez une collection de plus de 3 000 livres, certains très anciens, en latin, en allemand, en français, en anglais et en italien. Si vous êtes curieux, la bibliothèque est toujours ouverte et gratuite, 24 heures sur 24. Dans la bibliothèque de famille, il y a aussi des collections particulières, comme l'une faite de vieilles machines à écrire Olivetti et une autre de magazines National Geographic du XXe siècle. C'est un lieu qui conserve l'histoire des Pouilles, et la famille Petroni a décidé de l'ouvrir à tous ses hôtes, qui sont les bienvenus et à qui l'on demande de traiter la collection avec respect, pour la conserver pour ceux qui viendront après eux.",
     ],
+    de: [
+      "Die Familie Petroni ist eine Familie von Literaten. Zuerst Onkel Pietro, Rechtsanwalt; dann Agostino Petroni, der Vater von Pietro, Richter; dann Pietro, Agronom; und heute Agostino Petroni, Journalist. Von Generation zu Generation haben Bücher unser Haus gefüllt. In den Zimmern und in der Familienbibliothek finden Sie eine Sammlung von über 3.000 Büchern, einige sehr alt, auf Latein, Deutsch, Französisch, Englisch und Italienisch. Wenn Sie neugierig sind: Die Bibliothek ist immer geöffnet und kostenlos, rund um die Uhr. In der Familienbibliothek gibt es auch besondere Sammlungen, etwa eine mit alten Olivetti Schreibmaschinen und eine weitere mit National Geographic Heften aus dem 20. Jahrhundert. Es ist ein Ort, der die Geschichte Apuliens bewahrt, und die Familie Petroni hat beschlossen, ihn allen Gästen zu öffnen. Sie sind herzlich willkommen und werden gebeten, die Sammlung mit Respekt zu behandeln, damit sie für alle erhalten bleibt, die nach ihnen kommen.",
+    ],
   },
   pets: {
     en: [
       "At Lama di Luna we have several animals that live here all year round. First of all there is Allen, our gentle Irish setter, always ready to welcome guests and to check that everything is fine around the masseria; sometimes you may hear a knock on your door, because he needs a few cuddles. Then there is the newcomer Romeo, an Australian shepherd who keeps company with our 12 cats, which now live permanently at Lama di Luna. Some of them wander around the orchard, while Nero always comes to check how lunch and dinner are going, looking for something to eat (please do not give him anything, otherwise he will never leave!). Then there are Grigio, Bianca, Nuvolo, Berta and Nina, and finally our goose, who chatters cheerfully in the morning. This is the band of our permanent residents, whom you might sometimes meet all together, in a line on a dry-stone wall, following Sandali on a walk around the masseria.",
     ],
     it: [
-      "A Lama di Luna abbiamo diversi animali che vivono qui tutto l'anno. Innanzitutto c'è Allen, il nostro dolce setter irlandese, sempre pronto a dare il benvenuto agli ospiti e a controllare che tutto vada bene in giro per la masseria; a volte potreste sentirlo bussare alla porta della vostra stanza, perché ha bisogno di un po' di coccole. Poi c'è il nuovo arrivato Romeo, un pastore australiano che fa compagnia ai nostri 12 gatti, che ormai vivono stabilmente a Lama di Luna. Alcuni si aggirano per il frutteto, mentre Nero viene sempre a controllare com'è la situazione a pranzo e a cena, in cerca di qualcosa da mangiare (mi raccomando, non dategli niente, altrimenti non se ne va più!). Poi ci sono Grigio, Bianca, Nuvolo, Berta e Nina, e infine la nostra oca, che chiacchiera allegramente la mattina. Questa è la banda dei nostri residenti permanenti, che ogni tanto potrete incontrare tutti insieme, in fila, al seguito di Sandali, in passeggiata intorno alla masseria.",
+      "A Lama di Luna abbiamo diversi animali che vivono qui tutto l'anno. Innanzitutto c'è Allen, il nostro dolce setter irlandese, sempre pronto a dare il benvenuto agli ospiti e a controllare che tutto vada bene in giro per la masseria; a volte potreste sentirlo bussare alla porta della vostra stanza, perché ha bisogno di un po' di coccole. Poi c'è il nuovo arrivato Romeo, un pastore australiano che fa compagnia ai nostri 12 gatti, che ormai vivono stabilmente a Lama di Luna. Alcuni si aggirano per il frutteto, mentre Nero viene sempre a controllare com'è la situazione a pranzo e a cena, in cerca di qualcosa da mangiare (mi raccomando, non dategli niente, altrimenti non se ne va più!). Poi ci sono Grigio, Bianca, Nuvolo, Berta e Nina, e infine la nostra oca, che chiacchiera allegramente la mattina. Questa è la banda dei nostri residenti permanenti, che ogni tanto potrete incontrare tutti insieme, in fila su un muretto a secco, al seguito di Sandali, in passeggiata intorno alla masseria.",
     ],
     fr: [
-      "À Lama di Luna, nous avons plusieurs animaux qui vivent ici toute l'année. D'abord Allen, notre doux setter irlandais, toujours prêt à accueillir les hôtes et à vérifier que tout va bien autour de la masseria ; il se peut que vous l'entendiez frapper à la porte de votre chambre, parce qu'il a besoin de quelques câlins. Ensuite le nouveau venu Romeo, un berger australien qui tient compagnie à nos 12 chats, qui vivent désormais en permanence à Lama di Luna. Certains se promènent dans le verger, tandis que Nero vient toujours voir comment se passent le déjeuner et le dîner, à la recherche de quelque chose à manger (surtout, ne lui donnez rien, sinon il ne partira plus !). Il y a aussi Grigio, Bianca, Nuvolo, Berta et Nina, et enfin notre oie, qui bavarde joyeusement le matin. Voici la bande de nos résidents permanents, que vous pourrez parfois croiser tous ensemble, en file, derrière Sandali, en promenade autour de la masseria.",
+      "À Lama di Luna, nous avons plusieurs animaux qui vivent ici toute l'année. D'abord Allen, notre doux setter irlandais, toujours prêt à accueillir les hôtes et à vérifier que tout va bien autour de la masseria ; il se peut que vous l'entendiez frapper à la porte de votre chambre, parce qu'il a besoin de quelques câlins. Ensuite le nouveau venu Romeo, un berger australien qui tient compagnie à nos 12 chats, qui vivent désormais en permanence à Lama di Luna. Certains se promènent dans le verger, tandis que Nero vient toujours voir comment se passent le déjeuner et le dîner, à la recherche de quelque chose à manger (surtout, ne lui donnez rien, sinon il ne partira plus !). Il y a aussi Grigio, Bianca, Nuvolo, Berta et Nina, et enfin notre oie, qui bavarde joyeusement le matin. Voici la bande de nos résidents permanents, que vous pourrez parfois croiser tous ensemble, en file sur un muret en pierres sèches, derrière Sandali, en promenade autour de la masseria.",
+    ],
+    de: [
+      "In Lama di Luna leben mehrere Tiere das ganze Jahr über. Da ist zuerst Allen, unser sanfter Irish Setter, immer bereit, die Gäste zu begrüßen und nachzusehen, ob rund um die Masseria alles in Ordnung ist; manchmal klopft er vielleicht an Ihre Tür, weil er ein paar Streicheleinheiten braucht. Dann der Neuankömmling Romeo, ein Australian Shepherd, der unseren 12 Katzen Gesellschaft leistet, die inzwischen fest in Lama di Luna wohnen. Einige streifen durch den Obstgarten, während Nero beim Mittag und Abendessen immer nachsehen kommt, ob es etwas zu fressen gibt (bitte geben Sie ihm nichts, sonst geht er nie wieder!). Dann gibt es noch Grigio, Bianca, Nuvolo, Berta und Nina und schließlich unsere Gans, die morgens fröhlich schnattert. Das ist die Bande unserer ständigen Bewohner, die Sie manchmal alle zusammen treffen können, in einer Reihe auf einer Trockenmauer, hinter Sandali bei einem Spaziergang rund um die Masseria.",
     ],
   },
   "horse-riding": {
@@ -185,6 +227,9 @@ export const experienceDetails: Record<string, Record<Locale, string[]>> = {
     ],
     fr: [
       "Autour de Lama di Luna, il y a plusieurs centres équestres, et dans chacun on peut réserver à l'avance pour faire des balades dans le Parc national de l'Alta Murgia avec des chevaux dociles. Les enfants peuvent venir aussi. Les balades traversent des bois de chênes verts et des pinèdes, où l'on peut rencontrer beaucoup de la faune et de la flore de la Murgia, des marcassins aux buses, et des fleurs de toutes sortes : orchidées sauvages, asphodèles, férules, fenouil et thym.",
+    ],
+    de: [
+      "Rund um Lama di Luna gibt es mehrere Reitställe, bei denen Sie im Voraus einen Ausritt auf sanften Pferden im Nationalpark Alta Murgia buchen können. Auch Kinder können mitkommen. Die Ausritte führen durch Steineichenwälder und Pinienwälder, in denen man viel von der Tier und Pflanzenwelt der Murgia entdeckt, von jungen Wildschweinen bis zu Bussarden, und Blumen aller Art: wilde Orchideen, Affodill, Steckenkraut, Fenchel und Thymian.",
     ],
   },
 }

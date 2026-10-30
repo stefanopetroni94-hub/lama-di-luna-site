@@ -1,4 +1,4 @@
-export const locales = ["en", "it", "fr"] as const
+export const locales = ["en", "it", "fr", "de"] as const
 export type Locale = (typeof locales)[number]
 export const defaultLocale: Locale = "en"
 
@@ -7,7 +7,7 @@ export function isLocale(value: string): value is Locale {
 }
 
 // Label of the "back to home" link at the top left of every page.
-export const HOME: Record<Locale, string> = { en: "Home", it: "Home", fr: "Accueil" }
+export const HOME: Record<Locale, string> = { en: "Home", it: "Home", fr: "Accueil", de: "Startseite" }
 
 // Main navigation menu (opens in the full-screen overlay).
 // `slug` is null for sections that don't have a page yet.
@@ -43,6 +43,16 @@ export const menu: Record<Locale, MenuItem[]> = {
     { label: "Événements", slug: "exclusive" },
     { label: "Boutique", slug: "shop" },
     { label: "Contact", slug: "contact" },
+  ],
+  de: [
+    { label: "Zimmer", slug: "rooms" },
+    { label: "Küche", slug: "restaurant" },
+    { label: "Bauernhof", slug: "farm" },
+    { label: "Geschichte", slug: "story" },
+    { label: "Erlebnisse", slug: "experiences" },
+    { label: "Events", slug: "exclusive" },
+    { label: "Shop", slug: "shop" },
+    { label: "Kontakt", slug: "contact" },
   ],
 }
 
@@ -103,6 +113,26 @@ export const chrome = {
       facebookUrl: "https://www.facebook.com/masserialamadiluna",
       tripadvisorUrl: "https://www.tripadvisor.com/",
       privacy: "Confidentialité",
+      cookies: "Cookies",
+      cin: "CIN: IT110001B500020950",
+      copyright: "© 2026 Lama di Luna · Andria, BT",
+    },
+  },
+  de: {
+    menu: "Menü",
+    book: "Buchen",
+    scroll: "Scrollen",
+    close: "Schließen",
+    menuTitle: "Entdecken",
+    press: "Bekannt aus",
+    footer: {
+      instagram: "Instagram",
+      facebook: "Facebook",
+      tripadvisor: "Tripadvisor",
+      instagramUrl: "https://www.instagram.com/masserialamadiluna/",
+      facebookUrl: "https://www.facebook.com/masserialamadiluna",
+      tripadvisorUrl: "https://www.tripadvisor.com/",
+      privacy: "Datenschutz",
       cookies: "Cookies",
       cin: "CIN: IT110001B500020950",
       copyright: "© 2026 Lama di Luna · Andria, BT",

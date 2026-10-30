@@ -27,7 +27,7 @@ export type BookContent = {
   trust: Trust[]
 }
 
-export const book: Record<"en" | "it" | "fr", BookContent> = {
+export const book: Record<"en" | "it" | "fr" | "de", BookContent> = {
   en: {
     eyebrow: "Best-rate direct booking",
     title: "Reserve your stay",
@@ -160,6 +160,51 @@ export const book: Record<"en" | "it" | "fr", BookContent> = {
       { name: "Stanley Tucci", note: "Searching for Italy" },
       { name: "Lonely Planet" },
       { name: "AIAB · ICEA", note: "Certifié bio" },
+      { name: "Tripadvisor", note: "Travellers' Choice" },
+    ],
+  },
+  de: {
+    eyebrow: "Direkt buchen zum besten Preis",
+    title: "Reservieren Sie Ihren Aufenthalt",
+    intro:
+      "Buchen Sie direkt bei uns: Sie erhalten immer den besten verfügbaren Preis und dazu die kleinen Aufmerksamkeiten, die nur die Masseria Ihnen bei der Ankunft bieten kann.",
+    checkIn: "Anreise",
+    checkOut: "Abreise",
+    guests: "Gäste",
+    guestsValue: "2 Erwachsene",
+    addDate: "Datum wählen",
+    searchCta: "Verfügbarkeit prüfen",
+    perksEyebrow: "Warum direkt buchen",
+    perksTitle: "Vier kleine Dinge, die Sie nur bei uns bekommen",
+    perksIntro: "Keines davon erhalten Sie, wenn Sie über Booking.com, Expedia oder ein anderes Buchungsportal buchen.",
+    perks: [
+      { icon: "star", title: "Bestpreisgarantie", body: "Finden Sie innerhalb von 24 Stunden nach der Buchung einen günstigeren Preis, passen wir unseren an." },
+      { icon: "cup", title: "Begrüßungsaperitif", body: "Wein vom Gut und kleine Häppchen im Innenhof bei Ihrer Ankunft." },
+      { icon: "clock", title: "Später Check-out", body: "Bis 13:00 Uhr, wann immer es die Buchungen des nächsten Tages erlauben. Wir bestätigen es beim Frühstück." },
+      { icon: "olive", title: "Olivenölverkostung", body: "Eine 20-minütige Verkostung der nativen Öle extra des Jahres, am ersten Abend." },
+    ],
+    roomsLabel: "Verfügbare Zimmer",
+    widgetPill: "Platzhalter Buchungssystem",
+    widgetTitle: "Hier wird das Buchungsmodul von Little Hotelier geladen",
+    widgetBody:
+      "Sobald das Little Hotelier Konto eingerichtet ist, wird dieser Block durch das eingebettete Modul ersetzt, oder der gesamte Bereich leitet beim Absenden zu book.lamadiluna.com weiter. Beide Wege enden auf /booking/thank-you auf dieser Domain, damit die Conversion von Google Ads und GA4 ausgelöst wird.",
+    widgetNote: "Hinweise für Entwickler stehen im HTML Kommentar im <head>.",
+    faqEyebrow: "Bevor Sie buchen",
+    faqTitle: "Ehrliche Antworten",
+    faqs: [
+      { q: "Wie sind Ihre Stornierungsbedingungen?", a: "Kostenlose Stornierung bis 7 Tage vor der Anreise. Innerhalb von 7 Tagen wird die erste Nacht berechnet. Bei Nichterscheinen wird der gesamte Aufenthalt berechnet. Für die Wochen der Hochsaison (Juni bis September) sowie Weihnachten und Neujahr bitten wir um vollständige Vorauszahlung 30 Tage vor der Anreise, innerhalb von 14 Tagen nicht erstattungsfähig." },
+      { q: "Ist das Frühstück inbegriffen?", a: "Ja: ein gemütliches Frühstück im alten Refektorium mit Mandelgebäck aus dem Dorf, frischem Ricotta von einem Nachbarhof, Marmeladen vom Gut, Eiern von den Hühnern aus dem Hof und unserem eigenen Olivenöl auf warmem Brot. Serviert von 8:30 bis 10:30 Uhr." },
+      { q: "Sind Kinder willkommen?", a: "Kinder über 12 Jahre sind in allen Zimmern willkommen. Die Family Suite und die Family Suite Masseria nehmen auch jüngere Kinder auf. Kinderbetten stellen wir auf Anfrage bereit. Ein Kinderprogramm haben wir nicht, aber der Innenhof, der Olivenhain und die Tiere des Hofes übernehmen das meist von selbst." },
+      { q: "Gibt es einen Pool?", a: "Ja: einen Außenpool im Olivenhain hinter der Masseria. Geöffnet von Mitte Mai bis Ende September. Sonnenliegen, Schatten und die einzige WLAN-freie Zone auf dem Gelände." },
+      { q: "Gibt es ein Abendessen?", a: "Auf Anfrage. Die Küche öffnet abends, wenn wir rechtzeitig Bescheid wissen: typische Rezepte aus der Murgia und aus Apulien, schlicht zubereitet mit dem, was das Gut an diesem Tag hervorgebracht hat. Sagen Sie es uns bei der Buchung, und wir organisieren alles." },
+      { q: "Wie erreiche ich die Masseria vom Flughafen Bari?", a: "Am einfachsten mit einem Mietwagen (etwa 55 Minuten). Ein privater Transfer lässt sich organisieren: Schreiben Sie uns vorab Ihre Flugnummer, und wir erstellen Ihnen ein Angebot. Öffentliche Verkehrsmittel fahren nicht bis zur Masseria." },
+      { q: "Gibt es WLAN?", a: "Ja, überall außer am Pool. Die Verbindung ist schnell genug für Videoanrufe." },
+    ],
+    trust: [
+      { name: "National Geographic" },
+      { name: "Stanley Tucci", note: "Searching for Italy" },
+      { name: "Lonely Planet" },
+      { name: "AIAB · ICEA", note: "Zertifiziert biologisch" },
       { name: "Tripadvisor", note: "Travellers' Choice" },
     ],
   },

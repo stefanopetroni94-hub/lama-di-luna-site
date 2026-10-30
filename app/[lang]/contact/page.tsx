@@ -70,7 +70,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
           />
         </div>
         <MapCard
-          title={{ en: "Location & contact", it: "Posizione e contatti", fr: "Adresse et contact" }[lang]}
+          title={{ en: "Location & contact", it: "Posizione e contatti", fr: "Adresse et contact", de: "Adresse und Kontakt" }[lang]}
           address={c.addressValue}
           phone={c.phoneValue}
           email={c.emailValue}

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import { CookieConsent } from "@/components/cookie-consent"
 import { BookingSheet } from "@/components/booking-sheet"
 import { WhatsAppButton } from "@/components/whatsapp-button"
+import { HtmlLang } from "@/components/html-lang"
 import { isLocale, locales } from "@/lib/i18n"
 
 export function generateStaticParams() {
@@ -21,6 +22,7 @@ export default async function LangLayout({
 
   return (
     <>
+      <HtmlLang locale={lang} />
       {children}
       <CookieConsent locale={lang} />
       <BookingSheet locale={lang} />

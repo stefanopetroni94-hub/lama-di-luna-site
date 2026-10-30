@@ -361,4 +361,110 @@ export const story: Record<Locale, StoryContent> = {
       "Onze chambres, une récolte des olives dès octobre, une cuisine qui ouvre sur demande, et une masseria préservée avec honnêteté depuis 1830.",
     calloutCta: "Découvrez les chambres",
   },
+  de: {
+    heroEyebrow: "Die Geschichte",
+    statementTitle: "Eine Masseria aus dem 18. Jahrhundert, mit Baubiologie restauriert und mit Respekt vor der Geschichte des Gutes",
+    statementBody: [
+      "Lama di Luna liegt im Herzen des Nationalparks Alta Murgia. Der Name bedeutet Tal des Mondes: Lama für Tal, Luna für den Mond und die Fruchtbarkeit. Die Masseria ist über zwei Jahrhunderte gewachsen, vom Ende des 18. bis zum Ende des 19. Jahrhunderts, und wurde zwischen 2000 und 2003 mit Mörtel, Kalk und derselben roten Erde restauriert, die den Feldern ringsum ihre Farbe gibt. Was die Masseria heute ist, ist keine Rekonstruktion. Es ist das, was schon da war, ehrlich bewahrt.",
+    ],
+    buildingLabel: "Die Masseria",
+    chapters: [
+      {
+        eyebrow: "Ende des 18. Jahrhunderts",
+        title: "Die ältesten Räume",
+        body: [
+          "Gegen Ende des 18. Jahrhunderts wurde der linke Flügel der Masseria gebaut, mit über einem Meter dicken Mauern und Decken aus Terrakottazylindern mit durchbrochenem Boden. Eine ideale Decke: leicht, voller Luft zum Schutz vor der Sommerhitze und fähig, sich mit warmer Luft zu füllen, wenn der Kamin brennt, sodass der Raum die ganze Nacht warm bleibt. Das sind die Murgia Zimmer, die ältesten von Lama di Luna.",
+          "Gegen Ende des 19. Jahrhunderts vollendete Baron di Faivano den Bau mit dem rechten Flügel, mit achtzig Zentimeter dicken Mauern und Decken aus Balken und Gewölben aus Kalktuff. So gab er den Familien der Halbpächter einen Ort zum Leben in der Masseria. Jeder Raum von etwa zwanzig Quadratmetern war das Zuhause einer Familie, mit eigenem Fenster und eigenem Kamin.",
+        ],
+        img: IMG.wing,
+      },
+      {
+        eyebrow: "Vierzig Schornsteine",
+        title: "Eine Gemeinschaft bei der Arbeit",
+        body: [
+          "Die vierzig Schornsteine auf den Dächern zeigen, wie groß die Gemeinschaft war, die der Masseria Leben gab. Vor der Morgendämmerung wurden die gemeinsamen Räume aufgeräumt, und bei Sonnenaufgang, wenn die Arbeit auf den Feldern begann, musste alles an seinem Platz sein.",
+          "Die Siedler, deren Vertrag kein Haus vorsah, bauten sich selbst einen Unterschlupf aus den Steinen, die sie von den Feldern sammelten: die Casedd, die Trulli von Andria, in denen sie mit ihrem Esel wohnten, der auf den Feldern half und auch die Casedd warm hielt.",
+        ],
+        img: IMG.courtyard,
+      },
+      {
+        eyebrow: "Vom 19. Jahrhundert bis in die 1950er Jahre",
+        title: "Krise und Niedergang",
+        body: [
+          "Ende des 19. Jahrhunderts zwang eine schwere Weinkrise den Baron, die Masseria mit rund 190 Hektar an Herrn De Bartolo zu verkaufen. Als sich die Reblaus in den Weinbergen ausbreitete, stellte er die Felder auf Mandel und Olivenhaine um, die bis in die 1950er Jahre blieben.",
+          "Nach dem Krieg übernahm Dr. Palasciano die Masseria und verpachtete sie an die Hirten aus Coratini und ihre Herden. Es war der Beginn eines langen Niedergangs, innerhalb der Mauern wie auf den Feldern.",
+        ],
+        img: IMG.flock,
+      },
+      {
+        eyebrow: "1991: der Beginn eines neuen Kapitels",
+        title: "Die Wiedergeburt",
+        body: [
+          "1991 kauften wir die Masseria, verliebt in den Ort und die Landschaft dieses wunderschönen Gutshofs. Befreit von Herden und Hirten, begannen wir eine lange Restaurierung, innerhalb der Mauern und auf den Feldern. Zehntausend Olivenbäume, zehntausend Reben, zweitausend Mandelbäume, tausend Kirschbäume, ein 535 Meter tiefer artesischer Brunnen und Felder mit Getreide und Gemüse markierten die landwirtschaftliche Wiedergeburt, mit größtem Respekt vor der Natur. Die übrigen hundert Hektar überließen wir der natürlichen Landschaft, als Weide für die Schafe.",
+          "Eine Karsthöhle und Dutzende teilweise restaurierte Casedd stehen in einer Murgia, die heute frei von Anbau, aber reich an wilden Pflanzen ist: wilde Orchideen, Fenchel, Steckenkraut, Thymian. Sie begleiten unsere Gäste auf unvergesslichen Spaziergängen. Mit einem neuen Stall und neuen landwirtschaftlichen Gebäuden machten wir die Masseria frei und begannen im Jahr 2000 eine Restaurierung, die 2003 endete, damit Gäste aus aller Welt die Atmosphäre und den Zauber der Vergangenheit wieder erleben können.",
+        ],
+        img: IMG.works,
+      },
+      {
+        eyebrow: "2003",
+        title: "Mit Respekt restauriert",
+        body: [
+          "Die Restaurierung endete 2003, und jede Entscheidung wurde mit Respekt vor dem Gebäude getroffen. Die Wände sind mit derselben roten und gelben Erde der umliegenden Felder gefärbt, von Hand angerührt und auf den Putz gestrichen, nie gemalt. Jedes Bett zeigt nach Norden, und die Ecken sind weich und abgerundet, denn in der Natur ist alles rund und Teil eines Ganzen. Die vierzig Schornsteine und die verstreuten Trulli erzählen noch heute die Geschichte der Generationen, die hier gearbeitet haben.",
+          "Die Masseria lebt von ihrer eigenen Energie, mit 48 Solarkollektoren für Warmwasser und Heizung und 400 Photovoltaikmodulen für Strom. Die Badeprodukte sind Seifen aus Olivenöl vom Gut, die Bettwäsche ist aus Rohbaumwolle und die Waschbecken sind aus Terrakotta aus der Gegend: Die Materialien des Gebäudes sind auch die Materialien des Aufenthalts.",
+        ],
+        img: IMG.fireplace,
+      },
+    ],
+    pietroLabel: "Pietro Petroni",
+    pietroEyebrow: "Der Hüter",
+    pietroTitle: "Der Hüter",
+    pietroQuote:
+      "Lama di Luna ist mein Zuhause, wo ich mit Agata und meinen Söhnen Agostino und Stefano lebe. Wir bewirtschaften und bewahren das Land des Gutes, damit mit uns alle wilden Tiere den Zauber unseres Nationalparks, der Murgia, teilen können. Gastfreundschaft schenken wir allen, die vorbeikommen und einen Aufenthalt in unserer schönen Masseria genießen möchten.",
+    pietroSignature: "Pietro Petroni",
+    pietroBody:
+      "Pietro lebt das ganze Jahr in der Masseria, mit seiner Frau Agata und seinen beiden Söhnen Stefano und Agostino. Er kümmert sich um die Olivenernte, den Wein, die Turmfalken und die Steinkäuze, die in den Schornsteinen nisten. Meistens findet man ihn morgens vor dem Frühstück auf einem Spaziergang durch die Haine.",
+    pietroNote: "Platzhalter · durch ein Bild von Pietro und dem Kauz ersetzen",
+    filmLabel: "Der Film",
+    filmCta: "Mit Ton ansehen",
+    restorationEyebrow: "Die Restaurierung",
+    restorationTitle: "Sechs Entscheidungen, die die Masseria geprägt haben",
+    details: [
+      {
+        num: "01",
+        title: "Rote Erde an den Wänden",
+        body: "Dieselbe rote und gelbe Erde der umliegenden Felder, mit der einst die Mauern gebaut wurden, färbt sie heute. Von Hand angerührt, auf den Putz gestrichen, nie gemalt.",
+      },
+      {
+        num: "02",
+        title: "Betten nach Norden",
+        body: "Jedes Bett der Masseria zeigt nach Norden, nach dem Prinzip des Feng Shui, das die Restaurierung beachtet hat, und als Echo des landwirtschaftlichen Gespürs der Halbpächter vor uns.",
+      },
+      {
+        num: "03",
+        title: "Abgerundete Kanten",
+        body: "Scharfe Ecken sind überall abgerundet, denn in der Natur ist alles rund, alles in Harmonie, alles Teil eines Ganzen. Eine Entscheidung des Gefühls, nicht der Oberfläche.",
+      },
+      {
+        num: "04",
+        title: "Vierzig Schornsteine, verstreute Trulli",
+        body: "Die Masseria hat vierzig Schornsteine, mehrere verstreute Trulli und eine vielschichtige Struktur, die die schlichten Formen der Räume nicht verraten. Die Architektur erzählt die Geschichte der Generationen, die hier gearbeitet haben.",
+      },
+      {
+        num: "05",
+        title: "48 Solarkollektoren und 400 Photovoltaikmodule",
+        body: "Warmwasser und Heizung aus 48 Solarkollektoren. Strom aus 400 Photovoltaikmodulen. Die Masseria lebt seit fast zwei Jahrzehnten ohne Stromnetz, still und dankbar, mit der Energie derselben Sonne, die die Oliven reifen lässt.",
+      },
+      {
+        num: "06",
+        title: "Olivenöl, Rohbaumwolle, Terrakotta",
+        body: "Die Badeprodukte sind Seifen aus Olivenöl, auf dem Gut gepresst. Die Bettwäsche ist aus Rohbaumwolle, ganz schlicht. Die Waschbecken sind aus Terrakotta aus der Gegend. Die Materialien des Gebäudes sind auch die Materialien des Aufenthalts.",
+      },
+    ],
+    fullPhoto: IMG.full,
+    calloutEyebrow: "Kommen Sie vorbei",
+    calloutTitle: "Wohnen Sie dort, wo die Geschichte weitergeht",
+    calloutBody:
+      "Elf Zimmer, eine Olivenernte ab Oktober, eine Küche, die auf Anfrage öffnet, und eine Masseria, die seit 1830 ehrlich bewahrt wird.",
+    calloutCta: "Die Zimmer entdecken",
+  },
 }

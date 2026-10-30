@@ -73,6 +73,22 @@ const D = {
     bath:
       "Une ligne de cosmétiques biologiques inspirée par la richesse du maquis méditerranéen, conçue pour apporter chez soi l'expérience relaxante et régénérante d'un vrai spa. Les formules reposent sur du gel pur d'aloe vera du Salento, enrichi d'actifs régénérants locaux comme l'huile d'olive, la lavande, le romarin, l'huile d'amande douce et la grenade. Produits 100 % Made in Italy, avec une filière contrôlée et des formules cruelty-free, sans agents chimiques agressifs ni tensioactifs synthétiques à risque. Les parfums délicats et évocateurs rappellent les arômes authentiques des Pouilles et de la Méditerranée, pour favoriser la détente du corps et de l'esprit et combattre le stress du quotidien.",
   },
+  de: {
+    primitivo:
+      "Primitivo ist eine der großen roten Rebsorten Apuliens und wird vor allem im warmen, sonnigen Süden der Region angebaut, rund um Manduria und Gioia del Colle. Sie reift früh und ergibt tiefe, großzügige Weine mit Noten von reifer schwarzer Kirsche, Pflaume und Gewürzen, einem weichen, vollen Körper und einem langen, warmen Abgang.",
+    troia:
+      "Nero di Troia, auch Uva di Troia genannt, ist eine autochthone apulische Rebsorte, verwurzelt im Norden der Region, rund um Foggia, im Tavoliere und auf den Hügeln von Castel del Monte, nahe der Alta Murgia. Sie ergibt strukturierte, elegante Rotweine mit festen Tanninen, Noten von schwarzer Kirsche, Veilchen und Pfeffer und einem großen Lagerpotenzial.",
+    rose:
+      "Dieselbe Rebsorte Nero di Troia, früh gelesen und wie ein Weißwein ausgebaut, ergibt einen frischen, lebendigen Rosé in Korallfarbe, mit Duft nach Walderdbeere, Granatapfel und Blüten. Er stammt aus denselben Gebieten im Norden Apuliens wie der Rotwein und wird jung und gut gekühlt getrunken.",
+    fiano:
+      "Fiano ist eine alte weiße Rebsorte Süditaliens, in Kampanien entstanden und heute auch in Apulien angebaut, wo warme Tage und kühle Nächte ihr die Frische bewahren. Sie ergibt einen duftenden, mineralischen Weißwein mit Noten von weißen Blüten, Zitrusfrüchten, Birne und einem Hauch gerösteter Haselnuss.",
+    carolea:
+      "Carolea ist eine in Süditalien verbreitete Olivensorte, die auch in Apulien wächst. Sie ergibt ein ausgewogenes, harmonisches natives Olivenöl extra, fruchtig und sanft, mit einem süßlichen Auftakt, Noten von Mandel und Artischocke und nur einer leichten, angenehmen Bitterkeit und Schärfe.",
+    coratina:
+      "Coratina ist die typische Olive Apuliens, entstanden rund um Corato, zwischen Bari und der Alta Murgia, und in der Gegend von Andria weit verbreitet. Sie ergibt ein intensives, grünes natives Olivenöl extra, reich an Polyphenolen, mit Noten von frischem Gras, Tomatenblatt und Mandel und einer ausgeprägten Bitterkeit und Schärfe.",
+    bath:
+      "Eine biologische Kosmetiklinie, inspiriert vom Reichtum der mediterranen Macchia, die das entspannende und regenerierende Erlebnis eines echten Spas nach Hause bringt. Die Rezepturen basieren auf reinem Aloe Vera Gel aus dem Salento, angereichert mit regenerierenden Wirkstoffen aus der Region wie Olivenöl, Lavendel, Rosmarin, Süßmandelöl und Granatapfel. 100 % Made in Italy, mit kontrollierter Lieferkette und tierversuchsfreien Rezepturen, ohne aggressive chemische Stoffe und ohne bedenkliche synthetische Tenside. Die zarten, stimmungsvollen Düfte erinnern an die echten Aromen Apuliens und des Mittelmeers und helfen, Körper und Geist zu entspannen und den Stress des Alltags abzubauen.",
+  },
 }
 
 const PH = {
@@ -162,5 +178,29 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "orcio", name: "Orcio en Céramique avec Huile d'Olive Extra Vierge", meta: "Un orcio en céramique rempli de notre huile d'olive extra vierge. 350 g.", price: "€32", img: PH.orcio, contain: true },
     ],
     note: "Ceci est une boutique de démonstration. Les commandes et le paiement sécurisé pourront être reliés à Stripe quand vous serez prêt à vendre en ligne.",
+  },
+  de: {
+    eyebrow: "Der Shop",
+    title: "Ein Stück vom Gut, zu Ihnen nach Hause geschickt",
+    intro:
+      "Bestellen Sie einen Geschmack oder einen Duft von Lama di Luna, um Apulien und die Alta Murgia nah bei sich zu haben, wo immer Sie sind.",
+    addLabel: "Hinzufügen",
+    addedLabel: "Hinzugefügt",
+    products: [
+      { id: "primitivo", name: "Primitivo", meta: "Rotwein aus Apulien.", desc: D.de.primitivo, price: "€29", img: PH.primitivo, contain: true },
+      { id: "nero-di-troia", name: "Nero di Troia", meta: "Rotwein aus Apulien.", desc: D.de.troia, price: "€37", img: PH.troia, contain: true },
+      { id: "nero-di-troia-rose", name: "Nero di Troia Rosé", meta: "Roséwein aus Apulien.", desc: D.de.rose, price: "€25", img: PH.rose, contain: true },
+      { id: "fiano", name: "Fiano", meta: "Weißwein.", desc: D.de.fiano, price: "€25", img: PH.fiano, contain: true },
+      { id: "carolea-500", name: "Natives Olivenöl Extra, Carolea", meta: "Sorte Carolea. 500 ml.", desc: D.de.carolea, price: "€23", img: PH.carolea500, contain: true },
+      { id: "coratina-500", name: "Natives Olivenöl Extra, Coratina", meta: "Sorte Coratina. 500 ml.", desc: D.de.coratina, price: "€23", img: PH.coratina500, contain: true },
+      { id: "carolea-3l", name: "Natives Olivenöl Extra, Carolea", meta: "Sorte Carolea. Bag-in-Box, 3 Liter.", desc: D.de.carolea, price: "€66", img: PH.carolea3l, contain: true, landscape: true, zoom: { size: "151% auto", pos: "50% 95%" } },
+      { id: "coratina-3l", name: "Natives Olivenöl Extra, Coratina", meta: "Sorte Coratina. Bag-in-Box, 3 Liter.", desc: D.de.coratina, price: "€66", img: PH.coratina3l, contain: true, landscape: true, zoom: { size: "158% auto", pos: "50% 100%" } },
+      { id: "shampoo", name: "Shampoo", meta: "Aus der Badelinie der Masseria.", desc: D.de.bath, price: "€15", img: PH.shampoo, contain: true },
+      { id: "conditioner", name: "Spülung", meta: "Aus der Badelinie der Masseria.", desc: D.de.bath, price: "€16", img: PH.conditioner, contain: true },
+      { id: "hand-body-soap", name: "Hand und Körper Waschgel", meta: "Aus der Badelinie der Masseria.", desc: D.de.bath, price: "€15", img: PH.wash, contain: true },
+      { id: "bath-set", name: "Badeset: Waschgel, Shampoo und Spülung", meta: "", price: "€40", img: PH.wash, imgs: [PH.wash, PH.shampoo, PH.conditioner], contain: true },
+      { id: "orcio", name: "Keramik Orcio mit nativem Olivenöl extra", meta: "Ein Orcio aus Keramik, gefüllt mit unserem nativen Olivenöl extra. 350 g.", price: "€32", img: PH.orcio, contain: true },
+    ],
+    note: "Dies ist ein Vorschau Shop. Bestellungen und sichere Bezahlung können mit Stripe verbunden werden, sobald Sie online verkaufen möchten.",
   },
 }

@@ -39,7 +39,7 @@ const P = {
   alberobello: "https://res.cloudinary.com/amenitiz/image/upload/w_1000,q_auto:best,f_auto,c_fill/v1747243212/wj7lc1n5p7gpmqnwredd.jpg",
 }
 
-export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
+export const oliveHarvest: Record<"en" | "it" | "fr" | "de", OliveHarvestContent> = {
   en: {
     counter: "Experience 01 / 08",
     breadcrumbRoot: "Experiences",
@@ -203,6 +203,61 @@ export const oliveHarvest: Record<"en" | "it" | "fr", OliveHarvestContent> = {
       { img: P.cooking, name: "Orecchiette et Focaccia", meta: "Cours de cuisine · demi-journée, sur demande" },
       { img: P.dawn, name: "Promenade à l'aube dans les oliveraies", meta: "Lever du soleil · 90 minutes" },
       { img: P.alberobello, name: "Alberobello et les Trulli", meta: "Excursion · 1h 10 min en voiture" },
+    ],
+  },
+  de: {
+    counter: "Erlebnis 01 / 08",
+    breadcrumbRoot: "Erlebnisse",
+    breadcrumbCurrent: "Olivenölverkostung und Führung",
+    heroEyebrow: "Oktober bis November · Erlebnis auf dem Gut",
+    title: "Olivenölverkostung und Führung",
+    statementTitle: "Durch die Haine gehen, die Kaltpressung erleben, das erste Öl des Jahres kosten",
+    statementBody: [
+      "Eine fachkundige Führung über den Hof von Lama di Luna, bei der Sie die Grundlagen der Agronomie kennenlernen: von der Bewässerung bis zur Ernte und den 11 verschiedenen Olivensorten, die in Lama di Luna wachsen, von jahrhundertealten bis zu ganz jungen Bäumen. Die Führung endet auf der Veranda, wo Sie die nativen Olivenöle extra von Lama di Luna verkosten und lernen, wie man ein Öl verkostet, seine Eigenschaften erkennt, ob es gut ist oder nicht, und wie man es im Supermarkt auswählt. Diese Führung war in der CNN Dokumentarserie Searching for Italy mit Stanley Tucci zu sehen, der nach Lama di Luna kam und Führung und Verkostung mitmachte: genau dieselbe Führung, die unsere Gäste erleben.",
+    ],
+    facts: [
+      { label: "Saison", value: "Ende Okt. bis Mitte Nov." },
+      { label: "Dauer", value: "4 Stunden" },
+      { label: "Gruppengröße", value: "2 bis 8 Gäste" },
+      { label: "Sprache", value: "EN · IT · DE" },
+      { label: "Schwierigkeit", value: "Leichter Spaziergang" },
+      { label: "Ab", value: "€85 / Person" },
+    ],
+    curvedLabel: "Der Morgen",
+    timeline: [
+      { time: "07:30", title: "Kaffee im Innenhof", body: "Espresso, Mandelgebäck aus dem Dorf und eine kurze Einführung in den Hain des Tages. Sie bekommen einen Korb und Wanderschuhe, falls Sie keine eigenen dabeihaben." },
+      { time: "08:00", title: "In die Haine", body: "Ein 15-minütiger Spaziergang zwischen 500 Jahre alten Olivenbäumen bis zum Ernteabschnitt des Tages. Die Handlese beginnt. Sie sehen die traditionellen apulischen Rechen, mit denen die reifen Oliven sanft auf die Netze fallen, nie geschlagen, nie maschinell geschüttelt." },
+      { time: "09:30", title: "Die Kaltpressung", body: "Die ersten Kisten des Morgens werden zur Ölmühle auf dem Gut gebracht. Sie sehen, wie die Oliven hineingehen, die Paste herauskommt und die Zentrifuge das Öl vom Wasser trennt. Fünfundvierzig Minuten vom Hain bis zum Öl." },
+      { time: "10:30", title: "Die erste Verkostung", body: "Ein Frühstück unter der Loggia: warme Focaccia, Salz, das frisch gepresste Öl darüber, ein Glas Negroamaro. Wir sprechen darüber, was Sie geschmeckt haben, pfeffrig, grasig, mandelig, und woran man erkennt, dass es vor weniger als einer Stunde gepresst wurde." },
+      { time: "11:30", title: "Sie gehen mit einer Flasche", body: "Jeder Gast erhält eine 500 ml Flasche des Öls vom Morgen, mit dem Datum des Tages beschriftet. Das frischeste native Olivenöl extra, das Sie je mit nach Hause nehmen werden." },
+    ],
+    photos: [P.olive, P.wine],
+    includedEyebrow: "Inbegriffen",
+    includedTitle: "Was Sie erwartet",
+    included: [
+      { text: "Geführter halber Tag, vom Sonnenaufgang bis zum späten Vormittag" },
+      { text: "Spaziergang durch die historischen Olivenhaine mit Pietro oder dem Verwalter des Gutes" },
+      { text: "Besuch der Kaltpressmühle auf dem Gut, in der Saison" },
+      { text: "Verkostungsfrühstück: Focaccia, Öl, Wein, Mandelgebäck" },
+      { text: "Eine 500 ml Flasche des am Morgen gepressten Öls zum Mitnehmen" },
+      { text: "Fotografieren überall erlaubt" },
+      { text: "Transfer zur Masseria und zurück (wir empfehlen, bei uns zu wohnen)", not: true },
+      { text: "Mittagessen (können wir separat organisieren)", not: true },
+    ],
+    priceLabel: "Preis",
+    priceAmount: "€85",
+    priceUnit: "pro Gast",
+    priceNote: "Kinder unter 12 Jahren in Begleitung eines Erwachsenen kostenlos. Mindestens 2 Gäste. Höchstens 8 pro Termin für ein persönliches Erlebnis.",
+    bookingEyebrow: "Nur von Oktober bis November",
+    bookingTitle: "Planen Sie Ihre Olivenölverkostung und Führung",
+    bookingText: "Am schönsten in Verbindung mit einem Aufenthalt von 2 oder 3 Nächten während der Erntezeit. Nennen Sie uns Ihre Reisedaten, und wir bestätigen die Verfügbarkeit und den voraussichtlichen Erntetag.",
+    bookingCta: "Kontakt aufnehmen",
+    otherEyebrow: "Weiter",
+    otherTitle: "Weitere Erlebnisse",
+    other: [
+      { img: P.cooking, name: "Orecchiette und Focaccia", meta: "Kochkurs · halber Tag, auf Anfrage" },
+      { img: P.dawn, name: "Morgenspaziergang in den Hainen", meta: "Sonnenaufgang · 90 Minuten" },
+      { img: P.alberobello, name: "Alberobello und die Trulli", meta: "Tagesausflug · 1 Std. 10 Min. Fahrt" },
     ],
   },
 }

@@ -64,7 +64,7 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
       <section className="lh-widget-wrap">
         <div className="book-direct">
           <BookLink href={bookingUrl(lang)} className="book-stay-btn">
-            {{ en: "Book now", it: "Prenota ora", fr: "Réserver" }[lang]}
+            {{ en: "Book now", it: "Prenota ora", fr: "Réserver", de: "Jetzt buchen" }[lang]}
           </BookLink>
         </div>
       </section>

@@ -48,7 +48,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         <div
           className="story-split-img"
           role="img"
-          aria-label={{ en: "A harvester at work among the olive trees", it: "Un raccoglitore al lavoro tra gli ulivi", fr: "Un cueilleur au travail parmi les oliviers" }[lang]}
+          aria-label={{ en: "A harvester at work among the olive trees", it: "Un raccoglitore al lavoro tra gli ulivi", fr: "Un cueilleur au travail parmi les oliviers", de: "Ein Erntehelfer bei der Arbeit zwischen den Olivenbäumen" }[lang]}
           style={{
             backgroundImage: "url('/whatsapp/20261014_035803_4381306318848943.jpg')",
             backgroundPosition: "45% center",
@@ -57,7 +57,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         <div
           className="story-split-img"
           role="img"
-          aria-label={{ en: "Olives gathered on the nets", it: "Olive raccolte sulle reti", fr: "Olives récoltées sur les filets" }[lang]}
+          aria-label={{ en: "Olives gathered on the nets", it: "Olive raccolte sulle reti", fr: "Olives récoltées sur les filets", de: "Geerntete Oliven auf den Netzen" }[lang]}
           style={{
             backgroundImage: "url('/whatsapp/20261013_182639_39141126622198536.jpg')",
             backgroundPosition: "center 50%",
@@ -93,7 +93,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         <div
           className="story-split-img"
           role="img"
-          aria-label={{ en: "Grapes during the harvest", it: "Grappoli d'uva durante la vendemmia", fr: "Grappes de raisin pendant les vendanges" }[lang]}
+          aria-label={{ en: "Grapes during the harvest", it: "Grappoli d'uva durante la vendemmia", fr: "Grappes de raisin pendant les vendanges", de: "Weintrauben während der Lese" }[lang]}
           style={{
             backgroundImage: "url('/whatsapp/20261015_133041_2040482263307048.jpg')",
             backgroundPosition: "center 60%",
@@ -102,7 +102,7 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         <div
           className="story-split-img"
           role="img"
-          aria-label={{ en: "Snails on an olive branch", it: "Chiocciole su un ramo d'ulivo", fr: "Escargots sur une branche d'olivier" }[lang]}
+          aria-label={{ en: "Snails on an olive branch", it: "Chiocciole su un ramo d'ulivo", fr: "Escargots sur une branche d'olivier", de: "Schnecken auf einem Olivenzweig" }[lang]}
           style={{
             backgroundImage: "url('/whatsapp/20261013_154515_1100237206085509.jpg')",
             backgroundPosition: "65% center",

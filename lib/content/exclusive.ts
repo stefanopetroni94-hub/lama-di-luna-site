@@ -238,4 +238,70 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
       "Indiquez-nous vos dates, le nombre de personnes et le type de rencontre que vous imaginez. Nous préparerons une proposition sur mesure pour le domaine en exclusivité.",
     bookingCta: "Faire une demande",
   },
+  de: {
+    counter: "Das ganze Gut",
+    breadcrumbRoot: "Startseite",
+    breadcrumbCurrent: "Masseria exklusiv",
+    heroEyebrow: "Die Masseria, ganz für Sie",
+    title: "Masseria exklusiv",
+    statementTitle: "Die ganze Masseria für Sie allein",
+    statementBody: [
+      "Für Hochzeiten, Familientreffen, Retreats oder einfach den Wunsch, gemeinsam zu verschwinden, kann Lama di Luna komplett gemietet werden. Die elf Zimmer für bis zu 27 Personen, der Innenhof, der Pool, die Bibliothek, der Kinoraum und das Refektorium gehören dann nur Ihnen. Keine anderen Gäste, keine festen Zeiten, keine Unterbrechungen. Mit unseren Köchen und unserem Team an Ihrer Seite, vom Concierge bis zur Rezeption, wird die Planung Ihrer Zeit in Apulien ganz einfach. Für die Exklusivnutzung der ganzen Masseria bitten wir um einen Mindestaufenthalt von drei Nächten.",
+    ],
+    stay: "",
+    weddingsText:
+      "Die Masseria kann Hochzeiten mit bis zu 150 Gästen ausrichten. Es gibt mehrere Bereiche zur Auswahl: Abendessen im Innenhof und, drinnen, wunderschöne historische Räume aus dem 19. Jahrhundert, in denen Sie geschützt vor dem Wetter feiern können.",
+    retreatsText:
+      "Yoga Retreats, Wellness Retreats, Firmenretreats und Retreats für persönliches Wachstum: Wir heißen jede Art von Retreat willkommen, die einen Ort des Friedens und der Harmonie sucht, auf einem biologischen Hof, der mit Sorgfalt von einer Familie geführt wird. Das Essen kommt aus unserer Gegend, folgt den Jahreszeiten und wird mit Liebe zubereitet.",
+    gatheringsText:
+      "Die Zimmer zum Innenhof sind ein perfekter Ort, an dem Freunde oder Familien zusammenkommen und Zeit in Ruhe und Freude verbringen können, zwischen den Sonnenuntergängen und den Olivenbäumen Apuliens. Mit einer privaten Küche und einem eigenen Team wird jeder Aufenthalt zu einem magischen Erlebnis.",
+    facts: [
+      { label: "Gäste", value: "Bis zu 22 Gäste" },
+      { label: "Zimmer", value: "11 restaurierte Zimmer" },
+      { label: "Land", value: "210 Hektar, biologisch" },
+      { label: "Minimum", value: "2 Nächte, ganzes Gut" },
+    ],
+    curvedLabel: "Ganz für Sie",
+    perksEyebrow: "Was Exklusivnutzung bedeutet",
+    perksTitle: "Das Gut, ohne andere Gäste",
+    perks: [
+      {
+        title: "Alle Zimmer",
+        body: "Alle elf Zimmer der Masseria, von den Siedlerkammern bis zur Deluxe Suite, nur für Ihre Gruppe reserviert.",
+      },
+      {
+        title: "Private Küche",
+        body: "The Veranda kocht nur für Sie: Menüs nach Maß aus dem Garten des Gutes, lange Tafeln unter den Gewölben oder unter den Sternen.",
+      },
+      {
+        title: "Das Gelände",
+        body: "Innenhöfe, der Panoramapool, die Kapelle und die Haine: das ganze Tal offen zum Spazieren, Zusammenkommen und Feiern.",
+      },
+      {
+        title: "Ein persönlicher Gastgeber",
+        body: "Eine Person, die alles organisiert: Transfers, Verkostungen, Musik, Blumen und die kleinen Details, die ein Treffen zu Ihrem machen.",
+      },
+      {
+        title: "Erlebnisse auf Anfrage",
+        body: "Olivenölverkostungen, Ernten, Kochkurse und geführte Ausflüge in die Alta Murgia, rund um Ihre Tage geplant.",
+      },
+      {
+        title: "Unabhängig vom Netz, mit Komfort",
+        body: "Mit Sonnenenergie betrieben und mit Solarwasser beheizt: stiller, nachhaltiger Luxus, ohne jeden Kompromiss beim Komfort.",
+      },
+    ],
+    photos: [IMG.photo1, IMG.photo2],
+    occasionsEyebrow: "Für die Anlässe, die zählen",
+    occasionsTitle: "Ein Ort zum Zusammenkommen",
+    occasionsBody: [
+      "Paare heiraten im Innenhof, wenn das Licht golden wird. Familien nehmen das ganze Haus für einen Sommer, die Kinder laufen zwischen den Hainen umher. Unternehmen bringen ihre Mitarbeiter hierher, um für ein paar Tage langsamer zu werden und klar zu denken.",
+      "Was auch immer der Anlass ist, die Masseria nimmt ihn behutsam auf: genug Raum für alle, genug Ruhe für die Momente, die zählen.",
+    ],
+    fullImg: IMG.full,
+    bookingEyebrow: "Anfrage zur Exklusivnutzung",
+    bookingTitle: "Die ganze Masseria reservieren",
+    bookingText:
+      "Nennen Sie uns Ihre Reisedaten, die Größe Ihrer Gruppe und die Art des Treffens, das Sie planen. Wir erstellen Ihnen ein maßgeschneidertes Angebot für die Exklusivnutzung des Gutes.",
+    bookingCta: "Anfrage senden",
+  },
 }

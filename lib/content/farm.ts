@@ -206,4 +206,63 @@ export const farm: Record<Locale, FarmContent> = {
       "L'huile d'olive extra vierge, les amandes et le vin du domaine sont servis à table et disponibles à emporter.",
     calloutCta: "Découvrez la boutique",
   },
+  de: {
+    heroEyebrow: "Der Bauernhof",
+    statementTitle: "Ein aktiver Biobauernhof mit 210 Hektar, am Rand des Nationalparks Alta Murgia",
+    statementBody: [
+      "Lama di Luna ist zuerst ein Bauernhof und erst dann ein Ort zum Wohnen. Rund um die Masseria, erbaut um 1830, erstrecken sich 210 Hektar Olivenhaine, Mandelhaine, Weinberge und Kirschgärten, alle biologisch bewirtschaftet und seit 1995 von AIAB-ICEA zertifiziert, der italienischen Stelle für ökologischen Landbau. Das Öl auf Ihrem Brot, die Mandeln zum Frühstück, der Wein zum Abendessen und die Seife in Ihrem Zimmer werden aus dem gemacht, was vor Ihrem Fenster wächst.",
+    ],
+    oliveLabel: "Der Bauernhof",
+    olive: {
+      eyebrow: "Coratina Oliven",
+      title: "Jahr für Jahr gepflanzt, seit über 35 Jahren",
+      body: [
+        "Die Familie Petroni ist seit mehreren Generationen eine Familie von Landwirten, Olivenbauern und Winzern. Als wir 1991 nach Lama di Luna kamen, war das Land kahl und verlassen. In über 35 Jahren haben wir Jahr für Jahr Olivenbäume, Mandelbäume, Reben und Eichen gepflanzt. Jede Pflanze in Lama di Luna wurde von uns gepflanzt, um die Landschaft wiederherzustellen und zugleich Produkte von hoher Qualität zu schaffen.",
+        "Außerdem haben wir einen Teil des Hofes bewahrt, der an den Nationalpark Alta Murgia grenzt, um die gesamte Artenvielfalt und die Tierwelt unserer Gegend zu schützen. Unser Hof ist eine Mischung aus biologischem Anbau und wilder Natur, die in Lama di Luna immer ein Zuhause finden und immer willkommen sein wird.",
+      ],
+      img: IMG.olive,
+    },
+    organicLabel: "Warum biologisch",
+    organic: {
+      eyebrow: "Zertifiziert seit 1995",
+      title: "Eine Landwirtschaft, die das Land wild bleiben lässt",
+      body: [
+        "Bio ist hier kein spät gekauftes Etikett, sondern die Art, wie das Gut schon immer geführt wurde. Kein synthetischer Dünger, keine chemischen Herbizide oder Pestizide: Der Boden wird vom Land selbst genährt, durch Zwischenfrüchte und Schnittholz, das der Erde zurückgegeben wird, und das Unkraut wird abgeweidet statt gespritzt.",
+        "Weil die Felder nie vergiftet werden, bleibt die Tierwelt des Nationalparks Alta Murgia: Turmfalken und Steinkäuze nisten in den vierzig Schornsteinen der Masseria, Füchse durchqueren in der Dämmerung die Olivenreihen, wilde Orchideen kehren jeden Frühling zurück. Ein gesunder Hof und ein lebendiger Park sind hier ein und dasselbe.",
+      ],
+      img: IMG.organic,
+    },
+    principlesEyebrow: "Wie wir wirtschaften",
+    principlesTitle: "Vier Grundsätze hinter dem Gut",
+    principles: [
+      {
+        num: "01",
+        title: "Bio zertifiziert von AIAB-ICEA",
+        body: "Jeder Hektar, Oliven, Mandeln, Reben und Kirschen, ist seit 1995 von AIAB-ICEA biologisch zertifiziert. Keine synthetischen Chemikalien berühren das Land, und die Zertifizierung wird jedes Jahr erneuert und kontrolliert.",
+      },
+      {
+        num: "02",
+        title: "Unabhängig vom Netz, mit der Sonne",
+        body: "Das ganze Gut lebt von seiner eigenen Energie: 48 Solarkollektoren für Warmwasser und Heizung, 400 Photovoltaikmodule für Strom. Dieselbe Sonne, die die Oliven reifen lässt, versorgt die Masseria, seit fast zwanzig Jahren ohne Stromnetz.",
+      },
+      {
+        num: "03",
+        title: "Von einem Gut, kalt gepresst",
+        body: "Die Oliven werden innerhalb weniger Stunden nach der Ernte gepflückt und kalt gepresst, nie mit Öl von anderswo gemischt. Was Sie schmecken, ist ein Gut, ein Herbst, ein Hügel der Murgia.",
+      },
+      {
+        num: "04",
+        title: "Landwirtschaft für die Tierwelt",
+        body: "Wir lassen die Felder ungiftig und die alten Bäume stehen, damit die Vögel, Füchse und Orchideen des Nationalparks das Land mit uns teilen können. Der Hof lebt im Park, nicht gegen ihn.",
+      },
+    ],
+    fullPhoto: IMG.full,
+    seasons:
+      "Während Ihres Aufenthalts in Lama di Luna können Sie das Leben auf dem Hof miterleben und zur richtigen Jahreszeit die Arbeit auf den Feldern verfolgen und einige Früchte kosten. Im Mai die Maulbeeren rund um die Masseria, im Juni die Kirschen, im Juli die Tomatenernte für die Sauce unserer Köchinnen, im August und September die Wein und Mandelernte und im Oktober die lang erwartete Olivenernte.",
+    calloutEyebrow: "Vom Gut",
+    calloutTitle: "Kosten Sie den Hof, bevor Sie abreisen",
+    calloutBody:
+      "Natives Olivenöl extra, Mandeln und Wein vom Gut werden bei Tisch serviert und können auch mit nach Hause genommen werden.",
+    calloutCta: "Zum Shop",
+  },
 }

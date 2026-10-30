@@ -9,6 +9,7 @@ const TEXT = {
   en: { title: "Book your stay", frame: "Booking engine" },
   it: { title: "Prenota il tuo soggiorno", frame: "Motore di prenotazione" },
   fr: { title: "Réservez votre séjour", frame: "Moteur de réservation" },
+  de: { title: "Buchen Sie Ihren Aufenthalt", frame: "Buchungssystem" },
 }
 
 export default async function BookingPage({

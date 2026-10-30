@@ -2,7 +2,7 @@ import type { Locale } from "@/lib/i18n"
 
 /** Round bordeaux WhatsApp button, fixed bottom right. Opens a chat with the masseria. */
 export function WhatsAppButton({ locale }: { locale: Locale }) {
-  const label = { en: "Chat with us on WhatsApp", it: "Scrivici su WhatsApp", fr: "Écrivez-nous sur WhatsApp" }[locale]
+  const label = { en: "Chat with us on WhatsApp", it: "Scrivici su WhatsApp", fr: "Écrivez-nous sur WhatsApp", de: "Schreiben Sie uns auf WhatsApp" }[locale]
 
   return (
     <a

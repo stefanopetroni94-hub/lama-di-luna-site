@@ -19,14 +19,15 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
     en: { man: "Photo of Giuseppe Patroni Griffi, Baron of Faivano, owner of Lama di Luna", woman: "Photo of Veneranda Gioia, wife of Giuseppe Patroni Griffi" },
     it: { man: "Foto di Giuseppe Patroni Griffi, barone di Faivano, proprietario di Lama di Luna", woman: "Foto di Veneranda Gioia, moglie di Giuseppe Patroni Griffi" },
     fr: { man: "Photo de Giuseppe Patroni Griffi, baron de Faivano, propriétaire de Lama di Luna", woman: "Photo de Veneranda Gioia, épouse de Giuseppe Patroni Griffi" },
+    de: { man: "Foto von Giuseppe Patroni Griffi, Baron von Faivano, Besitzer von Lama di Luna", woman: "Foto von Veneranda Gioia, Ehefrau von Giuseppe Patroni Griffi" },
   }[lang]
 
   const chapter = (ch: (typeof c.chapters)[number], n: number) => {
     const image =
       n === 0 ? (
         <PhotoPair
-          openLabel={{ en: "Show caption", it: "Mostra didascalia", fr: "Afficher la légende" }[lang]}
-          closeLabel={{ en: "Hide caption", it: "Nascondi didascalia", fr: "Masquer la légende" }[lang]}
+          openLabel={{ en: "Show caption", it: "Mostra didascalia", fr: "Afficher la légende", de: "Bildunterschrift anzeigen" }[lang]}
+          closeLabel={{ en: "Hide caption", it: "Nascondi didascalia", fr: "Masquer la légende", de: "Bildunterschrift ausblenden" }[lang]}
           photos={[
             {
               src: "/whatsapp/20261030_075504_982971887620842.jpg",
@@ -120,6 +121,7 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
               en: "1800s to 1950s: a community at work, then the decline",
               it: "Dall'Ottocento agli anni Cinquanta: una comunità al lavoro, poi il declino",
               fr: "Du XIXe siècle aux années 1950 : une communauté au travail, puis le déclin",
+              de: "Vom 19. Jahrhundert bis in die 1950er Jahre: eine Gemeinschaft bei der Arbeit, dann der Niedergang",
             }[lang]}
           </div>
           <div className="statement-body">
