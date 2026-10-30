@@ -6,6 +6,15 @@ import { QuickSearch } from "@/components/quick-search"
 import { rooms } from "@/lib/content/rooms"
 import { book } from "@/lib/content/book"
 import { isLocale, menu } from "@/lib/i18n"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
+  const { lang, slug } = await params
+  if (!isLocale(lang)) return {}
+  const room = rooms[lang].list.find((r) => r.slug === slug)
+  return pageMetadata(lang, `rooms/${slug}`, room?.name)
+}
 
 export default async function RoomDetailPage({
   params,

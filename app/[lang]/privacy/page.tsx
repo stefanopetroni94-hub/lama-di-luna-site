@@ -4,6 +4,14 @@ import { SiteFooter } from "@/components/site-footer"
 import { BackLink } from "@/components/back-link"
 import { HOME, isLocale } from "@/lib/i18n"
 import { contact } from "@/lib/content/contact"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params
+  if (!isLocale(lang)) return {}
+  return pageMetadata(lang, "privacy", { en: "Privacy", it: "Privacy", fr: "Confidentialité" }[lang])
+}
 
 type Section = { title: string; body: string[] }
 

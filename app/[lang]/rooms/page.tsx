@@ -7,6 +7,14 @@ import { rooms, type Room } from "@/lib/content/rooms"
 import { book } from "@/lib/content/book"
 import { BackLink } from "@/components/back-link"
 import { HOME, isLocale, type Locale } from "@/lib/i18n"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params
+  if (!isLocale(lang)) return {}
+  return pageMetadata(lang, "rooms")
+}
 
 function RoomCard({ room, c, lang }: { room: Room; c: (typeof rooms)["en"]; lang: Locale }) {
   return (

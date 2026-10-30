@@ -6,6 +6,15 @@ import { AddToCart } from "@/components/add-to-cart"
 import { BackLink } from "@/components/back-link"
 import { isLocale, menu } from "@/lib/i18n"
 import { shop } from "@/lib/content/shop"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
+  const { lang, slug } = await params
+  if (!isLocale(lang)) return {}
+  const product = shop[lang].products.find((p) => p.id === slug)
+  return pageMetadata(lang, `shop/${slug}`, product?.name)
+}
 
 const WINE_IDS = ["primitivo", "nero-di-troia", "nero-di-troia-rose", "fiano"]
 

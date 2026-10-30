@@ -8,6 +8,16 @@ import { experiences } from "@/lib/content/experiences"
 import { experienceDetails, experienceFacts } from "@/lib/content/experience-details"
 import { oliveHarvest } from "@/lib/content/olive-harvest"
 import { chrome, isLocale } from "@/lib/i18n"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
+  const { lang, slug } = await params
+  if (!isLocale(lang)) return {}
+  const e = experiences[lang]
+  const card = [...e.onEstate, ...e.inRegion].find((c) => c.slug === slug)
+  return pageMetadata(lang, `experiences/${slug}`, card?.name)
+}
 
 const OLIVE_PHOTO = "/whatsapp/20261028_065214_1516459033640755.jpg"
 

@@ -6,6 +6,14 @@ import { BackLink } from "@/components/back-link"
 import { HOME, isLocale } from "@/lib/i18n"
 import { restaurant } from "@/lib/content/restaurant"
 import { farm } from "@/lib/content/farm"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params
+  if (!isLocale(lang)) return {}
+  return pageMetadata(lang, "restaurant")
+}
 
 export default async function RestaurantPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params

@@ -5,6 +5,14 @@ import { SiteFooter } from "@/components/site-footer"
 import { BackLink } from "@/components/back-link"
 import { HOME, chrome, isLocale } from "@/lib/i18n"
 import { farm } from "@/lib/content/farm"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params
+  if (!isLocale(lang)) return {}
+  return pageMetadata(lang, "farm")
+}
 
 export default async function FarmPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params

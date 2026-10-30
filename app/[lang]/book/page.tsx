@@ -9,6 +9,14 @@ import { HOME, isLocale } from "@/lib/i18n"
 import { book } from "@/lib/content/book"
 import { bookingUrl } from "@/lib/booking"
 import { BookLink } from "@/components/book-link"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params
+  if (!isLocale(lang)) return {}
+  return pageMetadata(lang, "book", { en: "Book", it: "Prenota", fr: "Réserver" }[lang])
+}
 
 export default async function BookPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params

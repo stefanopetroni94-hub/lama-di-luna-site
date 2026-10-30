@@ -7,6 +7,14 @@ import { Scopri } from "@/components/scopri"
 import { HOME, isLocale } from "@/lib/i18n"
 import { exclusive } from "@/lib/content/exclusive"
 import { WaveLine } from "@/components/wave-line"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params
+  if (!isLocale(lang)) return {}
+  return pageMetadata(lang, "exclusive")
+}
 
 export default async function ExclusivePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params

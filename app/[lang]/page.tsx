@@ -10,6 +10,14 @@ import { QuickSearch } from "@/components/quick-search"
 import { chrome, isLocale } from "@/lib/i18n"
 import { home } from "@/lib/content/home"
 import { book } from "@/lib/content/book"
+import type { Metadata } from "next"
+import { hotelSchema, pageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params
+  if (!isLocale(lang)) return {}
+  return pageMetadata(lang, "")
+}
 
 export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -19,6 +27,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hotelSchema(lang)) }} />
       <SiteNav locale={lang} variant="overlay" />
 
       <section className="hero hero--home">

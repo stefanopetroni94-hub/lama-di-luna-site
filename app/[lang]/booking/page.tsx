@@ -4,6 +4,14 @@ import { SiteFooter } from "@/components/site-footer"
 import { BackLink } from "@/components/back-link"
 import { engineUrl } from "@/lib/booking"
 import { HOME, isLocale } from "@/lib/i18n"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params
+  if (!isLocale(lang)) return {}
+  return pageMetadata(lang, "booking", { en: "Booking", it: "Prenotazione", fr: "Réservation" }[lang])
+}
 
 const TEXT = {
   en: { title: "Book your stay", frame: "Booking engine" },

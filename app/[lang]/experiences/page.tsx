@@ -5,6 +5,14 @@ import { SiteFooter } from "@/components/site-footer"
 import { experiences, type ExpCard } from "@/lib/content/experiences"
 import { BackLink } from "@/components/back-link"
 import { HOME, isLocale, type Locale } from "@/lib/i18n"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params
+  if (!isLocale(lang)) return {}
+  return pageMetadata(lang, "experiences")
+}
 
 function Card({ card, lang }: { card: ExpCard; lang: Locale }) {
   const href = card.slug === "#" ? "#" : `/${lang}/experiences/${card.slug}`

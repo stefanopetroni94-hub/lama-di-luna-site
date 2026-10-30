@@ -15,6 +15,8 @@ export const metadata: Metadata = {
   description:
     "An 18th-century organic masseria in the heart of Puglia. Stay, taste, and take part in authentic countryside experiences.",
   generator: "v0.app",
+  // Vercel previews stay out of Google; only production is indexed.
+  robots: process.env.VERCEL_ENV === "production" ? undefined : { index: false, follow: false },
 }
 
 export const viewport: Viewport = {
