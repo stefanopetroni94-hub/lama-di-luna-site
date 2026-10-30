@@ -3,6 +3,7 @@ import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
 import { BackLink } from "@/components/back-link"
+import { PhotoPair } from "@/components/photo-pair"
 import { HOME, chrome, isLocale } from "@/lib/i18n"
 import { story } from "@/lib/content/story"
 
@@ -13,13 +14,36 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
   const t = chrome[lang]
   const community = c.chapters[1]
   const decline = c.chapters[2]
+  const pairText = {
+    en: { man: "Portrait of a gentleman, R. Ferretti studio, Naples", woman: "Portrait of a lady with a lace veil and flowers" },
+    it: { man: "Ritratto di un signore, studio R. Ferretti, Napoli", woman: "Ritratto di una signora con velo di pizzo e fiori" },
+    fr: { man: "Portrait d'un monsieur, studio R. Ferretti, Naples", woman: "Portrait d'une dame avec voile de dentelle et fleurs" },
+  }[lang]
 
   const chapter = (ch: (typeof c.chapters)[number], n: number) => {
-    const image = (
-      <div className="image-block image-block--zoom">
-        <div style={{ backgroundImage: `url('${ch.img}')` }} />
-      </div>
-    )
+    const image =
+      n === 0 ? (
+        <PhotoPair
+          openLabel={{ en: "Show caption", it: "Mostra didascalia", fr: "Afficher la légende" }[lang]}
+          closeLabel={{ en: "Hide caption", it: "Nascondi didascalia", fr: "Masquer la légende" }[lang]}
+          photos={[
+            {
+              src: "/whatsapp/20261030_075504_982971887620842.jpg",
+              alt: pairText.man,
+              caption: pairText.man,
+            },
+            {
+              src: "/whatsapp/20261030_075517_1121991600569154.jpg",
+              alt: pairText.woman,
+              caption: pairText.woman,
+            },
+          ]}
+        />
+      ) : (
+        <div className="image-block image-block--zoom">
+          <div style={{ backgroundImage: `url('${ch.img}')` }} />
+        </div>
+      )
     const text = (
       <div className="text-block">
         <div className="room-name" style={{ marginBottom: "1rem" }}>

@@ -3158,6 +3158,77 @@ footer {
     margin-top: -9rem;
   }
 }
+/* story, late 1700s: two old portraits that overlap at the corners, each with a red "+" that opens its caption */
+.photo-pair {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 100 / 142;
+}
+.photo-pair-item {
+  position: absolute;
+  width: 58%;
+  aspect-ratio: 3 / 4;
+  margin: 0;
+  overflow: hidden;
+}
+.photo-pair-item--top {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.photo-pair-item--bottom {
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.photo-pair-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+.photo-pair-toggle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  padding: 0;
+  background: #d0021b;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.photo-pair-toggle span {
+  display: block;
+  transition: transform 0.3s ease;
+}
+.photo-pair-toggle.is-open span {
+  transform: rotate(45deg);
+}
+.photo-pair-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 0.9rem 1rem 0.9rem 3.5rem;
+  min-height: 2.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+.photo-pair-caption.is-open {
+  opacity: 1;
+  visibility: visible;
+}
 .story-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
