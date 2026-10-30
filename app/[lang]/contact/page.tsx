@@ -65,6 +65,8 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
         <p>
           {h.mapText.join(" ")} {c.mapBody}
         </p>
+        <div className="find-us-title">{c.directionsTitle}</div>
+        <p>{c.directions}</p>
       </section>
 
       <section className="map-wrap">

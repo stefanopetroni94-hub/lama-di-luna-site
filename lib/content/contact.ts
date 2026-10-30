@@ -32,6 +32,8 @@ export type ContactContent = {
   mapEyebrow: string
   mapTitle: string
   mapBody: string
+  directionsTitle: string
+  directions: string
   distances: Distance[]
 }
 
@@ -70,6 +72,9 @@ export const contact: Record<"en" | "it" | "fr" | "de", ContactContent> = {
     mapTitle: "An hour from Bari, 20 minutes from Castel del Monte",
     mapBody:
       "A rented car is the easiest way to reach us. We can also arrange a private transfer from any airport or station — write to us in advance. We also have charging points for electric vehicles.",
+    directionsTitle: "How to reach us",
+    directions:
+      "From the A14 motorway, from north or south (15 km in total): exit at Canosa di Puglia and turn right at once for Minervino Murge. After 500 m turn right again towards Minervino Murge. Follow the SR6 for 6 km, then exit for Andria. Follow the SP231 for 3 km and turn right for Montegrosso. In Montegrosso go straight on towards Minervino Murge for 3.5 km: the Lama di Luna sign is on the left.",
     distances: [
       { place: "Bari Airport (BRI)", distance: "55 min" },
       { place: "Brindisi Airport (BDS)", distance: "2 h 10 min" },
@@ -115,6 +120,9 @@ export const contact: Record<"en" | "it" | "fr" | "de", ContactContent> = {
     mapTitle: "Un'ora da Bari, 20 minuti da Castel del Monte",
     mapBody:
       "Un'auto a noleggio è il modo più facile per raggiungerci. Possiamo anche organizzare un transfer privato da qualsiasi aeroporto o stazione — scrivici in anticipo. Disponiamo anche di punti di ricarica per veicoli elettrici.",
+    directionsTitle: "Come raggiungerci",
+    directions:
+      "Dall'autostrada A14, sia da nord che da sud (15 km in tutto): uscita Canosa di Puglia, svoltare subito a destra per Minervino Murge. Dopo 500 m svoltare ancora a destra direzione Minervino Murge. Percorrere la SR6 per 6 km, quindi uscire per Andria. Percorrere la SP231 per 3 km e svoltare a destra per Montegrosso. Giunti a Montegrosso proseguire dritto direzione Minervino Murge per 3,5 km: a sinistra la segnaletica aziendale per Lama di Luna.",
     distances: [
       { place: "Aeroporto di Bari (BRI)", distance: "55 min" },
       { place: "Aeroporto di Brindisi (BDS)", distance: "2 h 10 min" },
@@ -160,6 +168,9 @@ export const contact: Record<"en" | "it" | "fr" | "de", ContactContent> = {
     mapTitle: "À une heure de Bari, à 20 minutes de Castel del Monte",
     mapBody:
       "Une voiture de location est le moyen le plus simple de nous rejoindre. Nous pouvons aussi organiser un transfert privé depuis n'importe quel aéroport ou gare, écrivez-nous à l'avance. Nous disposons aussi de bornes de recharge pour véhicules électriques.",
+    directionsTitle: "Comment nous joindre",
+    directions:
+      "De l'autoroute A14, du nord comme du sud (15 km au total) : sortie Canosa di Puglia, tourner immédiatement à droite en direction de Minervino Murge. Après 500 m, tourner encore à droite en direction de Minervino Murge. Suivre la SR6 pendant 6 km puis sortir pour Andria. Suivre la SP231 pendant 3 km et tourner à droite pour Montegrosso. À Montegrosso, continuer tout droit en direction de Minervino Murge pendant 3,5 km : le panneau Lama di Luna est sur la gauche.",
     distances: [
       { place: "Aéroport de Bari (BRI)", distance: "55 min" },
       { place: "Aéroport de Brindisi (BDS)", distance: "2 h 10 min" },
@@ -205,6 +216,9 @@ export const contact: Record<"en" | "it" | "fr" | "de", ContactContent> = {
     mapTitle: "Eine Stunde von Bari, 20 Minuten von Castel del Monte",
     mapBody:
       "Mit dem Mietwagen erreichen Sie uns am einfachsten. Wir können auch einen privaten Transfer von jedem Flughafen oder Bahnhof organisieren, schreiben Sie uns dazu vorab. Außerdem gibt es bei uns Ladestationen für Elektroautos.",
+    directionsTitle: "Wie Sie uns erreichen",
+    directions:
+      "Von der Autobahn A14, aus Norden wie aus Süden (insgesamt 15 km): Ausfahrt Canosa di Puglia, sofort rechts abbiegen Richtung Minervino Murge. Nach 500 m erneut rechts Richtung Minervino Murge. 6 km auf der SR6, dann Ausfahrt Andria. 3 km auf der SP231, dann rechts Richtung Montegrosso. In Montegrosso 3,5 km geradeaus Richtung Minervino Murge: das Schild Lama di Luna steht auf der linken Seite.",
     distances: [
       { place: "Flughafen Bari (BRI)", distance: "55 Min." },
       { place: "Flughafen Brindisi (BDS)", distance: "2 Std. 10 Min." },
