@@ -3,6 +3,8 @@ import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
 import { BackLink } from "@/components/back-link"
+import { PhotoPair } from "@/components/photo-pair"
+import { CrossfadeImage } from "@/components/crossfade-image"
 import { HOME, chrome, isLocale } from "@/lib/i18n"
 import { story } from "@/lib/content/story"
 import type { Metadata } from "next"
@@ -21,13 +23,40 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
   const t = chrome[lang]
   const community = c.chapters[1]
   const decline = c.chapters[2]
+  const pairText = {
+    en: { man: "Photo of Giuseppe Patroni Griffi, Baron of Faivano, owner of Lama di Luna", woman: "Photo of Veneranda Gioia, wife of Giuseppe Patroni Griffi" },
+    it: { man: "Foto di Giuseppe Patroni Griffi, barone di Faivano, proprietario di Lama di Luna", woman: "Foto di Veneranda Gioia, moglie di Giuseppe Patroni Griffi" },
+    fr: { man: "Photo de Giuseppe Patroni Griffi, baron de Faivano, propriétaire de Lama di Luna", woman: "Photo de Veneranda Gioia, épouse de Giuseppe Patroni Griffi" },
+  }[lang]
 
   const chapter = (ch: (typeof c.chapters)[number], n: number) => {
-    const image = (
-      <div className="image-block image-block--zoom">
-        <div style={{ backgroundImage: `url('${ch.img}')` }} />
-      </div>
-    )
+    const image =
+      n === 0 ? (
+        <PhotoPair
+          openLabel={{ en: "Show caption", it: "Mostra didascalia", fr: "Afficher la légende" }[lang]}
+          closeLabel={{ en: "Hide caption", it: "Nascondi didascalia", fr: "Masquer la légende" }[lang]}
+          photos={[
+            {
+              src: "/whatsapp/20261030_075504_982971887620842.jpg",
+              alt: pairText.man,
+              caption: pairText.man,
+              size: "122% auto",
+              position: "48.5% 35.7%",
+            },
+            {
+              src: "/whatsapp/20261030_075517_1121991600569154.jpg",
+              alt: pairText.woman,
+              caption: pairText.woman,
+              size: "121.3% auto",
+              position: "50.3% 19.5%",
+            },
+          ]}
+        />
+      ) : (
+        <div className="image-block image-block--zoom">
+          <div style={{ backgroundImage: `url('${ch.img}')` }} />
+        </div>
+      )
     const text = (
       <div className="text-block">
         <div className="room-name" style={{ marginBottom: "1rem" }}>
@@ -83,12 +112,7 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
       {chapter(c.chapters[0], 0)}
 
       <section className="story-split">
-        <div
-          className="story-split-img"
-          role="img"
-          aria-label={community.title}
-          style={{ backgroundImage: `url('${community.img}')` }}
-        />
+        <CrossfadeImage images={[community.img, c.chapters[0].img]} label={community.title} />
         <div
           className="story-split-img"
           role="img"
@@ -100,9 +124,12 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
       <section className="story-wide">
         <div className="statement-inner">
           <div className="room-name" style={{ marginBottom: "1rem" }}>
-            {community.eyebrow}, {decline.eyebrow}
+            {{
+              en: "1800s to 1950s: a community at work, then the decline",
+              it: "Dall'Ottocento agli anni Cinquanta: una comunità al lavoro, poi il declino",
+              fr: "Du XIXe siècle aux années 1950 : une communauté au travail, puis le déclin",
+            }[lang]}
           </div>
-          <h2>{{ en: "A community at work, then decline", it: "Una comunità al lavoro, poi il declino", fr: "Une communauté au travail, puis le déclin" }[lang]}</h2>
           <div className="statement-body">
             <p>{[...community.body, ...decline.body].join(" ")}</p>
           </div>
