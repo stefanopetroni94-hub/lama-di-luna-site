@@ -14,14 +14,20 @@ export type Zone = {
   open: boolean // false = not sold there yet (see the reason above the zone)
 }
 
-const EU = ["AT", "BE", "BG", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GR", "HR", "HU", "IE", "LT", "LU", "LV", "MT", "NL", "PL", "PT", "RO", "SE", "SI", "SK"]
+// Prices researched 2026-11-01 from live Packlink quotes out of 76013, VAT included (.scratch/lama-seo/shipping-research.md).
+// EU split: Ireland, Nordics, Greece, east cost about twice Germany.
+const EU_CORE = ["AT", "BE", "DE", "ES", "FR", "LU", "NL", "PT"]
+const EU_REST = ["BG", "CY", "CZ", "DK", "EE", "FI", "GR", "HR", "HU", "IE", "LT", "LV", "MT", "PL", "RO", "SE", "SI", "SK"]
+
+// Outer box and padding, added once per order.
+export const BOX_GRAMS = 300
 
 // PROVISIONAL numbers, replaced by real carrier quotes before go live (see Website.md hub, Shop row).
 export const zones: Zone[] = [
   {
     id: "it",
     countries: ["IT", "SM", "VA"],
-    bands: [{ maxGrams: 3000, cents: 900 }, { maxGrams: 10000, cents: 1200 }, { maxGrams: 20000, cents: 1600 }],
+    bands: [{ maxGrams: 4000, cents: 1000 }, { maxGrams: 10000, cents: 1400 }, { maxGrams: 20000, cents: 1700 }],
     days: [2, 4],
     kinds: ["oil", "wine", "cosmetic"],
     freeFromCents: 9000,
@@ -29,16 +35,24 @@ export const zones: Zone[] = [
   },
   {
     id: "eu",
-    countries: EU,
-    bands: [{ maxGrams: 3000, cents: 1900 }, { maxGrams: 10000, cents: 2900 }, { maxGrams: 20000, cents: 3900 }],
+    countries: EU_CORE,
+    bands: [{ maxGrams: 4000, cents: 2100 }, { maxGrams: 10000, cents: 2700 }, { maxGrams: 20000, cents: 3500 }],
     days: [3, 7],
     kinds: ["oil", "cosmetic"], // wine: excise is due in the buyer's country, needs a fiscal representative there
     open: true,
   },
   {
+    id: "eu-rest",
+    countries: EU_REST,
+    bands: [{ maxGrams: 4000, cents: 2600 }, { maxGrams: 10000, cents: 3900 }, { maxGrams: 20000, cents: 5900 }],
+    days: [4, 9],
+    kinds: ["oil", "cosmetic"],
+    open: true,
+  },
+  {
     id: "ch",
     countries: ["CH", "LI"],
-    bands: [{ maxGrams: 3000, cents: 3500 }, { maxGrams: 10000, cents: 5500 }, { maxGrams: 20000, cents: 7500 }],
+    bands: [{ maxGrams: 4000, cents: 2500 }, { maxGrams: 10000, cents: 3500 }, { maxGrams: 20000, cents: 4500 }],
     days: [4, 8],
     kinds: ["oil", "cosmetic"], // buyer pays Swiss import VAT; seller registration only above CHF 100k a year
     open: true,
@@ -77,7 +91,7 @@ export function quote(lines: CartLine[], country: string): Quote {
   if (!zone) return { ok: false, reason: "country" }
   const blocked = lines.filter((l) => !zone.kinds.includes(byId(l.id)!.kind)).map((l) => l.id)
   if (blocked.length) return { ok: false, reason: "kind", blocked }
-  const grams = lines.reduce((s, l) => s + byId(l.id)!.grams * l.qty, 0)
+  const grams = BOX_GRAMS + lines.reduce((s, l) => s + byId(l.id)!.grams * l.qty, 0)
   const goodsCents = lines.reduce((s, l) => s + byId(l.id)!.priceCents * l.qty, 0)
   const band = zone.bands.find((b) => grams <= b.maxGrams)
   if (!band) return { ok: false, reason: "weight" }
