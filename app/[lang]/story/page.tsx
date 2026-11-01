@@ -166,7 +166,7 @@ export default async function StoryPage({ params }: { params: Promise<{ lang: st
         <div className="booking-callout-inner">
           <h2>{c.calloutTitle}</h2>
           <p>{c.calloutBody}</p>
-          <Link href={`/${lang}/book`} className="btn-primary btn-primary--pill">
+          <Link href={`/${lang}/rooms`} className="btn-primary btn-primary--pill">
             {c.calloutCta}
           </Link>
         </div>

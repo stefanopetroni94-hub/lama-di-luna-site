@@ -57,7 +57,7 @@ export const home: Record<Locale, HomeContent> = {
       {
         slug: "murgia",
         name: "Murgia",
-        desc: "Named for the wild uplands beyond the walls, the Murgia room looks out over the olive groves and open countryside. Whitewashed stone, a vaulted ceiling, brass bed from the 1800s and natural linen — quiet and full of light.",
+        desc: "Named for the wild uplands beyond the walls, the Murgia room looks out over the olive groves and open countryside. Whitewashed stone, a vaulted ceiling, brass bed from the 1800s and natural linen.",
         img: IMG.murgia,
       },
       {
@@ -113,7 +113,7 @@ export const home: Record<Locale, HomeContent> = {
       {
         slug: "murgia",
         name: "Murgia",
-        desc: "Dedicata agli altopiani selvaggi oltre le mura, la camera Murgia si affaccia sugli uliveti e sulla campagna aperta. Pietra imbiancata a calce, volta a botte, letto in ottone dell'Ottocento e lino naturale — silenziosa e piena di luce.",
+        desc: "Dedicata agli altopiani selvaggi oltre le mura, la camera Murgia si affaccia sugli uliveti e sulla campagna aperta. Pietra imbiancata a calce, volta a botte, letto in ottone dell'Ottocento e lino naturale.",
         img: IMG.murgia,
       },
       {
@@ -170,7 +170,7 @@ export const home: Record<Locale, HomeContent> = {
       {
         slug: "murgia",
         name: "Murgia",
-        desc: "Baptisée d'après les hauts plateaux sauvages au delà des murs, la chambre Murgia s'ouvre sur les oliveraies et la campagne. Pierre blanchie à la chaux, plafond voûté, lit en laiton du XIXe siècle et lin naturel : calme et pleine de lumière.",
+        desc: "Baptisée d'après les hauts plateaux sauvages au delà des murs, la chambre Murgia s'ouvre sur les oliveraies et la campagne. Pierre blanchie à la chaux, plafond voûté, lit en laiton du XIXe siècle et lin naturel.",
         img: IMG.murgia,
       },
       {
@@ -226,7 +226,7 @@ export const home: Record<Locale, HomeContent> = {
       {
         slug: "murgia",
         name: "Murgia",
-        desc: "Benannt nach der wilden Hochebene jenseits der Mauern, blickt das Zimmer Murgia auf die Olivenhaine und die offene Landschaft. Weiß gekalkter Stein, ein Gewölbe, ein Messingbett aus dem 19. Jahrhundert und naturbelassenes Leinen: still und voller Licht.",
+        desc: "Benannt nach der wilden Hochebene jenseits der Mauern, blickt das Zimmer Murgia auf die Olivenhaine und die offene Landschaft. Weiß gekalkter Stein, ein Gewölbe, ein Messingbett aus dem 19. Jahrhundert und naturbelassenes Leinen.",
         img: IMG.murgia,
       },
       {
