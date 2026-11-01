@@ -27,7 +27,7 @@ export const zones: Zone[] = [
   {
     id: "it",
     countries: ["IT", "SM", "VA"],
-    bands: [{ maxGrams: 4000, cents: 1000 }, { maxGrams: 10000, cents: 1400 }, { maxGrams: 20000, cents: 1700 }],
+    bands: [{ maxGrams: 4000, cents: 1200 }, { maxGrams: 10000, cents: 1600 }, { maxGrams: 20000, cents: 1900 }], // +€2 on the quote: box and padding cost €1 to €3, islands margin was €0.57,
     days: [2, 4],
     kinds: ["oil", "wine", "cosmetic"],
     freeFromCents: 9000,
