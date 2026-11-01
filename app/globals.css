@@ -4940,3 +4940,26 @@ footer {
     border-right: none !important;
   }
 }
+
+/* Shop cart (components/cart.tsx, cart-view.tsx) */
+.cart-pill { position: fixed; right: 1.2rem; bottom: 5.5rem; z-index: 40; background: var(--ink); color: #fff; border-radius: 999px; padding: .8rem 1.4rem; font-family: var(--serif); font-size: 11px; letter-spacing: .22em; text-transform: uppercase; text-decoration: none; }
+.cart-pill-n { display: inline-block; margin-left: .5rem; min-width: 1.4em; text-align: center; }
+.cart { max-width: 920px; margin: 0 auto 5rem; padding: 0 1rem; display: grid; grid-template-columns: 1fr 320px; gap: 3rem; }
+.cart-lines { list-style: none; padding: 0; margin: 0; }
+.cart-line { display: grid; grid-template-columns: 72px 1fr auto auto; gap: 1rem; align-items: center; padding: 1rem 0; border-bottom: 1px solid color-mix(in srgb, var(--ink) 15%, transparent); }
+.cart-line-img { width: 72px; height: 90px; background: center / contain no-repeat; }
+.cart-line-name a { color: var(--ink); text-decoration: none; font-family: var(--serif); }
+.cart-remove { display: block; margin-top: .35rem; background: none; border: 0; padding: 0; font-size: 12px; color: var(--olive); cursor: pointer; }
+.cart-qty { display: flex; align-items: center; gap: .6rem; }
+.cart-qty button { width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--ink); background: none; cursor: pointer; color: var(--ink); }
+.cart-summary { display: flex; flex-direction: column; gap: .8rem; }
+.cart-country { display: flex; flex-direction: column; gap: .4rem; font-size: 13px; }
+.cart-country select { padding: .7rem; border: 1px solid var(--ink); background: transparent; color: var(--ink); font: inherit; }
+.cart-row { display: flex; justify-content: space-between; gap: 1rem; font-size: 14px; }
+.cart-total { font-weight: 600; border-top: 1px solid color-mix(in srgb, var(--ink) 25%, transparent); padding-top: .8rem; }
+.cart-note { font-size: 12px; opacity: .7; margin: 0; }
+.cart-warn { font-size: 13px; color: #9b2c1c; margin: 0; }
+.cart-pay { border: 0; cursor: pointer; text-align: center; }
+.cart-pay:disabled { opacity: .4; cursor: default; }
+.cart-empty { text-align: center; padding: 2rem 1rem 6rem; display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
+@media (max-width: 800px) { .cart { grid-template-columns: 1fr; gap: 2rem; } .cart-line { grid-template-columns: 56px 1fr auto; } .cart-line-price { grid-column: 2 / 4; text-align: right; } }

@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation"
-import Link from "next/link"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { BackLink } from "@/components/back-link"
@@ -7,6 +6,7 @@ import { isLocale, menu } from "@/lib/i18n"
 import { shop } from "@/lib/content/shop"
 import type { Metadata } from "next"
 import { pageMetadata } from "@/lib/seo"
+import { AddToCart, CartPill } from "@/components/cart"
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
   const { lang, slug } = await params
@@ -76,13 +76,12 @@ export default async function ProductPage({
           {product.desc ? <p className="shop-detail-text">{product.desc}</p> : null}
 
           <div className="shop-detail-actions">
-            <Link href={`/${lang}/contact?product=${encodeURIComponent(product.name)}`} className="book-stay-btn">
-              {{ en: "Contact us to order", it: "Contattaci per ordinare", fr: "Contactez-nous pour commander", de: "Kontaktieren Sie uns zur Bestellung" }[lang]}
-            </Link>
+            <AddToCart id={product.id} locale={lang} className="book-stay-btn" />
           </div>
         </div>
       </article>
 
+      <CartPill locale={lang} />
       <SiteFooter locale={lang} />
     </>
   )

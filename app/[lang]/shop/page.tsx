@@ -7,6 +7,7 @@ import { HOME, isLocale } from "@/lib/i18n"
 import { shop } from "@/lib/content/shop"
 import type { Metadata } from "next"
 import { pageMetadata } from "@/lib/seo"
+import { AddToCart, CartPill } from "@/components/cart"
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
@@ -72,15 +73,14 @@ export default async function ShopPage({ params }: { params: Promise<{ lang: str
               <div className="shop-card-meta">{product.meta}</div>
               <div className="shop-card-footer">
                 <div className="shop-card-price">{product.price}</div>
-                <Link href={`/${lang}/contact?product=${encodeURIComponent(product.name)}`} className="shop-card-add">
-                  {c.addLabel}
-                </Link>
+                <AddToCart id={product.id} locale={lang} />
               </div>
             </article>
           ))}
         </section>
 
         <p className="shop-note">{c.note}</p>
+        <CartPill locale={lang} />
       </div>
 
       <SiteFooter locale={lang} />

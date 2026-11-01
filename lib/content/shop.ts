@@ -129,7 +129,7 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "bath-set", name: "Bath Set: Body Wash, Shampoo & Conditioner", meta: "", price: "€40", img: PH.wash, imgs: [PH.wash, PH.shampoo, PH.conditioner], contain: true },
       { id: "orcio", name: "Ceramic Orcio with Extra Virgin Olive Oil", meta: "A ceramic orcio filled with our extra virgin olive oil. 350 g.", price: "€32", img: PH.orcio, contain: true },
     ],
-    note: "This is a preview shop. Orders and secure checkout can be connected to Stripe whenever you are ready to sell online.",
+    note: "Secure payment by card, Apple Pay and Google Pay. Shipping is worked out from your country and the weight of your order. Wine ships within Italy only.",
   },
   it: {
     eyebrow: "Lo Shop",
@@ -153,7 +153,7 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "bath-set", name: "Set Bagno: Detergente Mani e Corpo, Shampoo e Balsamo", meta: "", price: "€40", img: PH.wash, imgs: [PH.wash, PH.shampoo, PH.conditioner], contain: true },
       { id: "orcio", name: "Orcio di Ceramica con Olio Extravergine d'Oliva", meta: "Un orcio di ceramica pieno del nostro olio extravergine d'oliva. 350 g.", price: "€32", img: PH.orcio, contain: true },
     ],
-    note: "Questo è uno shop di anteprima. Ordini e pagamento sicuro possono essere collegati a Stripe quando sarai pronto a vendere online.",
+    note: "Pagamento sicuro con carta, Apple Pay e Google Pay. La spedizione si calcola in base al paese e al peso dell'ordine. Il vino si spedisce solo in Italia.",
   },
   fr: {
     eyebrow: "La Boutique",
@@ -177,7 +177,7 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "bath-set", name: "Coffret Bain : Gel Lavant, Shampooing et Après-shampooing", meta: "", price: "€40", img: PH.wash, imgs: [PH.wash, PH.shampoo, PH.conditioner], contain: true },
       { id: "orcio", name: "Orcio en Céramique avec Huile d'Olive Extra Vierge", meta: "Un orcio en céramique rempli de notre huile d'olive extra vierge. 350 g.", price: "€32", img: PH.orcio, contain: true },
     ],
-    note: "Ceci est une boutique de démonstration. Les commandes et le paiement sécurisé pourront être reliés à Stripe quand vous serez prêt à vendre en ligne.",
+    note: "Paiement sécurisé par carte, Apple Pay et Google Pay. La livraison est calculée selon votre pays et le poids de la commande. Le vin est livré en Italie uniquement.",
   },
   de: {
     eyebrow: "Der Shop",
@@ -201,6 +201,6 @@ export const shop: Record<Locale, ShopContent> = {
       { id: "bath-set", name: "Badeset: Waschgel, Shampoo und Spülung", meta: "", price: "€40", img: PH.wash, imgs: [PH.wash, PH.shampoo, PH.conditioner], contain: true },
       { id: "orcio", name: "Keramik Orcio mit nativem Olivenöl extra", meta: "Ein Orcio aus Keramik, gefüllt mit unserem nativen Olivenöl extra. 350 g.", price: "€32", img: PH.orcio, contain: true },
     ],
-    note: "Dies ist ein Vorschau Shop. Bestellungen und sichere Bezahlung können mit Stripe verbunden werden, sobald Sie online verkaufen möchten.",
+    note: "Sichere Zahlung per Karte, Apple Pay und Google Pay. Der Versand richtet sich nach Land und Gewicht der Bestellung. Wein wird nur innerhalb Italiens versandt.",
   },
 }
