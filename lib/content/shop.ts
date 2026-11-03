@@ -133,7 +133,7 @@ export const shop: Record<Locale, ShopContent> = {
   },
   it: {
     eyebrow: "Lo Shop",
-    title: "Un po' della tenuta, portato a casa tua",
+    title: "Un po' della masseria, spedito a casa tua",
     intro:
       "Ordina un assaggio o un profumo di Lama di Luna per tenere vicine la Puglia e l'Alta Murgia, ovunque tu sia.",
     addLabel: "Contattaci",
