@@ -6,6 +6,7 @@ import { BackLink } from "@/components/back-link"
 import { CartView } from "@/components/cart-view"
 import { isLocale, menu } from "@/lib/i18n"
 import { shop } from "@/lib/content/shop"
+import { SHOP_ONLINE } from "@/lib/shop/online"
 
 export const metadata: Metadata = { title: "Cart | Lama di Luna", robots: { index: false } }
 
@@ -13,7 +14,7 @@ const TITLE = { en: "Your cart", it: "Il tuo carrello", fr: "Votre panier", de: 
 
 export default async function CartPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
-  if (!isLocale(lang)) notFound()
+  if (!isLocale(lang) || !SHOP_ONLINE) notFound()
   const products = shop[lang].products.map((p) => ({ id: p.id, name: p.name, img: p.img }))
   return (
     <>

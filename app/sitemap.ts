@@ -4,8 +4,9 @@ import { SITE_URL } from "@/lib/seo"
 import { rooms } from "@/lib/content/rooms"
 import { experiences } from "@/lib/content/experiences"
 import { shop } from "@/lib/content/shop"
+import { SHOP_ONLINE } from "@/lib/shop/online"
 
-const sections = ["", "rooms", "restaurant", "farm", "story", "experiences", "exclusive", "shop", "contact", "booking", "privacy"]
+const sections = ["", "rooms", "restaurant", "farm", "story", "experiences", "exclusive", "contact", "booking", "privacy"]
 
 // Every page in every language, each with its hreflang alternates.
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -13,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...sections,
     ...rooms.en.list.map((r) => `rooms/${r.slug}`),
     ...[...experiences.en.onEstate, ...experiences.en.inRegion].map((c) => c.slug).filter((s) => s !== "#").map((s) => `experiences/${s}`),
-    ...shop.en.products.map((p) => `shop/${p.id}`),
+    ...(SHOP_ONLINE ? ["shop", ...shop.en.products.map((p) => `shop/${p.id}`)] : []),
   ]
   const url = (lang: string, path: string) => `${SITE_URL}/${lang}${path ? `/${path}` : ""}`
   return paths.flatMap((path) =>

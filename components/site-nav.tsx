@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import { chrome, isLocale, menu, type Locale } from "@/lib/i18n"
 import { bookingUrl } from "@/lib/booking"
 import { BookLink } from "@/components/book-link"
+import { SHOP_ONLINE } from "@/lib/shop/online"
 
 /**
  * Site navigation.
@@ -24,7 +25,7 @@ export function SiteNav({
   variant?: "overlay" | "solid"
 }) {
   const t = chrome[locale]
-  const items = menu[locale]
+  const items = menu[locale].filter((m) => SHOP_ONLINE || m.slug !== "shop")
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)

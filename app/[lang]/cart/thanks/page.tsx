@@ -5,6 +5,7 @@ import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { ClearCart } from "@/components/clear-cart"
 import { isLocale } from "@/lib/i18n"
+import { SHOP_ONLINE } from "@/lib/shop/online"
 
 export const metadata: Metadata = { title: "Thank you | Lama di Luna", robots: { index: false } }
 
@@ -21,7 +22,7 @@ const W = {
 
 export default async function ThanksPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
-  if (!isLocale(lang)) notFound()
+  if (!isLocale(lang) || !SHOP_ONLINE) notFound()
   return (
     <>
       <SiteNav locale={lang} variant="solid" />

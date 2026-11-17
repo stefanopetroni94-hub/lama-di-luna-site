@@ -4,6 +4,7 @@ import { quote, zoneOf } from "@/lib/shop/shipping"
 import { stripe } from "@/lib/shop/stripe"
 import { shop } from "@/lib/content/shop"
 import { isLocale } from "@/lib/i18n"
+import { SHOP_ONLINE } from "@/lib/shop/online"
 
 // POST {items:[{id,qty}], country, lang} -> {url} of a Stripe Checkout page.
 // Prices and shipping come from lib/shop, never from the browser. The buyer is charged
@@ -13,6 +14,7 @@ import { isLocale } from "@/lib/i18n"
 const TAX_CODE = { oil: "txcd_40020002", wine: "txcd_41020003", cosmetic: "txcd_32050036" } as const
 
 export async function POST(req: Request) {
+  if (!SHOP_ONLINE) return NextResponse.json({ error: "shop_offline" }, { status: 404 })
   if (!process.env.STRIPE_SECRET_KEY) return NextResponse.json({ error: "not_configured" }, { status: 503 })
   let body: Record<string, unknown>
   try {

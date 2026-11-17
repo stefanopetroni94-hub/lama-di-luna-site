@@ -8,6 +8,7 @@ import { restaurant } from "@/lib/content/restaurant"
 import { farm } from "@/lib/content/farm"
 import type { Metadata } from "next"
 import { pageMetadata } from "@/lib/seo"
+import { SHOP_ONLINE } from "@/lib/shop/online"
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
@@ -141,15 +142,17 @@ export default async function RestaurantPage({ params }: { params: Promise<{ lan
         />
       </section>
 
-      <section className="booking-callout">
-        <div className="booking-callout-inner">
-          <h2>{f.calloutTitle}</h2>
-          <p>{f.calloutBody}</p>
-          <Link href={`/${lang}/shop`} className="btn-primary btn-primary--pill">
-            {f.calloutCta}
-          </Link>
-        </div>
-      </section>
+      {SHOP_ONLINE && (
+        <section className="booking-callout">
+          <div className="booking-callout-inner">
+            <h2>{f.calloutTitle}</h2>
+            <p>{f.calloutBody}</p>
+            <Link href={`/${lang}/shop`} className="btn-primary btn-primary--pill">
+              {f.calloutCta}
+            </Link>
+          </div>
+        </section>
+      )}
 
       <SiteFooter locale={lang} />
     </>

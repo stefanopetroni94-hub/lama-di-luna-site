@@ -7,10 +7,11 @@ import { shop } from "@/lib/content/shop"
 import type { Metadata } from "next"
 import { pageMetadata } from "@/lib/seo"
 import { AddToCart, CartPill } from "@/components/cart"
+import { SHOP_ONLINE } from "@/lib/shop/online"
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
   const { lang, slug } = await params
-  if (!isLocale(lang)) return {}
+  if (!isLocale(lang) || !SHOP_ONLINE) return {}
   const product = shop[lang].products.find((p) => p.id === slug)
   return pageMetadata(lang, `shop/${slug}`, product?.name)
 }
@@ -23,7 +24,7 @@ export default async function ProductPage({
   params: Promise<{ lang: string; slug: string }>
 }) {
   const { lang, slug } = await params
-  if (!isLocale(lang)) notFound()
+  if (!isLocale(lang) || !SHOP_ONLINE) notFound()
   const c = shop[lang]
   const product = c.products.find((p) => p.id === slug)
   if (!product) notFound()

@@ -8,10 +8,11 @@ import { shop } from "@/lib/content/shop"
 import type { Metadata } from "next"
 import { pageMetadata } from "@/lib/seo"
 import { AddToCart, CartPill } from "@/components/cart"
+import { SHOP_ONLINE } from "@/lib/shop/online"
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
-  if (!isLocale(lang)) return {}
+  if (!isLocale(lang) || !SHOP_ONLINE) return {}
   return pageMetadata(lang, "shop")
 }
 
@@ -19,7 +20,7 @@ const WINE_IDS = ["primitivo", "nero-di-troia", "nero-di-troia-rose", "fiano"]
 
 export default async function ShopPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
-  if (!isLocale(lang)) notFound()
+  if (!isLocale(lang) || !SHOP_ONLINE) notFound()
   const c = shop[lang]
 
   return (

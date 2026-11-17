@@ -7,6 +7,7 @@ import { HOME, chrome, isLocale } from "@/lib/i18n"
 import { farm } from "@/lib/content/farm"
 import type { Metadata } from "next"
 import { pageMetadata } from "@/lib/seo"
+import { SHOP_ONLINE } from "@/lib/shop/online"
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
@@ -118,15 +119,17 @@ export default async function FarmPage({ params }: { params: Promise<{ lang: str
         />
       </section>
 
-      <section className="booking-callout">
-        <div className="booking-callout-inner">
-          <h2>{c.calloutTitle}</h2>
-          <p>{c.calloutBody}</p>
-          <Link href={`/${lang}/shop`} className="btn-primary btn-primary--pill">
-            {c.calloutCta}
-          </Link>
-        </div>
-      </section>
+      {SHOP_ONLINE && (
+        <section className="booking-callout">
+          <div className="booking-callout-inner">
+            <h2>{c.calloutTitle}</h2>
+            <p>{c.calloutBody}</p>
+            <Link href={`/${lang}/shop`} className="btn-primary btn-primary--pill">
+              {c.calloutCta}
+            </Link>
+          </div>
+        </section>
+      )}
 
       <SiteFooter locale={lang} />
     </>
