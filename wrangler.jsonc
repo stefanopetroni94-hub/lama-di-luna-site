@@ -1,0 +1,13 @@
+{
+  "name": "lama-di-luna-site",
+  "main": ".open-next/worker.js",
+  "workers_dev": false,
+  "vars": { "VERCEL_ENV": "production" },
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
+  "routes": [
+    { "pattern": "www.lamadiluna.com", "custom_domain": true },
+    { "pattern": "lamadiluna.com", "custom_domain": true }
+  ]
+}

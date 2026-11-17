@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   description:
     "An 18th-century organic masseria in the heart of Puglia. Stay, taste, and take part in authentic countryside experiences.",
   generator: "v0.app",
+  icons: {
+    icon: [
+      { url: "/icon-light-32x32.png", media: "(prefers-color-scheme: light)" },
+      { url: "/icon-dark-32x32.png", media: "(prefers-color-scheme: dark)" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-icon.png",
+  },
   // Vercel previews stay out of Google; only production is indexed.
   robots: process.env.VERCEL_ENV === "production" ? undefined : { index: false, follow: false },
 }
@@ -51,7 +59,7 @@ export default async function LangLayout({
         <CookieConsent locale={lang} />
         <BookingSheet locale={lang} />
         <WhatsAppButton locale={lang} />
-        {process.env.NODE_ENV === "production" && <Analytics />}
+        {process.env.NODE_ENV === "production" && process.env.VERCEL === "1" && <Analytics />}
       </body>
     </html>
   )
