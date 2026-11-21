@@ -1,3 +1,4 @@
+// Published live by the WhatsApp edit route (lama_route.py, Cloudflare).
 // Booking engine (Amenitiz) used by the current Lama di Luna site.
 // The one place to change when the property moves off Amenitiz.
 import type { Locale } from "@/lib/i18n"
