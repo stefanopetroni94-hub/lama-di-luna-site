@@ -139,7 +139,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
       },
       {
         title: "Cucina privata",
-        body: "The Veranda cucina solo per te — menù su misura dall'orto della tenuta, lunghe tavolate sotto le volte o le stelle.",
+        body: "La Veranda cucina solo per te — menù su misura dall'orto della tenuta, lunghe tavolate sotto le volte o le stelle.",
       },
       {
         title: "Gli spazi aperti",
@@ -205,7 +205,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
       },
       {
         title: "Cuisine privée",
-        body: "The Veranda cuisine pour vous seuls : menus sur mesure avec les légumes du potager, longues tablées sous les voûtes ou sous les étoiles.",
+        body: "La Véranda cuisine pour vous seuls : menus sur mesure avec les légumes du potager, longues tablées sous les voûtes ou sous les étoiles.",
       },
       {
         title: "Les espaces extérieurs",
@@ -271,7 +271,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
       },
       {
         title: "Private Küche",
-        body: "The Veranda kocht nur für Sie: Menüs nach Maß aus dem Garten des Gutes, lange Tafeln unter den Gewölben oder unter den Sternen.",
+        body: "Die Veranda kocht nur für Sie: Menüs nach Maß aus dem Garten des Gutes, lange Tafeln unter den Gewölben oder unter den Sternen.",
       },
       {
         title: "Das Gelände",

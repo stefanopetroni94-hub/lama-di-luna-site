@@ -98,7 +98,7 @@ export const home: Record<Locale, HomeContent> = {
   it: {
     statementTitle: "Vivi la natura, l'agricoltura e la storia della Puglia nella loro forma più autentica",
     statementBody: [
-      "La nostra masseria del XVIII secolo, riportata al suo antico splendore, è immersa in una tenuta di 210 ettari di uliveti, mandorleti, vigneti e terre selvagge, tutti biologici. Soggiorna nelle nostre camere rustiche, un tempo abitate da coloni e mezzadri, e ristrutturate con bioarchitettura e arredi artigianali. Immergiti nella tranquillità e nella bellezza naturale dell'immenso Parco Nazionale dell'Alta Murgia. Rilassati nella nostra piscina panoramica affacciata su vasti campi di ulivi. Assapora il nostro olio extravergine d'oliva di alta qualità, le mandorle e i prodotti locali al ristorante The Veranda.",
+      "La nostra masseria del XVIII secolo, riportata al suo antico splendore, è immersa in una tenuta di 210 ettari di uliveti, mandorleti, vigneti e terre selvagge, tutti biologici. Soggiorna nelle nostre camere rustiche, un tempo abitate da coloni e mezzadri, e ristrutturate con bioarchitettura e arredi artigianali. Immergiti nella tranquillità e nella bellezza naturale dell'immenso Parco Nazionale dell'Alta Murgia. Rilassati nella nostra piscina panoramica affacciata su vasti campi di ulivi. Assapora il nostro olio extravergine d'oliva di alta qualità, le mandorle e i prodotti locali al ristorante La Veranda.",
       "Lascia che il tempo si fermi a Lama di Luna, la nostra Valle della Luna.",
     ],
     discover: "Leggi la nostra storia",
@@ -132,7 +132,7 @@ export const home: Record<Locale, HomeContent> = {
       "La colazione arriva lenta, sotto la volta dell'antico refettorio: dolci alle mandorle fatti in casa, ricotta fresca di una fattoria vicina, marmellate della frutta della tenuta, uova delle galline del cortile, il nostro olio extravergine d'oliva su pane caldo e pomodori.",
       "Su prenotazione, la cucina si apre la sera — ricette tipiche della Murgia e della Puglia, fatte semplicemente con ciò che la tenuta ha dato quel giorno.",
     ],
-    kitchenCta: "Il ristorante The Veranda",
+    kitchenCta: "Il ristorante La Veranda",
     fullPhoto: IMG.full,
     experiencesLabel: "Esperienze",
     experiencesImg: IMG.land,
@@ -155,7 +155,7 @@ export const home: Record<Locale, HomeContent> = {
   fr: {
     statementTitle: "Vivez la nature, l'agriculture et l'histoire des Pouilles sous leur forme la plus authentique",
     statementBody: [
-      "Notre ferme du XVIIIe siècle, ou masseria, rendue à sa splendeur d'origine, est nichée dans un domaine de 210 hectares d'oliveraies, d'amanderaies, de vignes et de terres sauvages, entièrement biologiques. Séjournez dans nos chambres rustiques, autrefois habitées par les métayers, et rénovées selon les principes de la bioarchitecture avec du mobilier artisanal. Plongez dans la tranquillité et la beauté naturelle du vaste Parc national de l'Alta Murgia. Prélassez-vous dans notre piscine panoramique qui domine les champs d'oliviers. Goûtez notre huile d'olive extra vierge de grande qualité, nos amandes et les produits locaux au restaurant The Veranda.",
+      "Notre ferme du XVIIIe siècle, ou masseria, rendue à sa splendeur d'origine, est nichée dans un domaine de 210 hectares d'oliveraies, d'amanderaies, de vignes et de terres sauvages, entièrement biologiques. Séjournez dans nos chambres rustiques, autrefois habitées par les métayers, et rénovées selon les principes de la bioarchitecture avec du mobilier artisanal. Plongez dans la tranquillité et la beauté naturelle du vaste Parc national de l'Alta Murgia. Prélassez-vous dans notre piscine panoramique qui domine les champs d'oliviers. Goûtez notre huile d'olive extra vierge de grande qualité, nos amandes et les produits locaux au restaurant La Véranda.",
       "Laissez le temps s'arrêter à Lama di Luna, notre Vallée de la Lune.",
     ],
     discover: "Découvrez notre histoire",
@@ -189,7 +189,7 @@ export const home: Record<Locale, HomeContent> = {
       "Le petit déjeuner arrive lentement, sous la voûte de l'ancien réfectoire : pâtisseries aux amandes maison, ricotta fraîche d'une ferme voisine, confitures des fruits du domaine, œufs des poules de la cour, notre huile d'olive extra vierge sur du pain chaud et des tomates.",
       "Sur demande, la cuisine ouvre pour le déjeuner et le soir : recettes typiques de la Murgia et des Pouilles, préparées simplement avec ce que le domaine a donné ce jour-là.",
     ],
-    kitchenCta: "Le restaurant The Veranda",
+    kitchenCta: "Le restaurant La Véranda",
     fullPhoto: IMG.full,
     experiencesLabel: "Découvrez notre territoire",
     experiencesImg: IMG.land,
@@ -211,7 +211,7 @@ export const home: Record<Locale, HomeContent> = {
   de: {
     statementTitle: "Erleben Sie Natur, Landwirtschaft und Geschichte Apuliens in ihrer ursprünglichsten Form",
     statementBody: [
-      "Unser Gutshof aus dem 18. Jahrhundert, eine Masseria, wurde in seinem ursprünglichen Glanz restauriert und liegt inmitten eines 210 Hektar großen Anwesens mit biologischen Olivenhainen, Mandelhainen, Weinbergen und wilder Natur. Wohnen Sie in unseren rustikalen Zimmern, in denen einst die Halbpächter, die Mezzadri, lebten, renoviert nach den Prinzipien der Baubiologie und mit handwerklich gefertigten Möbeln. Tauchen Sie ein in die Ruhe und die natürliche Schönheit des weiten Nationalparks Alta Murgia. Entspannen Sie in unserem Panoramapool mit Blick auf weite Olivenfelder. Kosten Sie unser hochwertiges natives Olivenöl extra, unsere Mandeln und die Erzeugnisse der Region im Restaurant The Veranda.",
+      "Unser Gutshof aus dem 18. Jahrhundert, eine Masseria, wurde in seinem ursprünglichen Glanz restauriert und liegt inmitten eines 210 Hektar großen Anwesens mit biologischen Olivenhainen, Mandelhainen, Weinbergen und wilder Natur. Wohnen Sie in unseren rustikalen Zimmern, in denen einst die Halbpächter, die Mezzadri, lebten, renoviert nach den Prinzipien der Baubiologie und mit handwerklich gefertigten Möbeln. Tauchen Sie ein in die Ruhe und die natürliche Schönheit des weiten Nationalparks Alta Murgia. Entspannen Sie in unserem Panoramapool mit Blick auf weite Olivenfelder. Kosten Sie unser hochwertiges natives Olivenöl extra, unsere Mandeln und die Erzeugnisse der Region im Restaurant Die Veranda.",
       "Lassen Sie die Zeit stillstehen in Lama di Luna, unserem Tal des Mondes.",
     ],
     discover: "Unsere Geschichte",
@@ -245,7 +245,7 @@ export const home: Record<Locale, HomeContent> = {
       "Das Frühstück kommt in Ruhe, unter dem Gewölbe des alten Refektoriums: hausgemachtes Mandelgebäck, frischer Ricotta von einem Nachbarhof, Marmeladen aus dem Obst des Gutes, Eier von den Hühnern aus dem Hof, unser natives Olivenöl extra auf warmem Brot mit Tomaten.",
       "Auf Anfrage öffnet die Küche auch mittags und abends: typische Rezepte aus der Murgia und aus Apulien, schlicht zubereitet mit dem, was das Gut an diesem Tag hervorgebracht hat.",
     ],
-    kitchenCta: "Das Restaurant The Veranda",
+    kitchenCta: "Das Restaurant Die Veranda",
     fullPhoto: IMG.full,
     experiencesLabel: "Erleben Sie unsere Region",
     experiencesImg: IMG.land,

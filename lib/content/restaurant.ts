@@ -96,14 +96,14 @@ export const restaurant: Record<Locale, RestaurantContent> = {
     bookingCta: "Reserve a table",
   },
   it: {
-    counter: "The Veranda",
+    counter: "La Veranda",
     breadcrumbRoot: "Home",
     breadcrumbCurrent: "Ristorante",
     heroEyebrow: "A tavola in masseria",
-    title: "The Veranda",
+    title: "La Veranda",
     statementTitle: "Portiamo in tavola ciò che la tenuta e il territorio hanno dato quel giorno",
     statementBody: [
-      "The Veranda è il ristorante farm to table di Lama di Luna. La cena è servita sotto la volta dell'antico refettorio, o all'aperto sulla veranda nelle sere calde, con lo sguardo sugli uliveti mentre cala la luce. Non c'è un lungo menù: il menù è fisso e cambia ogni giorno, costruito su ciò che ci dà la campagna e sulle migliori aziende agricole e sui produttori pugliesi della zona. La nostra cucina segue la vera cucina italiana: ingredienti chiave, e trattati con rispetto. Anche il ristorante è esclusivo e riservato agli ospiti che dormono a Lama di Luna, per preservare la tranquillità e il silenzio del luogo per chi sceglie di soggiornare qui.",
+      "La Veranda è il ristorante farm to table di Lama di Luna. La cena è servita sotto la volta dell'antico refettorio, o all'aperto sulla veranda nelle sere calde, con lo sguardo sugli uliveti mentre cala la luce. Non c'è un lungo menù: il menù è fisso e cambia ogni giorno, costruito su ciò che ci dà la campagna e sulle migliori aziende agricole e sui produttori pugliesi della zona. La nostra cucina segue la vera cucina italiana: ingredienti chiave, e trattati con rispetto. Anche il ristorante è esclusivo e riservato agli ospiti che dormono a Lama di Luna, per preservare la tranquillità e il silenzio del luogo per chi sceglie di soggiornare qui.",
     ],
     facts: [
       { label: "Colazione", value: "8:30 – 10:00" },
@@ -148,14 +148,14 @@ export const restaurant: Record<Locale, RestaurantContent> = {
     bookingCta: "Prenota una tavola",
   },
   fr: {
-    counter: "The Veranda",
+    counter: "La Véranda",
     breadcrumbRoot: "Accueil",
     breadcrumbCurrent: "Restaurant",
     heroEyebrow: "À table à la masseria",
-    title: "The Veranda",
+    title: "La Véranda",
     statementTitle: "Nous servons ce que le domaine et la région ont donné ce jour-là",
     statementBody: [
-      "The Veranda est le restaurant de la ferme à la table de Lama di Luna. Le dîner est servi sous la voûte de l'ancien réfectoire, ou dehors sur la véranda les soirs d'été, face aux oliveraies quand la lumière baisse. Pas de longue carte : le menu est unique et change chaque jour, composé avec ce que nous donne la campagne et avec les meilleurs domaines agricoles et producteurs locaux des Pouilles. Notre cuisine suit la vraie cuisine italienne : des ingrédients clés, et traités avec respect. Le restaurant est exclusif et réservé aux hôtes qui séjournent à Lama di Luna, pour préserver le calme et le silence du lieu pour ceux qui choisissent d'y dormir.",
+      "La Véranda est le restaurant de la ferme à la table de Lama di Luna. Le dîner est servi sous la voûte de l'ancien réfectoire, ou dehors sur la véranda les soirs d'été, face aux oliveraies quand la lumière baisse. Pas de longue carte : le menu est unique et change chaque jour, composé avec ce que nous donne la campagne et avec les meilleurs domaines agricoles et producteurs locaux des Pouilles. Notre cuisine suit la vraie cuisine italienne : des ingrédients clés, et traités avec respect. Le restaurant est exclusif et réservé aux hôtes qui séjournent à Lama di Luna, pour préserver le calme et le silence du lieu pour ceux qui choisissent d'y dormir.",
     ],
     facts: [
       { label: "Petit déjeuner", value: "8:30 – 10:00" },
@@ -200,14 +200,14 @@ export const restaurant: Record<Locale, RestaurantContent> = {
     bookingCta: "Réserver une table",
   },
   de: {
-    counter: "The Veranda",
+    counter: "Die Veranda",
     breadcrumbRoot: "Startseite",
     breadcrumbCurrent: "Restaurant",
     heroEyebrow: "Essen in der Masseria",
-    title: "The Veranda",
+    title: "Die Veranda",
     statementTitle: "Wir bringen auf den Tisch, was das Gut und die Region an diesem Tag geschenkt haben",
     statementBody: [
-      "The Veranda ist das Farm to Table Restaurant von Lama di Luna. Das Abendessen wird unter dem Gewölbe des alten Refektoriums serviert oder an warmen Abenden draußen auf der Veranda, mit Blick auf die Olivenhaine, während das Licht schwindet. Es gibt keine lange Speisekarte: Das Menü ist fest und wechselt jeden Tag, zusammengestellt aus dem, was uns das Land gibt, und aus den besten landwirtschaftlichen Betrieben und Erzeugern Apuliens. Unsere Küche folgt der echten italienischen Küche: wesentliche Zutaten, mit Respekt behandelt. Das Restaurant ist exklusiv und den Gästen vorbehalten, die in Lama di Luna wohnen, um die Ruhe und Stille des Ortes für alle zu bewahren, die hier übernachten.",
+      "Die Veranda ist das Farm to Table Restaurant von Lama di Luna. Das Abendessen wird unter dem Gewölbe des alten Refektoriums serviert oder an warmen Abenden draußen auf der Veranda, mit Blick auf die Olivenhaine, während das Licht schwindet. Es gibt keine lange Speisekarte: Das Menü ist fest und wechselt jeden Tag, zusammengestellt aus dem, was uns das Land gibt, und aus den besten landwirtschaftlichen Betrieben und Erzeugern Apuliens. Unsere Küche folgt der echten italienischen Küche: wesentliche Zutaten, mit Respekt behandelt. Das Restaurant ist exklusiv und den Gästen vorbehalten, die in Lama di Luna wohnen, um die Ruhe und Stille des Ortes für alle zu bewahren, die hier übernachten.",
     ],
     facts: [
       { label: "Frühstück", value: "8:30 – 10:00" },
