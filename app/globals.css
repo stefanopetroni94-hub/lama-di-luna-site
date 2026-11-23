@@ -4406,6 +4406,15 @@ footer {
   color: var(--ink);
   margin-bottom: 0.5rem;
 }
+/* "Where to find us" and "How to reach us" are two different things: 4rem between them, like the other pages (2.5rem on a phone) */
+.find-us-intro--left p + .find-us-title {
+  margin-top: 4rem;
+}
+@media (max-width: 700px) {
+  .find-us-intro--left p + .find-us-title {
+    margin-top: 2.5rem;
+  }
+}
 .map-wrap {
   position: relative;
   margin-top: 13rem;
