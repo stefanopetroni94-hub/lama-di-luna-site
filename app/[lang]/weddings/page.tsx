@@ -4,7 +4,6 @@ import type { Metadata } from "next"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { BackLink } from "@/components/back-link"
-import { PressStrip } from "@/components/press-strip"
 import { Scopri } from "@/components/scopri"
 import { WeddingForm } from "@/components/wedding-form"
 import { HOME, chrome, isLocale } from "@/lib/i18n"
@@ -121,8 +120,6 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
         </div>
         <div className="hero-scroll">{t.scroll}</div>
       </section>
-
-      <PressStrip locale={lang} />
 
       <section className="wd-section">
         <div className="wd-wrap wd-two">

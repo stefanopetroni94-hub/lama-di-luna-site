@@ -3258,7 +3258,7 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/hero-masseria-centered.jpg") center 58% / cover no-repeat;
+  background: url("/whatsapp/20261016_183752_1693704425661443.jpg") center 55% / cover no-repeat;
   filter: sepia(0.28) contrast(1.18) saturate(0.82) brightness(0.96);
 }
 .hero--wedding::after {
