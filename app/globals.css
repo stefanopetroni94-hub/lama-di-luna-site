@@ -3250,6 +3250,323 @@ footer {
   opacity: 1;
   visibility: visible;
 }
+/* ---------------- WEDDINGS PAGE (hidden for now) ---------------- */
+.hero--wedding {
+  min-height: 640px;
+}
+.hero--wedding::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/hero-masseria-centered.jpg") center 58% / cover no-repeat;
+  filter: sepia(0.28) contrast(1.18) saturate(0.82) brightness(0.96);
+}
+.hero--wedding::after {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.35) 100%);
+}
+.wd-hero-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 6.5rem;
+  z-index: 2;
+  text-align: center;
+  color: var(--bg);
+  padding: 0 1.3rem;
+}
+.wd-hero-text h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  line-height: 1.08;
+  margin: 0.8rem auto 1rem;
+  max-width: 900px;
+}
+.wd-hero-text p {
+  max-width: 640px;
+  margin: 0 auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.wd-hero-text .scopri,
+.wd-hero-text .scopri .diamond {
+  color: var(--bg);
+}
+.wd-hero-text .scopri .diamond {
+  background: var(--bg);
+}
+.wd-label {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.wd-section {
+  padding: 5rem 0;
+}
+.wd-section--alt {
+  background: var(--bg-alt);
+}
+.wd-section--dark,
+.wd-section--film {
+  background: var(--ink);
+  color: var(--bg);
+}
+.wd-section--film {
+  background: var(--olive);
+}
+.wd-wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.wd-narrow {
+  max-width: 820px;
+}
+.wd-center {
+  text-align: center;
+}
+.wd-section h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3vw, 1.95rem);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0.7rem 0 1.4rem;
+}
+.wd-section h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0.4rem 0 0.6rem;
+}
+.wd-section p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  line-height: 1.95;
+}
+.wd-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+.wd-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--sand);
+  border-left: 1px solid var(--sand);
+  margin: 0;
+}
+.wd-stats > div {
+  border-right: 1px solid var(--sand);
+  border-bottom: 1px solid var(--sand);
+  padding: 1.6rem 1.2rem;
+  text-align: center;
+}
+.wd-stats > div:last-child {
+  grid-column: 1 / -1;
+}
+.wd-stats dt {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 2rem;
+}
+.wd-stats dd {
+  margin: 0.3rem 0 0;
+  font-family: var(--serif);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.wd-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+.wd-photo {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  margin-bottom: 1.2rem;
+  overflow: hidden;
+}
+.wd-photo img {
+  object-fit: cover;
+  filter: sepia(0.28) contrast(1.18) saturate(0.82) brightness(0.96);
+}
+.wd-four {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+.wd-four > div {
+  border-top: 2px solid var(--ink);
+  padding-top: 1.2rem;
+}
+.wd-three--text > div {
+  border-top: 1px solid rgba(253, 252, 249, 0.4);
+  padding-top: 1.2rem;
+}
+.wd-prices {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wd-prices li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--sand);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+.wd-prices li:first-child {
+  border-top: 1px solid var(--sand);
+}
+.wd-play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  margin: 1.5rem 0 0.5rem;
+  border: 1px solid rgba(253, 252, 249, 0.7);
+  border-radius: 50%;
+}
+.wd-section--film .wd-film-title {
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.wd-quote {
+  font-style: italic;
+}
+.wd-todo {
+  opacity: 0.7;
+  font-size: 14px !important;
+}
+.wd-faq details {
+  border-bottom: 1px solid var(--sand);
+  padding: 1.1rem 0;
+}
+.wd-faq details:first-child {
+  border-top: 1px solid var(--sand);
+}
+.wd-faq summary {
+  cursor: pointer;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 17px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.wd-faq summary::-webkit-details-marker {
+  display: none;
+}
+.wd-faq summary::after {
+  content: "+";
+}
+.wd-faq details[open] summary::after {
+  content: "–";
+}
+.wd-faq details p {
+  margin: 0.8rem 0 0;
+}
+.wd-form {
+  margin-top: 2.5rem;
+}
+.wd-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+}
+.wd-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.wd-field--wide {
+  grid-column: 1 / -1;
+}
+.wd-field span {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.wd-field select.line-input {
+  background: transparent;
+  width: 100%;
+}
+.wd-consent {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+  font-size: 14px;
+}
+.wd-consent a {
+  text-decoration: underline;
+}
+.wd-submit {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.2rem;
+}
+.wd-btn {
+  background: var(--ink);
+  color: var(--bg);
+  border: none;
+  padding: 1.2rem 2.6rem;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.wd-btn:hover {
+  opacity: 0.85;
+}
+.wd-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.wd-note {
+  margin: 0;
+  font-style: italic;
+  font-size: 15px !important;
+}
+@media (max-width: 800px) {
+  .wd-section {
+    padding: 3.5rem 0;
+  }
+  .wd-two,
+  .wd-three,
+  .wd-four,
+  .wd-form-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .wd-form-grid {
+    gap: 1.3rem;
+  }
+  .wd-hero-text {
+    bottom: 5rem;
+  }
+}
 .story-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
