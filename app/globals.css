@@ -3332,7 +3332,9 @@ footer {
   font-style: normal;
   line-height: 1.95;
   color: var(--ink);
-  text-align: left;
+  /* both edges are straight: the left one lines up with the line above "150", the right one with the end of the last number */
+  text-align: justify;
+  hyphens: auto;
 }
 .wd-stats-cta {
   margin-top: 1rem;
