@@ -106,7 +106,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     ],
     ceremonyTitle: "Civil Ceremony",
     ceremonyText:
-      "Lama di Luna is an official venue for celebrating the civil wedding ceremonies of the city of Andria.",
+      "Lama di Luna is an official venue for the celebration of civil wedding ceremonies for the city of Andria.",
     pricesTitle: "Clear Prices, from the Start",
     prices: [
       { label: "Exclusive use, 3 nights, 27 guests", price: "from € 13,450*" },
