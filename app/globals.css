@@ -3306,8 +3306,9 @@ footer {
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
+/* every section has the same space above and below, so every title sits the same distance from the section above it */
 .wd-section {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 .wd-section--alt {
   background: var(--bg-alt);
@@ -3338,7 +3339,10 @@ footer {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   line-height: 1.2;
-  margin: 0.7rem 0 1.4rem;
+  margin: 0 0 1.4rem;
+}
+.wd-label + h2 {
+  margin-top: 0.7rem;
 }
 /* same title style as the experience pages ("Olive Oil Tasting and Tour"): 20px, mixed case */
 .wd-section h2.wd-title-detail {
@@ -3348,7 +3352,7 @@ footer {
   line-height: 1.7;
   letter-spacing: 0.5px;
   text-transform: none;
-  margin: 0.7rem 0 1rem;
+  margin: 0 0 1rem;
 }
 .wd-section h3 {
   font-family: var(--serif);
@@ -3571,7 +3575,7 @@ footer {
 }
 @media (max-width: 800px) {
   .wd-section {
-    padding: 3.5rem 0;
+    padding: 3rem 0;
   }
   .wd-two,
   .wd-three,

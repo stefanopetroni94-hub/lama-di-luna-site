@@ -174,7 +174,6 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-section wd-section--dark">
         <div className="wd-wrap">
-          <div className="wd-label wd-center">Three nights, one celebration</div>
           <h2 className="wd-center">Your wedding weekend</h2>
           <div className="wd-three wd-three--text">
             {WEEKEND.map((d) => (
