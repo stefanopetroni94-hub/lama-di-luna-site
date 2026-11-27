@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { track } from "@vercel/analytics"
 import { leadError, sendLead } from "@/lib/send-lead"
+import { CustomSelect } from "@/components/custom-select"
 import { weddings, type WeddingsContent } from "@/lib/content/weddings"
 
 // The choices are always sent in English (the value of each option), whatever language the visitor sees,
@@ -58,40 +59,23 @@ export function WeddingForm({ privacyHref, labels }: { privacyHref: string; labe
         <input className="line-input" name="country" type="text" placeholder={labels.country} aria-label={labels.country} required />
         <input className="line-input" name="date" type="text" placeholder={labels.date} aria-label={labels.date} required />
         {/* the name of each choice is written inside the field, like the other fields; a click opens the list */}
-        <select className="line-input" name="guests" aria-label={labels.guestsLabel} required defaultValue="">
-          <option value="" disabled>
-            {labels.guestsLabel}
-          </option>
-          {labels.guests.map((o, i) => (
-            <option key={o} value={EN.guests[i]}>
-              {o}
-            </option>
-          ))}
-        </select>
-        <select className="line-input" name="ceremony" aria-label={labels.ceremonyLabel} defaultValue="">
-          <option value="">{labels.ceremonyLabel}</option>
-          {labels.ceremony.map((o, i) => (
-            <option key={o} value={EN.ceremony[i]}>
-              {o}
-            </option>
-          ))}
-        </select>
-        <select className="line-input" name="budget" aria-label={labels.budgetLabel} defaultValue="">
-          <option value="">{labels.budgetLabel}</option>
-          {labels.budget.map((o, i) => (
-            <option key={o} value={EN.budget[i]}>
-              {o}
-            </option>
-          ))}
-        </select>
-        <select className="line-input" name="planner" aria-label={labels.plannerLabel} defaultValue="">
-          <option value="">{labels.plannerLabel}</option>
-          {labels.planner.map((o, i) => (
-            <option key={o} value={EN.planner[i]}>
-              {o}
-            </option>
-          ))}
-        </select>
+        <CustomSelect
+          name="guests"
+          label={labels.guestsLabel}
+          required
+          options={labels.guests.map((o, i) => ({ value: EN.guests[i], label: o }))}
+        />
+        <CustomSelect
+          name="ceremony"
+          label={labels.ceremonyLabel}
+          options={labels.ceremony.map((o, i) => ({ value: EN.ceremony[i], label: o }))}
+        />
+        <CustomSelect name="budget" label={labels.budgetLabel} options={labels.budget.map((o, i) => ({ value: EN.budget[i], label: o }))} />
+        <CustomSelect
+          name="planner"
+          label={labels.plannerLabel}
+          options={labels.planner.map((o, i) => ({ value: EN.planner[i], label: o }))}
+        />
         <div className="field field--wide">
           <label htmlFor="wd-more">{labels.more}</label>
           <textarea className="box-input" id="wd-more" name="more" rows={6} />

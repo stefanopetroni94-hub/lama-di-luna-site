@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { track } from "@vercel/analytics"
 import { leadError, sendLead } from "@/lib/send-lead"
+import { CustomSelect } from "@/components/custom-select"
 import { retreatForm, type RetreatFormLabels } from "@/lib/content/retreat-form"
 
 // The choices are always sent in English (the value of each option), whatever language the visitor sees,
@@ -57,32 +58,18 @@ export function RetreatForm({ privacyHref, labels }: { privacyHref: string; labe
         <input className="line-input" name="country" type="text" placeholder={labels.country} aria-label={labels.country} required />
         <input className="line-input" name="date" type="text" placeholder={labels.date} aria-label={labels.date} required />
         {/* the name of each choice is written inside the field, like the other fields; a click opens the list */}
-        <select className="line-input" name="guests" aria-label={labels.guestsLabel} required defaultValue="">
-          <option value="" disabled>
-            {labels.guestsLabel}
-          </option>
-          {labels.guests.map((o, i) => (
-            <option key={o} value={EN.guests[i]}>
-              {o}
-            </option>
-          ))}
-        </select>
-        <select className="line-input" name="type" aria-label={labels.typeLabel} defaultValue="">
-          <option value="">{labels.typeLabel}</option>
-          {labels.types.map((o, i) => (
-            <option key={o} value={EN.types[i]}>
-              {o}
-            </option>
-          ))}
-        </select>
-        <select className="line-input" name="retreat" aria-label={labels.retreatLabel} defaultValue="">
-          <option value="">{labels.retreatLabel}</option>
-          {labels.retreats.map((o, i) => (
-            <option key={o} value={EN.retreats[i]}>
-              {o}
-            </option>
-          ))}
-        </select>
+        <CustomSelect
+          name="guests"
+          label={labels.guestsLabel}
+          required
+          options={labels.guests.map((o, i) => ({ value: EN.guests[i], label: o }))}
+        />
+        <CustomSelect name="type" label={labels.typeLabel} options={labels.types.map((o, i) => ({ value: EN.types[i], label: o }))} />
+        <CustomSelect
+          name="retreat"
+          label={labels.retreatLabel}
+          options={labels.retreats.map((o, i) => ({ value: EN.retreats[i], label: o }))}
+        />
         <div className="field field--wide">
           <label htmlFor="rt-more">{labels.more}</label>
           <textarea className="box-input" id="rt-more" name="more" rows={6} />
