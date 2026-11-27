@@ -35,12 +35,9 @@ const STATS = [
   { value: "45 min", label: "From Bari airport" },
 ]
 
-// what sets Lama di Luna apart from other masserie, as three concrete lines under the numbers
-const POINTS = [
-  { lead: "Silence at night.", body: "No town, no neighbours, no noise curfews from next door. Only the Alta Murgia National Park, the olive trees and the night sky." },
-  { lead: "A kitchen from our own land.", body: "Extra virgin olive oil and vegetables from our 200 hectares of organic estate, served at long candlelit tables." },
-  { lead: "Powered by the sun.", body: "48 solar panels and 400 photovoltaic panels: a biomasseria built with bio-architecture, sustainable without giving up comfort." },
-]
+// one single text: the exclusive use, then what sets Lama di Luna apart (silence at night, the kitchen, the sun)
+const EXCLUSIVE_TEXT =
+  "For your wedding weekend Lama di Luna closes to everyone else. The courtyard, the pool, the library, the cinema room and the old refectory become yours, with our chefs and staff looking after you and your guests from arrival to the farewell brunch. At night there is only silence: no town, no neighbours, no noise curfews from next door, just the Alta Murgia National Park, the olive trees and the night sky. The kitchen cooks with extra virgin olive oil and vegetables from our 200 hectares of organic estate, served at long candlelit tables. And the whole masseria runs on the sun, with 48 solar panels and 400 photovoltaic panels: bio-architecture and sustainability without giving up comfort."
 
 // the five wedding photos of the Events page, then the ten new ones. The site photo filter is applied by the gallery itself.
 // Each photo has a description (alt), so Google can read it and show it in Google Images.
@@ -134,30 +131,17 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
       </section>
 
       <section className="wd-section">
-        <div className="wd-wrap wd-two">
-          <div>
-            <h2 className="wd-title-detail">A Whole Masseria, in Exclusive, for Your Wedding Only</h2>
-            <p>
-              For your wedding weekend Lama di Luna closes to everyone else. The courtyard, the pool, the library, the cinema room and the old refectory become yours, with our chefs and staff looking after you and your guests from arrival to the farewell brunch.
-            </p>
-          </div>
-          <div>
-            <dl className="wd-stats">
-              {STATS.map((s) => (
-                <div key={s.label}>
-                  <dt>{s.value}</dt>
-                  <dd>{s.label}</dd>
-                </div>
-              ))}
-            </dl>
-            <ul className="wd-points">
-              {POINTS.map((p) => (
-                <li key={p.lead}>
-                  <strong>{p.lead}</strong> {p.body}
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="wd-wrap">
+          <h2 className="wd-title-detail">A Whole Masseria, in Exclusive, for Your Wedding Only</h2>
+          <p>{EXCLUSIVE_TEXT}</p>
+          <dl className="wd-stats">
+            {STATS.map((s) => (
+              <div key={s.label}>
+                <dt>{s.value}</dt>
+                <dd>{s.label}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 

@@ -3266,7 +3266,8 @@ footer {
 }
 /* the title, the line and the link sit below the photo, on the white background, like the other pages */
 .wd-intro {
-  padding: 8rem 0;
+  /* no space below: the next section already has its own 4rem, the same as between all the other sections */
+  padding: 8rem 0 0;
   text-align: center;
 }
 .wd-intro h1 {
@@ -3290,7 +3291,7 @@ footer {
 }
 @media (max-width: 800px) {
   .wd-intro {
-    padding: 5rem 0;
+    padding: 5rem 0 0;
   }
 }
 .wd-hero-text {
@@ -3408,11 +3409,18 @@ html:has(.wd-hero) {
   align-items: start;
 }
 /* the numbers have a thin line above each one, like the columns of "Spaces & capacity", instead of boxes */
+/* the four numbers sit in one row under the text, like the columns of "Spaces & capacity" */
 .wd-stats {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem 2rem;
-  margin: 0;
+  margin: 2.5rem 0 0;
+}
+@media (max-width: 800px) {
+  .wd-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1.5rem;
+  }
 }
 .wd-stats > div {
   border-top: 1px solid var(--ink);
