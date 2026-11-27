@@ -3380,9 +3380,6 @@ footer {
   padding: 1.6rem 1.2rem;
   text-align: center;
 }
-.wd-stats > div:last-child {
-  grid-column: 1 / -1;
-}
 .wd-stats dt {
   font-family: var(--serif);
   font-weight: 500;

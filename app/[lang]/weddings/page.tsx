@@ -32,8 +32,7 @@ const STATS = [
   { value: "150", label: "Guests at dinner" },
   { value: "27", label: "Guests sleep on site" },
   { value: "11", label: "Rooms" },
-  { value: "200 ha", label: "Organic estate" },
-  { value: "55 min", label: "From Bari airport" },
+  { value: "45 min", label: "From Bari airport" },
 ]
 
 const REASONS = [
@@ -82,7 +81,7 @@ const FAQ = [
   { q: "Can we bring our own planner and suppliers?", a: "[YOUR POLICY ON PLANNERS, CATERING AND SUPPLIERS]" },
   { q: "Until what time can we dance?", a: "[MUSIC HOURS]. With no neighbours around, the party can run late." },
   { q: "When is the best season?", a: "We are open from April to October. May, June and September are the most comfortable months." },
-  { q: "How do our guests get here?", a: "Bari airport is 55 minutes away. We arrange private transfers for groups." },
+  { q: "How do our guests get here?", a: "Bari airport is 45 minutes away. We arrange private transfers for groups." },
 ]
 
 export default async function WeddingsPage({ params }: { params: Promise<{ lang: string }> }) {
@@ -125,7 +124,6 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
       <section className="wd-section">
         <div className="wd-wrap wd-two">
           <div>
-            <div className="wd-label">The masseria in exclusive</div>
             <h2 className="wd-title-detail">A Whole Masseria, in Exclusive, for Your Wedding Only</h2>
             <p>
               For your wedding weekend Lama di Luna closes to everyone else. The courtyard, the pool, the library, the cinema room and the old refectory become yours, with our chefs and staff looking after you and your guests from arrival to the farewell brunch.
