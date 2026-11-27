@@ -3501,6 +3501,11 @@ html:has(.wd-hero) {
   font-family: "Times New Roman", Times, serif;
   font-size: 17px;
 }
+.wd-section p.wd-vat {
+  margin: 0.8rem 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
 .wd-prices li:first-child {
   border-top: 1px solid var(--sand);
 }
