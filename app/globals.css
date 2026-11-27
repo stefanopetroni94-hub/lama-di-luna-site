@@ -3442,9 +3442,10 @@ footer {
 .wd-prices li:first-child {
   border-top: 1px solid var(--sand);
 }
+/* the film is as wide as the video on the home page: the whole width of the screen */
 .wd-film {
-  max-width: 960px;
-  margin: 2rem auto 0;
+  width: 100%;
+  margin: 2.5rem 0 0;
 }
 .wd-credit {
   margin-top: 1rem;

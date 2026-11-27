@@ -16,7 +16,6 @@ const DESCRIPTION =
   "Get married at Lama di Luna, an exclusive 1800s masseria on a 200-hectare organic estate near Castel del Monte. Up to 150 guests, 27 sleeping on site."
 const OG_IMAGE = "/lamadiluna-courtyard-stars.jpg"
 const FILM_ID = "fR4Jeyn2rZc"
-const FILM_URL ="https://www.federicocardone.com/portfolio-item/matrimonio-a-masseria-lama-di-luna/"
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
@@ -220,21 +219,19 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
           <div className="wd-label">Real weddings</div>
           <h2 className="wd-film-title">An Italian–Norwegian wedding at Lama di Luna</h2>
           <p className="wd-quote">[A SHORT QUOTE FROM THE COUPLE, WITH THEIR PERMISSION]</p>
-          <div className="wd-film">
-            <HeroVideo
-              videoId={FILM_ID}
-              poster={`https://img.youtube.com/vi/${FILM_ID}/hqdefault.jpg`}
-              label="Watch the wedding film"
-            />
-          </div>
+        </div>
+        <div className="wd-film">
+          <HeroVideo
+            videoId={FILM_ID}
+            poster={`https://img.youtube.com/vi/${FILM_ID}/maxresdefault.jpg`}
+            label="Watch the wedding film"
+          />
+        </div>
+        <div className="wd-wrap wd-center">
           <p className="wd-credit">
-            Film by{" "}
-            <a href={FILM_URL} target="_blank" rel="noopener noreferrer">
-              Federico Cardone
-            </a>{" "}
-            ·{" "}
+            Video by{" "}
             <a href="https://www.federicocardone.com" target="_blank" rel="noopener noreferrer">
-              www.federicocardone.com
+              Federico Cardone
             </a>
           </p>
         </div>
