@@ -1,11 +1,14 @@
 "use client"
 
+import Image from "next/image"
 import { useEffect, useState } from "react"
 
-type Photo = { src: string; position?: string }
+type Photo = { src: string; alt: string; position?: string }
 
 /** Two photos side by side, each half of the page. Round arrows move through the photos and they also change by themselves.
- *  The left half shows photo n and the right half photo n+1, so five photos make five different pairs. */
+ *  The left half shows photo n and the right half photo n+1, so five photos make five different pairs.
+ *  The photos are real images with a description, so Google can read them. The right half repeats the same photos,
+ *  so it is hidden from screen readers and search engines (empty description). */
 export function PhotoSlider({
   photos,
   label,
@@ -33,13 +36,17 @@ export function PhotoSlider({
   return (
     <div className="story-split photo-slider" role="group" aria-roledescription="carousel" aria-label={label}>
       {[0, 1].map((slot) => (
-        <div className="story-split-img photo-slider-half" key={slot}>
+        <div className="story-split-img photo-slider-half" key={slot} aria-hidden={slot === 1 ? true : undefined}>
           {photos.map((p, i) => (
-            <div
-              key={p.src}
-              className={`crossfade-layer${(index + slot) % n === i ? " is-active" : ""}`}
-              style={{ backgroundImage: `url('${p.src}')`, backgroundPosition: p.position ?? "center" }}
-            />
+            <div key={p.src} className={`crossfade-layer${(index + slot) % n === i ? " is-active" : ""}`}>
+              <Image
+                src={p.src}
+                alt={slot === 0 ? p.alt : ""}
+                fill
+                sizes="(max-width: 800px) 100vw, 50vw"
+                style={{ objectFit: "cover", objectPosition: p.position ?? "center" }}
+              />
+            </div>
           ))}
         </div>
       ))}

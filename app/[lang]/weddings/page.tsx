@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import { SiteNav } from "@/components/site-nav"
@@ -24,7 +23,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     title: { absolute: TITLE },
     description: DESCRIPTION,
     robots: { index: false, follow: false },
-    openGraph: { title: TITLE, description: DESCRIPTION, url: `${SITE_URL}/en/weddings`, images: [OG_IMAGE], type: "website" },
+    // the full address of the photo: with a short one the share preview pointed to localhost
+    openGraph: { title: TITLE, description: DESCRIPTION, url: `${SITE_URL}/en/weddings`, images: [`${SITE_URL}${OG_IMAGE}`], type: "website" },
   }
 }
 
@@ -35,44 +35,31 @@ const STATS = [
   { value: "45 min", label: "From Bari airport" },
 ]
 
-const REASONS = [
-  {
-    img: "/lamadiluna-courtyard-stars.jpg",
-    alt: "The masseria courtyard under the stars",
-    title: "A wild, authentic Puglia",
-    body: "No town, no neighbours, no noise curfews from next door. Only the Alta Murgia National Park, the olive trees and the night sky.",
-  },
-  {
-    img: "/kitchen-pomodori.jpg",
-    alt: "Tomatoes from the estate garden in the kitchen",
-    title: "A table from our own land",
-    body: "Our extra virgin olive oil, vegetables from the garden and Murgian recipes, served at long candlelit tables.",
-  },
-  {
-    img: "/pool-sunset.jpg",
-    alt: "The pool of Lama di Luna at sunset",
-    title: "A wedding that leaves light footprints",
-    body: "A solar-powered, organic biomasseria built with bio-architecture. Sustainable without giving up comfort.",
-  },
+// what sets Lama di Luna apart from other masserie, as three concrete lines under the numbers
+const POINTS = [
+  { lead: "Silence at night.", body: "No town, no neighbours, no noise curfews from next door. Only the Alta Murgia National Park, the olive trees and the night sky." },
+  { lead: "A kitchen from our own land.", body: "Extra virgin olive oil and vegetables from our 200 hectares of organic estate, served at long candlelit tables." },
+  { lead: "Powered by the sun.", body: "48 solar panels and 400 photovoltaic panels: a biomasseria built with bio-architecture, sustainable without giving up comfort." },
 ]
 
 // the five wedding photos of the Events page, then the ten new ones. The site photo filter is applied by the gallery itself.
+// Each photo has a description (alt), so Google can read it and show it in Google Images.
 const GALLERY = [
-  { src: "/whatsapp/20261017_095410_1916693209311624.jpg", position: "50% center" },
-  { src: "/whatsapp/20261127_075621_1442278754732944.jpg", position: "center 45%" },
-  { src: "/whatsapp/20261127_075626_2054415521874547.jpg", position: "center 40%" },
-  { src: "/whatsapp/20261016_165134_1827109174977754.jpg", position: "50% center" },
-  { src: "/whatsapp/20261127_075640_1854277828941805.jpg", position: "center 55%" },
-  { src: "/whatsapp/20261016_165613_932387559726351.jpg", position: "center 25%" },
-  { src: "/whatsapp/20261127_075631_1713082303553822.jpg", position: "center 50%" },
-  { src: "/whatsapp/20261127_075649_1744275486669953.jpg", position: "center 45%" },
-  { src: "/whatsapp/20261016_165422_1913563452860011.jpg", position: "center 60%" },
-  { src: "/whatsapp/20261127_075636_1462725258659477.jpg", position: "center 55%" },
-  { src: "/whatsapp/20261127_075658_1769727127855947.jpg", position: "center 40%" },
-  { src: "/whatsapp/20261016_165022_1438073468460314.jpg", position: "20% center" },
-  { src: "/whatsapp/20261127_075645_1625299038855624.jpg", position: "center 50%" },
-  { src: "/whatsapp/20261127_075654_2584698828703681.jpg", position: "center 55%" },
-  { src: "/whatsapp/20261127_075702_1558481429668415.jpg", position: "center 50%" },
+  { src: "/whatsapp/20261017_095410_1916693209311624.jpg", position: "50% center", alt: "The newlyweds in front of the Pugliese festival lights at sunset, Lama di Luna" },
+  { src: "/whatsapp/20261127_075621_1442278754732944.jpg", position: "center 45%", alt: "The groom walking down the ceremony aisle between the guests, under the trees at Lama di Luna" },
+  { src: "/whatsapp/20261127_075626_2054415521874547.jpg", position: "center 40%", alt: "The bride throwing her bouquet on the lawn while the guests applaud" },
+  { src: "/whatsapp/20261016_165134_1827109174977754.jpg", position: "50% center", alt: "The ceremony aisle beside the masseria" },
+  { src: "/whatsapp/20261127_075640_1854277828941805.jpg", position: "center 55%", alt: "The newlyweds toasting with champagne under the brick vault of the old cellar, next to the wedding cake" },
+  { src: "/whatsapp/20261016_165613_932387559726351.jpg", position: "center 25%", alt: "Guests at the aperitivo on the lawn under the trees" },
+  { src: "/whatsapp/20261127_075631_1713082303553822.jpg", position: "center 50%", alt: "Wedding guests raising their glasses at the long table in the courtyard, under string lights" },
+  { src: "/whatsapp/20261127_075649_1744275486669953.jpg", position: "center 45%", alt: "The newlyweds laughing as they leave the dovecote tower, with guests throwing rice and petals" },
+  { src: "/whatsapp/20261016_165422_1913563452860011.jpg", position: "center 60%", alt: "The bride beside the wrought iron gate" },
+  { src: "/whatsapp/20261127_075636_1462725258659477.jpg", position: "center 55%", alt: "The wedding table set with white flowers and wooden chairs in the courtyard at sunset" },
+  { src: "/whatsapp/20261127_075658_1769727127855947.jpg", position: "center 40%", alt: "The newlyweds kissing under an oak tree draped with white cloth, next to the wedding cake" },
+  { src: "/whatsapp/20261016_165022_1438073468460314.jpg", position: "20% center", alt: "The long wedding table in the masseria courtyard" },
+  { src: "/whatsapp/20261127_075645_1625299038855624.jpg", position: "center 50%", alt: "Wedding guests waving napkins during the dinner in the courtyard" },
+  { src: "/whatsapp/20261127_075654_2584698828703681.jpg", position: "center 55%", alt: "The bride in the courtyard of the masseria, in black and white, with a vintage convertible behind her" },
+  { src: "/whatsapp/20261127_075702_1558481429668415.jpg", position: "center 50%", alt: "The newlyweds dancing in a meadow of white flowers, with olive trees behind them" },
 ]
 
 const SPACES = [
@@ -128,7 +115,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(venueSchema) }} />
-      <SiteNav locale={lang} variant="overlay" />
+      <SiteNav locale={lang} variant="overlay" hideLanguages />
       <BackLink href={`/${lang}`} label={HOME[lang]} tone="light" />
 
       <section className="hero hero--wedding wd-hero">
@@ -154,30 +141,22 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
               For your wedding weekend Lama di Luna closes to everyone else. The courtyard, the pool, the library, the cinema room and the old refectory become yours, with our chefs and staff looking after you and your guests from arrival to the farewell brunch.
             </p>
           </div>
-          <dl className="wd-stats">
-            {STATS.map((s) => (
-              <div key={s.label}>
-                <dt>{s.value}</dt>
-                <dd>{s.label}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </section>
-
-      <section className="wd-section wd-section--alt">
-        <div className="wd-wrap">
-          <h2 className="wd-center">Why couples choose Lama di Luna</h2>
-          <div className="wd-three">
-            {REASONS.map((r) => (
-              <article key={r.title}>
-                <div className="wd-photo">
-                  <Image src={r.img} alt={r.alt} fill sizes="(max-width: 800px) 100vw, 360px" />
+          <div>
+            <dl className="wd-stats">
+              {STATS.map((s) => (
+                <div key={s.label}>
+                  <dt>{s.value}</dt>
+                  <dd>{s.label}</dd>
                 </div>
-                <h3>{r.title}</h3>
-                <p>{r.body}</p>
-              </article>
-            ))}
+              ))}
+            </dl>
+            <ul className="wd-points">
+              {POINTS.map((p) => (
+                <li key={p.lead}>
+                  <strong>{p.lead}</strong> {p.body}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>

@@ -20,9 +20,12 @@ import { SHOP_ONLINE } from "@/lib/shop/online"
 export function SiteNav({
   locale,
   variant = "overlay",
+  hideLanguages = false,
 }: {
   locale: Locale
   variant?: "overlay" | "solid"
+  /** for pages that exist in one language only: no IT / FR / DE links that would lead to a 404 */
+  hideLanguages?: boolean
 }) {
   const t = chrome[locale]
   const items = menu[locale].filter((m) => SHOP_ONLINE || m.slug !== "shop")
@@ -107,21 +110,23 @@ export function SiteNav({
               </li>
             )
           })}
-          <li className="nav-lang">
-            {(["en", "it", "fr", "de"] as const).map((l, i) => (
-              <span key={l}>
-                {i > 0 ? " " : ""}
-                <Link
-                  href={hrefFor(l)}
-                  onClick={() => setOpen(false)}
-                  className={l === locale ? "is-current" : ""}
-                  aria-current={l === locale ? "true" : undefined}
-                >
-                  {l.toUpperCase()}
-                </Link>
-              </span>
-            ))}
-          </li>
+          {hideLanguages ? null : (
+            <li className="nav-lang">
+              {(["en", "it", "fr", "de"] as const).map((l, i) => (
+                <span key={l}>
+                  {i > 0 ? " " : ""}
+                  <Link
+                    href={hrefFor(l)}
+                    onClick={() => setOpen(false)}
+                    className={l === locale ? "is-current" : ""}
+                    aria-current={l === locale ? "true" : undefined}
+                  >
+                    {l.toUpperCase()}
+                  </Link>
+                </span>
+              ))}
+            </li>
+          )}
         </ul>
       </div>
 
