@@ -3604,19 +3604,18 @@ html:has(#enquire) {
 .wd-faq details:first-child {
   border-top: 1px solid var(--sand);
 }
-/* the questions are on the bordeaux background: light text and light lines */
-.wd-section--dark .wd-faq details {
-  border-bottom-color: rgba(253, 252, 249, 0.4);
+.wd-faq a {
+  text-decoration: underline;
 }
-.wd-section--dark .wd-faq details:first-child {
+/* "Spaces & capacity" is on the bordeaux background: light lines, light link */
+.wd-section--dark .wd-four > div {
   border-top-color: rgba(253, 252, 249, 0.4);
 }
-.wd-section--dark .wd-faq summary,
-.wd-section--dark .wd-faq p {
+.wd-section--dark .scopri {
   color: var(--bg);
 }
-.wd-section--dark .wd-faq a {
-  text-decoration: underline;
+.wd-section--dark .scopri .diamond {
+  background: var(--bg);
 }
 .wd-faq summary {
   cursor: pointer;

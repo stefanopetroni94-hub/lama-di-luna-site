@@ -112,7 +112,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
         />
       </section>
 
-      <section className="wd-section">
+      <section className="wd-section wd-section--dark">
         <div className="wd-wrap">
           <h2 className="wd-title-detail">{c.spacesTitle}</h2>
           <div className="wd-four">
@@ -131,7 +131,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
         </div>
       </section>
 
-      <section className="wd-section wd-section--dark">
+      <section className="wd-section">
         <div className="wd-wrap wd-narrow">
           <h2 className="wd-title-detail">{c.faqTitle}</h2>
           <div className="wd-faq">
