@@ -124,6 +124,10 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
               </div>
             ))}
           </div>
+          <a href="#enquire" className="scopri wd-stats-cta">
+            {c.introCta}
+            <span className="diamond" />
+          </a>
         </div>
       </section>
 
