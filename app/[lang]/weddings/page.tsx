@@ -113,7 +113,6 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="hero hero--wedding wd-hero">
         <div className="wd-hero-text">
-          <div className="wd-label">Weddings in Puglia</div>
           <h1>Say yes in the Valley of the Moon</h1>
           <p>An 1800s masseria with the whole estate to yourselves: 200 hectares of organic olive groves on the edge of the Alta Murgia National Park.</p>
           <Scopri href="#enquire">Request the wedding guide</Scopri>
