@@ -3639,6 +3639,12 @@ html:has(.wd-hero) {
 .wd-form-grid .field--wide {
   grid-column: 1 / -1;
 }
+/* every field of the form (text and choices) has exactly the same height, so the space between one and the next is always the same */
+.wd-form .line-input {
+  box-sizing: border-box;
+  height: 2.9rem;
+  line-height: 1.2;
+}
 /* the choices look like the other fields: while nothing is chosen the name is shown in small capitals, and a small arrow shows the list opens */
 .wd-form select.line-input {
   appearance: none;
