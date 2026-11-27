@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
@@ -7,6 +6,8 @@ import { Scopri } from "@/components/scopri"
 import { HOME, isLocale } from "@/lib/i18n"
 import { exclusive } from "@/lib/content/exclusive"
 import { WaveLine } from "@/components/wave-line"
+import { RetreatForm } from "@/components/retreat-form"
+import { retreatForm } from "@/lib/content/retreat-form"
 import type { Metadata } from "next"
 import { pageMetadata } from "@/lib/seo"
 
@@ -183,13 +184,11 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         />
       </section>
 
-      <section className="booking-callout exclusive-callout">
-        <div className="booking-callout-inner">
-          <h2>{c.bookingTitle}</h2>
-          <p>{c.bookingText}</p>
-          <Link href={`/${lang}/contact`} className="btn-primary">
-            {c.bookingCta}
-          </Link>
+      <section className="wd-section wd-section--alt" id="enquire">
+        <div className="wd-wrap wd-narrow">
+          <h2 className="wd-center">{c.bookingTitle}</h2>
+          <p className="wd-center">{c.bookingText}</p>
+          <RetreatForm privacyHref={`/${lang}/privacy`} labels={retreatForm[lang]} />
         </div>
       </section>
 
