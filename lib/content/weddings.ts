@@ -185,23 +185,23 @@ export const weddings: Record<Locale, WeddingsContent> = {
       "La sposa nel cortile della masseria, in bianco e nero, con una spider d'epoca alle spalle",
       "Gli sposi ballano in un prato di fiori bianchi, con gli ulivi dietro di loro",
     ],
-    spacesTitle: "Spazi e Capienza",
+    spacesTitle: "Spazi e capienza",
     spaces: [
       { moment: "Cerimonia", place: "Sotto le querce", body: "Fino a 150 ospiti seduti, di fronte al Parco Nazionale." },
       { moment: "Aperitivo", place: "Le terrazze", body: "Fino a 150 ospiti in piedi, all'ora d'oro." },
       { moment: "Cena", place: "La corte interna", body: "Fino a 150 ospiti a lunghe tavolate sotto le stelle." },
       { moment: "Piano in caso di pioggia", place: "Le sale dell'Ottocento", body: "Fino a 150 ospiti al chiuso, sotto volte di pietra." },
     ],
-    weekendTitle: "Il Vostro Weekend di Nozze",
+    weekendTitle: "Il vostro weekend di nozze",
     weekend: [
       { day: "Venerdì", title: "Cena di benvenuto", body: "Gli ospiti arrivano e si sistemano. Pizza dal forno a legna o una cena murgiana sulla veranda." },
       { day: "Sabato", title: "Il matrimonio", body: "Cerimonia al tramonto, aperitivo sulla terrazza, cena e balli nella corte." },
       { day: "Domenica", title: "Brunch di saluto", body: "Un brunch lento, una degustazione d'olio o una passeggiata sugli antichi tratturi prima dei saluti." },
     ],
-    ceremonyTitle: "Simbolica, Civile o Religiosa",
+    ceremonyTitle: "Simbolica, civile o religiosa",
     ceremonyText:
       "Le cerimonie simboliche si svolgono in tenuta, con un celebrante di lingua inglese su richiesta. Le cerimonie civili si tengono nella nostra antica biblioteca o all'aperto, su richiesta al Comune di Andria. Cerimonie religiose in una chiesa vicina, con trasferimenti organizzati per i vostri ospiti.",
-    pricesTitle: "Prezzi Chiari, fin dall'Inizio",
+    pricesTitle: "Prezzi chiari, fin dall'inizio",
     prices: [
       { label: "Uso esclusivo, 3 notti, 27 ospiti", price: "da € 13.450*" },
       { label: "Menù della cena di nozze", price: "da € 160 a persona*" },
@@ -214,7 +214,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     filmTitle: "Un matrimonio italo-norvegese a Lama di Luna",
     filmWatch: "Guarda il film del matrimonio",
     filmCredit: "Film di",
-    faqTitle: "Domande Frequenti",
+    faqTitle: "Domande frequenti",
     faq: [
       { q: "Dobbiamo prenotare l'intera masseria?", a: "Sì. Ogni matrimonio è in esclusiva, con un soggiorno minimo di tre notti." },
       { q: "Dove dormono gli altri ospiti?", a: "Ospitiamo 27 ospiti in tenuta e consigliamo hotel partner nelle vicinanze, con navette su richiesta." },
@@ -279,23 +279,23 @@ export const weddings: Record<Locale, WeddingsContent> = {
       "La mariée dans la cour de la masseria, en noir et blanc, avec un cabriolet d'époque derrière elle",
       "Les mariés dansent dans un pré de fleurs blanches, avec des oliviers derrière eux",
     ],
-    spacesTitle: "Espaces et Capacité",
+    spacesTitle: "Espaces et capacité",
     spaces: [
       { moment: "Cérémonie", place: "Sous les chênes", body: "Jusqu'à 150 invités assis, face au Parc national." },
       { moment: "Apéritif", place: "Les terrasses", body: "Jusqu'à 150 invités debout, à l'heure dorée." },
       { moment: "Dîner", place: "La cour intérieure", body: "Jusqu'à 150 invités à de longues tables sous les étoiles." },
       { moment: "Plan en cas de pluie", place: "Les salles du XIXe siècle", body: "Jusqu'à 150 invités à l'intérieur, sous des voûtes de pierre." },
     ],
-    weekendTitle: "Votre Week-end de Mariage",
+    weekendTitle: "Votre week-end de mariage",
     weekend: [
       { day: "Vendredi", title: "Dîner de bienvenue", body: "Les invités arrivent et s'installent. Pizza au feu de bois ou dîner de la Murgia sur la véranda." },
       { day: "Samedi", title: "Le mariage", body: "Cérémonie au coucher du soleil, apéritif sur la terrasse, dîner et danse dans la cour." },
       { day: "Dimanche", title: "Brunch d'adieu", body: "Un brunch tranquille, une dégustation d'huile d'olive ou une promenade sur les anciens chemins de transhumance avant les au revoir." },
     ],
-    ceremonyTitle: "Symbolique, Civile ou Religieuse",
+    ceremonyTitle: "Symbolique, civile ou religieuse",
     ceremonyText:
       "Les cérémonies symboliques ont lieu sur le domaine, avec un officiant anglophone sur demande. Les cérémonies civiles se tiennent dans notre ancienne bibliothèque ou en plein air, sur demande auprès de la mairie d'Andria. Cérémonies religieuses dans une église voisine, avec des transferts organisés pour vos invités.",
-    pricesTitle: "Des Prix Clairs, dès le Départ",
+    pricesTitle: "Des prix clairs, dès le départ",
     prices: [
       { label: "Usage exclusif, 3 nuits, 27 invités", price: "à partir de 13 450 €*" },
       { label: "Menu du dîner de mariage", price: "à partir de 160 € par invité*" },
@@ -308,7 +308,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     filmTitle: "Un mariage italo-norvégien à Lama di Luna",
     filmWatch: "Regarder le film du mariage",
     filmCredit: "Film de",
-    faqTitle: "Questions Fréquentes",
+    faqTitle: "Questions fréquentes",
     faq: [
       { q: "Faut-il réserver toute la masseria ?", a: "Oui. Chaque mariage est en exclusivité, avec un séjour minimum de trois nuits." },
       { q: "Où dorment les autres invités ?", a: "Nous accueillons 27 invités sur place et conseillons des hôtels partenaires à proximité, avec navettes sur demande." },
@@ -386,7 +386,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
       { day: "Samstag", title: "Die Hochzeit", body: "Trauung bei Sonnenuntergang, Aperitif auf der Terrasse, Abendessen und Tanz im Innenhof." },
       { day: "Sonntag", title: "Abschiedsbrunch", body: "Ein gemütlicher Brunch, eine Olivenölverkostung oder ein Spaziergang auf den alten Hirtenwegen vor dem Abschied." },
     ],
-    ceremonyTitle: "Symbolisch, Standesamtlich oder Kirchlich",
+    ceremonyTitle: "Symbolisch, standesamtlich oder kirchlich",
     ceremonyText:
       "Symbolische Trauungen finden auf dem Gut statt, auf Wunsch mit einem englischsprachigen Redner. Standesamtliche Trauungen werden in unserer alten Bibliothek oder im Freien abgehalten, auf Anfrage bei der Gemeinde Andria. Kirchliche Trauungen in einer nahegelegenen Kirche, mit organisierten Transfers für Ihre Gäste.",
     pricesTitle: "Klare Preise von Anfang an",

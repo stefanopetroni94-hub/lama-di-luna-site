@@ -3252,32 +3252,34 @@ footer {
   opacity: 1;
   visibility: visible;
 }
-/* home: two links to the Weddings and Retreats pages */
-.home-links {
-  padding: 4rem 0;
-}
-.home-links-grid {
+/* home: the Weddings block has a photo; the link to Retreats is smaller, below it */
+.home-retreats {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 clamp(1.5rem, 9vw, 11rem);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  padding: 0 clamp(1.5rem, 9vw, 11rem) 4rem;
+  text-align: left;
 }
-.home-links-grid p {
-  font-family: "Times New Roman", Times, serif;
+.home-retreats .title-link {
+  font-family: var(--serif);
+  font-weight: 600;
   font-size: 15px;
-  line-height: 1.85;
+  letter-spacing: 0.5px;
+}
+.home-retreats p {
+  max-width: 640px;
+  margin: 0.4rem 0 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 1.8;
   color: var(--ink);
 }
+.home-retreats .scopri {
+  padding-top: 0.8rem;
+  font-size: 11px;
+}
 @media (max-width: 800px) {
-  .home-links {
-    padding: 2.5rem 0;
-  }
-  .home-links-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding: 0 1.3rem;
+  .home-retreats {
+    padding: 0 1.3rem 2.5rem;
   }
 }
 

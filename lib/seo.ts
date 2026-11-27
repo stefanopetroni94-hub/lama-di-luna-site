@@ -96,7 +96,7 @@ const pages: Record<string, Record<Locale, Meta>> = {
         "Get married at Lama di Luna, an exclusive 1800s masseria on a 200-hectare organic estate near Castel del Monte. Up to 150 guests, 27 sleeping on site.",
     },
     it: {
-      title: "Location per Matrimoni in Puglia | Masseria in Esclusiva – Lama di Luna",
+      title: "Matrimonio in Puglia, vicino a Castel del Monte | Lama di Luna",
       description:
         "Sposatevi a Lama di Luna, una masseria dell'Ottocento in esclusiva su una tenuta biologica di 200 ettari vicino a Castel del Monte. Fino a 150 ospiti, 27 che dormono in tenuta.",
     },
@@ -111,26 +111,26 @@ const pages: Record<string, Record<Locale, Meta>> = {
         "Heiraten Sie in Lama di Luna, einer exklusiven Masseria aus dem 19. Jahrhundert auf einem 200 Hektar großen Biogut bei Castel del Monte. Bis zu 150 Gäste, 27 übernachten auf dem Gut.",
     },
   },
-  exclusive: {
+  retreats: {
     en: {
-      title: "Retreats in Puglia | Yoga, Wellness & Company Retreats – Lama di Luna",
+      title: "Yoga & Wellness Retreats in Puglia | Lama di Luna",
       description:
-        "Reserve the whole Lama di Luna masseria for yoga and wellness retreats, company meetings and family gatherings: 11 rooms, up to 27 guests, 200 hectares of organic estate in the Alta Murgia National Park.",
+        "Host your yoga, wellness or company retreat at Lama di Luna, an exclusive 1800s masseria on a 200-hectare organic estate in Puglia. 11 rooms, up to 27 guests.",
     },
     it: {
-      title: "Ritiri in Puglia | Yoga, Benessere e Riunioni Aziendali – Lama di Luna",
+      title: "Ritiri yoga e benessere in Puglia | Lama di Luna",
       description:
-        "Riserva l'intera masseria Lama di Luna per ritiri di yoga e benessere, riunioni aziendali e di famiglia: 11 camere, fino a 27 ospiti, 200 ettari di tenuta biologica nel Parco Nazionale dell'Alta Murgia.",
+        "Organizza il tuo ritiro yoga, benessere o aziendale a Lama di Luna, masseria dell'Ottocento in esclusiva su 200 ettari biologici in Puglia. 11 camere, fino a 27 ospiti.",
     },
     fr: {
-      title: "Retraites dans les Pouilles | Yoga, Bien-être et Séminaires – Lama di Luna",
+      title: "Retraites yoga et bien-être, Pouilles | Lama di Luna",
       description:
-        "Réservez toute la masseria Lama di Luna pour des retraites de yoga et de bien-être, des réunions d'entreprise et des réunions de famille : 11 chambres, jusqu'à 27 invités, 200 hectares de domaine biologique dans le Parc national de l'Alta Murgia.",
+        "Votre retraite yoga, bien-être ou d'entreprise à Lama di Luna, masseria en exclusivité sur 200 hectares bio dans les Pouilles. 11 chambres, 27 invités.",
     },
     de: {
-      title: "Retreats in Apulien | Yoga, Wellness & Firmen-Retreats – Lama di Luna",
+      title: "Yoga & Wellness Retreats in Apulien | Lama di Luna",
       description:
-        "Reservieren Sie die ganze Masseria Lama di Luna für Yoga und Wellness Retreats, Firmentreffen und Familientreffen: 11 Zimmer, bis zu 27 Gäste, 200 Hektar Biogut im Nationalpark Alta Murgia.",
+        "Ihr Yoga-, Wellness- oder Firmenretreat in Lama di Luna, exklusive Masseria auf 200 Hektar Biogut in Apulien. 11 Zimmer, bis zu 27 Gäste.",
     },
   },
   "rooms/masseria": {

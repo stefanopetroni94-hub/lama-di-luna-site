@@ -16,16 +16,16 @@ import { hotelSchema, pageMetadata } from "@/lib/seo"
 // two links under the experiences, to the Weddings and Retreats pages
 const HOME_LINKS = {
   weddings: {
-    en: { title: "Weddings", text: "Say yes in the Valley of the Moon: the whole masseria, for your wedding only.", cta: "Discover weddings" },
-    it: { title: "Matrimoni", text: "Dite sì nella Valle della Luna: l'intera masseria, solo per il vostro matrimonio.", cta: "Scopri i matrimoni" },
-    fr: { title: "Mariages", text: "Dites oui dans la Vallée de la Lune : toute la masseria, pour votre seul mariage.", cta: "Découvrir les mariages" },
-    de: { title: "Hochzeiten", text: "Sagen Sie Ja im Tal des Mondes: die ganze Masseria, nur für Ihre Hochzeit.", cta: "Hochzeiten entdecken" },
+    en: { title: "Weddings at Lama di Luna", text: "Say yes in the Valley of the Moon: a whole 1800s masseria, in exclusive, for your wedding only.", cta: "Discover our weddings", alt: "The newlyweds laughing as they leave the dovecote tower, with guests throwing rice and petals" },
+    it: { title: "Matrimoni a Lama di Luna", text: "Dite sì nella Valle della Luna: un'intera masseria dell'Ottocento, in esclusiva, solo per il vostro matrimonio.", cta: "Scopri i matrimoni", alt: "Gli sposi escono ridendo dalla torretta della colombaia, con gli ospiti che lanciano riso e petali" },
+    fr: { title: "Mariages à Lama di Luna", text: "Dites oui dans la Vallée de la Lune : une masseria entière du XIXe siècle, en exclusivité, pour votre seul mariage.", cta: "Découvrir nos mariages", alt: "Les mariés sortent en riant de la tour du pigeonnier, sous une pluie de riz et de pétales" },
+    de: { title: "Hochzeiten in Lama di Luna", text: "Sagen Sie Ja im Tal des Mondes: eine ganze Masseria aus dem 19. Jahrhundert, exklusiv, nur für Ihre Hochzeit.", cta: "Hochzeiten entdecken", alt: "Das Brautpaar verlässt lachend den Taubenturm, Gäste werfen Reis und Blütenblätter" },
   },
   retreats: {
-    en: { title: "Retreats", text: "Yoga, wellness, company meetings and family gatherings: reserve the whole masseria.", cta: "Discover retreats" },
-    it: { title: "Ritiri", text: "Yoga, benessere, riunioni aziendali e di famiglia: riserva l'intera masseria.", cta: "Scopri i ritiri" },
-    fr: { title: "Retraites", text: "Yoga, bien-être, réunions d'entreprise et de famille : réservez toute la masseria.", cta: "Découvrir les retraites" },
-    de: { title: "Retreats", text: "Yoga, Wellness, Firmentreffen und Familientreffen: reservieren Sie die ganze Masseria.", cta: "Retreats entdecken" },
+    en: { title: "Retreats at Lama di Luna", text: "Yoga, wellness, company meetings and family gatherings: reserve the whole masseria.", cta: "Discover our retreats" },
+    it: { title: "Ritiri a Lama di Luna", text: "Yoga, benessere, riunioni aziendali e di famiglia: riserva l'intera masseria.", cta: "Scopri i ritiri" },
+    fr: { title: "Retraites à Lama di Luna", text: "Yoga, bien-être, réunions d'entreprise et de famille : réservez toute la masseria.", cta: "Découvrir nos retraites" },
+    de: { title: "Retreats in Lama di Luna", text: "Yoga, Wellness, Firmentreffen und Familientreffen: reservieren Sie die ganze Masseria.", cta: "Retreats entdecken" },
   },
 }
 
@@ -162,22 +162,31 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
-      <section className="home-links">
-        <div className="home-links-grid">
-          {[
-            { href: `/${lang}/weddings`, ...HOME_LINKS.weddings[lang] },
-            { href: `/${lang}/exclusive`, ...HOME_LINKS.retreats[lang] },
-          ].map((l) => (
-            <div key={l.href}>
-              <div className="room-name" style={{ marginBottom: "1rem" }}>
-                <Link href={l.href} className="title-link">
-                  {l.title}
-                </Link>
-              </div>
-              <p>{l.text}</p>
-              <Scopri href={l.href}>{l.cta}</Scopri>
+      <section>
+        <div className="text-image">
+          <div
+            className="image-block image-block--zoom"
+            role="img"
+            aria-label={HOME_LINKS.weddings[lang].alt}
+          >
+            <div style={{ backgroundImage: "url('/whatsapp/20261127_075649_1744275486669953.jpg')", backgroundPosition: "center 45%" }} />
+          </div>
+          <div className="text-block">
+            <div className="room-name" style={{ marginBottom: "1rem" }}>
+              <Link href={`/${lang}/weddings`} className="title-link">
+                {HOME_LINKS.weddings[lang].title}
+              </Link>
             </div>
-          ))}
+            <p>{HOME_LINKS.weddings[lang].text}</p>
+            <Scopri href={`/${lang}/weddings`}>{HOME_LINKS.weddings[lang].cta}</Scopri>
+          </div>
+        </div>
+        <div className="home-retreats">
+          <Link href={`/${lang}/retreats`} className="title-link">
+            {HOME_LINKS.retreats[lang].title}
+          </Link>
+          <p>{HOME_LINKS.retreats[lang].text}</p>
+          <Scopri href={`/${lang}/retreats`}>{HOME_LINKS.retreats[lang].cta}</Scopri>
         </div>
       </section>
 

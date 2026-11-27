@@ -6,7 +6,7 @@ import { experiences } from "@/lib/content/experiences"
 import { shop } from "@/lib/content/shop"
 import { SHOP_ONLINE } from "@/lib/shop/online"
 
-const sections = ["", "rooms", "restaurant", "farm", "story", "experiences", "weddings", "exclusive", "contact", "booking", "privacy"]
+const sections = ["", "rooms", "restaurant", "farm", "story", "experiences", "weddings", "retreats", "contact", "booking", "privacy"]
 
 // Every page in every language, each with its hreflang alternates.
 export default function sitemap(): MetadataRoute.Sitemap {
