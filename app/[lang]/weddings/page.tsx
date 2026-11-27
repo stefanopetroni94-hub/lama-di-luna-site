@@ -159,8 +159,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-section">
         <div className="wd-wrap">
-          <div className="wd-label wd-center">Spaces &amp; capacity</div>
-          <h2 className="wd-center">Where your day takes place</h2>
+          <h2 className="wd-center">Spaces &amp; capacity</h2>
           <div className="wd-four">
             {SPACES.map((s) => (
               <div key={s.moment}>
