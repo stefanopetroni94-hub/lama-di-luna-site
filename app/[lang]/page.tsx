@@ -13,6 +13,22 @@ import { book } from "@/lib/content/book"
 import type { Metadata } from "next"
 import { hotelSchema, pageMetadata } from "@/lib/seo"
 
+// two links under the experiences, to the Weddings and Retreats pages
+const HOME_LINKS = {
+  weddings: {
+    en: { title: "Weddings", text: "Say yes in the Valley of the Moon: the whole masseria, for your wedding only.", cta: "Discover weddings" },
+    it: { title: "Matrimoni", text: "Dite sì nella Valle della Luna: l'intera masseria, solo per il vostro matrimonio.", cta: "Scopri i matrimoni" },
+    fr: { title: "Mariages", text: "Dites oui dans la Vallée de la Lune : toute la masseria, pour votre seul mariage.", cta: "Découvrir les mariages" },
+    de: { title: "Hochzeiten", text: "Sagen Sie Ja im Tal des Mondes: die ganze Masseria, nur für Ihre Hochzeit.", cta: "Hochzeiten entdecken" },
+  },
+  retreats: {
+    en: { title: "Retreats", text: "Yoga, wellness, company meetings and family gatherings: reserve the whole masseria.", cta: "Discover retreats" },
+    it: { title: "Ritiri", text: "Yoga, benessere, riunioni aziendali e di famiglia: riserva l'intera masseria.", cta: "Scopri i ritiri" },
+    fr: { title: "Retraites", text: "Yoga, bien-être, réunions d'entreprise et de famille : réservez toute la masseria.", cta: "Découvrir les retraites" },
+    de: { title: "Retreats", text: "Yoga, Wellness, Firmentreffen und Familientreffen: reservieren Sie die ganze Masseria.", cta: "Retreats entdecken" },
+  },
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
   if (!isLocale(lang)) return {}
@@ -143,6 +159,25 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
               backgroundPosition: "50% 45%",
             }}
           />
+        </div>
+      </section>
+
+      <section className="home-links">
+        <div className="home-links-grid">
+          {[
+            { href: `/${lang}/weddings`, ...HOME_LINKS.weddings[lang] },
+            { href: `/${lang}/exclusive`, ...HOME_LINKS.retreats[lang] },
+          ].map((l) => (
+            <div key={l.href}>
+              <div className="room-name" style={{ marginBottom: "1rem" }}>
+                <Link href={l.href} className="title-link">
+                  {l.title}
+                </Link>
+              </div>
+              <p>{l.text}</p>
+              <Scopri href={l.href}>{l.cta}</Scopri>
+            </div>
+          ))}
         </div>
       </section>
 

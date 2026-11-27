@@ -111,6 +111,28 @@ const pages: Record<string, Record<Locale, Meta>> = {
         "Heiraten Sie in Lama di Luna, einer exklusiven Masseria aus dem 19. Jahrhundert auf einem 200 Hektar großen Biogut bei Castel del Monte. Bis zu 150 Gäste, 27 übernachten auf dem Gut.",
     },
   },
+  exclusive: {
+    en: {
+      title: "Retreats in Puglia | Yoga, Wellness & Company Retreats – Lama di Luna",
+      description:
+        "Reserve the whole Lama di Luna masseria for yoga and wellness retreats, company meetings and family gatherings: 11 rooms, up to 27 guests, 200 hectares of organic estate in the Alta Murgia National Park.",
+    },
+    it: {
+      title: "Ritiri in Puglia | Yoga, Benessere e Riunioni Aziendali – Lama di Luna",
+      description:
+        "Riserva l'intera masseria Lama di Luna per ritiri di yoga e benessere, riunioni aziendali e di famiglia: 11 camere, fino a 27 ospiti, 200 ettari di tenuta biologica nel Parco Nazionale dell'Alta Murgia.",
+    },
+    fr: {
+      title: "Retraites dans les Pouilles | Yoga, Bien-être et Séminaires – Lama di Luna",
+      description:
+        "Réservez toute la masseria Lama di Luna pour des retraites de yoga et de bien-être, des réunions d'entreprise et des réunions de famille : 11 chambres, jusqu'à 27 invités, 200 hectares de domaine biologique dans le Parc national de l'Alta Murgia.",
+    },
+    de: {
+      title: "Retreats in Apulien | Yoga, Wellness & Firmen-Retreats – Lama di Luna",
+      description:
+        "Reservieren Sie die ganze Masseria Lama di Luna für Yoga und Wellness Retreats, Firmentreffen und Familientreffen: 11 Zimmer, bis zu 27 Gäste, 200 Hektar Biogut im Nationalpark Alta Murgia.",
+    },
+  },
   "rooms/masseria": {
     en: { title: "Family Suite Masseria | Lama di Luna Biomasseria", description: "Family suite, sleeps 5, 50 m2, 2 x double bed, TV, Wifi, Minibar, Air conditioning, Jacuzzi, Desk, Bathtub, Hairdryer, Shower, Flat screen TV." },
     it: { title: "Suite familiare masseria | Lama di Luna Biomasseria", description: "Suite Familiare, accoglie 5 persone, 50 m2, 2 x Letto doppio, TV, Wifi, Minibar, Appendiabiti, Aria condizionata, Jacuzzi, Scrivania, Vasca da bagno, Asciugacapelli, Doccia, TV schermo piatto." },

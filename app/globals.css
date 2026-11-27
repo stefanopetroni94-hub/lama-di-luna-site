@@ -3252,7 +3252,36 @@ footer {
   opacity: 1;
   visibility: visible;
 }
-/* ---------------- WEDDINGS PAGE (hidden for now) ---------------- */
+/* home: two links to the Weddings and Retreats pages */
+.home-links {
+  padding: 4rem 0;
+}
+.home-links-grid {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 9vw, 11rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.home-links-grid p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--ink);
+}
+@media (max-width: 800px) {
+  .home-links {
+    padding: 2.5rem 0;
+  }
+  .home-links-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0 1.3rem;
+  }
+}
+
+/* ---------------- WEDDINGS PAGE ---------------- */
 .hero--wedding {
   min-height: 640px;
 }
