@@ -3301,7 +3301,8 @@ footer {
 .wd-intro {
   /* no space below: the next section already has its own 4rem, the same as between all the other sections */
   padding: 8rem 0 0;
-  text-align: center;
+  /* same format as the title of the Retreats page: big capitals, aligned to the left, with the text under it */
+  text-align: left;
 }
 .wd-intro h1 {
   font-family: var(--serif);
@@ -3312,7 +3313,7 @@ footer {
   text-transform: uppercase;
   color: var(--ink);
   max-width: 1300px;
-  margin: 0 auto 1.5rem;
+  margin: 0 0 2.5rem;
 }
 .wd-intro p {
   max-width: 640px;
@@ -3326,7 +3327,7 @@ footer {
 .wd-intro .wd-intro-text {
   /* as wide as the numbers below it, so the left edge of the text lines up with the line above "150" */
   max-width: none;
-  margin: 2rem 0 0;
+  margin: 0;
   font-family: "Times New Roman", Times, serif;
   font-size: 17px;
   font-style: normal;
