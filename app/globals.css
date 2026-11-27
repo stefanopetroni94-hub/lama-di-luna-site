@@ -3327,13 +3327,6 @@ html:has(.wd-hero) {
 }
 .wd-section--film {
   background: var(--olive);
-  /* the credit line already takes about 2.3rem under the video, so the space from the bottom of the video to the end of the dark section matches the 4rem above "Real weddings" */
-  padding-bottom: 1.7rem;
-}
-@media (max-width: 800px) {
-  .wd-section--film {
-    padding-bottom: 0.7rem;
-  }
 }
 .wd-wrap {
   max-width: 1180px;
