@@ -94,9 +94,9 @@ export const weddings: Record<Locale, WeddingsContent> = {
     spacesTitle: "Spaces & Capacity",
     spaces: [
       { moment: "Ceremony", place: "Under the oak trees", body: "Lama di Luna is an official venue for the celebration of civil weddings for the city of Andria." },
-      { moment: "Aperitivo", place: "Terraces", body: "Up to 150 guests standing, at golden hour." },
-      { moment: "Dinner", place: "The inner courtyard", body: "Up to 150 guests at long tables under the stars." },
-      { moment: "Rain plan", place: "The 1800s halls", body: "Up to 150 guests indoors, under stone vaults." },
+      { moment: "Aperitivo", place: "Terraces", body: "Our veranda and its outdoor space are the perfect place to begin the celebration." },
+      { moment: "Dinner", place: "The inner courtyard", body: "The lights create the perfect atmosphere for an intimate and exclusive dinner with your family and friends." },
+      { moment: "Rain plan", place: "The 1800s halls", body: "In case of wet weather, we can host up to 150 guests indoors, in two large 1800s rooms." },
     ],
     weekendTitle: "Your Wedding Weekend",
     weekend: [
@@ -188,9 +188,9 @@ export const weddings: Record<Locale, WeddingsContent> = {
     spacesTitle: "Spazi e capienza",
     spaces: [
       { moment: "Cerimonia", place: "Sotto le querce", body: "Lama di Luna è un luogo ufficiale per la celebrazione dei matrimoni civili della città di Andria." },
-      { moment: "Aperitivo", place: "Le terrazze", body: "Fino a 150 ospiti in piedi, all'ora d'oro." },
-      { moment: "Cena", place: "La corte interna", body: "Fino a 150 ospiti a lunghe tavolate sotto le stelle." },
-      { moment: "Piano in caso di pioggia", place: "Le sale dell'Ottocento", body: "Fino a 150 ospiti al chiuso, sotto volte di pietra." },
+      { moment: "Aperitivo", place: "Le terrazze", body: "La nostra veranda e i suoi spazi all'aperto sono il luogo perfetto per dare inizio alla festa." },
+      { moment: "Cena", place: "La corte interna", body: "Le luci creano l'atmosfera perfetta per una cena intima ed esclusiva con la famiglia e gli amici." },
+      { moment: "Piano in caso di pioggia", place: "Le sale dell'Ottocento", body: "In caso di maltempo possiamo ospitare fino a 150 ospiti al chiuso, in due grandi sale dell'Ottocento." },
     ],
     weekendTitle: "Il vostro weekend di nozze",
     weekend: [
@@ -282,9 +282,9 @@ export const weddings: Record<Locale, WeddingsContent> = {
     spacesTitle: "Espaces et capacité",
     spaces: [
       { moment: "Cérémonie", place: "Sous les chênes", body: "Lama di Luna est un lieu officiel pour célébrer les mariages civils de la ville d'Andria." },
-      { moment: "Apéritif", place: "Les terrasses", body: "Jusqu'à 150 invités debout, à l'heure dorée." },
-      { moment: "Dîner", place: "La cour intérieure", body: "Jusqu'à 150 invités à de longues tables sous les étoiles." },
-      { moment: "Plan en cas de pluie", place: "Les salles du XIXe siècle", body: "Jusqu'à 150 invités à l'intérieur, sous des voûtes de pierre." },
+      { moment: "Apéritif", place: "Les terrasses", body: "Notre véranda et ses espaces extérieurs sont l'endroit idéal pour commencer la fête." },
+      { moment: "Dîner", place: "La cour intérieure", body: "Les lumières créent l'atmosphère parfaite pour un dîner intime et exclusif avec votre famille et vos amis." },
+      { moment: "Plan en cas de pluie", place: "Les salles du XIXe siècle", body: "En cas de mauvais temps, nous pouvons accueillir jusqu'à 150 invités à l'intérieur, dans deux grandes salles du XIXe siècle." },
     ],
     weekendTitle: "Votre week-end de mariage",
     weekend: [
@@ -376,9 +376,9 @@ export const weddings: Record<Locale, WeddingsContent> = {
     spacesTitle: "Räume & Kapazität",
     spaces: [
       { moment: "Trauung", place: "Unter den Eichen", body: "Lama di Luna ist ein offizieller Ort für die standesamtlichen Trauungen der Stadt Andria." },
-      { moment: "Aperitif", place: "Die Terrassen", body: "Bis zu 150 stehende Gäste, zur goldenen Stunde." },
-      { moment: "Abendessen", place: "Der Innenhof", body: "Bis zu 150 Gäste an langen Tafeln unter den Sternen." },
-      { moment: "Regenplan", place: "Die Säle aus dem 19. Jahrhundert", body: "Bis zu 150 Gäste drinnen, unter steinernen Gewölben." },
+      { moment: "Aperitif", place: "Die Terrassen", body: "Unsere Veranda und ihr Außenbereich sind der perfekte Ort, um die Feier zu beginnen." },
+      { moment: "Abendessen", place: "Der Innenhof", body: "Die Lichter schaffen die perfekte Atmosphäre für ein intimes, exklusives Abendessen mit Familie und Freunden." },
+      { moment: "Regenplan", place: "Die Säle aus dem 19. Jahrhundert", body: "Bei schlechtem Wetter können wir bis zu 150 Gäste drinnen unterbringen, in zwei großen Sälen aus dem 19. Jahrhundert." },
     ],
     weekendTitle: "Ihr Hochzeitswochenende",
     weekend: [
