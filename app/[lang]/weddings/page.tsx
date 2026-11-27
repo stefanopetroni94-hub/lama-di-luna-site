@@ -70,9 +70,9 @@ const WEEKEND = [
 ]
 
 const PRICES = [
-  { label: "Exclusive use, 3 nights, 27 guests", price: "from € [PRICE]" },
+  { label: "Exclusive use, 3 nights, 27 guests", price: "from € 13,450 + 10% VAT" },
   { label: "Wedding dinner menu", price: "from € [PRICE] per guest" },
-  { label: "Welcome dinner & farewell brunch", price: "from € [PRICE] per guest" },
+  { label: "Welcome dinner & farewell brunch", price: "from € 55 per guest" },
 ]
 
 const FAQ = [
