@@ -3378,18 +3378,17 @@ html:has(.wd-hero) {
   gap: 4rem;
   align-items: start;
 }
+/* the numbers have a thin line above each one, like the columns of "Spaces & capacity", instead of boxes */
 .wd-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-top: 1px solid var(--sand);
-  border-left: 1px solid var(--sand);
+  gap: 2.5rem 2rem;
   margin: 0;
 }
 .wd-stats > div {
-  border-right: 1px solid var(--sand);
-  border-bottom: 1px solid var(--sand);
-  padding: 1.6rem 1.2rem;
-  text-align: center;
+  border-top: 1px solid var(--ink);
+  padding-top: 1.2rem;
+  text-align: left;
 }
 .wd-stats dt {
   font-family: var(--serif);
