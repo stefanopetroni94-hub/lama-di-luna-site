@@ -80,7 +80,7 @@ const FAQ = [
   { q: "Where do the other guests sleep?", a: "We host 27 guests on site and suggest partner hotels nearby, with shuttles on request." },
   { q: "Can we bring our own planner and suppliers?", a: "Yes, upon request." },
   { q: "Until what time can we dance?", a: "With no neighbours around, the party can run late." },
-  { q: "How do our guests get here?", a: "Bari airport is 45 minutes away. We arrange private transfers for groups." },
+  { q: "How do our guests get here?", a: "Bari airport is 45 minutes away. Guests can rent cars at the airport, or we can help arrange private transfers for groups." },
 ]
 
 export default async function WeddingsPage({ params }: { params: Promise<{ lang: string }> }) {
