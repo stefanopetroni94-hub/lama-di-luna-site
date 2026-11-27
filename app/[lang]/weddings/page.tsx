@@ -77,7 +77,7 @@ const PRICES = [
 
 const FAQ = [
   { q: "Do we have to book the whole masseria?", a: "Yes. Every wedding is exclusive, with a minimum stay of three nights." },
-  { q: "Where do the other guests sleep?", a: "We host 27 guests on site and suggest [PARTNER HOTELS] nearby, with shuttles on request." },
+  { q: "Where do the other guests sleep?", a: "We host 27 guests on site and suggest partner hotels nearby, with shuttles on request." },
   { q: "Can we bring our own planner and suppliers?", a: "[YOUR POLICY ON PLANNERS, CATERING AND SUPPLIERS]" },
   { q: "Until what time can we dance?", a: "[MUSIC HOURS]. With no neighbours around, the party can run late." },
   { q: "When is the best season?", a: "We are open from April to October. May, June and September are the most comfortable months." },
