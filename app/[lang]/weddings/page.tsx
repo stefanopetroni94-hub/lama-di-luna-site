@@ -3,7 +3,6 @@ import type { Metadata } from "next"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { BackLink } from "@/components/back-link"
-import { HeroVideo } from "@/components/hero-video"
 import { PhotoSlider } from "@/components/photo-slider"
 import { WeddingForm } from "@/components/wedding-form"
 import { HOME, chrome, isLocale } from "@/lib/i18n"
@@ -11,7 +10,8 @@ import { SITE_URL, pageMetadata } from "@/lib/seo"
 import { weddings } from "@/lib/content/weddings"
 
 const OG_IMAGE = "/lamadiluna-courtyard-stars.jpg"
-const FILM_ID = "fR4Jeyn2rZc"
+// the example wedding video lives on the photographer's website
+const FILM_URL = "https://www.federicocardone.com/portfolio-item/matrimonio-a-masseria-lama-di-luna/"
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
@@ -131,29 +131,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
         </div>
       </section>
 
-      <section className="wd-section wd-section--film">
-        <div className="wd-wrap wd-center">
-          <div className="wd-label">{c.filmLabel}</div>
-          <h2 className="wd-film-title">{c.filmTitle}</h2>
-        </div>
-        <div className="wd-film">
-          <HeroVideo
-            videoId={FILM_ID}
-            poster={`https://img.youtube.com/vi/${FILM_ID}/maxresdefault.jpg`}
-            label={c.filmWatch}
-          />
-        </div>
-        <div className="wd-credit-row">
-          <p className="wd-credit">
-            {c.filmCredit}{" "}
-            <a href="https://www.federicocardone.com" target="_blank" rel="noopener noreferrer">
-              Federico Cardone
-            </a>
-          </p>
-        </div>
-      </section>
-
-      <section className="wd-section">
+      <section className="wd-section wd-section--dark">
         <div className="wd-wrap wd-narrow">
           <h2 className="wd-title-detail">{c.faqTitle}</h2>
           <div className="wd-faq">
@@ -163,6 +141,15 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
                 <p>{f.a}</p>
               </details>
             ))}
+            <details>
+              <summary>{c.faqVideo.q}</summary>
+              <p>
+                {c.faqVideo.a}{" "}
+                <a href={FILM_URL} target="_blank" rel="noopener noreferrer">
+                  {c.faqVideo.link}
+                </a>
+              </p>
+            </details>
           </div>
         </div>
       </section>

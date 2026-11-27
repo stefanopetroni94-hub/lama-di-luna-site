@@ -31,6 +31,7 @@ export type WeddingsContent = {
   filmWatch: string
   filmCredit: string
   faqTitle: string
+  faqVideo: { q: string; a: string; link: string }
   faq: Faq[]
   enquireTitle: string
   enquireText: string
@@ -121,6 +122,11 @@ export const weddings: Record<Locale, WeddingsContent> = {
     filmWatch: "Watch the wedding film",
     filmCredit: "Film by",
     faqTitle: "Frequently Asked",
+    faqVideo: {
+      q: "Is there a video of a wedding at Lama di Luna?",
+      a: "Here is an example of a past wedding video.",
+      link: "Watch the video by Federico Cardone",
+    },
     faq: [
       { q: "Do we have to book the whole masseria?", a: "Yes. Every wedding is exclusive, with a minimum stay of three nights." },
       { q: "Where do the other guests sleep?", a: "We host 27 guests on site and suggest partner hotels nearby, with shuttles on request." },
@@ -215,6 +221,11 @@ export const weddings: Record<Locale, WeddingsContent> = {
     filmWatch: "Guarda il film del matrimonio",
     filmCredit: "Film di",
     faqTitle: "Domande frequenti",
+    faqVideo: {
+      q: "C'è un video di un matrimonio a Lama di Luna?",
+      a: "Ecco un esempio di video di un matrimonio passato.",
+      link: "Guarda il video di Federico Cardone",
+    },
     faq: [
       { q: "Dobbiamo prenotare l'intera masseria?", a: "Sì. Ogni matrimonio è in esclusiva, con un soggiorno minimo di tre notti." },
       { q: "Dove dormono gli altri ospiti?", a: "Ospitiamo 27 ospiti in tenuta e consigliamo hotel partner nelle vicinanze, con navette su richiesta." },
@@ -309,6 +320,11 @@ export const weddings: Record<Locale, WeddingsContent> = {
     filmWatch: "Regarder le film du mariage",
     filmCredit: "Film de",
     faqTitle: "Questions fréquentes",
+    faqVideo: {
+      q: "Existe-t-il une vidéo d'un mariage à Lama di Luna ?",
+      a: "Voici un exemple de vidéo d'un mariage passé.",
+      link: "Voir la vidéo de Federico Cardone",
+    },
     faq: [
       { q: "Faut-il réserver toute la masseria ?", a: "Oui. Chaque mariage est en exclusivité, avec un séjour minimum de trois nuits." },
       { q: "Où dorment les autres invités ?", a: "Nous accueillons 27 invités sur place et conseillons des hôtels partenaires à proximité, avec navettes sur demande." },
@@ -403,6 +419,11 @@ export const weddings: Record<Locale, WeddingsContent> = {
     filmWatch: "Hochzeitsfilm ansehen",
     filmCredit: "Film von",
     faqTitle: "Häufige Fragen",
+    faqVideo: {
+      q: "Gibt es ein Video von einer Hochzeit in Lama di Luna?",
+      a: "Hier ist ein Beispiel für ein Video einer vergangenen Hochzeit.",
+      link: "Video von Federico Cardone ansehen",
+    },
     faq: [
       { q: "Müssen wir die ganze Masseria buchen?", a: "Ja. Jede Hochzeit ist exklusiv, mit einem Mindestaufenthalt von drei Nächten." },
       { q: "Wo schlafen die anderen Gäste?", a: "Wir beherbergen 27 Gäste auf dem Gut und empfehlen Partnerhotels in der Nähe, mit Shuttle auf Anfrage." },

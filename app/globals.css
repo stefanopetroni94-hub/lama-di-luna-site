@@ -3604,6 +3604,20 @@ html:has(#enquire) {
 .wd-faq details:first-child {
   border-top: 1px solid var(--sand);
 }
+/* the questions are on the bordeaux background: light text and light lines */
+.wd-section--dark .wd-faq details {
+  border-bottom-color: rgba(253, 252, 249, 0.4);
+}
+.wd-section--dark .wd-faq details:first-child {
+  border-top-color: rgba(253, 252, 249, 0.4);
+}
+.wd-section--dark .wd-faq summary,
+.wd-section--dark .wd-faq p {
+  color: var(--bg);
+}
+.wd-section--dark .wd-faq a {
+  text-decoration: underline;
+}
 .wd-faq summary {
   cursor: pointer;
   font-family: var(--serif);
