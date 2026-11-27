@@ -48,7 +48,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     title: "Retreats in an exclusive masseria in Puglia",
     statementTitle: "Take the whole masseria for yourself",
     statementBody: [
-      "For family gatherings, retreats, company meetings or simply the desire to disappear together, Lama di Luna can be reserved in its entirety. The eleven rooms, which sleep up to 27 people, the courtyard, the pool, the library, the cinema room and the refectory become yours alone. There are no other guests, no fixed schedule, no interruptions. With our chefs and our staff at your disposal, from the concierge to the reception, organising your time in Puglia becomes effortless. To reserve the whole masseria we ask for a minimum stay of three nights.",
+      "For family gatherings, retreats, company meetings or simply the desire to disappear together, Lama di Luna can be reserved in its entirety. The eleven rooms, which sleep up to 27 people, the courtyard, the pool, the library, the cinema room and the refectory become yours alone. There are no other guests, no fixed schedule, no interruptions. With our chefs and our staff at your disposal, from the concierge to the reception, organising your time in Puglia becomes effortless.",
     ],
     stay: "",
     weddingsText:
@@ -114,7 +114,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     title: "Ritiri in una masseria in esclusiva in Puglia",
     statementTitle: "Riserva l'intera masseria per te",
     statementBody: [
-      "Per riunioni di famiglia, ritiri, riunioni aziendali o semplicemente il desiderio di sparire insieme, Lama di Luna può essere riservata per intero. Le undici camere, che accolgono fino a 27 persone, il cortile, la piscina, la biblioteca, la sala cinema e il refettorio diventano solo tuoi. Nessun altro ospite, nessun orario fisso, nessuna interruzione. Con i nostri cuochi e il nostro staff a tua disposizione, dal concierge alla reception, organizzare il tuo tempo in Puglia diventa semplice. Per prendere l'intera masseria chiediamo un soggiorno minimo di tre notti.",
+      "Per riunioni di famiglia, ritiri, riunioni aziendali o semplicemente il desiderio di sparire insieme, Lama di Luna può essere riservata per intero. Le undici camere, che accolgono fino a 27 persone, il cortile, la piscina, la biblioteca, la sala cinema e il refettorio diventano solo tuoi. Nessun altro ospite, nessun orario fisso, nessuna interruzione. Con i nostri cuochi e il nostro staff a tua disposizione, dal concierge alla reception, organizzare il tuo tempo in Puglia diventa semplice.",
     ],
     stay: "",
     weddingsText:
@@ -180,7 +180,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     title: "Retraites dans une masseria en exclusivité dans les Pouilles",
     statementTitle: "Toute la masseria rien que pour vous",
     statementBody: [
-      "Pour des réunions de famille, des retraites, des réunions d'entreprise ou simplement l'envie de disparaître ensemble, Lama di Luna peut être réservée dans son intégralité. Les onze chambres, qui accueillent jusqu'à 27 personnes, la cour, la piscine, la bibliothèque, la salle de cinéma et le réfectoire sont à vous seuls. Pas d'autres hôtes, pas d'horaires fixes, aucune interruption. Avec nos cuisiniers et notre équipe à votre disposition, de la conciergerie à la réception, organiser votre séjour dans les Pouilles devient un jeu d'enfant. Pour réserver toute la masseria, nous demandons un séjour minimum de trois nuits.",
+      "Pour des réunions de famille, des retraites, des réunions d'entreprise ou simplement l'envie de disparaître ensemble, Lama di Luna peut être réservée dans son intégralité. Les onze chambres, qui accueillent jusqu'à 27 personnes, la cour, la piscine, la bibliothèque, la salle de cinéma et le réfectoire sont à vous seuls. Pas d'autres hôtes, pas d'horaires fixes, aucune interruption. Avec nos cuisiniers et notre équipe à votre disposition, de la conciergerie à la réception, organiser votre séjour dans les Pouilles devient un jeu d'enfant.",
     ],
     stay: "",
     weddingsText:
@@ -246,7 +246,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     title: "Retreats in einer exklusiven Masseria in Apulien",
     statementTitle: "Die ganze Masseria für Sie allein",
     statementBody: [
-      "Für Familientreffen, Retreats, Firmentreffen oder einfach den Wunsch, gemeinsam zu verschwinden, kann Lama di Luna komplett gemietet werden. Die elf Zimmer für bis zu 27 Personen, der Innenhof, der Pool, die Bibliothek, der Kinoraum und das Refektorium gehören dann nur Ihnen. Keine anderen Gäste, keine festen Zeiten, keine Unterbrechungen. Mit unseren Köchen und unserem Team an Ihrer Seite, vom Concierge bis zur Rezeption, wird die Planung Ihrer Zeit in Apulien ganz einfach. Für die Exklusivnutzung der ganzen Masseria bitten wir um einen Mindestaufenthalt von drei Nächten.",
+      "Für Familientreffen, Retreats, Firmentreffen oder einfach den Wunsch, gemeinsam zu verschwinden, kann Lama di Luna komplett gemietet werden. Die elf Zimmer für bis zu 27 Personen, der Innenhof, der Pool, die Bibliothek, der Kinoraum und das Refektorium gehören dann nur Ihnen. Keine anderen Gäste, keine festen Zeiten, keine Unterbrechungen. Mit unseren Köchen und unserem Team an Ihrer Seite, vom Concierge bis zur Rezeption, wird die Planung Ihrer Zeit in Apulien ganz einfach.",
     ],
     stay: "",
     weddingsText:
