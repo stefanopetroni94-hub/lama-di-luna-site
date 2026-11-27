@@ -144,27 +144,9 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
       </section>
 
       <section className="wd-section">
-        <div className="wd-wrap wd-two">
-          <div>
-            <h2 className="wd-title-detail">{c.ceremonyTitle}</h2>
-            <p>{c.ceremonyText}</p>
-          </div>
-          <div>
-            <h2 className="wd-title-detail">{c.pricesTitle}</h2>
-            <ul className="wd-prices">
-              {c.prices.map((p) => (
-                <li key={p.label}>
-                  <span>{p.label}</span>
-                  <span>{p.price}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="wd-vat">{c.vat}</p>
-            <a href="#enquire" className="scopri">
-              {c.guideCta}
-              <span className="diamond" />
-            </a>
-          </div>
+        <div className="wd-wrap">
+          <h2 className="wd-title-detail">{c.ceremonyTitle}</h2>
+          <p>{c.ceremonyText}</p>
         </div>
       </section>
 
