@@ -3451,6 +3451,11 @@ footer {
   margin: 1.5rem 0 0.5rem;
   border: 1px solid rgba(253, 252, 249, 0.7);
   border-radius: 50%;
+  color: var(--bg);
+  transition: opacity 0.2s;
+}
+.wd-play:hover {
+  opacity: 0.7;
 }
 .wd-section--film .wd-film-title {
   font-style: italic;

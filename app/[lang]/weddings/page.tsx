@@ -14,6 +14,7 @@ const TITLE = "Wedding Venue in Puglia | Exclusive Masseria – Lama di Luna"
 const DESCRIPTION =
   "Get married at Lama di Luna, an exclusive 1800s masseria on a 200-hectare organic estate near Castel del Monte. Up to 150 guests, 27 sleeping on site."
 const OG_IMAGE = "/lamadiluna-courtyard-stars.jpg"
+const FILM_URL = "https://www.federicocardone.com/portfolio-item/matrimonio-a-masseria-lama-di-luna/"
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
@@ -215,14 +216,19 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
       <section className="wd-section wd-section--film">
         <div className="wd-wrap wd-center">
           <div className="wd-label">Real weddings</div>
-          <span className="wd-play" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none">
+          <a
+            className="wd-play"
+            href={FILM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Watch the wedding film by Federico Cardone"
+          >
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" aria-hidden="true">
               <path d="M8 5v14l11-7z" fill="currentColor" />
             </svg>
-          </span>
+          </a>
           <h2 className="wd-film-title">An Italian–Norwegian wedding at Lama di Luna</h2>
           <p className="wd-quote">[A SHORT QUOTE FROM THE COUPLE, WITH THEIR PERMISSION]</p>
-          <p className="wd-todo">[LINK TO THE WEDDING FILM BY FEDERICO CARDONE]</p>
         </div>
       </section>
 
