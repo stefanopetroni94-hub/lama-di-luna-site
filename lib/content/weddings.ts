@@ -100,7 +100,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     ],
     weekendTitle: "Your Wedding Weekend",
     weekend: [
-      { day: "Friday", title: "Welcome dinner", body: "Guests arrive and settle in. Pizza from the wood oven or a Murgian supper in the courtyard." },
+      { day: "Friday", title: "Welcome dinner", body: "Guests arrive and settle in. Pizza from the wood oven or a Murgian supper on the veranda." },
       { day: "Saturday", title: "The wedding", body: "Ceremony at sunset, aperitivo on the terrace, dinner and dancing in the courtyard." },
       { day: "Sunday", title: "Farewell brunch", body: "A slow brunch, an olive oil tasting or a walk on the old drovers' paths before goodbyes." },
     ],
@@ -194,7 +194,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     ],
     weekendTitle: "Il Vostro Weekend di Nozze",
     weekend: [
-      { day: "Venerdì", title: "Cena di benvenuto", body: "Gli ospiti arrivano e si sistemano. Pizza dal forno a legna o una cena murgiana nella corte." },
+      { day: "Venerdì", title: "Cena di benvenuto", body: "Gli ospiti arrivano e si sistemano. Pizza dal forno a legna o una cena murgiana sulla veranda." },
       { day: "Sabato", title: "Il matrimonio", body: "Cerimonia al tramonto, aperitivo sulla terrazza, cena e balli nella corte." },
       { day: "Domenica", title: "Brunch di saluto", body: "Un brunch lento, una degustazione d'olio o una passeggiata sugli antichi tratturi prima dei saluti." },
     ],
@@ -288,7 +288,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     ],
     weekendTitle: "Votre Week-end de Mariage",
     weekend: [
-      { day: "Vendredi", title: "Dîner de bienvenue", body: "Les invités arrivent et s'installent. Pizza au feu de bois ou dîner de la Murgia dans la cour." },
+      { day: "Vendredi", title: "Dîner de bienvenue", body: "Les invités arrivent et s'installent. Pizza au feu de bois ou dîner de la Murgia sur la véranda." },
       { day: "Samedi", title: "Le mariage", body: "Cérémonie au coucher du soleil, apéritif sur la terrasse, dîner et danse dans la cour." },
       { day: "Dimanche", title: "Brunch d'adieu", body: "Un brunch tranquille, une dégustation d'huile d'olive ou une promenade sur les anciens chemins de transhumance avant les au revoir." },
     ],
@@ -382,7 +382,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     ],
     weekendTitle: "Ihr Hochzeitswochenende",
     weekend: [
-      { day: "Freitag", title: "Willkommensessen", body: "Die Gäste kommen an und richten sich ein. Pizza aus dem Holzofen oder ein Abendessen der Murgia im Innenhof." },
+      { day: "Freitag", title: "Willkommensessen", body: "Die Gäste kommen an und richten sich ein. Pizza aus dem Holzofen oder ein Abendessen der Murgia auf der Veranda." },
       { day: "Samstag", title: "Die Hochzeit", body: "Trauung bei Sonnenuntergang, Aperitif auf der Terrasse, Abendessen und Tanz im Innenhof." },
       { day: "Sonntag", title: "Abschiedsbrunch", body: "Ein gemütlicher Brunch, eine Olivenölverkostung oder ein Spaziergang auf den alten Hirtenwegen vor dem Abschied." },
     ],
