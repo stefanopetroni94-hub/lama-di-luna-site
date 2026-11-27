@@ -3307,9 +3307,9 @@ footer {
 .wd-intro h1 {
   font-family: var(--serif);
   font-weight: 500;
-  /* a little smaller than the other titles, so the lines run longer towards the right margin and do not make a tall block */
-  font-size: clamp(1.7rem, 3.6vw, 3.3rem);
-  line-height: 1.08;
+  /* the same size as the title of the Retreats page and the other pages */
+  font-size: clamp(1.92rem, 4.8vw, 4.48rem);
+  line-height: 1.05;
   letter-spacing: -0.025em;
   text-transform: uppercase;
   color: var(--ink);
