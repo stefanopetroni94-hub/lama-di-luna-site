@@ -3442,20 +3442,20 @@ footer {
 .wd-prices li:first-child {
   border-top: 1px solid var(--sand);
 }
-.wd-play {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 72px;
-  height: 72px;
-  margin: 1.5rem 0 0.5rem;
-  border: 1px solid rgba(253, 252, 249, 0.7);
-  border-radius: 50%;
-  color: var(--bg);
-  transition: opacity 0.2s;
+.wd-film {
+  max-width: 960px;
+  margin: 2rem auto 0;
 }
-.wd-play:hover {
-  opacity: 0.7;
+.wd-credit {
+  margin-top: 1rem;
+  font-family: var(--serif);
+  font-size: 12px !important;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  line-height: 1.7 !important;
+}
+.wd-credit a {
+  text-decoration: underline;
 }
 .wd-section--film .wd-film-title {
   font-style: italic;
