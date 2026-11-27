@@ -5,6 +5,7 @@ import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { BackLink } from "@/components/back-link"
 import { HeroVideo } from "@/components/hero-video"
+import { PhotoSlider } from "@/components/photo-slider"
 import { WeddingForm } from "@/components/wedding-form"
 import { HOME, chrome, isLocale } from "@/lib/i18n"
 import { SITE_URL } from "@/lib/seo"
@@ -53,6 +54,15 @@ const REASONS = [
     title: "A wedding that leaves light footprints",
     body: "A solar-powered, organic biomasseria built with bio-architecture. Sustainable without giving up comfort.",
   },
+]
+
+// the five wedding photos of the Events page
+const GALLERY = [
+  { src: "/whatsapp/20261017_095410_1916693209311624.jpg", position: "50% center" },
+  { src: "/whatsapp/20261016_165134_1827109174977754.jpg", position: "50% center" },
+  { src: "/whatsapp/20261016_165613_932387559726351.jpg", position: "center 25%" },
+  { src: "/whatsapp/20261016_165422_1913563452860011.jpg", position: "center 60%" },
+  { src: "/whatsapp/20261016_165022_1438073468460314.jpg", position: "20% center" },
 ]
 
 const SPACES = [
@@ -156,6 +166,15 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
             ))}
           </div>
         </div>
+      </section>
+
+      <section>
+        <PhotoSlider
+          photos={GALLERY}
+          label="Weddings at Lama di Luna"
+          prevLabel="Previous photos"
+          nextLabel="Next photos"
+        />
       </section>
 
       <section className="wd-section">

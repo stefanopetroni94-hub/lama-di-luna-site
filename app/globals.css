@@ -3511,6 +3511,52 @@ html:has(.wd-hero) {
 .wd-faq details p {
   margin: 0.8rem 0 0;
 }
+/* two photos side by side, with round arrows at the left and right edge */
+.photo-slider {
+  position: relative;
+}
+.photo-slider-half {
+  position: relative;
+  overflow: hidden;
+}
+.photo-slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(253, 252, 249, 0.9);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.photo-slider-arrow:hover {
+  background: #ffffff;
+}
+.photo-slider-arrow--prev {
+  left: 1.2rem;
+}
+.photo-slider-arrow--next {
+  right: 1.2rem;
+}
+@media (max-width: 800px) {
+  .photo-slider-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .photo-slider-arrow--prev {
+    left: 0.6rem;
+  }
+  .photo-slider-arrow--next {
+    right: 0.6rem;
+  }
+}
 /* the wedding form uses the same classes as the "Contact us" box (white box, fields, button), only the layout is in two columns */
 .wd-form {
   margin-top: 2.5rem;
