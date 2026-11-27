@@ -2723,7 +2723,9 @@ footer {
 }
 /* this photo is already level, so no rotation is needed */
 .exp-hero--exclusive::before {
-  background: url("/whatsapp/20261016_183752_1693704425661443.jpg") center 55% / cover no-repeat;
+  background: url("/whatsapp/20261127_144026_951361567912638.jpg") center 55% / cover no-repeat;
+  /* the same vintage filter as the other photos, with the exposure raised because the photo is dark */
+  filter: sepia(0.28) contrast(1.18) saturate(0.82) brightness(1.18);
 }
 .exp-hero::after {
   content: "";
