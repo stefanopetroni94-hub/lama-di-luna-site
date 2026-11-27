@@ -218,7 +218,6 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
         <div className="wd-wrap wd-center">
           <div className="wd-label">Real weddings</div>
           <h2 className="wd-film-title">An Italian–Norwegian wedding at Lama di Luna</h2>
-          <p className="wd-quote">[A SHORT QUOTE FROM THE COUPLE, WITH THEIR PERMISSION]</p>
         </div>
         <div className="wd-film">
           <HeroVideo
