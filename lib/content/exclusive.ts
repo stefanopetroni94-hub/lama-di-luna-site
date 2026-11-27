@@ -112,7 +112,7 @@ export const exclusive: Record<Locale, ExclusiveContent> = {
     breadcrumbCurrent: "Masseria in esclusiva",
     heroEyebrow: "La masseria, tutta per te",
     title: "Masseria in Esclusiva",
-    statementTitle: "Prendi l'intera masseria per te",
+    statementTitle: "Riserva l'intera masseria per te",
     statementBody: [
       "Per riunioni di famiglia, ritiri, riunioni aziendali o semplicemente il desiderio di sparire insieme, Lama di Luna può essere riservata per intero. Le undici camere, che accolgono fino a 27 persone, il cortile, la piscina, la biblioteca, la sala cinema e il refettorio diventano solo tuoi. Nessun altro ospite, nessun orario fisso, nessuna interruzione. Con i nostri cuochi e il nostro staff a tua disposizione, dal concierge alla reception, organizzare il tuo tempo in Puglia diventa semplice. Per prendere l'intera masseria chiediamo un soggiorno minimo di tre notti.",
     ],
