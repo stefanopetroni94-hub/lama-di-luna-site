@@ -58,9 +58,9 @@ const REASONS = [
 
 const SPACES = [
   { moment: "Ceremony", place: "Under the oak trees", body: "Up to 150 seated guests, facing the National Park." },
-  { moment: "Aperitivo", place: "Pool & terraces", body: "Up to [NUMBER] guests standing, at golden hour." },
+  { moment: "Aperitivo", place: "Terraces", body: "Up to 150 guests standing, at golden hour." },
   { moment: "Dinner", place: "The inner courtyard", body: "Up to 150 guests at long tables under the stars." },
-  { moment: "Rain plan", place: "The 1800s halls", body: "Up to [NUMBER] guests indoors, under stone vaults." },
+  { moment: "Rain plan", place: "The 1800s halls", body: "Up to 150 guests indoors, under stone vaults." },
 ]
 
 const WEEKEND = [
