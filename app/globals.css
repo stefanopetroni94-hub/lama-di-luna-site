@@ -3554,6 +3554,13 @@ html:has(.wd-hero) {
   right: 1.2rem;
 }
 @media (max-width: 800px) {
+  /* on a phone: one photo at a time, full width, instead of two */
+  .photo-slider.photo-slider {
+    grid-template-columns: 1fr;
+  }
+  .photo-slider-half:nth-child(2) {
+    display: none;
+  }
   .photo-slider-arrow {
     width: 40px;
     height: 40px;
