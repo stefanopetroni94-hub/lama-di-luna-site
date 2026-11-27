@@ -162,34 +162,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
-      <section>
-        <div className="text-image">
-          <div
-            className="image-block image-block--zoom"
-            role="img"
-            aria-label={HOME_LINKS.weddings[lang].alt}
-          >
-            <div style={{ backgroundImage: "url('/whatsapp/20261127_075649_1744275486669953.jpg')", backgroundPosition: "center 45%" }} />
-          </div>
-          <div className="text-block">
-            <div className="room-name" style={{ marginBottom: "1rem" }}>
-              <Link href={`/${lang}/weddings`} className="title-link">
-                {HOME_LINKS.weddings[lang].title}
-              </Link>
-            </div>
-            <p>{HOME_LINKS.weddings[lang].text}</p>
-            <Scopri href={`/${lang}/weddings`}>{HOME_LINKS.weddings[lang].cta}</Scopri>
-          </div>
-        </div>
-        <div className="home-retreats">
-          <Link href={`/${lang}/retreats`} className="title-link">
-            {HOME_LINKS.retreats[lang].title}
-          </Link>
-          <p>{HOME_LINKS.retreats[lang].text}</p>
-          <Scopri href={`/${lang}/retreats`}>{HOME_LINKS.retreats[lang].cta}</Scopri>
-        </div>
-      </section>
-
       <NewsletterForm
         namePlaceholder={{ en: "Name", it: "Nome", fr: "Prénom", de: "Vorname" }[lang]}
         placeholder={c.newsletterPlaceholder}
