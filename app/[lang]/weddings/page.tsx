@@ -79,7 +79,7 @@ const FAQ = [
   { q: "Do we have to book the whole masseria?", a: "Yes. Every wedding is exclusive, with a minimum stay of three nights." },
   { q: "Where do the other guests sleep?", a: "We host 27 guests on site and suggest partner hotels nearby, with shuttles on request." },
   { q: "Can we bring our own planner and suppliers?", a: "Yes, upon request." },
-  { q: "Until what time can we dance?", a: "[MUSIC HOURS]. With no neighbours around, the party can run late." },
+  { q: "Until what time can we dance?", a: "With no neighbours around, the party can run late." },
   { q: "When is the best season?", a: "We are open from April to October. May, June and September are the most comfortable months." },
   { q: "How do our guests get here?", a: "Bari airport is 45 minutes away. We arrange private transfers for groups." },
 ]
