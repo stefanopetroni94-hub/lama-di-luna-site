@@ -3517,6 +3517,8 @@ html:has(.wd-hero) {
 .photo-slider-half {
   position: relative;
   overflow: hidden;
+  /* the same vintage photo filter as the rest of the site */
+  filter: sepia(0.28) contrast(1.18) saturate(0.82) brightness(0.96);
 }
 .photo-slider-arrow {
   position: absolute;

@@ -56,13 +56,23 @@ const REASONS = [
   },
 ]
 
-// the five wedding photos of the Events page
+// the five wedding photos of the Events page, then the ten new ones. The site photo filter is applied by the gallery itself.
 const GALLERY = [
   { src: "/whatsapp/20261017_095410_1916693209311624.jpg", position: "50% center" },
+  { src: "/whatsapp/20261127_075621_1442278754732944.jpg", position: "center 45%" },
+  { src: "/whatsapp/20261127_075626_2054415521874547.jpg", position: "center 40%" },
   { src: "/whatsapp/20261016_165134_1827109174977754.jpg", position: "50% center" },
+  { src: "/whatsapp/20261127_075640_1854277828941805.jpg", position: "center 55%" },
   { src: "/whatsapp/20261016_165613_932387559726351.jpg", position: "center 25%" },
+  { src: "/whatsapp/20261127_075631_1713082303553822.jpg", position: "center 50%" },
+  { src: "/whatsapp/20261127_075649_1744275486669953.jpg", position: "center 45%" },
   { src: "/whatsapp/20261016_165422_1913563452860011.jpg", position: "center 60%" },
+  { src: "/whatsapp/20261127_075636_1462725258659477.jpg", position: "center 55%" },
+  { src: "/whatsapp/20261127_075658_1769727127855947.jpg", position: "center 40%" },
   { src: "/whatsapp/20261016_165022_1438073468460314.jpg", position: "20% center" },
+  { src: "/whatsapp/20261127_075645_1625299038855624.jpg", position: "center 50%" },
+  { src: "/whatsapp/20261127_075654_2584698828703681.jpg", position: "center 55%" },
+  { src: "/whatsapp/20261127_075702_1558481429668415.jpg", position: "center 50%" },
 ]
 
 const SPACES = [
