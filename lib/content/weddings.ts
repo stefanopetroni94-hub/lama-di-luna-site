@@ -104,9 +104,9 @@ export const weddings: Record<Locale, WeddingsContent> = {
       { day: "Saturday", title: "The wedding", body: "Ceremony at sunset, aperitivo on the terrace, dinner and dancing in the courtyard." },
       { day: "Sunday", title: "Farewell brunch", body: "A slow brunch, an olive oil tasting or a walk on the old drovers' paths before goodbyes." },
     ],
-    ceremonyTitle: "Symbolic, Civil or Religious",
+    ceremonyTitle: "Civil Ceremony",
     ceremonyText:
-      "Symbolic ceremonies take place on the estate, with an English-speaking celebrant on request. Civil ceremonies are held in our ancient library or outdoors, upon request to the Municipality of Andria. Religious ceremonies in a nearby church, with transfers arranged for your guests.",
+      "Lama di Luna is an official venue for celebrating the civil wedding ceremonies of the city of Andria.",
     pricesTitle: "Clear Prices, from the Start",
     prices: [
       { label: "Exclusive use, 3 nights, 27 guests", price: "from € 13,450*" },
@@ -198,9 +198,9 @@ export const weddings: Record<Locale, WeddingsContent> = {
       { day: "Sabato", title: "Il matrimonio", body: "Cerimonia al tramonto, aperitivo sulla terrazza, cena e balli nella corte." },
       { day: "Domenica", title: "Brunch di saluto", body: "Un brunch lento, una degustazione d'olio o una passeggiata sugli antichi tratturi prima dei saluti." },
     ],
-    ceremonyTitle: "Simbolica, civile o religiosa",
+    ceremonyTitle: "Cerimonia civile",
     ceremonyText:
-      "Le cerimonie simboliche si svolgono in tenuta, con un celebrante di lingua inglese su richiesta. Le cerimonie civili si tengono nella nostra antica biblioteca o all'aperto, su richiesta al Comune di Andria. Cerimonie religiose in una chiesa vicina, con trasferimenti organizzati per i vostri ospiti.",
+      "Lama di Luna è un luogo ufficiale per celebrare le cerimonie di matrimonio civile della città di Andria.",
     pricesTitle: "Prezzi chiari, fin dall'inizio",
     prices: [
       { label: "Uso esclusivo, 3 notti, 27 ospiti", price: "da € 13.450*" },
@@ -292,9 +292,9 @@ export const weddings: Record<Locale, WeddingsContent> = {
       { day: "Samedi", title: "Le mariage", body: "Cérémonie au coucher du soleil, apéritif sur la terrasse, dîner et danse dans la cour." },
       { day: "Dimanche", title: "Brunch d'adieu", body: "Un brunch tranquille, une dégustation d'huile d'olive ou une promenade sur les anciens chemins de transhumance avant les au revoir." },
     ],
-    ceremonyTitle: "Symbolique, civile ou religieuse",
+    ceremonyTitle: "Cérémonie civile",
     ceremonyText:
-      "Les cérémonies symboliques ont lieu sur le domaine, avec un officiant anglophone sur demande. Les cérémonies civiles se tiennent dans notre ancienne bibliothèque ou en plein air, sur demande auprès de la mairie d'Andria. Cérémonies religieuses dans une église voisine, avec des transferts organisés pour vos invités.",
+      "Lama di Luna est un lieu officiel pour célébrer les mariages civils de la ville d'Andria.",
     pricesTitle: "Des prix clairs, dès le départ",
     prices: [
       { label: "Usage exclusif, 3 nuits, 27 invités", price: "à partir de 13 450 €*" },
@@ -386,9 +386,9 @@ export const weddings: Record<Locale, WeddingsContent> = {
       { day: "Samstag", title: "Die Hochzeit", body: "Trauung bei Sonnenuntergang, Aperitif auf der Terrasse, Abendessen und Tanz im Innenhof." },
       { day: "Sonntag", title: "Abschiedsbrunch", body: "Ein gemütlicher Brunch, eine Olivenölverkostung oder ein Spaziergang auf den alten Hirtenwegen vor dem Abschied." },
     ],
-    ceremonyTitle: "Symbolisch, standesamtlich oder kirchlich",
+    ceremonyTitle: "Standesamtliche Trauung",
     ceremonyText:
-      "Symbolische Trauungen finden auf dem Gut statt, auf Wunsch mit einem englischsprachigen Redner. Standesamtliche Trauungen werden in unserer alten Bibliothek oder im Freien abgehalten, auf Anfrage bei der Gemeinde Andria. Kirchliche Trauungen in einer nahegelegenen Kirche, mit organisierten Transfers für Ihre Gäste.",
+      "Lama di Luna ist ein offizieller Ort für die standesamtlichen Trauungen der Stadt Andria.",
     pricesTitle: "Klare Preise von Anfang an",
     prices: [
       { label: "Exklusivnutzung, 3 Nächte, 27 Gäste", price: "ab € 13.450*" },
