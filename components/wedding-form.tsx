@@ -16,7 +16,7 @@ export function WeddingForm({ privacyHref }: { privacyHref: string }) {
 
   return (
     <form
-      className="wd-form"
+      className="contact-form wd-form"
       onSubmit={async (e) => {
         e.preventDefault()
         const form = e.currentTarget
@@ -52,25 +52,20 @@ export function WeddingForm({ privacyHref }: { privacyHref: string }) {
     >
       <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ display: "none" }} />
       <div className="wd-form-grid">
-        <label className="wd-field">
-          <span>Your names</span>
-          <input className="line-input" name="names" type="text" required />
-        </label>
-        <label className="wd-field">
-          <span>Email</span>
-          <input className="line-input" name="email" type="email" required />
-        </label>
-        <label className="wd-field">
-          <span>Country</span>
-          <input className="line-input" name="country" type="text" required />
-        </label>
-        <label className="wd-field">
-          <span>Preferred date or season</span>
-          <input className="line-input" name="date" type="text" required />
-        </label>
-        <label className="wd-field">
-          <span>Number of guests</span>
-          <select className="line-input" name="guests" required defaultValue="">
+        <input className="line-input" name="names" type="text" placeholder="Your names" aria-label="Your names" required />
+        <input className="line-input" name="email" type="email" placeholder="Email" aria-label="Email" required />
+        <input className="line-input" name="country" type="text" placeholder="Country" aria-label="Country" required />
+        <input
+          className="line-input"
+          name="date"
+          type="text"
+          placeholder="Preferred date or season"
+          aria-label="Preferred date or season"
+          required
+        />
+        <div className="field">
+          <label htmlFor="wd-guests">Number of guests</label>
+          <select className="line-input" id="wd-guests" name="guests" required defaultValue="">
             <option value="" disabled>
               Select
             </option>
@@ -78,40 +73,40 @@ export function WeddingForm({ privacyHref }: { privacyHref: string }) {
               <option key={o}>{o}</option>
             ))}
           </select>
-        </label>
-        <label className="wd-field">
-          <span>Type of ceremony</span>
-          <select className="line-input" name="ceremony" defaultValue="">
+        </div>
+        <div className="field">
+          <label htmlFor="wd-ceremony">Type of ceremony</label>
+          <select className="line-input" id="wd-ceremony" name="ceremony" defaultValue="">
             <option value="">Select</option>
             {CEREMONY.map((o) => (
               <option key={o}>{o}</option>
             ))}
           </select>
-        </label>
-        <label className="wd-field">
-          <span>Budget</span>
-          <select className="line-input" name="budget" defaultValue="">
+        </div>
+        <div className="field">
+          <label htmlFor="wd-budget">Budget</label>
+          <select className="line-input" id="wd-budget" name="budget" defaultValue="">
             <option value="">Select</option>
             {BUDGET.map((o) => (
               <option key={o}>{o}</option>
             ))}
           </select>
-        </label>
-        <label className="wd-field">
-          <span>Do you have a planner?</span>
-          <select className="line-input" name="planner" defaultValue="">
+        </div>
+        <div className="field">
+          <label htmlFor="wd-planner">Do you have a planner?</label>
+          <select className="line-input" id="wd-planner" name="planner" defaultValue="">
             <option value="">Select</option>
             {PLANNER.map((o) => (
               <option key={o}>{o}</option>
             ))}
           </select>
-        </label>
-        <label className="wd-field wd-field--wide">
-          <span>Tell us more</span>
-          <textarea className="box-input" name="more" rows={5} />
-        </label>
+        </div>
+        <div className="field field--wide">
+          <label htmlFor="wd-more">Tell us more</label>
+          <textarea className="box-input" id="wd-more" name="more" rows={6} />
+        </div>
       </div>
-      <label className="wd-consent">
+      <label className="privacy-check">
         <input type="checkbox" name="privacy" value="accepted" required />
         <span>
           I have read and accept the{" "}
@@ -120,14 +115,14 @@ export function WeddingForm({ privacyHref }: { privacyHref: string }) {
           </a>
         </span>
       </label>
-      <div className="wd-submit">
-        <button type="submit" className="wd-btn" disabled={status === "sending"}>
+      <div className="submit">
+        <button type="submit" className="submit-btn" disabled={status === "sending"}>
           Request wedding details
         </button>
         {status === "sent" || status === "error" ? (
-          <p className="wd-note" role="status" aria-live="polite">
+          <div className="submit-note" role="status" aria-live="polite">
             {status === "sent" ? "Thank you. We will reply within 24 hours with availability and our wedding guide." : leadError()}
-          </p>
+          </div>
         ) : null}
       </div>
     </form>
