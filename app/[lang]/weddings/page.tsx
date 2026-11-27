@@ -65,7 +65,7 @@ const SPACES = [
 
 const WEEKEND = [
   { day: "Friday", title: "Welcome dinner", body: "Guests arrive and settle in. Pizza from the wood oven or a Murgian supper in the courtyard." },
-  { day: "Saturday", title: "The wedding", body: "Ceremony at sunset, aperitivo by the pool, dinner and dancing in the courtyard." },
+  { day: "Saturday", title: "The wedding", body: "Ceremony at sunset, aperitivo on the terrace, dinner and dancing in the courtyard." },
   { day: "Sunday", title: "Farewell brunch", body: "A slow brunch, an olive oil tasting or a walk on the old drovers' paths before goodbyes." },
 ]
 
