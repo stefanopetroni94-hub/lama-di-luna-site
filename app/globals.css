@@ -3302,8 +3302,8 @@ footer {
   color: var(--ink);
   text-align: left;
 }
-.wd-intro .scopri {
-  margin-top: 0.5rem;
+.wd-stats-cta {
+  margin-top: 1rem;
 }
 @media (max-width: 800px) {
   .wd-intro {
