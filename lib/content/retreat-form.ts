@@ -9,6 +9,8 @@ export type RetreatFormLabels = {
   guests: string[]
   typeLabel: string
   types: string[]
+  retreatLabel: string
+  retreats: string[]
   more: string
   select: string
   privacyBefore: string
@@ -28,6 +30,8 @@ export const retreatForm: Record<Locale, RetreatFormLabels> = {
     guests: ["Up to 10", "10–20", "20–27", "More than 27"],
     typeLabel: "Type of stay",
     types: ["Retreat", "Company meeting", "Family gathering", "Something else"],
+    retreatLabel: "Type of retreat",
+    retreats: ["Yoga", "Wellness", "Mindfulness", "Business", "Food & wine", "Personal growth", "Something else"],
     more: "Tell us more",
     select: "Select",
     privacyBefore: "I have read and accept the ",
@@ -45,6 +49,8 @@ export const retreatForm: Record<Locale, RetreatFormLabels> = {
     guests: ["Fino a 10", "10–20", "20–27", "Più di 27"],
     typeLabel: "Tipo di soggiorno",
     types: ["Ritiro", "Riunione aziendale", "Riunione di famiglia", "Altro"],
+    retreatLabel: "Che tipo di ritiro",
+    retreats: ["Yoga", "Benessere", "Mindfulness", "Aziendale", "Enogastronomia", "Crescita personale", "Altro"],
     more: "Raccontaci di più",
     select: "Seleziona",
     privacyBefore: "Ho letto e accetto la ",
@@ -62,6 +68,8 @@ export const retreatForm: Record<Locale, RetreatFormLabels> = {
     guests: ["Jusqu'à 10", "10–20", "20–27", "Plus de 27"],
     typeLabel: "Type de séjour",
     types: ["Retraite", "Réunion d'entreprise", "Réunion de famille", "Autre"],
+    retreatLabel: "Type de retraite",
+    retreats: ["Yoga", "Bien-être", "Pleine conscience", "Entreprise", "Gastronomie et vin", "Développement personnel", "Autre"],
     more: "Dites-nous en plus",
     select: "Sélectionner",
     privacyBefore: "J'ai lu et j'accepte la ",
@@ -79,6 +87,8 @@ export const retreatForm: Record<Locale, RetreatFormLabels> = {
     guests: ["Bis 10", "10–20", "20–27", "Mehr als 27"],
     typeLabel: "Art des Aufenthalts",
     types: ["Retreat", "Firmentreffen", "Familientreffen", "Etwas anderes"],
+    retreatLabel: "Art des Retreats",
+    retreats: ["Yoga", "Wellness", "Achtsamkeit", "Firmen-Retreat", "Kulinarik und Wein", "Persönliches Wachstum", "Etwas anderes"],
     more: "Erzählen Sie uns mehr",
     select: "Auswählen",
     privacyBefore: "Ich habe die ",

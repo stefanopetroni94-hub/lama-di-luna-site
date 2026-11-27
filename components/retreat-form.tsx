@@ -29,6 +29,7 @@ export function RetreatForm({ privacyHref, labels }: { privacyHref: string; labe
           `Preferred dates or period: ${val("date")}`,
           `Number of guests: ${val("guests")}`,
           `Type of stay: ${val("type") || "-"}`,
+          `Type of retreat: ${val("retreat") || "-"}`,
           `Language of the page: ${document.documentElement.lang}`,
           "",
           val("more") || "(no further notes)",
@@ -74,6 +75,17 @@ export function RetreatForm({ privacyHref, labels }: { privacyHref: string; labe
             <option value="">{labels.select}</option>
             {labels.types.map((o, i) => (
               <option key={o} value={EN.types[i]}>
+                {o}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="field">
+          <label htmlFor="rt-retreat">{labels.retreatLabel}</label>
+          <select className="line-input" id="rt-retreat" name="retreat" defaultValue="">
+            <option value="">{labels.select}</option>
+            {labels.retreats.map((o, i) => (
+              <option key={o} value={EN.retreats[i]}>
                 {o}
               </option>
             ))}
