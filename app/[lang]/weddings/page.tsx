@@ -226,9 +226,9 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
             label="Watch the wedding film"
           />
         </div>
-        <div className="wd-wrap wd-center">
+        <div className="wd-credit-row">
           <p className="wd-credit">
-            Video by{" "}
+            Film by{" "}
             <a href="https://www.federicocardone.com" target="_blank" rel="noopener noreferrer">
               Federico Cardone
             </a>

@@ -3447,12 +3447,16 @@ footer {
   width: 100%;
   margin: 2.5rem 0 0;
 }
+/* credit sits right under the bottom right corner of the video */
+.wd-credit-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.8rem 1.3rem 0;
+}
 .wd-credit {
-  margin-top: 1rem;
+  margin: 0;
   font-family: var(--serif);
-  font-size: 12px !important;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-size: 14px !important;
   line-height: 1.7 !important;
 }
 .wd-credit a {
