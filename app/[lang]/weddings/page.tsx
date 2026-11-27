@@ -128,21 +128,6 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
         </div>
       </section>
 
-      <section className="wd-section wd-section--dark">
-        <div className="wd-wrap">
-          <h2 className="wd-title-detail">{c.weekendTitle}</h2>
-          <div className="wd-three wd-three--text">
-            {c.weekend.map((d) => (
-              <div key={d.day}>
-                <div className="wd-label">{d.day}</div>
-                <h3>{d.title}</h3>
-                <p>{d.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="wd-section">
         <div className="wd-wrap">
           <h2 className="wd-title-detail">{c.ceremonyTitle}</h2>
