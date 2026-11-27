@@ -40,7 +40,7 @@ const REASONS = [
     img: "/lamadiluna-courtyard-stars.jpg",
     alt: "The masseria courtyard under the stars",
     title: "A wild, authentic Puglia",
-    body: "No town, no neighbours, no noise curfews from next door. Only the Murgia, the olive trees and the night sky.",
+    body: "No town, no neighbours, no noise curfews from next door. Only the Alta Murgia National Park, the olive trees and the night sky.",
   },
   {
     img: "/kitchen-pomodori.jpg",
