@@ -93,7 +93,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     ],
     spacesTitle: "Spaces & Capacity",
     spaces: [
-      { moment: "Ceremony", place: "Under the oak trees", body: "Lama di Luna is an official venue for the celebration of civil wedding ceremonies for the city of Andria." },
+      { moment: "Ceremony", place: "Under the oak trees", body: "Lama di Luna is an official venue for the celebration of civil weddings for the city of Andria." },
       { moment: "Aperitivo", place: "Terraces", body: "Up to 150 guests standing, at golden hour." },
       { moment: "Dinner", place: "The inner courtyard", body: "Up to 150 guests at long tables under the stars." },
       { moment: "Rain plan", place: "The 1800s halls", body: "Up to 150 guests indoors, under stone vaults." },
@@ -187,7 +187,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     ],
     spacesTitle: "Spazi e capienza",
     spaces: [
-      { moment: "Cerimonia", place: "Sotto le querce", body: "Lama di Luna è un luogo ufficiale per celebrare le cerimonie di matrimonio civile della città di Andria." },
+      { moment: "Cerimonia", place: "Sotto le querce", body: "Lama di Luna è un luogo ufficiale per la celebrazione dei matrimoni civili della città di Andria." },
       { moment: "Aperitivo", place: "Le terrazze", body: "Fino a 150 ospiti in piedi, all'ora d'oro." },
       { moment: "Cena", place: "La corte interna", body: "Fino a 150 ospiti a lunghe tavolate sotto le stelle." },
       { moment: "Piano in caso di pioggia", place: "Le sale dell'Ottocento", body: "Fino a 150 ospiti al chiuso, sotto volte di pietra." },
