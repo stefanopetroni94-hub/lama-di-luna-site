@@ -2,7 +2,6 @@ import { notFound } from "next/navigation"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { BackLink } from "@/components/back-link"
-import { Scopri } from "@/components/scopri"
 import { HOME, isLocale } from "@/lib/i18n"
 import { exclusive } from "@/lib/content/exclusive"
 import { WaveLine } from "@/components/wave-line"
@@ -80,7 +79,10 @@ export default async function RetreatsPage({ params }: { params: Promise<{ lang:
         <div className="statement-inner">
           <div className="statement-body">
             <p>{c.retreatsText}</p>
-            <Scopri href={`/${lang}/contact`}>{c.bookingCta}</Scopri>
+            <a href="#enquire" className="scopri">
+              {c.bookingCta}
+              <span className="diamond" />
+            </a>
           </div>
         </div>
       </section>
@@ -153,7 +155,10 @@ export default async function RetreatsPage({ params }: { params: Promise<{ lang:
         <div className="statement-inner">
           <div className="statement-body">
             <p>{c.gatheringsText}</p>
-            <Scopri href={`/${lang}/contact`}>{c.bookingCta}</Scopri>
+            <a href="#enquire" className="scopri">
+              {c.bookingCta}
+              <span className="diamond" />
+            </a>
           </div>
         </div>
       </section>
