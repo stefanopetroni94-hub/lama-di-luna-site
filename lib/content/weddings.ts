@@ -93,7 +93,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     ],
     spacesTitle: "Spaces & Capacity",
     spaces: [
-      { moment: "Ceremony", place: "Under the oak trees", body: "Up to 150 seated guests, facing the National Park." },
+      { moment: "Ceremony", place: "Under the oak trees", body: "Lama di Luna is an official venue for the celebration of civil wedding ceremonies for the city of Andria." },
       { moment: "Aperitivo", place: "Terraces", body: "Up to 150 guests standing, at golden hour." },
       { moment: "Dinner", place: "The inner courtyard", body: "Up to 150 guests at long tables under the stars." },
       { moment: "Rain plan", place: "The 1800s halls", body: "Up to 150 guests indoors, under stone vaults." },
@@ -187,7 +187,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     ],
     spacesTitle: "Spazi e capienza",
     spaces: [
-      { moment: "Cerimonia", place: "Sotto le querce", body: "Fino a 150 ospiti seduti, di fronte al Parco Nazionale." },
+      { moment: "Cerimonia", place: "Sotto le querce", body: "Lama di Luna è un luogo ufficiale per celebrare le cerimonie di matrimonio civile della città di Andria." },
       { moment: "Aperitivo", place: "Le terrazze", body: "Fino a 150 ospiti in piedi, all'ora d'oro." },
       { moment: "Cena", place: "La corte interna", body: "Fino a 150 ospiti a lunghe tavolate sotto le stelle." },
       { moment: "Piano in caso di pioggia", place: "Le sale dell'Ottocento", body: "Fino a 150 ospiti al chiuso, sotto volte di pietra." },
@@ -281,7 +281,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     ],
     spacesTitle: "Espaces et capacité",
     spaces: [
-      { moment: "Cérémonie", place: "Sous les chênes", body: "Jusqu'à 150 invités assis, face au Parc national." },
+      { moment: "Cérémonie", place: "Sous les chênes", body: "Lama di Luna est un lieu officiel pour célébrer les mariages civils de la ville d'Andria." },
       { moment: "Apéritif", place: "Les terrasses", body: "Jusqu'à 150 invités debout, à l'heure dorée." },
       { moment: "Dîner", place: "La cour intérieure", body: "Jusqu'à 150 invités à de longues tables sous les étoiles." },
       { moment: "Plan en cas de pluie", place: "Les salles du XIXe siècle", body: "Jusqu'à 150 invités à l'intérieur, sous des voûtes de pierre." },
@@ -375,7 +375,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
     ],
     spacesTitle: "Räume & Kapazität",
     spaces: [
-      { moment: "Trauung", place: "Unter den Eichen", body: "Bis zu 150 sitzende Gäste, mit Blick auf den Nationalpark." },
+      { moment: "Trauung", place: "Unter den Eichen", body: "Lama di Luna ist ein offizieller Ort für die standesamtlichen Trauungen der Stadt Andria." },
       { moment: "Aperitif", place: "Die Terrassen", body: "Bis zu 150 stehende Gäste, zur goldenen Stunde." },
       { moment: "Abendessen", place: "Der Innenhof", body: "Bis zu 150 Gäste an langen Tafeln unter den Sternen." },
       { moment: "Regenplan", place: "Die Säle aus dem 19. Jahrhundert", body: "Bis zu 150 Gäste drinnen, unter steinernen Gewölben." },

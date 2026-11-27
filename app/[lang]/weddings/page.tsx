@@ -127,17 +127,6 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
         </div>
       </section>
 
-      <section className="wd-section wd-section--tight">
-        <div className="wd-wrap">
-          <h2 className="wd-title-detail">{c.ceremonyTitle}</h2>
-          <p>{c.ceremonyText}</p>
-          <a href="#enquire" className="scopri wd-stats-cta">
-            {c.introCta}
-            <span className="diamond" />
-          </a>
-        </div>
-      </section>
-
       <section className="wd-section wd-section--film">
         <div className="wd-wrap wd-center">
           <div className="wd-label">{c.filmLabel}</div>
