@@ -57,52 +57,41 @@ export function WeddingForm({ privacyHref, labels }: { privacyHref: string; labe
         <input className="line-input" name="email" type="email" placeholder={labels.email} aria-label={labels.email} required />
         <input className="line-input" name="country" type="text" placeholder={labels.country} aria-label={labels.country} required />
         <input className="line-input" name="date" type="text" placeholder={labels.date} aria-label={labels.date} required />
-        <div className="field">
-          <label htmlFor="wd-guests">{labels.guestsLabel}</label>
-          <select className="line-input" id="wd-guests" name="guests" required defaultValue="">
-            <option value="" disabled>
-              {labels.select}
+        {/* the name of each choice is written inside the field, like the other fields; a click opens the list */}
+        <select className="line-input" name="guests" aria-label={labels.guestsLabel} required defaultValue="">
+          <option value="" disabled>
+            {labels.guestsLabel}
+          </option>
+          {labels.guests.map((o, i) => (
+            <option key={o} value={EN.guests[i]}>
+              {o}
             </option>
-            {labels.guests.map((o, i) => (
-              <option key={o} value={EN.guests[i]}>
-                {o}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="field">
-          <label htmlFor="wd-ceremony">{labels.ceremonyLabel}</label>
-          <select className="line-input" id="wd-ceremony" name="ceremony" defaultValue="">
-            <option value="">{labels.select}</option>
-            {labels.ceremony.map((o, i) => (
-              <option key={o} value={EN.ceremony[i]}>
-                {o}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="field">
-          <label htmlFor="wd-budget">{labels.budgetLabel}</label>
-          <select className="line-input" id="wd-budget" name="budget" defaultValue="">
-            <option value="">{labels.select}</option>
-            {labels.budget.map((o, i) => (
-              <option key={o} value={EN.budget[i]}>
-                {o}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="field">
-          <label htmlFor="wd-planner">{labels.plannerLabel}</label>
-          <select className="line-input" id="wd-planner" name="planner" defaultValue="">
-            <option value="">{labels.select}</option>
-            {labels.planner.map((o, i) => (
-              <option key={o} value={EN.planner[i]}>
-                {o}
-              </option>
-            ))}
-          </select>
-        </div>
+          ))}
+        </select>
+        <select className="line-input" name="ceremony" aria-label={labels.ceremonyLabel} defaultValue="">
+          <option value="">{labels.ceremonyLabel}</option>
+          {labels.ceremony.map((o, i) => (
+            <option key={o} value={EN.ceremony[i]}>
+              {o}
+            </option>
+          ))}
+        </select>
+        <select className="line-input" name="budget" aria-label={labels.budgetLabel} defaultValue="">
+          <option value="">{labels.budgetLabel}</option>
+          {labels.budget.map((o, i) => (
+            <option key={o} value={EN.budget[i]}>
+              {o}
+            </option>
+          ))}
+        </select>
+        <select className="line-input" name="planner" aria-label={labels.plannerLabel} defaultValue="">
+          <option value="">{labels.plannerLabel}</option>
+          {labels.planner.map((o, i) => (
+            <option key={o} value={EN.planner[i]}>
+              {o}
+            </option>
+          ))}
+        </select>
         <div className="field field--wide">
           <label htmlFor="wd-more">{labels.more}</label>
           <textarea className="box-input" id="wd-more" name="more" rows={6} />

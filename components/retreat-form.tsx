@@ -56,41 +56,33 @@ export function RetreatForm({ privacyHref, labels }: { privacyHref: string; labe
         <input className="line-input" name="email" type="email" placeholder={labels.email} aria-label={labels.email} required />
         <input className="line-input" name="country" type="text" placeholder={labels.country} aria-label={labels.country} required />
         <input className="line-input" name="date" type="text" placeholder={labels.date} aria-label={labels.date} required />
-        <div className="field">
-          <label htmlFor="rt-guests">{labels.guestsLabel}</label>
-          <select className="line-input" id="rt-guests" name="guests" required defaultValue="">
-            <option value="" disabled>
-              {labels.select}
+        {/* the name of each choice is written inside the field, like the other fields; a click opens the list */}
+        <select className="line-input" name="guests" aria-label={labels.guestsLabel} required defaultValue="">
+          <option value="" disabled>
+            {labels.guestsLabel}
+          </option>
+          {labels.guests.map((o, i) => (
+            <option key={o} value={EN.guests[i]}>
+              {o}
             </option>
-            {labels.guests.map((o, i) => (
-              <option key={o} value={EN.guests[i]}>
-                {o}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="field">
-          <label htmlFor="rt-type">{labels.typeLabel}</label>
-          <select className="line-input" id="rt-type" name="type" defaultValue="">
-            <option value="">{labels.select}</option>
-            {labels.types.map((o, i) => (
-              <option key={o} value={EN.types[i]}>
-                {o}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="field">
-          <label htmlFor="rt-retreat">{labels.retreatLabel}</label>
-          <select className="line-input" id="rt-retreat" name="retreat" defaultValue="">
-            <option value="">{labels.select}</option>
-            {labels.retreats.map((o, i) => (
-              <option key={o} value={EN.retreats[i]}>
-                {o}
-              </option>
-            ))}
-          </select>
-        </div>
+          ))}
+        </select>
+        <select className="line-input" name="type" aria-label={labels.typeLabel} defaultValue="">
+          <option value="">{labels.typeLabel}</option>
+          {labels.types.map((o, i) => (
+            <option key={o} value={EN.types[i]}>
+              {o}
+            </option>
+          ))}
+        </select>
+        <select className="line-input" name="retreat" aria-label={labels.retreatLabel} defaultValue="">
+          <option value="">{labels.retreatLabel}</option>
+          {labels.retreats.map((o, i) => (
+            <option key={o} value={EN.retreats[i]}>
+              {o}
+            </option>
+          ))}
+        </select>
         <div className="field field--wide">
           <label htmlFor="rt-more">{labels.more}</label>
           <textarea className="box-input" id="rt-more" name="more" rows={6} />

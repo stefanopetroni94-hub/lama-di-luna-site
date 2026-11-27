@@ -3639,10 +3639,24 @@ html:has(.wd-hero) {
 .wd-form-grid .field--wide {
   grid-column: 1 / -1;
 }
-.wd-form .field select.line-input {
+/* the choices look like the other fields: while nothing is chosen the name is shown in small capitals, and a small arrow shows the list opens */
+.wd-form select.line-input {
   appearance: none;
   -webkit-appearance: none;
   border-radius: 0;
+  cursor: pointer;
+  padding-right: 1.6rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none' stroke='%235c1a2b' stroke-width='1.4'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.2rem center;
+  background-size: 12px 8px;
+}
+.wd-form select.line-input:has(option[value=""]:checked) {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
 }
 @media (max-width: 800px) {
   .wd-section {
