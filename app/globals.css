@@ -3277,10 +3277,12 @@ footer {
 .wd-hero-text h1 {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(2rem, 5vw, 3.8rem);
-  line-height: 1.08;
+  font-size: clamp(1.92rem, 4.8vw, 4.48rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
   margin: 0.8rem auto 1rem;
-  max-width: 900px;
+  max-width: 1300px;
 }
 .wd-hero-text p {
   max-width: 640px;
