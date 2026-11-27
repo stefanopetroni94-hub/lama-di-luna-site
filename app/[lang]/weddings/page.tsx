@@ -124,7 +124,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
         <div className="wd-wrap wd-two">
           <div>
             <div className="wd-label">The masseria in exclusive</div>
-            <h2>A whole masseria, for one wedding only</h2>
+            <h2 className="wd-title-detail">A Whole Masseria, in Exclusive, for Your Wedding Only</h2>
             <p>
               For your wedding weekend Lama di Luna closes to everyone else. The courtyard, the pool, the library, the cinema room and the old refectory become yours, with our chefs and staff looking after you and your guests from arrival to the farewell brunch.
             </p>

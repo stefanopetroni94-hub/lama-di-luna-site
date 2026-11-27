@@ -3339,6 +3339,16 @@ footer {
   line-height: 1.2;
   margin: 0.7rem 0 1.4rem;
 }
+/* same title style as the experience pages ("Olive Oil Tasting and Tour"): 20px, mixed case */
+.wd-section h2.wd-title-detail {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  margin: 0.7rem 0 1rem;
+}
 .wd-section h3 {
   font-family: var(--serif);
   font-weight: 500;
