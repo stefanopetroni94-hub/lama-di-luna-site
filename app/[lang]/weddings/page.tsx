@@ -192,7 +192,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
           <div>
             <h2>Symbolic, civil or religious</h2>
             <p>
-              Symbolic ceremonies take place on the estate, with an English-speaking celebrant on request. Civil ceremonies: [TO CONFIRM WITH THE MUNICIPALITY OF ANDRIA]. Religious ceremonies in a nearby church, with transfers arranged for your guests.
+              Symbolic ceremonies take place on the estate, with an English-speaking celebrant on request. Civil ceremonies are held in our ancient library or outdoors, upon request to the Municipality of Andria. Religious ceremonies in a nearby church, with transfers arranged for your guests.
             </p>
           </div>
           <div>
