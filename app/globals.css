@@ -3291,6 +3291,20 @@ footer {
   font-style: italic;
   color: var(--ink-soft);
 }
+/* the longer text under the line: normal text, not italic, in a block as wide as the page text */
+.wd-intro .wd-intro-text {
+  max-width: 900px;
+  margin: 2rem auto 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  font-style: normal;
+  line-height: 1.95;
+  color: var(--ink);
+  text-align: left;
+}
+.wd-intro .scopri {
+  margin-top: 0.5rem;
+}
 @media (max-width: 800px) {
   .wd-intro {
     padding: 5rem 0 0;
@@ -3416,7 +3430,7 @@ html:has(.wd-hero) {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem 2rem;
-  margin: 2.5rem 0 0;
+  margin: 0;
 }
 @media (max-width: 800px) {
   .wd-stats {

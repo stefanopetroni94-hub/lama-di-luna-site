@@ -83,6 +83,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
         <div className="wd-wrap">
           <h1>{c.introTitle}</h1>
           <p>{c.introText}</p>
+          <p className="wd-intro-text">{c.exclusiveText}</p>
           <a href="#enquire" className="scopri">
             {c.introCta}
             <span className="diamond" />
@@ -92,8 +93,6 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-section">
         <div className="wd-wrap">
-          <h2 className="wd-title-detail">{c.exclusiveTitle}</h2>
-          <p>{c.exclusiveText}</p>
           <dl className="wd-stats">
             {c.stats.map((s) => (
               <div key={s.label}>

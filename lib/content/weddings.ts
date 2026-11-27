@@ -60,7 +60,7 @@ export type WeddingsContent = {
 export const weddings: Record<Locale, WeddingsContent> = {
   en: {
     introTitle: "Say yes in the Valley of the Moon",
-    introText: "An 1800s masseria with the whole estate to yourselves: 200 hectares of organic olive groves on the edge of the Alta Murgia National Park.",
+    introText: "A whole 1800s masseria on the edge of the Alta Murgia National Park, in exclusive, for your wedding only.",
     introCta: "Request the wedding guide",
     exclusiveTitle: "A Whole Masseria, in Exclusive, for Your Wedding Only",
     exclusiveText:
@@ -154,7 +154,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
   },
   it: {
     introTitle: "Dite sì nella Valle della Luna",
-    introText: "Una masseria dell'Ottocento con l'intera tenuta tutta per voi: 200 ettari di uliveti biologici ai margini del Parco Nazionale dell'Alta Murgia.",
+    introText: "Un'intera masseria dell'Ottocento ai margini del Parco Nazionale dell'Alta Murgia, in esclusiva, solo per il vostro matrimonio.",
     introCta: "Richiedi la guida ai matrimoni",
     exclusiveTitle: "Un'Intera Masseria, in Esclusiva, Solo per il Vostro Matrimonio",
     exclusiveText:
@@ -248,7 +248,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
   },
   fr: {
     introTitle: "Dites oui dans la Vallée de la Lune",
-    introText: "Une masseria du XIXe siècle avec tout le domaine rien que pour vous : 200 hectares d'oliveraies biologiques aux portes du Parc national de l'Alta Murgia.",
+    introText: "Une masseria entière du XIXe siècle aux portes du Parc national de l'Alta Murgia, en exclusivité, pour votre seul mariage.",
     introCta: "Demander le guide des mariages",
     exclusiveTitle: "Une Masseria Entière, en Exclusivité, pour Votre Seul Mariage",
     exclusiveText:
@@ -342,7 +342,7 @@ export const weddings: Record<Locale, WeddingsContent> = {
   },
   de: {
     introTitle: "Sagen Sie Ja im Tal des Mondes",
-    introText: "Eine Masseria aus dem 19. Jahrhundert mit dem ganzen Gut ganz für Sie: 200 Hektar biologische Olivenhaine am Rand des Nationalparks Alta Murgia.",
+    introText: "Eine ganze Masseria aus dem 19. Jahrhundert am Rand des Nationalparks Alta Murgia, exklusiv, nur für Ihre Hochzeit.",
     introCta: "Hochzeitsguide anfordern",
     exclusiveTitle: "Eine Ganze Masseria, Exklusiv, Nur für Ihre Hochzeit",
     exclusiveText:
