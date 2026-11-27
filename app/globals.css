@@ -3401,6 +3401,10 @@ html:has(#enquire) {
 .wd-section--alt {
   background: var(--bg-alt);
 }
+/* a section that follows another one on the same background: only the 4rem of the one above, not 4rem + 4rem */
+.wd-section--tight {
+  padding-top: 0;
+}
 .wd-section--dark,
 .wd-section--film {
   background: var(--ink);
@@ -3528,7 +3532,7 @@ html:has(#enquire) {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-top: 2.5rem;
+  margin-top: 0;
 }
 .wd-four > div {
   border-top: 1px solid var(--ink);

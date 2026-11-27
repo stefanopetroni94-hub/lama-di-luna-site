@@ -128,7 +128,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
         </div>
       </section>
 
-      <section className="wd-section">
+      <section className="wd-section wd-section--tight">
         <div className="wd-wrap">
           <h2 className="wd-title-detail">{c.ceremonyTitle}</h2>
           <p>{c.ceremonyText}</p>
