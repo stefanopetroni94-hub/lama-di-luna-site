@@ -3,15 +3,15 @@
 import { useState } from "react"
 import { track } from "@vercel/analytics"
 import { leadError, sendLead } from "@/lib/send-lead"
+import { weddings, type WeddingsContent } from "@/lib/content/weddings"
 
-const GUESTS = ["Up to 30", "30–80", "80–120", "120–150"]
-const CEREMONY = ["Symbolic", "Civil", "Religious", "Not sure yet"]
-const BUDGET = ["Under €30,000", "€30,000–60,000", "Over €60,000"]
-const PLANNER = ["Not yet", "Yes"]
+// The choices are always sent in English (the value of each option), whatever language the visitor sees,
+// so the emails that arrive are all written the same way.
+const EN = weddings.en.form
 
 /** Wedding enquiry. It goes through the same /api/lead as the contact form, so every detail is written into the message,
  *  starting with a "WEDDING ENQUIRY" line that tells it apart from the other requests. */
-export function WeddingForm({ privacyHref }: { privacyHref: string }) {
+export function WeddingForm({ privacyHref, labels }: { privacyHref: string; labels: WeddingsContent["form"] }) {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle")
 
   return (
@@ -31,6 +31,7 @@ export function WeddingForm({ privacyHref }: { privacyHref: string }) {
           `Type of ceremony: ${val("ceremony") || "-"}`,
           `Budget: ${val("budget") || "-"}`,
           `Planner: ${val("planner") || "-"}`,
+          `Language of the page: ${document.documentElement.lang}`,
           "",
           val("more") || "(no further notes)",
         ].join("\n")
@@ -52,76 +53,78 @@ export function WeddingForm({ privacyHref }: { privacyHref: string }) {
     >
       <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ display: "none" }} />
       <div className="wd-form-grid">
-        <input className="line-input" name="names" type="text" placeholder="Your names" aria-label="Your names" required />
-        <input className="line-input" name="email" type="email" placeholder="Email" aria-label="Email" required />
-        <input className="line-input" name="country" type="text" placeholder="Country" aria-label="Country" required />
-        <input
-          className="line-input"
-          name="date"
-          type="text"
-          placeholder="Preferred date or season"
-          aria-label="Preferred date or season"
-          required
-        />
+        <input className="line-input" name="names" type="text" placeholder={labels.names} aria-label={labels.names} required />
+        <input className="line-input" name="email" type="email" placeholder={labels.email} aria-label={labels.email} required />
+        <input className="line-input" name="country" type="text" placeholder={labels.country} aria-label={labels.country} required />
+        <input className="line-input" name="date" type="text" placeholder={labels.date} aria-label={labels.date} required />
         <div className="field">
-          <label htmlFor="wd-guests">Number of guests</label>
+          <label htmlFor="wd-guests">{labels.guestsLabel}</label>
           <select className="line-input" id="wd-guests" name="guests" required defaultValue="">
             <option value="" disabled>
-              Select
+              {labels.select}
             </option>
-            {GUESTS.map((o) => (
-              <option key={o}>{o}</option>
+            {labels.guests.map((o, i) => (
+              <option key={o} value={EN.guests[i]}>
+                {o}
+              </option>
             ))}
           </select>
         </div>
         <div className="field">
-          <label htmlFor="wd-ceremony">Type of ceremony</label>
+          <label htmlFor="wd-ceremony">{labels.ceremonyLabel}</label>
           <select className="line-input" id="wd-ceremony" name="ceremony" defaultValue="">
-            <option value="">Select</option>
-            {CEREMONY.map((o) => (
-              <option key={o}>{o}</option>
+            <option value="">{labels.select}</option>
+            {labels.ceremony.map((o, i) => (
+              <option key={o} value={EN.ceremony[i]}>
+                {o}
+              </option>
             ))}
           </select>
         </div>
         <div className="field">
-          <label htmlFor="wd-budget">Budget</label>
+          <label htmlFor="wd-budget">{labels.budgetLabel}</label>
           <select className="line-input" id="wd-budget" name="budget" defaultValue="">
-            <option value="">Select</option>
-            {BUDGET.map((o) => (
-              <option key={o}>{o}</option>
+            <option value="">{labels.select}</option>
+            {labels.budget.map((o, i) => (
+              <option key={o} value={EN.budget[i]}>
+                {o}
+              </option>
             ))}
           </select>
         </div>
         <div className="field">
-          <label htmlFor="wd-planner">Do you have a planner?</label>
+          <label htmlFor="wd-planner">{labels.plannerLabel}</label>
           <select className="line-input" id="wd-planner" name="planner" defaultValue="">
-            <option value="">Select</option>
-            {PLANNER.map((o) => (
-              <option key={o}>{o}</option>
+            <option value="">{labels.select}</option>
+            {labels.planner.map((o, i) => (
+              <option key={o} value={EN.planner[i]}>
+                {o}
+              </option>
             ))}
           </select>
         </div>
         <div className="field field--wide">
-          <label htmlFor="wd-more">Tell us more</label>
+          <label htmlFor="wd-more">{labels.more}</label>
           <textarea className="box-input" id="wd-more" name="more" rows={6} />
         </div>
       </div>
       <label className="privacy-check">
         <input type="checkbox" name="privacy" value="accepted" required />
         <span>
-          I have read and accept the{" "}
+          {labels.privacyBefore}
           <a href={privacyHref} target="_blank" rel="noopener noreferrer">
-            Privacy Policy
+            {labels.privacyLink}
           </a>
+          {labels.privacyAfter}
         </span>
       </label>
       <div className="submit">
         <button type="submit" className="submit-btn" disabled={status === "sending"}>
-          Request wedding details
+          {labels.button}
         </button>
         {status === "sent" || status === "error" ? (
           <div className="submit-note" role="status" aria-live="polite">
-            {status === "sent" ? "Thank you. We will reply within 24 hours with availability and our wedding guide." : leadError()}
+            {status === "sent" ? labels.success : leadError()}
           </div>
         ) : null}
       </div>

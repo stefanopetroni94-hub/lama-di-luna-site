@@ -51,7 +51,9 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         <div className="statement-inner">
           <div className="statement-body">
             <p>{c.weddingsText}</p>
-            <Scopri href={`/${lang}/contact`}>{c.bookingCta}</Scopri>
+            <Scopri href={`/${lang}/weddings`}>
+              {{ en: "Discover our weddings", it: "Scopri i nostri matrimoni", fr: "Découvrir nos mariages", de: "Unsere Hochzeiten entdecken" }[lang]}
+            </Scopri>
           </div>
         </div>
       </section>

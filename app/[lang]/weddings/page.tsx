@@ -7,97 +7,57 @@ import { HeroVideo } from "@/components/hero-video"
 import { PhotoSlider } from "@/components/photo-slider"
 import { WeddingForm } from "@/components/wedding-form"
 import { HOME, chrome, isLocale } from "@/lib/i18n"
-import { SITE_URL } from "@/lib/seo"
+import { SITE_URL, pageMetadata } from "@/lib/seo"
+import { weddings } from "@/lib/content/weddings"
 
-// Hidden page for now: not in the menu, not in the sitemap, and Google is told not to index it.
-const TITLE = "Wedding Venue in Puglia | Exclusive Masseria – Lama di Luna"
-const DESCRIPTION =
-  "Get married at Lama di Luna, an exclusive 1800s masseria on a 200-hectare organic estate near Castel del Monte. Up to 150 guests, 27 sleeping on site."
 const OG_IMAGE = "/lamadiluna-courtyard-stars.jpg"
 const FILM_ID = "fR4Jeyn2rZc"
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params
-  if (lang !== "en") return {}
+  if (!isLocale(lang)) return {}
+  const base = pageMetadata(lang, "weddings")
   return {
-    title: { absolute: TITLE },
-    description: DESCRIPTION,
-    robots: { index: false, follow: false },
+    ...base,
     // the full address of the photo: with a short one the share preview pointed to localhost
-    openGraph: { title: TITLE, description: DESCRIPTION, url: `${SITE_URL}/en/weddings`, images: [`${SITE_URL}${OG_IMAGE}`], type: "website" },
+    openGraph: { ...base.openGraph, images: [`${SITE_URL}${OG_IMAGE}`] },
   }
 }
 
-const STATS = [
-  { value: "150", label: "Guests at dinner" },
-  { value: "27", label: "Guests sleep on site" },
-  { value: "11", label: "Rooms" },
-  { value: "45 min", label: "From Bari airport" },
-]
-
-// one single text: the exclusive use, then what sets Lama di Luna apart (silence at night, the kitchen, the sun)
-const EXCLUSIVE_TEXT =
-  "For your wedding weekend Lama di Luna closes to everyone else. The courtyard, the pool, the library, the cinema room and the old refectory become yours, with our chefs and staff looking after you and your guests from arrival to the farewell brunch. At night there is only silence: no town, no neighbours, no noise curfews from next door, just the Alta Murgia National Park, the olive trees and the night sky. The kitchen cooks with extra virgin olive oil and vegetables from our 200 hectares of organic estate, served at long candlelit tables. And the whole masseria runs on the sun, with 48 solar panels and 400 photovoltaic panels: bio-architecture and sustainability without giving up comfort."
-
-// the five wedding photos of the Events page, then the ten new ones. The site photo filter is applied by the gallery itself.
-// Each photo has a description (alt), so Google can read it and show it in Google Images.
+// the five wedding photos of the Events page, then the ten new ones; the description of each is in the content file.
+// The site photo filter is applied by the gallery itself.
 const GALLERY = [
-  { src: "/whatsapp/20261017_095410_1916693209311624.jpg", position: "50% center", alt: "The newlyweds in front of the Pugliese festival lights at sunset, Lama di Luna" },
-  { src: "/whatsapp/20261127_075621_1442278754732944.jpg", position: "center 45%", alt: "The groom walking down the ceremony aisle between the guests, under the trees at Lama di Luna" },
-  { src: "/whatsapp/20261127_075626_2054415521874547.jpg", position: "center 40%", alt: "The bride throwing her bouquet on the lawn while the guests applaud" },
-  { src: "/whatsapp/20261016_165134_1827109174977754.jpg", position: "50% center", alt: "The ceremony aisle beside the masseria" },
-  { src: "/whatsapp/20261127_075640_1854277828941805.jpg", position: "center 55%", alt: "The newlyweds toasting with champagne under the brick vault of the old cellar, next to the wedding cake" },
-  { src: "/whatsapp/20261016_165613_932387559726351.jpg", position: "center 25%", alt: "Guests at the aperitivo on the lawn under the trees" },
-  { src: "/whatsapp/20261127_075631_1713082303553822.jpg", position: "center 50%", alt: "Wedding guests raising their glasses at the long table in the courtyard, under string lights" },
-  { src: "/whatsapp/20261127_075649_1744275486669953.jpg", position: "center 45%", alt: "The newlyweds laughing as they leave the dovecote tower, with guests throwing rice and petals" },
-  { src: "/whatsapp/20261016_165422_1913563452860011.jpg", position: "center 60%", alt: "The bride beside the wrought iron gate" },
-  { src: "/whatsapp/20261127_075636_1462725258659477.jpg", position: "center 55%", alt: "The wedding table set with white flowers and wooden chairs in the courtyard at sunset" },
-  { src: "/whatsapp/20261127_075658_1769727127855947.jpg", position: "center 40%", alt: "The newlyweds kissing under an oak tree draped with white cloth, next to the wedding cake" },
-  { src: "/whatsapp/20261016_165022_1438073468460314.jpg", position: "20% center", alt: "The long wedding table in the masseria courtyard" },
-  { src: "/whatsapp/20261127_075645_1625299038855624.jpg", position: "center 50%", alt: "Wedding guests waving napkins during the dinner in the courtyard" },
-  { src: "/whatsapp/20261127_075654_2584698828703681.jpg", position: "center 55%", alt: "The bride in the courtyard of the masseria, in black and white, with a vintage convertible behind her" },
-  { src: "/whatsapp/20261127_075702_1558481429668415.jpg", position: "center 50%", alt: "The newlyweds dancing in a meadow of white flowers, with olive trees behind them" },
-]
-
-const SPACES = [
-  { moment: "Ceremony", place: "Under the oak trees", body: "Up to 150 seated guests, facing the National Park." },
-  { moment: "Aperitivo", place: "Terraces", body: "Up to 150 guests standing, at golden hour." },
-  { moment: "Dinner", place: "The inner courtyard", body: "Up to 150 guests at long tables under the stars." },
-  { moment: "Rain plan", place: "The 1800s halls", body: "Up to 150 guests indoors, under stone vaults." },
-]
-
-const WEEKEND = [
-  { day: "Friday", title: "Welcome dinner", body: "Guests arrive and settle in. Pizza from the wood oven or a Murgian supper in the courtyard." },
-  { day: "Saturday", title: "The wedding", body: "Ceremony at sunset, aperitivo on the terrace, dinner and dancing in the courtyard." },
-  { day: "Sunday", title: "Farewell brunch", body: "A slow brunch, an olive oil tasting or a walk on the old drovers' paths before goodbyes." },
-]
-
-const PRICES = [
-  { label: "Exclusive use, 3 nights, 27 guests", price: "from € 13,450*" },
-  { label: "Wedding dinner menu", price: "from € 160 per guest*" },
-  { label: "Welcome dinner menu", price: "from € 60 per guest*" },
-  { label: "Farewell brunch menu", price: "from € 45 per guest*" },
-]
-
-const FAQ = [
-  { q: "Do we have to book the whole masseria?", a: "Yes. Every wedding is exclusive, with a minimum stay of three nights." },
-  { q: "Where do the other guests sleep?", a: "We host 27 guests on site and suggest partner hotels nearby, with shuttles on request." },
-  { q: "Can we bring our own planner and suppliers?", a: "Yes, upon request." },
-  { q: "Until what time can we dance?", a: "With no neighbours around, the party can run late." },
-  { q: "How do our guests get here?", a: "Bari airport is 45 minutes away. Guests can rent cars at the airport, or we can help arrange private transfers for groups." },
+  { src: "/whatsapp/20261017_095410_1916693209311624.jpg", position: "50% center" },
+  { src: "/whatsapp/20261127_075621_1442278754732944.jpg", position: "center 45%" },
+  { src: "/whatsapp/20261127_075626_2054415521874547.jpg", position: "center 40%" },
+  { src: "/whatsapp/20261016_165134_1827109174977754.jpg", position: "50% center" },
+  { src: "/whatsapp/20261127_075640_1854277828941805.jpg", position: "center 55%" },
+  { src: "/whatsapp/20261016_165613_932387559726351.jpg", position: "center 25%" },
+  { src: "/whatsapp/20261127_075631_1713082303553822.jpg", position: "center 50%" },
+  { src: "/whatsapp/20261127_075649_1744275486669953.jpg", position: "center 45%" },
+  { src: "/whatsapp/20261016_165422_1913563452860011.jpg", position: "center 60%" },
+  { src: "/whatsapp/20261127_075636_1462725258659477.jpg", position: "center 55%" },
+  { src: "/whatsapp/20261127_075658_1769727127855947.jpg", position: "center 40%" },
+  { src: "/whatsapp/20261016_165022_1438073468460314.jpg", position: "20% center" },
+  { src: "/whatsapp/20261127_075645_1625299038855624.jpg", position: "center 50%" },
+  { src: "/whatsapp/20261127_075654_2584698828703681.jpg", position: "center 55%" },
+  { src: "/whatsapp/20261127_075702_1558481429668415.jpg", position: "center 50%" },
 ]
 
 export default async function WeddingsPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
-  if (!isLocale(lang) || lang !== "en") notFound()
+  if (!isLocale(lang)) notFound()
   const t = chrome[lang]
+  const c = weddings[lang]
+  const meta = pageMetadata(lang, "weddings")
+  const description = typeof meta.description === "string" ? meta.description : ""
 
   const venueSchema = {
     "@context": "https://schema.org",
     "@type": "EventVenue",
     name: "Lama di Luna Biomasseria",
-    url: `${SITE_URL}/en/weddings`,
-    description: DESCRIPTION,
+    url: `${SITE_URL}/${lang}/weddings`,
+    description,
     maximumAttendeeCapacity: 150,
     address: {
       "@type": "PostalAddress",
@@ -112,7 +72,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(venueSchema) }} />
-      <SiteNav locale={lang} variant="overlay" hideLanguages />
+      <SiteNav locale={lang} variant="overlay" />
       <BackLink href={`/${lang}`} label={HOME[lang]} tone="light" />
 
       <section className="hero hero--wedding wd-hero">
@@ -121,10 +81,10 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-intro">
         <div className="wd-wrap">
-          <h1>Say yes in the Valley of the Moon</h1>
-          <p>An 1800s masseria with the whole estate to yourselves: 200 hectares of organic olive groves on the edge of the Alta Murgia National Park.</p>
+          <h1>{c.introTitle}</h1>
+          <p>{c.introText}</p>
           <a href="#enquire" className="scopri">
-            Request the wedding guide
+            {c.introCta}
             <span className="diamond" />
           </a>
         </div>
@@ -132,10 +92,10 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-section">
         <div className="wd-wrap">
-          <h2 className="wd-title-detail">A Whole Masseria, in Exclusive, for Your Wedding Only</h2>
-          <p>{EXCLUSIVE_TEXT}</p>
+          <h2 className="wd-title-detail">{c.exclusiveTitle}</h2>
+          <p>{c.exclusiveText}</p>
           <dl className="wd-stats">
-            {STATS.map((s) => (
+            {c.stats.map((s) => (
               <div key={s.label}>
                 <dt>{s.value}</dt>
                 <dd>{s.label}</dd>
@@ -147,18 +107,18 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section>
         <PhotoSlider
-          photos={GALLERY}
-          label="Weddings at Lama di Luna"
-          prevLabel="Previous photos"
-          nextLabel="Next photos"
+          photos={GALLERY.map((p, i) => ({ ...p, alt: c.galleryAlts[i] }))}
+          label={c.galleryLabel}
+          prevLabel={c.galleryPrev}
+          nextLabel={c.galleryNext}
         />
       </section>
 
       <section className="wd-section">
         <div className="wd-wrap">
-          <h2 className="wd-title-detail">Spaces &amp; Capacity</h2>
+          <h2 className="wd-title-detail">{c.spacesTitle}</h2>
           <div className="wd-four">
-            {SPACES.map((s) => (
+            {c.spaces.map((s) => (
               <div key={s.moment}>
                 <div className="wd-label">{s.moment}</div>
                 <h3>{s.place}</h3>
@@ -171,9 +131,9 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-section wd-section--dark">
         <div className="wd-wrap">
-          <h2 className="wd-title-detail">Your Wedding Weekend</h2>
+          <h2 className="wd-title-detail">{c.weekendTitle}</h2>
           <div className="wd-three wd-three--text">
-            {WEEKEND.map((d) => (
+            {c.weekend.map((d) => (
               <div key={d.day}>
                 <div className="wd-label">{d.day}</div>
                 <h3>{d.title}</h3>
@@ -187,24 +147,22 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
       <section className="wd-section">
         <div className="wd-wrap wd-two">
           <div>
-            <h2 className="wd-title-detail">Symbolic, Civil or Religious</h2>
-            <p>
-              Symbolic ceremonies take place on the estate, with an English-speaking celebrant on request. Civil ceremonies are held in our ancient library or outdoors, upon request to the Municipality of Andria. Religious ceremonies in a nearby church, with transfers arranged for your guests.
-            </p>
+            <h2 className="wd-title-detail">{c.ceremonyTitle}</h2>
+            <p>{c.ceremonyText}</p>
           </div>
           <div>
-            <h2 className="wd-title-detail">Clear Prices, from the Start</h2>
+            <h2 className="wd-title-detail">{c.pricesTitle}</h2>
             <ul className="wd-prices">
-              {PRICES.map((p) => (
+              {c.prices.map((p) => (
                 <li key={p.label}>
                   <span>{p.label}</span>
                   <span>{p.price}</span>
                 </li>
               ))}
             </ul>
-            <p className="wd-vat">* plus 10% VAT</p>
+            <p className="wd-vat">{c.vat}</p>
             <a href="#enquire" className="scopri">
-              Request the full wedding guide
+              {c.guideCta}
               <span className="diamond" />
             </a>
           </div>
@@ -213,19 +171,19 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-section wd-section--film">
         <div className="wd-wrap wd-center">
-          <div className="wd-label">Real weddings</div>
-          <h2 className="wd-film-title">An Italian–Norwegian wedding at Lama di Luna</h2>
+          <div className="wd-label">{c.filmLabel}</div>
+          <h2 className="wd-film-title">{c.filmTitle}</h2>
         </div>
         <div className="wd-film">
           <HeroVideo
             videoId={FILM_ID}
             poster={`https://img.youtube.com/vi/${FILM_ID}/maxresdefault.jpg`}
-            label="Watch the wedding film"
+            label={c.filmWatch}
           />
         </div>
         <div className="wd-credit-row">
           <p className="wd-credit">
-            Film by{" "}
+            {c.filmCredit}{" "}
             <a href="https://www.federicocardone.com" target="_blank" rel="noopener noreferrer">
               Federico Cardone
             </a>
@@ -235,9 +193,9 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-section">
         <div className="wd-wrap wd-narrow">
-          <h2 className="wd-title-detail">Frequently Asked</h2>
+          <h2 className="wd-title-detail">{c.faqTitle}</h2>
           <div className="wd-faq">
-            {FAQ.map((f) => (
+            {c.faq.map((f) => (
               <details key={f.q}>
                 <summary>{f.q}</summary>
                 <p>{f.a}</p>
@@ -249,9 +207,9 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-section wd-section--alt" id="enquire">
         <div className="wd-wrap wd-narrow">
-          <h2 className="wd-center">Tell us about your day</h2>
-          <p className="wd-center">We reply within 24 hours with availability and our wedding guide.</p>
-          <WeddingForm privacyHref={`/${lang}/privacy`} />
+          <h2 className="wd-center">{c.enquireTitle}</h2>
+          <p className="wd-center">{c.enquireText}</p>
+          <WeddingForm privacyHref={`/${lang}/privacy`} labels={c.form} />
         </div>
       </section>
 

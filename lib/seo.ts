@@ -89,6 +89,28 @@ const pages: Record<string, Record<Locale, Meta>> = {
     },
     de: { title: "Kontakt | Lama di Luna Biomasseria", description: "Kontakt info@lamadiluna.com -Contrada Lama di Luna, SN - Frazione Montegrosso, Andria, 76123, Italien. Rufen Sie uns an oder senden Sie eine Nachricht an +39 0883569505 / +39 3280117375." },
   },
+  weddings: {
+    en: {
+      title: "Wedding Venue in Puglia | Exclusive Masseria – Lama di Luna",
+      description:
+        "Get married at Lama di Luna, an exclusive 1800s masseria on a 200-hectare organic estate near Castel del Monte. Up to 150 guests, 27 sleeping on site.",
+    },
+    it: {
+      title: "Location per Matrimoni in Puglia | Masseria in Esclusiva – Lama di Luna",
+      description:
+        "Sposatevi a Lama di Luna, una masseria dell'Ottocento in esclusiva su una tenuta biologica di 200 ettari vicino a Castel del Monte. Fino a 150 ospiti, 27 che dormono in tenuta.",
+    },
+    fr: {
+      title: "Lieu de mariage dans les Pouilles | Masseria en exclusivité – Lama di Luna",
+      description:
+        "Mariez-vous à Lama di Luna, une masseria du XIXe siècle en exclusivité sur un domaine biologique de 200 hectares près de Castel del Monte. Jusqu'à 150 invités, 27 hébergés sur place.",
+    },
+    de: {
+      title: "Hochzeitslocation in Apulien | Exklusive Masseria – Lama di Luna",
+      description:
+        "Heiraten Sie in Lama di Luna, einer exklusiven Masseria aus dem 19. Jahrhundert auf einem 200 Hektar großen Biogut bei Castel del Monte. Bis zu 150 Gäste, 27 übernachten auf dem Gut.",
+    },
+  },
   "rooms/masseria": {
     en: { title: "Family Suite Masseria | Lama di Luna Biomasseria", description: "Family suite, sleeps 5, 50 m2, 2 x double bed, TV, Wifi, Minibar, Air conditioning, Jacuzzi, Desk, Bathtub, Hairdryer, Shower, Flat screen TV." },
     it: { title: "Suite familiare masseria | Lama di Luna Biomasseria", description: "Suite Familiare, accoglie 5 persone, 50 m2, 2 x Letto doppio, TV, Wifi, Minibar, Appendiabiti, Aria condizionata, Jacuzzi, Scrivania, Vasca da bagno, Asciugacapelli, Doccia, TV schermo piatto." },
