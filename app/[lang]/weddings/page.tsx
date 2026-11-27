@@ -209,7 +209,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
                 </li>
               ))}
             </ul>
-            <Scopri href="#enquire">Download the full wedding guide</Scopri>
+            <Scopri href="#enquire">Request the full wedding guide</Scopri>
           </div>
         </div>
       </section>
