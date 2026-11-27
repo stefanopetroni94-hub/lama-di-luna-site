@@ -3352,6 +3352,10 @@ html:has(.wd-hero) {
 .wd-section--alt {
   background: var(--bg-alt);
 }
+/* same light background as the closing block of the Story page: the cream of the page, with a thin line above it */
+.wd-section--line {
+  border-top: 1px solid var(--line);
+}
 .wd-section--dark,
 .wd-section--film {
   background: var(--ink);

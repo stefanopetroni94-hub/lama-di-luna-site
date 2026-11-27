@@ -184,7 +184,7 @@ export default async function ExclusivePage({ params }: { params: Promise<{ lang
         />
       </section>
 
-      <section className="wd-section wd-section--alt" id="enquire">
+      <section className="wd-section wd-section--line" id="enquire">
         <div className="wd-wrap wd-narrow">
           <h2 className="wd-center">{c.bookingTitle}</h2>
           <p className="wd-center">{c.bookingText}</p>
