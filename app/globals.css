@@ -3332,9 +3332,8 @@ footer {
   font-style: normal;
   line-height: 1.95;
   color: var(--ink);
-  /* both edges are straight: the left one lines up with the line above "150", the right one with the end of the last number */
-  text-align: justify;
-  hyphens: auto;
+  /* normal text, like the text of The Veranda page: the left edge lines up with the line above "150", the right edge is free */
+  text-align: left;
 }
 .wd-stats-cta {
   margin-top: 1rem;
