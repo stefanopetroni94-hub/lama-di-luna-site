@@ -4,7 +4,6 @@ import type { Metadata } from "next"
 import { SiteNav } from "@/components/site-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { BackLink } from "@/components/back-link"
-import { Scopri } from "@/components/scopri"
 import { HeroVideo } from "@/components/hero-video"
 import { WeddingForm } from "@/components/wedding-form"
 import { HOME, chrome, isLocale } from "@/lib/i18n"
@@ -115,7 +114,10 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
         <div className="wd-hero-text">
           <h1>Say yes in the Valley of the Moon</h1>
           <p>An 1800s masseria with the whole estate to yourselves: 200 hectares of organic olive groves on the edge of the Alta Murgia National Park.</p>
-          <Scopri href="#enquire">Request the wedding guide</Scopri>
+          <a href="#enquire" className="scopri">
+            Request the wedding guide
+            <span className="diamond" />
+          </a>
         </div>
         <div className="hero-scroll">{t.scroll}</div>
       </section>
@@ -204,7 +206,10 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
                 </li>
               ))}
             </ul>
-            <Scopri href="#enquire">Request the full wedding guide</Scopri>
+            <a href="#enquire" className="scopri">
+              Request the full wedding guide
+              <span className="diamond" />
+            </a>
           </div>
         </div>
       </section>

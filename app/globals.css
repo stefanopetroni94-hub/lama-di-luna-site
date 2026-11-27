@@ -3306,6 +3306,13 @@ footer {
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
+/* the "request the wedding guide" links scroll down smoothly to the form, "Tell us about your day" */
+html:has(.wd-hero) {
+  scroll-behavior: smooth;
+}
+#enquire {
+  scroll-margin-top: 60px;
+}
 /* every section has the same space above and below, so every title sits the same distance from the section above it */
 .wd-section {
   padding: 4rem 0;
