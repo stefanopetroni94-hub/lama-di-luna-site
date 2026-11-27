@@ -3264,6 +3264,35 @@ footer {
 .hero--wedding::after {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.35) 100%);
 }
+/* the title, the line and the link sit below the photo, on the white background, like the other pages */
+.wd-intro {
+  padding: 8rem 0;
+  text-align: center;
+}
+.wd-intro h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.92rem, 4.8vw, 4.48rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  color: var(--ink);
+  max-width: 1300px;
+  margin: 0 auto 1.5rem;
+}
+.wd-intro p {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.85;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+@media (max-width: 800px) {
+  .wd-intro {
+    padding: 5rem 0;
+  }
+}
 .wd-hero-text {
   position: absolute;
   left: 0;

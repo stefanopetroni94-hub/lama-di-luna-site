@@ -132,7 +132,11 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
       <BackLink href={`/${lang}`} label={HOME[lang]} tone="light" />
 
       <section className="hero hero--wedding wd-hero">
-        <div className="wd-hero-text">
+        <div className="hero-scroll">{t.scroll}</div>
+      </section>
+
+      <section className="wd-intro">
+        <div className="wd-wrap">
           <h1>Say yes in the Valley of the Moon</h1>
           <p>An 1800s masseria with the whole estate to yourselves: 200 hectares of organic olive groves on the edge of the Alta Murgia National Park.</p>
           <a href="#enquire" className="scopri">
@@ -140,7 +144,6 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
             <span className="diamond" />
           </a>
         </div>
-        <div className="hero-scroll">{t.scroll}</div>
       </section>
 
       <section className="wd-section">
