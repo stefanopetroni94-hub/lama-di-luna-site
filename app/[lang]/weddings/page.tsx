@@ -156,7 +156,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-section">
         <div className="wd-wrap">
-          <h2 className="wd-center">Spaces &amp; capacity</h2>
+          <h2 className="wd-title-detail">Spaces &amp; Capacity</h2>
           <div className="wd-four">
             {SPACES.map((s) => (
               <div key={s.moment}>
@@ -171,7 +171,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-section wd-section--dark">
         <div className="wd-wrap">
-          <h2 className="wd-center">Your wedding weekend</h2>
+          <h2 className="wd-title-detail">Your Wedding Weekend</h2>
           <div className="wd-three wd-three--text">
             {WEEKEND.map((d) => (
               <div key={d.day}>
@@ -187,13 +187,13 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
       <section className="wd-section">
         <div className="wd-wrap wd-two">
           <div>
-            <h2>Symbolic, civil or religious</h2>
+            <h2 className="wd-title-detail">Symbolic, Civil or Religious</h2>
             <p>
               Symbolic ceremonies take place on the estate, with an English-speaking celebrant on request. Civil ceremonies are held in our ancient library or outdoors, upon request to the Municipality of Andria. Religious ceremonies in a nearby church, with transfers arranged for your guests.
             </p>
           </div>
           <div>
-            <h2>Clear prices, from the start</h2>
+            <h2 className="wd-title-detail">Clear Prices, from the Start</h2>
             <ul className="wd-prices">
               {PRICES.map((p) => (
                 <li key={p.label}>
@@ -234,7 +234,7 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-section">
         <div className="wd-wrap wd-narrow">
-          <h2 className="wd-center">Frequently asked</h2>
+          <h2 className="wd-title-detail">Frequently Asked</h2>
           <div className="wd-faq">
             {FAQ.map((f) => (
               <details key={f.q}>
