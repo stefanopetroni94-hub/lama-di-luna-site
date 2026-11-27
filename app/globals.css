@@ -3504,8 +3504,46 @@ footer {
 .wd-faq details p {
   margin: 0.8rem 0 0;
 }
+/* the form is a white box on the beige background, with the same fields as the contact page */
 .wd-form {
   margin-top: 2.5rem;
+  background: #ffffff;
+  padding: 2.5rem;
+}
+.wd-form .line-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  padding: 0.6rem 0 0.6rem;
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.wd-form .line-input:focus {
+  border-bottom-color: var(--ink-soft);
+}
+.wd-form textarea.box-input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  padding: 0.9rem 1rem;
+  min-height: 150px;
+  background: transparent;
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.wd-form textarea.box-input:focus {
+  border-color: var(--ink-soft);
 }
 .wd-form-grid {
   display: grid;
@@ -3589,6 +3627,9 @@ footer {
   }
   .wd-hero-text {
     bottom: 5rem;
+  }
+  .wd-form {
+    padding: 2rem 1.5rem;
   }
 }
 .story-split {

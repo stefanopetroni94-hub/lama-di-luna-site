@@ -247,7 +247,6 @@ export default async function WeddingsPage({ params }: { params: Promise<{ lang:
 
       <section className="wd-section wd-section--alt" id="enquire">
         <div className="wd-wrap wd-narrow">
-          <div className="wd-label wd-center">Plan your wedding</div>
           <h2 className="wd-center">Tell us about your day</h2>
           <p className="wd-center">We reply within 24 hours with availability and our wedding guide.</p>
           <WeddingForm privacyHref={`/${lang}/privacy`} />
