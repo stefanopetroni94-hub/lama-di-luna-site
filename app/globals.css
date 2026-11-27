@@ -3284,12 +3284,13 @@ footer {
   margin: 0.8rem auto 1rem;
   max-width: 1300px;
 }
+/* same type as the intro line of the Experiences page: 16px, italic, still in white */
 .wd-hero-text p {
   max-width: 640px;
   margin: 0 auto;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.85;
+  font-style: italic;
 }
 .wd-hero-text .scopri,
 .wd-hero-text .scopri .diamond {
