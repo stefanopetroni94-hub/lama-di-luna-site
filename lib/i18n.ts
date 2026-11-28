@@ -88,7 +88,7 @@ export const chrome = {
     scroll: "Scorri",
     close: "Chiudi",
     menuTitle: "Esplora",
-    press: "Ne hanno parlato",
+    press: "Dicono di noi",
     footer: {
       instagram: "Instagram",
       facebook: "Facebook",
