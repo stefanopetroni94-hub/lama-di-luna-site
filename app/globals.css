@@ -434,6 +434,57 @@ section {
 .room-img-wrap {
   overflow: hidden;
 }
+/* home, room cards: on a computer only the first photo; on a phone the photos slide sideways with the finger */
+.room-slider-wrap {
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+.room-slider .room-img {
+  margin-bottom: 0;
+}
+.room-slide:not(:first-child) {
+  display: none;
+}
+.room-dots {
+  display: none;
+}
+@media (max-width: 700px) {
+  .room-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .room-slider::-webkit-scrollbar {
+    display: none;
+  }
+  .room-slide:not(:first-child),
+  .room-slide {
+    display: block;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+  .room-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    pointer-events: none;
+  }
+  .room-dots span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(253, 252, 249, 0.55);
+  }
+  .room-dots span.is-active {
+    background: var(--bg);
+  }
+}
 .room-name {
   font-family: var(--serif);
   font-size: 20px;

@@ -9,6 +9,8 @@ import { NewsletterForm } from "@/components/newsletter-form"
 import { QuickSearch } from "@/components/quick-search"
 import { chrome, isLocale } from "@/lib/i18n"
 import { home } from "@/lib/content/home"
+import { rooms } from "@/lib/content/rooms"
+import { RoomPhotos } from "@/components/room-photos"
 import { book } from "@/lib/content/book"
 import type { Metadata } from "next"
 import { hotelSchema, pageMetadata } from "@/lib/seo"
@@ -70,9 +72,12 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         <div className="rooms-grid">
           {c.rooms.map((room) => (
             <Link href={`/${lang}/rooms/${room.slug}`} className="room-card" key={room.name}>
-              <div className="room-img-wrap">
-                <div className="room-img" style={{ backgroundImage: `url('${room.img}')` }} />
-              </div>
+              <RoomPhotos
+                images={[
+                  room.img,
+                  ...(rooms[lang].list.find((r) => r.slug === room.slug)?.gallery ?? []).filter((src) => src !== room.img),
+                ]}
+              />
               <div className="room-name">{room.name}</div>
               <p className="room-desc">{room.desc}</p>
             </Link>
