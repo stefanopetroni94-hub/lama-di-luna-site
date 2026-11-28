@@ -15,6 +15,10 @@ import { book } from "@/lib/content/book"
 import type { Metadata } from "next"
 import { hotelSchema, pageMetadata } from "@/lib/seo"
 
+// photos in a room's gallery that are the same picture as the cover shown on the home page (under another file name),
+// so they are left out of the swipe on the phone
+const SAME_AS_COVER = ["/whatsapp/20261015_124906_1149838004655901.jpg"]
+
 // two links under the experiences, to the Weddings and Retreats pages
 const HOME_LINKS = {
   weddings: {
@@ -75,7 +79,9 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
               <RoomPhotos
                 images={[
                   room.img,
-                  ...(rooms[lang].list.find((r) => r.slug === room.slug)?.gallery ?? []).filter((src) => src !== room.img),
+                  ...(rooms[lang].list.find((r) => r.slug === room.slug)?.gallery ?? []).filter(
+                    (src) => src !== room.img && !SAME_AS_COVER.includes(src),
+                  ),
                 ]}
               />
               <div className="room-name">{room.name}</div>
